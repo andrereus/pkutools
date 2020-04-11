@@ -43,8 +43,7 @@
     }
   },
   "prettier": {
-    "printWidth": 120,
-    "htmlWhitespaceSensitivity": "ignore"
+    "printWidth": 120
   },
   "eslintConfig": {
     "root": true,
