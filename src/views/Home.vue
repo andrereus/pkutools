@@ -18,9 +18,7 @@
         style="max-width: 20rem;"
         class="mb-2"
       >
-        <b-card-text>
-          German PKU app that combines calculator, pen, paper and nutrition table.
-        </b-card-text>
+        <b-card-text>German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).</b-card-text>
 
         <b-button href="https://pherechner.de/" target="_blank" variant="primary">
           Website
@@ -36,9 +34,7 @@
         style="max-width: 20rem;"
         class="mb-2"
       >
-        <b-card-text>
-          English PKU app for searching, calculating and tracking food.
-        </b-card-text>
+        <b-card-text>English PKU app for searching, calculating and tracking food (~ 2018).</b-card-text>
 
         <b-button href="https://pkumanager.com/" target="_blank" variant="primary">
           Website
@@ -54,9 +50,7 @@
         style="max-width: 20rem;"
         class="mb-2"
       >
-        <b-card-text>
-          General purpose app for calculating with any nutrient.
-        </b-card-text>
+        <b-card-text>General purpose app for calculating with any nutrient (~ 2019).</b-card-text>
 
         <b-button href="https://simple-nutrition-calculator.com/" target="_blank" variant="primary">
           Website
