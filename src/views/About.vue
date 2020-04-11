@@ -5,6 +5,7 @@
 
       <hr class="my-4" />
 
+      <!-- prettier-ignore -->
       <p>Contact: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
     </b-jumbotron>
   </div>
