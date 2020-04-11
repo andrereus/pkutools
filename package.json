@@ -59,7 +59,15 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "printWidth": 120,
+          "htmlWhitespaceSensitivity": "ignore"
+        }
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
