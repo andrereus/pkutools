@@ -27,3 +27,12 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Additional notes
+
+### VS Code settings
+
+```
+"editor.formatOnSave": true,
+"vetur.format.defaultFormatter.html": "prettier"
+```
