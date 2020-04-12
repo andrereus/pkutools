@@ -2,7 +2,10 @@
   <div id="app">
     <b-navbar toggleable="sm" type="dark" variant="dark">
       <b-container>
-        <b-navbar-brand to="/">PKU Tools</b-navbar-brand>
+        <b-navbar-brand to="/">
+          <img src="./assets/pkutools-logo.png" class="logo" alt="PKU Tools Logo" />
+          PKU Tools
+        </b-navbar-brand>
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
         <b-collapse id="nav-collapse" is-nav>
@@ -26,4 +29,10 @@
 
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~bootstrap-vue/src/index.scss";
+
+.logo {
+  width: 30px;
+  margin-top: -5px;
+  margin-right: 5px;
+}
 </style>

@@ -39,7 +39,9 @@
   },
   "vue": {
     "pwa": {
-      "name": "PKU Tools"
+      "name": "PKU Tools",
+      "themeColor": "#3498db",
+      "msTileColor": "#3498db"
     }
   },
   "prettier": {

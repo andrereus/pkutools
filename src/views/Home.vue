@@ -1,13 +1,14 @@
 <template>
   <div>
-    <b-jumbotron class="mt-3">
-      <template v-slot:header>PKU Tools</template>
-      <template v-slot:lead>Tools and apps for phenylketonuria</template>
-    </b-jumbotron>
+    <h2 class="my-4">Tools</h2>
 
-    <h2>Apps</h2>
+    <hr class="mb-4" />
 
-    <hr class="my-4" />
+    <p>Coming soon</p>
+
+    <h2 class="my-4">Apps</h2>
+
+    <hr class="mb-4" />
 
     <b-card-group deck>
       <b-card img-src="../assets/pherechner-app.png" img-alt="Phe Rechner App" img-top>

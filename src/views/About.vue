@@ -2,6 +2,7 @@
   <div>
     <b-jumbotron class="mt-3">
       <template v-slot:header>About</template>
+      <template v-slot:lead>Tools and apps for phenylketonuria</template>
 
       <hr class="my-4" />
 
