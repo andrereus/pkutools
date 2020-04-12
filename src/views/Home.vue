@@ -4,7 +4,8 @@
 
     <hr class="mb-4" />
 
-    <p>Coming soon</p>
+    <b-button to="/supplement-counter" variant="primary" class="mr-2">Supplement Counter</b-button>
+    <b-button disabled>In progress ...</b-button>
 
     <h2 class="my-4">Apps</h2>
 
