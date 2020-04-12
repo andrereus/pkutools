@@ -40,7 +40,7 @@
   "vue": {
     "pwa": {
       "name": "PKU Tools",
-      "themeColor": "#3498db",
+      "themeColor": "#343a40",
       "msTileColor": "#3498db"
     }
   },
