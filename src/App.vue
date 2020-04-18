@@ -14,7 +14,9 @@
 
             <b-nav-item-dropdown right>
               <template v-slot:button-content>Tools</template>
+
               <b-dropdown-item to="/supplement-counter">Supplement Counter</b-dropdown-item>
+              <b-dropdown-item to="/calculator">Calculator</b-dropdown-item>
             </b-nav-item-dropdown>
 
             <b-nav-item to="/about">About</b-nav-item>
