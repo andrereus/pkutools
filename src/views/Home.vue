@@ -4,8 +4,12 @@
 
     <hr class="mb-4" />
 
-    <b-button to="/supplement-counter" variant="primary" class="mr-2">Supplement Counter</b-button>
-    <b-button to="/calculator" variant="primary" class="mr-2">Calculator</b-button>
+    <b-button squared to="/supplement-counter" variant="primary" class="mr-2">Supplement Counter</b-button>
+    <b-button squared to="/calculator" variant="primary" class="mr-2">Calculator</b-button>
+    <b-button squared class="ak-trigger" variant="outline-dark">
+      News
+      <AnnounceKit catchClick=".ak-trigger" widget="https://announcekit.app/widget/4iQAyQ" />
+    </b-button>
 
     <h2 class="mt-5 mb-4">Apps</h2>
 
@@ -16,7 +20,7 @@
         <b-card-title>Phe Rechner</b-card-title>
         <b-card-text>German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).</b-card-text>
 
-        <b-button href="https://pherechner.de/" target="_blank" variant="primary">
+        <b-button squared href="https://pherechner.de/" target="_blank" variant="primary">
           Website
           <b-icon icon="box-arrow-up-right"></b-icon>
         </b-button>
@@ -26,7 +30,7 @@
         <b-card-title>PKU Manager</b-card-title>
         <b-card-text>English PKU app for searching, calculating and tracking food (~ 2018).</b-card-text>
 
-        <b-button href="https://pkumanager.com/" target="_blank" variant="primary">
+        <b-button squared href="https://pkumanager.com/" target="_blank" variant="primary">
           Website
           <b-icon icon="box-arrow-up-right"></b-icon>
         </b-button>
@@ -36,7 +40,7 @@
         <b-card-title>Simple Nutrition Calculator</b-card-title>
         <b-card-text>General purpose app for calculating with any nutrient (~ 2019).</b-card-text>
 
-        <b-button href="https://simple-nutrition-calculator.com/" target="_blank" variant="primary">
+        <b-button squared href="https://simple-nutrition-calculator.com/" target="_blank" variant="primary">
           Website
           <b-icon icon="box-arrow-up-right"></b-icon>
         </b-button>
@@ -44,3 +48,13 @@
     </b-card-group>
   </div>
 </template>
+
+<script>
+import AnnounceKit from "announcekit-vue";
+
+export default {
+  components: {
+    AnnounceKit
+  }
+};
+</script>
