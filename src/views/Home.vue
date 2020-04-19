@@ -4,8 +4,8 @@
 
     <hr class="mb-4" />
 
-    <b-button squared to="/supplement-counter" variant="primary" class="mr-2">Supplement Counter</b-button>
-    <b-button squared to="/calculator" variant="primary" class="mr-2">Calculator</b-button>
-    <b-button squared disabled>More in progress</b-button>
+    <b-button squared to="/supplement-counter" variant="primary" class="mr-2 mb-2">Supplement Counter</b-button>
+    <b-button squared to="/calculator" variant="primary" class="mr-2 mb-2">Calculator</b-button>
+    <b-button squared disabled class="mr-2 mb-2">More in progress</b-button>
   </div>
 </template>
