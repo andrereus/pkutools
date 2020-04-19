@@ -16,5 +16,38 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <!-- AnnounceKit -->
+    <script>
+      window.announcekit = window.announcekit || {
+        queue: [],
+        on: function(n, x) {
+          window.announcekit.queue.push([n, x]);
+        },
+        push: function(x) {
+          window.announcekit.queue.push(x);
+        }
+      };
+      window.announcekit.push({
+        widget: "https://announcekit.app/widget/4iQAyQ",
+        version: 2
+      });
+    </script>
+    <script async src="https://cdn.announcekit.app/widget.js"></script>
+    <!-- Hotjar -->
+    <script>
+      (function(h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function() {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 1775042, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </body>
 </html>
