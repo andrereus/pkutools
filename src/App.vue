@@ -19,6 +19,7 @@
               <b-dropdown-item to="/calculator">Calculator</b-dropdown-item>
             </b-nav-item-dropdown>
 
+            <b-nav-item to="/apps">Apps</b-nav-item>
             <b-nav-item to="/about">About</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
