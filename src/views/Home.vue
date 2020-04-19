@@ -6,10 +6,6 @@
 
     <b-button squared to="/supplement-counter" variant="primary" class="mr-2">Supplement Counter</b-button>
     <b-button squared to="/calculator" variant="primary" class="mr-2">Calculator</b-button>
-    <b-button squared class="ak-trigger" variant="outline-dark">
-      News
-      <AnnounceKit catchClick=".ak-trigger" widget="https://announcekit.app/widget/4iQAyQ" />
-    </b-button>
 
     <h2 class="mt-5 mb-4">Apps</h2>
 
@@ -48,13 +44,3 @@
     </b-card-group>
   </div>
 </template>
-
-<script>
-import AnnounceKit from "announcekit-vue";
-
-export default {
-  components: {
-    AnnounceKit
-  }
-};
-</script>
