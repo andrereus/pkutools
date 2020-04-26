@@ -9,6 +9,7 @@
     <v-btn v-on:click="count = 0">Reset</v-btn>
 
     <br />
+    <br />
 
     <label for="amount-input">Amount of supplements per day</label>
     <v-text-field id="amount-input" v-model="max" type="number"></v-text-field>

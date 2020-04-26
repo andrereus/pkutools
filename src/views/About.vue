@@ -1,8 +1,10 @@
 <template>
   <div>
     <h2>About</h2>
+
     <p>Tools and apps for phenylketonuria.</p>
     <p>Author: André Reus</p>
+
     <!-- prettier-ignore -->
     <p>Email: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
   </div>
