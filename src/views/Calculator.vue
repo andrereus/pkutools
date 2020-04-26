@@ -1,14 +1,14 @@
 <template>
   <div>
-    <h2 class="my-4">Calculator</h2>
+    <h2>Calculator</h2>
 
     <label for="phe">Phe per 100g (in mg)</label>
-    <b-form-input id="phe" v-model="phe" type="number" class="mb-3"></b-form-input>
+    <v-text-field id="phe" v-model="phe" type="number"></v-text-field>
 
     <label for="weight">Weight (in g)</label>
-    <b-form-input id="weight" v-model="weight" type="number" class="mb-3"></b-form-input>
+    <v-text-field id="weight" v-model="weight" type="number"></v-text-field>
 
-    <p class="font-weight-bold">= {{ (weight * phe) / 100 }} mg Phe</p>
+    <p>= {{ (weight * phe) / 100 }} mg Phe</p>
   </div>
 </template>
 

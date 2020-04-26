@@ -1,11 +1,8 @@
 <template>
   <div>
-    <h2 class="my-4">Tools</h2>
-
-    <hr class="mb-4" />
-
-    <b-button squared to="/supplement-counter" variant="primary" class="mr-2 mb-2">Supplement Counter</b-button>
-    <b-button squared to="/calculator" variant="primary" class="mr-2 mb-2">Calculator</b-button>
-    <b-button squared disabled class="mr-2 mb-2">More in progress</b-button>
+    <h2>Tools</h2>
+    <v-btn to="/supplement-counter" color="primary">Supplement Counter</v-btn>
+    <v-btn to="/calculator" color="primary">Calculator</v-btn>
+    <v-btn disabled>More in progress</v-btn>
   </div>
 </template>
