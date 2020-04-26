@@ -1,39 +1,44 @@
 <template>
   <div>
-    <h2 class="my-4">Apps</h2>
+    <h2>Apps</h2>
 
-    <hr class="mb-4" />
+    <v-card max-width="400">
+      <v-img src="../assets/pherechner-app.png" alt="Phe Rechner App"></v-img>
+      <v-card-title>Phe Rechner</v-card-title>
 
-    <b-card-group deck>
-      <b-card img-src="../assets/pherechner-app.png" img-alt="Phe Rechner App" img-top>
-        <b-card-title>Phe Rechner</b-card-title>
-        <b-card-text>German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).</b-card-text>
+      <v-card-text>
+        <div>German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).</div>
+      </v-card-text>
 
-        <b-button squared href="https://pherechner.de/" target="_blank" variant="primary">
-          Website
-          <b-icon icon="box-arrow-up-right"></b-icon>
-        </b-button>
-      </b-card>
+      <v-card-actions>
+        <v-btn text href="https://pherechner.de/" target="_blank">Website</v-btn>
+      </v-card-actions>
+    </v-card>
 
-      <b-card img-src="../assets/pkumanager-app.png" img-alt="PKU Manager App" img-top>
-        <b-card-title>PKU Manager</b-card-title>
-        <b-card-text>English PKU app for searching, calculating and tracking food (~ 2018).</b-card-text>
+    <v-card max-width="400">
+      <v-img src="../assets/pkumanager-app.png" alt="PKU Manager App"></v-img>
+      <v-card-title>PKU Manager</v-card-title>
 
-        <b-button squared href="https://pkumanager.com/" target="_blank" variant="primary">
-          Website
-          <b-icon icon="box-arrow-up-right"></b-icon>
-        </b-button>
-      </b-card>
+      <v-card-text>
+        <div>English PKU app for searching, calculating and tracking food (~ 2018).</div>
+      </v-card-text>
 
-      <b-card img-src="../assets/simple-nutrition-calculator-app.png" img-alt="Simple Nutrition Calculator App" img-top>
-        <b-card-title>Simple Nutrition Calculator</b-card-title>
-        <b-card-text>General purpose app for calculating with any nutrient (~ 2019).</b-card-text>
+      <v-card-actions>
+        <v-btn text href="https://pkumanager.com/" target="_blank">Website</v-btn>
+      </v-card-actions>
+    </v-card>
 
-        <b-button squared href="https://simple-nutrition-calculator.com/" target="_blank" variant="primary">
-          Website
-          <b-icon icon="box-arrow-up-right"></b-icon>
-        </b-button>
-      </b-card>
-    </b-card-group>
+    <v-card max-width="400">
+      <v-img src="../assets/simple-nutrition-calculator-app.png" alt="Simple Nutrition Calculator App"></v-img>
+      <v-card-title>Simple Nutrition Calculator</v-card-title>
+
+      <v-card-text>
+        <div>General purpose app for calculating with any nutrient (~ 2019).</div>
+      </v-card-text>
+
+      <v-card-actions>
+        <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">Website</v-btn>
+      </v-card-actions>
+    </v-card>
   </div>
 </template>
