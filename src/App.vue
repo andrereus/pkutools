@@ -31,17 +31,3 @@
     </b-container>
   </div>
 </template>
-
-<style lang="scss">
-// Imported first
-@import "assets/custom-vars.scss";
-
-@import "~bootstrap/scss/bootstrap.scss";
-@import "~bootstrap-vue/src/index.scss";
-
-.logo {
-  width: 30px;
-  margin-top: -5px;
-  margin-right: 5px;
-}
-</style>
