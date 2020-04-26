@@ -1,33 +1,52 @@
 <template>
-  <div id="app">
-    <b-navbar toggleable="sm" type="dark" variant="dark">
-      <b-container>
-        <b-navbar-brand to="/">
-          <img src="./assets/pkutools-logo.png" class="logo" alt="PKU Tools Logo" />
-          PKU Tools
-        </b-navbar-brand>
-        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  <v-app>
+    <v-app-bar app color="primary" dark>
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
 
-        <b-collapse id="nav-collapse" is-nav>
-          <b-navbar-nav class="ml-auto">
-            <b-nav-item to="/">Home</b-nav-item>
+        <v-img
+          alt="Vuetify Name"
+          class="shrink mt-1 hidden-sm-and-down"
+          contain
+          min-width="100"
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
+          width="100"
+        />
+      </div>
 
-            <b-nav-item-dropdown right>
-              <template v-slot:button-content>Tools</template>
+      <v-spacer></v-spacer>
 
-              <b-dropdown-item to="/supplement-counter">Supplement Counter</b-dropdown-item>
-              <b-dropdown-item to="/calculator">Calculator</b-dropdown-item>
-            </b-nav-item-dropdown>
+      <v-btn href="https://github.com/vuetifyjs/vuetify/releases/latest" target="_blank" text>
+        <span class="mr-2">Latest Release</span>
+        <v-icon>mdi-open-in-new</v-icon>
+      </v-btn>
+    </v-app-bar>
 
-            <b-nav-item to="/apps">Apps</b-nav-item>
-            <b-nav-item to="/about">About</b-nav-item>
-          </b-navbar-nav>
-        </b-collapse>
-      </b-container>
-    </b-navbar>
-
-    <b-container>
-      <router-view />
-    </b-container>
-  </div>
+    <v-content>
+      <HelloWorld />
+    </v-content>
+  </v-app>
 </template>
+
+<script>
+import HelloWorld from "./components/HelloWorld";
+
+export default {
+  name: "App",
+
+  components: {
+    HelloWorld
+  },
+
+  data: () => ({
+    //
+  })
+};
+</script>
