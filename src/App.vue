@@ -26,6 +26,14 @@
             <v-list-item-title>Calculator</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <v-list-item link to="/apps">
+          <v-list-item-action>
+            <v-icon>mdi-apps</v-icon>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title>Apps</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item link to="/about">
           <v-list-item-action>
             <v-icon>mdi-information</v-icon>
