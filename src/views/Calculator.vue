@@ -1,14 +1,17 @@
 <template>
   <div>
-    <h2>Calculator</h2>
+    <h2 class="headline mt-2 mb-6">Calculator</h2>
 
-    <label for="phe">Phe per 100g (in mg)</label>
-    <v-text-field id="phe" v-model="phe" type="number"></v-text-field>
+    <v-container fluid>
+      <v-row dense>
+        <v-col cols="12" sm="10" md="8" lg="6" xl="4">
+          <v-text-field outlined label="Phe per 100g (in mg)" v-model="phe" type="number"></v-text-field>
+          <v-text-field outlined label="Weight (in g)" v-model="weight" type="number"></v-text-field>
+        </v-col>
+      </v-row>
+    </v-container>
 
-    <label for="weight">Weight (in g)</label>
-    <v-text-field id="weight" v-model="weight" type="number"></v-text-field>
-
-    <p>= {{ (weight * phe) / 100 }} mg Phe</p>
+    <p class="title font-weight-light mt-n1 ml-3">= {{ (weight * phe) / 100 }} mg Phe</p>
   </div>
 </template>
 

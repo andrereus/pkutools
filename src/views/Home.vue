@@ -1,11 +1,9 @@
 <template>
   <div>
-    <v-alert type="warning">Design changes currently in progress.</v-alert>
+    <h2 class="headline mt-2 mb-3">Tools</h2>
 
-    <h2>Tools</h2>
-
-    <v-btn to="/supplement-counter" color="primary">Supplement Counter</v-btn>
-    <v-btn to="/calculator" color="primary">Calculator</v-btn>
-    <v-btn disabled>More in progress</v-btn>
+    <v-btn depressed to="/supplement-counter" color="primary" class="mr-3 mt-3">Supplement Counter</v-btn>
+    <v-btn depressed to="/calculator" color="primary" class="mr-3 mt-3">Calculator</v-btn>
+    <v-btn disabled class="mt-3">More in progress</v-btn>
   </div>
 </template>

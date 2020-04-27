@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>About</h2>
+    <h2 class="headline mt-2 mb-6">About</h2>
 
     <p>Tools and apps for phenylketonuria.</p>
     <p>Author: André Reus</p>
