@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-6">Supplement Counter</h2>
+    <h2 class="headline mt-2 mb-6">Amino Counter</h2>
 
     <v-container fluid>
       <v-row dense>
@@ -43,19 +43,19 @@ export default {
     };
   },
   mounted() {
-    if (localStorage.supplementCounterCount) {
-      this.count = localStorage.supplementCounterCount;
+    if (localStorage.aminoCounterCount) {
+      this.count = localStorage.aminoCounterCount;
     }
-    if (localStorage.supplementCounterMax) {
-      this.max = localStorage.supplementCounterMax;
+    if (localStorage.aminoCounterMax) {
+      this.max = localStorage.aminoCounterMax;
     }
   },
   watch: {
     count(newCount) {
-      localStorage.supplementCounterCount = newCount;
+      localStorage.aminoCounterCount = newCount;
     },
     max(newMax) {
-      localStorage.supplementCounterMax = newMax;
+      localStorage.aminoCounterMax = newMax;
     }
   }
 };

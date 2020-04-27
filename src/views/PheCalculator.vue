@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-6">Calculator</h2>
+    <h2 class="headline mt-2 mb-6">Phe Calculator</h2>
 
     <v-container fluid>
       <v-row dense>

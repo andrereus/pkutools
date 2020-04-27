@@ -24,14 +24,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "apps" */ "../views/Apps.vue")
   },
   {
-    path: "/supplement-counter",
-    name: "Supplement Counter",
-    component: () => import(/* webpackChunkName: "supplement-counter" */ "../views/SupplementCounter.vue")
+    path: "/amino-counter",
+    name: "Amino Counter",
+    component: () => import(/* webpackChunkName: "amino-counter" */ "../views/AminoCounter.vue")
   },
   {
-    path: "/calculator",
-    name: "Calculator",
-    component: () => import(/* webpackChunkName: "calculator" */ "../views/Calculator.vue")
+    path: "/phe-calculator",
+    name: "Phe Calculator",
+    component: () => import(/* webpackChunkName: "phe-calculator" */ "../views/PheCalculator.vue")
   }
 ];
 
