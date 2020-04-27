@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer v-model="drawer" app dark clipped>
+    <v-navigation-drawer app clipped v-model="drawer">
       <v-list dense>
         <v-list-item link to="/">
           <v-list-item-action>
@@ -54,8 +54,9 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app dark flat clipped-left>
+    <v-app-bar app clipped-left dark>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
       <v-toolbar-title>PKU Tools</v-toolbar-title>
     </v-app-bar>
 
