@@ -2,7 +2,7 @@
   <v-app>
     <v-navigation-drawer app clipped v-model="drawer">
       <v-list>
-        <v-list-item link to="/">
+        <v-list-item to="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
           </v-list-item-action>
@@ -12,7 +12,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link to="/amino-counter">
+        <v-list-item to="/amino-counter">
           <v-list-item-action>
             <v-icon>mdi-timer</v-icon>
           </v-list-item-action>
@@ -22,7 +22,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link to="/phe-calculator">
+        <v-list-item to="/phe-calculator">
           <v-list-item-action>
             <v-icon>mdi-calculator</v-icon>
           </v-list-item-action>
@@ -32,7 +32,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link to="/apps">
+        <v-list-item to="/apps">
           <v-list-item-action>
             <v-icon>mdi-apps</v-icon>
           </v-list-item-action>
@@ -42,7 +42,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link to="/about">
+        <v-list-item to="/about">
           <v-list-item-action>
             <v-icon>mdi-information</v-icon>
           </v-list-item-action>
@@ -53,7 +53,7 @@
         </v-list-item>
 
         <v-list-item>
-          <v-switch v-model="dark" primary label="Dark mode" />
+          <v-switch v-model="dark" label="Dark mode" />
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -65,7 +65,7 @@
     </v-app-bar>
 
     <v-content>
-      <v-container fluid>
+      <v-container>
         <router-view></router-view>
       </v-container>
     </v-content>
