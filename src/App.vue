@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer app clipped v-model="drawer">
-      <v-list dense>
+      <v-list>
         <v-list-item link to="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
@@ -51,6 +51,10 @@
             <v-list-item-title>About</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item>
+          <v-switch v-model="dark" primary label="Dark mode" />
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -71,7 +75,20 @@
 <script>
 export default {
   data: () => ({
-    drawer: null
-  })
+    drawer: null,
+    dark: false
+  }),
+  mounted() {
+    if (localStorage.vuetifyThemeDark) {
+      this.dark = JSON.parse(localStorage.vuetifyThemeDark);
+      this.$vuetify.theme.dark = this.dark;
+    }
+  },
+  watch: {
+    dark(newDark) {
+      localStorage.vuetifyThemeDark = JSON.stringify(newDark);
+      this.$vuetify.theme.dark = newDark;
+    }
+  }
 };
 </script>

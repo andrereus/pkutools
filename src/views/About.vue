@@ -12,13 +12,11 @@
 
 <script>
 export default {
-  data: function() {
-    return {
-      part1: "heypku",
-      part2: "gmail",
-      part3: "com"
-    };
-  }
+  data: () => ({
+    part1: "heypku",
+    part2: "gmail",
+    part3: "com"
+  })
 };
 </script>
 

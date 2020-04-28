@@ -5,8 +5,8 @@
     <v-container fluid>
       <v-row dense>
         <v-col cols="12" sm="10" md="8" lg="6" xl="4">
-          <v-text-field outlined label="Phe per 100g (in mg)" v-model="phe" type="number"></v-text-field>
-          <v-text-field outlined label="Weight (in g)" v-model="weight" type="number"></v-text-field>
+          <v-text-field outlined label="Phe per 100g (in mg)" v-model.number="phe" type="number"></v-text-field>
+          <v-text-field outlined label="Weight (in g)" v-model.number="weight" type="number"></v-text-field>
         </v-col>
       </v-row>
     </v-container>
@@ -17,11 +17,9 @@
 
 <script>
 export default {
-  data: function() {
-    return {
-      phe: null,
-      weight: null
-    };
-  }
+  data: () => ({
+    phe: null,
+    weight: null
+  })
 };
 </script>

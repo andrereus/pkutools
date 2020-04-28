@@ -5,7 +5,7 @@
     <v-container fluid>
       <v-row dense>
         <v-col cols="12" sm="10" md="8" lg="6" xl="4">
-          <v-progress-linear :value="(count * 100) / 3" height="35" class="white--text">
+          <v-progress-linear :value="(count * 100) / max" height="35" class="white--text">
             I took {{ count }} of {{ max }} supplements today
           </v-progress-linear>
         </v-col>
@@ -24,7 +24,7 @@
             outlined
             dense
             label="Amount of supplements per day"
-            v-model="max"
+            v-model.number="max"
             type="number"
             class="mt-3"
           ></v-text-field>
@@ -36,26 +36,24 @@
 
 <script>
 export default {
-  data: function() {
-    return {
-      count: 0,
-      max: 3
-    };
-  },
+  data: () => ({
+    count: 0,
+    max: 3
+  }),
   mounted() {
     if (localStorage.aminoCounterCount) {
-      this.count = localStorage.aminoCounterCount;
+      this.count = JSON.parse(localStorage.aminoCounterCount);
     }
     if (localStorage.aminoCounterMax) {
-      this.max = localStorage.aminoCounterMax;
+      this.max = JSON.parse(localStorage.aminoCounterMax);
     }
   },
   watch: {
     count(newCount) {
-      localStorage.aminoCounterCount = newCount;
+      localStorage.aminoCounterCount = JSON.stringify(newCount);
     },
     max(newMax) {
-      localStorage.aminoCounterMax = newMax;
+      localStorage.aminoCounterMax = JSON.stringify(newMax);
     }
   }
 };
