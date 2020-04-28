@@ -53,7 +53,7 @@
         </v-list-item>
 
         <v-list-item>
-          <v-switch v-model="dark" label="Dark mode" />
+          <v-switch v-model="dark" label="Dark Mode" />
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
