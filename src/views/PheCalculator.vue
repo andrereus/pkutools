@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-6">Phe Calculator</h2>
+    <h2 class="headline mt-2 mb-4">Phe Calculator</h2>
+
+    <v-divider class="mb-3"></v-divider>
 
     <v-row>
       <v-col cols="12" sm="10" md="8" lg="6" xl="4">

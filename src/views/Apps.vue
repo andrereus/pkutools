@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-3">Apps</h2>
+    <h2 class="headline mt-2 mb-4">Apps</h2>
+
+    <v-divider class="mb-3"></v-divider>
 
     <v-row>
       <v-col cols="12" sm="6" md="4" lg="3">
