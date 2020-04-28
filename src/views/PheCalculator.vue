@@ -11,7 +11,7 @@
       </v-col>
     </v-row>
 
-    <p class="title font-weight-light mt-n2">= {{ (weight * phe) / 100 }} mg Phe</p>
+    <p class="title font-weight-light mt-n4">= {{ (weight * phe) / 100 }} mg Phe</p>
   </div>
 </template>
 
