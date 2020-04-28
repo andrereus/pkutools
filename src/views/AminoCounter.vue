@@ -4,7 +4,7 @@
 
     <v-divider class="mb-3"></v-divider>
 
-    <v-row>
+    <v-row class="mb-1">
       <v-col cols="12" sm="10" md="8" lg="6" xl="4">
         <v-text-field outlined label="Amount of supplements per day" v-model.number="max" type="number"></v-text-field>
 
