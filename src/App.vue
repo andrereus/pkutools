@@ -64,7 +64,7 @@
       <v-toolbar-title>PKU Tools</v-toolbar-title>
     </v-app-bar>
 
-    <v-content class="mx-2">
+    <v-content class="mx-sm-2">
       <v-container fluid>
         <router-view></router-view>
       </v-container>
