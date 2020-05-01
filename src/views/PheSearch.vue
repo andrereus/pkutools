@@ -6,7 +6,7 @@
 
     <v-row>
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-text-field v-model="search" append-icon="mdi-magnify" label="Search" outlined></v-text-field>
+        <v-text-field v-model="search" append-icon="mdi-magnify" label="Search" hide-details outlined></v-text-field>
 
         <v-data-table
           :headers="headers"
