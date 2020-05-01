@@ -32,6 +32,16 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item to="/phe-search">
+          <v-list-item-action>
+            <v-icon>mdi-magnify</v-icon>
+          </v-list-item-action>
+
+          <v-list-item-content>
+            <v-list-item-title>Phe Search</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item to="/apps">
           <v-list-item-action>
             <v-icon>mdi-apps</v-icon>

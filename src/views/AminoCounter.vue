@@ -5,7 +5,7 @@
     <v-divider class="mb-3"></v-divider>
 
     <v-row class="mb-1">
-      <v-col cols="12" sm="10" md="8" lg="6" xl="4">
+      <v-col cols="12" md="10" lg="8" xl="6">
         <v-text-field outlined label="Amount of supplements per day" v-model.number="max" type="number"></v-text-field>
 
         <v-progress-linear :value="(count * 100) / max" height="40" class="white--text">

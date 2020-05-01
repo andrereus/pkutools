@@ -32,6 +32,11 @@ const routes = [
     path: "/phe-calculator",
     name: "Phe Calculator",
     component: () => import(/* webpackChunkName: "phe-calculator" */ "../views/PheCalculator.vue")
+  },
+  {
+    path: "/phe-search",
+    name: "Phe Search",
+    component: () => import(/* webpackChunkName: "phe-search" */ "../views/PheSearch.vue")
   }
 ];
 

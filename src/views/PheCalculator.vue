@@ -5,7 +5,7 @@
     <v-divider class="mb-3"></v-divider>
 
     <v-row>
-      <v-col cols="12" sm="10" md="8" lg="6" xl="4">
+      <v-col cols="12" md="10" lg="8" xl="6">
         <v-text-field outlined label="Phe per 100g (in mg)" v-model.number="phe" type="number"></v-text-field>
         <v-text-field outlined label="Weight (in g)" v-model.number="weight" type="number"></v-text-field>
       </v-col>
