@@ -1,16 +1,22 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-4">About</h2>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8" xl="6">
+        <h2 class="headline">About</h2>
+      </v-col>
+    </v-row>
 
-    <v-divider class="mb-6"></v-divider>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8" xl="6">
+        <p>Tools and apps for phenylketonuria.</p>
+        <p>Author: André Reus</p>
 
-    <p>Tools and apps for phenylketonuria.</p>
-    <p>Author: André Reus</p>
+        <!-- prettier-ignore -->
+        <p>Email: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
 
-    <!-- prettier-ignore -->
-    <p>Email: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
-
-    <p>Food source: Common food from the USDA National Nutrient Database</p>
+        <p>Food source: Common food from the USDA National Nutrient Database</p>
+      </v-col>
+    </v-row>
   </div>
 </template>
 

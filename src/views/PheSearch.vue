@@ -1,10 +1,12 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-4">Phe Search</h2>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8" xl="6">
+        <h2 class="headline">Phe Search</h2>
+      </v-col>
+    </v-row>
 
-    <v-divider class="mb-3"></v-divider>
-
-    <v-row>
+    <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <!-- Text inputs need keyup on mobile -->
         <v-text-field

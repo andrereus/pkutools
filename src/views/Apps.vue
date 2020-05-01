@@ -1,10 +1,12 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-4">Apps</h2>
+    <v-row justify="center">
+      <v-col cols="12" lg="9">
+        <h2 class="headline">Apps</h2>
+      </v-col>
+    </v-row>
 
-    <v-divider class="mb-3"></v-divider>
-
-    <v-row>
+    <v-row justify="center">
       <v-col cols="12" sm="6" md="4" lg="3">
         <v-card max-width="400">
           <v-img src="../assets/pherechner-app.png" alt="Phe Rechner App"></v-img>

@@ -1,21 +1,23 @@
 <template>
   <div>
-    <h2 class="headline mt-2 mb-4">Amino Counter</h2>
-
-    <v-divider class="mb-3"></v-divider>
-
-    <v-row class="mb-1">
+    <v-row justify="center" class="mb-1">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-text-field outlined label="Amount of supplements per day" v-model.number="max" type="number"></v-text-field>
-
-        <v-progress-linear :value="(count * 100) / max" height="40" class="white--text">
-          I took {{ count }} of {{ max }} supplements today
-        </v-progress-linear>
+        <h2 class="headline">Amino Counter</h2>
       </v-col>
     </v-row>
 
-    <v-btn depressed @click="count++" color="primary" class="mr-3 mt-3">Take supplement</v-btn>
-    <v-btn depressed @click="count = 0" class="mt-3">Reset</v-btn>
+    <v-row justify="center">
+      <v-col cols="12" md="10" lg="8" xl="6">
+        <v-text-field outlined label="Amount of supplements per day" v-model.number="max" type="number"></v-text-field>
+
+        <v-progress-linear :value="(count * 100) / max" height="40" class="white--text mb-4">
+          I took {{ count }} of {{ max }} supplements today
+        </v-progress-linear>
+
+        <v-btn depressed @click="count++" color="primary" class="mr-3 mt-3">Take supplement</v-btn>
+        <v-btn depressed @click="count = 0" class="mt-3">Reset</v-btn>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
