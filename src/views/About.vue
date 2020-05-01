@@ -9,6 +9,8 @@
 
     <!-- prettier-ignore -->
     <p>Email: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
+
+    <p>Food source: Common food from the USDA National Nutrient Database</p>
   </div>
 </template>
 
