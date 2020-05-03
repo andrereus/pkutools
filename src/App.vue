@@ -12,55 +12,67 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item to="/amino-counter">
-          <v-list-item-action>
-            <v-icon>mdi-timer</v-icon>
-          </v-list-item-action>
+        <v-divider></v-divider>
 
-          <v-list-item-content>
-            <v-list-item-title>Amino Counter</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <v-list-item-group>
+          <v-list-item to="/phe-calculator">
+            <v-list-item-action>
+              <v-icon>mdi-calculator</v-icon>
+            </v-list-item-action>
 
-        <v-list-item to="/phe-calculator">
-          <v-list-item-action>
-            <v-icon>mdi-calculator</v-icon>
-          </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Phe Calculator</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
 
-          <v-list-item-content>
-            <v-list-item-title>Phe Calculator</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+          <v-list-item to="/phe-search">
+            <v-list-item-action>
+              <v-icon>mdi-magnify</v-icon>
+            </v-list-item-action>
 
-        <v-list-item to="/phe-search">
-          <v-list-item-action>
-            <v-icon>mdi-magnify</v-icon>
-          </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>Phe Search</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
 
-          <v-list-item-content>
-            <v-list-item-title>Phe Search</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <v-divider></v-divider>
 
-        <v-list-item to="/apps">
-          <v-list-item-action>
-            <v-icon>mdi-apps</v-icon>
-          </v-list-item-action>
+        <v-list-item-group>
+          <v-list-item to="/amino-counter">
+            <v-list-item-action>
+              <v-icon>mdi-timer</v-icon>
+            </v-list-item-action>
 
-          <v-list-item-content>
-            <v-list-item-title>Apps</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>Amino Counter</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
 
-        <v-list-item to="/about">
-          <v-list-item-action>
-            <v-icon>mdi-information</v-icon>
-          </v-list-item-action>
+        <v-divider></v-divider>
 
-          <v-list-item-content>
-            <v-list-item-title>About</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+        <v-list-item-group>
+          <v-list-item to="/apps">
+            <v-list-item-action>
+              <v-icon>mdi-apps</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>Apps</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item to="/about">
+            <v-list-item-action>
+              <v-icon>mdi-information</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>About</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
 
         <v-list-item>
           <v-switch v-model="dark" label="Dark Mode" />
