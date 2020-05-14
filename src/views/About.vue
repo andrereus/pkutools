@@ -9,12 +9,12 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("app.description") }}</p>
-        <p>Author: André Reus</p>
+        <p>{{ $t("about.author") }}: André Reus</p>
 
         <!-- prettier-ignore -->
-        <p>Email: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
+        <p>{{ $t("about.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
 
-        <p>Food source: Common food from the USDA National Nutrient Database</p>
+        <p>{{ $t("about.food-source") }}</p>
       </v-col>
     </v-row>
   </div>

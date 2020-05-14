@@ -13,7 +13,7 @@
           <v-card-title>Phe Rechner</v-card-title>
 
           <v-card-text>
-            <div>German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).</div>
+            <div>{{ $t("apps.phe-rechner") }}</div>
           </v-card-text>
 
           <v-card-actions>
@@ -28,7 +28,7 @@
           <v-card-title>PKU Manager</v-card-title>
 
           <v-card-text>
-            <div>English PKU app for searching, calculating and tracking food (~ 2018).</div>
+            <div>{{ $t("apps.pku-manager") }}</div>
           </v-card-text>
 
           <v-card-actions>
@@ -43,7 +43,7 @@
           <v-card-title>Simple Nutrition Calculator</v-card-title>
 
           <v-card-text>
-            <div>General purpose app for calculating with any nutrient (~ 2019).</div>
+            <div>{{ $t("apps.simple-nutrition-calculator") }}</div>
           </v-card-text>
 
           <v-card-actions>

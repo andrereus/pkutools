@@ -18,9 +18,15 @@
     "title": "Amino Counter"
   },
   "apps": {
-    "title": "Apps"
+    "title": "Apps",
+    "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",
+    "pku-manager": "English PKU app for searching, calculating and tracking food (~ 2018).",
+    "simple-nutrition-calculator": "General app for calculating any nutrient values (~ 2019)."
   },
   "about": {
-    "title": "About"
+    "title": "About",
+    "author": "Author",
+    "email": "Email",
+    "food-source": "Sources: Common food from the USDA National Nutrient Database"
   }
 }

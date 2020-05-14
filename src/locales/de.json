@@ -18,9 +18,15 @@
     "title": "Amino Zähler"
   },
   "apps": {
-    "title": "Apps"
+    "title": "Apps",
+    "phe-rechner": "Deutsche PKU App die Taschenrechner, Bleistift, Papier und Nährwerttabelle kombiniert (~ 2017).",
+    "pku-manager": "Englische PKU App zum Suchen, Berechnen und Tracken von Lebensmitteln (~ 2018).",
+    "simple-nutrition-calculator": "Allgemeine App zum Berechnen beliebiger Nährwerte (~ 2019)."
   },
   "about": {
-    "title": "Über"
+    "title": "Über",
+    "author": "Autor",
+    "email": "E-Mail",
+    "food-source": "Quellen: Allgemeine Lebensmittel von der USDA National Nutrient Database"
   }
 }
