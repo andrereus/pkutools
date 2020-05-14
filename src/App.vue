@@ -8,7 +8,7 @@
           </v-list-item-action>
 
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>{{ $t("home.title") }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -21,7 +21,7 @@
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>Phe Calculator</v-list-item-title>
+              <v-list-item-title>{{ $t("phe-calculator.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
@@ -31,7 +31,7 @@
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>Phe Search</v-list-item-title>
+              <v-list-item-title>{{ $t("phe-search.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -45,7 +45,7 @@
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>Amino Counter</v-list-item-title>
+              <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -59,7 +59,7 @@
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>Apps</v-list-item-title>
+              <v-list-item-title>{{ $t("apps.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
@@ -69,13 +69,19 @@
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>About</v-list-item-title>
+              <v-list-item-title>{{ $t("about.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
 
+        <v-divider></v-divider>
+
         <v-list-item>
           <v-switch v-model="dark" label="Dark Mode" />
+        </v-list-item>
+
+        <v-list-item>
+          <v-select :items="lang" outlined dense v-model="$i18n.locale"></v-select>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -98,7 +104,8 @@
 export default {
   data: () => ({
     drawer: null,
-    dark: false
+    dark: false,
+    lang: ["en", "de"]
   }),
   mounted() {
     if (localStorage.vuetifyThemeDark) {

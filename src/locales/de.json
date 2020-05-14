@@ -1,0 +1,26 @@
+{
+  "app": {
+    "title": "PKU Tools",
+    "description": "Tools und Apps für Phenylketonurie."
+  },
+  "home": {
+    "translation": "Deutsche Übersetzung ist noch in Bearbeitung.",
+    "title": "Startseite",
+    "progress": "Mehr in Bearbeitung"
+  },
+  "phe-calculator": {
+    "title": "Phe Rechner"
+  },
+  "phe-search": {
+    "title": "Phe Suche"
+  },
+  "amino-counter": {
+    "title": "Amino Zähler"
+  },
+  "apps": {
+    "title": "Apps"
+  },
+  "about": {
+    "title": "Über"
+  }
+}

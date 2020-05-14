@@ -1,0 +1,26 @@
+{
+  "app": {
+    "title": "PKU Tools",
+    "description": "Tools and apps for phenylketonuria."
+  },
+  "home": {
+    "translation": "German translation is still in progress.",
+    "title": "Home",
+    "progress": "More in progress"
+  },
+  "phe-calculator": {
+    "title": "Phe Calculator"
+  },
+  "phe-search": {
+    "title": "Phe Search"
+  },
+  "amino-counter": {
+    "title": "Amino Counter"
+  },
+  "apps": {
+    "title": "Apps"
+  },
+  "about": {
+    "title": "About"
+  }
+}

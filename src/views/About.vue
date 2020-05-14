@@ -2,13 +2,13 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline">About</h2>
+        <h2 class="headline">{{ $t("about.title") }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p>Tools and apps for phenylketonuria.</p>
+        <p>{{ $t("app.description") }}</p>
         <p>Author: André Reus</p>
 
         <!-- prettier-ignore -->

@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center" class="mb-1">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline">Amino Counter</h2>
+        <h2 class="headline">{{ $t("amino-counter.title") }}</h2>
       </v-col>
     </v-row>
 
