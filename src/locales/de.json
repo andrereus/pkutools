@@ -4,9 +4,9 @@
     "description": "Tools und Apps für die Phenylketonurie."
   },
   "home": {
-    "translation": "Deutsche Übersetzung ist noch in Bearbeitung.",
     "title": "Startseite",
-    "progress": "Mehr in Bearbeitung"
+    "progress": "Mehr in Bearbeitung",
+    "translation": "Deutsche Übersetzung ist noch in Bearbeitung."
   },
   "phe-calculator": {
     "title": "Phe Rechner"
@@ -27,6 +27,6 @@
     "title": "Über",
     "author": "Autor",
     "email": "E-Mail",
-    "food-source": "Quellen: Allgemeine Lebensmittel von der USDA National Nutrient Database"
+    "sources": "Quellen: Allgemeine Lebensmittel von der USDA National Nutrient Database"
   }
 }

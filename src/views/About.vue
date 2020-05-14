@@ -14,7 +14,7 @@
         <!-- prettier-ignore -->
         <p>{{ $t("about.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
 
-        <p>{{ $t("about.food-source") }}</p>
+        <p>{{ $t("about.sources") }}</p>
       </v-col>
     </v-row>
   </div>

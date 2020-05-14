@@ -4,9 +4,9 @@
     "description": "Tools and apps for phenylketonuria."
   },
   "home": {
-    "translation": "German translation is still in progress.",
     "title": "Home",
-    "progress": "More in progress"
+    "progress": "More in progress",
+    "translation": "German translation is still in progress."
   },
   "phe-calculator": {
     "title": "Phe Calculator"
@@ -27,6 +27,6 @@
     "title": "About",
     "author": "Author",
     "email": "Email",
-    "food-source": "Sources: Common food from the USDA National Nutrient Database"
+    "sources": "Sources: Common food from the USDA National Nutrient Database"
   }
 }
