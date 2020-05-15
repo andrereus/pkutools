@@ -81,7 +81,7 @@
         </v-list-item>
 
         <v-list-item>
-          <v-select :items="lang" outlined dense v-model="$i18n.locale"></v-select>
+          <v-select v-model="$i18n.locale" :items="lang" item-text="name" item-value="abbr" outlined dense></v-select>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -105,7 +105,10 @@ export default {
   data: () => ({
     drawer: null,
     dark: false,
-    lang: ["en", "de"]
+    lang: [
+      { name: "English", abbr: "en" },
+      { name: "Deutsch", abbr: "de" }
+    ]
   }),
   mounted() {
     if (localStorage.vuetifyThemeDark) {
