@@ -13,7 +13,7 @@
           :value="search"
           @keyup="search = $event.target.value"
           append-icon="mdi-magnify"
-          label="Search in English"
+          label="Search (English)"
           outlined
         ></v-text-field>
 
