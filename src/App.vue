@@ -37,7 +37,7 @@
         <v-list-item-group>
           <v-list-item to="/amino-counter">
             <v-list-item-action>
-              <v-icon>mdi-timer</v-icon>
+              <v-icon>mdi-cup</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -106,7 +106,7 @@
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter">
-        <v-icon>mdi-timer</v-icon>
+        <v-icon>mdi-cup</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </v-app>
