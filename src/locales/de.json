@@ -20,9 +20,10 @@
   },
   "amino-counter": {
     "title": "Amino Zähler",
-    "amount": "Aminos pro Tag",
-    "progress": "{count} von {max} Aminos heute",
-    "take": "Amino nehmen",
+    "description": "Zähle deine tägliche Einnahme der Aminosäuremischung (kurz AM).",
+    "amount": "AM pro Tag",
+    "progress": "{count} von {max} AM heute",
+    "take": "AM nehmen",
     "reset": "Reset"
   },
   "apps": {

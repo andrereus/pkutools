@@ -20,9 +20,10 @@
   },
   "amino-counter": {
     "title": "Amino Counter",
-    "amount": "Aminos per day",
-    "progress": "{count} of {max} aminos today",
-    "take": "Take amino",
+    "description": "Count your daily intake of the amino acid mixture (short AM).",
+    "amount": "AM per day",
+    "progress": "{count} of {max} AM today",
+    "take": "Take AM",
     "reset": "Reset"
   },
   "apps": {

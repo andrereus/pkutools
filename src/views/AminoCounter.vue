@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row justify="center" class="mb-1">
+    <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <h2 class="headline">{{ $t("amino-counter.title") }}</h2>
       </v-col>
@@ -8,7 +8,16 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-text-field outlined :label="$t('amino-counter.amount')" v-model.number="max" type="number"></v-text-field>
+        <p>{{ $t("amino-counter.description") }}</p>
+
+        <v-text-field
+          dense
+          outlined
+          :label="$t('amino-counter.amount')"
+          v-model.number="max"
+          type="number"
+          class="mt-8"
+        ></v-text-field>
 
         <v-progress-linear :value="(count * 100) / max" height="40" class="white--text mb-4">
           {{ $t("amino-counter.progress", { count, max }) }}
