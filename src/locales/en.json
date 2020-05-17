@@ -5,8 +5,8 @@
   },
   "home": {
     "title": "Home",
-    "progress": "More in progress",
-    "translation": "German translation is still in progress."
+    "translation": "German translation is still in progress.",
+    "progress": "More in progress"
   },
   "phe-calculator": {
     "title": "Phe Calculator"
@@ -21,10 +21,12 @@
     "title": "Apps",
     "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",
     "pku-manager": "English PKU app for searching, calculating and tracking food (~ 2018).",
-    "simple-nutrition-calculator": "General app for calculating any nutrient values (~ 2019)."
+    "simple-nutrition-calculator": "General app for calculating any nutrient values (~ 2019).",
+    "link": "Website"
   },
   "about": {
     "title": "About",
+    "install": "You can install this app on any device by adding it to the home screen.",
     "author": "Author",
     "email": "Email",
     "sources": "Sources: Common food from the USDA National Nutrient Database"

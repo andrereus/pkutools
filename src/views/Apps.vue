@@ -17,7 +17,7 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://pherechner.de/" target="_blank">Website</v-btn>
+            <v-btn text href="https://pherechner.de/" target="_blank">{{ $t("apps.link") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -32,7 +32,7 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://pkumanager.com/" target="_blank">Website</v-btn>
+            <v-btn text href="https://pkumanager.com/" target="_blank">{{ $t("apps.link") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -47,7 +47,7 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">Website</v-btn>
+            <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">{{ $t("apps.link") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>

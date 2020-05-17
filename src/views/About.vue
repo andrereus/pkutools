@@ -9,6 +9,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("app.description") }}</p>
+        <p>{{ $t("about.install") }}</p>
         <p>{{ $t("about.author") }}: André Reus</p>
 
         <!-- prettier-ignore -->
