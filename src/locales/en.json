@@ -1,7 +1,8 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Tools and apps for phenylketonuria."
+    "description": "Tools and apps for phenylketonuria.",
+    "darkmode": "Dark Mode"
   },
   "home": {
     "title": "Home",

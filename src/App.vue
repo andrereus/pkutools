@@ -77,7 +77,7 @@
         <v-divider></v-divider>
 
         <v-list-item>
-          <v-switch v-model="dark" label="Dark Mode" />
+          <v-switch v-model="dark" :label="$t('app.darkmode')" />
         </v-list-item>
 
         <v-list-item>

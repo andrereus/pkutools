@@ -1,7 +1,8 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Tools und Apps für die Phenylketonurie."
+    "description": "Tools und Apps für die Phenylketonurie.",
+    "darkmode": "Dunkler Modus"
   },
   "home": {
     "title": "Startseite",
