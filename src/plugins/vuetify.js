@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
-import i18n from "../i18n";
+import i18n from "./i18n";
 import en from "vuetify/es5/locale/en";
 import de from "vuetify/es5/locale/de";
 
