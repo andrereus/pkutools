@@ -20,7 +20,7 @@
   "amino-counter": {
     "title": "Amino Counter",
     "amount": "Aminos per day",
-    "progress": "I took {count} of {max} aminos today",
+    "progress": "{count} of {max} aminos today",
     "take": "Take amino",
     "reset": "Reset"
   },

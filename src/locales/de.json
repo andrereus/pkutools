@@ -20,7 +20,7 @@
   "amino-counter": {
     "title": "Amino Zähler",
     "amount": "Aminos pro Tag",
-    "progress": "Ich habe heute {count} von {max} Aminos genommen",
+    "progress": "{count} von {max} Aminos heute",
     "take": "Amino nehmen",
     "reset": "Reset"
   },
