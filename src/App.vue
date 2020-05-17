@@ -128,6 +128,7 @@ export default {
         return this.$i18n.locale;
       },
       set: function(newLocale) {
+        localStorage.i18nCurrentLocale = JSON.stringify(newLocale);
         this.$i18n.locale = newLocale;
         this.$vuetify.lang.current = newLocale;
       }
