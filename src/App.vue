@@ -12,8 +12,6 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-divider></v-divider>
-
         <v-list-item-group>
           <v-list-item to="/phe-calculator">
             <v-list-item-action>
@@ -35,8 +33,6 @@
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
-
-        <v-divider></v-divider>
 
         <v-list-item-group>
           <v-list-item to="/amino-counter">
@@ -74,8 +70,6 @@
           </v-list-item>
         </v-list-item-group>
 
-        <v-divider></v-divider>
-
         <v-list-item>
           <v-switch v-model="dark" :label="$t('app.darkmode')" />
         </v-list-item>
@@ -97,6 +91,24 @@
         <router-view></router-view>
       </v-container>
     </v-content>
+
+    <v-bottom-navigation app v-model="bottomNav" class="d-lg-none">
+      <v-btn to="/" value="home">
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-calculator" value="phe-calculator">
+        <v-icon>mdi-calculator</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-search" value="phe-search">
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-btn to="/amino-counter" value="amino-counter">
+        <v-icon>mdi-timer</v-icon>
+      </v-btn>
+    </v-bottom-navigation>
   </v-app>
 </template>
 
@@ -108,7 +120,8 @@ export default {
     lang: [
       { name: "English", abbr: "en" },
       { name: "Deutsch", abbr: "de" }
-    ]
+    ],
+    bottomNav: ""
   }),
   mounted() {
     if (localStorage.vuetifyThemeDark) {
