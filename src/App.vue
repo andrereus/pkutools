@@ -81,7 +81,7 @@
         </v-list-item>
 
         <v-list-item>
-          <v-select v-model="$i18n.locale" :items="lang" item-text="name" item-value="abbr" outlined dense></v-select>
+          <v-select v-model="locale" :items="lang" item-text="name" item-value="abbr" outlined dense></v-select>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -120,6 +120,17 @@ export default {
     dark(newDark) {
       localStorage.vuetifyThemeDark = JSON.stringify(newDark);
       this.$vuetify.theme.dark = newDark;
+    }
+  },
+  computed: {
+    locale: {
+      get: function() {
+        return this.$i18n.locale;
+      },
+      set: function(newLocale) {
+        this.$i18n.locale = newLocale;
+        this.$vuetify.lang.current = newLocale;
+      }
     }
   }
 };
