@@ -8,8 +8,6 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense type="warning" class="mb-7">{{ $t("home.translation") }}</v-alert>
-
         <p>{{ $t("app.description") }}</p>
 
         <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mt-3">{{ $t("phe-calculator.title") }}</v-btn>

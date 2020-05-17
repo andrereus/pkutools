@@ -8,14 +8,14 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-text-field outlined label="Amount of supplements per day" v-model.number="max" type="number"></v-text-field>
+        <v-text-field outlined :label="$t('amino-counter.amount')" v-model.number="max" type="number"></v-text-field>
 
         <v-progress-linear :value="(count * 100) / max" height="40" class="white--text mb-4">
-          I took {{ count }} of {{ max }} supplements today
+          {{ $t("amino-counter.progress", { count, max }) }}
         </v-progress-linear>
 
-        <v-btn depressed @click="count++" color="primary" class="mr-3 mt-3">Take supplement</v-btn>
-        <v-btn depressed @click="count = 0" class="mt-3">Reset</v-btn>
+        <v-btn depressed @click="count++" color="primary" class="mr-3 mt-3">{{ $t("amino-counter.take") }}</v-btn>
+        <v-btn depressed @click="count = 0" class="mt-3">{{ $t("amino-counter.reset") }}</v-btn>
       </v-col>
     </v-row>
   </div>

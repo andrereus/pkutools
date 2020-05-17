@@ -9,13 +9,20 @@
     "progress": "More in progress"
   },
   "phe-calculator": {
-    "title": "Phe Calculator"
+    "title": "Phe Calculator",
+    "phe": "Phe per 100g (in mg)",
+    "weight": "Weight (in g)"
   },
   "phe-search": {
-    "title": "Phe Search"
+    "title": "Phe Search",
+    "info": "Search currently only in english."
   },
   "amino-counter": {
-    "title": "Amino Counter"
+    "title": "Amino Counter",
+    "amount": "Aminos per day",
+    "progress": "I took {count} of {max} aminos today",
+    "take": "Take amino",
+    "reset": "Reset"
   },
   "apps": {
     "title": "Apps",
