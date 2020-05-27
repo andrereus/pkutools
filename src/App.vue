@@ -75,7 +75,15 @@
         </v-list-item>
 
         <v-list-item>
-          <v-select v-model="locale" :items="lang" item-text="name" item-value="abbr" outlined dense></v-select>
+          <v-select
+            v-model="locale"
+            :items="lang"
+            item-text="name"
+            item-value="abbr"
+            outlined
+            dense
+            prepend-icon="mdi-translate"
+          ></v-select>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
