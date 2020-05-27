@@ -82,7 +82,7 @@
             item-value="abbr"
             outlined
             dense
-            prepend-icon="mdi-translate"
+            prepend-inner-icon="mdi-translate"
           ></v-select>
         </v-list-item>
       </v-list>
