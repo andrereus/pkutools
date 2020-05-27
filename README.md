@@ -30,7 +30,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## Additional notes
 
-### VS Code setting
+### VS Code settings
 
 ```
 "vetur.format.defaultFormatter.html": "prettier"
