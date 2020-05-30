@@ -5,7 +5,9 @@ import { vuexfireMutations } from "vuexfire";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    user: null
+  },
   mutations: {
     // other mutations
     ...vuexfireMutations
