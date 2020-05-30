@@ -26,6 +26,9 @@
     "take": "AM nehmen",
     "reset": "Reset"
   },
+  "phe-protocol": {
+    "title": "Phe Protokoll"
+  },
   "apps": {
     "title": "Apps",
     "phe-rechner": "Deutsche PKU App die Taschenrechner, Bleistift, Papier und Nährwerttabelle kombiniert (~ 2017).",

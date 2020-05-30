@@ -26,6 +26,9 @@
     "take": "Take AM",
     "reset": "Reset"
   },
+  "phe-protocol": {
+    "title": "Phe Protocol"
+  },
   "apps": {
     "title": "Apps",
     "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",

@@ -46,6 +46,18 @@
           </v-list-item>
         </v-list-item-group>
 
+        <v-list-item-group>
+          <v-list-item to="/phe-protocol">
+            <v-list-item-action>
+              <v-icon>mdi-notebook</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("phe-protocol.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+
         <v-divider></v-divider>
 
         <v-list-item-group>
@@ -115,6 +127,10 @@
 
       <v-btn to="/amino-counter" value="amino-counter">
         <v-icon>mdi-cup</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-protocol" value="phe-protocol">
+        <v-icon>mdi-notebook</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </v-app>
