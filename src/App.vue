@@ -2,6 +2,19 @@
   <v-app>
     <v-navigation-drawer app clipped v-model="drawer">
       <v-list>
+        <v-list-item two-line>
+          <v-list-item-avatar>
+            <img src="https://randomuser.me/api/portraits/women/81.jpg" />
+          </v-list-item-avatar>
+
+          <v-list-item-content>
+            <v-list-item-title>Jane Smith</v-list-item-title>
+            <v-list-item-subtitle>Logged In</v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-divider></v-divider>
+
         <v-list-item to="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
@@ -137,6 +150,10 @@
 </template>
 
 <script>
+import * as firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
+
 export default {
   data: () => ({
     drawer: null,
@@ -152,6 +169,22 @@ export default {
       this.dark = JSON.parse(localStorage.vuetifyThemeDark);
       this.$vuetify.theme.dark = this.dark;
     }
+
+    firebase.initializeApp({
+      apiKey: "AIzaSyCy-4rH75-ILcbgJPx3amMaoHUEl3fJJtw",
+      authDomain: "pku-tools.firebaseapp.com",
+      databaseURL: "https://pku-tools.firebaseio.com",
+      projectId: "pku-tools",
+      storageBucket: "pku-tools.appspot.com",
+      messagingSenderId: "202032702286",
+      appId: "1:202032702286:web:2daa2ac360e82ee0cfb41f"
+    });
+
+    firebase.auth().onAuthStateChanged(function(user) {
+      if (user) {
+        this.$store.dispatch("autoSignIn", user);
+      }
+    });
   },
   watch: {
     dark(newDark) {
