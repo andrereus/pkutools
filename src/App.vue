@@ -61,6 +61,16 @@
         <v-divider></v-divider>
 
         <v-list-item-group>
+          <v-list-item to="/settings">
+            <v-list-item-action>
+              <v-icon>mdi-cog</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("settings.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item to="/apps">
             <v-list-item-action>
               <v-icon>mdi-apps</v-icon>
@@ -105,11 +115,9 @@
       <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
       <v-toolbar-title>PKU Tools</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
+      <v-btn icon to="/settings">
         <v-avatar size="32">
-          <v-icon>mdi-account</v-icon>
-          <!--          <img src="https://randomuser.me/api/portraits/women/81.jpg">-->
-          <!--          <span class="white&#45;&#45;text">CJ</span>-->
+          <img src="https://randomuser.me/api/portraits/women/81.jpg" />
         </v-avatar>
       </v-btn>
     </v-app-bar>
