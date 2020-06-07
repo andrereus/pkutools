@@ -106,7 +106,7 @@
       <v-toolbar-title>PKU Tools</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn icon>
-        <v-avatar size="32" color="primary">
+        <v-avatar size="32">
           <v-icon>mdi-account</v-icon>
           <!--          <img src="https://randomuser.me/api/portraits/women/81.jpg">-->
           <!--          <span class="white&#45;&#45;text">CJ</span>-->
