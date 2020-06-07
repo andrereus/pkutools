@@ -2,19 +2,6 @@
   <v-app>
     <v-navigation-drawer app clipped v-model="drawer">
       <v-list>
-        <v-list-item two-line>
-          <v-list-item-avatar>
-            <img src="https://randomuser.me/api/portraits/women/81.jpg" />
-          </v-list-item-avatar>
-
-          <v-list-item-content>
-            <v-list-item-title>Jane Smith</v-list-item-title>
-            <v-list-item-subtitle>Logged In</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-divider></v-divider>
-
         <v-list-item to="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
@@ -117,6 +104,14 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
       <v-toolbar-title>PKU Tools</v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-avatar size="32" color="primary">
+          <v-icon>mdi-account</v-icon>
+          <!--          <img src="https://randomuser.me/api/portraits/women/81.jpg">-->
+          <!--          <span class="white&#45;&#45;text">CJ</span>-->
+        </v-avatar>
+      </v-btn>
     </v-app-bar>
 
     <v-content class="mx-sm-2">
