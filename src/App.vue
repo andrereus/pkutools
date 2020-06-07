@@ -96,7 +96,7 @@
         </v-list-item-group>
 
         <v-list-item>
-          <v-switch v-model="dark" :label="$t('app.darkmode')" />
+          <v-switch v-model="dark" :label="$t('app.darkdesign')" />
         </v-list-item>
 
         <v-list-item>
