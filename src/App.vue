@@ -104,15 +104,19 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
             <v-avatar size="32">
-              <v-icon>mdi-dots-vertical</v-icon>
-              <!-- <img src="https://randomuser.me/api/portraits/women/81.jpg" /> -->
+              <v-icon v-if="!userIsAuthenticated">mdi-dots-vertical</v-icon>
+              <v-icon v-if="userIsAuthenticated">mdi-account</v-icon>
             </v-avatar>
           </v-btn>
         </template>
 
         <v-list>
-          <v-list-item>
+          <v-list-item v-if="!userIsAuthenticated" @click="onSignInGoogle">
             <v-list-item-title>Sign in with Google</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item v-if="userIsAuthenticated" @click="onSignOut">
+            <v-list-item-title>Sign out {{ this.$store.getters.user.name }}</v-list-item-title>
           </v-list-item>
 
           <v-list-item>
@@ -163,6 +167,14 @@ export default {
     ],
     bottomNav: ""
   }),
+  methods: {
+    onSignInGoogle() {
+      this.$store.dispatch("signUserInGoogle");
+    },
+    onSignOut() {
+      this.$store.dispatch("signOut");
+    }
+  },
   mounted() {
     if (localStorage.vuetifyThemeDark) {
       this.dark = JSON.parse(localStorage.vuetifyThemeDark);
@@ -179,7 +191,7 @@ export default {
       appId: "1:202032702286:web:2daa2ac360e82ee0cfb41f"
     });
 
-    firebase.auth().onAuthStateChanged(function(user) {
+    firebase.auth().onAuthStateChanged(user => {
       if (user) {
         this.$store.dispatch("autoSignIn", user);
       }
@@ -201,6 +213,9 @@ export default {
         this.$i18n.locale = newLocale;
         this.$vuetify.lang.current = newLocale;
       }
+    },
+    userIsAuthenticated() {
+      return this.$store.getters.user !== null && this.$store.getters.user !== undefined;
     }
   }
 };
