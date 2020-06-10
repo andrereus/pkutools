@@ -2,7 +2,9 @@
   "app": {
     "title": "PKU Tools",
     "description": "Tools and apps for phenylketonuria.",
-    "darkdesign": "Dark Design"
+    "darkdesign": "Dark Design",
+    "signin-google": "Sign in with Google",
+    "signout": "Sign out"
   },
   "home": {
     "title": "Home",

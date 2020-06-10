@@ -104,19 +104,25 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
             <v-avatar size="32">
-              <v-icon v-if="!userIsAuthenticated">mdi-dots-vertical</v-icon>
-              <v-icon v-if="userIsAuthenticated">mdi-account</v-icon>
+              <v-icon>mdi-dots-vertical</v-icon>
             </v-avatar>
           </v-btn>
         </template>
 
         <v-list>
           <v-list-item v-if="!userIsAuthenticated" @click="onSignInGoogle">
-            <v-list-item-title>Sign in with Google</v-list-item-title>
+            <v-list-item-title>{{ $t("app.signin-google") }}</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item v-if="userIsAuthenticated">
+            <span>
+              <v-icon>mdi-account</v-icon>
+              {{ this.$store.getters.user.name }}
+            </span>
           </v-list-item>
 
           <v-list-item v-if="userIsAuthenticated" @click="onSignOut">
-            <v-list-item-title>Sign out {{ this.$store.getters.user.name }}</v-list-item-title>
+            <v-list-item-title>{{ $t("app.signout") }}</v-list-item-title>
           </v-list-item>
 
           <v-divider></v-divider>
