@@ -119,6 +119,8 @@
             <v-list-item-title>Sign out {{ this.$store.getters.user.name }}</v-list-item-title>
           </v-list-item>
 
+          <v-divider></v-divider>
+
           <v-list-item>
             <v-switch v-model="dark" :label="$t('app.darkdesign')" />
           </v-list-item>
