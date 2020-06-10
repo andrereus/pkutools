@@ -29,9 +29,6 @@
   "phe-protocol": {
     "title": "Phe Protokoll"
   },
-  "settings": {
-    "title": "Einstellungen"
-  },
   "apps": {
     "title": "Apps",
     "phe-rechner": "Deutsche PKU App die Taschenrechner, Bleistift, Papier und Nährwerttabelle kombiniert (~ 2017).",

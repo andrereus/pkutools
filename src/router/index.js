@@ -42,11 +42,6 @@ const routes = [
     path: "/phe-protocol",
     name: "Phe Protocol",
     component: () => import(/* webpackChunkName: "phe-protocol" */ "../views/PheProtocol.vue")
-  },
-  {
-    path: "/settings",
-    name: "Settings",
-    component: () => import(/* webpackChunkName: "settings" */ "../views/Settings.vue")
   }
 ];
 
