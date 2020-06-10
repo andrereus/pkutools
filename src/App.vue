@@ -58,8 +58,6 @@
           </v-list-item>
         </v-list-item-group>
 
-        <v-divider></v-divider>
-
         <v-list-item-group>
           <v-list-item to="/apps">
             <v-list-item-action>
@@ -81,22 +79,6 @@
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
-
-        <v-list-item>
-          <v-switch v-model="dark" :label="$t('app.darkdesign')" />
-        </v-list-item>
-
-        <v-list-item>
-          <v-select
-            v-model="locale"
-            :items="lang"
-            item-text="name"
-            item-value="abbr"
-            outlined
-            dense
-            prepend-inner-icon="mdi-translate"
-          ></v-select>
-        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -105,13 +87,39 @@
       <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
       <v-toolbar-title>PKU Tools</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-avatar size="32">
-          <v-icon>mdi-account</v-icon>
-          <!--          <img src="https://randomuser.me/api/portraits/women/81.jpg">-->
-          <!--          <span class="white&#45;&#45;text">CJ</span>-->
-        </v-avatar>
-      </v-btn>
+
+      <v-menu offset-y>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon v-bind="attrs" v-on="on">{{ locale }}</v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item v-for="(lang, i) in lang" :key="i" @click="locale = lang.abbr">
+            <v-list-item-title>{{ lang.name }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+
+      <v-menu offset-y>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn icon v-bind="attrs" v-on="on">
+            <v-avatar size="32">
+              <v-icon>mdi-dots-vertical</v-icon>
+              <!-- <img src="https://randomuser.me/api/portraits/women/81.jpg" /> -->
+            </v-avatar>
+          </v-btn>
+        </template>
+
+        <v-list>
+          <v-list-item>
+            <v-list-item-title>Sign in with Google</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-switch v-model="dark" :label="$t('app.darkdesign')" />
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
 
     <v-content class="mx-sm-2">
@@ -121,10 +129,6 @@
     </v-content>
 
     <v-bottom-navigation app v-model="bottomNav" class="d-lg-none">
-      <v-btn to="/" value="home">
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-
       <v-btn to="/phe-calculator" value="phe-calculator">
         <v-icon>mdi-calculator</v-icon>
       </v-btn>
