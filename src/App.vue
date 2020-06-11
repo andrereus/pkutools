@@ -104,7 +104,8 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
             <v-avatar size="32">
-              <v-icon>mdi-dots-vertical</v-icon>
+              <v-icon v-if="!userIsAuthenticated">mdi-dots-vertical</v-icon>
+              <img v-if="userIsAuthenticated" :src="userPhotoUrl" />
             </v-avatar>
           </v-btn>
         </template>
@@ -224,6 +225,9 @@ export default {
     },
     userIsAuthenticated() {
       return this.$store.getters.user !== null && this.$store.getters.user !== undefined;
+    },
+    userPhotoUrl() {
+      return this.$store.getters.user.photoUrl;
     }
   }
 };
