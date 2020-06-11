@@ -14,8 +14,8 @@
 
         <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mt-3">{{ $t("phe-calculator.title") }}</v-btn>
         <v-btn depressed to="/phe-search" color="primary" class="mr-3 mt-3">{{ $t("phe-search.title") }}</v-btn>
+        <v-btn depressed to="/phe-diary" color="primary" class="mr-3 mt-3">{{ $t("phe-diary.title") }}</v-btn>
         <v-btn depressed to="/amino-counter" color="primary" class="mr-3 mt-3">{{ $t("amino-counter.title") }}</v-btn>
-        <v-btn depressed to="/phe-protocol" color="primary" class="mr-3 mt-3">{{ $t("phe-protocol.title") }}</v-btn>
       </v-col>
     </v-row>
   </div>
