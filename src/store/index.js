@@ -18,7 +18,7 @@ export default new Vuex.Store({
     ...vuexfireMutations
   },
   actions: {
-    signUserInGoogle({ commit }) {
+    signInGoogle({ commit }) {
       firebase
         .auth()
         .signInWithPopup(new firebase.auth.GoogleAuthProvider())

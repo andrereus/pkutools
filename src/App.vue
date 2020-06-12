@@ -111,9 +111,9 @@
         </template>
 
         <v-list>
-          <!--          <v-list-item v-if="!userIsAuthenticated" @click="onSignInGoogle">-->
-          <!--            <v-list-item-title>{{ $t("app.signin-google") }}</v-list-item-title>-->
-          <!--          </v-list-item>-->
+          <v-list-item v-if="!userIsAuthenticated" @click="signInGoogle">
+            <v-list-item-title>{{ $t("app.signin-google") }}</v-list-item-title>
+          </v-list-item>
 
           <v-list-item v-if="userIsAuthenticated">
             <span>
@@ -122,7 +122,7 @@
             </span>
           </v-list-item>
 
-          <v-list-item v-if="userIsAuthenticated" @click="onSignOut">
+          <v-list-item v-if="userIsAuthenticated" @click="signOut">
             <v-list-item-title>{{ $t("app.signout") }}</v-list-item-title>
           </v-list-item>
 
@@ -177,10 +177,10 @@ export default {
     bottomNav: ""
   }),
   methods: {
-    onSignInGoogle() {
-      this.$store.dispatch("signUserInGoogle");
+    signInGoogle() {
+      this.$store.dispatch("signInGoogle");
     },
-    onSignOut() {
+    signOut() {
       this.$store.dispatch("signOut");
     }
   },
