@@ -23,10 +23,12 @@
   "amino-counter": {
     "title": "Amino Zähler",
     "description": "Zähle deine tägliche Einnahme der Aminosäuremischung (kurz AM).",
-    "amount": "AM pro Tag",
     "progress": "{count} von {max} AM heute",
     "take": "AM nehmen",
-    "reset": "Reset"
+    "reset": "Reset",
+    "settings": "Einstellungen",
+    "amount": "Aminosäuremischungen pro Tag",
+    "ok": "Ok"
   },
   "phe-diary": {
     "title": "Phe Tagebuch",
