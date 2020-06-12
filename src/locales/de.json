@@ -29,7 +29,8 @@
     "reset": "Reset"
   },
   "phe-diary": {
-    "title": "Phe Tagebuch"
+    "title": "Phe Tagebuch",
+    "progress": "Diese Funktion ist in Bearbeitung."
   },
   "apps": {
     "title": "Apps",
