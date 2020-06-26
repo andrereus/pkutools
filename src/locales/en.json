@@ -30,10 +30,6 @@
     "amount": "Amino acid mixtures per day",
     "ok": "Ok"
   },
-  "phe-diary": {
-    "title": "Phe Diary",
-    "progress": "This feature is in progress."
-  },
   "apps": {
     "title": "Apps",
     "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",

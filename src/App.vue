@@ -35,18 +35,6 @@
         </v-list-item-group>
 
         <v-list-item-group>
-          <v-list-item to="/phe-diary">
-            <v-list-item-action>
-              <v-icon>mdi-notebook</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-item-group>
-
-        <v-list-item-group>
           <v-list-item to="/amino-counter">
             <v-list-item-action>
               <v-icon>mdi-cup</v-icon>
@@ -142,16 +130,16 @@
     </v-content>
 
     <v-bottom-navigation app v-model="bottomNav" class="d-lg-none">
+      <v-btn to="/" value="home">
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+
       <v-btn to="/phe-calculator" value="phe-calculator">
         <v-icon>mdi-calculator</v-icon>
       </v-btn>
 
       <v-btn to="/phe-search" value="phe-search">
         <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-btn to="/phe-diary" value="phe-diary">
-        <v-icon>mdi-notebook</v-icon>
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter">

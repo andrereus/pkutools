@@ -37,11 +37,6 @@ const routes = [
     path: "/phe-search",
     name: "Phe Search",
     component: () => import(/* webpackChunkName: "phe-search" */ "../views/PheSearch.vue")
-  },
-  {
-    path: "/phe-diary",
-    name: "Phe Diary",
-    component: () => import(/* webpackChunkName: "phe-diary" */ "../views/PheDiary.vue")
   }
 ];
 
