@@ -23,12 +23,13 @@
   "amino-counter": {
     "title": "Amino Counter",
     "description": "Count your daily intake of the amino acid mixture (short AM).",
-    "progress": "{count} of {max} AM today",
+    "signin": "Please sign in (see options in the upper right).",
+    "progress": "AM today",
     "take": "Take AM",
     "reset": "Reset",
     "settings": "Settings",
     "amount": "Amino acid mixtures per day",
-    "ok": "Ok"
+    "save": "Save"
   },
   "apps": {
     "title": "Apps",

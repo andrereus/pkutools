@@ -99,9 +99,9 @@
         </template>
 
         <v-list>
-          <!--          <v-list-item v-if="!userIsAuthenticated" @click="signInGoogle">-->
-          <!--            <v-list-item-title>{{ $t("app.signin-google") }}</v-list-item-title>-->
-          <!--          </v-list-item>-->
+          <v-list-item v-if="!userIsAuthenticated" @click="signInGoogle">
+            <v-list-item-title>{{ $t("app.signin-google") }}</v-list-item-title>
+          </v-list-item>
 
           <v-list-item v-if="userIsAuthenticated">
             <span>
@@ -114,7 +114,7 @@
             <v-list-item-title>{{ $t("app.signout") }}</v-list-item-title>
           </v-list-item>
 
-          <!--          <v-divider></v-divider>-->
+          <v-divider></v-divider>
 
           <v-list-item>
             <v-switch v-model="dark" :label="$t('app.darkdesign')" />

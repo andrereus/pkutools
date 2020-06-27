@@ -3,13 +3,17 @@ import Vuex from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
-import { vuexfireMutations } from "vuexfire";
+import { vuexfireMutations, firestoreAction } from "vuexfire";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    user: null
+    user: null,
+    userData: {
+      aminoCounterCount: 0,
+      aminoCounterMax: 3
+    }
   },
   mutations: {
     setUser(state, payload) {
@@ -53,7 +57,16 @@ export default new Vuex.Store({
         .catch(error => {
           console.log(error);
         });
-    }
+    },
+    bindRef: firestoreAction((context, userId) => {
+      context.bindFirestoreRef(
+        "userData",
+        firebase
+          .firestore()
+          .collection("userData")
+          .doc(userId)
+      );
+    })
   },
   getters: {
     user(state) {
