@@ -23,7 +23,6 @@
   "amino-counter": {
     "title": "Amino Zähler",
     "description": "Zähle deine tägliche Einnahme der Aminosäuremischung (kurz AM).",
-    "signin": "Bitte melde dich an (siehe Optionen oben rechts).",
     "progress": "AM heute",
     "take": "AM nehmen",
     "reset": "Reset",

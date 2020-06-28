@@ -23,7 +23,6 @@
   "amino-counter": {
     "title": "Amino Counter",
     "description": "Count your daily intake of the amino acid mixture (short AM).",
-    "signin": "Please sign in (see options in the upper right).",
     "progress": "AM today",
     "take": "Take AM",
     "reset": "Reset",

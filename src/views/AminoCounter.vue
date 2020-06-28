@@ -9,7 +9,9 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("amino-counter.description") }}</p>
-        <v-alert text type="info" v-if="!userIsAuthenticated">{{ $t("amino-counter.signin") }}</v-alert>
+        <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
+          {{ $t("app.signin-google") }}
+        </v-btn>
 
         <div v-if="userIsAuthenticated">
           <v-progress-linear
@@ -72,6 +74,9 @@ export default {
     dialog: false
   }),
   methods: {
+    signInGoogle() {
+      this.$store.dispatch("signInGoogle");
+    },
     takeAM() {
       firebase
         .firestore()
