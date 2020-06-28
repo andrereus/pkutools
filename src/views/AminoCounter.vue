@@ -114,7 +114,11 @@ export default {
       }
     },
     userData(newUserData) {
-      if (newUserData.aminoCounterCount === undefined || newUserData.aminoCounterMax === undefined) {
+      if (
+        newUserData === null ||
+        newUserData.aminoCounterCount === undefined ||
+        newUserData.aminoCounterMax === undefined
+      ) {
         firebase
           .firestore()
           .collection("userData")
