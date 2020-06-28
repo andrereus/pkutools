@@ -27,7 +27,7 @@
             {{ $t("amino-counter.reset") }}
           </v-btn>
 
-          <v-dialog v-model="dialog" max-width="500px">
+          <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
             <template v-slot:activator="{ on, attrs }">
               <v-btn depressed v-bind="attrs" v-on="on" class="mr-3 mt-3">
                 {{ $t("amino-counter.settings") }}
@@ -51,7 +51,7 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn depressed @click="setMax">{{ $t("amino-counter.save") }}</v-btn>
+                <v-btn depressed @click="setMax">{{ $t("amino-counter.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -73,42 +73,30 @@ export default {
   }),
   methods: {
     takeAM() {
-      let initCount = (this.userData.aminoCounterCount || 0) + 1;
-      let initMax = this.userData.aminoCounterMax || 3;
-
       firebase
         .firestore()
         .collection("userData")
         .doc(this.user.id)
-        .set({
-          aminoCounterCount: initCount,
-          aminoCounterMax: initMax
+        .update({
+          aminoCounterCount: this.userData.aminoCounterCount + 1
         });
     },
     resetAM() {
-      let initCount = 0;
-      let initMax = this.userData.aminoCounterMax || 3;
-
       firebase
         .firestore()
         .collection("userData")
         .doc(this.user.id)
-        .set({
-          aminoCounterCount: initCount,
-          aminoCounterMax: initMax
+        .update({
+          aminoCounterCount: 0
         });
     },
     setMax() {
-      let initCount = this.userData.aminoCounterCount || 0;
-      let initMax = this.userData.aminoCounterMax || 0; // TODO
-
       firebase
         .firestore()
         .collection("userData")
         .doc(this.user.id)
-        .set({
-          aminoCounterCount: initCount,
-          aminoCounterMax: initMax
+        .update({
+          aminoCounterMax: this.userData.aminoCounterMax
         });
 
       this.dialog = false;
@@ -118,6 +106,18 @@ export default {
     userIsAuthenticated(newState) {
       if (newState === true) {
         this.$store.dispatch("bindRef", this.user.id);
+      }
+    },
+    userData(newUserData) {
+      if (newUserData.aminoCounterCount === undefined || newUserData.aminoCounterMax === undefined) {
+        firebase
+          .firestore()
+          .collection("userData")
+          .doc(this.user.id)
+          .set({
+            aminoCounterCount: 0,
+            aminoCounterMax: 3
+          });
       }
     }
   },

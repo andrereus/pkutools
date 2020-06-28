@@ -10,10 +10,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     user: null,
-    userData: {
-      aminoCounterCount: 0,
-      aminoCounterMax: 3
-    }
+    userData: {}
   },
   mutations: {
     setUser(state, payload) {
