@@ -10,9 +10,9 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("amino-counter.description") }}</p>
 
-        <!--        <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">-->
-        <!--          {{ $t("app.signin-google") }}-->
-        <!--        </v-btn>-->
+        <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
+          {{ $t("app.signin-google") }}
+        </v-btn>
 
         <div v-if="userIsAuthenticated && !dataLoading">
           <v-progress-linear
@@ -72,8 +72,7 @@ import "firebase/firestore";
 
 export default {
   data: () => ({
-    dialog: false,
-    dataLoading: true
+    dialog: false
   }),
   methods: {
     signInGoogle() {
@@ -109,45 +108,19 @@ export default {
       this.dialog = false;
     }
   },
-  mounted() {
-    if (this.$store.getters.user !== null && this.$store.getters.user !== undefined) {
-      this.$store.dispatch("bindRef", this.user.id).then(() => {
-        if (
-          this.userData == null ||
-          this.userData.aminoCounterCount === undefined ||
-          this.userData.aminoCounterMax === undefined
-        ) {
-          console.log(this.userData);
-          firebase
-            .firestore()
-            .collection("userData")
-            .doc(this.user.id)
-            .set({
-              aminoCounterCount: 0,
-              aminoCounterMax: 3
-            })
-            .then(() => {
-              this.dataLoading = false;
-            });
-        } else {
-          this.dataLoading = false;
-        }
-      });
-    }
-  },
   watch: {
-    userIsAuthenticated(newState) {
-      if (newState === true) {
-        this.$store.dispatch("bindRef", this.user.id);
+    userIsAuthenticated: {
+      immediate: true,
+      handler(newState) {
+        if (newState === true) {
+          console.log("changed ref");
+          this.$store.dispatch("bindRef", this.user.id);
+        }
       }
     },
-    userData(newUserData) {
-      if (
-        newUserData == null ||
-        newUserData.aminoCounterCount === undefined ||
-        newUserData.aminoCounterMax === undefined
-      ) {
-        console.log(newUserData);
+    dataLoading(newLoading) {
+      if (newLoading === true) {
+        console.log("changed data");
         firebase
           .firestore()
           .collection("userData")
@@ -155,18 +128,16 @@ export default {
           .set({
             aminoCounterCount: 0,
             aminoCounterMax: 3
-          })
-          .then(() => {
-            this.dataLoading = false;
           });
-      } else {
-        this.dataLoading = false;
       }
     }
   },
   computed: {
     userIsAuthenticated() {
       return this.$store.getters.user !== null && this.$store.getters.user !== undefined;
+    },
+    dataLoading() {
+      return this.userData == null;
     },
     ...mapState(["user", "userData"])
   }
