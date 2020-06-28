@@ -13,7 +13,7 @@
           {{ $t("app.signin-google") }}
         </v-btn>
 
-        <div v-if="userIsAuthenticated">
+        <div v-if="userIsAuthenticated && !dataLoading">
           <v-progress-linear
             :value="(userData.aminoCounterCount * 100) / userData.aminoCounterMax"
             height="40"
@@ -71,7 +71,8 @@ import "firebase/firestore";
 
 export default {
   data: () => ({
-    dialog: false
+    dialog: false,
+    dataLoading: true
   }),
   methods: {
     signInGoogle() {
@@ -126,7 +127,12 @@ export default {
           .set({
             aminoCounterCount: 0,
             aminoCounterMax: 3
+          })
+          .then(() => {
+            this.dataLoading = false;
           });
+      } else {
+        this.dataLoading = false;
       }
     }
   },
