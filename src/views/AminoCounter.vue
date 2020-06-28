@@ -9,9 +9,10 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("amino-counter.description") }}</p>
-        <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
-          {{ $t("app.signin-google") }}
-        </v-btn>
+
+        <!--        <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">-->
+        <!--          {{ $t("app.signin-google") }}-->
+        <!--        </v-btn>-->
 
         <div v-if="userIsAuthenticated && !dataLoading">
           <v-progress-linear
@@ -108,6 +109,32 @@ export default {
       this.dialog = false;
     }
   },
+  mounted() {
+    if (this.$store.getters.user !== null && this.$store.getters.user !== undefined) {
+      this.$store.dispatch("bindRef", this.user.id).then(() => {
+        if (
+          this.userData == null ||
+          this.userData.aminoCounterCount === undefined ||
+          this.userData.aminoCounterMax === undefined
+        ) {
+          console.log(this.userData);
+          firebase
+            .firestore()
+            .collection("userData")
+            .doc(this.user.id)
+            .set({
+              aminoCounterCount: 0,
+              aminoCounterMax: 3
+            })
+            .then(() => {
+              this.dataLoading = false;
+            });
+        } else {
+          this.dataLoading = false;
+        }
+      });
+    }
+  },
   watch: {
     userIsAuthenticated(newState) {
       if (newState === true) {
@@ -116,10 +143,11 @@ export default {
     },
     userData(newUserData) {
       if (
-        newUserData === null ||
+        newUserData == null ||
         newUserData.aminoCounterCount === undefined ||
         newUserData.aminoCounterMax === undefined
       ) {
+        console.log(newUserData);
         firebase
           .firestore()
           .collection("userData")
