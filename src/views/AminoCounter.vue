@@ -79,6 +79,7 @@ export default {
       this.$store.dispatch("signInGoogle");
     },
     takeAM() {
+      // TODO: Rewrite with set and spread operator
       firebase
         .firestore()
         .collection("userData")
@@ -88,6 +89,7 @@ export default {
         });
     },
     resetAM() {
+      // TODO: Rewrite with set and spread operator
       firebase
         .firestore()
         .collection("userData")
@@ -97,6 +99,7 @@ export default {
         });
     },
     setMax() {
+      // TODO: Rewrite with set and spread operator
       firebase
         .firestore()
         .collection("userData")
@@ -113,14 +116,13 @@ export default {
       immediate: true,
       handler(newState) {
         if (newState === true) {
-          console.log("changed ref");
           this.$store.dispatch("bindRef", this.user.id);
         }
       }
     },
     dataLoading(newLoading) {
+      // TODO: Compute needed initial values with fallback instead
       if (newLoading === true) {
-        console.log("changed data");
         firebase
           .firestore()
           .collection("userData")
