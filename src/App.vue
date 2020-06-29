@@ -215,6 +215,7 @@ export default {
       return this.$store.getters.user !== null && this.$store.getters.user !== undefined;
     },
     userPhotoUrl() {
+      // TODO: Try mapState instead
       return this.$store.getters.user.photoUrl;
     }
   }
