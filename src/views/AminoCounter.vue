@@ -121,7 +121,7 @@ export default {
       }
     },
     dataLoading(newLoading) {
-      // TODO: Compute needed initial values with fallback instead
+      // TODO: Use fallback values where needed instead
       if (newLoading === true) {
         firebase
           .firestore()
