@@ -128,7 +128,7 @@
       </v-container>
     </v-content>
 
-    <v-bottom-navigation app v-model="bottomNav" class="d-lg-none">
+    <v-bottom-navigation app v-model="bottomNav" class="d-lg-none" active-class="v-btn--active bottom-nav--active">
       <v-btn to="/" value="home">
         <v-icon>mdi-home</v-icon>
       </v-btn>
@@ -230,11 +230,38 @@ export default {
   }
 }
 
-.theme--dark.v-app-bar.v-toolbar.v-sheet {
-  background-color: #121212;
+.v-item-group.v-bottom-navigation {
+  box-shadow: none;
+
+  .v-btn {
+    border-radius: 6px 6px 0 0;
+
+    &:hover:before {
+      opacity: 0;
+    }
+  }
 }
 
-.theme--dark.v-navigation-drawer {
-  background-color: #121212;
+.bottom-nav--active {
+  border-bottom: 2px solid #000;
+}
+
+.theme--dark {
+  &.v-application,
+  &.v-app-bar.v-toolbar.v-sheet,
+  &.v-navigation-drawer,
+  &.v-bottom-navigation {
+    background-color: #1e1e1e;
+  }
+
+  &.v-app-bar.v-toolbar.v-sheet {
+    @media (min-width: 1264px) {
+      background-color: transparent;
+    }
+  }
+
+  .bottom-nav--active {
+    border-bottom: 2px solid #fff;
+  }
 }
 </style>
