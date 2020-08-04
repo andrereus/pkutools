@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app clipped v-model="drawer" floating color="transparent">
+    <v-navigation-drawer app clipped v-model="drawer" floating class="nav-layout">
       <v-list nav>
         <v-list-item to="/">
           <v-list-item-action>
@@ -70,7 +70,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app clipped-left flat color="transparent">
+    <v-app-bar app clipped-left flat class="nav-layout">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
       <v-toolbar-title>PKU Tools</v-toolbar-title>
@@ -220,3 +220,21 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.theme--light.v-app-bar.v-toolbar.v-sheet {
+  background-color: #fff;
+
+  @media (min-width: 1264px) {
+    background-color: transparent;
+  }
+}
+
+.theme--dark.v-app-bar.v-toolbar.v-sheet {
+  background-color: #121212;
+}
+
+.theme--dark.v-navigation-drawer {
+  background-color: #121212;
+}
+</style>
