@@ -2,7 +2,6 @@
   "app": {
     "title": "PKU Tools",
     "description": "Tools und Apps für die Phenylketonurie.",
-    "darkdesign": "Dunkles Design",
     "signin-google": "Anmelden mit Google",
     "signout": "Abmelden"
   },
@@ -18,7 +17,7 @@
   },
   "phe-search": {
     "title": "Phe Suche",
-    "info": "Suche im Moment nur auf Englisch."
+    "search": "Suche (im Moment nur auf Englisch)"
   },
   "amino-counter": {
     "title": "Amino Zähler",

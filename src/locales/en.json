@@ -2,7 +2,6 @@
   "app": {
     "title": "PKU Tools",
     "description": "Tools and apps for phenylketonuria.",
-    "darkdesign": "Dark Design",
     "signin-google": "Sign in with Google",
     "signout": "Sign out"
   },
@@ -18,7 +17,7 @@
   },
   "phe-search": {
     "title": "Phe Search",
-    "info": "Search currently only in english."
+    "search": "Search"
   },
   "amino-counter": {
     "title": "Amino Counter",

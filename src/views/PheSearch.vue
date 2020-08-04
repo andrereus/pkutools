@@ -8,14 +8,12 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert text type="info" class="mb-7">{{ $t("phe-search.info") }}</v-alert>
-
         <!-- Text inputs need keyup on mobile -->
         <v-text-field
           :value="search"
           @keyup="search = $event.target.value"
           append-icon="mdi-magnify"
-          label="Search"
+          :label="$t('phe-search.search')"
           outlined
         ></v-text-field>
 

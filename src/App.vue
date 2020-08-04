@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-navigation-drawer app clipped v-model="drawer">
-      <v-list>
+    <v-navigation-drawer app clipped v-model="drawer" floating color="transparent">
+      <v-list nav>
         <v-list-item to="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
@@ -70,7 +70,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app clipped-left dark>
+    <v-app-bar app clipped-left flat color="transparent">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
       <v-toolbar-title>PKU Tools</v-toolbar-title>
@@ -88,11 +88,16 @@
         </v-list>
       </v-menu>
 
+      <v-btn icon @click="dark = !dark">
+        <v-icon v-if="!dark">mdi-brightness-4</v-icon>
+        <v-icon v-if="dark">mdi-brightness-7</v-icon>
+      </v-btn>
+
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
             <v-avatar size="32">
-              <v-icon v-if="!userIsAuthenticated">mdi-dots-vertical</v-icon>
+              <v-icon v-if="!userIsAuthenticated">mdi-account</v-icon>
               <img v-if="userIsAuthenticated" :src="userPhotoUrl" />
             </v-avatar>
           </v-btn>
@@ -112,12 +117,6 @@
 
           <v-list-item v-if="userIsAuthenticated" @click="signOut">
             <v-list-item-title>{{ $t("app.signout") }}</v-list-item-title>
-          </v-list-item>
-
-          <v-divider></v-divider>
-
-          <v-list-item>
-            <v-switch v-model="dark" :label="$t('app.darkdesign')" />
           </v-list-item>
         </v-list>
       </v-menu>

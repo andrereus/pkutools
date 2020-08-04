@@ -3,7 +3,7 @@ module.exports = {
 
   pwa: {
     name: "PKU Tools",
-    themeColor: "#343a40",
+    themeColor: "#fff",
     msTileColor: "#3498db"
   },
 

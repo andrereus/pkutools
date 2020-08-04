@@ -7,6 +7,13 @@ import de from "vuetify/es5/locale/de";
 Vue.use(Vuetify);
 
 export default new Vuetify({
+  theme: {
+    themes: {
+      light: {
+        primary: "#3498db"
+      }
+    }
+  },
   lang: {
     locales: { en, de },
     current: i18n.locale
