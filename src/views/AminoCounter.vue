@@ -19,6 +19,7 @@
             :value="(userData.aminoCounterCount * 100) / userData.aminoCounterMax"
             height="40"
             class="white--text mt-6 mb-4"
+            rounded
           >
             {{ userData.aminoCounterCount }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
