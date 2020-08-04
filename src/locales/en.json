@@ -23,6 +23,7 @@
     "title": "Amino Counter",
     "description": "Count your daily intake of the amino acid mixture (short AM).",
     "progress": "AM today",
+    "date": "Last entry",
     "take": "Take AM",
     "reset": "Reset",
     "settings": "Settings",

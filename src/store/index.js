@@ -75,6 +75,7 @@ export default new Vuex.Store({
               .doc(context.state.user.id)
               .set({
                 aminoCounterCount: 0,
+                aminoCounterDate: new Date().toUTCString(),
                 aminoCounterMax: 3
               });
           }

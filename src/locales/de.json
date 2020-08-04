@@ -23,6 +23,7 @@
     "title": "Amino Zähler",
     "description": "Zähle deine tägliche Einnahme der Aminosäuremischung (kurz AM).",
     "progress": "AM heute",
+    "date": "Letzter Eintrag",
     "take": "AM nehmen",
     "reset": "Reset",
     "settings": "Einstellungen",

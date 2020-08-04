@@ -24,6 +24,8 @@
             {{ userData.aminoCounterCount }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
 
+          <p>{{ $t("amino-counter.date") }}: {{ new Date(userData.aminoCounterDate).toLocaleString() }}</p>
+
           <v-btn depressed @click="takeAM" color="primary" class="mr-3 mt-3">
             {{ $t("amino-counter.take") }}
           </v-btn>
@@ -85,7 +87,8 @@ export default {
         .collection("userData")
         .doc(this.user.id)
         .update({
-          aminoCounterCount: this.userData.aminoCounterCount + 1 || 1
+          aminoCounterCount: this.userData.aminoCounterCount + 1 || 1,
+          aminoCounterDate: new Date().toUTCString()
         });
     },
     resetAM() {
