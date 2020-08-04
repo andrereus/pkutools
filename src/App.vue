@@ -111,7 +111,7 @@
           <v-list-item v-if="userIsAuthenticated">
             <span>
               <v-icon>mdi-account</v-icon>
-              {{ this.$store.getters.user.name }}
+              {{ user.name }}
             </span>
           </v-list-item>
 
@@ -152,6 +152,7 @@
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
+import { mapState } from "vuex";
 
 export default {
   data: () => ({
@@ -171,12 +172,7 @@ export default {
       this.$store.dispatch("signOut");
     }
   },
-  mounted() {
-    if (localStorage.vuetifyThemeDark) {
-      this.dark = JSON.parse(localStorage.vuetifyThemeDark);
-      this.$vuetify.theme.dark = this.dark;
-    }
-
+  beforeCreate() {
     firebase.initializeApp({
       apiKey: "AIzaSyCy-4rH75-ILcbgJPx3amMaoHUEl3fJJtw",
       authDomain: "pku-tools.firebaseapp.com",
@@ -189,9 +185,17 @@ export default {
 
     firebase.auth().onAuthStateChanged(user => {
       if (user) {
-        this.$store.dispatch("autoSignIn", user);
+        this.$store.dispatch("autoSignIn", user).then(() => {
+          this.$store.dispatch("initRef");
+        });
       }
     });
+  },
+  mounted() {
+    if (localStorage.vuetifyThemeDark) {
+      this.dark = JSON.parse(localStorage.vuetifyThemeDark);
+      this.$vuetify.theme.dark = this.dark;
+    }
   },
   watch: {
     dark(newDark) {
@@ -211,12 +215,12 @@ export default {
       }
     },
     userIsAuthenticated() {
-      return this.$store.getters.user !== null && this.$store.getters.user !== undefined;
+      return this.user !== null && this.user !== undefined;
     },
     userPhotoUrl() {
-      // TODO: Try mapState instead
       return this.$store.getters.user.photoUrl;
-    }
+    },
+    ...mapState(["user"])
   }
 };
 </script>

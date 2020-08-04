@@ -14,7 +14,7 @@
           {{ $t("app.signin-google") }}
         </v-btn>
 
-        <div v-if="userIsAuthenticated && !dataLoading">
+        <div v-if="userIsAuthenticated">
           <v-progress-linear
             :value="(userData.aminoCounterCount * 100) / userData.aminoCounterMax"
             height="40"
@@ -79,17 +79,15 @@ export default {
       this.$store.dispatch("signInGoogle");
     },
     takeAM() {
-      // TODO: Rewrite with set and spread operator
       firebase
         .firestore()
         .collection("userData")
         .doc(this.user.id)
         .update({
-          aminoCounterCount: this.userData.aminoCounterCount + 1
+          aminoCounterCount: this.userData.aminoCounterCount + 1 || 1
         });
     },
     resetAM() {
-      // TODO: Rewrite with set and spread operator
       firebase
         .firestore()
         .collection("userData")
@@ -99,47 +97,20 @@ export default {
         });
     },
     setMax() {
-      // TODO: Rewrite with set and spread operator
       firebase
         .firestore()
         .collection("userData")
         .doc(this.user.id)
         .update({
-          aminoCounterMax: this.userData.aminoCounterMax
+          aminoCounterMax: this.userData.aminoCounterMax || 0
         });
 
       this.dialog = false;
     }
   },
-  watch: {
-    userIsAuthenticated: {
-      immediate: true,
-      handler(newState) {
-        if (newState === true) {
-          this.$store.dispatch("bindRef", this.user.id);
-        }
-      }
-    },
-    dataLoading(newLoading) {
-      // TODO: Use fallback values where needed instead
-      if (newLoading === true) {
-        firebase
-          .firestore()
-          .collection("userData")
-          .doc(this.user.id)
-          .set({
-            aminoCounterCount: 0,
-            aminoCounterMax: 3
-          });
-      }
-    }
-  },
   computed: {
     userIsAuthenticated() {
-      return this.$store.getters.user !== null && this.$store.getters.user !== undefined;
-    },
-    dataLoading() {
-      return this.userData == null;
+      return this.user !== null && this.user !== undefined && this.userData !== null;
     },
     ...mapState(["user", "userData"])
   }

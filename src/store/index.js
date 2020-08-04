@@ -10,7 +10,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     user: null,
-    userData: {}
+    userData: null
   },
   mutations: {
     setUser(state, payload) {
@@ -31,6 +31,9 @@ export default new Vuex.Store({
             photoUrl: result.user.photoURL
           };
           commit("setUser", newUser);
+        })
+        .then(() => {
+          this.dispatch("initRef");
         })
         .catch(error => {
           console.log(error);
@@ -55,14 +58,27 @@ export default new Vuex.Store({
           console.log(error);
         });
     },
-    bindRef: firestoreAction((context, userId) => {
-      context.bindFirestoreRef(
-        "userData",
-        firebase
-          .firestore()
-          .collection("userData")
-          .doc(userId)
-      );
+    initRef: firestoreAction(context => {
+      context
+        .bindFirestoreRef(
+          "userData",
+          firebase
+            .firestore()
+            .collection("userData")
+            .doc(context.state.user.id)
+        )
+        .then(() => {
+          if (context.state.userData === null) {
+            firebase
+              .firestore()
+              .collection("userData")
+              .doc(context.state.user.id)
+              .set({
+                aminoCounterCount: 0,
+                aminoCounterMax: 3
+              });
+          }
+        });
     })
   },
   getters: {
