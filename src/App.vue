@@ -243,7 +243,7 @@ export default {
 }
 
 .bottom-nav--active {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #3498db;
 }
 
 .theme--dark {
@@ -258,10 +258,6 @@ export default {
     @media (min-width: 1264px) {
       background-color: transparent;
     }
-  }
-
-  .bottom-nav--active {
-    border-bottom: 2px solid #fff;
   }
 }
 </style>
