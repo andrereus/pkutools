@@ -226,46 +226,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.theme--light.v-app-bar.v-toolbar.v-sheet {
-  background-color: #fff;
-
-  @media (min-width: 1264px) {
-    background-color: transparent;
-  }
-}
-
 .v-item-group.v-bottom-navigation {
   box-shadow: none;
-
-  .v-btn {
-    border-radius: 6px 6px 0 0;
-
-    &:hover:before {
-      opacity: 0;
-    }
-  }
+  background-color: #f5f5f5;
 }
 
-.bottom-nav--active {
-  border-bottom: 2px solid #000;
+.bottom-nav--active:before {
+  opacity: 0.08 !important;
 }
 
 .theme--dark {
   &.v-application,
-  &.v-app-bar.v-toolbar.v-sheet,
-  &.v-navigation-drawer,
-  &.v-bottom-navigation {
+  &.v-navigation-drawer {
     background-color: #1e1e1e;
   }
 
-  &.v-app-bar.v-toolbar.v-sheet {
-    @media (min-width: 1264px) {
-      background-color: transparent;
-    }
-  }
-
-  .bottom-nav--active {
-    border-bottom: 2px solid #fff;
+  &.v-bottom-navigation {
+    background-color: #272727;
   }
 }
 </style>
