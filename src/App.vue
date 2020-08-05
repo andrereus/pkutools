@@ -240,10 +240,6 @@ export default {
 }
 
 .theme--dark {
-  &.v-application {
-    background-color: #1e1e1e;
-  }
-
   &.v-navigation-drawer,
   &.v-bottom-navigation {
     background-color: #272727;
