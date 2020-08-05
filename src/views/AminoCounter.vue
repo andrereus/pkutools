@@ -47,7 +47,7 @@
 
               <v-card-text>
                 <v-text-field
-                  outlined
+                  filled
                   :label="$t('amino-counter.amount')"
                   v-model.number="userData.aminoCounterMax"
                   type="number"

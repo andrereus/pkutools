@@ -14,7 +14,8 @@
           @keyup="search = $event.target.value"
           append-icon="mdi-magnify"
           :label="$t('phe-search.search')"
-          outlined
+          filled
+          single-line
         ></v-text-field>
 
         <v-data-table
