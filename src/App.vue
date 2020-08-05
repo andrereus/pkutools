@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer app clipped v-model="drawer" floating class="nav-layout">
-      <v-list nav>
+      <v-list>
         <v-list-item to="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
@@ -226,6 +226,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.theme--light.v-navigation-drawer {
+  background-color: #f5f5f5;
+}
+
 .v-item-group.v-bottom-navigation {
   box-shadow: none;
   background-color: #f5f5f5;
@@ -236,11 +240,11 @@ export default {
 }
 
 .theme--dark {
-  &.v-application,
-  &.v-navigation-drawer {
+  &.v-application {
     background-color: #1e1e1e;
   }
 
+  &.v-navigation-drawer,
   &.v-bottom-navigation {
     background-color: #272727;
   }
