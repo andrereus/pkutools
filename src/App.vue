@@ -35,6 +35,18 @@
         </v-list-item-group>
 
         <v-list-item-group>
+          <v-list-item to="/phe-log">
+            <v-list-item-action>
+              <v-icon>mdi-book</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("phe-log.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+
+        <v-list-item-group>
           <v-list-item to="/amino-counter">
             <v-list-item-action>
               <v-icon>mdi-cup</v-icon>
@@ -128,7 +140,13 @@
       </v-container>
     </v-content>
 
-    <v-bottom-navigation app v-model="bottomNav" class="d-lg-none" active-class="v-btn--active bottom-nav--active">
+    <v-bottom-navigation
+      app
+      v-model="bottomNav"
+      class="d-lg-none bottom-nav"
+      active-class="v-btn--active bottom-nav--active"
+      grow
+    >
       <v-btn to="/" value="home">
         <v-icon>mdi-home</v-icon>
       </v-btn>
@@ -139,6 +157,10 @@
 
       <v-btn to="/phe-search" value="phe-search">
         <v-icon>mdi-magnify</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-log" value="phe-log">
+        <v-icon>mdi-book</v-icon>
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter">
@@ -233,6 +255,10 @@ export default {
 .v-item-group.v-bottom-navigation {
   box-shadow: none;
   background-color: #f5f5f5;
+
+  .v-btn {
+    min-width: 60px;
+  }
 }
 
 .bottom-nav--active:before {

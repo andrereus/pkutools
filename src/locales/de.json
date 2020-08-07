@@ -19,6 +19,9 @@
     "title": "Phe Suche",
     "search": "Suche (im Moment nur auf Englisch)"
   },
+  "phe-log": {
+    "title": "Phe Protokoll"
+  },
   "amino-counter": {
     "title": "Amino Zähler",
     "description": "Zähle deine tägliche Einnahme der Aminosäuremischung (kurz AS).",
