@@ -173,6 +173,8 @@ export default {
     }
   },
   beforeCreate() {
+    document.getElementsByTagName("html")[0].lang = this.$i18n.locale;
+
     firebase.initializeApp({
       apiKey: "AIzaSyCy-4rH75-ILcbgJPx3amMaoHUEl3fJJtw",
       authDomain: "pku-tools.firebaseapp.com",
@@ -212,6 +214,7 @@ export default {
         localStorage.i18nCurrentLocale = JSON.stringify(newLocale);
         this.$i18n.locale = newLocale;
         this.$vuetify.lang.current = newLocale;
+        document.getElementsByTagName("html")[0].lang = newLocale;
       }
     },
     userIsAuthenticated() {
