@@ -30,8 +30,16 @@
                         <span class="headline">{{ formTitle }}</span>
                       </v-card-title>
 
-                      <v-card-text>
+                      <v-card-text v-if="editedIndex === -1">
                         <v-text-field filled label="Food Name" v-model="editedItem.name" class="mt-6"></v-text-field>
+
+                        <v-text-field
+                          filled
+                          label="Weight (in g)"
+                          v-model.number="editedItem.weight"
+                          type="number"
+                        ></v-text-field>
+
                         <v-text-field
                           filled
                           label="Phe (in mg)"
@@ -40,9 +48,32 @@
                         ></v-text-field>
                       </v-card-text>
 
+                      <v-card-text v-if="editedIndex !== -1">
+                        <v-text-field filled label="Food Name" v-model="editedItem.name" class="mt-6"></v-text-field>
+
+                        <v-text-field
+                          filled
+                          label="Weight (in g)"
+                          :value="editedItem.weight"
+                          @keyup="editWeight"
+                          type="number"
+                        ></v-text-field>
+
+                        <v-text-field
+                          filled
+                          label="Phe (in mg)"
+                          :value="editedItem.phe"
+                          @keyup="editPhe"
+                          type="number"
+                        ></v-text-field>
+                      </v-card-text>
+
                       <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn depressed @click="save">Save</v-btn>
+                        <v-btn depressed color="primary" @click="save">Save</v-btn>
+                        <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem(editedIndex)">
+                          Delete
+                        </v-btn>
                         <v-btn depressed @click="close">Cancel</v-btn>
                       </v-card-actions>
                     </v-card>
@@ -50,17 +81,16 @@
                 </v-toolbar>
               </template>
 
-              <template v-slot:item.actions="{ item }">
-                <v-icon small class="mr-2" @click="editItem(item)">
-                  mdi-pencil
-                </v-icon>
-
-                <v-icon small @click="deleteItem(item)">
-                  mdi-delete
-                </v-icon>
+              <template v-slot:item="{ item }">
+                <tr @click="editItem(item)" class="tr-edit">
+                  <td class="text-start">{{ item.name }}</td>
+                  <td class="text-start">{{ item.weight }}</td>
+                  <td class="text-start">{{ item.phe }}</td>
+                </tr>
               </template>
+
               <template v-slot:no-data>
-                <v-btn depressed color="primary" @click="initialize">Reset</v-btn>
+                <v-btn depressed @click="initialize">Reset</v-btn>
               </template>
             </v-data-table>
           </template>
@@ -84,18 +114,20 @@ export default {
         align: "start",
         value: "name"
       },
-      { text: "Phe (in mg)", value: "phe" },
-      { text: "Actions", value: "actions", sortable: false }
+      { text: "Weight (in g)", value: "weight" },
+      { text: "Phe (in mg)", value: "phe" }
     ],
-    food: [],
+    food: null,
     editedIndex: -1,
     editedItem: {
-      name: "",
-      phe: 0
+      name: null,
+      weight: null,
+      phe: null
     },
     defaultItem: {
-      name: "",
-      phe: 0
+      name: null,
+      weight: null,
+      phe: null
     }
   }),
   methods: {
@@ -106,26 +138,25 @@ export default {
       this.food = [
         {
           name: "Frozen Yogurt",
-          phe: 4.0
+          weight: 100,
+          phe: 100
         },
         {
           name: "Ice cream sandwich",
-          phe: 4.3
+          weight: 50,
+          phe: 100
         }
       ];
     },
-
     editItem(item) {
       this.editedIndex = this.food.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
     },
-
-    deleteItem(item) {
-      const index = this.food.indexOf(item);
-      confirm("Delete?") && this.food.splice(index, 1);
+    deleteItem(editedIndex) {
+      this.food.splice(editedIndex, 1);
+      this.close();
     },
-
     close() {
       this.dialog = false;
       this.$nextTick(() => {
@@ -133,7 +164,6 @@ export default {
         this.editedIndex = -1;
       });
     },
-
     save() {
       if (this.editedIndex > -1) {
         Object.assign(this.food[this.editedIndex], this.editedItem);
@@ -141,6 +171,20 @@ export default {
         this.food.push(this.editedItem);
       }
       this.close();
+    },
+    editWeight(event) {
+      const newWeight = Number(event.target.value);
+      if (newWeight !== 0) {
+        this.editedItem.phe = (newWeight * this.editedItem.phe) / this.editedItem.weight;
+        this.editedItem.weight = newWeight;
+      }
+    },
+    editPhe(event) {
+      const newPhe = Number(event.target.value);
+      if (newPhe !== 0) {
+        this.editedItem.weight = (newPhe * this.editedItem.weight) / this.editedItem.phe;
+        this.editedItem.phe = newPhe;
+      }
     }
   },
   created() {
@@ -162,3 +206,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.tr-edit {
+  cursor: pointer;
+}
+</style>

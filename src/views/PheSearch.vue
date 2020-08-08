@@ -36,7 +36,7 @@ import food from "../components/data/common-food.json";
 
 export default {
   data: () => ({
-    search: "",
+    search: null,
     headers: [
       {
         text: "Food Name",

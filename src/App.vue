@@ -184,7 +184,7 @@ export default {
       { name: "English", abbr: "en" },
       { name: "Deutsch", abbr: "de" }
     ],
-    bottomNav: ""
+    bottomNav: null
   }),
   methods: {
     signInGoogle() {
