@@ -57,6 +57,7 @@
                           :value="editedItem.weight"
                           @keyup="editWeight"
                           type="number"
+                          append-icon="mdi-lock"
                         ></v-text-field>
 
                         <v-text-field
@@ -65,6 +66,7 @@
                           :value="editedItem.phe"
                           @keyup="editPhe"
                           type="number"
+                          append-icon="mdi-lock"
                         ></v-text-field>
                       </v-card-text>
 
