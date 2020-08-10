@@ -81,9 +81,14 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item href="https://www.iubenda.com/privacy-policy/19763599" target="_blank">
+          <v-list-item
+            href="https://www.iubenda.com/privacy-policy/19763599"
+            class="iubenda-nostyle no-brand iubenda-embed"
+            title="Privacy Policy"
+            active-class="privacy--active"
+          >
             <v-list-item-action>
-              <v-icon>mdi-open-in-new</v-icon>
+              <v-icon>mdi-lock</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -285,5 +290,9 @@ export default {
   &.v-bottom-navigation {
     background-color: #272727;
   }
+}
+
+.privacy--active:before {
+  opacity: 0 !important;
 }
 </style>

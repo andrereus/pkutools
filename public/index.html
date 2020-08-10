@@ -21,9 +21,9 @@
           rejectButtonColor: "#0073CE",
           rejectButtonCaptionColor: "white",
           position: "float-center",
+          backgroundOverlay: true,
           textColor: "black",
-          backgroundColor: "white",
-          backgroundOverlay: true
+          backgroundColor: "white"
         }
       };
     </script>
@@ -44,6 +44,23 @@
           h.appendChild(c);
         })(document);
       smartlook("init", "0f9d423bd0d5f9f76eec5399c5adb897068bb318");
+    </script>
+    <script type="text/javascript">
+      (function(w, d) {
+        var loader = function() {
+          var s = d.createElement("script"),
+            tag = d.getElementsByTagName("script")[0];
+          s.src = "https://cdn.iubenda.com/iubenda.js";
+          tag.parentNode.insertBefore(s, tag);
+        };
+        if (w.addEventListener) {
+          w.addEventListener("load", loader, false);
+        } else if (w.attachEvent) {
+          w.attachEvent("onload", loader);
+        } else {
+          w.onload = loader;
+        }
+      })(window, document);
     </script>
   </head>
   <body>
