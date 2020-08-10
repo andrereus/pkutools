@@ -58,6 +58,8 @@
           </v-list-item>
         </v-list-item-group>
 
+        <v-divider></v-divider>
+
         <v-list-item-group>
           <v-list-item to="/apps">
             <v-list-item-action>
@@ -76,6 +78,16 @@
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("about.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item href="https://www.iubenda.com/privacy-policy/19763599" target="_blank">
+            <v-list-item-action>
+              <v-icon>mdi-open-in-new</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("privacy.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -195,6 +207,8 @@ export default {
     }
   },
   beforeCreate() {
+    document.getElementsByTagName("html")[0].lang = this.$i18n.locale;
+
     firebase.initializeApp({
       apiKey: "AIzaSyCy-4rH75-ILcbgJPx3amMaoHUEl3fJJtw",
       authDomain: "pku-tools.firebaseapp.com",
@@ -234,6 +248,7 @@ export default {
         localStorage.i18nCurrentLocale = JSON.stringify(newLocale);
         this.$i18n.locale = newLocale;
         this.$vuetify.lang.current = newLocale;
+        document.getElementsByTagName("html")[0].lang = newLocale;
       }
     },
     userIsAuthenticated() {

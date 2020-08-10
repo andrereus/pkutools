@@ -46,5 +46,8 @@
     "author": "Author",
     "email": "Email",
     "sources": "Sources: Common food from the USDA National Nutrient Database"
+  },
+  "privacy": {
+    "title": "Privacy Policy"
   }
 }

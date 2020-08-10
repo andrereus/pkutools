@@ -46,5 +46,8 @@
     "author": "Autor",
     "email": "E-Mail",
     "sources": "Quellen: Allgemeine Lebensmittel von der USDA National Nutrient Database"
+  },
+  "privacy": {
+    "title": "Datenschutz"
   }
 }
