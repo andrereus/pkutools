@@ -46,6 +46,8 @@
           </v-list-item>
         </v-list-item-group>
 
+        <v-divider></v-divider>
+
         <v-list-item-group>
           <v-list-item to="/apps">
             <v-list-item-action>
@@ -64,6 +66,16 @@
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("about.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item href="https://www.iubenda.com/privacy-policy/19763599" target="_blank">
+            <v-list-item-action>
+              <v-icon>mdi-open-in-new</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("privacy.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
