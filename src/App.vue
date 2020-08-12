@@ -79,18 +79,13 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item
-            href="https://www.iubenda.com/privacy-policy/19763599"
-            class="iubenda-nostyle no-brand iubenda-embed"
-            title="Privacy Policy"
-            active-class="privacy--active"
-          >
+          <v-list-item to="/privacy-policy">
             <v-list-item-action>
               <v-icon>mdi-lock</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>{{ $t("privacy.title") }}</v-list-item-title>
+              <v-list-item-title>{{ $t("privacy-policy.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>

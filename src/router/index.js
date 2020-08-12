@@ -42,6 +42,11 @@ const routes = [
     path: "/phe-log",
     name: "Phe Log",
     component: () => import(/* webpackChunkName: "phe-log" */ "../views/PheLog.vue")
+  },
+  {
+    path: "/privacy-policy",
+    name: "Privacy Policy",
+    component: () => import(/* webpackChunkName: "privacy-policy" */ "../views/PrivacyPolicy.vue")
   }
 ];
 
