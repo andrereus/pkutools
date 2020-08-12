@@ -9,6 +9,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("app.description") }}</p>
+        <p>{{ $t("about.install") }}</p>
 
         <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mt-3">{{ $t("phe-calculator.title") }}</v-btn>
         <v-btn depressed to="/phe-search" color="primary" class="mr-3 mt-3">{{ $t("phe-search.title") }}</v-btn>
