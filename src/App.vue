@@ -59,13 +59,13 @@
         <v-divider></v-divider>
 
         <v-list-item-group>
-          <v-list-item to="/apps">
+          <v-list-item to="/other-apps">
             <v-list-item-action>
               <v-icon>mdi-apps</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>{{ $t("apps.title") }}</v-list-item-title>
+              <v-list-item-title>{{ $t("other-apps.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 

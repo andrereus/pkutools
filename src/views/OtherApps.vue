@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" lg="9">
-        <h2 class="headline">{{ $t("apps.title") }}</h2>
+        <h2 class="headline">{{ $t("other-apps.title") }}</h2>
       </v-col>
     </v-row>
 
@@ -13,11 +13,11 @@
           <v-card-title>Phe Rechner</v-card-title>
 
           <v-card-text>
-            <div>{{ $t("apps.phe-rechner") }}</div>
+            <div>{{ $t("other-apps.phe-rechner") }}</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://pherechner.de/" target="_blank">{{ $t("apps.link") }}</v-btn>
+            <v-btn text href="https://pherechner.de/" target="_blank">{{ $t("other-apps.link") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -28,11 +28,11 @@
           <v-card-title>PKU Manager</v-card-title>
 
           <v-card-text>
-            <div>{{ $t("apps.pku-manager") }}</div>
+            <div>{{ $t("other-apps.pku-manager") }}</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://pkumanager.com/" target="_blank">{{ $t("apps.link") }}</v-btn>
+            <v-btn text href="https://pkumanager.com/" target="_blank">{{ $t("other-apps.link") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -43,11 +43,13 @@
           <v-card-title>Simple Nutrition Calculator</v-card-title>
 
           <v-card-text>
-            <div>{{ $t("apps.simple-nutrition-calculator") }}</div>
+            <div>{{ $t("other-apps.simple-nutrition-calculator") }}</div>
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">{{ $t("apps.link") }}</v-btn>
+            <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">
+              {{ $t("other-apps.link") }}
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>

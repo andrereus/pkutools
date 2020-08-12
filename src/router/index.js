@@ -19,9 +19,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
-    path: "/apps",
-    name: "Apps",
-    component: () => import(/* webpackChunkName: "apps" */ "../views/Apps.vue")
+    path: "/other-apps",
+    name: "Other Apps",
+    component: () => import(/* webpackChunkName: "other-apps" */ "../views/OtherApps.vue")
   },
   {
     path: "/amino-counter",

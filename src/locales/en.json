@@ -33,8 +33,8 @@
     "amount": "Amino acid mixtures per day",
     "ok": "Ok"
   },
-  "apps": {
-    "title": "Apps",
+  "other-apps": {
+    "title": "Other Apps",
     "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",
     "pku-manager": "English PKU app for searching, calculating and tracking food (~ 2018).",
     "simple-nutrition-calculator": "General app for calculating any nutrient values (~ 2019).",
