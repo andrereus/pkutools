@@ -284,8 +284,4 @@ export default {
     background-color: #272727;
   }
 }
-
-.privacy--active:before {
-  opacity: 0 !important;
-}
 </style>
