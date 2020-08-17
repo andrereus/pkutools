@@ -15,6 +15,12 @@
     "phe": "Phe per 100g (in mg)",
     "weight": "Weight (in g)"
   },
+  "protein-calculator": {
+    "title": "Protein Calculator",
+    "protein": "Protein per 100g (in g)",
+    "phe": "Phe per 100g",
+    "weight": "Weight (in g)"
+  },
   "phe-search": {
     "title": "Phe Search",
     "search": "Search"

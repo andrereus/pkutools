@@ -15,6 +15,12 @@
     "phe": "Phe pro 100g (in mg)",
     "weight": "Gewicht (in g)"
   },
+  "protein-calculator": {
+    "title": "Eiweiß Rechner",
+    "protein": "Eiweiß pro 100g (in g)",
+    "phe": "Phe pro 100g",
+    "weight": "Gewicht (in g)"
+  },
   "phe-search": {
     "title": "Phe Suche",
     "search": "Suche"

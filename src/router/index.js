@@ -11,27 +11,14 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue")
-  },
-  {
-    path: "/other-apps",
-    name: "Other Apps",
-    component: () => import(/* webpackChunkName: "other-apps" */ "../views/OtherApps.vue")
-  },
-  {
-    path: "/amino-counter",
-    name: "Amino Counter",
-    component: () => import(/* webpackChunkName: "amino-counter" */ "../views/AminoCounter.vue")
-  },
-  {
     path: "/phe-calculator",
     name: "Phe Calculator",
     component: () => import(/* webpackChunkName: "phe-calculator" */ "../views/PheCalculator.vue")
+  },
+  {
+    path: "/protein-calculator",
+    name: "Protein Calculator",
+    component: () => import(/* webpackChunkName: "protein-calculator" */ "../views/ProteinCalculator.vue")
   },
   {
     path: "/phe-search",
@@ -42,6 +29,24 @@ const routes = [
     path: "/phe-log",
     name: "Phe Log",
     component: () => import(/* webpackChunkName: "phe-log" */ "../views/PheLog.vue")
+  },
+  {
+    path: "/amino-counter",
+    name: "Amino Counter",
+    component: () => import(/* webpackChunkName: "amino-counter" */ "../views/AminoCounter.vue")
+  },
+  {
+    path: "/other-apps",
+    name: "Other Apps",
+    component: () => import(/* webpackChunkName: "other-apps" */ "../views/OtherApps.vue")
+  },
+  {
+    path: "/about",
+    name: "About",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ "../views/About.vue")
   },
   {
     path: "/privacy-policy",

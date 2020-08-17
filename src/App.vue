@@ -23,6 +23,16 @@
             </v-list-item-content>
           </v-list-item>
 
+          <v-list-item to="/protein-calculator">
+            <v-list-item-action>
+              <v-icon>mdi-calculator-variant</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("protein-calculator.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item to="/phe-search">
             <v-list-item-action>
               <v-icon>mdi-magnify</v-icon>
@@ -163,6 +173,10 @@
 
       <v-btn to="/phe-calculator" value="phe-calculator">
         <v-icon>mdi-calculator</v-icon>
+      </v-btn>
+
+      <v-btn to="/protein-calculator" value="protein-calculator">
+        <v-icon>mdi-calculator-variant</v-icon>
       </v-btn>
 
       <v-btn to="/phe-search" value="phe-search">
