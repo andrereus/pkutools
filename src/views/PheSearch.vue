@@ -20,7 +20,7 @@
 
         <v-data-table
           :headers="headers"
-          :items="food"
+          :items="loadedFood"
           :search="search"
           disable-pagination
           hide-default-footer
@@ -32,7 +32,8 @@
 </template>
 
 <script>
-import food from "../components/data/common-food.json";
+import enFood from "../components/data/en-food.json";
+import deFood from "../components/data/de-food.json";
 
 export default {
   data: () => ({
@@ -45,7 +46,17 @@ export default {
       },
       { text: "Phe per 100g (in mg)", value: "phe" }
     ],
-    food
-  })
+    enFood,
+    deFood
+  }),
+  computed: {
+    loadedFood() {
+      if (this.$i18n.locale === "de") {
+        return this.deFood;
+      } else {
+        return this.enFood;
+      }
+    }
+  }
 };
 </script>
