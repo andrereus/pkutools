@@ -8,6 +8,10 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <v-alert text color="info" v-if="this.$i18n.locale === 'de'">
+          Übersetzt aus dem Englischen mit Google Translate. Optimierungen folgen.
+        </v-alert>
+
         <!-- Text inputs need keyup on mobile -->
         <v-text-field
           :value="search"
@@ -22,6 +26,7 @@
           :headers="headers"
           :items="loadedFood"
           :search="search"
+          sort-by="name"
           disable-pagination
           hide-default-footer
           mobile-breakpoint="0"
