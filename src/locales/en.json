@@ -30,7 +30,7 @@
   },
   "amino-counter": {
     "title": "Amino Counter",
-    "description": "Count your daily intake of the amino acid mixture (short AS).",
+    "description": "Count the daily intake of the amino acid mixture (short AS).",
     "progress": "AS today",
     "date": "Last entry",
     "take": "Take AS",

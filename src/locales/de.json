@@ -30,7 +30,7 @@
   },
   "amino-counter": {
     "title": "Amino Zähler",
-    "description": "Zähle deine tägliche Einnahme der Aminosäuremischung (kurz AS).",
+    "description": "Zähle die tägliche Einnahme der Aminosäuremischung (kurz AS).",
     "progress": "AS heute",
     "date": "Letzter Eintrag",
     "take": "AS nehmen",
