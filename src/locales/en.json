@@ -18,7 +18,7 @@
   "protein-calculator": {
     "title": "Protein Calculator",
     "protein": "Protein per 100g (in g)",
-    "factor": "Calculate as fruit / vegetables",
+    "factor": "Calculate as fruits / vegetables",
     "phe": "Phe per 100g",
     "weight": "Weight (in g)"
   },
