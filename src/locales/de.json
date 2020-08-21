@@ -18,6 +18,7 @@
   "protein-calculator": {
     "title": "Eiweiß Rechner",
     "protein": "Eiweiß pro 100g (in g)",
+    "factor": "Als Obst / Gemüse berechnen",
     "phe": "Phe pro 100g",
     "weight": "Gewicht (in g)"
   },
@@ -31,7 +32,7 @@
   "amino-counter": {
     "title": "Amino Zähler",
     "description": "Zähle die tägliche Einnahme der Aminosäuremischung (kurz AS).",
-    "progress": "AS heute",
+    "progress": "AS genommen",
     "date": "Letzter Eintrag",
     "take": "AS nehmen",
     "reset": "Reset",

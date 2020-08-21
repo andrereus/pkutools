@@ -18,6 +18,7 @@
   "protein-calculator": {
     "title": "Protein Calculator",
     "protein": "Protein per 100g (in g)",
+    "factor": "Calculate as fruit / vegetables",
     "phe": "Phe per 100g",
     "weight": "Weight (in g)"
   },
@@ -31,7 +32,7 @@
   "amino-counter": {
     "title": "Amino Counter",
     "description": "Count the daily intake of the amino acid mixture (short AS).",
-    "progress": "AS today",
+    "progress": "AS taken",
     "date": "Last entry",
     "take": "Take AS",
     "reset": "Reset",
