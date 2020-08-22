@@ -27,7 +27,8 @@
     "search": "Search"
   },
   "phe-log": {
-    "title": "Phe Log"
+    "title": "Phe Log",
+    "description": "This is an early version of the tool and still in progress."
   },
   "amino-counter": {
     "title": "Amino Counter",

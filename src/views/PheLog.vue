@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row justify="center" v-if="!userIsAuthenticated">
+    <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <h2 class="headline">{{ $t("phe-log.title") }}</h2>
       </v-col>
@@ -8,6 +8,8 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <v-alert dense text color="info">{{ $t("phe-log.description") }}</v-alert>
+
         <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
           {{ $t("app.signin-google") }}
         </v-btn>
@@ -15,14 +17,20 @@
         <div v-if="userIsAuthenticated">
           <template>
             <v-data-table :headers="headers" :items="food" disable-pagination hide-default-footer mobile-breakpoint="0">
-              <template v-slot:top>
-                <v-toolbar flat>
-                  <v-toolbar-title>{{ $t("phe-log.title") }}</v-toolbar-title>
-                  <v-spacer></v-spacer>
+              <template v-slot:item="{ item }">
+                <tr @click="editItem(item)" class="tr-edit">
+                  <td class="text-start">{{ item.name }}</td>
+                  <td class="text-start">{{ item.weight }}</td>
+                  <td class="text-start">{{ item.phe }}</td>
+                </tr>
+              </template>
 
+              <template v-slot:footer>
+                <v-toolbar flat>
                   <v-dialog v-model="dialog" max-width="500px">
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn depressed v-bind="attrs" v-on="on">Add</v-btn>
+                      <v-btn depressed color="primary" class="ml-n4 mr-3 mt-3" v-bind="attrs" v-on="on">Add</v-btn>
+                      <v-btn depressed class="mr-3 mt-3" @click="initialize">Reset</v-btn>
                     </template>
 
                     <v-card>
@@ -81,18 +89,6 @@
                     </v-card>
                   </v-dialog>
                 </v-toolbar>
-              </template>
-
-              <template v-slot:item="{ item }">
-                <tr @click="editItem(item)" class="tr-edit">
-                  <td class="text-start">{{ item.name }}</td>
-                  <td class="text-start">{{ item.weight }}</td>
-                  <td class="text-start">{{ item.phe }}</td>
-                </tr>
-              </template>
-
-              <template v-slot:no-data>
-                <v-btn depressed @click="initialize">Reset</v-btn>
               </template>
             </v-data-table>
           </template>

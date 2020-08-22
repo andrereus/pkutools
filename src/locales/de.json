@@ -27,7 +27,8 @@
     "search": "Suche"
   },
   "phe-log": {
-    "title": "Phe Protokoll"
+    "title": "Phe Protokoll",
+    "description": "Dies ist eine frühe Version des Tools und noch in Bearbeitung."
   },
   "amino-counter": {
     "title": "Amino Zähler",
