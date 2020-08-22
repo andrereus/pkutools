@@ -74,9 +74,10 @@ export default new Vuex.Store({
               .collection("userData")
               .doc(context.state.user.id)
               .set({
-                count: 0,
-                date: new Date().toUTCString(),
-                max: 3
+                aminoCounterCount: 0,
+                aminoCounterDate: new Date().toUTCString(),
+                aminoCounterMax: 3,
+                pheLog: []
               });
           }
         });

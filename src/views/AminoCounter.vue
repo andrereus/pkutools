@@ -16,15 +16,15 @@
 
         <div v-if="userIsAuthenticated">
           <v-progress-linear
-            :value="(userData.count * 100) / userData.max"
+            :value="(userData.aminoCounterCount * 100) / userData.aminoCounterMax"
             height="40"
             class="white--text my-6"
             rounded
           >
-            {{ userData.count }} {{ $t("amino-counter.progress") }}
+            {{ userData.aminoCounterCount }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
 
-          <p>{{ $t("amino-counter.date") }}: {{ new Date(userData.date).toLocaleString() }}</p>
+          <p>{{ $t("amino-counter.date") }}: {{ new Date(userData.aminoCounterDate).toLocaleString() }}</p>
 
           <v-btn depressed @click="takeAM" color="primary" class="mr-3 mt-3">
             {{ $t("amino-counter.take") }}
@@ -49,7 +49,7 @@
                 <v-text-field
                   filled
                   :label="$t('amino-counter.amount')"
-                  v-model.number="userData.max"
+                  v-model.number="userData.aminoCounterMax"
                   type="number"
                   class="mt-6"
                 ></v-text-field>
@@ -87,8 +87,8 @@ export default {
         .collection("userData")
         .doc(this.user.id)
         .update({
-          count: this.userData.count + 1 || 1,
-          date: new Date().toUTCString()
+          aminoCounterCount: this.userData.aminoCounterCount + 1 || 1,
+          aminoCounterDate: new Date().toUTCString()
         });
     },
     resetAM() {
@@ -97,7 +97,7 @@ export default {
         .collection("userData")
         .doc(this.user.id)
         .update({
-          count: 0
+          aminoCounterCount: 0
         });
     },
     setMax() {
@@ -106,7 +106,7 @@ export default {
         .collection("userData")
         .doc(this.user.id)
         .update({
-          max: this.userData.max || 0
+          aminoCounterMax: this.userData.aminoCounterMax || 0
         });
 
       this.dialog = false;

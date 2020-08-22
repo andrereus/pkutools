@@ -100,6 +100,7 @@
 
 <script>
 import { mapState } from "vuex";
+import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 
@@ -166,7 +167,15 @@ export default {
       if (this.editedIndex > -1) {
         Object.assign(this.food[this.editedIndex], this.editedItem);
       } else {
-        this.food.push(this.editedItem);
+        // this.food.push(this.editedItem);
+
+        firebase
+          .firestore()
+          .collection("userData")
+          .doc(this.user.id)
+          .update({
+            pheLog: [this.editedItem]
+          });
       }
       this.close();
     },
@@ -198,9 +207,9 @@ export default {
       return this.editedIndex === -1 ? "Add" : "Edit";
     },
     userIsAuthenticated() {
-      return this.user !== null && this.user !== undefined && this.pheLog !== null; // TODO: undefined
+      return this.user !== null && this.user !== undefined && this.userData !== null;
     },
-    ...mapState(["user", "pheLog"])
+    ...mapState(["user", "userData"])
   }
 };
 </script>
