@@ -10,7 +10,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     user: null,
-    aminoCounter: null
+    userData: null
   },
   mutations: {
     setUser(state, payload) {
@@ -61,17 +61,17 @@ export default new Vuex.Store({
     initRef: firestoreAction(context => {
       context
         .bindFirestoreRef(
-          "aminoCounter",
+          "userData",
           firebase
             .firestore()
-            .collection("aminoCounter")
+            .collection("userData")
             .doc(context.state.user.id)
         )
         .then(() => {
-          if (context.state.aminoCounter === null) {
+          if (context.state.userData === null) {
             firebase
               .firestore()
-              .collection("aminoCounter")
+              .collection("userData")
               .doc(context.state.user.id)
               .set({
                 count: 0,

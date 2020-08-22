@@ -16,15 +16,15 @@
 
         <div v-if="userIsAuthenticated">
           <v-progress-linear
-            :value="(aminoCounter.count * 100) / aminoCounter.max"
+            :value="(userData.count * 100) / userData.max"
             height="40"
             class="white--text my-6"
             rounded
           >
-            {{ aminoCounter.count }} {{ $t("amino-counter.progress") }}
+            {{ userData.count }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
 
-          <p>{{ $t("amino-counter.date") }}: {{ new Date(aminoCounter.date).toLocaleString() }}</p>
+          <p>{{ $t("amino-counter.date") }}: {{ new Date(userData.date).toLocaleString() }}</p>
 
           <v-btn depressed @click="takeAM" color="primary" class="mr-3 mt-3">
             {{ $t("amino-counter.take") }}
@@ -49,7 +49,7 @@
                 <v-text-field
                   filled
                   :label="$t('amino-counter.amount')"
-                  v-model.number="aminoCounter.max"
+                  v-model.number="userData.max"
                   type="number"
                   class="mt-6"
                 ></v-text-field>
@@ -84,17 +84,17 @@ export default {
     takeAM() {
       firebase
         .firestore()
-        .collection("aminoCounter")
+        .collection("userData")
         .doc(this.user.id)
         .update({
-          count: this.aminoCounter.count + 1 || 1,
+          count: this.userData.count + 1 || 1,
           date: new Date().toUTCString()
         });
     },
     resetAM() {
       firebase
         .firestore()
-        .collection("aminoCounter")
+        .collection("userData")
         .doc(this.user.id)
         .update({
           count: 0
@@ -103,10 +103,10 @@ export default {
     setMax() {
       firebase
         .firestore()
-        .collection("aminoCounter")
+        .collection("userData")
         .doc(this.user.id)
         .update({
-          max: this.aminoCounter.max || 0
+          max: this.userData.max || 0
         });
 
       this.dialog = false;
@@ -114,9 +114,9 @@ export default {
   },
   computed: {
     userIsAuthenticated() {
-      return this.user !== null && this.user !== undefined && this.aminoCounter !== null;
+      return this.user !== null && this.user !== undefined && this.userData !== null;
     },
-    ...mapState(["user", "aminoCounter"])
+    ...mapState(["user", "userData"])
   }
 };
 </script>
