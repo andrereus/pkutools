@@ -8,7 +8,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense text color="info">{{ $t("phe-log.description") }}</v-alert>
+        <v-alert text color="info">{{ $t("phe-log.description") }}</v-alert>
 
         <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
           {{ $t("app.signin-google") }}
@@ -35,8 +35,10 @@
                 <v-toolbar flat>
                   <v-dialog v-model="dialog" max-width="500px">
                     <template v-slot:activator="{ on, attrs }">
-                      <v-btn depressed color="primary" class="ml-n4 mr-3 mt-3" v-bind="attrs" v-on="on">Add</v-btn>
-                      <v-btn depressed class="mr-3 mt-3" @click="reset">Reset</v-btn>
+                      <v-btn depressed color="primary" class="ml-n4 mr-3 mt-3" v-bind="attrs" v-on="on">
+                        {{ $t("phe-log.add") }}
+                      </v-btn>
+                      <v-btn depressed class="mr-3 mt-3" @click="reset">{{ $t("phe-log.reset") }}</v-btn>
                     </template>
 
                     <v-card>
@@ -86,11 +88,11 @@
 
                       <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn depressed color="primary" @click="save">Save</v-btn>
+                        <v-btn depressed color="primary" @click="save">{{ $t("phe-log.save") }}</v-btn>
                         <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem(editedIndex)">
-                          Delete
+                          {{ $t("phe-log.delete") }}
                         </v-btn>
-                        <v-btn depressed @click="close">Cancel</v-btn>
+                        <v-btn depressed @click="close">{{ $t("phe-log.cancel") }}</v-btn>
                       </v-card-actions>
                     </v-card>
                   </v-dialog>
@@ -213,7 +215,19 @@ export default {
   },
   computed: {
     formTitle() {
-      return this.editedIndex === -1 ? "Add" : "Edit";
+      if (this.editedIndex === -1) {
+        if (this.$i18n.locale === "de") {
+          return "Hinzufügen";
+        } else {
+          return "Add";
+        }
+      } else {
+        if (this.$i18n.locale === "de") {
+          return "Bearbeiten";
+        } else {
+          return "Edit";
+        }
+      }
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined && this.userData !== null;

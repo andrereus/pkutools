@@ -28,7 +28,12 @@
   },
   "phe-log": {
     "title": "Phe Protokoll",
-    "description": "Dies ist eine frühe Version des Tools und noch in Bearbeitung."
+    "description": "Dies ist eine frühe Version des Tools und noch in Bearbeitung.",
+    "add": "Hinzufügen",
+    "reset": "Zurücksetzen",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "cancel": "Abbrechen"
   },
   "amino-counter": {
     "title": "Amino Zähler",
@@ -36,7 +41,7 @@
     "progress": "AS genommen",
     "date": "Letzter Eintrag",
     "take": "AS nehmen",
-    "reset": "Reset",
+    "reset": "Zurücksetzen",
     "settings": "Einstellungen",
     "amount": "Aminosäuremischungen pro Tag",
     "ok": "Ok"

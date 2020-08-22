@@ -8,7 +8,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense text color="info" v-if="this.$i18n.locale === 'de'">
+        <v-alert text color="info" v-if="this.$i18n.locale === 'de'">
           Übersetzt aus dem Englischen mit Google Translate. Optimierungen folgen.
         </v-alert>
 

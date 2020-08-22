@@ -28,7 +28,12 @@
   },
   "phe-log": {
     "title": "Phe Log",
-    "description": "This is an early version of the tool and still in progress."
+    "description": "This is an early version of the tool and still in progress.",
+    "add": "Add",
+    "reset": "Reset",
+    "save": "Save",
+    "delete": "Delete",
+    "cancel": "Cancel"
   },
   "amino-counter": {
     "title": "Amino Counter",

@@ -45,15 +45,15 @@
         </v-list-item-group>
 
         <v-list-item-group>
-          <!--          <v-list-item to="/phe-log">-->
-          <!--            <v-list-item-action>-->
-          <!--              <v-icon>mdi-book</v-icon>-->
-          <!--            </v-list-item-action>-->
+          <v-list-item to="/phe-log">
+            <v-list-item-action>
+              <v-icon>mdi-book</v-icon>
+            </v-list-item-action>
 
-          <!--            <v-list-item-content>-->
-          <!--              <v-list-item-title>{{ $t("phe-log.title") }}</v-list-item-title>-->
-          <!--            </v-list-item-content>-->
-          <!--          </v-list-item>-->
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("phe-log.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
 
           <v-list-item to="/amino-counter">
             <v-list-item-action>
@@ -183,12 +183,8 @@
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
-      <!--      <v-btn to="/phe-log" value="phe-log">-->
-      <!--        <v-icon>mdi-book</v-icon>-->
-      <!--      </v-btn>-->
-
-      <v-btn to="/amino-counter" value="amino-counter">
-        <v-icon>mdi-cup</v-icon>
+      <v-btn to="/phe-log" value="phe-log">
+        <v-icon>mdi-book</v-icon>
       </v-btn>
     </v-bottom-navigation>
   </v-app>
