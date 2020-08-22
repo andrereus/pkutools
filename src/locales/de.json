@@ -28,7 +28,7 @@
   },
   "phe-log": {
     "title": "Phe Protokoll",
-    "description": "Dies ist eine frühe Version des Tools und noch in Bearbeitung.",
+    "description": "Dies ist eine frühe Version des Tools und wird noch optimiert.",
     "add": "Hinzufügen",
     "reset": "Zurücksetzen",
     "save": "Speichern",

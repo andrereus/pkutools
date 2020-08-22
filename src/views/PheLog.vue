@@ -241,4 +241,8 @@ export default {
 .tr-edit {
   cursor: pointer;
 }
+
+.theme--dark.v-toolbar.v-sheet {
+  background-color: #121212;
+}
 </style>

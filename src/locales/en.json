@@ -28,7 +28,7 @@
   },
   "phe-log": {
     "title": "Phe Log",
-    "description": "This is an early version of the tool and still in progress.",
+    "description": "This is an early version of the tool and is still being tweaked.",
     "add": "Add",
     "reset": "Reset",
     "save": "Save",
