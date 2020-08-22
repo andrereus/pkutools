@@ -16,7 +16,13 @@
 
         <div v-if="userIsAuthenticated">
           <template>
-            <v-data-table :headers="headers" :items="food" disable-pagination hide-default-footer mobile-breakpoint="0">
+            <v-data-table
+              :headers="headers"
+              :items="userData.pheLog"
+              disable-pagination
+              hide-default-footer
+              mobile-breakpoint="0"
+            >
               <template v-slot:item="{ item }">
                 <tr @click="editItem(item)" class="tr-edit">
                   <td class="text-start">{{ item.name }}</td>
@@ -30,7 +36,7 @@
                   <v-dialog v-model="dialog" max-width="500px">
                     <template v-slot:activator="{ on, attrs }">
                       <v-btn depressed color="primary" class="ml-n4 mr-3 mt-3" v-bind="attrs" v-on="on">Add</v-btn>
-                      <v-btn depressed class="mr-3 mt-3" @click="initialize">Reset</v-btn>
+                      <v-btn depressed class="mr-3 mt-3" @click="reset">Reset</v-btn>
                     </template>
 
                     <v-card>
@@ -116,7 +122,6 @@ export default {
       { text: "Weight (in g)", value: "weight" },
       { text: "Phe (in mg)", value: "phe" }
     ],
-    food: null,
     editedIndex: -1,
     editedItem: {
       name: null,
@@ -133,27 +138,29 @@ export default {
     signInGoogle() {
       this.$store.dispatch("signInGoogle");
     },
-    initialize() {
-      this.food = [
-        {
-          name: "Frozen Yogurt",
-          weight: 100,
-          phe: 100
-        },
-        {
-          name: "Ice cream sandwich",
-          weight: 50,
-          phe: 100
-        }
-      ];
+    reset() {
+      firebase
+        .firestore()
+        .collection("userData")
+        .doc(this.user.id)
+        .update({
+          pheLog: []
+        });
     },
     editItem(item) {
-      this.editedIndex = this.food.indexOf(item);
+      this.editedIndex = this.userData.pheLog.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
     },
     deleteItem(editedIndex) {
-      this.food.splice(editedIndex, 1);
+      this.userData.pheLog.splice(editedIndex, 1);
+      firebase
+        .firestore()
+        .collection("userData")
+        .doc(this.user.id)
+        .update({
+          pheLog: [...this.userData.pheLog]
+        });
       this.close();
     },
     close() {
@@ -165,16 +172,21 @@ export default {
     },
     save() {
       if (this.editedIndex > -1) {
-        Object.assign(this.food[this.editedIndex], this.editedItem);
-      } else {
-        // this.food.push(this.editedItem);
-
+        Object.assign(this.userData.pheLog[this.editedIndex], this.editedItem);
         firebase
           .firestore()
           .collection("userData")
           .doc(this.user.id)
           .update({
-            pheLog: [this.editedItem]
+            pheLog: [...this.userData.pheLog]
+          });
+      } else {
+        firebase
+          .firestore()
+          .collection("userData")
+          .doc(this.user.id)
+          .update({
+            pheLog: [...this.userData.pheLog, this.editedItem]
           });
       }
       this.close();
@@ -193,9 +205,6 @@ export default {
         this.editedItem.phe = newPhe;
       }
     }
-  },
-  created() {
-    this.initialize();
   },
   watch: {
     dialog(val) {
