@@ -20,6 +20,8 @@
           :label="$t('phe-search.search')"
           filled
           single-line
+          @click:append="closeKeys"
+          ref="foodSearch"
         ></v-text-field>
 
         <v-data-table
@@ -54,6 +56,11 @@ export default {
     enFood,
     deFood
   }),
+  methods: {
+    closeKeys() {
+      this.$refs.foodSearch.blur();
+    }
+  },
   computed: {
     loadedFood() {
       if (this.$i18n.locale === "de") {
