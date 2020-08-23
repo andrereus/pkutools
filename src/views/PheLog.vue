@@ -173,23 +173,25 @@ export default {
       });
     },
     save() {
-      // TODO: Add date as id
       if (this.editedIndex > -1) {
+        Object.assign(this.userData.pheLog[this.editedIndex], this.editedItem);
         firebase
           .firestore()
           .collection("userData")
           .doc(this.user.id)
           .update({
-            pheLog: firebase.firestore.FieldValue.arrayRemove(this.userData.pheLog[this.editedIndex])
+            pheLog: [...this.userData.pheLog]
+          });
+      } else {
+        // TODO: Add date as id
+        firebase
+          .firestore()
+          .collection("userData")
+          .doc(this.user.id)
+          .update({
+            pheLog: firebase.firestore.FieldValue.arrayUnion(this.editedItem)
           });
       }
-      firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
-        .update({
-          pheLog: firebase.firestore.FieldValue.arrayUnion(this.editedItem)
-        });
       this.close();
     },
     editWeight(event) {
