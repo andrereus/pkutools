@@ -89,6 +89,16 @@
             </v-list-item-content>
           </v-list-item>
 
+          <v-list-item to="/disclaimer">
+            <v-list-item-action>
+              <v-icon>mdi-information-outline</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("disclaimer.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item to="/privacy-policy">
             <v-list-item-action>
               <v-icon>mdi-lock</v-icon>

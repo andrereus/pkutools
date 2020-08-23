@@ -60,6 +60,9 @@
     "email": "E-Mail",
     "sources": "Quellen: Allgemeine Lebensmittel von der USDA National Nutrient Database"
   },
+  "disclaimer": {
+    "title": "Disclaimer"
+  },
   "privacy-policy": {
     "title": "Datenschutz"
   }
