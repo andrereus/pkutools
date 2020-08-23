@@ -2,13 +2,12 @@
   "app": {
     "title": "PKU Tools",
     "description": "Free tools and apps for people with PKU.",
+    "install": "This app can be installed on any device by adding it to the homescreen.",
     "signin-google": "Sign in with Google",
     "signout": "Sign out"
   },
   "home": {
-    "title": "Home",
-    "translation": "German translation is still in progress.",
-    "progress": "More in progress"
+    "title": "Home"
   },
   "phe-calculator": {
     "title": "Phe Calculator",
@@ -17,8 +16,8 @@
   },
   "protein-calculator": {
     "title": "Protein Calculator",
-    "protein": "Protein per 100g (in g)",
     "factor": "Calculate as fruits / vegetables",
+    "protein": "Protein per 100g (in g)",
     "phe": "Phe per 100g",
     "weight": "Weight (in g)"
   },
@@ -28,7 +27,7 @@
   },
   "phe-log": {
     "title": "Phe Log",
-    "description": "This is an early version of the tool and is still being tweaked.",
+    "description": "The Phe Log is still under development.",
     "add": "Add",
     "reset": "Reset",
     "save": "Save",
@@ -55,7 +54,6 @@
   },
   "about": {
     "title": "About",
-    "install": "This app can be installed on any device by adding it to the homescreen.",
     "email": "Email",
     "sources": "Sources: Common food from the USDA National Nutrient Database"
   },

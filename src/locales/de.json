@@ -2,13 +2,12 @@
   "app": {
     "title": "PKU Tools",
     "description": "Kostenlose Tools und Apps für Menschen mit PKU.",
+    "install": "Diese App kann auf jedem Gerät installiert werden, indem sie zum Startbildschirm hinzugefügt wird.",
     "signin-google": "Anmelden mit Google",
     "signout": "Abmelden"
   },
   "home": {
-    "title": "Start",
-    "translation": "Deutsche Übersetzung ist noch in Bearbeitung.",
-    "progress": "Mehr in Bearbeitung"
+    "title": "Start"
   },
   "phe-calculator": {
     "title": "Phe Rechner",
@@ -17,8 +16,8 @@
   },
   "protein-calculator": {
     "title": "Eiweiß Rechner",
-    "protein": "Eiweiß pro 100g (in g)",
     "factor": "Als Obst / Gemüse berechnen",
+    "protein": "Eiweiß pro 100g (in g)",
     "phe": "Phe pro 100g",
     "weight": "Gewicht (in g)"
   },
@@ -28,7 +27,7 @@
   },
   "phe-log": {
     "title": "Phe Protokoll",
-    "description": "Dies ist eine frühe Version des Tools und wird noch optimiert.",
+    "description": "Das Phe Protokoll befindet sich noch in der Entwicklung.",
     "add": "Hinzufügen",
     "reset": "Zurücksetzen",
     "save": "Speichern",
@@ -55,7 +54,6 @@
   },
   "about": {
     "title": "Impressum",
-    "install": "Diese App kann auf jedem Gerät installiert werden, indem sie zum Startbildschirm hinzugefügt wird.",
     "email": "E-Mail",
     "sources": "Quellen: Allgemeine Lebensmittel von der USDA National Nutrient Database"
   },

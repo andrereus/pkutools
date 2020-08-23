@@ -8,7 +8,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert text color="info">{{ $t("phe-log.description") }}</v-alert>
+        <v-alert dense text color="warning">{{ $t("phe-log.description") }}</v-alert>
 
         <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
           {{ $t("app.signin-google") }}
