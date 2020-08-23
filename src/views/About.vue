@@ -10,7 +10,14 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("app.description") }}</p>
         <p>{{ $t("about.install") }}</p>
-        <p>{{ $t("about.author") }}: André Reus</p>
+
+        <p>
+          André Reus
+          <br />
+          Obere Gasse 38
+          <br />
+          71120 Grafenau
+        </p>
 
         <!-- prettier-ignore -->
         <p>{{ $t("about.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
