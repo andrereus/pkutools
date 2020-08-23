@@ -155,13 +155,13 @@ export default {
       this.dialog = true;
     },
     deleteItem(editedIndex) {
-      // TODO: Add date as id
+      this.userData.pheLog.splice(editedIndex, 1);
       firebase
         .firestore()
         .collection("userData")
         .doc(this.user.id)
         .update({
-          pheLog: firebase.firestore.FieldValue.arrayRemove(this.userData.pheLog[editedIndex])
+          pheLog: this.userData.pheLog
         });
       this.close();
     },
@@ -180,16 +180,15 @@ export default {
           .collection("userData")
           .doc(this.user.id)
           .update({
-            pheLog: [...this.userData.pheLog]
+            pheLog: this.userData.pheLog
           });
       } else {
-        // TODO: Add date as id
         firebase
           .firestore()
           .collection("userData")
           .doc(this.user.id)
           .update({
-            pheLog: firebase.firestore.FieldValue.arrayUnion(this.editedItem)
+            pheLog: [...this.userData.pheLog, this.editedItem]
           });
       }
       this.close();
