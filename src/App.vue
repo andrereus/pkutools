@@ -242,16 +242,15 @@ export default {
     });
 
     firebase.auth().onAuthStateChanged(user => {
-      if (navigator.onLine) {
-        if (user) {
-          this.$store.dispatch("autoSignIn", user).then(() => {
-            this.$store.dispatch("initRef");
-          });
-        }
-      } else {
-        alert(this.$t("app.offline"));
-        this.signOut();
+      if (user && navigator.onLine) {
+        this.$store.dispatch("autoSignIn", user).then(() => {
+          this.$store.dispatch("initRef");
+        });
       }
+    });
+
+    window.addEventListener("offline", function() {
+      this.signOut();
     });
   },
   mounted() {
