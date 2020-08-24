@@ -249,7 +249,7 @@ export default {
       }
     });
 
-    window.addEventListener("offline", function() {
+    window.addEventListener("offline", () => {
       this.signOut();
     });
   },
