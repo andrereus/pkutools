@@ -138,7 +138,11 @@ export default {
   }),
   methods: {
     signInGoogle() {
-      this.$store.dispatch("signInGoogle");
+      if (navigator.onLine) {
+        this.$store.dispatch("signInGoogle");
+      } else {
+        alert(this.$t("app.offline"));
+      }
     },
     reset() {
       firebase
