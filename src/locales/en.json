@@ -4,7 +4,8 @@
     "description": "Free tools and apps for people with PKU.",
     "install": "This app can be installed on any device by adding it to the homescreen.",
     "signin-google": "Sign in with Google",
-    "signout": "Sign out"
+    "signout": "Sign out",
+    "offline": "You are offline."
   },
   "home": {
     "title": "Home"
@@ -33,8 +34,7 @@
     "reset": "Reset",
     "save": "Save",
     "delete": "Delete",
-    "cancel": "Cancel",
-    "offline": "Can't save or delete when offline."
+    "cancel": "Cancel"
   },
   "amino-counter": {
     "title": "Amino Counter",

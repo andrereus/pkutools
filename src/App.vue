@@ -218,7 +218,11 @@ export default {
   }),
   methods: {
     signInGoogle() {
-      this.$store.dispatch("signInGoogle");
+      if (navigator.onLine) {
+        this.$store.dispatch("signInGoogle");
+      } else {
+        alert(this.$t("app.offline"));
+      }
     },
     signOut() {
       this.$store.dispatch("signOut");
@@ -238,10 +242,15 @@ export default {
     });
 
     firebase.auth().onAuthStateChanged(user => {
-      if (user) {
-        this.$store.dispatch("autoSignIn", user).then(() => {
-          this.$store.dispatch("initRef");
-        });
+      if (navigator.onLine) {
+        if (user) {
+          this.$store.dispatch("autoSignIn", user).then(() => {
+            this.$store.dispatch("initRef");
+          });
+        }
+      } else {
+        alert(this.$t("app.offline"));
+        this.signOut();
       }
     });
   },

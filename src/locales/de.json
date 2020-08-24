@@ -4,7 +4,8 @@
     "description": "Kostenlose Tools und Apps für Menschen mit PKU.",
     "install": "Diese App kann auf jedem Gerät installiert werden, indem sie zum Startbildschirm hinzugefügt wird.",
     "signin-google": "Anmelden mit Google",
-    "signout": "Abmelden"
+    "signout": "Abmelden",
+    "offline": "Du bist offline."
   },
   "home": {
     "title": "Start"
@@ -33,8 +34,7 @@
     "reset": "Zurücksetzen",
     "save": "Speichern",
     "delete": "Löschen",
-    "cancel": "Abbrechen",
-    "offline": "Offline kann nicht gespeichert oder gelöscht werden."
+    "cancel": "Abbrechen"
   },
   "amino-counter": {
     "title": "Amino Zähler",
