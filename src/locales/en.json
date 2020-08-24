@@ -29,10 +29,12 @@
     "title": "Phe Log",
     "description": "The Phe Log is still under development.",
     "add": "Add",
+    "edit": "Edit",
     "reset": "Reset",
     "save": "Save",
     "delete": "Delete",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "offline": "Can't save or delete when offline."
   },
   "amino-counter": {
     "title": "Amino Counter",

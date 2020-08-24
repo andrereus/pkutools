@@ -141,13 +141,17 @@ export default {
       this.$store.dispatch("signInGoogle");
     },
     reset() {
-      firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
-        .update({
-          pheLog: []
-        });
+      if (navigator.onLine) {
+        firebase
+          .firestore()
+          .collection("userData")
+          .doc(this.user.id)
+          .update({
+            pheLog: []
+          });
+      } else {
+        alert(this.$t("phe-log.offline"));
+      }
     },
     editItem(item) {
       this.editedIndex = this.userData.pheLog.indexOf(item);
@@ -155,15 +159,20 @@ export default {
       this.dialog = true;
     },
     deleteItem(editedIndex) {
-      this.userData.pheLog.splice(editedIndex, 1);
-      firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
-        .update({
-          pheLog: this.userData.pheLog
-        });
-      this.close();
+      if (navigator.onLine) {
+        this.userData.pheLog.splice(editedIndex, 1);
+        firebase
+          .firestore()
+          .collection("userData")
+          .doc(this.user.id)
+          .update({
+            pheLog: this.userData.pheLog
+          });
+        this.close();
+      } else {
+        this.close();
+        alert(this.$t("phe-log.offline"));
+      }
     },
     close() {
       this.dialog = false;
@@ -173,25 +182,30 @@ export default {
       });
     },
     save() {
-      if (this.editedIndex > -1) {
-        Object.assign(this.userData.pheLog[this.editedIndex], this.editedItem);
-        firebase
-          .firestore()
-          .collection("userData")
-          .doc(this.user.id)
-          .update({
-            pheLog: this.userData.pheLog
-          });
+      if (navigator.onLine) {
+        if (this.editedIndex > -1) {
+          Object.assign(this.userData.pheLog[this.editedIndex], this.editedItem);
+          firebase
+            .firestore()
+            .collection("userData")
+            .doc(this.user.id)
+            .update({
+              pheLog: this.userData.pheLog
+            });
+        } else {
+          firebase
+            .firestore()
+            .collection("userData")
+            .doc(this.user.id)
+            .update({
+              pheLog: [...this.userData.pheLog, this.editedItem]
+            });
+        }
+        this.close();
       } else {
-        firebase
-          .firestore()
-          .collection("userData")
-          .doc(this.user.id)
-          .update({
-            pheLog: [...this.userData.pheLog, this.editedItem]
-          });
+        this.close();
+        alert(this.$t("phe-log.offline"));
       }
-      this.close();
     },
     editWeight(event) {
       const newWeight = Number(event.target.value);
@@ -216,17 +230,9 @@ export default {
   computed: {
     formTitle() {
       if (this.editedIndex === -1) {
-        if (this.$i18n.locale === "de") {
-          return "Hinzufügen";
-        } else {
-          return "Add";
-        }
+        return this.$t("phe-log.add");
       } else {
-        if (this.$i18n.locale === "de") {
-          return "Bearbeiten";
-        } else {
-          return "Edit";
-        }
+        return this.$t("phe-log.edit");
       }
     },
     userIsAuthenticated() {

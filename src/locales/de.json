@@ -29,10 +29,12 @@
     "title": "Phe Protokoll",
     "description": "Das Phe Protokoll befindet sich noch in der Entwicklung.",
     "add": "Hinzufügen",
+    "edit": "Bearbeiten",
     "reset": "Zurücksetzen",
     "save": "Speichern",
     "delete": "Löschen",
-    "cancel": "Abbrechen"
+    "cancel": "Abbrechen",
+    "offline": "Offline kann nicht gespeichert oder gelöscht werden."
   },
   "amino-counter": {
     "title": "Amino Zähler",
