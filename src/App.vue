@@ -242,10 +242,14 @@ export default {
     });
 
     firebase.auth().onAuthStateChanged(user => {
-      if (user && navigator.onLine) {
-        this.$store.dispatch("autoSignIn", user).then(() => {
-          this.$store.dispatch("initRef");
-        });
+      if (navigator.onLine) {
+        if (user) {
+          this.$store.dispatch("autoSignIn", user).then(() => {
+            this.$store.dispatch("initRef");
+          });
+        }
+      } else {
+        this.signOut();
       }
     });
 
