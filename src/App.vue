@@ -242,6 +242,7 @@ export default {
     });
 
     firebase.auth().onAuthStateChanged(user => {
+      // Prevent corrupt data
       if (navigator.onLine) {
         if (user) {
           this.$store.dispatch("autoSignIn", user).then(() => {
@@ -253,8 +254,9 @@ export default {
       }
     });
 
+    // TODO: Implement toast
     // window.addEventListener("offline", () => {
-    //   this.signOut();
+    //   alert(this.$t("app.offline"));
     // });
   },
   mounted() {
@@ -285,6 +287,7 @@ export default {
       return this.user !== null && this.user !== undefined;
     },
     userPhotoUrl() {
+      // Necessary to parse url
       return this.$store.getters.user.photoUrl;
     },
     ...mapState(["user"])
