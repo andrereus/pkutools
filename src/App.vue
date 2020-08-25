@@ -253,9 +253,9 @@ export default {
       }
     });
 
-    window.addEventListener("offline", () => {
-      this.signOut();
-    });
+    // window.addEventListener("offline", () => {
+    //   this.signOut();
+    // });
   },
   mounted() {
     if (localStorage.vuetifyThemeDark) {
