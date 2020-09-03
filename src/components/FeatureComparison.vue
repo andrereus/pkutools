@@ -3,7 +3,7 @@
     <template v-slot:default>
       <thead>
         <tr>
-          <th class="text-left">{{ $t("feature-comparison.name") }}</th>
+          <th class="text-left">{{ $t("feature-comparison.subject") }}</th>
           <th class="text-left" v-if="home">{{ $t("feature-comparison.details") }}</th>
           <th class="text-left" v-if="!home">PKU Tools</th>
           <th class="text-left" v-if="!home">PKU Manager</th>
@@ -16,6 +16,27 @@
           <td>{{ item.pkutools }}</td>
           <td v-if="!home">{{ item.pkumanager }}</td>
           <td v-if="!home">{{ item.pherechner }}</td>
+        </tr>
+        <tr v-if="!home">
+          <td>{{ $t("feature-comparison.links") }}</td>
+          <td></td>
+          <td>
+            <a href="https://pkumanager.com/" target="_blank">Web</a>
+            ,
+            <a href="https://play.google.com/store/apps/details?id=com.andrereus.pkumanager" target="_blank">Android</a>
+          </td>
+          <td>
+            <a href="https://pherechner.de/" target="_blank">Web</a>
+            ,
+            <a href="https://play.google.com/store/apps/details?id=com.endofweb.pherechner" target="_blank">Android</a>
+            ,
+            <a
+              href="https://chrome.google.com/webstore/detail/phe-rechner/phihennkfhbchhbegacdmondhhkpmfjj"
+              target="_blank"
+            >
+              Chrome
+            </a>
+          </td>
         </tr>
       </tbody>
     </template>

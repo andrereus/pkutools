@@ -53,7 +53,6 @@
     "phe-rechner": "Deutsche PKU App die Taschenrechner, Bleistift, Papier und Nährwerttabelle kombiniert (~ 2017).",
     "pku-manager": "Englische PKU App zum Suchen, Berechnen und Tracken von Lebensmitteln (~ 2018).",
     "simple-nutrition-calculator": "Allgemeine App zum Berechnen beliebiger Nährwerte (~ 2019).",
-    "link": "Website",
     "features": "Feature Vergleich"
   },
   "about": {
@@ -68,7 +67,8 @@
     "title": "Datenschutz"
   },
   "feature-comparison": {
-    "name": "Feature",
-    "details": "Details"
+    "subject": "Themenbereich",
+    "details": "Details",
+    "links": "Links"
   }
 }
