@@ -4,7 +4,7 @@
       <thead>
         <tr>
           <th class="text-left">{{ $t("feature-comparison.name") }}</th>
-          <th class="text-left" v-if="home">{{ $t("feature-comparison.description") }}</th>
+          <th class="text-left" v-if="home">{{ $t("feature-comparison.details") }}</th>
           <th class="text-left" v-if="!home">PKU Tools</th>
           <th class="text-left" v-if="!home">PKU Manager</th>
           <th class="text-left" v-if="!home">Phe Rechner</th>
