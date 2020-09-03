@@ -53,6 +53,20 @@
           </v-card-actions>
         </v-card>
       </v-col>
+
+      <v-col cols="12" lg="9">
+        <FeatureComparison />
+      </v-col>
     </v-row>
   </div>
 </template>
+
+<script>
+import FeatureComparison from "../components/FeatureComparison.vue";
+
+export default {
+  components: {
+    FeatureComparison
+  }
+};
+</script>

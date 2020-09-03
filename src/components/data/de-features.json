@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Rechner",
+    "pkutools": "Phe, Eiweiß",
+    "pkumanager": "Phe, Eiweiß, Kalorien",
+    "pherechner": "Phe, Eiweiß"
+  },
+  {
+    "name": "Suche",
+    "pkutools": "Englisch, Deutsch, Phe",
+    "pkumanager": "Englisch, Deutsch, Phe, Eiweiß, Kalorien",
+    "pherechner": "Deutsch, Phe"
+  },
+  {
+    "name": "Protokoll",
+    "pkutools": "In Bearbeitung, Phe",
+    "pkumanager": "Phe, Eiweiß, Kalorien",
+    "pherechner": "Phe"
+  },
+  {
+    "name": "Weitere Funktionen",
+    "pkutools": "Mehr Funktionen geplant, Amino Zähler, Dunkles Design",
+    "pkumanager": "Beliebigen Wert vorspeichern, Zuletzt verwendete Lebensmittel hinzufügen",
+    "pherechner": "Gewicht vorspeichern, Eigene Lebensmittel hinzufügen"
+  },
+  {
+    "name": "Verfügbarkeit",
+    "pkutools": "Jede Plattform, Web, Android, iOS, Windows, Mac, Linux, Überall offlinefähig",
+    "pkumanager": "Web, Android, In der App offlinefähig",
+    "pherechner": "Web, Android, Chrome Extension, In der App offlinefähig"
+  },
+  {
+    "name": "Speicher",
+    "pkutools": "Account",
+    "pkumanager": "Gerät, Account wenn Website benutzt wird",
+    "pherechner": "Gerät"
+  },
+  {
+    "name": "Sprachen",
+    "pkutools": "Englisch, Deutsch",
+    "pkumanager": "Englisch",
+    "pherechner": "Deutsch"
+  },
+  {
+    "name": "Preis",
+    "pkutools": "Kostenlos",
+    "pkumanager": "Kostenlos",
+    "pherechner": "Kostenlos"
+  }
+]

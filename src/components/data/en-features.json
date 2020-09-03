@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Calculator",
+    "pkutools": "Phe, Protein",
+    "pkumanager": "Phe, Protein, Calories",
+    "pherechner": "Phe, Protein"
+  },
+  {
+    "name": "Search",
+    "pkutools": "English, German, Phe",
+    "pkumanager": "English, German, Phe, Protein, Calories",
+    "pherechner": "German, Phe"
+  },
+  {
+    "name": "Log",
+    "pkutools": "In Progress, Phe",
+    "pkumanager": "Phe, Protein, Calories",
+    "pherechner": "Phe"
+  },
+  {
+    "name": "Other features",
+    "pkutools": "More features planned, Amino Counter, Dark Design",
+    "pkumanager": "Pre-save any value, Add last used food",
+    "pherechner": "Pre-save food weight, Add own food"
+  },
+  {
+    "name": "Availability",
+    "pkutools": "Any platform, Web, Android, iOS, Windows, Mac, Linux, Offline capable everywhere",
+    "pkumanager": "Web, Android, Offline capable in the app",
+    "pherechner": "Web, Android, Chrome Extension, Offline capable in the app"
+  },
+  {
+    "name": "Storage",
+    "pkutools": "Account",
+    "pkumanager": "Device, Account when using website",
+    "pherechner": "Device"
+  },
+  {
+    "name": "Languages",
+    "pkutools": "English, German",
+    "pkumanager": "English",
+    "pherechner": "German"
+  },
+  {
+    "name": "Price",
+    "pkutools": "Free",
+    "pkumanager": "Free",
+    "pherechner": "Free"
+  }
+]

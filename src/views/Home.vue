@@ -20,10 +20,22 @@
         <v-btn depressed to="/amino-counter" color="primary" class="mr-3 mt-3">{{ $t("amino-counter.title") }}</v-btn>
 
         <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-8 illustration"></v-img>
+
+        <FeatureComparison />
       </v-col>
     </v-row>
   </div>
 </template>
+
+<script>
+import FeatureComparison from "../components/FeatureComparison.vue";
+
+export default {
+  components: {
+    FeatureComparison
+  }
+};
+</script>
 
 <style lang="scss" scoped>
 .illustration {
