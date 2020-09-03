@@ -8,7 +8,8 @@
     "offline": "You are offline."
   },
   "home": {
-    "title": "Home"
+    "title": "Home",
+    "features": "Features"
   },
   "phe-calculator": {
     "title": "Phe Calculator",
@@ -52,7 +53,8 @@
     "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",
     "pku-manager": "English PKU app for searching, calculating and tracking food (~ 2018).",
     "simple-nutrition-calculator": "General app for calculating any nutrient values (~ 2019).",
-    "link": "Website"
+    "link": "Website",
+    "features": "Feature Comparison"
   },
   "about": {
     "title": "About",
@@ -66,6 +68,6 @@
     "title": "Privacy Policy"
   },
   "feature-comparison": {
-    "title": "Feature Comparison"
+    "title": "Features"
   }
 }

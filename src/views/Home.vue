@@ -21,7 +21,9 @@
 
         <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-8 illustration"></v-img>
 
-        <FeatureComparison />
+        <h2 class="headline my-6">{{ $t("home.features") }}</h2>
+        <FeatureComparison home />
+        <v-btn depressed to="/other-apps" class="mt-6">{{ $t("other-apps.title") }}</v-btn>
       </v-col>
     </v-row>
   </div>

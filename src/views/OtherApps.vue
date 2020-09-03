@@ -55,6 +55,7 @@
       </v-col>
 
       <v-col cols="12" lg="9">
+        <h2 class="headline my-6">{{ $t("other-apps.features") }}</h2>
         <FeatureComparison />
       </v-col>
     </v-row>
