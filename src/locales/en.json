@@ -68,6 +68,7 @@
     "title": "Privacy Policy"
   },
   "feature-comparison": {
-    "title": "Features"
+    "name": "Feature",
+    "description": "Description"
   }
 }

@@ -68,6 +68,7 @@
     "title": "Datenschutz"
   },
   "feature-comparison": {
-    "title": "Features"
+    "name": "Feature",
+    "description": "Beschreibung"
   }
 }
