@@ -9,7 +9,10 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p>{{ $t("app.description") }}</p>
-        <p>{{ $t("app.install") }}</p>
+        <p>
+          <v-icon>mdi-information-outline</v-icon>
+          {{ $t("app.install") }}
+        </p>
 
         <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mt-3">{{ $t("phe-calculator.title") }}</v-btn>
         <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mt-3">
