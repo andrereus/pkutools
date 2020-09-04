@@ -1,43 +1,43 @@
 [
   {
     "name": "Rechner",
-    "pkutools": "Phe, Eiweiß",
-    "pkumanager": "Phe, Eiweiß, Kalorien",
-    "pherechner": "Phe, Eiweiß"
+    "pkutools": "Phe & Eiweiß (mehr geplant)",
+    "pkumanager": "Phe, Eiweiß & Kalorien",
+    "pherechner": "Phe & Eiweiß"
   },
   {
     "name": "Suche",
-    "pkutools": "Englisch, Deutsch, Phe",
-    "pkumanager": "Englisch, Deutsch, Phe, Eiweiß, Kalorien",
-    "pherechner": "Deutsch, Phe"
+    "pkutools": "Phe auf Englisch & Deutsch",
+    "pkumanager": "Phe, Eiweiß & Kalorien auf Englisch; Phe auf Deutsch",
+    "pherechner": "Phe auf Deutsch"
   },
   {
     "name": "Protokoll",
-    "pkutools": "In Bearbeitung, Phe",
-    "pkumanager": "Phe, Eiweiß, Kalorien",
+    "pkutools": "Phe (in Bearbeitung)",
+    "pkumanager": "Phe, Eiweiß & Kalorien",
     "pherechner": "Phe"
   },
   {
     "name": "Weitere Funktionen",
-    "pkutools": "Amino Zähler, Dunkles Design, Mehr Funktionen geplant",
-    "pkumanager": "Beliebigen Wert vorspeichern, Zuletzt verwendete Lebensmittel hinzufügen",
-    "pherechner": "Gewicht vorspeichern, Eigene Lebensmittel hinzufügen"
+    "pkutools": "Amino Zähler & Dunkles Design (mehr geplant)",
+    "pkumanager": "Beliebigen Wert vorspeichern & zuletzt verwendete Lebensmittel hinzufügen",
+    "pherechner": "Gewicht vorspeichern & eigene Lebensmittel hinzufügen"
   },
   {
     "name": "Verfügbarkeit",
-    "pkutools": "Jede Plattform, Web, Android, iOS, Windows, Mac, Linux, Überall offlinefähig",
-    "pkumanager": "Web, Android, In der App offlinefähig",
-    "pherechner": "Web, Android, Chrome Extension, In der App offlinefähig"
+    "pkutools": "Web, Android, iOS, Windows, Mac, Linux, ... (überall offlinefähig)",
+    "pkumanager": "Web & Android (in der App offlinefähig)",
+    "pherechner": "Web, Android & Chrome Extension (in der App offlinefähig)"
   },
   {
-    "name": "Speicher",
-    "pkutools": "Account",
-    "pkumanager": "Gerät, Account wenn Website benutzt wird",
-    "pherechner": "Gerät"
+    "name": "Daten",
+    "pkutools": "Gespeichert in Account mit Sync zwischen Geräten",
+    "pkumanager": "Gespeichert auf Gerät & Option Account zu nutzen (im Web)",
+    "pherechner": "Gespeichert auf Gerät"
   },
   {
     "name": "Sprachen",
-    "pkutools": "Englisch, Deutsch",
+    "pkutools": "Englisch & Deutsch",
     "pkumanager": "Englisch",
     "pherechner": "Deutsch"
   },
