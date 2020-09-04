@@ -9,7 +9,6 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p v-if="this.$i18n.locale === 'de'">
-          <v-icon>mdi-information-outline</v-icon>
           Übersetzt aus dem Englischen mit Google Translate. Optimierungen folgen.
         </p>
 
