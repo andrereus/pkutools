@@ -8,9 +8,6 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p>{{ $t("app.description") }}</p>
-        <p>{{ $t("app.install") }}</p>
-
         <p>
           André Reus
           <br />
