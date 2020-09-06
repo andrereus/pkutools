@@ -197,6 +197,13 @@
         <v-icon>mdi-book</v-icon>
       </v-btn>
     </v-bottom-navigation>
+
+    <v-snackbar top color="primary" :value="updateExists" :timeout="0">
+      {{ $t("app.update-available") }}
+      <v-btn text @click="refreshApp">
+        {{ $t("app.update") }}
+      </v-btn>
+    </v-snackbar>
   </v-app>
 </template>
 
@@ -205,6 +212,7 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/firestore";
 import { mapState } from "vuex";
+import update from "./mixins/update";
 
 export default {
   data: () => ({
@@ -216,6 +224,7 @@ export default {
     ],
     bottomNav: null
   }),
+  mixins: [update],
   methods: {
     signInGoogle() {
       if (navigator.onLine) {

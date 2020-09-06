@@ -5,7 +5,9 @@
     "install": "This app can be installed on any device by adding it to the homescreen.",
     "signin-google": "Sign in with Google",
     "signout": "Sign out",
-    "offline": "You are offline."
+    "offline": "You are offline.",
+    "update-available": "An update is available!",
+    "update": "Update"
   },
   "home": {
     "title": "Home",
