@@ -205,9 +205,9 @@
       </v-btn>
     </v-snackbar>
 
-    <v-snackbar top v-model="offlineInfo">
+    <v-snackbar top color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
-      <v-btn text color="pink" @click="offlineInfo = false">
+      <v-btn text @click="offlineInfo = false">
         {{ $t("app.close") }}
       </v-btn>
     </v-snackbar>
