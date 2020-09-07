@@ -103,6 +103,13 @@
         </div>
       </v-col>
     </v-row>
+
+    <v-snackbar top v-model="offlineInfo">
+      {{ $t("app.offline") }}
+      <v-btn text color="pink" @click="offlineInfo = false">
+        {{ $t("app.close") }}
+      </v-btn>
+    </v-snackbar>
   </div>
 </template>
 
@@ -134,14 +141,15 @@ export default {
       name: null,
       weight: null,
       phe: null
-    }
+    },
+    offlineInfo: false
   }),
   methods: {
     signInGoogle() {
       if (navigator.onLine) {
         this.$store.dispatch("signInGoogle");
       } else {
-        alert(this.$t("app.offline"));
+        this.offlineInfo = true;
       }
     },
     reset() {
