@@ -204,6 +204,13 @@
         {{ $t("app.update") }}
       </v-btn>
     </v-snackbar>
+
+    <v-snackbar top v-model="offlineInfo">
+      {{ $t("app.offline") }}
+      <v-btn text color="pink" @click="offlineInfo = false">
+        {{ $t("app.close") }}
+      </v-btn>
+    </v-snackbar>
   </v-app>
 </template>
 
@@ -222,7 +229,8 @@ export default {
       { name: "English", abbr: "en" },
       { name: "Deutsch", abbr: "de" }
     ],
-    bottomNav: null
+    bottomNav: null,
+    offlineInfo: false
   }),
   mixins: [update],
   methods: {
@@ -230,7 +238,7 @@ export default {
       if (navigator.onLine) {
         this.$store.dispatch("signInGoogle");
       } else {
-        alert(this.$t("app.offline"));
+        this.offlineInfo = true;
       }
     },
     signOut() {
@@ -262,11 +270,6 @@ export default {
         this.signOut();
       }
     });
-
-    // TODO: Implement toast
-    // window.addEventListener("offline", () => {
-    //   alert(this.$t("app.offline"));
-    // });
   },
   mounted() {
     if (localStorage.vuetifyThemeDark) {

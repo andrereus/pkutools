@@ -5,9 +5,10 @@
     "install": "Diese App kann auf jedem Gerät installiert werden, indem sie zum Startbildschirm hinzugefügt wird.",
     "signin-google": "Anmelden mit Google",
     "signout": "Abmelden",
-    "offline": "Du bist offline.",
     "update-available": "Ein Update ist verfügbar!",
-    "update": "Update"
+    "update": "Update",
+    "offline": "Du bist offline.",
+    "close": "Schließen"
   },
   "home": {
     "title": "Start",
