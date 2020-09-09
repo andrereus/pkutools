@@ -20,6 +20,14 @@
         <p>{{ $t("about.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
 
         <p>{{ $t("about.sources") }}</p>
+
+        <a href="https://www.buymeacoffee.com/andrereus" target="_blank">
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png"
+            alt="Buy Me A Coffee"
+            style="height: 60px !important; width: 217px !important;"
+          />
+        </a>
       </v-col>
     </v-row>
   </div>
