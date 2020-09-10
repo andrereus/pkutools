@@ -16,15 +16,15 @@
 
         <div v-if="userIsAuthenticated">
           <v-progress-linear
-            :value="(userData.aminoCounterCount * 100) / userData.aminoCounterMax"
+            :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 0)"
             height="40"
             class="white--text my-6"
             rounded
           >
-            {{ userData.aminoCounterCount }} {{ $t("amino-counter.progress") }}
+            {{ aminoCounter.count || 0 }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
 
-          <p>{{ $t("amino-counter.date") }}: {{ new Date(userData.aminoCounterDate).toLocaleString() }}</p>
+          <p>{{ $t("amino-counter.date") }}: {{ new Date(aminoCounter.date).toLocaleString() }}</p>
 
           <v-btn depressed @click="takeAM" color="primary" class="mr-3 mt-3">
             {{ $t("amino-counter.take") }}
@@ -49,7 +49,7 @@
                 <v-text-field
                   filled
                   :label="$t('amino-counter.amount')"
-                  v-model.number="userData.aminoCounterMax"
+                  v-model.number="aminoCounter.max"
                   type="number"
                   class="mt-6"
                 ></v-text-field>
@@ -78,7 +78,7 @@
 import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import "firebase/firestore";
+import "firebase/database";
 
 export default {
   data: () => ({
@@ -95,30 +95,27 @@ export default {
     },
     takeAM() {
       firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
+        .database()
+        .ref(this.user.id + "/aminoCounter")
         .update({
-          aminoCounterCount: this.userData.aminoCounterCount + 1 || 1,
-          aminoCounterDate: new Date().toUTCString()
+          count: this.aminoCounter.count + 1 || 1,
+          date: new Date().toUTCString()
         });
     },
     resetAM() {
       firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
+        .database()
+        .ref(this.user.id + "/aminoCounter")
         .update({
-          aminoCounterCount: 0
+          count: 0
         });
     },
     setMax() {
       firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
+        .database()
+        .ref(this.user.id + "/aminoCounter")
         .update({
-          aminoCounterMax: this.userData.aminoCounterMax || 0
+          max: this.aminoCounter.max || 0
         });
 
       this.dialog = false;
@@ -126,9 +123,9 @@ export default {
   },
   computed: {
     userIsAuthenticated() {
-      return this.user !== null && this.user !== undefined && this.userData !== null;
+      return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "userData"])
+    ...mapState(["user", "aminoCounter"])
   }
 };
 </script>

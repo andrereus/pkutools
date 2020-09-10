@@ -18,7 +18,7 @@
           <template>
             <v-data-table
               :headers="headers"
-              :items="userData.pheLog"
+              :items="pheLog"
               disable-pagination
               hide-default-footer
               mobile-breakpoint="0"
@@ -117,7 +117,7 @@
 import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import "firebase/firestore";
+import "firebase/database";
 
 export default {
   data: () => ({
@@ -154,27 +154,26 @@ export default {
     },
     reset() {
       firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
-        .update({
-          pheLog: []
-        });
+        .database()
+        .ref(this.user.id + "/pheLog")
+        .remove();
     },
     editItem(item) {
-      this.editedIndex = this.userData.pheLog.indexOf(item);
+      this.editedIndex = this.pheLog.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
     },
     deleteItem(editedIndex) {
-      this.userData.pheLog.splice(editedIndex, 1);
       firebase
-        .firestore()
-        .collection("userData")
-        .doc(this.user.id)
-        .update({
-          pheLog: this.userData.pheLog
+        .database()
+        .ref(this.user.id + "/pheLog")
+        .once("value", snapshot => {
+          this.editedKey = Object.keys(snapshot.val())[editedIndex];
         });
+      firebase
+        .database()
+        .ref(this.user.id + "/pheLog/" + this.editedKey)
+        .remove();
       this.close();
     },
     close() {
@@ -186,22 +185,21 @@ export default {
     },
     save() {
       if (this.editedIndex > -1) {
-        Object.assign(this.userData.pheLog[this.editedIndex], this.editedItem);
         firebase
-          .firestore()
-          .collection("userData")
-          .doc(this.user.id)
-          .update({
-            pheLog: this.userData.pheLog
+          .database()
+          .ref(this.user.id + "/pheLog")
+          .once("value", snapshot => {
+            this.editedKey = Object.keys(snapshot.val())[this.editedIndex];
           });
+        firebase
+          .database()
+          .ref(this.user.id + "/pheLog/" + this.editedKey)
+          .update(this.editedItem);
       } else {
         firebase
-          .firestore()
-          .collection("userData")
-          .doc(this.user.id)
-          .update({
-            pheLog: [...this.userData.pheLog, this.editedItem]
-          });
+          .database()
+          .ref(this.user.id + "/pheLog")
+          .push(this.editedItem);
       }
       this.close();
     },
@@ -234,9 +232,9 @@ export default {
       }
     },
     userIsAuthenticated() {
-      return this.user !== null && this.user !== undefined && this.userData !== null;
+      return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "userData"])
+    ...mapState(["user", "pheLog"])
   }
 };
 </script>

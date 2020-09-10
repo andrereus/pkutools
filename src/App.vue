@@ -217,7 +217,7 @@
 <script>
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import "firebase/firestore";
+import "firebase/database";
 import { mapState } from "vuex";
 import update from "./mixins/update";
 

@@ -2,15 +2,16 @@ import Vue from "vue";
 import Vuex from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
-import "firebase/firestore";
-import { vuexfireMutations, firestoreAction } from "vuexfire";
+import "firebase/database";
+import { vuexfireMutations, firebaseAction } from "vuexfire";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     user: null,
-    userData: null
+    aminoCounter: {},
+    pheLog: []
   },
   mutations: {
     setUser(state, payload) {
@@ -58,29 +59,9 @@ export default new Vuex.Store({
           console.log(error);
         });
     },
-    initRef: firestoreAction(context => {
-      context
-        .bindFirestoreRef(
-          "userData",
-          firebase
-            .firestore()
-            .collection("userData")
-            .doc(context.state.user.id)
-        )
-        .then(() => {
-          if (context.state.userData === null) {
-            firebase
-              .firestore()
-              .collection("userData")
-              .doc(context.state.user.id)
-              .set({
-                aminoCounterCount: 0,
-                aminoCounterDate: new Date().toUTCString(),
-                aminoCounterMax: 3,
-                pheLog: []
-              });
-          }
-        });
+    initRef: firebaseAction(context => {
+      context.bindFirebaseRef("aminoCounter", firebase.database().ref(context.state.user.id + "/aminoCounter"));
+      context.bindFirebaseRef("pheLog", firebase.database().ref(context.state.user.id + "/pheLog"));
     })
   },
   getters: {
