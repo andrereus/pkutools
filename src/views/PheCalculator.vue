@@ -11,17 +11,66 @@
         <v-text-field filled :label="$t('phe-calculator.phe')" v-model.number="phe" type="number"></v-text-field>
         <v-text-field filled :label="$t('phe-calculator.weight')" v-model.number="weight" type="number"></v-text-field>
 
-        <p class="title font-weight-regular mt-n2">= {{ (weight * phe) / 100 }} mg Phe</p>
+        <p class="title font-weight-regular">= {{ (weight * phe) / 100 }} mg Phe</p>
+
+        <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn depressed color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
+              {{ $t("phe-calculator.add") }}
+            </v-btn>
+          </template>
+
+          <v-card>
+            <v-card-title>
+              <span class="headline">{{ $t("phe-calculator.add") }}</span>
+            </v-card-title>
+
+            <v-card-text>
+              <v-text-field filled :label="$t('phe-calculator.name')" v-model="name" class="mt-6"></v-text-field>
+            </v-card-text>
+
+            <v-card-actions class="mt-n6">
+              <v-spacer></v-spacer>
+              <v-btn depressed @click="save">{{ $t("phe-calculator.add") }}</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
+import * as firebase from "firebase/app";
+import "firebase/database";
+
 export default {
   data: () => ({
+    dialog: false,
     phe: null,
-    weight: null
-  })
+    weight: null,
+    name: ""
+  }),
+  methods: {
+    save() {
+      firebase
+        .database()
+        .ref(this.user.id + "/pheLog")
+        .push({
+          name: this.name,
+          weight: Number(this.weight),
+          phe: (this.weight * this.phe) / 100
+        });
+      this.dialog = false;
+      this.$router.push("phe-log");
+    }
+  },
+  computed: {
+    userIsAuthenticated() {
+      return this.user !== null && this.user !== undefined;
+    },
+    ...mapState(["user"])
+  }
 };
 </script>

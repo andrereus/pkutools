@@ -17,14 +17,18 @@
   "phe-calculator": {
     "title": "Phe Calculator",
     "phe": "Phe per 100g (in mg)",
-    "weight": "Weight (in g)"
+    "weight": "Weight (in g)",
+    "add": "Add",
+    "name": "Food name"
   },
   "protein-calculator": {
     "title": "Protein Calculator",
     "factor": "Calculate as fruits / vegetables",
     "protein": "Protein per 100g (in g)",
     "phe": "Phe per 100g",
-    "weight": "Weight (in g)"
+    "weight": "Weight (in g)",
+    "add": "Add",
+    "name": "Food name"
   },
   "phe-search": {
     "title": "Phe Search",
