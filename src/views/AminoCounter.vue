@@ -103,12 +103,15 @@ export default {
         });
     },
     resetAM() {
-      firebase
-        .database()
-        .ref(this.user.id + "/aminoCounter")
-        .update({
-          count: 0
-        });
+      let r = confirm(this.$t("amino-counter.reset") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/aminoCounter")
+          .update({
+            count: 0
+          });
+      }
     },
     setMax() {
       firebase

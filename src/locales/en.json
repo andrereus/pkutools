@@ -32,13 +32,13 @@
   },
   "phe-log": {
     "title": "Phe Log",
-    "description": "The Phe Log is still under development.",
     "add": "Add",
     "edit": "Edit",
     "reset": "Reset",
     "save": "Save",
     "delete": "Delete",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "lock-values": "Lock values for calculating"
   },
   "amino-counter": {
     "title": "Amino Counter",

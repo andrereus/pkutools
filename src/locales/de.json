@@ -32,13 +32,13 @@
   },
   "phe-log": {
     "title": "Phe Protokoll",
-    "description": "Das Phe Protokoll befindet sich noch in der Entwicklung.",
     "add": "Hinzufügen",
     "edit": "Bearbeiten",
     "reset": "Zurücksetzen",
     "save": "Speichern",
     "delete": "Löschen",
-    "cancel": "Abbrechen"
+    "cancel": "Abbrechen",
+    "lock-values": "Werte sperren zum Berechnen"
   },
   "amino-counter": {
     "title": "Amino Zähler",
