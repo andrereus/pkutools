@@ -56,7 +56,19 @@
                   type="number"
                 ></v-text-field>
 
-                <v-checkbox v-model="lockedValues" :label="$t('phe-log.lock-values')" class="mt-n1"></v-checkbox>
+                <v-checkbox v-model="lockedValues" class="mt-n1">
+                  <template v-slot:label>
+                    <div>
+                      {{ $t("phe-log.lock-values") }}
+                      <v-tooltip top>
+                        <template v-slot:activator="{ on, attrs }">
+                          <v-icon v-bind="attrs" v-on="on">mdi-information-outline</v-icon>
+                        </template>
+                        <span>{{ $t("phe-log.lock-info") }}</span>
+                      </v-tooltip>
+                    </div>
+                  </template>
+                </v-checkbox>
               </v-card-text>
 
               <v-card-actions>
