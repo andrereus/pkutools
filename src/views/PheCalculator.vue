@@ -16,13 +16,13 @@
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
             <v-btn depressed color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
-              {{ $t("phe-calculator.add") }}
+              {{ $t("phe-calculator.save") }}
             </v-btn>
           </template>
 
           <v-card>
             <v-card-title>
-              <span class="headline">{{ $t("phe-calculator.add") }}</span>
+              <span class="headline">{{ $t("phe-calculator.save") }}</span>
             </v-card-title>
 
             <v-card-text>
@@ -31,7 +31,8 @@
 
             <v-card-actions class="mt-n6">
               <v-spacer></v-spacer>
-              <v-btn depressed @click="save">{{ $t("phe-calculator.add") }}</v-btn>
+              <v-btn depressed color="primary" @click="save">{{ $t("phe-calculator.save") }}</v-btn>
+              <v-btn depressed @click="dialog = false">{{ $t("phe-calculator.cancel") }}</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>

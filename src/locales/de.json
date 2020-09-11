@@ -18,8 +18,9 @@
     "title": "Phe Rechner",
     "phe": "Phe pro 100g (in mg)",
     "weight": "Gewicht (in g)",
-    "add": "Hinzufügen",
-    "name": "Lebensmittelname"
+    "save": "Speichern",
+    "name": "Lebensmittelname",
+    "cancel": "Abbrechen"
   },
   "protein-calculator": {
     "title": "Eiweiß Rechner",
@@ -27,12 +28,16 @@
     "protein": "Eiweiß pro 100g (in g)",
     "phe": "Phe pro 100g",
     "weight": "Gewicht (in g)",
-    "add": "Hinzufügen",
-    "name": "Lebensmittelname"
+    "save": "Speichern",
+    "name": "Lebensmittelname",
+    "cancel": "Abbrechen"
   },
   "phe-search": {
     "title": "Phe Suche",
-    "search": "Suche"
+    "search": "Suche",
+    "save": "Speichern",
+    "weight": "Gewicht (in g)",
+    "cancel": "Abbrechen"
   },
   "phe-log": {
     "title": "Phe Protokoll",

@@ -18,8 +18,9 @@
     "title": "Phe Calculator",
     "phe": "Phe per 100g (in mg)",
     "weight": "Weight (in g)",
-    "add": "Add",
-    "name": "Food name"
+    "save": "Save",
+    "name": "Food name",
+    "cancel": "Cancel"
   },
   "protein-calculator": {
     "title": "Protein Calculator",
@@ -27,12 +28,16 @@
     "protein": "Protein per 100g (in g)",
     "phe": "Phe per 100g",
     "weight": "Weight (in g)",
-    "add": "Add",
-    "name": "Food name"
+    "save": "Save",
+    "name": "Food name",
+    "cancel": "Cancel"
   },
   "phe-search": {
     "title": "Phe Search",
-    "search": "Search"
+    "search": "Search",
+    "save": "Save",
+    "weight": "Weight (in g)",
+    "cancel": "Cancel"
   },
   "phe-log": {
     "title": "Phe Log",
