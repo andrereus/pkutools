@@ -34,6 +34,7 @@
   },
   "phe-search": {
     "title": "Phe Suche",
+    "description": "Durchsuche etwa 1000 der gängigsten Lebensmittel.",
     "search": "Suche",
     "save": "Speichern",
     "weight": "Gewicht (in g)",

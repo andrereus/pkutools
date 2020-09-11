@@ -8,8 +8,11 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p v-if="this.$i18n.locale === 'de'">
-          Übersetzt aus dem Englischen mit Google Translate. Optimierungen folgen.
+        <p>
+          {{ $t("phe-search.description") }}
+          <span v-if="this.$i18n.locale === 'de'">
+            Übersetzt aus dem Englischen mit Google Translate.
+          </span>
         </p>
 
         <!-- Text inputs need keyup on mobile -->
