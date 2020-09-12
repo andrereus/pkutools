@@ -114,8 +114,10 @@
 
     <v-app-bar app clipped-left flat class="nav-layout">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
-      <v-toolbar-title>PKU Tools</v-toolbar-title>
+      <router-link to="/" class="app-logo">
+        <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
+        <v-toolbar-title>PKU Tools</v-toolbar-title>
+      </router-link>
       <v-spacer></v-spacer>
 
       <v-menu offset-y>
@@ -177,10 +179,6 @@
       active-class="v-btn--active bottom-nav--active"
       grow
     >
-      <v-btn to="/" value="home">
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-
       <v-btn to="/phe-calculator" value="phe-calculator">
         <v-icon>mdi-calculator</v-icon>
       </v-btn>
@@ -195,6 +193,10 @@
 
       <v-btn to="/phe-log" value="phe-log">
         <v-icon>mdi-book</v-icon>
+      </v-btn>
+
+      <v-btn to="/amino-counter" value="amino-counter">
+        <v-icon>mdi-cup</v-icon>
       </v-btn>
     </v-bottom-navigation>
 
@@ -325,10 +327,21 @@ export default {
   opacity: 0.08 !important;
 }
 
+.app-logo {
+  display: flex;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  align-items: center;
+}
+
 .theme--dark {
   &.v-navigation-drawer,
   &.v-bottom-navigation {
     background-color: #272727;
+  }
+
+  .app-logo {
+    color: #fff;
   }
 }
 </style>
