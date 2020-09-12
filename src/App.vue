@@ -179,6 +179,10 @@
       active-class="v-btn--active bottom-nav--active"
       grow
     >
+      <v-btn to="/" value="home" hidden>
+        <v-icon>mdi-home</v-icon>
+      </v-btn>
+
       <v-btn to="/phe-calculator" value="phe-calculator">
         <v-icon>mdi-calculator</v-icon>
       </v-btn>
