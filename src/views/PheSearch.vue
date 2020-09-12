@@ -58,7 +58,7 @@
                 type="number"
                 class="mt-6"
               ></v-text-field>
-              <p class="title font-weight-regular">= {{ (weight * phe) / 100 }} mg Phe</p>
+              <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
             </v-card-text>
 
             <v-card-actions class="mt-n6">
@@ -109,6 +109,9 @@ export default {
       this.phe = item.phe;
       this.dialog = true;
     },
+    calculatePhe() {
+      return Math.round((this.weight * this.phe) / 100);
+    },
     save() {
       firebase
         .database()
@@ -116,7 +119,7 @@ export default {
         .push({
           name: this.name,
           weight: Number(this.weight),
-          phe: (this.weight * this.phe) / 100
+          phe: this.calculatePhe()
         });
       this.dialog = false;
       this.$router.push("phe-log");

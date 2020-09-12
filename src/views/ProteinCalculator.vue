@@ -17,7 +17,7 @@
           type="number"
         ></v-text-field>
 
-        <p class="mt-n1 mb-6">~ {{ protein * (factor ? 30 : 50) }} mg {{ $t("protein-calculator.phe") }}</p>
+        <p class="mt-n1 mb-6">~ {{ calculateProtein() }} mg {{ $t("protein-calculator.phe") }}</p>
 
         <v-text-field
           filled
@@ -26,7 +26,7 @@
           type="number"
         ></v-text-field>
 
-        <p class="title font-weight-regular">= {{ (weight * (protein * (factor ? 30 : 50))) / 100 }} mg Phe</p>
+        <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
 
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
@@ -70,6 +70,12 @@ export default {
     name: ""
   }),
   methods: {
+    calculateProtein() {
+      return Math.round(this.protein * (this.factor ? 30 : 50));
+    },
+    calculatePhe() {
+      return Math.round((this.weight * (this.protein * (this.factor ? 30 : 50))) / 100);
+    },
     save() {
       firebase
         .database()
@@ -77,7 +83,7 @@ export default {
         .push({
           name: this.name,
           weight: Number(this.weight),
-          phe: (this.weight * (this.protein * (this.factor ? 30 : 50))) / 100
+          phe: this.calculatePhe()
         });
       this.dialog = false;
       this.$router.push("phe-log");

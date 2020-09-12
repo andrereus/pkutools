@@ -11,7 +11,7 @@
         <v-text-field filled :label="$t('phe-calculator.phe')" v-model.number="phe" type="number"></v-text-field>
         <v-text-field filled :label="$t('phe-calculator.weight')" v-model.number="weight" type="number"></v-text-field>
 
-        <p class="title font-weight-regular">= {{ (weight * phe) / 100 }} mg Phe</p>
+        <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
 
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
@@ -54,6 +54,9 @@ export default {
     name: ""
   }),
   methods: {
+    calculatePhe() {
+      return Math.round((this.weight * this.phe) / 100);
+    },
     save() {
       firebase
         .database()
@@ -61,7 +64,7 @@ export default {
         .push({
           name: this.name,
           weight: Number(this.weight),
-          phe: (this.weight * this.phe) / 100
+          phe: this.calculatePhe()
         });
       this.dialog = false;
       this.$router.push("phe-log");

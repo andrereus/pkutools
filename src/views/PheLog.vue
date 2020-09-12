@@ -56,7 +56,7 @@
                   type="number"
                 ></v-text-field>
 
-                <v-checkbox v-model="lockedValues" class="mt-n1">
+                <v-checkbox :value="lockedValues" @click="lockValues" class="mt-n1">
                   <template v-slot:label>
                     <div>
                       {{ $t("phe-log.lock-values") }}
@@ -116,12 +116,12 @@ export default {
     ],
     editedIndex: -1,
     editedItem: {
-      name: null,
+      name: "",
       weight: null,
       phe: null
     },
     defaultItem: {
-      name: null,
+      name: "",
       weight: null,
       phe: null
     },
@@ -149,6 +149,7 @@ export default {
       this.editedIndex = this.pheLog.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
+      this.lockValues();
     },
     deleteItem(editedIndex) {
       firebase
@@ -161,10 +162,10 @@ export default {
         .database()
         .ref(this.user.id + "/pheLog/" + this.editedKey)
         .remove();
-      this.lockedValues = false;
       this.close();
     },
     close() {
+      this.lockedValues = false;
       this.dialog = false;
       this.$nextTick(() => {
         this.editedItem = Object.assign({}, this.defaultItem);
@@ -182,29 +183,51 @@ export default {
         firebase
           .database()
           .ref(this.user.id + "/pheLog/" + this.editedKey)
-          .update(this.editedItem);
+          .update({
+            name: this.editedItem.name,
+            weight: Number(this.editedItem.weight),
+            phe: Number(this.editedItem.phe)
+          });
       } else {
         firebase
           .database()
           .ref(this.user.id + "/pheLog")
-          .push(this.editedItem);
+          .push({
+            name: this.editedItem.name,
+            weight: Number(this.editedItem.weight),
+            phe: Number(this.editedItem.phe)
+          });
       }
-      this.lockedValues = false;
       this.close();
     },
-    editWeight(event) {
-      const newWeight = Number(event.target.value);
-      if (this.lockedValues === true) {
-        this.editedItem.phe = (newWeight * this.editedItem.phe) / this.editedItem.weight;
+    lockValues() {
+      if (this.lockedValues === false) {
+        this.editedItem.weight = Number(this.editedItem.weight);
+        this.editedItem.phe = Number(this.editedItem.phe);
+        this.lockedWeight = this.editedItem.weight;
+        this.lockedPhe = this.editedItem.phe;
+        this.lockedValues = true;
+      } else {
+        this.lockedValues = false;
       }
-      this.editedItem.weight = newWeight;
+    },
+    editWeight(event) {
+      if (this.lockedValues === true && Number(event.target.value) !== 0) {
+        const newWeight = Number(event.target.value);
+        this.editedItem.phe = Math.round((newWeight * this.lockedPhe) / this.lockedWeight);
+        this.editedItem.weight = newWeight;
+      } else if (this.lockedValues === false) {
+        this.editedItem.weight = event.target.value;
+      }
     },
     editPhe(event) {
-      const newPhe = Number(event.target.value);
-      if (this.lockedValues === true) {
-        this.editedItem.weight = (newPhe * this.editedItem.weight) / this.editedItem.phe;
+      if (this.lockedValues === true && Number(event.target.value) !== 0) {
+        const newPhe = Number(event.target.value);
+        this.editedItem.weight = Math.round((newPhe * this.lockedWeight) / this.lockedPhe);
+        this.editedItem.phe = newPhe;
+      } else if (this.lockedValues === false) {
+        this.editedItem.phe = event.target.value;
       }
-      this.editedItem.phe = newPhe;
     }
   },
   watch: {
@@ -225,7 +248,7 @@ export default {
       this.pheLog.forEach(item => {
         phe += item.phe;
       });
-      return phe;
+      return Math.round(phe);
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
