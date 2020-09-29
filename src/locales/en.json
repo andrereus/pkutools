@@ -8,7 +8,8 @@
     "update-available": "An update is available!",
     "update": "Update",
     "offline": "You are offline.",
-    "close": "Close"
+    "close": "Close",
+    "about": "About"
   },
   "home": {
     "title": "Home",

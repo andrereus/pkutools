@@ -66,12 +66,14 @@
           </v-list-item>
         </v-list-item-group>
 
-        <v-divider></v-divider>
+        <v-list-group prepend-icon="mdi-information">
+          <template v-slot:activator>
+            <v-list-item-title>{{ $t("app.about") }}</v-list-item-title>
+          </template>
 
-        <v-list-item-group>
-          <v-list-item to="/other-apps">
+          <v-list-item dense to="/other-apps">
             <v-list-item-action>
-              <v-icon>mdi-apps</v-icon>
+              <v-icon></v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -79,9 +81,9 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/about">
+          <v-list-item dense to="/about">
             <v-list-item-action>
-              <v-icon>mdi-information</v-icon>
+              <v-icon></v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -89,9 +91,9 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/disclaimer">
+          <v-list-item dense to="/disclaimer">
             <v-list-item-action>
-              <v-icon>mdi-information-outline</v-icon>
+              <v-icon></v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -99,16 +101,16 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/privacy-policy">
+          <v-list-item dense to="/privacy-policy">
             <v-list-item-action>
-              <v-icon>mdi-lock</v-icon>
+              <v-icon></v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("privacy-policy.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-        </v-list-item-group>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
 
