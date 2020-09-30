@@ -144,7 +144,7 @@
           <v-btn icon v-bind="attrs" v-on="on">
             <v-avatar size="32">
               <v-icon v-if="!userIsAuthenticated">mdi-account</v-icon>
-              <img v-if="userIsAuthenticated" :src="userPhotoUrl" />
+              <img v-if="userIsAuthenticated" :src="userPhotoUrl" alt="Eating together" />
             </v-avatar>
           </v-btn>
         </template>
@@ -184,11 +184,11 @@
       </v-menu>
     </v-app-bar>
 
-    <v-content class="mx-sm-2">
+    <v-main class="mx-sm-2">
       <v-container fluid>
         <router-view></router-view>
       </v-container>
-    </v-content>
+    </v-main>
 
     <v-bottom-navigation
       app
@@ -222,7 +222,7 @@
       </v-btn>
     </v-bottom-navigation>
 
-    <v-snackbar top color="primary" :value="updateExists" :timeout="0">
+    <v-snackbar top color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update-available") }}
       <v-btn text @click="refreshApp">
         {{ $t("app.update") }}
@@ -309,10 +309,10 @@ export default {
   },
   computed: {
     locale: {
-      get: function() {
+      get: function () {
         return this.$i18n.locale;
       },
-      set: function(newLocale) {
+      set: function (newLocale) {
         localStorage.i18nCurrentLocale = JSON.stringify(newLocale);
         this.$i18n.locale = newLocale;
         this.$vuetify.lang.current = newLocale;

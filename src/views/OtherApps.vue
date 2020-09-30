@@ -60,9 +60,7 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">
-              Web
-            </v-btn>
+            <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">Web</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
