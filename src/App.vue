@@ -164,6 +164,22 @@
           <v-list-item v-if="userIsAuthenticated" @click="signOut">
             <v-list-item-title>{{ $t("app.signout") }}</v-list-item-title>
           </v-list-item>
+
+          <v-divider></v-divider>
+
+          <v-list-item href="https://emojicom.io/feedback#eWxWNSKfDeccKb7K13kN" target="_blank">
+            <span>
+              <v-icon>mdi-message-alert</v-icon>
+              Feedback
+            </span>
+          </v-list-item>
+
+          <v-list-item href="https://www.buymeacoffee.com/andrereus" target="_blank">
+            <span>
+              <v-icon>mdi-coffee</v-icon>
+              Buy me a coffee
+            </span>
+          </v-list-item>
         </v-list>
       </v-menu>
     </v-app-bar>
