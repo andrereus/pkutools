@@ -2,7 +2,7 @@
   "app": {
     "title": "PKU Tools",
     "description": "Free tools and apps for people with PKU.",
-    "install": "To install this app, click \"Install PKU Tools...\" or press \"Add to homescreen\" in the menu of Google Chrome.",
+    "install": "To install this app, click \"Install PKU Tools...\" or press \"Add to homescreen\" in the browser menu (\"Share\" on Safari).",
     "signin-google": "Sign in with Google",
     "signout": "Sign out",
     "update-available": "An update is available!",
