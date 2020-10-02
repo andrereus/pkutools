@@ -13,6 +13,16 @@
         </v-list-item>
 
         <v-list-item-group>
+          <v-list-item to="/phe-search">
+            <v-list-item-action>
+              <v-icon>mdi-magnify</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("phe-search.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item to="/phe-calculator">
             <v-list-item-action>
               <v-icon>mdi-calculator</v-icon>
@@ -30,16 +40,6 @@
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("protein-calculator.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-list-item to="/phe-search">
-            <v-list-item-action>
-              <v-icon>mdi-magnify</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("phe-search.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -197,8 +197,12 @@
       active-class="v-btn--active bottom-nav--active"
       grow
     >
-      <v-btn to="/" value="home" hidden>
+      <v-btn to="/" value="home" class="mobile-nav-home">
         <v-icon>mdi-home</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-search" value="phe-search">
+        <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
       <v-btn to="/phe-calculator" value="phe-calculator">
@@ -207,10 +211,6 @@
 
       <v-btn to="/protein-calculator" value="protein-calculator">
         <v-icon>mdi-calculator-variant</v-icon>
-      </v-btn>
-
-      <v-btn to="/phe-search" value="phe-search">
-        <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
       <v-btn to="/phe-log" value="phe-log">
@@ -365,5 +365,9 @@ export default {
   .app-logo {
     color: #fff;
   }
+}
+
+.mobile-nav-home {
+  display: none;
 }
 </style>

@@ -11,6 +11,11 @@ const routes = [
     component: Home
   },
   {
+    path: "/phe-search",
+    name: "Phe Search",
+    component: () => import(/* webpackChunkName: "phe-search" */ "../views/PheSearch.vue")
+  },
+  {
     path: "/phe-calculator",
     name: "Phe Calculator",
     component: () => import(/* webpackChunkName: "phe-calculator" */ "../views/PheCalculator.vue")
@@ -19,11 +24,6 @@ const routes = [
     path: "/protein-calculator",
     name: "Protein Calculator",
     component: () => import(/* webpackChunkName: "protein-calculator" */ "../views/ProteinCalculator.vue")
-  },
-  {
-    path: "/phe-search",
-    name: "Phe Search",
-    component: () => import(/* webpackChunkName: "phe-search" */ "../views/PheSearch.vue")
   },
   {
     path: "/phe-log",

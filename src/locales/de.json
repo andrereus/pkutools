@@ -15,6 +15,14 @@
     "title": "Start",
     "features": "Funktionen"
   },
+  "phe-search": {
+    "title": "Phe Suche",
+    "description": "Durchsuche etwa 1000 der gängigsten Lebensmittel.",
+    "search": "Suche",
+    "save": "Speichern",
+    "weight": "Gewicht (in g)",
+    "cancel": "Abbrechen"
+  },
   "phe-calculator": {
     "title": "Phe Rechner",
     "phe": "Phe pro 100g (in mg)",
@@ -31,14 +39,6 @@
     "weight": "Gewicht (in g)",
     "save": "Speichern",
     "name": "Lebensmittelname",
-    "cancel": "Abbrechen"
-  },
-  "phe-search": {
-    "title": "Phe Suche",
-    "description": "Durchsuche etwa 1000 der gängigsten Lebensmittel.",
-    "search": "Suche",
-    "save": "Speichern",
-    "weight": "Gewicht (in g)",
     "cancel": "Abbrechen"
   },
   "phe-log": {
