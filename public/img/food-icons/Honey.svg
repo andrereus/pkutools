@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="528" height="528" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<g>
+	<path fill="#FFD54F" d="M30,13H18c-6.627,0-12,5-12,12s10,17,10,17h16c0,0,10-10,10-17S36.627,13,30,13L30,13z"/>
+	<rect x="12" y="12.001" fill="#FFD54F" width="24" height="4"/>
+</g>
+<path fill="#FF9800" d="M16.844,40h14.312C34.072,36.932,40,29.718,40,25c0-2.781-1.028-5.223-2.737-7H10.738  C9.028,19.777,8,22.219,8,25C8,29.729,13.928,36.936,16.844,40z"/>
+<g>
+	<polygon fill="#FFC107" points="22.749,30 21,27 22.749,24 26.251,24 28,27 26.251,30  "/>
+	<polygon fill="#FFC107" points="29.749,34 28,31 29.749,28 33.251,28 35,31 33.251,34  "/>
+	<polygon fill="#FFC107" points="22.749,38 21,35 22.749,32 26.251,32 28,35 26.251,38  "/>
+	<polygon fill="#FFC107" points="15.749,34 14,31 15.749,28 19.251,28 21,31 19.251,34  "/>
+	<polygon fill="#FFC107" points="15.749,26 14,23 15.749,20 19.251,20 21,23 19.251,26  "/>
+</g>
+<path fill="#795548" d="M37,12V8c0-1.104-0.896-2-2-2H13c-1.104,0-2,0.896-2,2v4H37z"/>
+<rect x="11" y="11.001" fill="#5D4037" width="26" height="1.999"/>
+</svg>

@@ -1,6 +1,7 @@
 [
   {
     "name": "Eiweißpulver",
+    "icon": "Eggs.svg",
     "phe": 5129
   },
   {
@@ -17,6 +18,7 @@
   },
   {
     "name": "getrocknete Eier",
+    "icon": "Eggs.svg",
     "phe": 2530
   },
   {
@@ -33,6 +35,7 @@
   },
   {
     "name": "Gruyere Cheese",
+    "icon": "Cheese.svg",
     "phe": 1743
   },
   {
@@ -57,10 +60,12 @@
   },
   {
     "name": "Romano Cheese",
+    "icon": "Cheese.svg",
     "phe": 1710
   },
   {
     "name": "Schweizer Käse",
+    "icon": "Cheese.svg",
     "phe": 1662
   },
   {
@@ -73,6 +78,7 @@
   },
   {
     "name": "Fontina Cheese",
+    "icon": "Cheese.svg",
     "phe": 1497
   },
   {
@@ -85,10 +91,12 @@
   },
   {
     "name": "Lammschulterbraten (gekocht)",
+    "icon": "Rack of Lamb.svg",
     "phe": 1447
   },
   {
     "name": "Butternuts (getrocknet)",
+    "icon": "Nut.svg",
     "phe": 1442
   },
   {
@@ -97,22 +105,27 @@
   },
   {
     "name": "Edamer Käse",
+    "icon": "Cheese.svg",
     "phe": 1434
   },
   {
     "name": "Gouda-Käse",
+    "icon": "Cheese.svg",
     "phe": 1431
   },
   {
     "name": "Gegrilltes rundes rundes Steak",
+    "icon": "Steak.svg",
     "phe": 1427
   },
   {
     "name": "Speck (gebraten)",
+    "icon": "Bacon.svg",
     "phe": 1421
   },
   {
     "name": "Fischrogen (gekocht)",
+    "icon": "Fish Food.svg",
     "phe": 1401
   },
   {
@@ -121,6 +134,7 @@
   },
   {
     "name": "Rohe Erdnüsse",
+    "icon": "Peanuts.svg",
     "phe": 1377
   },
   {
@@ -129,22 +143,27 @@
   },
   {
     "name": "Tilsit Cheese",
+    "icon": "Cheese.svg",
     "phe": 1358
   },
   {
     "name": "Rocksteak",
+    "icon": "Steak.svg",
     "phe": 1351
   },
   {
     "name": "Kümmelkäse",
+    "icon": "Cheese.svg",
     "phe": 1326
   },
   {
     "name": "Geschmortes Würfelsteak",
+    "icon": "Steak.svg",
     "phe": 1326
   },
   {
     "name": "Port De Salut Käse",
+    "icon": "Cheese.svg",
     "phe": 1323
   },
   {
@@ -153,10 +172,12 @@
   },
   {
     "name": "Ribeye Steak (Filet)",
+    "icon": "Steak.svg",
     "phe": 1305
   },
   {
     "name": "Chuck Steak (Mock Tender)",
+    "icon": "Steak.svg",
     "phe": 1299
   },
   {
@@ -165,6 +186,7 @@
   },
   {
     "name": "Monterey Cheese",
+    "icon": "Cheese.svg",
     "phe": 1289
   },
   {
@@ -173,6 +195,7 @@
   },
   {
     "name": "Provolone Cheese",
+    "icon": "Cheese.svg",
     "phe": 1287
   },
   {
@@ -181,6 +204,7 @@
   },
   {
     "name": "Dehydrierte Milch",
+    "icon": "Milk.svg",
     "phe": 1271
   },
   {
@@ -193,14 +217,17 @@
   },
   {
     "name": "Scharfer Cheddar-Käse",
+    "icon": "Cheese.svg",
     "phe": 1259
   },
   {
     "name": "Schweizer Schmelzkäse",
+    "icon": "Cheese.svg",
     "phe": 1256
   },
   {
     "name": "Colby Cheese",
+    "icon": "Cheese.svg",
     "phe": 1251
   },
   {
@@ -209,10 +236,12 @@
   },
   {
     "name": "Gegrilltes Rinderfiletsteak",
+    "icon": "Steak.svg",
     "phe": 1242
   },
   {
     "name": "Münster Käse",
+    "icon": "Cheese.svg",
     "phe": 1240
   },
   {
@@ -221,10 +250,12 @@
   },
   {
     "name": "Chesire Cheese",
+    "icon": "Cheese.svg",
     "phe": 1231
   },
   {
     "name": "Ziegelkäse",
+    "icon": "Cheese.svg",
     "phe": 1231
   },
   {
@@ -233,10 +264,12 @@
   },
   {
     "name": "Gegrilltes Porterhouse Steak",
+    "icon": "Steak.svg",
     "phe": 1227
   },
   {
     "name": "Trocken geröstete Erdnüsse",
+    "icon": "Peanuts.svg",
     "phe": 1227
   },
   {
@@ -249,6 +282,7 @@
   },
   {
     "name": "Ziegenkäse",
+    "icon": "Cheese.svg",
     "phe": 1215
   },
   {
@@ -257,6 +291,7 @@
   },
   {
     "name": "Straußensteak",
+    "icon": "Steak.svg",
     "phe": 1212
   },
   {
@@ -269,10 +304,12 @@
   },
   {
     "name": "Mexican Blend Cheese",
+    "icon": "Cheese.svg",
     "phe": 1200
   },
   {
     "name": "Buffalo Sirloin Steak",
+    "icon": "Steak.svg",
     "phe": 1191
   },
   {
@@ -289,14 +326,17 @@
   },
   {
     "name": "Fettarmer Cheddar-Käse",
+    "icon": "Cheese.svg",
     "phe": 1179
   },
   {
     "name": "Natriumarmer Cheddar-Käse",
+    "icon": "Cheese.svg",
     "phe": 1179
   },
   {
     "name": "Gegrilltes T-Bone Steak",
+    "icon": "Steak.svg",
     "phe": 1177
   },
   {
@@ -321,6 +361,7 @@
   },
   {
     "name": "Gekochter Tintenfisch",
+    "icon": "Fish Food.svg",
     "phe": 1164
   },
   {
@@ -329,10 +370,12 @@
   },
   {
     "name": "Broiled Sirloin Strip Steak",
+    "icon": "Steak.svg",
     "phe": 1159
   },
   {
     "name": "Brie Cheese",
+    "icon": "Cheese.svg",
     "phe": 1158
   },
   {
@@ -341,6 +384,7 @@
   },
   {
     "name": "Kanadischer Speck (gebraten)",
+    "icon": "Bacon.svg",
     "phe": 1158
   },
   {
@@ -349,6 +393,7 @@
   },
   {
     "name": "Lammfilet",
+    "icon": "Rack of Lamb.svg",
     "phe": 1154
   },
   {
@@ -357,10 +402,12 @@
   },
   {
     "name": "Lammkeule",
+    "icon": "Rack of Lamb.svg",
     "phe": 1147
   },
   {
     "name": "Gegrilltes T-Bone Steak (Wahl)",
+    "icon": "Steak.svg",
     "phe": 1143
   },
   {
@@ -369,10 +416,12 @@
   },
   {
     "name": "Trocken geröstete Pistazien",
+    "icon": "Nut.svg",
     "phe": 1140
   },
   {
     "name": "Lammleber (gekocht)",
+    "icon": "Rack of Lamb.svg",
     "phe": 1140
   },
   {
@@ -401,6 +450,7 @@
   },
   {
     "name": "Verarbeiteter Pimentkäse",
+    "icon": "Cheese.svg",
     "phe": 1124
   },
   {
@@ -413,6 +463,7 @@
   },
   {
     "name": "Limburger Käse",
+    "icon": "Cheese.svg",
     "phe": 1116
   },
   {
@@ -437,18 +488,22 @@
   },
   {
     "name": "Broiled Lean Beef Flank Steak",
+    "icon": "Steak.svg",
     "phe": 1099
   },
   {
     "name": "Top Blade Chuck Steak",
+    "icon": "Steak.svg",
     "phe": 1097
   },
   {
     "name": "Schwarze Walnüsse (getrocknet)",
+    "icon": "Nut.svg",
     "phe": 1094
   },
   {
     "name": "Fischrogen",
+    "icon": "Fish Food.svg",
     "phe": 1092
   },
   {
@@ -457,6 +512,7 @@
   },
   {
     "name": "Pistazien",
+    "icon": "Nut.svg",
     "phe": 1092
   },
   {
@@ -469,6 +525,7 @@
   },
   {
     "name": "Blauschimmelkäse",
+    "icon": "Cheese.svg",
     "phe": 1087
   },
   {
@@ -481,6 +538,7 @@
   },
   {
     "name": "Gegrilltes Porterhouse Steak (Wahl)",
+    "icon": "Steak.svg",
     "phe": 1084
   },
   {
@@ -493,14 +551,17 @@
   },
   {
     "name": "Huhn (leichtes Fleisch)",
+    "icon": "Thanksgiving.svg",
     "phe": 1077
   },
   {
     "name": "Cheddar-Käse",
+    "icon": "Cheese.svg",
     "phe": 1074
   },
   {
     "name": "Octopus (gekocht)",
+    "icon": "Octopus.svg",
     "phe": 1069
   },
   {
@@ -549,6 +610,7 @@
   },
   {
     "name": "Boston Steak (Schweinefleisch)",
+    "icon": "Steak.svg",
     "phe": 1021
   },
   {
@@ -589,6 +651,7 @@
   },
   {
     "name": "Broiled Ground Lamb",
+    "icon": "Rack of Lamb.svg",
     "phe": 1008
   },
   {
@@ -597,18 +660,22 @@
   },
   {
     "name": "Trockengeröstete gemischte Nüsse (gesalzen)",
+    "icon": "Nut.svg",
     "phe": 1000
   },
   {
     "name": "Cold Pack American Cheese",
+    "icon": "Cheese.svg",
     "phe": 999
   },
   {
     "name": "Königin Krabbe (gekocht)",
+    "icon": "Crab.svg",
     "phe": 998
   },
   {
     "name": "Panfried Beef Hamburger",
+    "icon": "Hamburger.svg",
     "phe": 996
   },
   {
@@ -621,6 +688,7 @@
   },
   {
     "name": "Gekochte Garnelen",
+    "icon": "Prawn.svg",
     "phe": 992
   },
   {
@@ -629,6 +697,7 @@
   },
   {
     "name": "Gebratenes knochenloses hautloses Oberschenkelfleisch",
+    "icon": "Thanksgiving.svg",
     "phe": 989
   },
   {
@@ -657,6 +726,7 @@
   },
   {
     "name": "Geröstetes Putenfleisch",
+    "icon": "Thanksgiving.svg",
     "phe": 972
   },
   {
@@ -697,6 +767,7 @@
   },
   {
     "name": "Gekochter Tilefisch",
+    "icon": "Fish Food.svg",
     "phe": 956
   },
   {
@@ -709,6 +780,7 @@
   },
   {
     "name": "Gekochter Weißfisch",
+    "icon": "Fish Food.svg",
     "phe": 955
   },
   {
@@ -725,6 +797,7 @@
   },
   {
     "name": "Shrimp in Dosen",
+    "icon": "Prawn.svg",
     "phe": 946
   },
   {
@@ -745,10 +818,12 @@
   },
   {
     "name": "Verarbeiteter amerikanischer Käse (mit Vitamin D)",
+    "icon": "Cheese.svg",
     "phe": 939
   },
   {
     "name": "Gekochte Dungeness-Krabbe",
+    "icon": "Crab.svg",
     "phe": 939
   },
   {
@@ -761,6 +836,7 @@
   },
   {
     "name": "American Cheese Spread",
+    "icon": "Cheese.svg",
     "phe": 931
   },
   {
@@ -793,6 +869,7 @@
   },
   {
     "name": "Gekochter Schwertfisch",
+    "icon": "Fish Food.svg",
     "phe": 922
   },
   {
@@ -821,6 +898,7 @@
   },
   {
     "name": "Geräucherter Weißfisch",
+    "icon": "Fish Food.svg",
     "phe": 914
   },
   {
@@ -873,6 +951,7 @@
   },
   {
     "name": "Sesam (geröstet)",
+    "icon": "Sesame.svg",
     "phe": 899
   },
   {
@@ -889,10 +968,12 @@
   },
   {
     "name": "Roast Turkey Dark Meat",
+    "icon": "Thanksgiving.svg",
     "phe": 893
   },
   {
     "name": "Emu Steak",
+    "icon": "Steak.svg",
     "phe": 892
   },
   {
@@ -909,6 +990,7 @@
   },
   {
     "name": "Veggie Burgers",
+    "icon": "Hamburger.svg",
     "phe": 885
   },
   {
@@ -921,6 +1003,7 @@
   },
   {
     "name": "Prime Rib Steak",
+    "icon": "Steak.svg",
     "phe": 880
   },
   {
@@ -937,6 +1020,7 @@
   },
   {
     "name": "Blue Crab Cakes",
+    "icon": "Birthday Cake.svg",
     "phe": 870
   },
   {
@@ -969,6 +1053,7 @@
   },
   {
     "name": "Lammrippen",
+    "icon": "Rack of Lamb.svg",
     "phe": 860
   },
   {
@@ -997,6 +1082,7 @@
   },
   {
     "name": "Canadian Bacon (Raw)",
+    "icon": "Bacon.svg",
     "phe": 841
   },
   {
@@ -1009,6 +1095,7 @@
   },
   {
     "name": "Amerikanischer Käse",
+    "icon": "Cheese.svg",
     "phe": 829
   },
   {
@@ -1017,6 +1104,7 @@
   },
   {
     "name": "Alaskan King Crab",
+    "icon": "Crab.svg",
     "phe": 817
   },
   {
@@ -1061,10 +1149,12 @@
   },
   {
     "name": "Peanut Bar",
+    "icon": "Peanuts.svg",
     "phe": 787
   },
   {
     "name": "Rohes knochenloses hautloses Oberschenkelfleisch",
+    "icon": "Thanksgiving.svg",
     "phe": 785
   },
   {
@@ -1073,10 +1163,12 @@
   },
   {
     "name": "Queen Crab (Raw)",
+    "icon": "Crab.svg",
     "phe": 781
   },
   {
     "name": "Pepperoni",
+    "icon": "Chili Pepper.svg",
     "phe": 778
   },
   {
@@ -1093,6 +1185,7 @@
   },
   {
     "name": "Fettfreier Frischkäse",
+    "icon": "Cheese.svg",
     "phe": 769
   },
   {
@@ -1105,6 +1198,7 @@
   },
   {
     "name": "Cheeseburger; Single Large Patty; Plain",
+    "icon": "Hamburger.svg",
     "phe": 763
   },
   {
@@ -1121,22 +1215,27 @@
   },
   {
     "name": "Cheeseburger; Single Regular Patty; Plain",
+    "icon": "Hamburger.svg",
     "phe": 755
   },
   {
     "name": "Egg Scrambled",
+    "icon": "Eggs.svg",
     "phe": 750
   },
   {
     "name": "Whitefish (Raw)",
+    "icon": "Fish Food.svg",
     "phe": 745
   },
   {
     "name": "Gekochte Krebse",
+    "icon": "Fish Food.svg",
     "phe": 737
   },
   {
     "name": "Weichziegenkäse",
+    "icon": "Cheese.svg",
     "phe": 737
   },
   {
@@ -1145,10 +1244,12 @@
   },
   {
     "name": "Spiegeleier",
+    "icon": "Eggs.svg",
     "phe": 736
   },
   {
     "name": "Dungeness Crab (Raw)",
+    "icon": "Crab.svg",
     "phe": 735
   },
   {
@@ -1157,6 +1258,7 @@
   },
   {
     "name": "Lammkeule",
+    "icon": "Rack of Lamb.svg",
     "phe": 729
   },
   {
@@ -1165,6 +1267,7 @@
   },
   {
     "name": "Gekochter Wels",
+    "icon": "Fish Food.svg",
     "phe": 721
   },
   {
@@ -1181,18 +1284,22 @@
   },
   {
     "name": "Getrocknete Hickorynüsse",
+    "icon": "Nut.svg",
     "phe": 713
   },
   {
     "name": "Walnüsse",
+    "icon": "Nut.svg",
     "phe": 711
   },
   {
     "name": "Blaue Krabbe",
+    "icon": "Crab.svg",
     "phe": 708
   },
   {
     "name": "Blue Crab in Dosen",
+    "icon": "Crab.svg",
     "phe": 708
   },
   {
@@ -1205,6 +1312,7 @@
   },
   {
     "name": "Crayfish",
+    "icon": "Fish Food.svg",
     "phe": 706
   },
   {
@@ -1225,6 +1333,7 @@
   },
   {
     "name": "Eiweiß (roh)",
+    "icon": "Eggs.svg",
     "phe": 686
   },
   {
@@ -1233,14 +1342,17 @@
   },
   {
     "name": "Eigelb (roh)",
+    "icon": "Eggs.svg",
     "phe": 681
   },
   {
     "name": "Eier (roh)",
+    "icon": "Eggs.svg",
     "phe": 680
   },
   {
     "name": "Pochierte Eier",
+    "icon": "Eggs.svg",
     "phe": 677
   },
   {
@@ -1249,10 +1361,12 @@
   },
   {
     "name": "Feta-Käse",
+    "icon": "Cheese.svg",
     "phe": 675
   },
   {
     "name": "Gekochter Zobelfisch",
+    "icon": "Fish Food.svg",
     "phe": 671
   },
   {
@@ -1261,14 +1375,17 @@
   },
   {
     "name": "Hamburger; Single Regular Patty; Plain",
+    "icon": "Hamburger.svg",
     "phe": 670
   },
   {
     "name": "Fettarmer Hüttenkäse (1%)",
+    "icon": "Cheese.svg",
     "phe": 668
   },
   {
     "name": "Hart gekochte Eier",
+    "icon": "Eggs.svg",
     "phe": 668
   },
   {
@@ -1277,6 +1394,7 @@
   },
   {
     "name": "Trocken geröstete Haselnüsse",
+    "icon": "Hazelnut.svg",
     "phe": 667
   },
   {
@@ -1285,14 +1403,17 @@
   },
   {
     "name": "Macadamia Nuts",
+    "icon": "Nut.svg",
     "phe": 665
   },
   {
     "name": "Käsepizza",
+    "icon": "Pizza.svg",
     "phe": 664
   },
   {
     "name": "Haselnüsse",
+    "icon": "Hazelnut.svg",
     "phe": 663
   },
   {
@@ -1305,6 +1426,7 @@
   },
   {
     "name": "Trocken geröstete Macadamia-Nüsse",
+    "icon": "Nut.svg",
     "phe": 654
   },
   {
@@ -1325,10 +1447,12 @@
   },
   {
     "name": "Paranüsse",
+    "icon": "Nut.svg",
     "phe": 639
   },
   {
     "name": "Reiskleie",
+    "icon": "Rice Bowl.svg",
     "phe": 635
   },
   {
@@ -1337,10 +1461,12 @@
   },
   {
     "name": "Plattfisch (Flunder oder Sohle)",
+    "icon": "Fish Food.svg",
     "phe": 624
   },
   {
     "name": "Matzo Egg Crackers",
+    "icon": "Cookies.svg",
     "phe": 624
   },
   {
@@ -1365,10 +1491,12 @@
   },
   {
     "name": "Weizen Melba Toast Cracker",
+    "icon": "Cookies.svg",
     "phe": 615
   },
   {
     "name": "Paprika",
+    "icon": "Paprika.svg",
     "phe": 610
   },
   {
@@ -1385,10 +1513,12 @@
   },
   {
     "name": "Turkey Hotdog",
+    "icon": "Hot Dog.svg",
     "phe": 592
   },
   {
     "name": "Englischer Muffin mit Eierkäse und Wurst",
+    "icon": "Cupcake.svg",
     "phe": 588
   },
   {
@@ -1405,22 +1535,27 @@
   },
   {
     "name": "Geröstete Bagels",
+    "icon": "Doughnut.svg",
     "phe": 577
   },
   {
     "name": "Hüttenkäse (gemischt)",
+    "icon": "Cheese.svg",
     "phe": 577
   },
   {
     "name": "Frühstücks-Burrito mit Eierkäse und Wurst",
+    "icon": "Wrap.svg",
     "phe": 576
   },
   {
     "name": "Hüttenkäse (gemischt mit Obst)",
+    "icon": "Cheese.svg",
     "phe": 572
   },
   {
     "name": "Ei-Omelett",
+    "icon": "Eggs.svg",
     "phe": 572
   },
   {
@@ -1429,10 +1564,12 @@
   },
   {
     "name": "Brotfruchtnüsse (Samen)",
+    "icon": "Nut.svg",
     "phe": 571
   },
   {
     "name": "Pumpernickel Melba Rye Toast",
+    "icon": "Bread.svg",
     "phe": 569
   },
   {
@@ -1457,6 +1594,7 @@
   },
   {
     "name": "Keks mit Eierkäse und Speck",
+    "icon": "Cookies.svg",
     "phe": 561
   },
   {
@@ -1485,26 +1623,32 @@
   },
   {
     "name": "Keks mit Schinken",
+    "icon": "Cookies.svg",
     "phe": 547
   },
   {
     "name": "Englischer Muffin mit Käse und Wurst",
+    "icon": "Cupcake.svg",
     "phe": 545
   },
   {
     "name": "Fettarmer Hüttenkäse (2%)",
+    "icon": "Cheese.svg",
     "phe": 543
   },
   {
     "name": "Croissant mit Eierkäse und Wurst",
+    "icon": "Bread.svg",
     "phe": 542
   },
   {
     "name": "Keks mit Ei und Speck",
+    "icon": "Cookies.svg",
     "phe": 540
   },
   {
     "name": "Gjetost-Käse",
+    "icon": "Cheese.svg",
     "phe": 540
   },
   {
@@ -1513,10 +1657,12 @@
   },
   {
     "name": "Fettfreier Hüttenkäse",
+    "icon": "Cheese.svg",
     "phe": 536
   },
   {
     "name": "Rührei",
+    "icon": "Eggs.svg",
     "phe": 535
   },
   {
@@ -1533,6 +1679,7 @@
   },
   {
     "name": "Mikrowellen-Popcorn",
+    "icon": "Corn.svg",
     "phe": 529
   },
   {
@@ -1541,10 +1688,12 @@
   },
   {
     "name": "Bagel (Haferkleie)",
+    "icon": "Doughnut.svg",
     "phe": 526
   },
   {
     "name": "Knoblauchpulver",
+    "icon": "Garlic.svg",
     "phe": 525
   },
   {
@@ -1553,10 +1702,12 @@
   },
   {
     "name": "Pinienkerne (getrocknet)",
+    "icon": "Nut.svg",
     "phe": 524
   },
   {
     "name": "Egg Bagel",
+    "icon": "Doughnut.svg",
     "phe": 523
   },
   {
@@ -1569,6 +1720,7 @@
   },
   {
     "name": "Keks mit Ei und Schinken",
+    "icon": "Cookies.svg",
     "phe": 519
   },
   {
@@ -1589,6 +1741,7 @@
   },
   {
     "name": "Chicken Hotdog",
+    "icon": "Hot Dog.svg",
     "phe": 513
   },
   {
@@ -1601,6 +1754,7 @@
   },
   {
     "name": "Geröstete Zimt-Rosinen-Bagels",
+    "icon": "Cinnamon Roll.svg",
     "phe": 510
   },
   {
@@ -1609,6 +1763,7 @@
   },
   {
     "name": "Getrocknete Pilinuts",
+    "icon": "Nut.svg",
     "phe": 497
   },
   {
@@ -1617,6 +1772,7 @@
   },
   {
     "name": "Plain Matzo Crackers",
+    "icon": "Cookies.svg",
     "phe": 494
   },
   {
@@ -1641,14 +1797,17 @@
   },
   {
     "name": "Kichererbsen (Kichererbsen) (gekocht)",
+    "icon": "Peas.svg",
     "phe": 475
   },
   {
     "name": "Cinnamon Raisin Bagels",
+    "icon": "Cinnamon Roll.svg",
     "phe": 474
   },
   {
     "name": "Honig mit Erdnussbutter gekämmt",
+    "icon": "Honey.svg",
     "phe": 472
   },
   {
@@ -1665,10 +1824,12 @@
   },
   {
     "name": "Hamburger; Single Large Patty; mit Gewürzen Gemüse und Mayonnaise",
+    "icon": "Hamburger.svg",
     "phe": 464
   },
   {
     "name": "Post Shredded Wheat Original Big Biscuit",
+    "icon": "Cookies.svg",
     "phe": 460
   },
   {
@@ -1681,6 +1842,7 @@
   },
   {
     "name": "Cheese Croissants",
+    "icon": "Bread.svg",
     "phe": 455
   },
   {
@@ -1693,10 +1855,12 @@
   },
   {
     "name": "Schwarzäugige Erbsen (Kuherbsen)",
+    "icon": "Peas.svg",
     "phe": 451
   },
   {
     "name": "Cheeseburger; Double Regular Patty; Double Decker Bun mit Gewürzen und Spezialsauce",
+    "icon": "Hamburger.svg",
     "phe": 450
   },
   {
@@ -1709,14 +1873,17 @@
   },
   {
     "name": "Neufchatel Käse",
+    "icon": "Cheese.svg",
     "phe": 448
   },
   {
     "name": "Fladenbrot",
+    "icon": "Bread.svg",
     "phe": 446
   },
   {
     "name": "Schwarzer Pfeffer",
+    "icon": "Pepper Shaker.svg",
     "phe": 446
   },
   {
@@ -1725,6 +1892,7 @@
   },
   {
     "name": "Geröstetes Weißbrot",
+    "icon": "Bread.svg",
     "phe": 444
   },
   {
@@ -1737,6 +1905,7 @@
   },
   {
     "name": "Getrocknete Pinienkerne",
+    "icon": "Nut.svg",
     "phe": 443
   },
   {
@@ -1757,10 +1926,12 @@
   },
   {
     "name": "Vollkorn-Sorghummehl",
+    "icon": "Sack of Flour.svg",
     "phe": 441
   },
   {
     "name": "Hamburger; Single Regular Patty; Doppeldeckerbrötchen mit Gewürzen und Spezialsauce",
+    "icon": "Hamburger.svg",
     "phe": 440
   },
   {
@@ -1805,6 +1976,7 @@
   },
   {
     "name": "Butter Croissants",
+    "icon": "Bread.svg",
     "phe": 416
   },
   {
@@ -1817,14 +1989,17 @@
   },
   {
     "name": "English Muffins",
+    "icon": "Cupcake.svg",
     "phe": 412
   },
   {
     "name": "Roggenbrot",
+    "icon": "Bread.svg",
     "phe": 411
   },
   {
     "name": "Getrocknete Ginkgo-Nüsse",
+    "icon": "Nut.svg",
     "phe": 408
   },
   {
@@ -1837,14 +2012,17 @@
   },
   {
     "name": "Roggen-Knäckebrot",
+    "icon": "Bread.svg",
     "phe": 403
   },
   {
     "name": "Ralston Corn Biscuits",
+    "icon": "Cookies.svg",
     "phe": 403
   },
   {
     "name": "Ralston Crisp Rice",
+    "icon": "Rice Bowl.svg",
     "phe": 402
   },
   {
@@ -1877,10 +2055,12 @@
   },
   {
     "name": "Erbsen teilen",
+    "icon": "Peas.svg",
     "phe": 384
   },
   {
     "name": "Gesüßte Kondensmilch",
+    "icon": "Milk.svg",
     "phe": 382
   },
   {
@@ -1893,14 +2073,17 @@
   },
   {
     "name": "Chilipulver",
+    "icon": "Chili Pepper.svg",
     "phe": 370
   },
   {
     "name": "Sonnengetrocknete Tomaten",
+    "icon": "Tomato.svg",
     "phe": 366
   },
   {
     "name": "Kondensmilch",
+    "icon": "Milk.svg",
     "phe": 364
   },
   {
@@ -1909,14 +2092,17 @@
   },
   {
     "name": "Getrocknete Ancho-Paprika",
+    "icon": "Chili Pepper.svg",
     "phe": 361
   },
   {
     "name": "Einfache Buttermilchkekse",
+    "icon": "Cookies.svg",
     "phe": 355
   },
   {
     "name": "Eicheln (getrocknet)",
+    "icon": "Nut.svg",
     "phe": 354
   },
   {
@@ -1925,6 +2111,7 @@
   },
   {
     "name": "Burrito mit Bohnen",
+    "icon": "Wrap.svg",
     "phe": 351
   },
   {
@@ -1933,6 +2120,7 @@
   },
   {
     "name": "Getrocknete Kokosnuss (ungesüßt)",
+    "icon": "Coconut Cocktail.svg",
     "phe": 349
   },
   {
@@ -1945,6 +2133,7 @@
   },
   {
     "name": "Miniatur-Zimtschnecken",
+    "icon": "Cinnamon Roll.svg",
     "phe": 334
   },
   {
@@ -1953,10 +2142,12 @@
   },
   {
     "name": "Sun-Dried Hot Chile Peppers",
+    "icon": "Chili Pepper.svg",
     "phe": 327
   },
   {
     "name": "Cinnamon Coffeecake",
+    "icon": "Birthday Cake.svg",
     "phe": 324
   },
   {
@@ -1993,10 +2184,12 @@
   },
   {
     "name": "Getrocknete chinesische Kastanien",
+    "icon": "Nut.svg",
     "phe": 309
   },
   {
     "name": "Geröstetes Vollkornbrot",
+    "icon": "Bread.svg",
     "phe": 308
   },
   {
@@ -2021,6 +2214,7 @@
   },
   {
     "name": "Maismuffins",
+    "icon": "Cupcake.svg",
     "phe": 297
   },
   {
@@ -2029,18 +2223,22 @@
   },
   {
     "name": "Haferkekse",
+    "icon": "Cookies.svg",
     "phe": 295
   },
   {
     "name": "Burrito mit Bohnenkäse und Rindfleisch",
+    "icon": "Wrap.svg",
     "phe": 295
   },
   {
     "name": "Chili in Dosen mit Bohnen",
+    "icon": "Chili Pepper.svg",
     "phe": 292
   },
   {
     "name": "Frischkäse",
+    "icon": "Cheese.svg",
     "phe": 291
   },
   {
@@ -2061,6 +2259,7 @@
   },
   {
     "name": "Nachos mit Käsebohnen, Rinderhackfleisch und Tomaten",
+    "icon": "Nachos.svg",
     "phe": 285
   },
   {
@@ -2069,10 +2268,12 @@
   },
   {
     "name": "Zwiebelpulver",
+    "icon": "Onion.svg",
     "phe": 280
   },
   {
     "name": "Coconut Custard Pie",
+    "icon": "Pie.svg",
     "phe": 274
   },
   {
@@ -2089,10 +2290,12 @@
   },
   {
     "name": "Rice Puffed Fortified",
+    "icon": "Rice Bowl.svg",
     "phe": 270
   },
   {
     "name": "Getrocknete Kokosnuss",
+    "icon": "Coconut Cocktail.svg",
     "phe": 269
   },
   {
@@ -2105,6 +2308,7 @@
   },
   {
     "name": "Cream Of Rice Dry",
+    "icon": "Rice Bowl.svg",
     "phe": 267
   },
   {
@@ -2113,6 +2317,7 @@
   },
   {
     "name": "Schokoladenkuchen",
+    "icon": "Birthday Cake.svg",
     "phe": 265
   },
   {
@@ -2121,18 +2326,22 @@
   },
   {
     "name": "Melassekekse",
+    "icon": "Cookies.svg",
     "phe": 263
   },
   {
     "name": "Coffee Instant Regular Powder",
+    "icon": "Coffee to Go.svg",
     "phe": 262
   },
   {
     "name": "Getrocknete Bucheckern",
+    "icon": "Nut.svg",
     "phe": 262
   },
   {
     "name": "Imitation Crab Meat",
+    "icon": "Crab.svg",
     "phe": 260
   },
   {
@@ -2145,6 +2354,7 @@
   },
   {
     "name": "Spinat-Ei-Nudeln (gekocht)",
+    "icon": "Noodles.svg",
     "phe": 251
   },
   {
@@ -2157,6 +2367,7 @@
   },
   {
     "name": "Coffee Instant Decaffeinated Powder",
+    "icon": "Coffee to Go.svg",
     "phe": 250
   },
   {
@@ -2165,10 +2376,12 @@
   },
   {
     "name": "Zwiebelringe",
+    "icon": "Onion.svg",
     "phe": 243
   },
   {
     "name": "Eiernudeln (gekocht)",
+    "icon": "Noodles.svg",
     "phe": 240
   },
   {
@@ -2189,18 +2402,22 @@
   },
   {
     "name": "Nachos mit Käse",
+    "icon": "Nachos.svg",
     "phe": 229
   },
   {
     "name": "Weißer Kuchen mit Kokosnuss-Zuckerguss",
+    "icon": "Birthday Cake.svg",
     "phe": 228
   },
   {
     "name": "Japanische Soba-Nudeln (Buchweizen)",
+    "icon": "Noodles.svg",
     "phe": 217
   },
   {
     "name": "Eisbecher Karamell",
+    "icon": "Ice Cream Cone.svg",
     "phe": 217
   },
   {
@@ -2217,6 +2434,7 @@
   },
   {
     "name": "Getrocknete japanische Kastanien",
+    "icon": "Nut.svg",
     "phe": 205
   },
   {
@@ -2229,14 +2447,17 @@
   },
   {
     "name": "Geröstete chinesische Kastanien",
+    "icon": "Nut.svg",
     "phe": 203
   },
   {
     "name": "Schokoladenkuchen mit Zuckerguss",
+    "icon": "Birthday Cake.svg",
     "phe": 203
   },
   {
     "name": "Forunte Cookies",
+    "icon": "Cookies.svg",
     "phe": 203
   },
   {
@@ -2249,6 +2470,7 @@
   },
   {
     "name": "Getrocknete Bananen",
+    "icon": "Banana.svg",
     "phe": 201
   },
   {
@@ -2257,18 +2479,22 @@
   },
   {
     "name": "Erbsen",
+    "icon": "Peas.svg",
     "phe": 200
   },
   {
     "name": "Gebratene Zwiebelringe",
+    "icon": "Onion.svg",
     "phe": 199
   },
   {
     "name": "Gekochte grüne Erbsen (gesalzen)",
+    "icon": "Peas.svg",
     "phe": 198
   },
   {
     "name": "Gekochte grüne Erbsen",
+    "icon": "Peas.svg",
     "phe": 198
   },
   {
@@ -2277,10 +2503,12 @@
   },
   {
     "name": "Lebkuchen",
+    "icon": "Birthday Cake.svg",
     "phe": 195
   },
   {
     "name": "Gekochter Wildreis",
+    "icon": "Rice Bowl.svg",
     "phe": 195
   },
   {
@@ -2293,6 +2521,7 @@
   },
   {
     "name": "Chinesische Kastanien",
+    "icon": "Nut.svg",
     "phe": 190
   },
   {
@@ -2301,6 +2530,7 @@
   },
   {
     "name": "Kaffee sofort mit Chicorée",
+    "icon": "Coffee to Go.svg",
     "phe": 189
   },
   {
@@ -2313,6 +2543,7 @@
   },
   {
     "name": "Sundae Strawberry",
+    "icon": "Ice Cream Cone.svg",
     "phe": 185
   },
   {
@@ -2329,6 +2560,7 @@
   },
   {
     "name": "Knoblauch",
+    "icon": "Garlic.svg",
     "phe": 183
   },
   {
@@ -2341,34 +2573,42 @@
   },
   {
     "name": "Chocolate Coated Graham Crackers",
+    "icon": "Cookies.svg",
     "phe": 178
   },
   {
     "name": "Softeis-Schokoladeneis",
+    "icon": "Ice Cream Cone.svg",
     "phe": 176
   },
   {
     "name": "Magermilch",
+    "icon": "Milk.svg",
     "phe": 175
   },
   {
     "name": "Gelber Kuchen mit Vanille-Zuckerguss",
+    "icon": "Birthday Cake.svg",
     "phe": 174
   },
   {
     "name": "Fettarme Milch 1%",
+    "icon": "Milk.svg",
     "phe": 174
   },
   {
     "name": "Gekochte Blackeyed Peas",
+    "icon": "Peas.svg",
     "phe": 174
   },
   {
     "name": "Upside-Down Pineapple Cake",
+    "icon": "Birthday Cake.svg",
     "phe": 173
   },
   {
     "name": "Fettarme Milch 2%",
+    "icon": "Milk.svg",
     "phe": 171
   },
   {
@@ -2377,10 +2617,12 @@
   },
   {
     "name": "Ginko Nuts",
+    "icon": "Nut.svg",
     "phe": 171
   },
   {
     "name": "Fettarme Buttermilch",
+    "icon": "Milk.svg",
     "phe": 171
   },
   {
@@ -2401,10 +2643,12 @@
   },
   {
     "name": "Buttermilch",
+    "icon": "Milk.svg",
     "phe": 166
   },
   {
     "name": "Vollmilch",
+    "icon": "Milk.svg",
     "phe": 163
   },
   {
@@ -2421,6 +2665,7 @@
   },
   {
     "name": "Fettreiche Milch (3,7% Fett)",
+    "icon": "Milk.svg",
     "phe": 158
   },
   {
@@ -2429,18 +2674,22 @@
   },
   {
     "name": "Ziegenmilch",
+    "icon": "Milk.svg",
     "phe": 155
   },
   {
     "name": "Gekochter gelber Zuckermais",
+    "icon": "Corn.svg",
     "phe": 155
   },
   {
     "name": "Gekochter süßer weißer Mais",
+    "icon": "Corn.svg",
     "phe": 155
   },
   {
     "name": "Fettarme Schokoladenmilch",
+    "icon": "Milk.svg",
     "phe": 155
   },
   {
@@ -2457,14 +2706,17 @@
   },
   {
     "name": "Getrocknete Pfirsiche (feuchtigkeitsarm)",
+    "icon": "Peach.svg",
     "phe": 154
   },
   {
     "name": "Sundae Hot Fudge",
+    "icon": "Ice Cream Cone.svg",
     "phe": 152
   },
   {
     "name": "Apple Strudel",
+    "icon": "Apple.svg",
     "phe": 151
   },
   {
@@ -2473,10 +2725,12 @@
   },
   {
     "name": "Gelber Zuckermais",
+    "icon": "Corn.svg",
     "phe": 150
   },
   {
     "name": "Malted Drink Mix Schokoladenpulver mit Vollmilch zubereitet",
+    "icon": "Hot Chocolate.svg",
     "phe": 150
   },
   {
@@ -2485,6 +2739,7 @@
   },
   {
     "name": "Sweet White Corn",
+    "icon": "Corn.svg",
     "phe": 150
   },
   {
@@ -2505,14 +2760,17 @@
   },
   {
     "name": "Zimt",
+    "icon": "Cinnamon Roll.svg",
     "phe": 146
   },
   {
     "name": "Mit Vollmilch zubereitetes Getränkemischpulver mit Schokoladengeschmack",
+    "icon": "Hot Chocolate.svg",
     "phe": 146
   },
   {
     "name": "geschreddertes Kokosnussfleisch",
+    "icon": "Coconut Cocktail.svg",
     "phe": 146
   },
   {
@@ -2529,6 +2787,7 @@
   },
   {
     "name": "Weißer Reis",
+    "icon": "Rice Bowl.svg",
     "phe": 144
   },
   {
@@ -2553,6 +2812,7 @@
   },
   {
     "name": "Schokoladensirup mit Vollmilch zubereitet",
+    "icon": "Hot Chocolate.svg",
     "phe": 138
   },
   {
@@ -2569,6 +2829,7 @@
   },
   {
     "name": "Geröstete Kastanien",
+    "icon": "Nut.svg",
     "phe": 134
   },
   {
@@ -2585,6 +2846,7 @@
   },
   {
     "name": "Brauner Reis",
+    "icon": "Rice Bowl.svg",
     "phe": 133
   },
   {
@@ -2597,6 +2859,7 @@
   },
   {
     "name": "Gekochte chinesische Kastanien",
+    "icon": "Nut.svg",
     "phe": 130
   },
   {
@@ -2605,6 +2868,7 @@
   },
   {
     "name": "Tomatenmark in Dosen",
+    "icon": "Tomato.svg",
     "phe": 130
   },
   {
@@ -2617,6 +2881,7 @@
   },
   {
     "name": "Glutenfreie Maisnudeln (gekocht)",
+    "icon": "Noodles.svg",
     "phe": 129
   },
   {
@@ -2629,22 +2894,27 @@
   },
   {
     "name": "Sumpfkohl",
+    "icon": "Cabbage.svg",
     "phe": 127
   },
   {
     "name": "Mittelkörniger weißer Reis",
+    "icon": "Rice Bowl.svg",
     "phe": 127
   },
   {
     "name": "Süßkartoffelpüree",
+    "icon": "Sweet Potato.svg",
     "phe": 119
   },
   {
     "name": "Gekochter brauner Reis",
+    "icon": "Rice Bowl.svg",
     "phe": 119
   },
   {
     "name": "Brokkoli",
+    "icon": "Broccoli.svg",
     "phe": 117
   },
   {
@@ -2653,10 +2923,12 @@
   },
   {
     "name": "Brokkoli (gekocht)",
+    "icon": "Broccoli.svg",
     "phe": 116
   },
   {
     "name": "Gekochte Süßkartoffeln",
+    "icon": "Sweet Potato.svg",
     "phe": 114
   },
   {
@@ -2669,10 +2941,12 @@
   },
   {
     "name": "Getrocknete Pfirsiche",
+    "icon": "Peach.svg",
     "phe": 114
   },
   {
     "name": "Vanille Sojamilch",
+    "icon": "Milk.svg",
     "phe": 113
   },
   {
@@ -2685,6 +2959,7 @@
   },
   {
     "name": "Gekochte Erbsen",
+    "icon": "Peas.svg",
     "phe": 112
   },
   {
@@ -2705,6 +2980,7 @@
   },
   {
     "name": "Florida Avocados",
+    "icon": "Avocado.svg",
     "phe": 108
   },
   {
@@ -2713,6 +2989,7 @@
   },
   {
     "name": "Pommes",
+    "icon": "French Fries.svg",
     "phe": 107
   },
   {
@@ -2725,6 +3002,7 @@
   },
   {
     "name": "Gekochte Schneeerbsen",
+    "icon": "Peas.svg",
     "phe": 105
   },
   {
@@ -2737,14 +3015,17 @@
   },
   {
     "name": "Gebackene Russet-Kartoffeln",
+    "icon": "Potato.svg",
     "phe": 104
   },
   {
     "name": "Gekochter Sumpfkohl",
+    "icon": "Cabbage.svg",
     "phe": 102
   },
   {
     "name": "Kokosmilch",
+    "icon": "Milk.svg",
     "phe": 102
   },
   {
@@ -2757,6 +3038,7 @@
   },
   {
     "name": "Ofenkartoffeln (mit Haut)",
+    "icon": "Potato.svg",
     "phe": 99
   },
   {
@@ -2773,6 +3055,7 @@
   },
   {
     "name": "Avocados",
+    "icon": "Avocado.svg",
     "phe": 97
   },
   {
@@ -2781,10 +3064,12 @@
   },
   {
     "name": "California Avocados",
+    "icon": "Avocado.svg",
     "phe": 95
   },
   {
     "name": "Reisnudeln (gekocht)",
+    "icon": "Noodles.svg",
     "phe": 95
   },
   {
@@ -2801,14 +3086,17 @@
   },
   {
     "name": "Grüne Paprika",
+    "icon": "Paprika.svg",
     "phe": 92
   },
   {
     "name": "Gebackene rote Kartoffeln",
+    "icon": "Potato.svg",
     "phe": 91
   },
   {
     "name": "Erbsen",
+    "icon": "Peas.svg",
     "phe": 90
   },
   {
@@ -2825,6 +3113,7 @@
   },
   {
     "name": "Süßkartoffeln",
+    "icon": "Sweet Potato.svg",
     "phe": 89
   },
   {
@@ -2833,6 +3122,7 @@
   },
   {
     "name": "Ofenkartoffel (keine Haut)",
+    "icon": "Potato.svg",
     "phe": 87
   },
   {
@@ -2845,6 +3135,7 @@
   },
   {
     "name": "Blueberry Pie",
+    "icon": "Pie.svg",
     "phe": 86
   },
   {
@@ -2861,18 +3152,22 @@
   },
   {
     "name": "Sautierte grüne Paprika",
+    "icon": "Paprika.svg",
     "phe": 84
   },
   {
     "name": "Gekochte Kastanien",
+    "icon": "Nut.svg",
     "phe": 84
   },
   {
     "name": "Ofenkartoffeln",
+    "icon": "Potato.svg",
     "phe": 83
   },
   {
     "name": "Gekochte Kartoffeln",
+    "icon": "Potato.svg",
     "phe": 83
   },
   {
@@ -2881,6 +3176,7 @@
   },
   {
     "name": "Spargel (gekocht)",
+    "icon": "Asparagus.svg",
     "phe": 82
   },
   {
@@ -2897,6 +3193,7 @@
   },
   {
     "name": "Angereicherte Schokoladen-Sojamilch",
+    "icon": "Milk.svg",
     "phe": 79
   },
   {
@@ -2905,6 +3202,7 @@
   },
   {
     "name": "Gekochte Süßkartoffeln",
+    "icon": "Sweet Potato.svg",
     "phe": 78
   },
   {
@@ -2925,6 +3223,7 @@
   },
   {
     "name": "Geschmorte Tomaten",
+    "icon": "Tomato.svg",
     "phe": 75
   },
   {
@@ -2933,6 +3232,7 @@
   },
   {
     "name": "Spargel",
+    "icon": "Asparagus.svg",
     "phe": 75
   },
   {
@@ -2957,6 +3257,7 @@
   },
   {
     "name": "Kastanien",
+    "icon": "Nut.svg",
     "phe": 69
   },
   {
@@ -2973,6 +3274,7 @@
   },
   {
     "name": "Gekochte Rübengrüns",
+    "icon": "Beet.svg",
     "phe": 68
   },
   {
@@ -2985,6 +3287,7 @@
   },
   {
     "name": "Rotblattsalat",
+    "icon": "Lettuce.svg",
     "phe": 67
   },
   {
@@ -3001,6 +3304,7 @@
   },
   {
     "name": "Römersalat",
+    "icon": "Lettuce.svg",
     "phe": 65
   },
   {
@@ -3017,6 +3321,7 @@
   },
   {
     "name": "Wirsing",
+    "icon": "Cabbage.svg",
     "phe": 64
   },
   {
@@ -3025,6 +3330,7 @@
   },
   {
     "name": "Hot Green Chili Peppers",
+    "icon": "Chili Pepper.svg",
     "phe": 62
   },
   {
@@ -3033,6 +3339,7 @@
   },
   {
     "name": "Red Chili Peppers",
+    "icon": "Chili Pepper.svg",
     "phe": 62
   },
   {
@@ -3045,6 +3352,7 @@
   },
   {
     "name": "Karotten",
+    "icon": "Carrot.svg",
     "phe": 61
   },
   {
@@ -3065,6 +3373,7 @@
   },
   {
     "name": "Frühlingszwiebeln",
+    "icon": "Onion.svg",
     "phe": 59
   },
   {
@@ -3073,10 +3382,12 @@
   },
   {
     "name": "Beet Greens (Raw)",
+    "icon": "Beet.svg",
     "phe": 58
   },
   {
     "name": "Gekochter Wirsing",
+    "icon": "Cabbage.svg",
     "phe": 58
   },
   {
@@ -3085,10 +3396,12 @@
   },
   {
     "name": "Lauch",
+    "icon": "Leek.svg",
     "phe": 55
   },
   {
     "name": "Grüner Blattsalat",
+    "icon": "Lettuce.svg",
     "phe": 55
   },
   {
@@ -3105,6 +3418,7 @@
   },
   {
     "name": "Rote Paprika (gekocht)",
+    "icon": "Paprika.svg",
     "phe": 53
   },
   {
@@ -3113,6 +3427,7 @@
   },
   {
     "name": "Kopfsalat",
+    "icon": "Lettuce.svg",
     "phe": 53
   },
   {
@@ -3137,10 +3452,12 @@
   },
   {
     "name": "Pflaumen (getrocknete Pflaumen)",
+    "icon": "Plum.svg",
     "phe": 52
   },
   {
     "name": "Spargelkonserven",
+    "icon": "Asparagus.svg",
     "phe": 51
   },
   {
@@ -3149,10 +3466,12 @@
   },
   {
     "name": "Sweet Red Bell Peppers",
+    "icon": "Paprika.svg",
     "phe": 50
   },
   {
     "name": "Gekochte Karotten",
+    "icon": "Carrot.svg",
     "phe": 50
   },
   {
@@ -3161,6 +3480,7 @@
   },
   {
     "name": "Bananen",
+    "icon": "Banana.svg",
     "phe": 49
   },
   {
@@ -3169,6 +3489,7 @@
   },
   {
     "name": "Getrocknete Birnen",
+    "icon": "Pear.svg",
     "phe": 49
   },
   {
@@ -3177,6 +3498,7 @@
   },
   {
     "name": "Gekochte Rüben",
+    "icon": "Beet.svg",
     "phe": 48
   },
   {
@@ -3189,10 +3511,12 @@
   },
   {
     "name": "Muttermilch (Mensch)",
+    "icon": "Milk.svg",
     "phe": 46
   },
   {
     "name": "Hot Dog Relish",
+    "icon": "Hot Dog.svg",
     "phe": 46
   },
   {
@@ -3201,6 +3525,7 @@
   },
   {
     "name": "Beets (Raw)",
+    "icon": "Beet.svg",
     "phe": 46
   },
   {
@@ -3221,6 +3546,7 @@
   },
   {
     "name": "Kiwis",
+    "icon": "Kiwi.svg",
     "phe": 44
   },
   {
@@ -3229,6 +3555,7 @@
   },
   {
     "name": "Aubergine",
+    "icon": "Eggplant.svg",
     "phe": 43
   },
   {
@@ -3273,6 +3600,7 @@
   },
   {
     "name": "Gekochter Kohlrabi",
+    "icon": "Kohlrabi.svg",
     "phe": 41
   },
   {
@@ -3293,10 +3621,12 @@
   },
   {
     "name": "Spargelcremesuppe",
+    "icon": "Asparagus.svg",
     "phe": 39
   },
   {
     "name": "Kohlrabi",
+    "icon": "Kohlrabi.svg",
     "phe": 39
   },
   {
@@ -3309,14 +3639,17 @@
   },
   {
     "name": "Gekochter Rotkohl",
+    "icon": "Cabbage.svg",
     "phe": 38
   },
   {
     "name": "Reiscreme mit Wasser mit Salz gekocht",
+    "icon": "Rice Bowl.svg",
     "phe": 37
   },
   {
     "name": "Kokoswasser",
+    "icon": "Bottle of Water.svg",
     "phe": 37
   },
   {
@@ -3329,6 +3662,7 @@
   },
   {
     "name": "Radieschen",
+    "icon": "Radish.svg",
     "phe": 36
   },
   {
@@ -3337,6 +3671,7 @@
   },
   {
     "name": "Weiße Eiszapfen-Radieschen (Daikon)",
+    "icon": "Radish.svg",
     "phe": 36
   },
   {
@@ -3349,6 +3684,7 @@
   },
   {
     "name": "Rotkohl",
+    "icon": "Cabbage.svg",
     "phe": 36
   },
   {
@@ -3357,10 +3693,12 @@
   },
   {
     "name": "Gekochte Aubergine",
+    "icon": "Eggplant.svg",
     "phe": 35
   },
   {
     "name": "Gekochte Zwiebeln",
+    "icon": "Onion.svg",
     "phe": 35
   },
   {
@@ -3381,6 +3719,7 @@
   },
   {
     "name": "Jumbo Olives",
+    "icon": "Olive.svg",
     "phe": 34
   },
   {
@@ -3393,6 +3732,7 @@
   },
   {
     "name": "Tomatenpüree in Dosen",
+    "icon": "Tomato.svg",
     "phe": 34
   },
   {
@@ -3409,14 +3749,17 @@
   },
   {
     "name": "Gekochte japanische Kastanien",
+    "icon": "Nut.svg",
     "phe": 32
   },
   {
     "name": "Kohl",
+    "icon": "Cabbage.svg",
     "phe": 32
   },
   {
     "name": "Gekochter Kohl",
+    "icon": "Cabbage.svg",
     "phe": 32
   },
   {
@@ -3433,10 +3776,12 @@
   },
   {
     "name": "Sweet Yellow Peppers",
+    "icon": "Paprika.svg",
     "phe": 31
   },
   {
     "name": "Grüne Tomaten",
+    "icon": "Tomato.svg",
     "phe": 31
   },
   {
@@ -3449,18 +3794,22 @@
   },
   {
     "name": "Gekochter Lauch",
+    "icon": "Leek.svg",
     "phe": 30
   },
   {
     "name": "Gekochte rote Paprika",
+    "icon": "Paprika.svg",
     "phe": 29
   },
   {
     "name": "Oliven",
+    "icon": "Olive.svg",
     "phe": 29
   },
   {
     "name": "Gekochte grüne Paprika",
+    "icon": "Paprika.svg",
     "phe": 29
   },
   {
@@ -3469,10 +3818,12 @@
   },
   {
     "name": "Gekochte Tomaten",
+    "icon": "Tomato.svg",
     "phe": 28
   },
   {
     "name": "Schokoladenmandelmilch",
+    "icon": "Milk.svg",
     "phe": 28
   },
   {
@@ -3489,6 +3840,7 @@
   },
   {
     "name": "Tomaten",
+    "icon": "Tomato.svg",
     "phe": 27
   },
   {
@@ -3501,10 +3853,12 @@
   },
   {
     "name": "Baby Karotten",
+    "icon": "Carrot.svg",
     "phe": 26
   },
   {
     "name": "Getrocknete Äpfel",
+    "icon": "Apple.svg",
     "phe": 26
   },
   {
@@ -3521,26 +3875,32 @@
   },
   {
     "name": "Zwiebeln",
+    "icon": "Onion.svg",
     "phe": 25
   },
   {
     "name": "Gelbe Tomaten",
+    "icon": "Tomato.svg",
     "phe": 25
   },
   {
     "name": "Ungarische Paprika",
+    "icon": "Chili Pepper.svg",
     "phe": 25
   },
   {
     "name": "Gekochter Sellerie",
+    "icon": "Celery.svg",
     "phe": 24
   },
   {
     "name": "Gelbe Zwiebeln",
+    "icon": "Onion.svg",
     "phe": 24
   },
   {
     "name": "Süße Zwiebeln",
+    "icon": "Onion.svg",
     "phe": 24
   },
   {
@@ -3553,6 +3913,7 @@
   },
   {
     "name": "Kirschen (süß)",
+    "icon": "Cherry.svg",
     "phe": 24
   },
   {
@@ -3561,6 +3922,7 @@
   },
   {
     "name": "Eisbergsalat",
+    "icon": "Lettuce.svg",
     "phe": 23
   },
   {
@@ -3569,6 +3931,7 @@
   },
   {
     "name": "Cantaloupe Melonen",
+    "icon": "Melon.svg",
     "phe": 23
   },
   {
@@ -3577,10 +3940,12 @@
   },
   {
     "name": "Eingelegte Rüben",
+    "icon": "Beet.svg",
     "phe": 23
   },
   {
     "name": "Gekochte orientalische Radieschen",
+    "icon": "Radish.svg",
     "phe": 22
   },
   {
@@ -3589,6 +3954,7 @@
   },
   {
     "name": "Grüne Chilischoten",
+    "icon": "Chili Pepper.svg",
     "phe": 22
   },
   {
@@ -3601,10 +3967,12 @@
   },
   {
     "name": "Sweet Pickled Cucumbers",
+    "icon": "Cucumber.svg",
     "phe": 21
   },
   {
     "name": "Ananas",
+    "icon": "Pineapple.svg",
     "phe": 21
   },
   {
@@ -3621,26 +3989,32 @@
   },
   {
     "name": "Orientalische Radieschen",
+    "icon": "Radish.svg",
     "phe": 20
   },
   {
     "name": "Sellerie",
+    "icon": "Celery.svg",
     "phe": 20
   },
   {
     "name": "Erdbeeren",
+    "icon": "Strawberry.svg",
     "phe": 19
   },
   {
     "name": "Rote oder grüne Trauben (europäisch)",
+    "icon": "Grapes.svg",
     "phe": 19
   },
   {
     "name": "Gelbe Pfirsiche",
+    "icon": "Peach.svg",
     "phe": 19
   },
   {
     "name": "Gurke",
+    "icon": "Cucumber.svg",
     "phe": 19
   },
   {
@@ -3673,6 +4047,7 @@
   },
   {
     "name": "Wassermelone",
+    "icon": "Watermelon.svg",
     "phe": 15
   },
   {
@@ -3681,6 +4056,7 @@
   },
   {
     "name": "Honigmelone",
+    "icon": "Melon.svg",
     "phe": 15
   },
   {
@@ -3697,6 +4073,7 @@
   },
   {
     "name": "Pflaumen",
+    "icon": "Plum.svg",
     "phe": 14
   },
   {
@@ -3709,10 +4086,12 @@
   },
   {
     "name": "Trauben",
+    "icon": "Grapes.svg",
     "phe": 13
   },
   {
     "name": "Grüne Anjou-Birne",
+    "icon": "Pear.svg",
     "phe": 13
   },
   {
@@ -3721,18 +4100,22 @@
   },
   {
     "name": "Asiatische Birnen",
+    "icon": "Pear.svg",
     "phe": 13
   },
   {
     "name": "Gefrorene Erdbeeren",
+    "icon": "Strawberry.svg",
     "phe": 12
   },
   {
     "name": "Traubensaft",
+    "icon": "Grapes.svg",
     "phe": 12
   },
   {
     "name": "Bartlett Birnen",
+    "icon": "Pear.svg",
     "phe": 11
   },
   {
@@ -3749,6 +4132,7 @@
   },
   {
     "name": "Birnen",
+    "icon": "Pear.svg",
     "phe": 11
   },
   {
@@ -3757,6 +4141,7 @@
   },
   {
     "name": "Crabapples",
+    "icon": "Apple.svg",
     "phe": 11
   },
   {
@@ -3765,10 +4150,12 @@
   },
   {
     "name": "Rote Anjou Birnen",
+    "icon": "Pear.svg",
     "phe": 10
   },
   {
     "name": "Bosc Pear",
+    "icon": "Pear.svg",
     "phe": 10
   },
   {
@@ -3789,6 +4176,7 @@
   },
   {
     "name": "Sour Pickled Cucumber",
+    "icon": "Cucumber.svg",
     "phe": 9
   },
   {
@@ -3801,18 +4189,22 @@
   },
   {
     "name": "Red Delicious Apples",
+    "icon": "Apple.svg",
     "phe": 7
   },
   {
     "name": "Golden Delicious Apples",
+    "icon": "Apple.svg",
     "phe": 7
   },
   {
     "name": "Äpfel (ohne Haut)",
+    "icon": "Apple.svg",
     "phe": 7
   },
   {
     "name": "Äpfel",
+    "icon": "Apple.svg",
     "phe": 6
   },
   {
@@ -3825,6 +4217,7 @@
   },
   {
     "name": "In Sirup eingelegte Birnen",
+    "icon": "Pear.svg",
     "phe": 5
   },
   {
@@ -3833,14 +4226,17 @@
   },
   {
     "name": "Decaf Coffee",
+    "icon": "Cafe.svg",
     "phe": 3
   },
   {
     "name": "Kaffee",
+    "icon": "Cafe.svg",
     "phe": 3
   },
   {
     "name": "Tee-Instant-Zitrone mit zugesetzter Ascorbinsäure",
+    "icon": "Tea.svg",
     "phe": 1
   },
   {

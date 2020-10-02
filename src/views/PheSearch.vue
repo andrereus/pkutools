@@ -36,7 +36,15 @@
         >
           <template v-slot:item="{ item }">
             <tr @click="loadItem(item)" class="tr-edit">
-              <td class="text-start">{{ item.name }}</td>
+              <td class="text-start">
+                <img
+                  :src="publicPath + 'img/food-icons/' + item.icon"
+                  v-if="item.icon !== undefined"
+                  width="25"
+                  class="food-icon"
+                />
+                {{ item.name }}
+              </td>
               <td class="text-start">{{ item.phe }}</td>
             </tr>
           </template>
@@ -82,6 +90,7 @@ import deFood from "../components/data/de-food.json";
 
 export default {
   data: () => ({
+    publicPath: process.env.BASE_URL,
     dialog: false,
     search: null,
     phe: null,
@@ -142,5 +151,9 @@ export default {
 <style lang="scss" scoped>
 .tr-edit {
   cursor: pointer;
+}
+
+.food-icon {
+  vertical-align: bottom;
 }
 </style>
