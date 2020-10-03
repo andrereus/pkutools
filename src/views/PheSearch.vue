@@ -59,7 +59,10 @@
         <v-dialog v-model="dialog" max-width="500px">
           <v-card>
             <v-card-title>
-              <span class="headline">{{ name }}</span>
+              <span class="headline">
+                <img :src="publicPath + 'img/food-icons/' + icon" width="35" class="food-icon" />
+                {{ name }}
+              </span>
             </v-card-title>
 
             <v-card-text>
@@ -102,6 +105,7 @@ export default {
     phe: null,
     weight: null,
     name: "",
+    icon: "Organic Food.svg",
     headers: [
       {
         text: "Food Name",
@@ -119,6 +123,7 @@ export default {
     },
     loadItem(item) {
       this.name = item.name;
+      this.icon = item.icon !== undefined ? item.icon : "Organic Food.svg";
       this.phe = item.phe;
       this.dialog = true;
     },
