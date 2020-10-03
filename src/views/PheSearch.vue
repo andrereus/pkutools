@@ -137,6 +137,7 @@ export default {
         .ref(this.user.id + "/pheLog")
         .push({
           name: this.name,
+          icon: this.icon,
           weight: Number(this.weight),
           phe: this.calculatePhe()
         });

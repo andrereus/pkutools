@@ -17,7 +17,21 @@
           <v-data-table :headers="headers" :items="pheLog" disable-pagination hide-default-footer mobile-breakpoint="0">
             <template v-slot:item="{ item }">
               <tr @click="editItem(item)" class="tr-edit">
-                <td class="text-start">{{ item.name }}</td>
+                <td class="text-start">
+                  <img
+                    :src="publicPath + 'img/food-icons/' + item.icon"
+                    v-if="item.icon !== undefined"
+                    width="25"
+                    class="food-icon"
+                  />
+                  <img
+                    :src="publicPath + 'img/food-icons/Organic Food.svg'"
+                    v-if="item.icon === undefined"
+                    width="25"
+                    class="food-icon"
+                  />
+                  {{ item.name }}
+                </td>
                 <td class="text-start">{{ item.weight }}</td>
                 <td class="text-start">{{ item.phe }}</td>
               </tr>
@@ -105,6 +119,7 @@ import "firebase/database";
 
 export default {
   data: () => ({
+    publicPath: process.env.BASE_URL,
     dialog: false,
     headers: [
       {
@@ -265,5 +280,9 @@ export default {
 
 .theme--dark.v-toolbar.v-sheet {
   background-color: #121212;
+}
+
+.food-icon {
+  vertical-align: bottom;
 }
 </style>
