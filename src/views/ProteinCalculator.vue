@@ -17,16 +17,17 @@
           type="number"
         ></v-text-field>
 
-        <p class="mt-n1 mb-6">~ {{ calculateProtein() }} mg {{ $t("protein-calculator.phe") }}</p>
+        <!--<p class="mt-n1 mb-6">~ {{ calculateProtein() }} mg {{ $t("protein-calculator.phe") }}</p>-->
 
         <v-text-field
           filled
           :label="$t('protein-calculator.weight')"
           v-model.number="weight"
           type="number"
+          clearable
         ></v-text-field>
 
-        <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
+        <p class="title font-weight-regular">~ {{ calculatePhe() }} mg Phe</p>
 
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
@@ -65,7 +66,7 @@ export default {
   data: () => ({
     dialog: false,
     protein: null,
-    weight: null,
+    weight: 100,
     factor: false,
     name: ""
   }),

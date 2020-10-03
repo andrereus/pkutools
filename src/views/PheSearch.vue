@@ -23,6 +23,8 @@
           single-line
           @click:append="closeKeys"
           ref="foodSearch"
+          autofocus
+          clearable
         ></v-text-field>
 
         <v-data-table
