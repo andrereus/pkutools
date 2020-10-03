@@ -9,6 +9,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
+          <v-icon left>mdi-google</v-icon>
           {{ $t("app.signin-google") }}
         </v-btn>
 

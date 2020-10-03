@@ -151,7 +151,10 @@
 
         <v-list>
           <v-list-item v-if="!userIsAuthenticated" @click="signInGoogle">
-            <v-list-item-title>{{ $t("app.signin-google") }}</v-list-item-title>
+            <span>
+              <v-icon>mdi-google</v-icon>
+              {{ $t("app.signin-google") }}
+            </span>
           </v-list-item>
 
           <v-list-item v-if="userIsAuthenticated">
@@ -162,7 +165,10 @@
           </v-list-item>
 
           <v-list-item v-if="userIsAuthenticated" @click="signOut">
-            <v-list-item-title>{{ $t("app.signout") }}</v-list-item-title>
+            <span>
+              <v-icon>mdi-logout-variant</v-icon>
+              {{ $t("app.signout") }}
+            </span>
           </v-list-item>
 
           <v-divider></v-divider>

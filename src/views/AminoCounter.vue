@@ -11,6 +11,7 @@
         <p>{{ $t("amino-counter.description") }}</p>
 
         <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
+          <v-icon left>mdi-google</v-icon>
           {{ $t("app.signin-google") }}
         </v-btn>
 
