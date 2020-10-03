@@ -43,6 +43,12 @@
                   width="25"
                   class="food-icon"
                 />
+                <img
+                  :src="publicPath + 'img/food-icons/Organic Food.svg'"
+                  v-if="item.icon === undefined"
+                  width="25"
+                  class="food-icon"
+                />
                 {{ item.name }}
               </td>
               <td class="text-start">{{ item.phe }}</td>
