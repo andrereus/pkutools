@@ -3736,7 +3736,7 @@
     "phe": 34
   },
   {
-    "name": "Crookneck Summer Squash",
+    "name": "Crookneck Sommerkürbis",
     "phe": 33
   },
   {
@@ -3744,7 +3744,7 @@
     "phe": 33
   },
   {
-    "name": "Gekochter Crookneck Summer Squash",
+    "name": "Gekochter Crookneck Sommerkürbis",
     "phe": 32
   },
   {
@@ -3767,7 +3767,7 @@
     "phe": 32
   },
   {
-    "name": "Acorn Squash",
+    "name": "Eichelkürbis",
     "phe": 31
   },
   {
@@ -3775,7 +3775,7 @@
     "phe": 31
   },
   {
-    "name": "Sweet Yellow Peppers",
+    "name": "Süße gelbe Paprika",
     "icon": "Paprika.svg",
     "phe": 31
   },
@@ -3831,7 +3831,7 @@
     "phe": 28
   },
   {
-    "name": "Sweet Whey Fluid",
+    "name": "Süße Molkeflüssigkeit",
     "phe": 27
   },
   {
@@ -3844,7 +3844,7 @@
     "phe": 27
   },
   {
-    "name": "Cassava",
+    "name": "Maniok",
     "phe": 26
   },
   {
@@ -3904,7 +3904,7 @@
     "phe": 24
   },
   {
-    "name": "Spaghetti Squash",
+    "name": "Spaghettikürbis",
     "phe": 24
   },
   {
@@ -3958,7 +3958,7 @@
     "phe": 22
   },
   {
-    "name": "Witloof Chicory",
+    "name": "Witloof Chicorée",
     "phe": 22
   },
   {
@@ -3966,7 +3966,7 @@
     "phe": 21
   },
   {
-    "name": "Sweet Pickled Cucumbers",
+    "name": "Süße eingelegte Gurken",
     "icon": "Cucumber.svg",
     "phe": 21
   },
@@ -3976,7 +3976,7 @@
     "phe": 21
   },
   {
-    "name": "Low Sodium Ketchup",
+    "name": "Natriumarmer Ketchup",
     "phe": 21
   },
   {
@@ -4034,7 +4034,7 @@
     "phe": 17
   },
   {
-    "name": "Reduzierte Natriumdillgurken",
+    "name": "Nutrium reduzierte Dillgurken",
     "phe": 17
   },
   {
@@ -4042,7 +4042,7 @@
     "phe": 17
   },
   {
-    "name": "Hot Sauce",
+    "name": "Scharfe Soße",
     "phe": 16
   },
   {
@@ -4068,7 +4068,7 @@
     "phe": 14
   },
   {
-    "name": "Loquats",
+    "name": "Wollmispeln",
     "phe": 14
   },
   {
@@ -4090,12 +4090,12 @@
     "phe": 13
   },
   {
-    "name": "Grüne Anjou-Birne",
+    "name": "Grüne Anjou Birne",
     "icon": "Pear.svg",
     "phe": 13
   },
   {
-    "name": "Italian Salad Dressing",
+    "name": "Italienisches Salatdressing",
     "phe": 13
   },
   {
@@ -4119,7 +4119,7 @@
     "phe": 11
   },
   {
-    "name": "Sweet Pickled Relish",
+    "name": "Süßes eingelegtes Relish",
     "phe": 11
   },
   {
@@ -4154,12 +4154,12 @@
     "phe": 10
   },
   {
-    "name": "Bosc Pear",
+    "name": "Bosc Birne",
     "icon": "Pear.svg",
     "phe": 10
   },
   {
-    "name": "Muschel-Tomatensaft in Dosen",
+    "name": "Muschel-Tomatensaft aus der Dose",
     "phe": 10
   },
   {
@@ -4175,7 +4175,7 @@
     "phe": 9
   },
   {
-    "name": "Sour Pickled Cucumber",
+    "name": "Saure eingelegte Gurke",
     "icon": "Cucumber.svg",
     "phe": 9
   },
@@ -4184,16 +4184,16 @@
     "phe": 9
   },
   {
-    "name": "Orangensaft in Dosen",
+    "name": "Orangensaft aus der Dose",
     "phe": 8
   },
   {
-    "name": "Red Delicious Apples",
+    "name": "Rote köstliche Äpfel",
     "icon": "Apple.svg",
     "phe": 7
   },
   {
-    "name": "Golden Delicious Apples",
+    "name": "Goldene köstliche Äpfel",
     "icon": "Apple.svg",
     "phe": 7
   },
@@ -4221,11 +4221,11 @@
     "phe": 5
   },
   {
-    "name": "Orange Drink Breakfast Type mit Saft und gefrorenem Fruchtfleischkonzentrat",
+    "name": "Orangensaftgetränk (Frühstücksart, mit Saft und gefrorenem Fruchtfleischkonzentrat)",
     "phe": 5
   },
   {
-    "name": "Decaf Coffee",
+    "name": "Entkoffeinierter Kaffee",
     "icon": "Cafe.svg",
     "phe": 3
   },
@@ -4235,7 +4235,7 @@
     "phe": 3
   },
   {
-    "name": "Tee-Instant-Zitrone mit zugesetzter Ascorbinsäure",
+    "name": "Instant Zitronentee mit Zusatz von Ascorbinsäure",
     "icon": "Tea.svg",
     "phe": 1
   },
