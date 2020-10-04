@@ -9,15 +9,15 @@
     "phe": 4593
   },
   {
-    "name": "Protein Powder Soy Based",
+    "name": "Proteinpulver auf Sojabasis",
     "phe": 2958
   },
   {
-    "name": "Getrocknete Spirulina Seetang",
+    "name": "Getrockneter Spirulina Seetang",
     "phe": 2777
   },
   {
-    "name": "getrocknete Eier",
+    "name": "Getrocknete Eier",
     "icon": "Eggs.svg",
     "phe": 2530
   },
@@ -59,7 +59,7 @@
     "phe": 1711
   },
   {
-    "name": "Romano Cheese",
+    "name": "Romano Käse",
     "icon": "Cheese.svg",
     "phe": 1710
   },
@@ -69,7 +69,7 @@
     "phe": 1662
   },
   {
-    "name": "Whelk (gekocht)",
+    "name": "Wellhornschnecke (gekocht)",
     "phe": 1648
   },
   {
@@ -77,7 +77,7 @@
     "phe": 1538
   },
   {
-    "name": "Fontina Cheese",
+    "name": "Fontina Käse",
     "icon": "Cheese.svg",
     "phe": 1497
   },
@@ -100,7 +100,7 @@
     "phe": 1442
   },
   {
-    "name": "Chicken Tenders",
+    "name": "Hühnchen zart",
     "phe": 1437
   },
   {
@@ -109,12 +109,12 @@
     "phe": 1434
   },
   {
-    "name": "Gouda-Käse",
+    "name": "Gouda Käse",
     "icon": "Cheese.svg",
     "phe": 1431
   },
   {
-    "name": "Gegrilltes rundes rundes Steak",
+    "name": "Gegrilltes Top Round Steak",
     "icon": "Steak.svg",
     "phe": 1427
   },
@@ -129,7 +129,7 @@
     "phe": 1401
   },
   {
-    "name": "Pan Fried Beef Liver",
+    "name": "Gebratene Rinderleber",
     "phe": 1382
   },
   {
@@ -138,11 +138,11 @@
     "phe": 1377
   },
   {
-    "name": "Soychips",
+    "name": "Sojaschips",
     "phe": 1371
   },
   {
-    "name": "Tilsit Cheese",
+    "name": "Tilsit Käse",
     "icon": "Cheese.svg",
     "phe": 1358
   },
@@ -167,7 +167,7 @@
     "phe": 1323
   },
   {
-    "name": "Beef Chuck Pot Roast",
+    "name": "Rindfleisch Chuck Pot Roast",
     "phe": 1318
   },
   {
@@ -181,11 +181,11 @@
     "phe": 1299
   },
   {
-    "name": "Lean Chicken Breast (gekocht)",
+    "name": "Magere Hühnerbrust (gekocht)",
     "phe": 1294
   },
   {
-    "name": "Monterey Cheese",
+    "name": "Monterey Käse",
     "icon": "Cheese.svg",
     "phe": 1289
   },
@@ -194,7 +194,7 @@
     "phe": 1288
   },
   {
-    "name": "Provolone Cheese",
+    "name": "Provolone Käse",
     "icon": "Cheese.svg",
     "phe": 1287
   },
@@ -208,7 +208,7 @@
     "phe": 1271
   },
   {
-    "name": "Mozzarella (Lowfat)",
+    "name": "Mozzarella (fettarm)",
     "phe": 1266
   },
   {
@@ -216,7 +216,7 @@
     "phe": 1263
   },
   {
-    "name": "Scharfer Cheddar-Käse",
+    "name": "Scharfer Cheddar Käse",
     "icon": "Cheese.svg",
     "phe": 1259
   },
@@ -226,7 +226,7 @@
     "phe": 1256
   },
   {
-    "name": "Colby Cheese",
+    "name": "Colby Käse",
     "icon": "Cheese.svg",
     "phe": 1251
   },
@@ -245,11 +245,11 @@
     "phe": 1240
   },
   {
-    "name": "Fat Free Ground Turkey",
+    "name": "Fettfreier gemahlener Truthahn",
     "phe": 1233
   },
   {
-    "name": "Chesire Cheese",
+    "name": "Cheshire Käse",
     "icon": "Cheese.svg",
     "phe": 1231
   },
@@ -277,7 +277,7 @@
     "phe": 1218
   },
   {
-    "name": "Gebratenes Rindfleischauge aus rundem Braten",
+    "name": "Gebratenes Rindfleischauge des runden Bratens",
     "phe": 1217
   },
   {
@@ -299,11 +299,11 @@
     "phe": 1211
   },
   {
-    "name": "Ungesalzene Erdnussbutter (glatt)",
+    "name": "Ungesalzene Erdnussbutter (weich)",
     "phe": 1202
   },
   {
-    "name": "Mexican Blend Cheese",
+    "name": "Mexikanischer Mischkäse",
     "icon": "Cheese.svg",
     "phe": 1200
   },
@@ -317,7 +317,7 @@
     "phe": 1190
   },
   {
-    "name": "Erdnussbutter (glatt)",
+    "name": "Erdnussbutter (weich)",
     "phe": 1187
   },
   {
@@ -325,12 +325,12 @@
     "phe": 1185
   },
   {
-    "name": "Fettarmer Cheddar-Käse",
+    "name": "Fettarmer Cheddar Käse",
     "icon": "Cheese.svg",
     "phe": 1179
   },
   {
-    "name": "Natriumarmer Cheddar-Käse",
+    "name": "Natriumarmer Cheddar Käse",
     "icon": "Cheese.svg",
     "phe": 1179
   },
@@ -340,11 +340,11 @@
     "phe": 1177
   },
   {
-    "name": "Magerer Schinken",
+    "name": "Magerer gerösteter Schinken",
     "phe": 1174
   },
   {
-    "name": "gemahlener Senfkorn",
+    "name": "Gemahlener Senfkorn",
     "phe": 1173
   },
   {
@@ -365,16 +365,16 @@
     "phe": 1164
   },
   {
-    "name": "Pork Spare Ribs",
+    "name": "Schweinerippen",
     "phe": 1160
   },
   {
-    "name": "Broiled Sirloin Strip Steak",
+    "name": "Gebratenes Lendenstreifensteak",
     "icon": "Steak.svg",
     "phe": 1159
   },
   {
-    "name": "Brie Cheese",
+    "name": "Brie Käse",
     "icon": "Cheese.svg",
     "phe": 1158
   },
@@ -388,7 +388,7 @@
     "phe": 1158
   },
   {
-    "name": "Broiled Beef Round",
+    "name": "Gegrilltes Rindfleisch rund",
     "phe": 1154
   },
   {
@@ -437,11 +437,11 @@
     "phe": 1132
   },
   {
-    "name": "Fat Free Broiled Turkey Patties",
+    "name": "Fettfreie gegrillte Putenfrikadellen",
     "phe": 1130
   },
   {
-    "name": "Sardellen in Dosen",
+    "name": "Eingemachte Sardellen",
     "phe": 1128
   },
   {
@@ -458,7 +458,7 @@
     "phe": 1122
   },
   {
-    "name": "Canned Sockeye Salmon",
+    "name": "Eingemachter Rotlachs",
     "phe": 1119
   },
   {
@@ -487,7 +487,7 @@
     "phe": 1100
   },
   {
-    "name": "Broiled Lean Beef Flank Steak",
+    "name": "Gebratenes mageres Rindfleischflankensteak",
     "icon": "Steak.svg",
     "phe": 1099
   },
@@ -546,7 +546,7 @@
     "phe": 1083
   },
   {
-    "name": "Cooked Grass Fed Ground Bison (Buffalo)",
+    "name": "Gekochter mit Gras gefütterter Ground Bison (Büffel)",
     "phe": 1081
   },
   {
@@ -555,7 +555,7 @@
     "phe": 1077
   },
   {
-    "name": "Cheddar-Käse",
+    "name": "Cheddar Käse",
     "icon": "Cheese.svg",
     "phe": 1074
   },
@@ -614,7 +614,7 @@
     "phe": 1021
   },
   {
-    "name": "Pan-Broiled Ground Beef Patty (97% mager)",
+    "name": "Pan-Broiled Hackfleischpastetchen (97% mager)",
     "phe": 1017
   },
   {
@@ -622,7 +622,7 @@
     "phe": 1017
   },
   {
-    "name": "Chia Seeds",
+    "name": "Chia Samen",
     "phe": 1016
   },
   {
@@ -630,11 +630,11 @@
     "phe": 1015
   },
   {
-    "name": "Canned Pink Salmon",
+    "name": "Rosa Lachs aus der Dose",
     "phe": 1014
   },
   {
-    "name": "Broiled Turkey Patties",
+    "name": "Gegrillte Putenfrikadellen",
     "phe": 1013
   },
   {
@@ -642,7 +642,7 @@
     "phe": 1011
   },
   {
-    "name": "Low Fat Broiled Turkey Patties",
+    "name": "Fettarme gebratene Putenfrikadellen",
     "phe": 1010
   },
   {
@@ -650,12 +650,12 @@
     "phe": 1009
   },
   {
-    "name": "Broiled Ground Lamb",
+    "name": "Gegrilltes Lammfleisch",
     "icon": "Rack of Lamb.svg",
     "phe": 1008
   },
   {
-    "name": "Lachs in Dosen",
+    "name": "Lachs aus der Dose",
     "phe": 1003
   },
   {
@@ -664,7 +664,7 @@
     "phe": 1000
   },
   {
-    "name": "Cold Pack American Cheese",
+    "name": "Kalte Packung Amerikanischer Käse",
     "icon": "Cheese.svg",
     "phe": 999
   },
@@ -705,7 +705,7 @@
     "phe": 988
   },
   {
-    "name": "Smoked Haddock",
+    "name": "Geräuchertem Schellfisch",
     "phe": 985
   },
   {
@@ -721,7 +721,7 @@
     "phe": 973
   },
   {
-    "name": "Gerösteter Truthahn-Trommelstock",
+    "name": "Gerösteter Putenschlegel",
     "phe": 972
   },
   {
@@ -734,11 +734,11 @@
     "phe": 970
   },
   {
-    "name": "Gebratener hautloser Hühnertrommelstock",
+    "name": "Gebratene hautlose Hähnchenkeule",
     "phe": 968
   },
   {
-    "name": "Gebratenes Hähnchenschenkel ohne Knochen und ohne Haut",
+    "name": "Gebratenes Hähnchenschenkel ohne Knochen und Haut",
     "phe": 967
   },
   {
@@ -746,15 +746,15 @@
     "phe": 964
   },
   {
-    "name": "Sardinen in Dosen",
+    "name": "Sardinen aus der Dose",
     "phe": 961
   },
   {
-    "name": "Roasted Chicken Wings",
+    "name": "Gebratene Hühnerflügel",
     "phe": 960
   },
   {
-    "name": "Kippered Herring",
+    "name": "Kipper Hering",
     "phe": 960
   },
   {
@@ -784,7 +784,7 @@
     "phe": 955
   },
   {
-    "name": "Canned Pink Salmon (mit Haut und Knochen)",
+    "name": "Rosa Lachs aus der Dose (mit Haut und Knochen)",
     "phe": 951
   },
   {
@@ -796,7 +796,7 @@
     "phe": 949
   },
   {
-    "name": "Shrimp in Dosen",
+    "name": "Shrimp aus der Dose",
     "icon": "Prawn.svg",
     "phe": 946
   },
@@ -813,7 +813,7 @@
     "phe": 940
   },
   {
-    "name": "Dry Pork Salami",
+    "name": "Trockene Schweinefleischsalami",
     "phe": 940
   },
   {
@@ -835,7 +835,7 @@
     "phe": 931
   },
   {
-    "name": "American Cheese Spread",
+    "name": "Amerikanischer Käseaufstrich",
     "icon": "Cheese.svg",
     "phe": 931
   },
@@ -848,11 +848,11 @@
     "phe": 925
   },
   {
-    "name": "Muscheln in Dosen",
+    "name": "Muscheln aus der Dose",
     "phe": 925
   },
   {
-    "name": "Gebratener Kürbis und Kürbiskerne (mit Muscheln)",
+    "name": "Gebratener Kürbis und Kürbiskerne (mit Schalen)",
     "phe": 924
   },
   {
@@ -864,7 +864,7 @@
     "phe": 923
   },
   {
-    "name": "Weißer Thunfisch in Dosen (wasserverpackt)",
+    "name": "Weißer Thunfisch aus der Dose (wasserverpackt)",
     "phe": 922
   },
   {
@@ -877,11 +877,11 @@
     "phe": 917
   },
   {
-    "name": "Gekochter Alaska Pollock",
+    "name": "Gekochter Alaska-Seelachs",
     "phe": 917
   },
   {
-    "name": "Raw Fatfree Ground Turkey",
+    "name": "Rohes fettfreies Putenhackfleisch",
     "phe": 915
   },
   {
@@ -893,7 +893,7 @@
     "phe": 915
   },
   {
-    "name": "Roasted Chicken Drumsticks",
+    "name": "Gebratene Hähnchenkeulen",
     "phe": 914
   },
   {
@@ -922,7 +922,7 @@
     "phe": 908
   },
   {
-    "name": "Yellowtail (Raw)",
+    "name": "Gelbschwanz (Fisch) (roh)",
     "phe": 904
   },
   {
@@ -930,7 +930,7 @@
     "phe": 904
   },
   {
-    "name": "Lean Cured Ham",
+    "name": "Magerer Schinken",
     "phe": 904
   },
   {
@@ -946,11 +946,11 @@
     "phe": 900
   },
   {
-    "name": "Atlantic Herring",
+    "name": "Atlantischer Hering",
     "phe": 899
   },
   {
-    "name": "Sesam (geröstet)",
+    "name": "Sesamsamen (geröstet)",
     "icon": "Sesame.svg",
     "phe": 899
   },
@@ -967,7 +967,7 @@
     "phe": 893
   },
   {
-    "name": "Roast Turkey Dark Meat",
+    "name": "Gebratener Truthahn (dunkles Fleisch)",
     "icon": "Thanksgiving.svg",
     "phe": 893
   },
@@ -981,7 +981,7 @@
     "phe": 891
   },
   {
-    "name": "Canned Atlantic Cod",
+    "name": "Konservierter Kabeljau",
     "phe": 889
   },
   {
@@ -989,7 +989,7 @@
     "phe": 887
   },
   {
-    "name": "Veggie Burgers",
+    "name": "Vegetarische Burger",
     "icon": "Hamburger.svg",
     "phe": 885
   },
@@ -998,7 +998,7 @@
     "phe": 884
   },
   {
-    "name": "Cooked Smelt",
+    "name": "Gekochter Schmelz",
     "phe": 882
   },
   {
@@ -1019,7 +1019,7 @@
     "phe": 875
   },
   {
-    "name": "Blue Crab Cakes",
+    "name": "Blaue-Krabben-Kuchen",
     "icon": "Birthday Cake.svg",
     "phe": 870
   },
@@ -1073,7 +1073,7 @@
     "phe": 852
   },
   {
-    "name": "Pink Salmon (Raw)",
+    "name": "Rosa Lachs (roh)",
     "phe": 845
   },
   {
@@ -1081,12 +1081,12 @@
     "phe": 845
   },
   {
-    "name": "Canadian Bacon (Raw)",
+    "name": "Kanadischer Speck (roh)",
     "icon": "Bacon.svg",
     "phe": 841
   },
   {
-    "name": "Firm Tofu",
+    "name": "Fester Tofu",
     "phe": 835
   },
   {
@@ -1103,7 +1103,7 @@
     "phe": 820
   },
   {
-    "name": "Alaskan King Crab",
+    "name": "Alaskische Königskrabbe",
     "icon": "Crab.svg",
     "phe": 817
   },
@@ -1112,11 +1112,11 @@
     "phe": 815
   },
   {
-    "name": "Kfc Fried Chicken Breast",
+    "name": "Kfc gebratene Hühnerbrust",
     "phe": 812
   },
   {
-    "name": "Raw Tilapia",
+    "name": "Roher Tilapia",
     "phe": 810
   },
   {
@@ -1132,7 +1132,7 @@
     "phe": 803
   },
   {
-    "name": "Dosenlachs (mit Knochen)",
+    "name": "Rotlachs aus der Dose (mit Knochen)",
     "phe": 799
   },
   {
@@ -1144,11 +1144,11 @@
     "phe": 791
   },
   {
-    "name": "Cured Ham",
+    "name": "Schinken",
     "phe": 791
   },
   {
-    "name": "Peanut Bar",
+    "name": "Erdnuss Riegel",
     "icon": "Peanuts.svg",
     "phe": 787
   },
@@ -1162,17 +1162,17 @@
     "phe": 782
   },
   {
-    "name": "Queen Crab (Raw)",
+    "name": "Königin Krabbe (roh)",
     "icon": "Crab.svg",
     "phe": 781
   },
   {
-    "name": "Pepperoni",
+    "name": "Peperoni",
     "icon": "Chili Pepper.svg",
     "phe": 778
   },
   {
-    "name": "Raw Skinless Chicken Drumstick",
+    "name": "Rohe hautlose Hähnchenkeule",
     "phe": 775
   },
   {
@@ -1189,20 +1189,20 @@
     "phe": 769
   },
   {
-    "name": "Getrocknete Lotus-Samen",
+    "name": "Getrocknete Lotussamen",
     "phe": 767
   },
   {
-    "name": "Hähnchenschenkel ohne Knochen ohne Haut (roh)",
+    "name": "Hähnchenschenkel ohne Knochen und Haut (roh)",
     "phe": 765
   },
   {
-    "name": "Cheeseburger; Single Large Patty; Plain",
+    "name": "Cheeseburger; Single Large Patty; Einfach",
     "icon": "Hamburger.svg",
     "phe": 763
   },
   {
-    "name": "Wheat Puffed Fortified",
+    "name": "Weizen gepufft angereichert",
     "phe": 762
   },
   {
@@ -1210,21 +1210,21 @@
     "phe": 758
   },
   {
-    "name": "Cured Smoked Beef",
+    "name": "Geräuchertes Rindfleisch",
     "phe": 756
   },
   {
-    "name": "Cheeseburger; Single Regular Patty; Plain",
+    "name": "Cheeseburger; Single Regular Patty; Einfach",
     "icon": "Hamburger.svg",
     "phe": 755
   },
   {
-    "name": "Egg Scrambled",
+    "name": "Rührei",
     "icon": "Eggs.svg",
     "phe": 750
   },
   {
-    "name": "Whitefish (Raw)",
+    "name": "Weißfisch (roh)",
     "icon": "Fish Food.svg",
     "phe": 745
   },
@@ -1248,7 +1248,7 @@
     "phe": 736
   },
   {
-    "name": "Dungeness Crab (Raw)",
+    "name": "Dungeness Krabbe (roh)",
     "icon": "Crab.svg",
     "phe": 735
   },
@@ -1262,7 +1262,7 @@
     "phe": 729
   },
   {
-    "name": "Atlantic Mackerel (Raw)",
+    "name": "Atlantische Makrele (roh)",
     "phe": 726
   },
   {
@@ -1298,12 +1298,12 @@
     "phe": 708
   },
   {
-    "name": "Blue Crab in Dosen",
+    "name": "Blaue Krabben aus der Dose",
     "icon": "Crab.svg",
     "phe": 708
   },
   {
-    "name": "Raw Chicken Wings",
+    "name": "Rohe Hühnerflügel",
     "phe": 707
   },
   {
@@ -1311,24 +1311,24 @@
     "phe": 707
   },
   {
-    "name": "Crayfish",
+    "name": "Flusskrebs",
     "icon": "Fish Food.svg",
     "phe": 706
   },
   {
-    "name": "Striped Bass (Raw)",
+    "name": "Gestreifter Bass (roh)",
     "phe": 692
   },
   {
-    "name": "Quatsch vom Rind und Schweinefleisch (Bologna)",
+    "name": "Rind- und Schweinefleisch Quatsch (Bologna)",
     "phe": 689
   },
   {
-    "name": "Trail Mix",
+    "name": "Studentenfutter",
     "phe": 687
   },
   {
-    "name": "Hersheys Payday Bar",
+    "name": "Hersheys Payday Riegel",
     "phe": 687
   },
   {
@@ -1360,7 +1360,7 @@
     "phe": 677
   },
   {
-    "name": "Feta-Käse",
+    "name": "Feta Käse",
     "icon": "Cheese.svg",
     "phe": 675
   },
@@ -1374,7 +1374,7 @@
     "phe": 670
   },
   {
-    "name": "Hamburger; Single Regular Patty; Plain",
+    "name": "Hamburger; Single Regular Patty; Einfach",
     "icon": "Hamburger.svg",
     "phe": 670
   },
