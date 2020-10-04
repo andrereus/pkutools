@@ -72,6 +72,7 @@
                 v-model.number="weight"
                 type="number"
                 class="mt-6"
+                clearable
               ></v-text-field>
               <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
             </v-card-text>
@@ -103,7 +104,7 @@ export default {
     dialog: false,
     search: null,
     phe: null,
-    weight: null,
+    weight: 100,
     name: "",
     icon: "Organic Food.svg",
     headers: [
@@ -125,6 +126,7 @@ export default {
       this.name = item.name;
       this.icon = item.icon !== undefined ? item.icon : "Organic Food.svg";
       this.phe = item.phe;
+      this.weight = 100;
       this.dialog = true;
     },
     calculatePhe() {
