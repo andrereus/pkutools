@@ -1877,7 +1877,7 @@
     "phe": 448
   },
   {
-    "name": "Pita-Brot",
+    "name": "Fladenbrot (Pita)",
     "icon": "Bread.svg",
     "phe": 446
   },
@@ -1896,7 +1896,7 @@
     "phe": 444
   },
   {
-    "name": "Corn Grits White Regular und Quick Enriched Dry",
+    "name": "Maisgrieß (weiß, normal und schnell, angereichert, trocken)",
     "phe": 444
   },
   {
@@ -1913,7 +1913,7 @@
     "phe": 442
   },
   {
-    "name": "Black Turtle Beans",
+    "name": "Schwarze Schildkrötenbohnen",
     "phe": 442
   },
   {
@@ -1951,7 +1951,7 @@
     "phe": 434
   },
   {
-    "name": "Corn Grits Yellow Regular And Quick Unenriched Dry",
+    "name": "Maisgrieß (gelb, normal und schnell, nicht angereichert, trocken)",
     "phe": 431
   },
   {
@@ -1971,11 +1971,11 @@
     "phe": 425
   },
   {
-    "name": "Multi-Grain Toast",
+    "name": "Mehrkorn-Toast",
     "phe": 421
   },
   {
-    "name": "Butter Croissants",
+    "name": "Buttercroissants",
     "icon": "Bread.svg",
     "phe": 416
   },
@@ -1988,7 +1988,7 @@
     "phe": 413
   },
   {
-    "name": "English Muffins",
+    "name": "Englische Muffins",
     "icon": "Cupcake.svg",
     "phe": 412
   },
@@ -1998,7 +1998,7 @@
     "phe": 411
   },
   {
-    "name": "Getrocknete Ginkgo-Nüsse",
+    "name": "Getrocknete Ginkgo Nüsse",
     "icon": "Nut.svg",
     "phe": 408
   },
@@ -2016,12 +2016,12 @@
     "phe": 403
   },
   {
-    "name": "Ralston Corn Biscuits",
+    "name": "Ralston Maiskekse",
     "icon": "Cookies.svg",
     "phe": 403
   },
   {
-    "name": "Ralston Crisp Rice",
+    "name": "Ralston Knusperreis",
     "icon": "Rice Bowl.svg",
     "phe": 402
   },
@@ -2034,11 +2034,11 @@
     "phe": 399
   },
   {
-    "name": "Adzuki Beans",
+    "name": "Adzuki Bohnen",
     "phe": 398
   },
   {
-    "name": "Stinky Tofu",
+    "name": "Stinkender Tofu",
     "phe": 397
   },
   {
@@ -2046,7 +2046,7 @@
     "phe": 390
   },
   {
-    "name": "Post Honey Bunches Of Oats Honey Roasted",
+    "name": "Post Honig, Haferflocken Honig geröstet",
     "phe": 390
   },
   {
@@ -2054,7 +2054,7 @@
     "phe": 386
   },
   {
-    "name": "Erbsen teilen",
+    "name": "Spalterbsen",
     "icon": "Peas.svg",
     "phe": 384
   },
@@ -2068,7 +2068,7 @@
     "phe": 377
   },
   {
-    "name": "Ralston Crispy Hexagons",
+    "name": "Ralston Knusprige Sechsecke",
     "phe": 374
   },
   {
@@ -2115,7 +2115,7 @@
     "phe": 351
   },
   {
-    "name": "Raw Scallops",
+    "name": "Rohe Jakobsmuscheln",
     "phe": 351
   },
   {
@@ -2124,7 +2124,7 @@
     "phe": 349
   },
   {
-    "name": "Raw Pacific Oysters",
+    "name": "Rohe pazifische Austern",
     "phe": 339
   },
   {
@@ -2132,7 +2132,7 @@
     "phe": 336
   },
   {
-    "name": "Miniatur-Zimtschnecken",
+    "name": "Miniatur Zimtschnecken",
     "icon": "Cinnamon Roll.svg",
     "phe": 334
   },
@@ -2141,12 +2141,12 @@
     "phe": 329
   },
   {
-    "name": "Sun-Dried Hot Chile Peppers",
+    "name": "Sonnengetrocknete scharfe Chilischoten",
     "icon": "Chili Pepper.svg",
     "phe": 327
   },
   {
-    "name": "Cinnamon Coffeecake",
+    "name": "Zimt-Kaffeekuchen",
     "icon": "Birthday Cake.svg",
     "phe": 324
   },
@@ -2159,7 +2159,7 @@
     "phe": 321
   },
   {
-    "name": "Soft Tofu",
+    "name": "Weicher Tofu",
     "phe": 319
   },
   {
@@ -2167,19 +2167,19 @@
     "phe": 317
   },
   {
-    "name": "Rote Nierenbohnen in Dosen",
+    "name": "Rote Kidneybohnen aus der Dose",
     "phe": 317
   },
   {
-    "name": "fettfreier Joghurt",
+    "name": "Fettfreier Joghurt",
     "phe": 313
   },
   {
-    "name": "Ground Ginger",
+    "name": "Gemahlener Ingwer",
     "phe": 311
   },
   {
-    "name": "Nierenbohnen in Dosen",
+    "name": "Kidneybohnen aus der Dose",
     "phe": 309
   },
   {
@@ -2193,7 +2193,7 @@
     "phe": 308
   },
   {
-    "name": "Post Raisin Bran Cereal",
+    "name": "Post Rosinenkleie Müsli",
     "phe": 305
   },
   {
@@ -2201,11 +2201,11 @@
     "phe": 301
   },
   {
-    "name": "Kamut Cooked",
+    "name": "Kamut gekocht",
     "phe": 300
   },
   {
-    "name": "Cranberry Beans in Dosen",
+    "name": "Cranberry Beans aus der Dose",
     "phe": 300
   },
   {
