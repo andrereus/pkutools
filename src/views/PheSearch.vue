@@ -17,13 +17,12 @@
         <v-text-field
           :value="search"
           @keyup="search = $event.target.value"
-          append-icon="mdi-keyboard-close"
+          append-icon="mdi-magnify"
           :label="$t('phe-search.search')"
           filled
           single-line
           @click:append="closeKeys"
           ref="foodSearch"
-          autofocus
         ></v-text-field>
 
         <v-data-table
