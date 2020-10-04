@@ -1398,11 +1398,11 @@
     "phe": 667
   },
   {
-    "name": "Hafer regelmäßig und schnell nicht angereichert trocken",
+    "name": "Haferflocken normal (nicht angereichert und trocken)",
     "phe": 665
   },
   {
-    "name": "Macadamia Nuts",
+    "name": "Macadamianüsse",
     "icon": "Nut.svg",
     "phe": 665
   },
@@ -1417,11 +1417,11 @@
     "phe": 663
   },
   {
-    "name": "Oats Instant Fortified Plain Dry",
+    "name": "Hafer instant (angereichert und trocken)",
     "phe": 660
   },
   {
-    "name": "Fried Calamari",
+    "name": "Frittierter Tintenfish",
     "phe": 656
   },
   {
@@ -1438,7 +1438,7 @@
     "phe": 647
   },
   {
-    "name": "gerührte Sojabohnensprossen",
+    "name": "Gerührte Sojabohnensprossen",
     "phe": 641
   },
   {
@@ -1456,7 +1456,7 @@
     "phe": 635
   },
   {
-    "name": "Raw Chicken Thigh",
+    "name": "Roher Hühnerschenkel",
     "phe": 632
   },
   {
@@ -1465,16 +1465,16 @@
     "phe": 624
   },
   {
-    "name": "Matzo Egg Crackers",
+    "name": "Matzo Eiercracker",
     "icon": "Cookies.svg",
     "phe": 624
   },
   {
-    "name": "Luncheon Sausage (Schweinefleisch und Rindfleisch)",
+    "name": "Mittagswurst (Schweinefleisch und Rindfleisch)",
     "phe": 623
   },
   {
-    "name": "Schinken in Dosen",
+    "name": "Schinken aus der Dose",
     "phe": 622
   },
   {
@@ -1512,7 +1512,7 @@
     "phe": 596
   },
   {
-    "name": "Turkey Hotdog",
+    "name": "Truthahn Hotdog",
     "icon": "Hot Dog.svg",
     "phe": 592
   },
@@ -1522,7 +1522,7 @@
     "phe": 588
   },
   {
-    "name": "Plain Croutons",
+    "name": "Einfache Croutons",
     "phe": 586
   },
   {
@@ -1530,7 +1530,7 @@
     "phe": 585
   },
   {
-    "name": "Curry Powder",
+    "name": "Curry Pulver",
     "phe": 580
   },
   {
@@ -1554,7 +1554,7 @@
     "phe": 572
   },
   {
-    "name": "Ei-Omelett",
+    "name": "Ei Omelett",
     "icon": "Eggs.svg",
     "phe": 572
   },
@@ -1568,20 +1568,20 @@
     "phe": 571
   },
   {
-    "name": "Pumpernickel Melba Rye Toast",
+    "name": "Pumpernickel Melba Roggen Toast",
     "icon": "Bread.svg",
     "phe": 569
   },
   {
-    "name": "Weizencreme regelmäßig 10 Minuten trocken kochen",
+    "name": "Weizencreme normal (10 Minuten Kochzeit, trocken)",
     "phe": 568
   },
   {
-    "name": "Weizencreme 2 1/2 Minuten Kochzeit trocken",
+    "name": "Weizencreme (2 1/2 Minuten Kochzeit, trocken)",
     "phe": 565
   },
   {
-    "name": "Farina angereicherte verschiedene Marken einschließlich Weizencreme schnell (1-3 Minuten) trocken",
+    "name": "Farina angereichert (verschiedene Marken, einschließlich Grießbrei, schnell (1-3 Minuten), trocken)",
     "phe": 565
   },
   {
@@ -1589,7 +1589,7 @@
     "phe": 564
   },
   {
-    "name": "Lowfat Ricotta",
+    "name": "Fettarmer Ricotta",
     "phe": 562
   },
   {
@@ -1602,7 +1602,7 @@
     "phe": 560
   },
   {
-    "name": "Weizencreme 1 Minute Kochzeit trocken",
+    "name": "Weizencreme (1 Minute Kochzeit, trocken)",
     "phe": 560
   },
   {
@@ -1610,7 +1610,7 @@
     "phe": 559
   },
   {
-    "name": "Squid (Raw)",
+    "name": "Tintenfisch (roh)",
     "phe": 558
   },
   {
@@ -1670,11 +1670,11 @@
     "phe": 534
   },
   {
-    "name": "Pinto Beans (Cooked)",
+    "name": "Pinto Bohnen (gekocht)",
     "phe": 531
   },
   {
-    "name": "Kurkuma gemahlen",
+    "name": "Gemahlene Kurkuma",
     "phe": 530
   },
   {
@@ -1697,7 +1697,7 @@
     "phe": 525
   },
   {
-    "name": "ungesüßte Backschokolade",
+    "name": "Ungesüßte Backschokolade",
     "phe": 525
   },
   {
@@ -1706,12 +1706,12 @@
     "phe": 524
   },
   {
-    "name": "Egg Bagel",
+    "name": "Ei Bagel",
     "icon": "Doughnut.svg",
     "phe": 523
   },
   {
-    "name": "U-Boot-Sandwich-Roastbeef auf Weißbrot mit Salat und Tomate",
+    "name": "U-Boot-Sandwich (Roastbeef auf Weißbrot mit Salat und Tomate)",
     "phe": 522
   },
   {
@@ -1724,28 +1724,28 @@
     "phe": 519
   },
   {
-    "name": "U-Boot-Sandwich-Thunfisch auf Weißbrot mit Salat und Tomate",
+    "name": "U-Boot-Sandwich (Thunfisch auf Weißbrot mit Salat und Tomate)",
     "phe": 515
   },
   {
-    "name": "Subway Tuna Sub",
+    "name": "Subway Thunfisch Sub",
     "phe": 515
   },
   {
-    "name": "Farina Unenriched Dry",
+    "name": "Farina (nicht angereichert und trocken)",
     "phe": 514
   },
   {
-    "name": "Gekochte rote Nierenbohnen",
+    "name": "Gekochte rote Kidneybohnen",
     "phe": 513
   },
   {
-    "name": "Chicken Hotdog",
+    "name": "Hühnchen Hotdog",
     "icon": "Hot Dog.svg",
     "phe": 513
   },
   {
-    "name": "Ladyfingers",
+    "name": "Löffelbiskuit",
     "phe": 511
   },
   {
@@ -1767,11 +1767,11 @@
     "phe": 497
   },
   {
-    "name": "California Red Kidney Beans",
+    "name": "Kalifornische rote Kidneybohnen",
     "phe": 494
   },
   {
-    "name": "Plain Matzo Crackers",
+    "name": "Einfache Matzo Cracker",
     "icon": "Cookies.svg",
     "phe": 494
   },
@@ -1780,7 +1780,7 @@
     "phe": 488
   },
   {
-    "name": "Getrocknete Shiitake-Pilze",
+    "name": "Getrocknete Shiitake Pilze",
     "phe": 486
   },
   {
