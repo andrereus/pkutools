@@ -3184,11 +3184,11 @@
     "phe": 81
   },
   {
-    "name": "Gekochte Hawaiin Mountain Yam",
+    "name": "Gekochte Hawaiin Berg Süßkartoffeln",
     "phe": 80
   },
   {
-    "name": "Weizencreme regelmäßig (10 Minuten) mit Wasser mit Salz gekocht",
+    "name": "Weizencreme (normal, (10 Minuten) mit Wasser gekocht, mit Salz)",
     "phe": 79
   },
   {
@@ -3206,11 +3206,11 @@
     "phe": 78
   },
   {
-    "name": "Weizencreme regelmäßig (10 Minuten) mit Wasser ohne Salz gekocht",
+    "name": "Weizencreme (normal, (10 Minuten) mit Wasser gekocht, ohne Salz)",
     "phe": 78
   },
   {
-    "name": "Portobellos Pilze",
+    "name": "Portobello Pilze",
     "phe": 76
   },
   {
@@ -3218,7 +3218,7 @@
     "phe": 76
   },
   {
-    "name": "Canned Hominy",
+    "name": "Eingemachte Hominy",
     "phe": 76
   },
   {
@@ -3240,7 +3240,7 @@
     "phe": 74
   },
   {
-    "name": "Weizencreme 2 1/2 Minuten Kochzeit mit Wasserherd ohne Salz gekocht",
+    "name": "Weizencreme (2 1/2 Minuten Kochzeit, mit Wasser gekocht, Herd, ohne Salz)",
     "phe": 72
   },
   {
@@ -3248,7 +3248,7 @@
     "phe": 70
   },
   {
-    "name": "Corn Grits Yellow Regular Quick Enriched Cooked With Water With Salt",
+    "name": "Maiskörner gelb (normal, schnell, angereichert, mit Wasser gekocht, mit Salz)",
     "phe": 70
   },
   {
@@ -3261,7 +3261,7 @@
     "phe": 69
   },
   {
-    "name": "Gekochte Yamswurzel",
+    "name": "Gekochte Süßkartoffel",
     "phe": 69
   },
   {
@@ -3278,11 +3278,11 @@
     "phe": 68
   },
   {
-    "name": "Yellow Snap Beans",
+    "name": "Gelbe Bohnen",
     "phe": 67
   },
   {
-    "name": "Green Snap Beans (Raw)",
+    "name": "Grüne Bohnen (roh)",
     "phe": 67
   },
   {
@@ -3291,7 +3291,7 @@
     "phe": 67
   },
   {
-    "name": "Gekochte Shiitake-Pilze",
+    "name": "Gekochte Shiitake Pilze",
     "phe": 67
   },
   {
@@ -3329,7 +3329,7 @@
     "phe": 63
   },
   {
-    "name": "Hot Green Chili Peppers",
+    "name": "Scharfe Grüne Chilischoten",
     "icon": "Chili Pepper.svg",
     "phe": 62
   },
@@ -3338,7 +3338,7 @@
     "phe": 62
   },
   {
-    "name": "Red Chili Peppers",
+    "name": "Rote Chilischoten",
     "icon": "Chili Pepper.svg",
     "phe": 62
   },
@@ -3360,15 +3360,15 @@
     "phe": 60
   },
   {
-    "name": "Mungobohnensprossen in Dosen",
+    "name": "Mungobohnensprossen aus der Dose",
     "phe": 60
   },
   {
-    "name": "Maitake-Pilze",
+    "name": "Maitake Pilze",
     "phe": 60
   },
   {
-    "name": "Bambussprossen (in Dosen)",
+    "name": "Bambussprossen (aus der Dose)",
     "phe": 60
   },
   {
@@ -3377,11 +3377,11 @@
     "phe": 59
   },
   {
-    "name": "Gekochter Hubbard-Kürbis",
+    "name": "Gekochter Hubbard Kürbis",
     "phe": 58
   },
   {
-    "name": "Beet Greens (Raw)",
+    "name": "Rübengrün (roh)",
     "icon": "Beet.svg",
     "phe": 58
   },
@@ -3391,7 +3391,7 @@
     "phe": 58
   },
   {
-    "name": "Winter Squash",
+    "name": "Winterkürbis",
     "phe": 57
   },
   {
@@ -3413,7 +3413,7 @@
     "phe": 53
   },
   {
-    "name": "White California Grapefruit",
+    "name": "Weiße kalifornische Grapefruit",
     "phe": 53
   },
   {
@@ -3443,7 +3443,7 @@
     "phe": 52
   },
   {
-    "name": "Cooked Nopales",
+    "name": "Gekochte Nopales",
     "phe": 52
   },
   {
@@ -3461,11 +3461,11 @@
     "phe": 51
   },
   {
-    "name": "Tootsie Roll Chocolate-Flavor Roll",
+    "name": "Tootsie Roll Schokoladengeschmacksrolle",
     "phe": 50
   },
   {
-    "name": "Sweet Red Bell Peppers",
+    "name": "Süße rote Paprika",
     "icon": "Paprika.svg",
     "phe": 50
   },
@@ -3475,7 +3475,7 @@
     "phe": 50
   },
   {
-    "name": "Dates (Deglet Noor)",
+    "name": "Datteln (Deglet Noor)",
     "phe": 50
   },
   {
@@ -3502,11 +3502,11 @@
     "phe": 48
   },
   {
-    "name": "Medjool Dates",
+    "name": "Medjool Datteln",
     "phe": 48
   },
   {
-    "name": "Lotus Root",
+    "name": "Lotuswurzel",
     "phe": 47
   },
   {
@@ -3524,7 +3524,7 @@
     "phe": 46
   },
   {
-    "name": "Beets (Raw)",
+    "name": "Rüben (roh)",
     "icon": "Beet.svg",
     "phe": 46
   },
@@ -3550,7 +3550,7 @@
     "phe": 44
   },
   {
-    "name": "Seetang Seetang",
+    "name": "Seetang",
     "phe": 43
   },
   {
@@ -3567,7 +3567,7 @@
     "phe": 42
   },
   {
-    "name": "Scallop Squash",
+    "name": "Jakobsmuschelkürbis",
     "phe": 42
   },
   {
@@ -3575,7 +3575,7 @@
     "phe": 42
   },
   {
-    "name": "Chicorée Greens",
+    "name": "Chicorée Gemüse",
     "phe": 41
   },
   {
@@ -3595,7 +3595,7 @@
     "phe": 41
   },
   {
-    "name": "ungesalzene Butter",
+    "name": "Ungesalzene Butter",
     "phe": 41
   },
   {
@@ -3604,7 +3604,7 @@
     "phe": 41
   },
   {
-    "name": "Summer Squash",
+    "name": "Sommerkürbis",
     "phe": 41
   },
   {
@@ -3616,7 +3616,7 @@
     "phe": 40
   },
   {
-    "name": "Butternut Squash",
+    "name": "Butternusskürbis",
     "phe": 39
   },
   {
@@ -3643,7 +3643,7 @@
     "phe": 38
   },
   {
-    "name": "Reiscreme mit Wasser mit Salz gekocht",
+    "name": "Reiscreme (mit Wasser gekocht, mit Salz)",
     "icon": "Rice Bowl.svg",
     "phe": 37
   },
@@ -3679,7 +3679,7 @@
     "phe": 36
   },
   {
-    "name": "Cranberries",
+    "name": "Preiselbeeren",
     "phe": 36
   },
   {
@@ -3688,7 +3688,7 @@
     "phe": 36
   },
   {
-    "name": "Kürbis in Dosen",
+    "name": "Kürbis aus der Dose",
     "phe": 35
   },
   {
@@ -3710,7 +3710,7 @@
     "phe": 35
   },
   {
-    "name": "Dosenpiment",
+    "name": "Eingemachte Pimente",
     "phe": 34
   },
   {
@@ -3718,20 +3718,20 @@
     "phe": 34
   },
   {
-    "name": "Jumbo Olives",
+    "name": "Jumbo Oliven",
     "icon": "Olive.svg",
     "phe": 34
   },
   {
-    "name": "Mayonnaise Salad Dressing",
+    "name": "Mayonnaise Salatdressing",
     "phe": 34
   },
   {
-    "name": "California Valencia Oranges",
+    "name": "Kalifornien Valencia Orangen",
     "phe": 34
   },
   {
-    "name": "Tomatenpüree in Dosen",
+    "name": "Tomatenpüree aus der Dose",
     "icon": "Tomato.svg",
     "phe": 34
   },
