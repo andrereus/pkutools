@@ -49,8 +49,8 @@
     "save": "Speichern",
     "delete": "Löschen",
     "cancel": "Abbrechen",
-    "lock-values": "Sperre Werte zum Berechnen",
-    "lock-info": "Ändere Gewicht oder Phe"
+    "lock-values": "Berechnungsmodus",
+    "lock-info": "Gewicht und Phe werden parallel geändert"
   },
   "amino-counter": {
     "title": "Amino Zähler",

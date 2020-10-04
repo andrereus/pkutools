@@ -49,8 +49,8 @@
     "save": "Save",
     "delete": "Delete",
     "cancel": "Cancel",
-    "lock-values": "Lock values for calculation",
-    "lock-info": "Change Weight or Phe"
+    "lock-values": "Calculation Mode",
+    "lock-info": "Weight and Phe are changed in parallel"
   },
   "amino-counter": {
     "title": "Amino Counter",
