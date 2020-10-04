@@ -2205,7 +2205,7 @@
     "phe": 300
   },
   {
-    "name": "Cranberry Beans aus der Dose",
+    "name": "Cranberry Bohnen aus der Dose",
     "phe": 300
   },
   {
@@ -2227,12 +2227,12 @@
     "phe": 295
   },
   {
-    "name": "Burrito mit Bohnenkäse und Rindfleisch",
+    "name": "Burrito mit Bohnen, Käse und Rindfleisch",
     "icon": "Wrap.svg",
     "phe": 295
   },
   {
-    "name": "Chili in Dosen mit Bohnen",
+    "name": "Chili mit Bohnen aus der Dose",
     "icon": "Chili Pepper.svg",
     "phe": 292
   },
@@ -2258,7 +2258,7 @@
     "phe": 286
   },
   {
-    "name": "Nachos mit Käsebohnen, Rinderhackfleisch und Tomaten",
+    "name": "Nachos mit Käse, Bohnen, Rinderhackfleisch und Tomaten",
     "icon": "Nachos.svg",
     "phe": 285
   },
@@ -2272,24 +2272,24 @@
     "phe": 280
   },
   {
-    "name": "Coconut Custard Pie",
+    "name": "Kokosnuss-Vanillepudding-Torte",
     "icon": "Pie.svg",
     "phe": 274
   },
   {
-    "name": "Laver Seaweed",
+    "name": "Laver Seetang",
     "phe": 273
   },
   {
-    "name": "Goji Berries Dried",
+    "name": "Goji Beeren getrocknet",
     "phe": 271
   },
   {
-    "name": "Kit Kat Wafer Bar",
+    "name": "Kit Kat Wafer Riegel",
     "phe": 270
   },
   {
-    "name": "Rice Puffed Fortified",
+    "name": "Reis gepufft und angereichert",
     "icon": "Rice Bowl.svg",
     "phe": 270
   },
@@ -2307,12 +2307,12 @@
     "phe": 269
   },
   {
-    "name": "Cream Of Rice Dry",
+    "name": "Reiscreme trocken",
     "icon": "Rice Bowl.svg",
     "phe": 267
   },
   {
-    "name": "Gebackene Bohnen in Dosen",
+    "name": "Gebackene Bohnen aus der Dose",
     "phe": 267
   },
   {
@@ -2330,7 +2330,7 @@
     "phe": 263
   },
   {
-    "name": "Coffee Instant Regular Powder",
+    "name": "Pulverkaffee, normales Pulver",
     "icon": "Coffee to Go.svg",
     "phe": 262
   },
@@ -2340,7 +2340,7 @@
     "phe": 262
   },
   {
-    "name": "Imitation Crab Meat",
+    "name": "Imitation Krabbenfleisch",
     "icon": "Crab.svg",
     "phe": 260
   },
@@ -2349,7 +2349,7 @@
     "phe": 256
   },
   {
-    "name": "Eastern Oysters in Dosen",
+    "name": "Östliche Austern aus der Dose",
     "phe": 253
   },
   {
@@ -2366,7 +2366,7 @@
     "phe": 251
   },
   {
-    "name": "Coffee Instant Decaffeinated Powder",
+    "name": "Pulverkaffee, entkoffeiniertes Pulver",
     "icon": "Coffee to Go.svg",
     "phe": 250
   },
@@ -2397,7 +2397,7 @@
     "phe": 238
   },
   {
-    "name": "Ground Cloves",
+    "name": "Gemahlene Gewürznelken",
     "phe": 230
   },
   {
@@ -2421,11 +2421,11 @@
     "phe": 217
   },
   {
-    "name": "Kidney Bean Sprouts",
+    "name": "Kidneybohnensprossen",
     "phe": 212
   },
   {
-    "name": "Lotus Seeds",
+    "name": "Lotus-Samen",
     "phe": 206
   },
   {
@@ -2442,7 +2442,7 @@
     "phe": 204
   },
   {
-    "name": "Halbsüße Schokolade aus Butter",
+    "name": "Halbsüße Schokolade mit Butter",
     "phe": 204
   },
   {
@@ -2456,7 +2456,7 @@
     "phe": 203
   },
   {
-    "name": "Forunte Cookies",
+    "name": "Glückskekse",
     "icon": "Cookies.svg",
     "phe": 203
   },
@@ -2474,7 +2474,7 @@
     "phe": 201
   },
   {
-    "name": "Canned Lima Beans",
+    "name": "Eingemachte Limabohnen",
     "phe": 200
   },
   {
@@ -2525,11 +2525,11 @@
     "phe": 190
   },
   {
-    "name": "Plain Yogurt",
+    "name": "Einfacher Joghurt",
     "phe": 189
   },
   {
-    "name": "Kaffee sofort mit Chicorée",
+    "name": "Pulverkaffee mit Chicorée",
     "icon": "Coffee to Go.svg",
     "phe": 189
   },
@@ -2542,7 +2542,7 @@
     "phe": 187
   },
   {
-    "name": "Sundae Strawberry",
+    "name": "Eisbecher Erdbeere",
     "icon": "Ice Cream Cone.svg",
     "phe": 185
   },
@@ -2564,15 +2564,15 @@
     "phe": 183
   },
   {
-    "name": "Weizencreme 1 Minute Kochzeit mit Wasser ohne Salz in der Mikrowelle gekocht",
+    "name": "Weizencreme (1 Minute Kochzeit, mit Wasser und ohne Salz in der Mikrowelle gekocht)",
     "phe": 182
   },
   {
-    "name": "Meal Supplement Drink Peanut Flavour in Dosen",
+    "name": "Mahlzeit-Ergänzungs-Getränk aus der Dose mit Erdnussgeschmack",
     "phe": 180
   },
   {
-    "name": "Chocolate Coated Graham Crackers",
+    "name": "Schokoladenbeschichtete Graham Cracker",
     "icon": "Cookies.svg",
     "phe": 178
   },
@@ -2597,12 +2597,12 @@
     "phe": 174
   },
   {
-    "name": "Gekochte Blackeyed Peas",
+    "name": "Gekochte Schwarzäugige Erbsen",
     "icon": "Peas.svg",
     "phe": 174
   },
   {
-    "name": "Upside-Down Pineapple Cake",
+    "name": "Auf dem Kopf stehender Ananaskuchen",
     "icon": "Birthday Cake.svg",
     "phe": 173
   },
@@ -2616,7 +2616,7 @@
     "phe": 171
   },
   {
-    "name": "Ginko Nuts",
+    "name": "Ginkgo Nüsse",
     "icon": "Nut.svg",
     "phe": 171
   },
@@ -2630,7 +2630,7 @@
     "phe": 169
   },
   {
-    "name": "grüne Minze",
+    "name": "Grüne Minze",
     "phe": 168
   },
   {
@@ -2652,7 +2652,7 @@
     "phe": 163
   },
   {
-    "name": "Shake Fast Food Strawberry",
+    "name": "Shake (Fast Food, Erdbeere)",
     "phe": 162
   },
   {
@@ -2660,7 +2660,7 @@
     "phe": 161
   },
   {
-    "name": "Kaffee-Ersatz-Getreide-Getreide-Getränkepulver mit Vollmilch zubereitet",
+    "name": "Kaffee-Ersatz-Getreide-Getränkepulver mit Vollmilch zubereitet",
     "phe": 160
   },
   {
@@ -2669,7 +2669,7 @@
     "phe": 158
   },
   {
-    "name": "Cultured Sour Cream",
+    "name": "Kultivierte saure Sahne",
     "phe": 157
   },
   {
@@ -2710,12 +2710,12 @@
     "phe": 154
   },
   {
-    "name": "Sundae Hot Fudge",
+    "name": "Eisbecher Hot Fudge",
     "icon": "Ice Cream Cone.svg",
     "phe": 152
   },
   {
-    "name": "Apple Strudel",
+    "name": "Apfelstrudel",
     "icon": "Apple.svg",
     "phe": 151
   },
@@ -2729,7 +2729,7 @@
     "phe": 150
   },
   {
-    "name": "Malted Drink Mix Schokoladenpulver mit Vollmilch zubereitet",
+    "name": "Malted Drink-Mix-Schokoladenpulver mit Vollmilch zubereitet",
     "icon": "Hot Chocolate.svg",
     "phe": 150
   },
@@ -2738,12 +2738,12 @@
     "phe": 150
   },
   {
-    "name": "Sweet White Corn",
+    "name": "Süßer weißer Mais",
     "icon": "Corn.svg",
     "phe": 150
   },
   {
-    "name": "Enoki Mushrooms",
+    "name": "Enoki Pilze",
     "phe": 150
   },
   {
@@ -2769,7 +2769,7 @@
     "phe": 146
   },
   {
-    "name": "geschreddertes Kokosnussfleisch",
+    "name": "Geschreddertes Kokosnussfleisch",
     "icon": "Coconut Cocktail.svg",
     "phe": 146
   },
@@ -2782,7 +2782,7 @@
     "phe": 145
   },
   {
-    "name": "Fig Bars",
+    "name": "Feigenstangen",
     "phe": 145
   },
   {
@@ -2791,23 +2791,23 @@
     "phe": 144
   },
   {
-    "name": "Half And Half Cream",
+    "name": "Halb und halb Sahne",
     "phe": 143
   },
   {
-    "name": "Gekochtes Haferflocken",
+    "name": "Gekochte Haferflocken",
     "phe": 142
   },
   {
-    "name": "Chocolate Coated Marshmallows",
+    "name": "Schokoladenbeschichtete Marshmallows",
     "phe": 142
   },
   {
-    "name": "Fettarme Sauerrahm",
+    "name": "Fettarmer Sauerrahm",
     "phe": 142
   },
   {
-    "name": "Carob-Flavor Beverage Mix Powder mit Vollmilch zubereitet",
+    "name": "Mit Vollmilch zubereitetes Getränkemischpulver mit Johannisbrotgeschmack",
     "phe": 140
   },
   {
@@ -2816,11 +2816,11 @@
     "phe": 138
   },
   {
-    "name": "Coffee Cream Liqueur",
+    "name": "Kaffeecreme-Likör",
     "phe": 136
   },
   {
-    "name": "Light Cream (Coffe Cream)",
+    "name": "Leichte Sahne (Kaffeesahne)",
     "phe": 135
   },
   {
@@ -2833,7 +2833,7 @@
     "phe": 134
   },
   {
-    "name": "Hash Browns",
+    "name": "Rösti",
     "phe": 133
   },
   {
@@ -2854,7 +2854,7 @@
     "phe": 130
   },
   {
-    "name": "Mit Wasser zubereitete Hafer-Instant-angereicherte Ebene (kochendes Wasser hinzugefügt oder mikrowellengeeignet)",
+    "name": "Angereicherter Instant-Hafer mit Wasser zubereitet (in der Mikrowelle)",
     "phe": 130
   },
   {
@@ -2863,11 +2863,11 @@
     "phe": 130
   },
   {
-    "name": "Basil",
+    "name": "Basilikum",
     "phe": 130
   },
   {
-    "name": "Tomatenmark in Dosen",
+    "name": "Tomatenmark aus der Dose",
     "icon": "Tomato.svg",
     "phe": 130
   },
@@ -2876,7 +2876,7 @@
     "phe": 129
   },
   {
-    "name": "Imitation Sour Cream",
+    "name": "Imitation Sauerrahm",
     "phe": 129
   },
   {
@@ -2958,7 +2958,7 @@
     "phe": 112
   },
   {
-    "name": "Gekochte Erbsen",
+    "name": "Gekochte Erbsenschoten",
     "icon": "Peas.svg",
     "phe": 112
   },
