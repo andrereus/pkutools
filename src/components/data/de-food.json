@@ -1796,12 +1796,12 @@
     "phe": 475
   },
   {
-    "name": "Kichererbsen (Kichererbsen) (gekocht)",
+    "name": "Kichererbsen (Kichererbsenbohnen) (gekocht)",
     "icon": "Peas.svg",
     "phe": 475
   },
   {
-    "name": "Cinnamon Raisin Bagels",
+    "name": "Zimt Rosinen Bagels",
     "icon": "Cinnamon Roll.svg",
     "phe": 474
   },
@@ -1819,16 +1819,16 @@
     "phe": 470
   },
   {
-    "name": "Gekochte rote Nierenbohnen",
+    "name": "Gekochte rote Kidneybohnen",
     "phe": 469
   },
   {
-    "name": "Hamburger; Single Large Patty; mit Gewürzen Gemüse und Mayonnaise",
+    "name": "Hamburger; Single Large Patty; mit Gewürzen, Gemüse und Mayonnaise",
     "icon": "Hamburger.svg",
     "phe": 464
   },
   {
-    "name": "Post Shredded Wheat Original Big Biscuit",
+    "name": "Post-Weizenschrot Original Großer Keks",
     "icon": "Cookies.svg",
     "phe": 460
   },
@@ -1837,16 +1837,16 @@
     "phe": 457
   },
   {
-    "name": "Ralston Enriched Bran Flakes",
+    "name": "Ralston angereicherte Kleieflocken",
     "phe": 457
   },
   {
-    "name": "Cheese Croissants",
+    "name": "Käse-Croissants",
     "icon": "Bread.svg",
     "phe": 455
   },
   {
-    "name": "Great Northern Beans",
+    "name": "Große Nordbohnen",
     "phe": 451
   },
   {
@@ -1877,7 +1877,7 @@
     "phe": 448
   },
   {
-    "name": "Fladenbrot",
+    "name": "Pita-Brot",
     "icon": "Bread.svg",
     "phe": 446
   },
