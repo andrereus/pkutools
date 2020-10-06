@@ -12,12 +12,13 @@
         <v-text-field
           :value="search"
           @keyup="search = $event.target.value"
-          append-icon="mdi-magnify"
           :label="$t('phe-search.search')"
           filled
           single-line
-          @click:append="closeKeys"
           ref="foodSearch"
+          clearable
+          @click:clear="search = $event.target.value"
+          autocomplete="off"
         ></v-text-field>
 
         <v-data-table
@@ -114,9 +115,6 @@ export default {
     deFood
   }),
   methods: {
-    closeKeys() {
-      this.$refs.foodSearch.blur();
-    },
     loadItem(item) {
       this.name = item.name;
       this.icon = item.icon !== undefined ? item.icon : "Organic Food.svg";
