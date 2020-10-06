@@ -9,7 +9,9 @@
     "update": "Update",
     "offline": "Du bist offline.",
     "close": "Schließen",
-    "about": "Über"
+    "about": "Über",
+    "dark": "Dunkles Design",
+    "light": "Helles Design"
   },
   "home": {
     "title": "Start",

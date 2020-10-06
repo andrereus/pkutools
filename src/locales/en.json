@@ -9,7 +9,9 @@
     "update": "Update",
     "offline": "You are offline.",
     "close": "Close",
-    "about": "About"
+    "about": "About",
+    "dark": "Dark Design",
+    "light": "Light Design"
   },
   "home": {
     "title": "Home",

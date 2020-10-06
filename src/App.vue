@@ -134,11 +134,6 @@
         </v-list>
       </v-menu>
 
-      <v-btn icon @click="dark = !dark">
-        <v-icon v-if="!dark">mdi-brightness-4</v-icon>
-        <v-icon v-if="dark">mdi-brightness-7</v-icon>
-      </v-btn>
-
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
@@ -173,17 +168,13 @@
 
           <v-divider></v-divider>
 
-          <v-list-item href="https://emojicom.io/feedback#eWxWNSKfDeccKb7K13kN" target="_blank">
+          <v-list-item @click="dark = !dark">
             <span>
-              <v-icon>mdi-message-alert</v-icon>
-              Feedback
-            </span>
-          </v-list-item>
-
-          <v-list-item href="https://www.buymeacoffee.com/andrereus" target="_blank">
-            <span>
-              <v-icon>mdi-coffee</v-icon>
-              Buy me a coffee
+              <v-icon v-if="!dark">mdi-brightness-4</v-icon>
+              <v-icon v-if="dark">mdi-brightness-7</v-icon>
+              &nbsp;
+              <span v-if="!dark">{{ $t("app.dark") }}</span>
+              <span v-if="dark">{{ $t("app.light") }}</span>
             </span>
           </v-list-item>
         </v-list>
