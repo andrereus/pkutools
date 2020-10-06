@@ -19,7 +19,6 @@
   },
   "phe-search": {
     "title": "Phe Search",
-    "description": "Search through around 1000 of the most common foods.",
     "search": "Search",
     "save": "Save",
     "weight": "Weight (in g)",
