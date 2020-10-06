@@ -71,21 +71,23 @@
                   type="number"
                 ></v-text-field>
 
-                <v-checkbox
-                  v-model="lockedValues"
-                  :label="$t('phe-log.lock-values')"
-                  class="mt-n1 float-left"
-                ></v-checkbox>
+                <div class="checkbox-clearfix">
+                  <v-checkbox
+                    v-model="lockedValues"
+                    :label="$t('phe-log.lock-values')"
+                    class="mt-n1 float-left"
+                  ></v-checkbox>
 
-                <v-tooltip top>
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-icon v-bind="attrs" v-on="on" class="ml-2">mdi-information-outline</v-icon>
-                  </template>
-                  <span>{{ $t("phe-log.lock-info") }}</span>
-                </v-tooltip>
+                  <v-tooltip top>
+                    <template v-slot:activator="{ on, attrs }">
+                      <v-icon v-bind="attrs" v-on="on" class="ml-2">mdi-information-outline</v-icon>
+                    </template>
+                    <span>{{ $t("phe-log.lock-info") }}</span>
+                  </v-tooltip>
+                </div>
               </v-card-text>
 
-              <v-card-actions>
+              <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
                 <v-btn depressed color="primary" @click="save">{{ $t("phe-log.save") }}</v-btn>
                 <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem(editedIndex)">
@@ -283,5 +285,9 @@ export default {
 
 .food-icon {
   vertical-align: bottom;
+}
+
+.checkbox-clearfix {
+  overflow: hidden;
 }
 </style>
