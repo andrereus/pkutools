@@ -106,11 +106,11 @@ export default {
     icon: "Organic Food.svg",
     headers: [
       {
-        text: "Food Name",
+        text: "Name",
         align: "start",
         value: "name"
       },
-      { text: "Phe per 100g (in mg)", value: "phe" }
+      { text: "Phe", value: "phe" }
     ],
     enFood,
     deFood

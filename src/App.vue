@@ -349,6 +349,10 @@ export default {
   .v-btn {
     min-width: 60px;
   }
+
+  @media (max-height: 550px) {
+    display: none;
+  }
 }
 
 .bottom-nav--active:before {
