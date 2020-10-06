@@ -2,7 +2,7 @@
   "app": {
     "title": "PKU Tools",
     "description": "Kostenlose Tools und Apps für Menschen mit PKU.",
-    "install": "Um diese App zu installieren, klicke auf \"PKU Tools installieren...\" oder klicke \"Zum Startbildschirm zufügen\" im Browser Menü (\"Share\" bei Safari).",
+    "install": "Um diese Web App zu installieren, öffne das Menü in Chrome oder klicke auf \"Share\" in Safari, dann klicke \"Zum Startbildschirm hinzufügen\". Fertig.",
     "signin-google": "Anmelden mit Google",
     "signout": "Abmelden",
     "update-available": "Ein Update ist verfügbar!",
