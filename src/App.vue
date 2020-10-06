@@ -341,7 +341,7 @@ export default {
     min-width: 60px;
   }
 
-  @media (max-height: 550px) {
+  @media (max-height: 560px) {
     display: none;
   }
 }
