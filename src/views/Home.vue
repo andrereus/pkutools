@@ -2,17 +2,46 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline">{{ $t("home.title") }}</h2>
+        <h2 class="headline" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
+        <h2 class="headline" v-if="userIsAuthenticated">Hi, {{ user.name }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p>{{ $t("app.description") }}</p>
-        <p>
-          <v-icon>mdi-information-outline</v-icon>
-          {{ $t("app.install") }}
-        </p>
+        <div v-if="!userIsAuthenticated">
+          <p>{{ $t("app.description") }}</p>
+          <p>
+            <v-icon>mdi-information-outline</v-icon>
+            {{ $t("app.install") }}
+          </p>
+        </div>
+
+        <div class="cards-clearfix" v-if="userIsAuthenticated">
+          <v-card max-width="140" to="/phe-log" class="float-left mr-3 mb-3">
+            <v-card-text>
+              <p>{{ $t("phe-log.title") }}</p>
+              <v-progress-circular :rotate="-90" :size="105" :width="10" value="0" color="primary">
+                {{ pheResult }}
+              </v-progress-circular>
+            </v-card-text>
+          </v-card>
+
+          <v-card max-width="140" to="/amino-counter" class="float-left mr-3 mb-3">
+            <v-card-text>
+              <p>{{ $t("amino-counter.title") }}</p>
+              <v-progress-circular
+                :rotate="-90"
+                :size="105"
+                :width="10"
+                :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 0)"
+                color="teal"
+              >
+                {{ aminoCounter.count }}
+              </v-progress-circular>
+            </v-card-text>
+          </v-card>
+        </div>
 
         <v-btn depressed to="/phe-search" color="primary" class="mr-3 mt-3">{{ $t("phe-search.title") }}</v-btn>
         <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mt-3">{{ $t("phe-calculator.title") }}</v-btn>
@@ -24,9 +53,11 @@
 
         <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-8 illustration"></v-img>
 
-        <h2 class="headline my-6">{{ $t("home.features") }}</h2>
-        <FeatureComparison home />
-        <v-btn depressed to="/other-apps" class="mt-6">{{ $t("other-apps.title") }}</v-btn>
+        <div v-if="!userIsAuthenticated">
+          <h2 class="headline my-6">{{ $t("home.features") }}</h2>
+          <FeatureComparison home />
+          <v-btn depressed to="/other-apps" class="mt-6">{{ $t("other-apps.title") }}</v-btn>
+        </div>
       </v-col>
     </v-row>
   </div>
@@ -34,10 +65,24 @@
 
 <script>
 import FeatureComparison from "../components/FeatureComparison.vue";
+import { mapState } from "vuex";
 
 export default {
   components: {
     FeatureComparison
+  },
+  computed: {
+    pheResult() {
+      let phe = 0;
+      this.pheLog.forEach(item => {
+        phe += item.phe;
+      });
+      return Math.round(phe);
+    },
+    userIsAuthenticated() {
+      return this.user !== null && this.user !== undefined;
+    },
+    ...mapState(["user", "pheLog", "aminoCounter"])
   }
 };
 </script>
@@ -45,5 +90,11 @@ export default {
 <style lang="scss" scoped>
 .illustration {
   max-width: 550px;
+}
+
+.cards-clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
 }
 </style>
