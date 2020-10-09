@@ -18,7 +18,7 @@
         </div>
 
         <div class="cards-clearfix" v-if="userIsAuthenticated">
-          <v-card max-width="140" to="/phe-log" class="float-left mr-3 mb-3">
+          <v-card max-width="135" to="/phe-log" class="float-left mr-3 mb-3">
             <v-card-text>
               <p>{{ $t("phe-log.title") }}</p>
               <v-progress-circular :rotate="-90" :size="105" :width="10" value="0" color="primary">
@@ -27,7 +27,7 @@
             </v-card-text>
           </v-card>
 
-          <v-card max-width="140" to="/amino-counter" class="float-left mr-3 mb-3">
+          <v-card max-width="135" to="/amino-counter" class="float-left mr-3 mb-3">
             <v-card-text>
               <p>{{ $t("amino-counter.title") }}</p>
               <v-progress-circular
@@ -35,7 +35,7 @@
                 :size="105"
                 :width="10"
                 :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 0)"
-                color="teal"
+                color="primary"
               >
                 {{ aminoCounter.count }}
               </v-progress-circular>
