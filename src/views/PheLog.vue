@@ -80,7 +80,8 @@
 
                 <div class="checkbox-clearfix">
                   <v-checkbox
-                    v-model="lockedValues"
+                    :value="lockedValues"
+                    @click="lockValues"
                     :label="$t('phe-log.lock-values')"
                     class="mt-n1 float-left"
                   ></v-checkbox>
