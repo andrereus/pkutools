@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <h2 class="headline" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
-        <h2 class="headline" v-if="userIsAuthenticated">Hi, {{ user.name }}</h2>
+        <h2 class="headline" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
       </v-col>
     </v-row>
 
