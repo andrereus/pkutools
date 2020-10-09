@@ -55,13 +55,13 @@
   },
   "amino-counter": {
     "title": "Amino Zähler",
-    "description": "Zähle die tägliche Einnahme der Aminosäuremischung (kurz AS).",
-    "progress": "AS genommen",
+    "description": "Zähle die Portionen der Aminosäuremischung, die du täglich nimmst.",
+    "progress": "Portion(en) genommen",
     "date": "Letzter Eintrag",
-    "take": "AS nehmen",
+    "take": "Portion nehmen",
     "reset": "Zurücksetzen",
     "settings": "Einstellungen",
-    "amount": "Aminosäuremischungen pro Tag",
+    "amount": "Portionen pro Tag",
     "ok": "Ok"
   },
   "other-apps": {

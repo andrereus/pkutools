@@ -17,7 +17,7 @@
           <p>{{ $t("amino-counter.description") }}</p>
 
           <v-progress-linear
-            :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 0)"
+            :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 3)"
             height="40"
             class="white--text my-6"
             rounded
@@ -119,7 +119,7 @@ export default {
         .database()
         .ref(this.user.id + "/aminoCounter")
         .update({
-          max: this.aminoCounter.max || 0
+          max: this.aminoCounter.max || 3
         });
 
       this.dialog = false;

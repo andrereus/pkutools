@@ -34,10 +34,10 @@
                 :rotate="-90"
                 :size="105"
                 :width="10"
-                :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 0)"
+                :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 3)"
                 color="primary"
               >
-                {{ aminoCounter.count }}
+                {{ aminoCounter.count || 0 }}
               </v-progress-circular>
             </v-card-text>
           </v-card>

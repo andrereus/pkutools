@@ -55,13 +55,13 @@
   },
   "amino-counter": {
     "title": "Amino Counter",
-    "description": "Count the daily intake of the amino acid mixture (short AS).",
-    "progress": "AS taken",
+    "description": "Count the servings of the amino acid mixture that you take each day.",
+    "progress": "serving(s) taken",
     "date": "Last entry",
-    "take": "Take AS",
+    "take": "Take serving",
     "reset": "Reset",
     "settings": "Settings",
-    "amount": "Amino acid mixtures per day",
+    "amount": "Servings per day",
     "ok": "Ok"
   },
   "other-apps": {
