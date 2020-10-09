@@ -51,7 +51,10 @@
     "delete": "Löschen",
     "cancel": "Abbrechen",
     "lock-values": "Berechnungsmodus",
-    "lock-info": "Gewicht und Phe werden parallel geändert"
+    "lock-info": "Gewicht und Phe werden parallel geändert",
+    "settings": "Einstellungen",
+    "max": "Phe-Toleranz pro Tag",
+    "ok": "Ok"
   },
   "amino-counter": {
     "title": "Amino Zähler",

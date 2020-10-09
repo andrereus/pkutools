@@ -51,7 +51,10 @@
     "delete": "Delete",
     "cancel": "Cancel",
     "lock-values": "Calculation Mode",
-    "lock-info": "Weight and Phe are changed in parallel"
+    "lock-info": "Weight and Phe are changed in parallel",
+    "settings": "Settings",
+    "max": "Phe tolerance per day",
+    "ok": "Ok"
   },
   "amino-counter": {
     "title": "Amino Counter",

@@ -11,7 +11,8 @@ export default new Vuex.Store({
   state: {
     user: null,
     aminoCounter: {},
-    pheLog: []
+    pheLog: [],
+    settings: {}
   },
   mutations: {
     setUser(state, payload) {
@@ -62,6 +63,7 @@ export default new Vuex.Store({
     initRef: firebaseAction(context => {
       context.bindFirebaseRef("aminoCounter", firebase.database().ref(context.state.user.id + "/aminoCounter"));
       context.bindFirebaseRef("pheLog", firebase.database().ref(context.state.user.id + "/pheLog"));
+      context.bindFirebaseRef("settings", firebase.database().ref(context.state.user.id + "/settings"));
     })
   },
   getters: {

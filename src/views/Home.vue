@@ -21,7 +21,13 @@
           <v-card max-width="135" to="/phe-log" class="float-left mr-3 mb-3">
             <v-card-text>
               <p>{{ $t("phe-log.title") }}</p>
-              <v-progress-circular :rotate="-90" :size="105" :width="10" value="0" color="primary">
+              <v-progress-circular
+                :rotate="-90"
+                :size="105"
+                :width="10"
+                :value="(pheResult * 100) / (settings.maxPhe || 0)"
+                color="primary"
+              >
                 {{ pheResult }}
               </v-progress-circular>
             </v-card-text>
@@ -82,7 +88,7 @@ export default {
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "pheLog", "aminoCounter"])
+    ...mapState(["user", "pheLog", "aminoCounter", "settings"])
   }
 };
 </script>

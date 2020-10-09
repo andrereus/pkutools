@@ -38,11 +38,18 @@
             </template>
           </v-data-table>
 
-          <p class="title font-weight-regular ml-1 mt-5 mb-5">= {{ pheResult }} mg Phe</p>
+          <v-progress-linear
+            :value="(pheResult * 100) / (settings.maxPhe || 0)"
+            height="10"
+            class="mt-8"
+            rounded
+          ></v-progress-linear>
+
+          <p class="title font-weight-regular my-6">= {{ pheResult }} mg Phe</p>
 
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
+              <v-btn depressed color="primary" class="mr-3 mb-3" v-bind="attrs" v-on="on">
                 {{ $t("phe-log.add") }}
               </v-btn>
             </template>
@@ -98,7 +105,36 @@
             </v-card>
           </v-dialog>
 
-          <v-btn depressed class="mr-3 mt-3" @click="reset">{{ $t("phe-log.reset") }}</v-btn>
+          <v-btn depressed class="mr-3 mb-3" @click="reset">{{ $t("phe-log.reset") }}</v-btn>
+
+          <v-dialog v-model="dialog2" max-width="500px" @click:outside="setMax">
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn depressed v-bind="attrs" v-on="on" class="mr-3 mb-3">
+                {{ $t("phe-log.settings") }}
+              </v-btn>
+            </template>
+
+            <v-card>
+              <v-card-title>
+                <span class="headline">{{ $t("phe-log.settings") }}</span>
+              </v-card-title>
+
+              <v-card-text>
+                <v-text-field
+                  filled
+                  :label="$t('phe-log.max')"
+                  v-model.number="settings.maxPhe"
+                  type="number"
+                  class="mt-6"
+                ></v-text-field>
+              </v-card-text>
+
+              <v-card-actions class="mt-n6">
+                <v-spacer></v-spacer>
+                <v-btn depressed @click="setMax">{{ $t("phe-log.ok") }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </div>
       </v-col>
     </v-row>
@@ -122,6 +158,7 @@ export default {
   data: () => ({
     publicPath: process.env.BASE_URL,
     dialog: false,
+    dialog2: false,
     headers: [
       {
         text: "Food Name",
@@ -244,6 +281,15 @@ export default {
       } else if (this.lockedValues === false) {
         this.editedItem.phe = event.target.value;
       }
+    },
+    setMax() {
+      firebase
+        .database()
+        .ref(this.user.id + "/settings")
+        .update({
+          maxPhe: this.settings.maxPhe || 0
+        });
+      this.dialog2 = false;
     }
   },
   watch: {
@@ -269,7 +315,7 @@ export default {
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "pheLog"])
+    ...mapState(["user", "pheLog", "settings"])
   }
 };
 </script>
