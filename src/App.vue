@@ -221,14 +221,14 @@
 
     <v-snackbar top color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update-available") }}
-      <v-btn text @click="refreshApp">
+      <v-btn text right @click="refreshApp">
         {{ $t("app.update") }}
       </v-btn>
     </v-snackbar>
 
     <v-snackbar top color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
-      <v-btn text @click="offlineInfo = false">
+      <v-btn text right @click="offlineInfo = false">
         {{ $t("app.close") }}
       </v-btn>
     </v-snackbar>
