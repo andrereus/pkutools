@@ -1,15 +1,15 @@
 [
   {
-    "name": "Calculator",
-    "pkutools": "Phe & Protein (more planned)",
-    "pkumanager": "Phe, Protein & Calories",
-    "pherechner": "Phe & Protein"
-  },
-  {
     "name": "Search",
     "pkutools": "Phe in English & German",
     "pkumanager": "Phe, Protein & Calories in English; Phe in German",
     "pherechner": "Phe in German"
+  },
+  {
+    "name": "Calculator",
+    "pkutools": "Phe & Protein",
+    "pkumanager": "Phe, Protein & Calories",
+    "pherechner": "Phe & Protein"
   },
   {
     "name": "Log",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Other features",
-    "pkutools": "Pre-save any value, Amino Counter & Dark Design (more planned)",
+    "pkutools": "Pre-save any value, Amino Counter, Widgets, Dark Design, food with icons and more",
     "pkumanager": "Pre-save any value & add last used food",
     "pherechner": "Pre-save weight & add own food"
   },

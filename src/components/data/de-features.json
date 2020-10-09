@@ -1,15 +1,15 @@
 [
   {
-    "name": "Rechner",
-    "pkutools": "Phe & Eiweiß (mehr geplant)",
-    "pkumanager": "Phe, Eiweiß & Kalorien",
-    "pherechner": "Phe & Eiweiß"
-  },
-  {
     "name": "Suche",
     "pkutools": "Phe auf Englisch & Deutsch",
     "pkumanager": "Phe, Eiweiß & Kalorien auf Englisch; Phe auf Deutsch",
     "pherechner": "Phe auf Deutsch"
+  },
+  {
+    "name": "Rechner",
+    "pkutools": "Phe & Eiweiß",
+    "pkumanager": "Phe, Eiweiß & Kalorien",
+    "pherechner": "Phe & Eiweiß"
   },
   {
     "name": "Protokoll",
@@ -19,7 +19,7 @@
   },
   {
     "name": "Weitere Funktionen",
-    "pkutools": "Beliebigen Wert vorspeichern, Amino Zähler & Dunkles Design (mehr geplant)",
+    "pkutools": "Beliebigen Wert vorspeichern, Amino Zähler, Widgets, Dunkles Design, Lebensmittel mit Icons und mehr",
     "pkumanager": "Beliebigen Wert vorspeichern & zuletzt verwendete Lebensmittel hinzufügen",
     "pherechner": "Gewicht vorspeichern & eigene Lebensmittel hinzufügen"
   },
