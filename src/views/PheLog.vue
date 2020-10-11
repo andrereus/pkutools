@@ -266,20 +266,20 @@ export default {
       }
     },
     editWeight(event) {
-      if (this.lockedValues === true && Number(event.target.value) !== 0) {
+      if (this.lockedValues === true) {
         const newWeight = Number(event.target.value);
         this.editedItem.phe = Math.round((newWeight * this.lockedPhe) / this.lockedWeight);
         this.editedItem.weight = newWeight;
-      } else if (this.lockedValues === false) {
+      } else {
         this.editedItem.weight = event.target.value;
       }
     },
     editPhe(event) {
-      if (this.lockedValues === true && Number(event.target.value) !== 0) {
+      if (this.lockedValues === true) {
         const newPhe = Number(event.target.value);
         this.editedItem.weight = Math.round((newPhe * this.lockedWeight) / this.lockedPhe);
         this.editedItem.phe = newPhe;
-      } else if (this.lockedValues === false) {
+      } else {
         this.editedItem.phe = event.target.value;
       }
     },
