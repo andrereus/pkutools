@@ -31,6 +31,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "phe-log" */ "../views/PheLog.vue")
   },
   {
+    path: "/phe-diary",
+    name: "Phe Diary",
+    component: () => import(/* webpackChunkName: "phe-diary" */ "../views/PheDiary.vue")
+  },
+  {
     path: "/amino-counter",
     name: "Amino Counter",
     component: () => import(/* webpackChunkName: "amino-counter" */ "../views/AminoCounter.vue")

@@ -54,7 +54,18 @@
     "lock-info": "Weight and Phe are changed in parallel",
     "settings": "Settings",
     "max": "Phe tolerance per day",
-    "ok": "Ok"
+    "ok": "Ok",
+    "save-diary": "Save result in Phe Diary"
+  },
+  "phe-diary": {
+    "title": "Phe Diary",
+    "description": "This tool is in progress.",
+    "add": "Add",
+    "edit": "Edit",
+    "reset": "Reset",
+    "save": "Save",
+    "delete": "Delete",
+    "cancel": "Cancel"
   },
   "amino-counter": {
     "title": "Amino Counter",

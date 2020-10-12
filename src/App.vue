@@ -55,6 +55,16 @@
             </v-list-item-content>
           </v-list-item>
 
+          <v-list-item to="/phe-diary">
+            <v-list-item-action>
+              <v-icon>mdi-notebook</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item to="/amino-counter">
             <v-list-item-action>
               <v-icon>mdi-cup</v-icon>

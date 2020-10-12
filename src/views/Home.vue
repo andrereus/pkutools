@@ -55,6 +55,7 @@
           {{ $t("protein-calculator.title") }}
         </v-btn>
         <v-btn depressed to="/phe-log" color="primary" class="mr-3 mt-3">{{ $t("phe-log.title") }}</v-btn>
+        <v-btn depressed to="/phe-diary" color="primary" class="mr-3 mt-3">{{ $t("phe-diary.title") }}</v-btn>
         <v-btn depressed to="/amino-counter" color="primary" class="mr-3 mt-3">{{ $t("amino-counter.title") }}</v-btn>
 
         <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-8 illustration"></v-img>

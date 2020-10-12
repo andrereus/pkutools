@@ -60,7 +60,7 @@
               </v-card-title>
 
               <v-card-text>
-                <v-text-field filled label="Food Name" v-model="editedItem.name" class="mt-6"></v-text-field>
+                <v-text-field filled label="Name" v-model="editedItem.name" class="mt-6"></v-text-field>
 
                 <v-text-field
                   filled
@@ -106,6 +106,7 @@
             </v-card>
           </v-dialog>
 
+          <v-btn depressed class="mr-3 mb-3" @click="saveResult">{{ $t("phe-log.save") }}</v-btn>
           <v-btn depressed class="mr-3 mb-3" @click="reset">{{ $t("phe-log.reset") }}</v-btn>
 
           <v-dialog v-model="dialog2" max-width="500px" @click:outside="setMax">
@@ -154,6 +155,7 @@ import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
+import { format } from "date-fns";
 
 export default {
   data: () => ({
@@ -162,7 +164,7 @@ export default {
     dialog2: false,
     headers: [
       {
-        text: "Food Name",
+        text: "Name",
         align: "start",
         value: "name"
       },
@@ -291,6 +293,19 @@ export default {
           maxPhe: this.settings.maxPhe || 0
         });
       this.dialog2 = false;
+    },
+    saveResult() {
+      let r = confirm(this.$t("phe-log.save-diary") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/pheDiary")
+          .push({
+            date: format(new Date(), "yyyy-MM-dd"),
+            phe: this.pheResult
+          });
+        this.$router.push("phe-diary");
+      }
     }
   },
   watch: {
@@ -316,7 +331,7 @@ export default {
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "pheLog", "settings"])
+    ...mapState(["user", "pheLog", "pheDiary", "settings"])
   }
 };
 </script>
