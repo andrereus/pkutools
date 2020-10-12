@@ -55,7 +55,8 @@
     "settings": "Einstellungen",
     "max": "Phe-Toleranz pro Tag",
     "ok": "Ok",
-    "save-diary": "Ergebnis in Phe Tagebuch speichern"
+    "save-diary": "Ergebnis in Phe Tagebuch speichern",
+    "weight": "Gewicht (in mg)"
   },
   "phe-diary": {
     "title": "Phe Tagebuch",

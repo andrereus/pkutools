@@ -64,7 +64,7 @@
 
                 <v-text-field
                   filled
-                  label="Weight (in g)"
+                  :label="$t('phe-log.weight')"
                   :value="editedItem.weight"
                   @keyup="editWeight"
                   type="number"
@@ -168,8 +168,8 @@ export default {
         align: "start",
         value: "name"
       },
-      { text: "Weight (in g)", value: "weight" },
-      { text: "Phe (in mg)", value: "phe" }
+      { text: "Weight", value: "weight" },
+      { text: "Phe", value: "phe" }
     ],
     editedIndex: -1,
     editedItem: {

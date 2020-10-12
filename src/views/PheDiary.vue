@@ -105,7 +105,7 @@ export default {
         align: "start",
         value: "date"
       },
-      { text: "Phe (in mg)", value: "phe" }
+      { text: "Phe", value: "phe" }
     ],
     editedIndex: -1,
     editedItem: {
