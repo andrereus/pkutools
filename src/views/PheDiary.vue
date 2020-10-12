@@ -23,6 +23,7 @@
             hide-default-footer
             mobile-breakpoint="0"
             sort-by="date"
+            class="mb-3"
           >
             <template v-slot:item="{ item }">
               <tr @click="editItem(item)" class="tr-edit">
