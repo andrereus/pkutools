@@ -204,7 +204,7 @@
       active-class="v-btn--active bottom-nav--active"
       grow
     >
-      <v-btn to="/" value="home" class="mobile-nav-home">
+      <v-btn to="/" value="home" class="mobile-nav-hide">
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
@@ -222,6 +222,10 @@
 
       <v-btn to="/phe-log" value="phe-log">
         <v-icon>mdi-book</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide">
+        <v-icon>mdi-notebook</v-icon>
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter">
@@ -378,7 +382,7 @@ export default {
   }
 }
 
-.mobile-nav-home {
+.mobile-nav-hide {
   display: none;
 }
 </style>
