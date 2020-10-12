@@ -50,7 +50,7 @@
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field
                       v-model="editedItem.date"
-                      :label="$t('phe-log.date')"
+                      :label="$t('phe-diary.date')"
                       prepend-icon="mdi-calendar"
                       readonly
                       v-bind="attrs"
