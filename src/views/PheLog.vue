@@ -45,7 +45,8 @@
             rounded
           ></v-progress-linear>
 
-          <p class="title font-weight-regular my-6">= {{ pheResult }} mg Phe</p>
+          <p class="title font-weight-regular mt-6">{{ $t("phe-log.total") }}: {{ pheResult }} mg Phe</p>
+          <p class="mt-n2 mb-6">{{ $t("phe-log.remaining") }}: {{ (settings.maxPhe || 0) - pheResult }} mg Phe</p>
 
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">

@@ -56,7 +56,9 @@
     "max": "Phe-Toleranz pro Tag",
     "ok": "Ok",
     "save-diary": "Ergebnis in Phe Tagebuch speichern",
-    "weight": "Gewicht (in mg)"
+    "weight": "Gewicht (in mg)",
+    "total": "Gesamt",
+    "remaining": "Übrig"
   },
   "phe-diary": {
     "title": "Phe Tagebuch",
