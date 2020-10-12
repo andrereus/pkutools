@@ -14,8 +14,6 @@
         </v-btn>
 
         <div v-if="userIsAuthenticated">
-          <v-alert dense outlined type="info">{{ $t("phe-diary.description") }}</v-alert>
-
           <v-data-table
             :headers="headers"
             :items="pheDiary"
