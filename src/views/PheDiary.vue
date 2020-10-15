@@ -25,7 +25,7 @@
           >
             <template v-slot:item="{ item }">
               <tr @click="editItem(item)" class="tr-edit">
-                <td class="text-start">{{ item.date }}</td>
+                <td class="text-start">{{ getlocalDate(item.date) }}</td>
                 <td class="text-start">{{ item.phe }}</td>
               </tr>
             </template>
@@ -47,7 +47,7 @@
                 <v-menu v-model="menu" :close-on-content-click="false" transition="scale-transition" min-width="290px">
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field
-                      v-model="editedItem.date"
+                      :value="computelocalDate"
                       :label="$t('phe-diary.date')"
                       prepend-icon="mdi-calendar"
                       readonly
@@ -92,6 +92,8 @@ import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
+import { format, parseISO } from "date-fns";
+import { enUS, de } from "date-fns/locale";
 
 export default {
   data: () => ({
@@ -183,6 +185,14 @@ export default {
           });
       }
       this.close();
+    },
+    getlocalDate(date) {
+      if (date) {
+        const locales = { enUS, de };
+        return format(parseISO(date), "PP", { locale: locales[this.$i18n.locale] });
+      } else {
+        return "";
+      }
     }
   },
   watch: {
@@ -196,6 +206,14 @@ export default {
         return this.$t("phe-diary.add");
       } else {
         return this.$t("phe-diary.edit");
+      }
+    },
+    computelocalDate() {
+      if (this.editedItem.date) {
+        const locales = { enUS, de };
+        return format(parseISO(this.editedItem.date), "PP", { locale: locales[this.$i18n.locale] });
+      } else {
+        return "";
       }
     },
     userIsAuthenticated() {

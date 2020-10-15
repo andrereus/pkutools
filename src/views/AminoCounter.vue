@@ -25,7 +25,7 @@
             {{ aminoCounter.count || 0 }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
 
-          <p>{{ $t("amino-counter.date") }}: {{ new Date(aminoCounter.date).toLocaleString() }}</p>
+          <p>{{ $t("amino-counter.date") }}: {{ getlocalDate(aminoCounter.date) }}</p>
 
           <v-btn depressed @click="takeAM" color="primary" class="mr-3 mt-3">
             {{ $t("amino-counter.take") }}
@@ -80,6 +80,8 @@ import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
+import { formatRelative, parseISO } from "date-fns";
+import { enUS, de } from "date-fns/locale";
 
 export default {
   data: () => ({
@@ -100,7 +102,7 @@ export default {
         .ref(this.user.id + "/aminoCounter")
         .update({
           count: this.aminoCounter.count + 1 || 1,
-          date: new Date().toUTCString()
+          date: new Date().toISOString()
         });
     },
     resetAM() {
@@ -123,6 +125,16 @@ export default {
         });
 
       this.dialog = false;
+    },
+    getlocalDate(date) {
+      if (date) {
+        const locales = { enUS, de };
+        return formatRelative(parseISO(new Date(date).toISOString()), new Date(), {
+          locale: locales[this.$i18n.locale]
+        });
+      } else {
+        return "";
+      }
     }
   },
   computed: {
