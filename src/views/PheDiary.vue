@@ -14,6 +14,8 @@
         </v-btn>
 
         <div v-if="userIsAuthenticated">
+          <v-sparkline :value="graph" fill smooth></v-sparkline>
+
           <v-data-table
             :headers="headers"
             :items="pheDiary"
@@ -215,6 +217,9 @@ export default {
       } else {
         return "";
       }
+    },
+    graph() {
+      return this.pheDiary.map(obj => obj.phe);
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
