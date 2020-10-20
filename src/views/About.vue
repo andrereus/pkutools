@@ -25,7 +25,7 @@
           <img
             src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png"
             alt="Buy Me A Coffee"
-            style="height: 60px !important; width: 217px !important;"
+            style="height: 60px !important; width: 217px !important"
           />
         </a>
       </v-col>
@@ -35,6 +35,11 @@
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("about.title")
+    };
+  },
   data: () => ({
     part1: "heypku",
     part2: "gmail",

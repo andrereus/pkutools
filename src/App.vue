@@ -257,6 +257,10 @@ import { mapState } from "vuex";
 import update from "./mixins/update";
 
 export default {
+  metaInfo: {
+    title: "PKU Tools",
+    titleTemplate: "PKU Tools | %s"
+  },
   data: () => ({
     drawer: null,
     dark: false,

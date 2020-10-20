@@ -95,6 +95,11 @@ import enFood from "../components/data/en-food.json";
 import deFood from "../components/data/de-food.json";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("phe-search.title")
+    };
+  },
   data: () => ({
     publicPath: process.env.BASE_URL,
     dialog: false,

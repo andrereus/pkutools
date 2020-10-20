@@ -63,6 +63,11 @@ import * as firebase from "firebase/app";
 import "firebase/database";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("protein-calculator.title")
+    };
+  },
   data: () => ({
     dialog: false,
     protein: null,

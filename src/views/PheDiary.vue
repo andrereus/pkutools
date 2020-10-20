@@ -98,6 +98,11 @@ import { format, parseISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("phe-diary.title")
+    };
+  },
   data: () => ({
     dialog: false,
     menu: false,

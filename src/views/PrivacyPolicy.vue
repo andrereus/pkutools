@@ -16,6 +16,11 @@
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("privacy-policy.title")
+    };
+  },
   mounted() {
     let s = document.createElement("script"),
       tag = document.getElementsByTagName("script")[0];

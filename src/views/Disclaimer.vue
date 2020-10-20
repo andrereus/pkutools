@@ -164,6 +164,11 @@
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("disclaimer.title")
+    };
+  },
   data: () => ({
     part1: "heypku",
     part2: "gmail",

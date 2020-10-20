@@ -84,6 +84,11 @@ import { formatRelative, parseISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("amino-counter.title")
+    };
+  },
   data: () => ({
     dialog: false,
     offlineInfo: false

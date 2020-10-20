@@ -159,6 +159,11 @@ import "firebase/database";
 import { format } from "date-fns";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("phe-log.title")
+    };
+  },
   data: () => ({
     publicPath: process.env.BASE_URL,
     dialog: false,

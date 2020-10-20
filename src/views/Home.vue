@@ -75,6 +75,10 @@ import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
 
 export default {
+  metaInfo: {
+    title: "PKU Tools",
+    titleTemplate: null
+  },
   components: {
     FeatureComparison
   },

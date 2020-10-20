@@ -47,6 +47,11 @@ import * as firebase from "firebase/app";
 import "firebase/database";
 
 export default {
+  metaInfo() {
+    return {
+      title: this.$t("phe-calculator.title")
+    };
+  },
   data: () => ({
     dialog: false,
     phe: null,
