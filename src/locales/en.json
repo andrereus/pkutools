@@ -19,6 +19,7 @@
   },
   "phe-search": {
     "title": "Phe Search",
+    "description": "Search for phe values.",
     "search": "Search",
     "save": "Save",
     "weight": "Weight (in g)",
@@ -26,6 +27,7 @@
   },
   "phe-calculator": {
     "title": "Phe Calculator",
+    "description": "Calculate phe values.",
     "phe": "Phe per 100g (in mg)",
     "weight": "Weight (in g)",
     "save": "Save",
@@ -34,6 +36,7 @@
   },
   "protein-calculator": {
     "title": "Protein Calculator",
+    "description": "Calculate approximate phe values from protein.",
     "factor": "Calculate as fruits / vegetables",
     "protein": "Protein per 100g (in g)",
     "phe": "Phe per 100g",
@@ -44,6 +47,7 @@
   },
   "phe-log": {
     "title": "Phe Log",
+    "description": "Log phe values throughout the day.",
     "add": "Add",
     "edit": "Edit",
     "reset": "Reset",
@@ -62,6 +66,7 @@
   },
   "phe-diary": {
     "title": "Phe Diary",
+    "description": "Log phe values over several days.",
     "add": "Add",
     "edit": "Edit",
     "reset": "Reset",
@@ -72,7 +77,7 @@
   },
   "amino-counter": {
     "title": "Amino Counter",
-    "description": "Count the servings of the amino acid mixture that you take each day.",
+    "description": "Count the servings of the amino acid mixture throughout the day.",
     "progress": "serving(s) taken",
     "date": "Last entry",
     "take": "Take serving",
@@ -83,6 +88,7 @@
   },
   "other-apps": {
     "title": "Other Apps",
+    "description": "Other free PKU apps",
     "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",
     "pku-manager": "English PKU app for searching, calculating and tracking food (~ 2018).",
     "simple-nutrition-calculator": "General app for calculating any nutrient values (~ 2019).",
@@ -90,14 +96,17 @@
   },
   "about": {
     "title": "About",
+    "description": "About PKU Tools",
     "email": "Email",
     "sources": "Sources: USDA National Nutrient Database"
   },
   "disclaimer": {
-    "title": "Disclaimer"
+    "title": "Disclaimer",
+    "description": "PKU Tools Disclaimer"
   },
   "privacy-policy": {
-    "title": "Privacy Policy"
+    "title": "Privacy Policy",
+    "description": "PKU Tools Privacy Policy"
   },
   "feature-comparison": {
     "subject": "Feature",

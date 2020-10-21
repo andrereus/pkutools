@@ -19,6 +19,7 @@
   },
   "phe-search": {
     "title": "Phe Suche",
+    "description": "Suche nach Phe-Werten.",
     "search": "Suche",
     "save": "Speichern",
     "weight": "Gewicht (in g)",
@@ -26,6 +27,7 @@
   },
   "phe-calculator": {
     "title": "Phe Rechner",
+    "description": "Berechne Phe-Werte.",
     "phe": "Phe pro 100g (in mg)",
     "weight": "Gewicht (in g)",
     "save": "Speichern",
@@ -34,6 +36,7 @@
   },
   "protein-calculator": {
     "title": "Eiweiß Rechner",
+    "description": "Berechne ungefähre Phe-Werte aus Eiweiß.",
     "factor": "Als Obst / Gemüse berechnen",
     "protein": "Eiweiß pro 100g (in g)",
     "phe": "Phe pro 100g",
@@ -44,6 +47,7 @@
   },
   "phe-log": {
     "title": "Phe Protokoll",
+    "description": "Protokolliere Phe-Werte über den Tag.",
     "add": "Hinzufügen",
     "edit": "Bearbeiten",
     "reset": "Zurücksetzen",
@@ -62,6 +66,7 @@
   },
   "phe-diary": {
     "title": "Phe Tagebuch",
+    "description": "Protokolliere Phe-Werte über mehrere Tage.",
     "add": "Hinzufügen",
     "edit": "Bearbeiten",
     "reset": "Zurücksetzen",
@@ -72,7 +77,7 @@
   },
   "amino-counter": {
     "title": "Amino Zähler",
-    "description": "Zähle die Portionen der Aminosäuremischung, die du täglich nimmst.",
+    "description": "Zähle die Portionen der Aminosäuremischung über den Tag.",
     "progress": "Portion(en) genommen",
     "date": "Letzter Eintrag",
     "take": "Portion nehmen",
@@ -83,6 +88,7 @@
   },
   "other-apps": {
     "title": "Andere Apps",
+    "description": "Andere kostenlose PKU Apps",
     "phe-rechner": "Deutsche PKU App die Taschenrechner, Bleistift, Papier und Nährwerttabelle kombiniert (~ 2017).",
     "pku-manager": "Englische PKU App zum Suchen, Berechnen und Tracken von Lebensmitteln (~ 2018).",
     "simple-nutrition-calculator": "Allgemeine App zum Berechnen beliebiger Nährwerte (~ 2019).",
@@ -90,14 +96,17 @@
   },
   "about": {
     "title": "Impressum",
+    "description": "Über PKU Tools",
     "email": "E-Mail",
     "sources": "Quellen: USDA National Nutrient Database"
   },
   "disclaimer": {
-    "title": "Disclaimer"
+    "title": "Disclaimer",
+    "description": "PKU Tools Disclaimer"
   },
   "privacy-policy": {
-    "title": "Datenschutz"
+    "title": "Datenschutz",
+    "description": "PKU Tools Datenschutz"
   },
   "feature-comparison": {
     "subject": "Funktion",

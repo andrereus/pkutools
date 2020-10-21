@@ -100,7 +100,8 @@ import { enUS, de } from "date-fns/locale";
 export default {
   metaInfo() {
     return {
-      title: this.$t("phe-diary.title")
+      title: this.$t("phe-diary.title"),
+      description: this.$t("phe-diary.description")
     };
   },
   data: () => ({

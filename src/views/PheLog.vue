@@ -161,7 +161,8 @@ import { format } from "date-fns";
 export default {
   metaInfo() {
     return {
-      title: this.$t("phe-log.title")
+      title: this.$t("phe-log.title"),
+      description: this.$t("phe-log.description")
     };
   },
   data: () => ({

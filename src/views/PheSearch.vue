@@ -97,7 +97,8 @@ import deFood from "../components/data/de-food.json";
 export default {
   metaInfo() {
     return {
-      title: this.$t("phe-search.title")
+      title: this.$t("phe-search.title"),
+      description: this.$t("phe-search.description")
     };
   },
   data: () => ({

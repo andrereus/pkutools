@@ -166,7 +166,8 @@
 export default {
   metaInfo() {
     return {
-      title: this.$t("disclaimer.title")
+      title: this.$t("disclaimer.title"),
+      description: this.$t("disclaimer.description")
     };
   },
   data: () => ({

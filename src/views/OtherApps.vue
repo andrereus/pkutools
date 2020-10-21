@@ -79,7 +79,8 @@ import FeatureComparison from "../components/FeatureComparison.vue";
 export default {
   metaInfo() {
     return {
-      title: this.$t("other-apps.title")
+      title: this.$t("other-apps.title"),
+      description: this.$t("other-apps.description")
     };
   },
   components: {

@@ -86,7 +86,8 @@ import { enUS, de } from "date-fns/locale";
 export default {
   metaInfo() {
     return {
-      title: this.$t("amino-counter.title")
+      title: this.$t("amino-counter.title"),
+      description: this.$t("amino-counter.description")
     };
   },
   data: () => ({
