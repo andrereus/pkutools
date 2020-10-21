@@ -125,7 +125,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app clipped-left flat class="nav-layout">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" :aria-label="$t('app.menu')" />
       <router-link to="/" class="app-logo">
         <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
         <v-toolbar-title>PKU Tools</v-toolbar-title>
@@ -146,10 +146,10 @@
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on">
+          <v-btn icon v-bind="attrs" v-on="on" :aria-label="$t('app.account-menu')">
             <v-avatar size="32">
               <v-icon v-if="!userIsAuthenticated">mdi-account</v-icon>
-              <img v-if="userIsAuthenticated" :src="userPhotoUrl" alt="Eating together" />
+              <img v-if="userIsAuthenticated" :src="userPhotoUrl" :alt="$t('app.profile-picture')" />
             </v-avatar>
           </v-btn>
         </template>
@@ -204,31 +204,31 @@
       active-class="v-btn--active bottom-nav--active"
       grow
     >
-      <v-btn to="/" value="home" class="mobile-nav-hide">
+      <v-btn to="/" value="home" class="mobile-nav-hide" :aria-label="$t('home.title')">
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-search" value="phe-search">
+      <v-btn to="/phe-search" value="phe-search" :aria-label="$t('phe-search.title')">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-calculator" value="phe-calculator">
+      <v-btn to="/phe-calculator" value="phe-calculator" :aria-label="$t('phe-calculator.title')">
         <v-icon>mdi-calculator</v-icon>
       </v-btn>
 
-      <v-btn to="/protein-calculator" value="protein-calculator">
+      <v-btn to="/protein-calculator" value="protein-calculator" :aria-label="$t('protein-calculator.title')">
         <v-icon>mdi-calculator-variant</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-log" value="phe-log">
+      <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
         <v-icon>mdi-book</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide">
+      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide" :aria-label="$t('phe-diary.title')">
         <v-icon>mdi-notebook</v-icon>
       </v-btn>
 
-      <v-btn to="/amino-counter" value="amino-counter">
+      <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
         <v-icon>mdi-cup</v-icon>
       </v-btn>
     </v-bottom-navigation>

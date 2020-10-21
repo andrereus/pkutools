@@ -11,7 +11,10 @@
     "close": "Schließen",
     "about": "Über",
     "dark": "Dunkles Design",
-    "light": "Helles Design"
+    "light": "Helles Design",
+    "menu": "Menü",
+    "account-menu": "Account Menü",
+    "profile-picture": "Profilbild"
   },
   "home": {
     "title": "Start",

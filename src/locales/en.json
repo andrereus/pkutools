@@ -11,7 +11,10 @@
     "close": "Close",
     "about": "About",
     "dark": "Dark Design",
-    "light": "Light Design"
+    "light": "Light Design",
+    "menu": "Menu",
+    "account-menu": "Account menu",
+    "profile-picture": "Profile picture"
   },
   "home": {
     "title": "Home",
