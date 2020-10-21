@@ -19,7 +19,7 @@ export default {
   metaInfo() {
     return {
       title: this.$t("privacy-policy.title"),
-      description: this.$t("privacy-policy.description")
+      meta: [{ name: "description", content: this.$t("privacy-policy.description") }]
     };
   },
   mounted() {

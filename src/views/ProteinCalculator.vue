@@ -66,7 +66,7 @@ export default {
   metaInfo() {
     return {
       title: this.$t("protein-calculator.title"),
-      description: this.$t("protein-calculator.description")
+      meta: [{ name: "description", content: this.$t("protein-calculator.description") }]
     };
   },
   data: () => ({

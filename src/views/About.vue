@@ -38,7 +38,7 @@ export default {
   metaInfo() {
     return {
       title: this.$t("about.title"),
-      description: this.$t("about.description")
+      meta: [{ name: "description", content: this.$t("about.description") }]
     };
   },
   data: () => ({

@@ -98,7 +98,7 @@ export default {
   metaInfo() {
     return {
       title: this.$t("phe-search.title"),
-      description: this.$t("phe-search.description")
+      meta: [{ name: "description", content: this.$t("phe-search.description") }]
     };
   },
   data: () => ({

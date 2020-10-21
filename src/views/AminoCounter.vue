@@ -87,7 +87,7 @@ export default {
   metaInfo() {
     return {
       title: this.$t("amino-counter.title"),
-      description: this.$t("amino-counter.description")
+      meta: [{ name: "description", content: this.$t("amino-counter.description") }]
     };
   },
   data: () => ({

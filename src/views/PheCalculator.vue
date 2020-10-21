@@ -50,7 +50,7 @@ export default {
   metaInfo() {
     return {
       title: this.$t("phe-calculator.title"),
-      description: this.$t("phe-calculator.description")
+      meta: [{ name: "description", content: this.$t("phe-calculator.description") }]
     };
   },
   data: () => ({

@@ -80,7 +80,7 @@ export default {
   metaInfo() {
     return {
       title: this.$t("other-apps.title"),
-      description: this.$t("other-apps.description")
+      meta: [{ name: "description", content: this.$t("other-apps.description") }]
     };
   },
   components: {
