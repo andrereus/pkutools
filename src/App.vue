@@ -125,7 +125,7 @@
     </v-navigation-drawer>
 
     <v-app-bar app clipped-left flat class="nav-layout">
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" :aria-label="$t('app.menu')" />
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" :aria-label="$t('app.main-menu')" />
       <router-link to="/" class="app-logo">
         <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
         <v-toolbar-title>PKU Tools</v-toolbar-title>
