@@ -102,7 +102,12 @@ export default {
       return Math.round(phe);
     },
     graph() {
-      return this.pheDiary.map(obj => obj.phe);
+      let newPheDiary = this.pheDiary;
+      return newPheDiary
+        .sort((a, b) => {
+          return new Date(a.date) - new Date(b.date);
+        })
+        .map(obj => obj.phe);
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
