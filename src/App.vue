@@ -204,7 +204,7 @@
       active-class="v-btn--active bottom-nav--active"
       grow
     >
-      <v-btn to="/" value="home" class="mobile-nav-hide" :aria-label="$t('home.title')">
+      <v-btn to="/" value="home" :aria-label="$t('home.title')">
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
@@ -228,7 +228,7 @@
         <v-icon>mdi-notebook</v-icon>
       </v-btn>
 
-      <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
+      <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
         <v-icon>mdi-cup</v-icon>
       </v-btn>
     </v-bottom-navigation>
