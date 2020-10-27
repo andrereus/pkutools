@@ -47,6 +47,14 @@
               </v-progress-circular>
             </v-card-text>
           </v-card>
+
+          <v-card width="280" height="175" to="/phe-diary" class="float-left mr-3 mb-3">
+            <v-card-text>
+              <p>{{ $t("phe-diary.title") }}</p>
+              <p v-if="graph.length < 2">{{ $t("phe-diary.chart") }}</p>
+              <v-sparkline :value="graph" fill smooth class="mt-9"></v-sparkline>
+            </v-card-text>
+          </v-card>
         </div>
 
         <v-btn depressed to="/phe-search" color="primary" class="mr-3 mt-3">{{ $t("phe-search.title") }}</v-btn>
@@ -93,10 +101,13 @@ export default {
       });
       return Math.round(phe);
     },
+    graph() {
+      return this.pheDiary.map(obj => obj.phe);
+    },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "pheLog", "aminoCounter", "settings"])
+    ...mapState(["user", "pheLog", "pheDiary", "aminoCounter", "settings"])
   }
 };
 </script>

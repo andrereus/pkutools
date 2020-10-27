@@ -76,7 +76,8 @@
     "save": "Save",
     "delete": "Delete",
     "cancel": "Cancel",
-    "date": "Date"
+    "date": "Date",
+    "chart": "Not enough entries for chart."
   },
   "amino-counter": {
     "title": "Amino Counter",

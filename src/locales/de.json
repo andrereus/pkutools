@@ -76,7 +76,8 @@
     "save": "Speichern",
     "delete": "Löschen",
     "cancel": "Abbrechen",
-    "date": "Datum"
+    "date": "Datum",
+    "chart": "Noch nicht genug Einträge für Diagramm."
   },
   "amino-counter": {
     "title": "Amino Zähler",
