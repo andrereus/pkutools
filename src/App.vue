@@ -44,6 +44,8 @@
           </v-list-item>
         </v-list-item-group>
 
+        <v-divider></v-divider>
+
         <v-list-item-group>
           <v-list-item to="/phe-log">
             <v-list-item-action>
@@ -55,16 +57,6 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/phe-diary">
-            <v-list-item-action>
-              <v-icon>mdi-notebook</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
           <v-list-item to="/amino-counter">
             <v-list-item-action>
               <v-icon>mdi-cup</v-icon>
@@ -72,6 +64,16 @@
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item to="/phe-diary">
+            <v-list-item-action>
+              <v-icon>mdi-notebook</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -224,12 +226,12 @@
         <v-icon>mdi-book</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide" :aria-label="$t('phe-diary.title')">
-        <v-icon>mdi-notebook</v-icon>
-      </v-btn>
-
       <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
         <v-icon>mdi-cup</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide" :aria-label="$t('phe-diary.title')">
+        <v-icon>mdi-notebook</v-icon>
       </v-btn>
     </v-bottom-navigation>
 

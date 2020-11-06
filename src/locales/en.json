@@ -68,6 +68,17 @@
     "total": "Total",
     "remaining": "Remaining"
   },
+  "amino-counter": {
+    "title": "Amino Counter",
+    "description": "Count the servings of the amino acid mixture throughout the day.",
+    "progress": "serving(s) taken",
+    "date": "Last entry",
+    "take": "Take serving",
+    "reset": "Reset",
+    "settings": "Settings",
+    "amount": "Servings per day",
+    "ok": "Ok"
+  },
   "phe-diary": {
     "title": "Phe Diary",
     "description": "Log phe values over several days.",
@@ -79,17 +90,6 @@
     "cancel": "Cancel",
     "date": "Date",
     "chart": "Not enough entries for the chart."
-  },
-  "amino-counter": {
-    "title": "Amino Counter",
-    "description": "Count the servings of the amino acid mixture throughout the day.",
-    "progress": "serving(s) taken",
-    "date": "Last entry",
-    "take": "Take serving",
-    "reset": "Reset",
-    "settings": "Settings",
-    "amount": "Servings per day",
-    "ok": "Ok"
   },
   "other-apps": {
     "title": "Other Apps",

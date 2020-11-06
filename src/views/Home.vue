@@ -105,7 +105,7 @@ export default {
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "pheLog", "pheDiary", "aminoCounter", "settings"])
+    ...mapState(["user", "pheLog", "aminoCounter", "pheDiary", "settings"])
   }
 };
 </script>

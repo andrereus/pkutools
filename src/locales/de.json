@@ -68,6 +68,17 @@
     "total": "Gesamt",
     "remaining": "Übrig"
   },
+  "amino-counter": {
+    "title": "Amino Zähler",
+    "description": "Zähle die Portionen der Aminosäuremischung über den Tag.",
+    "progress": "Portion(en) genommen",
+    "date": "Letzter Eintrag",
+    "take": "Portion nehmen",
+    "reset": "Zurücksetzen",
+    "settings": "Einstellungen",
+    "amount": "Portionen pro Tag",
+    "ok": "Ok"
+  },
   "phe-diary": {
     "title": "Phe Tagebuch",
     "description": "Protokolliere Phe-Werte über mehrere Tage.",
@@ -79,17 +90,6 @@
     "cancel": "Abbrechen",
     "date": "Datum",
     "chart": "Noch nicht genug Einträge für das Diagramm."
-  },
-  "amino-counter": {
-    "title": "Amino Zähler",
-    "description": "Zähle die Portionen der Aminosäuremischung über den Tag.",
-    "progress": "Portion(en) genommen",
-    "date": "Letzter Eintrag",
-    "take": "Portion nehmen",
-    "reset": "Zurücksetzen",
-    "settings": "Einstellungen",
-    "amount": "Portionen pro Tag",
-    "ok": "Ok"
   },
   "other-apps": {
     "title": "Andere Apps",
