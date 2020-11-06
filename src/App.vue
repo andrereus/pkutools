@@ -123,12 +123,6 @@
             </v-list-item-content>
           </v-list-item>
         </v-list-group>
-
-        <v-list-item>
-          <v-list-item-content>
-            <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
-          </v-list-item-content>
-        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -263,7 +257,6 @@ import "firebase/auth";
 import "firebase/database";
 import { mapState } from "vuex";
 import update from "./mixins/update";
-import "@pwabuilder/pwainstall";
 
 export default {
   metaInfo: {
@@ -397,11 +390,5 @@ export default {
 
 .mobile-nav-hide {
   display: none;
-}
-
-pwa-install::part(openButton) {
-  background: #3498db;
-  border-radius: 4px;
-  padding: 4px 16px;
 }
 </style>
