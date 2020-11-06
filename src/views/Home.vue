@@ -9,15 +9,9 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <div v-if="!userIsAuthenticated">
-          <p>{{ $t("app.description") }}</p>
-          <p>
-            <v-icon>mdi-information-outline</v-icon>
-            {{ $t("app.install") }}
-          </p>
-        </div>
+        <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
 
-        <div class="cards-clearfix" v-if="userIsAuthenticated">
+        <div class="cards-clearfix mb-1" v-if="userIsAuthenticated">
           <v-card max-width="135" to="/phe-log" class="float-left mr-3 mb-3">
             <v-card-text>
               <p>{{ $t("phe-log.title") }}</p>
@@ -57,22 +51,21 @@
           </v-card>
         </div>
 
-        <v-btn depressed to="/phe-search" color="primary" class="mr-3 mt-3">{{ $t("phe-search.title") }}</v-btn>
-        <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mt-3">{{ $t("phe-calculator.title") }}</v-btn>
-        <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mt-3">
+        <v-btn depressed to="/phe-search" color="primary" class="mr-3 mb-3">{{ $t("phe-search.title") }}</v-btn>
+        <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mb-3">{{ $t("phe-calculator.title") }}</v-btn>
+        <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3">
           {{ $t("protein-calculator.title") }}
         </v-btn>
-        <v-btn depressed to="/phe-log" color="primary" class="mr-3 mt-3">{{ $t("phe-log.title") }}</v-btn>
-        <v-btn depressed to="/phe-diary" color="primary" class="mr-3 mt-3">{{ $t("phe-diary.title") }}</v-btn>
-        <v-btn depressed to="/amino-counter" color="primary" class="mr-3 mt-3">{{ $t("amino-counter.title") }}</v-btn>
+        <v-btn text disabled v-if="!userIsAuthenticated" class="mr-3 mb-3">{{ $t("home.more") }}</v-btn>
 
-        <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-8 illustration"></v-img>
+        <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 illustration"></v-img>
 
-        <div v-if="!userIsAuthenticated">
-          <h2 class="headline my-6">{{ $t("home.features") }}</h2>
-          <FeatureComparison home />
-          <v-btn depressed to="/other-apps" class="mt-6">{{ $t("other-apps.title") }}</v-btn>
-        </div>
+        <h2 class="headline my-6">{{ $t("home.features") }}</h2>
+        <FeatureComparison home class="mb-6" />
+        <p>
+          <v-icon>mdi-information-outline</v-icon>
+          {{ $t("app.install") }}
+        </p>
       </v-col>
     </v-row>
   </div>

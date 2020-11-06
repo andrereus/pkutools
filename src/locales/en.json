@@ -18,7 +18,8 @@
   },
   "home": {
     "title": "Home",
-    "features": "Features"
+    "features": "Features",
+    "more": "And more"
   },
   "phe-search": {
     "title": "Phe Search",
