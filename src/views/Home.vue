@@ -77,11 +77,7 @@
 
         <h2 class="headline my-6">{{ $t("home.features") }}</h2>
         <FeatureComparison home class="mb-6" />
-        <pwa-install></pwa-install>
-        <p>
-          <v-icon>mdi-information-outline</v-icon>
-          {{ $t("app.install") }}
-        </p>
+        <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
       </v-col>
     </v-row>
 
@@ -155,5 +151,10 @@ export default {
   display: block;
   content: "";
   clear: both;
+}
+
+pwa-install::part(openButton) {
+  background: #3498db;
+  border-radius: 4px;
 }
 </style>
