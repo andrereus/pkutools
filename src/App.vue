@@ -124,7 +124,11 @@
           </v-list-item>
         </v-list-group>
 
-        <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+        <v-list-item>
+          <v-list-item-content>
+            <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
