@@ -41,16 +41,16 @@
     "title": "Phe Rechner",
     "description": "Berechne Phe-Werte.",
     "phe": "Phe pro 100g (in mg)",
-    "weight": "Gewicht (in g)",
+    "weight": "Gegessenes Gewicht (in g)",
     "name": "Lebensmittelname"
   },
   "protein-calculator": {
     "title": "Eiweiß Rechner",
     "description": "Berechne ungefähre Phe-Werte aus Eiweiß.",
-    "factor": "Als Obst / Gemüse berechnen",
+    "factor": "Als Obst oder Gemüse berechnen",
     "protein": "Eiweiß pro 100g (in g)",
     "phe": "Phe pro 100g",
-    "weight": "Gewicht (in g)",
+    "weight": "Gegessenes Gewicht (in g)",
     "name": "Lebensmittelname"
   },
   "phe-log": {
