@@ -77,6 +77,10 @@
 
         <h2 class="headline my-6">{{ $t("home.features") }}</h2>
         <FeatureComparison home class="mb-6" />
+        <p>
+          <v-icon>mdi-information-outline</v-icon>
+          {{ $t("app.installation") }}
+        </p>
         <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
       </v-col>
     </v-row>

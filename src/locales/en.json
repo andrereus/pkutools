@@ -2,6 +2,7 @@
   "app": {
     "title": "PKU Tools",
     "description": "Free tools and apps for people with PKU.",
+    "installation": "The install button for this Web App is visible after page load.",
     "install": "Install Web App",
     "signin-google": "Sign in with Google",
     "signout": "Sign out",
