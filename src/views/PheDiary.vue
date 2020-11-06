@@ -36,7 +36,7 @@
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
               <v-btn depressed color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
-                {{ $t("phe-diary.add") }}
+                {{ $t("common.add") }}
               </v-btn>
             </template>
 
@@ -66,16 +66,16 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn depressed color="primary" @click="save">{{ $t("phe-diary.save") }}</v-btn>
+                <v-btn depressed color="primary" @click="save">{{ $t("common.save") }}</v-btn>
                 <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem(editedIndex)">
-                  {{ $t("phe-diary.delete") }}
+                  {{ $t("common.delete") }}
                 </v-btn>
-                <v-btn depressed @click="close">{{ $t("phe-diary.cancel") }}</v-btn>
+                <v-btn depressed @click="close">{{ $t("common.cancel") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
 
-          <v-btn depressed class="mr-3 mt-3" @click="reset">{{ $t("phe-diary.reset") }}</v-btn>
+          <v-btn depressed class="mr-3 mt-3" @click="reset">{{ $t("common.reset") }}</v-btn>
         </div>
       </v-col>
     </v-row>
@@ -83,7 +83,7 @@
     <v-snackbar top color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <v-btn text @click="offlineInfo = false">
-        {{ $t("app.close") }}
+        {{ $t("common.close") }}
       </v-btn>
     </v-snackbar>
   </div>
@@ -135,7 +135,7 @@ export default {
       }
     },
     reset() {
-      let r = confirm(this.$t("phe-diary.reset") + "?");
+      let r = confirm(this.$t("common.reset") + "?");
       if (r === true) {
         firebase
           .database()
@@ -211,9 +211,9 @@ export default {
   computed: {
     formTitle() {
       if (this.editedIndex === -1) {
-        return this.$t("phe-diary.add");
+        return this.$t("common.add");
       } else {
-        return this.$t("phe-diary.edit");
+        return this.$t("common.edit");
       }
     },
     computelocalDate() {

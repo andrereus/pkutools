@@ -8,13 +8,23 @@
     "update-available": "Ein Update ist verfügbar!",
     "update": "Update",
     "offline": "Du bist offline.",
-    "close": "Schließen",
     "about": "Über",
     "dark": "Dunkles Design",
     "light": "Helles Design",
     "main-menu": "Hauptmenü",
     "account-menu": "Account Menü",
     "profile-picture": "Profilbild"
+  },
+  "common": {
+    "add": "Hinzufügen",
+    "edit": "Bearbeiten",
+    "save": "Speichern",
+    "delete": "Löschen",
+    "cancel": "Abbrechen",
+    "close": "Schließen",
+    "reset": "Reset",
+    "settings": "Einstellungen",
+    "ok": "Ok"
   },
   "home": {
     "title": "Start",
@@ -25,18 +35,14 @@
     "title": "Phe Suche",
     "description": "Suche nach Phe-Werten.",
     "search": "Suche",
-    "save": "Speichern",
-    "weight": "Gewicht (in g)",
-    "cancel": "Schließen"
+    "weight": "Gewicht (in g)"
   },
   "phe-calculator": {
     "title": "Phe Rechner",
     "description": "Berechne Phe-Werte.",
     "phe": "Phe pro 100g (in mg)",
     "weight": "Gewicht (in g)",
-    "save": "Speichern",
-    "name": "Lebensmittelname",
-    "cancel": "Abbrechen"
+    "name": "Lebensmittelname"
   },
   "protein-calculator": {
     "title": "Eiweiß Rechner",
@@ -45,24 +51,14 @@
     "protein": "Eiweiß pro 100g (in g)",
     "phe": "Phe pro 100g",
     "weight": "Gewicht (in g)",
-    "save": "Speichern",
-    "name": "Lebensmittelname",
-    "cancel": "Abbrechen"
+    "name": "Lebensmittelname"
   },
   "phe-log": {
     "title": "Phe Protokoll",
     "description": "Protokolliere Phe-Werte über den Tag.",
-    "add": "Hinzufügen",
-    "edit": "Bearbeiten",
-    "reset": "Zurücksetzen",
-    "save": "Speichern",
-    "delete": "Löschen",
-    "cancel": "Abbrechen",
     "lock-values": "Berechnungsmodus",
     "lock-info": "Gewicht und Phe werden parallel geändert",
-    "settings": "Einstellungen",
     "max": "Phe-Toleranz pro Tag",
-    "ok": "Ok",
     "save-diary": "Ergebnis in Phe Tagebuch speichern",
     "weight": "Gewicht (in mg)",
     "total": "Gesamt",
@@ -74,20 +70,11 @@
     "progress": "Portion(en) genommen",
     "date": "Letzter Eintrag",
     "take": "Portion nehmen",
-    "reset": "Zurücksetzen",
-    "settings": "Einstellungen",
-    "amount": "Portionen pro Tag",
-    "ok": "Ok"
+    "amount": "Portionen pro Tag"
   },
   "phe-diary": {
     "title": "Phe Tagebuch",
     "description": "Protokolliere Phe-Werte über mehrere Tage.",
-    "add": "Hinzufügen",
-    "edit": "Bearbeiten",
-    "reset": "Zurücksetzen",
-    "save": "Speichern",
-    "delete": "Löschen",
-    "cancel": "Abbrechen",
     "date": "Datum",
     "chart": "Noch nicht genug Einträge für das Diagramm."
   },

@@ -8,13 +8,23 @@
     "update-available": "An update is available!",
     "update": "Update",
     "offline": "You are offline.",
-    "close": "Close",
     "about": "About",
     "dark": "Dark Design",
     "light": "Light Design",
     "main-menu": "Main menu",
     "account-menu": "Account menu",
     "profile-picture": "Profile picture"
+  },
+  "common": {
+    "add": "Add",
+    "edit": "Edit",
+    "save": "Save",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "close": "Close",
+    "reset": "Reset",
+    "settings": "Settings",
+    "ok": "Ok"
   },
   "home": {
     "title": "Home",
@@ -25,18 +35,14 @@
     "title": "Phe Search",
     "description": "Search for phe values.",
     "search": "Search",
-    "save": "Save",
-    "weight": "Weight (in g)",
-    "cancel": "Close"
+    "weight": "Weight (in g)"
   },
   "phe-calculator": {
     "title": "Phe Calculator",
     "description": "Calculate phe values.",
     "phe": "Phe per 100g (in mg)",
     "weight": "Weight (in g)",
-    "save": "Save",
-    "name": "Food name",
-    "cancel": "Cancel"
+    "name": "Food name"
   },
   "protein-calculator": {
     "title": "Protein Calculator",
@@ -45,24 +51,14 @@
     "protein": "Protein per 100g (in g)",
     "phe": "Phe per 100g",
     "weight": "Weight (in g)",
-    "save": "Save",
-    "name": "Food name",
-    "cancel": "Cancel"
+    "name": "Food name"
   },
   "phe-log": {
     "title": "Phe Log",
     "description": "Log phe values throughout the day.",
-    "add": "Add",
-    "edit": "Edit",
-    "reset": "Reset",
-    "save": "Save",
-    "delete": "Delete",
-    "cancel": "Cancel",
     "lock-values": "Calculation Mode",
     "lock-info": "Weight and Phe are changed in parallel",
-    "settings": "Settings",
     "max": "Phe tolerance per day",
-    "ok": "Ok",
     "save-diary": "Save result in Phe Diary",
     "weight": "Weight (in mg)",
     "total": "Total",
@@ -74,20 +70,11 @@
     "progress": "serving(s) taken",
     "date": "Last entry",
     "take": "Take serving",
-    "reset": "Reset",
-    "settings": "Settings",
-    "amount": "Servings per day",
-    "ok": "Ok"
+    "amount": "Servings per day"
   },
   "phe-diary": {
     "title": "Phe Diary",
     "description": "Log phe values over several days.",
-    "add": "Add",
-    "edit": "Edit",
-    "reset": "Reset",
-    "save": "Save",
-    "delete": "Delete",
-    "cancel": "Cancel",
     "date": "Date",
     "chart": "Not enough entries for the chart."
   },

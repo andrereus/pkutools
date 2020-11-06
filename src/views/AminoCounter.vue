@@ -31,19 +31,19 @@
             {{ $t("amino-counter.take") }}
           </v-btn>
           <v-btn depressed @click="resetAM" class="mr-3 mt-3">
-            {{ $t("amino-counter.reset") }}
+            {{ $t("common.reset") }}
           </v-btn>
 
           <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
             <template v-slot:activator="{ on, attrs }">
               <v-btn depressed v-bind="attrs" v-on="on" class="mr-3 mt-3">
-                {{ $t("amino-counter.settings") }}
+                {{ $t("common.settings") }}
               </v-btn>
             </template>
 
             <v-card>
               <v-card-title>
-                <span class="headline">{{ $t("amino-counter.settings") }}</span>
+                <span class="headline">{{ $t("common.settings") }}</span>
               </v-card-title>
 
               <v-card-text>
@@ -58,7 +58,7 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn depressed @click="setMax">{{ $t("amino-counter.ok") }}</v-btn>
+                <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -69,7 +69,7 @@
     <v-snackbar top color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <v-btn text @click="offlineInfo = false">
-        {{ $t("app.close") }}
+        {{ $t("common.close") }}
       </v-btn>
     </v-snackbar>
   </div>
@@ -112,7 +112,7 @@ export default {
         });
     },
     resetAM() {
-      let r = confirm(this.$t("amino-counter.reset") + "?");
+      let r = confirm(this.$t("common.reset") + "?");
       if (r === true) {
         firebase
           .database()

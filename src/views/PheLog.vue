@@ -51,7 +51,7 @@
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
               <v-btn depressed color="primary" class="mr-3 mb-3" v-bind="attrs" v-on="on">
-                {{ $t("phe-log.add") }}
+                {{ $t("common.add") }}
               </v-btn>
             </template>
 
@@ -98,28 +98,28 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn depressed color="primary" @click="save">{{ $t("phe-log.save") }}</v-btn>
+                <v-btn depressed color="primary" @click="save">{{ $t("common.save") }}</v-btn>
                 <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem(editedIndex)">
-                  {{ $t("phe-log.delete") }}
+                  {{ $t("common.delete") }}
                 </v-btn>
-                <v-btn depressed @click="close">{{ $t("phe-log.cancel") }}</v-btn>
+                <v-btn depressed @click="close">{{ $t("common.cancel") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
 
-          <v-btn depressed class="mr-3 mb-3" @click="saveResult">{{ $t("phe-log.save") }}</v-btn>
-          <v-btn depressed class="mr-3 mb-3" @click="reset">{{ $t("phe-log.reset") }}</v-btn>
+          <v-btn depressed class="mr-3 mb-3" @click="saveResult">{{ $t("common.save") }}</v-btn>
+          <v-btn depressed class="mr-3 mb-3" @click="reset">{{ $t("common.reset") }}</v-btn>
 
           <v-dialog v-model="dialog2" max-width="500px" @click:outside="setMax">
             <template v-slot:activator="{ on, attrs }">
               <v-btn depressed v-bind="attrs" v-on="on" class="mr-3 mb-3">
-                {{ $t("phe-log.settings") }}
+                {{ $t("common.settings") }}
               </v-btn>
             </template>
 
             <v-card>
               <v-card-title>
-                <span class="headline">{{ $t("phe-log.settings") }}</span>
+                <span class="headline">{{ $t("common.settings") }}</span>
               </v-card-title>
 
               <v-card-text>
@@ -134,7 +134,7 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn depressed @click="setMax">{{ $t("phe-log.ok") }}</v-btn>
+                <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -145,7 +145,7 @@
     <v-snackbar top color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <v-btn text @click="offlineInfo = false">
-        {{ $t("app.close") }}
+        {{ $t("common.close") }}
       </v-btn>
     </v-snackbar>
   </div>
@@ -201,7 +201,7 @@ export default {
       }
     },
     reset() {
-      let r = confirm(this.$t("phe-log.reset") + "?");
+      let r = confirm(this.$t("common.reset") + "?");
       if (r === true) {
         firebase
           .database()
@@ -302,7 +302,7 @@ export default {
       this.dialog2 = false;
     },
     saveResult() {
-      let r = confirm(this.$t("phe-log.save-diary") + "?");
+      let r = confirm(this.$t("common.save-diary") + "?");
       if (r === true) {
         firebase
           .database()
@@ -323,9 +323,9 @@ export default {
   computed: {
     formTitle() {
       if (this.editedIndex === -1) {
-        return this.$t("phe-log.add");
+        return this.$t("common.add");
       } else {
-        return this.$t("phe-log.edit");
+        return this.$t("common.edit");
       }
     },
     pheResult() {
