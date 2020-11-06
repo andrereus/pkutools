@@ -156,6 +156,6 @@ export default {
 pwa-install::part(openButton) {
   background: #3498db;
   border-radius: 4px;
-  padding: 8px 16px;
+  padding: 4px 16px;
 }
 </style>
