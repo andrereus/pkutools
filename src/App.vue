@@ -191,7 +191,9 @@
           </v-list-item>
 
           <v-list-item>
-            <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+            <span>
+              <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+            </span>
           </v-list-item>
         </v-list>
       </v-menu>
