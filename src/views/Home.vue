@@ -93,7 +93,6 @@
 <script>
 import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
-import "@pwabuilder/pwainstall";
 
 export default {
   metaInfo() {
