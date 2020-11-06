@@ -56,7 +56,22 @@
         <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3">
           {{ $t("protein-calculator.title") }}
         </v-btn>
-        <v-btn text disabled v-if="!userIsAuthenticated" class="mr-3 mb-3">{{ $t("home.more") }}</v-btn>
+
+        <v-menu offset-y v-if="!userIsAuthenticated">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn text class="mr-3 mb-3" v-bind="attrs" v-on="on">
+              {{ $t("home.more") }}
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item @click="signInGoogle">
+              <span>
+                <v-icon>mdi-google</v-icon>
+                {{ $t("app.signin-google") }}
+              </span>
+            </v-list-item>
+          </v-list>
+        </v-menu>
 
         <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 illustration"></v-img>
 
@@ -68,6 +83,13 @@
         </p>
       </v-col>
     </v-row>
+
+    <v-snackbar top color="warning" v-model="offlineInfo">
+      {{ $t("app.offline") }}
+      <v-btn text @click="offlineInfo = false">
+        {{ $t("app.close") }}
+      </v-btn>
+    </v-snackbar>
   </div>
 </template>
 
@@ -85,6 +107,18 @@ export default {
   },
   components: {
     FeatureComparison
+  },
+  data: () => ({
+    offlineInfo: false
+  }),
+  methods: {
+    signInGoogle() {
+      if (navigator.onLine) {
+        this.$store.dispatch("signInGoogle");
+      } else {
+        this.offlineInfo = true;
+      }
+    }
   },
   computed: {
     pheResult() {
