@@ -77,6 +77,7 @@
 
         <h2 class="headline my-6">{{ $t("home.features") }}</h2>
         <FeatureComparison home class="mb-6" />
+        <pwa-install></pwa-install>
         <p>
           <v-icon>mdi-information-outline</v-icon>
           {{ $t("app.install") }}
@@ -96,6 +97,7 @@
 <script>
 import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
+import "@pwabuilder/pwainstall";
 
 export default {
   metaInfo() {
