@@ -2,7 +2,7 @@
   "app": {
     "title": "PKU Tools",
     "description": "Kostenlose Tools und Apps für Menschen mit PKU.",
-    "install": "PKU Tools installieren",
+    "install": "Installiere Web App",
     "signin-google": "Anmelden mit Google",
     "signout": "Abmelden",
     "update-available": "Ein Update ist verfügbar!",
