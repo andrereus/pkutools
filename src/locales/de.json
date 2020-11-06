@@ -2,7 +2,7 @@
   "app": {
     "title": "PKU Tools",
     "description": "Kostenlose Tools und Apps für Menschen mit PKU.",
-    "installation": "Der Button zum Installieren dieser Web App ist nur nach dem Laden der Seite sichtbar (wenn noch nicht installiert).",
+    "installation": "Der Button zum Installieren dieser Web App ist nur nach Seitenaktualisierung sichtbar (wenn noch nicht installiert).",
     "install": "Installiere Web App",
     "signin-google": "Anmelden mit Google",
     "signout": "Abmelden",
