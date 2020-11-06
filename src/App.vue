@@ -189,6 +189,10 @@
               <span v-if="dark">{{ $t("app.light") }}</span>
             </span>
           </v-list-item>
+
+          <v-list-item>
+            <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+          </v-list-item>
         </v-list>
       </v-menu>
     </v-app-bar>
@@ -257,6 +261,7 @@ import "firebase/auth";
 import "firebase/database";
 import { mapState } from "vuex";
 import update from "./mixins/update";
+import "@pwabuilder/pwainstall";
 
 export default {
   metaInfo: {
@@ -390,5 +395,11 @@ export default {
 
 .mobile-nav-hide {
   display: none;
+}
+
+pwa-install::part(openButton) {
+  background: #3498db;
+  border-radius: 4px;
+  padding: 4px 16px;
 }
 </style>
