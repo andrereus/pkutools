@@ -359,4 +359,8 @@ export default {
 .checkbox-clearfix {
   overflow: hidden;
 }
+
+.theme--light.v-data-table {
+  background-color: #fafafa;
+}
 </style>

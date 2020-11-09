@@ -169,4 +169,8 @@ export default {
 .food-icon {
   vertical-align: bottom;
 }
+
+.theme--light.v-data-table {
+  background-color: #fafafa;
+}
 </style>

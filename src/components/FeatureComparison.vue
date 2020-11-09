@@ -67,3 +67,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.theme--light.v-data-table {
+  background-color: #fafafa;
+}
+</style>

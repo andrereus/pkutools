@@ -248,4 +248,8 @@ export default {
 .theme--dark.v-toolbar.v-sheet {
   background-color: #121212;
 }
+
+.theme--light.v-data-table {
+  background-color: #fafafa;
+}
 </style>
