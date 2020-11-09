@@ -302,7 +302,7 @@ export default {
       this.dialog2 = false;
     },
     saveResult() {
-      let r = confirm(this.$t("common.save-diary") + "?");
+      let r = confirm(this.$t("phe-log.save-diary") + "?");
       if (r === true) {
         firebase
           .database()
