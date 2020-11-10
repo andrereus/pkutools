@@ -6,7 +6,7 @@
     "install": "Install Web App",
     "signin-google": "Sign in with Google",
     "signout": "Sign out",
-    "update": "Update available! Refresh to avoid errors.",
+    "update": "Update available; please refresh!",
     "refresh": "Refresh",
     "offline": "You are offline.",
     "about": "About",
