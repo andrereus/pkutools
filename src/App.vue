@@ -237,7 +237,7 @@
 
     <v-snackbar top color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update") }}
-      <v-btn text @click="refreshApp">
+      <v-btn text outlined @click="refreshApp">
         {{ $t("app.refresh") }}
       </v-btn>
     </v-snackbar>
