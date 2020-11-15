@@ -88,3 +88,9 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.v-btn {
+  text-transform: none;
+}
+</style>

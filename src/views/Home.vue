@@ -162,4 +162,8 @@ pwa-install::part(openButton) {
   border-radius: 4px;
   padding: 4px 16px;
 }
+
+.v-btn {
+  text-transform: none;
+}
 </style>

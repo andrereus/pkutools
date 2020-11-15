@@ -363,4 +363,8 @@ export default {
 .theme--light.v-data-table {
   background-color: #fafafa;
 }
+
+.v-btn {
+  text-transform: none;
+}
 </style>
