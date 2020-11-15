@@ -235,7 +235,7 @@
       </v-btn>
     </v-bottom-navigation>
 
-    <v-snackbar top :value="updateExists" :timeout="-1">
+    <v-snackbar top color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update") }}
       <template v-slot:action="{ attrs }">
         <v-btn outlined v-bind="attrs" @click="refreshApp">
