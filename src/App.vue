@@ -237,18 +237,18 @@
 
     <v-snackbar top color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update") }}
-      <v-btn text outlined @click="refreshApp">
-        {{ $t("app.refresh") }}
-      </v-btn>
+      <template v-slot:action="{ attrs }">
+        <v-btn outlined v-bind="attrs" @click="refreshApp">
+          {{ $t("app.refresh") }}
+        </v-btn>
+      </template>
     </v-snackbar>
 
     <v-snackbar top color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
-      <template v-slot:action="{ attrs }">
-        <v-btn text v-bind="attrs" @click="offlineInfo = false">
-          {{ $t("common.close") }}
-        </v-btn>
-      </template>
+      <v-btn text @click="offlineInfo = false">
+        {{ $t("common.close") }}
+      </v-btn>
     </v-snackbar>
   </v-app>
 </template>
