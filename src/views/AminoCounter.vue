@@ -68,9 +68,11 @@
 
     <v-snackbar bottom color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
-      <v-btn text @click="offlineInfo = false">
-        {{ $t("common.close") }}
-      </v-btn>
+      <template v-slot:action="{ attrs }">
+        <v-btn text v-bind="attrs" @click="offlineInfo = false">
+          {{ $t("common.close") }}
+        </v-btn>
+      </template>
     </v-snackbar>
   </div>
 </template>
