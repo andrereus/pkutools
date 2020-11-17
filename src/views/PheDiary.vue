@@ -80,7 +80,7 @@
       </v-col>
     </v-row>
 
-    <v-snackbar top color="warning" v-model="offlineInfo">
+    <v-snackbar bottom color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <v-btn text @click="offlineInfo = false">
         {{ $t("common.close") }}
