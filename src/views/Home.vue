@@ -7,7 +7,7 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center">
+    <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
 
