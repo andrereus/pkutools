@@ -95,7 +95,7 @@
                 <v-btn depressed color="primary" @click="add">
                   {{ $t("common.add") }}
                 </v-btn>
-                <v-btn depressed @click="dialog2 = false">{{ $t("common.close") }}</v-btn>
+                <v-btn depressed @click="dialog2 = false">{{ $t("common.cancel") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
