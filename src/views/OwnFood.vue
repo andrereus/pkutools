@@ -30,7 +30,7 @@
                 <td class="text-start">{{ item.name }}</td>
                 <td class="text-start">{{ item.phe }}</td>
                 <td class="text-start">
-                  <v-icon dense @click="editItem(item)" class="mr-3">mdi-pencil</v-icon>
+                  <v-icon dense @click="editItem(item)" class="mr-4">mdi-pencil</v-icon>
                   <v-icon dense @click="addItem(item)">mdi-book-plus</v-icon>
                 </td>
               </tr>
