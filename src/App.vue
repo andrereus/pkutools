@@ -243,6 +243,10 @@
       <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide" :aria-label="$t('phe-diary.title')">
         <v-icon>mdi-notebook</v-icon>
       </v-btn>
+
+      <v-btn to="/own-food" value="own-food" class="mobile-nav-hide" :aria-label="$t('own-food.title')">
+        <v-icon>mdi-apple</v-icon>
+      </v-btn>
     </v-bottom-navigation>
 
     <v-snackbar bottom color="primary" :value="updateExists" :timeout="-1">
