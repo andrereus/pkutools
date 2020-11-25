@@ -14,7 +14,8 @@
     "light": "Light Design",
     "main-menu": "Main menu",
     "account-menu": "Account menu",
-    "profile-picture": "Profile picture"
+    "profile-picture": "Profile picture",
+    "new": "New"
   },
   "common": {
     "add": "Add",
@@ -76,6 +77,14 @@
   "phe-diary": {
     "title": "Phe Diary",
     "description": "Log phe values over several days.",
+    "date": "Date",
+    "chart": "Not enough entries for the chart."
+  },
+  "own-food": {
+    "title": "Own Food",
+    "description": "Save own food and phe values.",
+    "phe": "Phe per 100g (in mg)",
+    "weight": "Weight (in g)",
     "date": "Date",
     "chart": "Not enough entries for the chart."
   },

@@ -56,6 +56,9 @@
         <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3">
           {{ $t("protein-calculator.title") }}
         </v-btn>
+        <v-btn depressed to="/own-food" color="primary" class="mr-3 mb-3" v-if="userIsAuthenticated">
+          {{ $t("own-food.title") }}
+        </v-btn>
 
         <v-menu offset-y v-if="!userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">

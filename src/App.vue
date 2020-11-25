@@ -76,6 +76,16 @@
               <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+
+          <v-list-item to="/own-food">
+            <v-list-item-action>
+              <v-icon>mdi-food-apple</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("own-food.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list-item-group>
 
         <v-list-group prepend-icon="mdi-information">

@@ -43,6 +43,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "phe-diary" */ "../views/PheDiary.vue")
   },
   {
+    path: "/own-food",
+    name: "Own Food",
+    component: () => import(/* webpackChunkName: "own-food" */ "../views/OwnFood.vue")
+  },
+  {
     path: "/other-apps",
     name: "Other Apps",
     component: () => import(/* webpackChunkName: "other-apps" */ "../views/OtherApps.vue")

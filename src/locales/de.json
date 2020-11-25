@@ -14,7 +14,8 @@
     "light": "Helles Design",
     "main-menu": "Hauptmenü",
     "account-menu": "Account Menü",
-    "profile-picture": "Profilbild"
+    "profile-picture": "Profilbild",
+    "new": "Neu"
   },
   "common": {
     "add": "Hinzufügen",
@@ -76,6 +77,14 @@
   "phe-diary": {
     "title": "Phe Tagebuch",
     "description": "Protokolliere Phe-Werte über mehrere Tage.",
+    "date": "Datum",
+    "chart": "Noch nicht genug Einträge für das Diagramm."
+  },
+  "own-food": {
+    "title": "Eigene Lebensmittel",
+    "description": "Speichere eigene Lebensmittel und Phe-Werte.",
+    "phe": "Phe pro 100g (in mg)",
+    "weight": "Gewicht (in g)",
     "date": "Datum",
     "chart": "Noch nicht genug Einträge für das Diagramm."
   },
