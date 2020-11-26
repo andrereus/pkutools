@@ -67,16 +67,6 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/phe-diary">
-            <v-list-item-action>
-              <v-icon>mdi-notebook</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
           <v-list-item to="/amino-counter">
             <v-list-item-action>
               <v-icon>mdi-cup</v-icon>
@@ -84,6 +74,16 @@
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item to="/phe-diary">
+            <v-list-item-action>
+              <v-icon>mdi-notebook</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -146,7 +146,7 @@
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on">{{ locale }}</v-btn>
+          <v-btn icon v-bind="attrs" v-on="on" class="lang-button">{{ locale }}</v-btn>
         </template>
 
         <v-list>
@@ -220,34 +220,74 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-search" value="phe-search" :aria-label="$t('phe-search.title')">
+      <v-btn to="/phe-search" value="phe-search" class="mobile-nav-hide" :aria-label="$t('phe-search.title')">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-calculator" value="phe-calculator" :aria-label="$t('phe-calculator.title')">
+      <v-btn
+        to="/phe-calculator"
+        value="phe-calculator"
+        class="mobile-nav-hide"
+        :aria-label="$t('phe-calculator.title')"
+      >
         <v-icon>mdi-calculator</v-icon>
       </v-btn>
 
-      <v-btn to="/protein-calculator" value="protein-calculator" :aria-label="$t('protein-calculator.title')">
+      <v-btn
+        to="/protein-calculator"
+        value="protein-calculator"
+        class="mobile-nav-hide"
+        :aria-label="$t('protein-calculator.title')"
+      >
         <v-icon>mdi-calculator-variant</v-icon>
       </v-btn>
 
-      <v-btn to="/own-food" value="own-food" :aria-label="$t('own-food.title')">
+      <v-btn to="/own-food" value="own-food" class="mobile-nav-hide" :aria-label="$t('own-food.title')">
         <v-icon>mdi-food-apple</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-log" value="phe-log" class="mobile-nav-hide" :aria-label="$t('phe-log.title')">
+      <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
         <v-icon>mdi-book</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide" :aria-label="$t('phe-diary.title')">
-        <v-icon>mdi-notebook</v-icon>
+      <v-btn @click="dialog = true" value="add" :aria-label="$t('common.add')" class="add-button">
+        <v-icon>mdi-plus-circle-outline</v-icon>
       </v-btn>
 
-      <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
+      <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
         <v-icon>mdi-cup</v-icon>
       </v-btn>
+
+      <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
+        <v-icon>mdi-notebook</v-icon>
+      </v-btn>
     </v-bottom-navigation>
+
+    <v-dialog v-model="dialog" max-width="500px">
+      <v-card>
+        <v-card-title>
+          <span class="headline mb-2">{{ $t("app.tools") }}</span>
+        </v-card-title>
+
+        <v-card-text>
+          <v-btn depressed to="/phe-search" color="primary" class="mr-3 mb-3">{{ $t("phe-search.title") }}</v-btn>
+          <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mb-3">
+            {{ $t("phe-calculator.title") }}
+          </v-btn>
+          <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3">
+            {{ $t("protein-calculator.title") }}
+          </v-btn>
+          <v-btn depressed to="/own-food" color="primary" class="mr-3 mb-3">
+            {{ $t("own-food.title") }}
+          </v-btn>
+        </v-card-text>
+
+        <v-card-actions class="mt-n6">
+          <v-spacer></v-spacer>
+          <v-btn depressed @click="dialog = false">{{ $t("common.close") }}</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
 
     <v-snackbar bottom color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update-info") }}
@@ -289,6 +329,7 @@ export default {
       { name: "Deutsch", abbr: "de" }
     ],
     bottomNav: null,
+    dialog: false,
     offlineInfo: false
   }),
   mixins: [update],
@@ -388,6 +429,10 @@ export default {
   opacity: 0.08 !important;
 }
 
+.add-button.bottom-nav--active:before {
+  opacity: 0 !important;
+}
+
 .app-logo {
   display: flex;
   text-decoration: none;
@@ -408,5 +453,13 @@ export default {
 
 .mobile-nav-hide {
   display: none;
+}
+
+.v-btn {
+  text-transform: none;
+}
+
+.lang-button {
+  text-transform: uppercase;
 }
 </style>
