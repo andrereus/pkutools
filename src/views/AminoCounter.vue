@@ -17,7 +17,7 @@
           <p>{{ $t("amino-counter.description") }}</p>
 
           <v-progress-linear
-            :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 3)"
+            :value="((aminoCounter.count || 0) * 100) / (settings.maxAmino || 3)"
             height="40"
             class="white--text my-6"
             rounded
@@ -50,7 +50,7 @@
                 <v-text-field
                   filled
                   :label="$t('amino-counter.amount')"
-                  v-model.number="aminoCounter.max"
+                  v-model.number="settings.maxAmino"
                   type="number"
                   class="mt-6"
                 ></v-text-field>
@@ -127,9 +127,9 @@ export default {
     setMax() {
       firebase
         .database()
-        .ref(this.user.id + "/aminoCounter")
+        .ref(this.user.id + "/settings")
         .update({
-          max: this.aminoCounter.max || 3
+          maxAmino: this.settings.maxAmino || 3
         });
 
       this.dialog = false;
@@ -149,7 +149,7 @@ export default {
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "aminoCounter"])
+    ...mapState(["user", "aminoCounter", "settings"])
   }
 };
 </script>

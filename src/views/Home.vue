@@ -34,7 +34,7 @@
                 :rotate="-90"
                 :size="105"
                 :width="10"
-                :value="((aminoCounter.count || 0) * 100) / (aminoCounter.max || 3)"
+                :value="((aminoCounter.count || 0) * 100) / (settings.maxAmino || 3)"
                 color="primary"
               >
                 {{ aminoCounter.count || 0 }}
