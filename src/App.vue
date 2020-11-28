@@ -13,6 +13,8 @@
         </v-list-item>
 
         <v-list-item-group>
+          <v-subheader>{{ $t("app.tools") }}</v-subheader>
+
           <v-list-item to="/phe-search">
             <v-list-item-action>
               <v-icon>mdi-magnify</v-icon>
@@ -42,21 +44,21 @@
               <v-list-item-title>{{ $t("protein-calculator.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+
+          <v-list-item to="/own-food">
+            <v-list-item-action>
+              <v-icon>mdi-food-apple</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("own-food.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list-item-group>
 
-        <v-list-item to="/own-food">
-          <v-list-item-action>
-            <v-icon>mdi-food-apple</v-icon>
-          </v-list-item-action>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ $t("own-food.title") }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-divider></v-divider>
-
         <v-list-item-group>
+          <v-subheader>{{ $t("app.logs") }}</v-subheader>
+
           <v-list-item to="/phe-log">
             <v-list-item-action>
               <v-icon>mdi-book</v-icon>
@@ -246,12 +248,12 @@
         <v-icon>mdi-food-apple</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
-        <v-icon>mdi-book</v-icon>
-      </v-btn>
-
       <v-btn @click="dialog = true" value="add" :aria-label="$t('common.add')" class="add-button">
         <v-icon>mdi-plus-circle-outline</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
+        <v-icon>mdi-book</v-icon>
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
