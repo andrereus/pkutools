@@ -2,10 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline">
-          {{ $t("own-food.title") }}
-          <v-chip color="green" outlined>{{ $t("app.new") }}</v-chip>
-        </h2>
+        <h2 class="headline">{{ $t("own-food.title") }}</h2>
       </v-col>
     </v-row>
 
@@ -26,13 +23,12 @@
             class="mb-3"
           >
             <template v-slot:item="{ item }">
-              <tr>
-                <td class="text-start">{{ item.name }}</td>
-                <td class="text-start">{{ item.phe }}</td>
+              <tr @click="addItem(item)" class="tr-edit">
                 <td class="text-start">
-                  <v-icon dense @click="editItem(item)" class="mr-4">mdi-pencil</v-icon>
-                  <v-icon dense @click="addItem(item)">mdi-book-plus</v-icon>
+                  <img :src="publicPath + 'img/food-icons/Organic Food.svg'" width="25" class="food-icon" />
+                  {{ item.name }}
                 </td>
+                <td class="text-start">{{ item.phe }}</td>
               </tr>
             </template>
           </v-data-table>
@@ -75,7 +71,10 @@
           <v-dialog v-model="dialog2" max-width="500px">
             <v-card>
               <v-card-title>
-                <span class="headline">{{ editedItem.name }}</span>
+                <span class="headline">
+                  <img :src="publicPath + 'img/food-icons/Organic Food.svg'" width="35" class="food-icon" />
+                  {{ editedItem.name }}
+                </span>
               </v-card-title>
 
               <v-card-text>
@@ -95,6 +94,7 @@
                 <v-btn depressed color="primary" @click="add">
                   {{ $t("common.add") }}
                 </v-btn>
+                <v-btn depressed @click="editItem()">{{ $t("common.edit") }}</v-btn>
                 <v-btn depressed @click="dialog2 = false">{{ $t("common.cancel") }}</v-btn>
               </v-card-actions>
             </v-card>
@@ -128,6 +128,7 @@ export default {
     };
   },
   data: () => ({
+    publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,
     menu: false,
@@ -137,8 +138,7 @@ export default {
         align: "start",
         value: "name"
       },
-      { text: "Phe", value: "phe" },
-      { text: "Actions", value: "actions", sortable: false }
+      { text: "Phe", value: "phe" }
     ],
     editedIndex: -1,
     editedItem: {
@@ -169,9 +169,8 @@ export default {
           .remove();
       }
     },
-    editItem(item) {
-      this.editedIndex = this.ownFood.indexOf(item);
-      this.editedItem = Object.assign({}, item);
+    editItem() {
+      this.dialog2 = false;
       this.dialog = true;
     },
     deleteItem(editedIndex) {
@@ -221,6 +220,8 @@ export default {
       this.close();
     },
     addItem(item) {
+      this.weight = 100;
+      this.editedIndex = this.ownFood.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog2 = true;
     },
@@ -262,8 +263,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.tr-edit {
+  cursor: pointer;
+}
+
 .theme--dark.v-toolbar.v-sheet {
   background-color: #121212;
+}
+
+.food-icon {
+  vertical-align: bottom;
 }
 
 .theme--light.v-data-table {
