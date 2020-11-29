@@ -76,7 +76,7 @@
             <v-card-actions class="mt-n6">
               <v-spacer></v-spacer>
               <v-btn depressed color="primary" @click="save" v-if="userIsAuthenticated">
-                {{ $t("common.save") }}
+                {{ $t("common.add") }}
               </v-btn>
               <v-btn depressed @click="dialog = false">{{ $t("common.close") }}</v-btn>
             </v-card-actions>

@@ -16,13 +16,13 @@
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
             <v-btn depressed color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
-              {{ $t("common.save") }}
+              {{ $t("common.add") }}
             </v-btn>
           </template>
 
           <v-card>
             <v-card-title>
-              <span class="headline">{{ $t("common.save") }}</span>
+              <span class="headline">{{ $t("common.add") }}</span>
             </v-card-title>
 
             <v-card-text>
