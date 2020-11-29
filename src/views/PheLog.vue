@@ -69,6 +69,8 @@
                   :value="editedItem.weight"
                   @keyup="editWeight"
                   type="number"
+                  :append-icon="lockedValues ? 'mdi-lock' : 'mdi-lock-open-variant'"
+                  @click:append="lockValues"
                 ></v-text-field>
 
                 <v-text-field
@@ -77,23 +79,25 @@
                   :value="editedItem.phe"
                   @keyup="editPhe"
                   type="number"
+                  :append-icon="lockedValues ? 'mdi-lock' : 'mdi-lock-open-variant'"
+                  @click:append="lockValues"
                 ></v-text-field>
 
-                <div class="checkbox-clearfix">
-                  <v-checkbox
-                    :value="lockedValues"
-                    @click="lockValues"
-                    :label="$t('phe-log.lock-values')"
-                    class="mt-n1 float-left"
-                  ></v-checkbox>
+                <!--                <div class="checkbox-clearfix">-->
+                <!--                  <v-checkbox-->
+                <!--                    :value="lockedValues"-->
+                <!--                    @click="lockValues"-->
+                <!--                    :label="$t('phe-log.lock-values')"-->
+                <!--                    class="mt-n1 float-left"-->
+                <!--                  ></v-checkbox>-->
 
-                  <v-tooltip top>
-                    <template v-slot:activator="{ on, attrs }">
-                      <v-icon v-bind="attrs" v-on="on" class="ml-2">mdi-information-outline</v-icon>
-                    </template>
-                    <span>{{ $t("phe-log.lock-info") }}</span>
-                  </v-tooltip>
-                </div>
+                <!--                  <v-tooltip top>-->
+                <!--                    <template v-slot:activator="{ on, attrs }">-->
+                <!--                      <v-icon v-bind="attrs" v-on="on" class="ml-2">mdi-information-outline</v-icon>-->
+                <!--                    </template>-->
+                <!--                    <span>{{ $t("phe-log.lock-info") }}</span>-->
+                <!--                  </v-tooltip>-->
+                <!--                </div>-->
               </v-card-text>
 
               <v-card-actions class="mt-n6">
@@ -214,6 +218,7 @@ export default {
     editItem(item) {
       this.editedIndex = this.pheLog.indexOf(item);
       this.editedItem = Object.assign({}, item);
+      this.lockValues();
       this.dialog = true;
     },
     deleteItem(editedIndex) {
