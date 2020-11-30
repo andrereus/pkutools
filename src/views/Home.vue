@@ -73,6 +73,12 @@
                   {{ $t("app.signin-google") }}
                 </span>
               </v-list-item>
+              <v-list-item @click="signInFacebook">
+                <span>
+                  <v-icon>mdi-facebook</v-icon>
+                  {{ $t("app.signin-facebook") }}
+                </span>
+              </v-list-item>
             </v-list>
           </v-menu>
         </div>
@@ -123,6 +129,13 @@ export default {
     signInGoogle() {
       if (navigator.onLine) {
         this.$store.dispatch("signInGoogle");
+      } else {
+        this.offlineInfo = true;
+      }
+    },
+    signInFacebook() {
+      if (navigator.onLine) {
+        this.$store.dispatch("signInFacebook");
       } else {
         this.offlineInfo = true;
       }

@@ -12,6 +12,11 @@
           <v-icon left>mdi-google</v-icon>
           {{ $t("app.signin-google") }}
         </v-btn>
+        <br />
+        <v-btn depressed v-if="!userIsAuthenticated" @click="signInFacebook" class="mt-2">
+          <v-icon left>mdi-facebook</v-icon>
+          {{ $t("app.signin-facebook") }}
+        </v-btn>
 
         <div v-if="userIsAuthenticated">
           <p>{{ $t("amino-counter.description") }}</p>
@@ -100,6 +105,13 @@ export default {
     signInGoogle() {
       if (navigator.onLine) {
         this.$store.dispatch("signInGoogle");
+      } else {
+        this.offlineInfo = true;
+      }
+    },
+    signInFacebook() {
+      if (navigator.onLine) {
+        this.$store.dispatch("signInFacebook");
       } else {
         this.offlineInfo = true;
       }

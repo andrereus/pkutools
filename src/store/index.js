@@ -43,6 +43,26 @@ export default new Vuex.Store({
           console.log(error);
         });
     },
+    signInFacebook({ commit }) {
+      firebase
+        .auth()
+        .signInWithPopup(new firebase.auth.FacebookAuthProvider())
+        .then(result => {
+          const newUser = {
+            id: result.user.uid,
+            name: result.user.displayName,
+            email: result.user.email,
+            photoUrl: result.user.photoURL
+          };
+          commit("setUser", newUser);
+        })
+        .then(() => {
+          this.dispatch("initRef");
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
     autoSignIn({ commit }, payload) {
       commit("setUser", {
         id: payload.uid,

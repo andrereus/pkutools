@@ -5,6 +5,7 @@
     "installation": "Der Button zum Installieren dieser Web App ist nur nach Seitenaktualisierung sichtbar (wenn noch nicht installiert).",
     "install": "Installiere Web App",
     "signin-google": "Anmelden mit Google",
+    "signin-facebook": "Anmelden mit Facebook",
     "signout": "Abmelden",
     "update-info": "Eine neuere Version ist verfügbar.",
     "update": "Aktualisieren",

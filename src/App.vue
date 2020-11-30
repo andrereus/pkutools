@@ -176,6 +176,13 @@
             </span>
           </v-list-item>
 
+          <v-list-item v-if="!userIsAuthenticated" @click="signInFacebook">
+            <span>
+              <v-icon>mdi-facebook</v-icon>
+              {{ $t("app.signin-facebook") }}
+            </span>
+          </v-list-item>
+
           <v-list-item v-if="userIsAuthenticated">
             <span>
               <v-icon>mdi-account</v-icon>
@@ -341,6 +348,13 @@ export default {
     signInGoogle() {
       if (navigator.onLine) {
         this.$store.dispatch("signInGoogle");
+      } else {
+        this.offlineInfo = true;
+      }
+    },
+    signInFacebook() {
+      if (navigator.onLine) {
+        this.$store.dispatch("signInFacebook");
       } else {
         this.offlineInfo = true;
       }
