@@ -111,7 +111,7 @@
             </v-card>
           </v-dialog>
 
-          <v-btn depressed class="mr-3 mb-3" @click="saveResult">{{ $t("common.save") }}</v-btn>
+          <v-btn depressed color="success" class="mr-3 mb-3" @click="saveResult">{{ $t("phe-log.save-day") }}</v-btn>
           <v-btn depressed class="mr-3 mb-3" @click="reset">{{ $t("common.reset") }}</v-btn>
 
           <v-dialog v-model="dialog2" max-width="500px" @click:outside="setMax">
@@ -317,6 +317,12 @@ export default {
           .push({
             date: format(new Date(), "yyyy-MM-dd"),
             phe: this.pheResult
+          })
+          .then(() => {
+            firebase
+              .database()
+              .ref(this.user.id + "/pheLog")
+              .remove();
           });
         this.$router.push("phe-diary");
       }
