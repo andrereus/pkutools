@@ -61,7 +61,7 @@
 
           <v-list-item to="/phe-log">
             <v-list-item-action>
-              <v-icon>mdi-book</v-icon>
+              <v-icon>mdi-text-box</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -71,7 +71,7 @@
 
           <v-list-item to="/amino-counter">
             <v-list-item-action>
-              <v-icon>mdi-cup</v-icon>
+              <v-icon>mdi-cup-water</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -81,7 +81,7 @@
 
           <v-list-item to="/phe-diary">
             <v-list-item-action>
-              <v-icon>mdi-notebook</v-icon>
+              <v-icon>mdi-book</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -253,15 +253,15 @@
       </v-btn>
 
       <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
-        <v-icon>mdi-book</v-icon>
+        <v-icon>mdi-text-box</v-icon>
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
-        <v-icon>mdi-cup</v-icon>
+        <v-icon>mdi-cup-water</v-icon>
       </v-btn>
 
       <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
-        <v-icon>mdi-notebook</v-icon>
+        <v-icon>mdi-book</v-icon>
       </v-btn>
     </v-bottom-navigation>
 
