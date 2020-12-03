@@ -83,7 +83,25 @@
           </v-menu>
         </div>
 
-        <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 illustration"></v-img>
+        <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
+
+        <div v-if="this.$i18n.locale === 'en'" class="yt-container">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/lmiejnEFccY"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div v-if="this.$i18n.locale === 'de'" class="yt-container">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/5_-F4tM8_RQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
 
         <h2 class="headline my-6">{{ $t("home.features") }}</h2>
         <FeatureComparison home class="mb-6" />
@@ -184,5 +202,25 @@ pwa-install::part(openButton) {
 
 .v-btn {
   text-transform: none;
+}
+
+.yt-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &:after {
+    padding-top: 56.25%;
+    display: block;
+    content: "";
+  }
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>
