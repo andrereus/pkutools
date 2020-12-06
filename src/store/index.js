@@ -28,8 +28,6 @@ export default new Vuex.Store({
         .auth()
         .signInWithPopup(new firebase.auth.GoogleAuthProvider().addScope("email"))
         .then(result => {
-          // eslint-disable-next-line
-          debugger;
           const newUser = {
             id: result.user.uid,
             name: result.user.displayName,
@@ -66,8 +64,6 @@ export default new Vuex.Store({
         });
     },
     autoSignIn({ commit }, payload) {
-      // eslint-disable-next-line
-      debugger;
       commit("setUser", {
         id: payload.uid,
         name: payload.displayName,
