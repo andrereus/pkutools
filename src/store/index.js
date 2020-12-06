@@ -26,12 +26,14 @@ export default new Vuex.Store({
     signInGoogle({ commit }) {
       firebase
         .auth()
-        .signInWithPopup(new firebase.auth.GoogleAuthProvider())
+        .signInWithPopup(new firebase.auth.GoogleAuthProvider().addScope("email"))
         .then(result => {
+          // eslint-disable-next-line
+          debugger;
           const newUser = {
             id: result.user.uid,
             name: result.user.displayName,
-            email: result.user.email,
+            email: result.additionalUserInfo.profile.email,
             photoUrl: result.user.photoURL
           };
           commit("setUser", newUser);
@@ -46,12 +48,12 @@ export default new Vuex.Store({
     signInFacebook({ commit }) {
       firebase
         .auth()
-        .signInWithPopup(new firebase.auth.FacebookAuthProvider())
+        .signInWithPopup(new firebase.auth.FacebookAuthProvider().addScope("email"))
         .then(result => {
           const newUser = {
             id: result.user.uid,
             name: result.user.displayName,
-            email: result.user.email,
+            email: result.additionalUserInfo.profile.email,
             photoUrl: result.user.photoURL
           };
           commit("setUser", newUser);
@@ -64,10 +66,12 @@ export default new Vuex.Store({
         });
     },
     autoSignIn({ commit }, payload) {
+      // eslint-disable-next-line
+      debugger;
       commit("setUser", {
         id: payload.uid,
         name: payload.displayName,
-        email: payload.email,
+        email: payload.providerData[0].email,
         photoUrl: payload.photoURL
       });
     },
