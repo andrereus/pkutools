@@ -11,13 +11,13 @@
         <!-- Text inputs need keyup on mobile -->
         <v-text-field
           :value="search"
-          @keyup="search = $event.target.value"
+          @keyup="typing($event)"
           :label="$t('phe-search.search')"
           filled
           single-line
           ref="foodSearch"
           clearable
-          @click:clear="search = $event.target.value"
+          @click:clear="typing($event)"
           autocomplete="off"
         ></v-text-field>
 
@@ -83,10 +83,27 @@
           </v-card>
         </v-dialog>
 
-        <v-btn depressed href="https://pkumanager.com/" target="_blank" class="mt-6">
-          {{ $t("phe-search.advanced") }}
-          <v-icon>mdi-open-in-new</v-icon>
-        </v-btn>
+        <v-btn depressed @click="searchFood" color="primary" class="my-6">{{ $t("phe-search.advanced") }}</v-btn>
+
+        <v-data-table
+          :headers="headers"
+          :items="advancedFood"
+          sort-by="name"
+          disable-pagination
+          hide-default-footer
+          mobile-breakpoint="0"
+          v-if="advancedFood !== null"
+        >
+          <template v-slot:item="{ item }">
+            <tr @click="loadItem(item)" class="tr-edit">
+              <td class="text-start">
+                <img :src="publicPath + 'img/food-icons/Organic Food.svg'" width="25" class="food-icon" />
+                {{ item.name }}
+              </td>
+              <td class="text-start">{{ item.phe }}</td>
+            </tr>
+          </template>
+        </v-data-table>
       </v-col>
     </v-row>
   </div>
@@ -123,7 +140,8 @@ export default {
       { text: "Phe", value: "phe" }
     ],
     enFood,
-    deFood
+    deFood,
+    advancedFood: null
   }),
   methods: {
     loadItem(item) {
@@ -148,6 +166,27 @@ export default {
         });
       this.dialog = false;
       this.$router.push("phe-log");
+    },
+    typing($event) {
+      this.search = $event.target.value;
+      this.advancedFood = null;
+    },
+    async searchFood() {
+      if (this.$i18n.locale === "de") {
+        const res = await fetch(this.publicPath + "data/de-food-advanced.json");
+        const food = await res.json();
+        this.advancedFood = food.filter(food => {
+          const regex = new RegExp(`${this.search}`, `gi`);
+          return food.name.match(regex);
+        });
+      } else {
+        const res = await fetch(this.publicPath + "data/en-food-advanced.json");
+        const food = await res.json();
+        this.advancedFood = food.filter(food => {
+          const regex = new RegExp(`${this.search}`, `gi`);
+          return food.name.match(regex);
+        });
+      }
     }
   },
   computed: {
