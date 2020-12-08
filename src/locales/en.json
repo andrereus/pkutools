@@ -40,7 +40,8 @@
     "title": "Phe Search",
     "description": "Search for phe values.",
     "search": "Search",
-    "weight": "Weight (in g)"
+    "weight": "Weight (in g)",
+    "advanced": "Advanced Search"
   },
   "phe-calculator": {
     "title": "Phe Calculator",

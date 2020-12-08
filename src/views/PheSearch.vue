@@ -82,6 +82,11 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
+
+        <v-btn depressed href="https://pkumanager.com/" target="_blank" class="mt-6">
+          {{ $t("phe-search.advanced") }}
+          <v-icon>mdi-open-in-new</v-icon>
+        </v-btn>
       </v-col>
     </v-row>
   </div>
