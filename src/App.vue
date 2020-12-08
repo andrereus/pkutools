@@ -280,15 +280,19 @@
 
         <v-card-text>
           <v-btn depressed to="/phe-search" color="primary" class="mr-3 mb-3" @click="dialog = false">
+            <v-icon left>mdi-magnify</v-icon>
             {{ $t("phe-search.title") }}
           </v-btn>
           <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mb-3" @click="dialog = false">
+            <v-icon left>mdi-calculator</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
           <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3" @click="dialog = false">
+            <v-icon left>mdi-calculator-variant</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
           <v-btn depressed to="/own-food" color="primary" class="mr-3 mb-3" @click="dialog = false">
+            <v-icon left>mdi-food-apple</v-icon>
             {{ $t("own-food.title") }}
           </v-btn>
         </v-card-text>

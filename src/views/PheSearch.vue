@@ -83,7 +83,10 @@
           </v-card>
         </v-dialog>
 
-        <v-btn depressed @click="searchFood" color="primary" class="my-6">{{ $t("phe-search.advanced") }}</v-btn>
+        <v-btn depressed @click="searchFood" color="primary" class="my-6">
+          <v-icon left>mdi-chevron-down</v-icon>
+          {{ $t("phe-search.advanced") }}
+        </v-btn>
 
         <v-data-table
           :headers="headers"
