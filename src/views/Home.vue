@@ -52,11 +52,16 @@
         </div>
 
         <div v-if="!userIsAuthenticated">
-          <v-btn depressed to="/phe-search" color="primary" class="mr-3 mb-3">{{ $t("phe-search.title") }}</v-btn>
+          <v-btn depressed to="/phe-search" color="primary" class="mr-3 mb-3">
+            <v-icon left>mdi-magnify</v-icon>
+            {{ $t("phe-search.title") }}
+          </v-btn>
           <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mb-3">
+            <v-icon left>mdi-calculator</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
           <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3">
+            <v-icon left>mdi-calculator-variant</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
 
