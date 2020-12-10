@@ -41,7 +41,8 @@
     "description": "Search for phe values.",
     "search": "Search",
     "weight": "Weight (in g)",
-    "advanced": "Advanced Search"
+    "advanced": "Advanced Search",
+    "advanced-info": "Search through an additional food source"
   },
   "phe-calculator": {
     "title": "Phe Calculator",
