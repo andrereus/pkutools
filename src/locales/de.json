@@ -34,7 +34,9 @@
   "home": {
     "title": "Start",
     "features": "Funktionen",
-    "more": "Und mehr"
+    "more": "Und mehr",
+    "video": "Video ansehen",
+    "mobile-video": "Mobile Version"
   },
   "phe-search": {
     "title": "Phe Suche",

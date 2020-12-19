@@ -34,7 +34,9 @@
   "home": {
     "title": "Home",
     "features": "Features",
-    "more": "And more"
+    "more": "And more",
+    "video": "Watch video",
+    "mobile-video": "Mobile version"
   },
   "phe-search": {
     "title": "Phe Search",
