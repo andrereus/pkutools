@@ -83,7 +83,10 @@
           </v-card>
         </v-dialog>
 
-        <v-btn depressed @click="searchFood" class="my-6">{{ $t("phe-search.advanced") }}</v-btn>
+        <v-btn depressed @click="searchFood" class="my-6">
+          <v-icon left>mdi-magnify</v-icon>
+          {{ $t("phe-search.advanced") }}
+        </v-btn>
 
         <v-tooltip top>
           <template v-slot:activator="{ on, attrs }">
