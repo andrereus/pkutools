@@ -90,9 +90,19 @@
           </v-list-item>
         </v-list-item-group>
 
+        <v-list-item to="/help">
+          <v-list-item-action>
+            <v-icon>mdi-help-circle</v-icon>
+          </v-list-item-action>
+
+          <v-list-item-content>
+            <v-list-item-title>{{ $t("help.title") }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-group prepend-icon="mdi-information">
           <template v-slot:activator>
-            <v-list-item-title>{{ $t("app.about") }}</v-list-item-title>
+            <v-list-item-title>{{ $t("app.more") }}</v-list-item-title>
           </template>
 
           <v-list-item dense to="/other-apps">
@@ -206,6 +216,13 @@
               &nbsp;
               <span v-if="!dark">{{ $t("app.dark") }}</span>
               <span v-if="dark">{{ $t("app.light") }}</span>
+            </span>
+          </v-list-item>
+
+          <v-list-item to="/help">
+            <span>
+              <v-icon>mdi-help-circle</v-icon>
+              {{ $t("help.title") }}
             </span>
           </v-list-item>
         </v-list>
