@@ -262,7 +262,7 @@ export default {
     getlocalDate(date) {
       if (date) {
         const locales = { enUS, de };
-        return format(parseISO(date), "PP", { locale: locales[this.$i18n.locale] });
+        return format(parseISO(date), "eee P", { locale: locales[this.$i18n.locale] });
       } else {
         return "";
       }
@@ -284,7 +284,7 @@ export default {
     computelocalDate() {
       if (this.editedItem.date) {
         const locales = { enUS, de };
-        return format(parseISO(this.editedItem.date), "PP", { locale: locales[this.$i18n.locale] });
+        return format(parseISO(this.editedItem.date), "eee P", { locale: locales[this.$i18n.locale] });
       } else {
         return "";
       }
