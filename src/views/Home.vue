@@ -35,7 +35,7 @@
                 :size="105"
                 :width="10"
                 :value="((aminoCounter.count || 0) * 100) / (settings.maxAmino || 3)"
-                color="primary"
+                color="teal"
               >
                 {{ aminoCounter.count || 0 }}
               </v-progress-circular>
