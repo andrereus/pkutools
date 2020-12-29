@@ -114,12 +114,12 @@
           {{ $t("home.video") }}
         </v-btn>
 
-        <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-4">
+        <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
           {{ $t("home.mobile-video") }}
         </v-btn>
 
         <div v-if="!userIsAuthenticated">
-          <h2 class="headline mt-5 mb-6">{{ $t("home.features") }}</h2>
+          <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
           <FeatureComparison home class="mb-6" />
         </div>
 
