@@ -321,22 +321,27 @@ export default {
       this.dialog2 = false;
     },
     saveResult() {
-      let r = confirm(this.$t("phe-log.save-diary") + "?");
-      if (r === true) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary")
-          .push({
-            date: format(new Date(), "yyyy-MM-dd"),
-            phe: this.pheResult
-          })
-          .then(() => {
-            firebase
-              .database()
-              .ref(this.user.id + "/pheLog")
-              .remove();
-          });
-        this.$router.push("phe-diary");
+      if (this.pheDiary.length >= 90) {
+        alert(this.$t("phe-diary.limit") + ".");
+      } else {
+        let r = confirm(this.$t("phe-log.save-diary") + "?");
+        if (r === true) {
+          firebase
+            .database()
+            .ref(this.user.id + "/pheDiary")
+            .push({
+              date: format(new Date(), "yyyy-MM-dd"),
+              phe: this.pheResult,
+              log: this.pheLog
+            })
+            .then(() => {
+              firebase
+                .database()
+                .ref(this.user.id + "/pheLog")
+                .remove();
+            });
+          this.$router.push("phe-diary");
+        }
       }
     }
   },
@@ -381,9 +386,9 @@ export default {
   vertical-align: bottom;
 }
 
-.checkbox-clearfix {
-  overflow: hidden;
-}
+//.checkbox-clearfix {
+//  overflow: hidden;
+//}
 
 .theme--light.v-data-table {
   background-color: #fafafa;

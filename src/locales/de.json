@@ -86,7 +86,9 @@
     "title": "Phe Tagebuch",
     "description": "Protokolliere Phe-Werte über mehrere Tage.",
     "date": "Datum",
-    "chart": "Noch nicht genug Einträge für das Diagramm."
+    "phe": "Gesamt Phe (in mg)",
+    "chart": "Noch nicht genug Einträge für das Diagramm.",
+    "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen"
   },
   "own-food": {
     "title": "Eigene Lebensmittel",

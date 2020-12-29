@@ -66,7 +66,43 @@
                   <v-date-picker v-model="editedItem.date" no-title scrollable @input="menu = false"></v-date-picker>
                 </v-menu>
 
-                <v-text-field filled label="Phe (in mg)" v-model.number="editedItem.phe" type="number"></v-text-field>
+                <v-text-field
+                  filled
+                  :label="$t('phe-diary.phe')"
+                  v-model.number="editedItem.phe"
+                  type="number"
+                ></v-text-field>
+
+                <v-data-table
+                  :headers="headers2"
+                  :items="editedItem.log"
+                  disable-pagination
+                  hide-default-footer
+                  mobile-breakpoint="0"
+                  class="table-read-only mt-n2 mb-3"
+                  v-if="editedItem.log"
+                >
+                  <template v-slot:item="{ item }">
+                    <tr class="tr-read-only">
+                      <td class="text-start">
+                        <img
+                          :src="publicPath + 'img/food-icons/' + item.icon"
+                          v-if="item.icon !== undefined"
+                          width="25"
+                          class="food-icon"
+                        />
+                        <img
+                          :src="publicPath + 'img/food-icons/Organic Food.svg'"
+                          v-if="item.icon === undefined"
+                          width="25"
+                          class="food-icon"
+                        />
+                        {{ item.name }}
+                      </td>
+                      <td class="text-start">{{ item.phe }}</td>
+                    </tr>
+                  </template>
+                </v-data-table>
               </v-card-text>
 
               <v-card-actions class="mt-n6">
@@ -112,6 +148,7 @@ export default {
     };
   },
   data: () => ({
+    publicPath: process.env.BASE_URL,
     dialog: false,
     menu: false,
     headers: [
@@ -119,6 +156,14 @@ export default {
         text: "Date",
         align: "start",
         value: "date"
+      },
+      { text: "Phe", value: "phe" }
+    ],
+    headers2: [
+      {
+        text: "Name",
+        align: "start",
+        value: "name"
       },
       { text: "Phe", value: "phe" }
     ],
@@ -198,13 +243,17 @@ export default {
             phe: Number(this.editedItem.phe)
           });
       } else {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary")
-          .push({
-            date: this.editedItem.date,
-            phe: Number(this.editedItem.phe)
-          });
+        if (this.pheDiary.length >= 90) {
+          alert(this.$t("phe-diary.limit") + ".");
+        } else {
+          firebase
+            .database()
+            .ref(this.user.id + "/pheDiary")
+            .push({
+              date: this.editedItem.date,
+              phe: Number(this.editedItem.phe)
+            });
+        }
       }
       this.close();
     },
@@ -263,11 +312,23 @@ export default {
   background-color: #121212;
 }
 
+.food-icon {
+  vertical-align: bottom;
+}
+
 .theme--light.v-data-table {
   background-color: #fafafa;
 }
 
 .v-btn {
   text-transform: none;
+}
+
+.theme--light.table-read-only {
+  background-color: #fff;
+}
+
+.tr-read-only:hover {
+  background-color: inherit !important;
 }
 </style>
