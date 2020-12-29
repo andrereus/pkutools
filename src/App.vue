@@ -277,7 +277,7 @@
       </v-btn>
 
       <v-btn @click="dialog = true" value="add" :aria-label="$t('common.add')" class="add-button">
-        <v-icon color="teal" large>mdi-plus-circle</v-icon>
+        <v-icon color="cyan" large>mdi-plus-circle</v-icon>
       </v-btn>
 
       <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
