@@ -26,6 +26,7 @@
             height="40"
             class="white--text my-6"
             rounded
+            color="teal"
           >
             {{ aminoCounter.count || 0 }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
