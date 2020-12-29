@@ -210,17 +210,20 @@ export default {
       this.dialog = true;
     },
     deleteItem(editedIndex) {
-      firebase
-        .database()
-        .ref(this.user.id + "/pheDiary")
-        .once("value", snapshot => {
-          this.editedKey = Object.keys(snapshot.val())[editedIndex];
-        });
-      firebase
-        .database()
-        .ref(this.user.id + "/pheDiary/" + this.editedKey)
-        .remove();
-      this.close();
+      let r = confirm(this.$t("common.delete") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/pheDiary")
+          .once("value", snapshot => {
+            this.editedKey = Object.keys(snapshot.val())[editedIndex];
+          });
+        firebase
+          .database()
+          .ref(this.user.id + "/pheDiary/" + this.editedKey)
+          .remove();
+        this.close();
+      }
     },
     close() {
       this.dialog = false;

@@ -108,7 +108,7 @@
           href="https://youtu.be/5_-F4tM8_RQ"
           target="_blank"
           color="primary"
-          class="mr-3 mb-3"
+          class="mr-3 mb-5"
         >
           <v-icon left>mdi-youtube</v-icon>
           {{ $t("home.video") }}
