@@ -68,7 +68,7 @@
     "lock-values": "Calculation Mode",
     "lock-info": "Weight and Phe are changed in parallel",
     "max": "Phe tolerance per day",
-    "save-diary": "Save total result in Phe Diary and reset Phe Log",
+    "save-diary": "Save in Phe Diary and reset Phe Log",
     "weight": "Weight (in mg)",
     "total": "Total",
     "remaining": "Remaining",
