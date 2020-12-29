@@ -69,16 +69,6 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/amino-counter">
-            <v-list-item-action>
-              <v-icon>mdi-cup-water</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
           <v-list-item to="/phe-diary">
             <v-list-item-action>
               <v-icon>mdi-book</v-icon>
@@ -86,6 +76,16 @@
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item to="/amino-counter">
+            <v-list-item-action>
+              <v-icon>mdi-cup-water</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -272,20 +272,20 @@
         <v-icon>mdi-food-apple</v-icon>
       </v-btn>
 
-      <v-btn @click="dialog = true" value="add" :aria-label="$t('common.add')" class="add-button">
-        <v-icon>mdi-plus-circle-outline</v-icon>
-      </v-btn>
-
       <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
         <v-icon>mdi-text-box</v-icon>
       </v-btn>
 
-      <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
-        <v-icon>mdi-cup-water</v-icon>
+      <v-btn @click="dialog = true" value="add" :aria-label="$t('common.add')" class="add-button">
+        <v-icon color="primary" large>mdi-plus-circle</v-icon>
       </v-btn>
 
       <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
         <v-icon>mdi-book</v-icon>
+      </v-btn>
+
+      <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
+        <v-icon>mdi-cup-water</v-icon>
       </v-btn>
     </v-bottom-navigation>
 
