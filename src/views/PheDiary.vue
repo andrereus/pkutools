@@ -8,15 +8,17 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-btn depressed v-if="!userIsAuthenticated" @click="signInGoogle" class="mt-2">
-          <v-icon left>mdi-google</v-icon>
-          {{ $t("app.signin-google") }}
-        </v-btn>
-        <br />
-        <v-btn depressed v-if="!userIsAuthenticated" @click="signInFacebook" class="mt-2">
-          <v-icon left>mdi-facebook</v-icon>
-          {{ $t("app.signin-facebook") }}
-        </v-btn>
+        <div v-if="!userIsAuthenticated">
+          <v-btn depressed @click="signInGoogle" class="mt-2">
+            <v-icon left>mdi-google</v-icon>
+            {{ $t("app.signin-google") }}
+          </v-btn>
+          <br />
+          <v-btn depressed @click="signInFacebook" class="mt-2">
+            <v-icon left>mdi-facebook</v-icon>
+            {{ $t("app.signin-facebook") }}
+          </v-btn>
+        </div>
 
         <div v-if="userIsAuthenticated">
           <v-sparkline :value="graph" fill smooth></v-sparkline>
