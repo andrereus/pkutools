@@ -30,6 +30,7 @@
             hide-default-footer
             mobile-breakpoint="0"
             sort-by="date"
+            sort-desc
             class="mb-3"
           >
             <template v-slot:item="{ item }">
@@ -329,8 +330,8 @@ export default {
   text-transform: none;
 }
 
-.theme--light.table-read-only {
-  background-color: #fff;
+.theme--dark.table-read-only {
+  background-color: #2e2e2e;
 }
 
 .tr-read-only:hover {
