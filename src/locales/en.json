@@ -103,7 +103,6 @@
     "description": "Help and FAQ for PKU Tools.",
     "contact": "Contact",
     "email": "Email",
-    "video": "Instruction video",
     "faq": "FAQ",
     "install": "How can the app be installed?",
     "install-p1": "This website is a \"Progressive Web App\" that can be installed on any device. There is an installation button on the start page (which is visible after reloading the page).",
@@ -112,7 +111,9 @@
     "sign-in-p1": "You can sign in with Google or Facebook (from the menu in the top right corner).",
     "sign-in-p2": "No other sign in options are planned at the moment.",
     "support": "You want to support the developer of the app?",
-    "support-p1": "All support is completely voluntary, the app is free and will probably remain so! You can buy me coffee here if you want to:"
+    "support-p1": "All support is completely voluntary, the app is free and will probably remain so! You can buy me coffee here if you want to:",
+    "roadmap": "What's planned and what's new?",
+    "roadmap-p1": "The app is constantly being optimized. There is an overview of planned and new major features on a (German) Trello Board at:"
   },
   "other-apps": {
     "title": "Other Apps",

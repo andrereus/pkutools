@@ -8,8 +8,6 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline mb-6">{{ $t("help.video") }}</h2>
-
         <v-btn
           v-if="this.$i18n.locale === 'en'"
           depressed
@@ -48,6 +46,12 @@
         <p>{{ $t("help.sign-in-p1") }}</p>
         <p>{{ $t("help.sign-in-p2") }}</p>
 
+        <h3>{{ $t("help.roadmap") }}</h3>
+        <p>
+          {{ $t("help.roadmap-p1") }}
+          <a href="https://trello.com/b/jJiZ0tJm" target="_blank">https://trello.com/b/jJiZ0tJm</a>
+        </p>
+
         <h3>{{ $t("help.support") }}</h3>
         <p>
           {{ $t("help.support-p1") }}
@@ -83,5 +87,9 @@ export default {
 <style lang="scss" scoped>
 .hidden {
   display: none;
+}
+
+.v-btn {
+  text-transform: none;
 }
 </style>
