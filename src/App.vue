@@ -274,6 +274,10 @@
       <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
         <v-icon>mdi-cup-water</v-icon>
       </v-btn>
+
+      <v-btn to="/help" value="help" class="mobile-nav-hide" :aria-label="$t('help.title')">
+        <v-icon>mdi-help-circle</v-icon>
+      </v-btn>
     </v-bottom-navigation>
 
     <v-dialog v-model="dialog" max-width="500px">
