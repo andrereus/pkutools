@@ -41,9 +41,10 @@
   "phe-search": {
     "title": "Phe Search",
     "description": "Search for phe values.",
+    "description-p1": "Selected foods from the USDA database including the possibility to search all foods.",
     "search": "Search",
     "weight": "Weight (in g)",
-    "advanced": "Mehr Ergebnisse"
+    "advanced": "All food results"
   },
   "phe-calculator": {
     "title": "Phe Calculator",

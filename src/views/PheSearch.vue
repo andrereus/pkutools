@@ -8,6 +8,8 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <p>{{ $t("phe-search.description-p1") }}</p>
+
         <!-- Text inputs need keyup on mobile -->
         <v-text-field
           :value="search"

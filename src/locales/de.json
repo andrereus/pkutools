@@ -41,6 +41,7 @@
   "phe-search": {
     "title": "Phe Suche",
     "description": "Suche nach Phe-Werten.",
+    "description-p1": "Ausgesuchte Lebensmittel aus der USDA Datenbank inklusive der Möglichkeit weitere Ergebnisse aus dem Web zu durchsuchen (empfohlen).",
     "search": "Suche",
     "weight": "Gewicht (in g)",
     "advanced": "Ergebnisse aus dem Web"
