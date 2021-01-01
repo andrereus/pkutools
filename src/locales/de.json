@@ -43,8 +43,7 @@
     "description": "Suche nach Phe-Werten.",
     "search": "Suche",
     "weight": "Gewicht (in g)",
-    "advanced": "Mehr suchen",
-    "advanced-info": "Eine zusätzliche Lebensmittelquelle durchsuchen"
+    "advanced": "Ergebnisse aus dem Web"
   },
   "phe-calculator": {
     "title": "Phe Rechner",
