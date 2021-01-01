@@ -44,7 +44,7 @@
     "description-p1": "Selected foods from the USDA database including the possibility to search all foods.",
     "search": "Search",
     "weight": "Weight (in g)",
-    "advanced": "All food results"
+    "advanced": "Search all foods"
   },
   "phe-calculator": {
     "title": "Phe Calculator",
