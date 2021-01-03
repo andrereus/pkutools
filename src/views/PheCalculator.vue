@@ -8,6 +8,10 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <router-link to="/protein-calculator" class="head-link mt-n1 mb-6">
+          {{ $t("phe-calculator.protein-link") }}
+        </router-link>
+
         <v-text-field filled :label="$t('phe-calculator.phe')" v-model.number="phe" type="number"></v-text-field>
         <v-text-field filled :label="$t('phe-calculator.weight')" v-model.number="weight" type="number"></v-text-field>
 
@@ -88,5 +92,10 @@ export default {
 <style lang="scss" scoped>
 .v-btn {
   text-transform: none;
+}
+
+.head-link {
+  display: block;
+  text-decoration: none;
 }
 </style>

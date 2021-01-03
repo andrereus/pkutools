@@ -51,12 +51,13 @@
     "description": "Calculate phe values.",
     "phe": "Phe per 100g (in mg)",
     "weight": "Eaten weight (in g)",
-    "name": "Food name"
+    "name": "Food name",
+    "protein-link": "Calculate with protein instead ->"
   },
   "protein-calculator": {
     "title": "Protein Calculator",
     "description": "Calculate approximate phe values from protein.",
-    "factor": "Calculate as fruits or vegetables",
+    "factor": "Fruits / vegetables",
     "protein": "Protein per 100g (in g)",
     "phe": "Phe per 100g",
     "weight": "Eaten weight (in g)",
