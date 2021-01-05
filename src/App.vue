@@ -233,7 +233,7 @@
         <v-icon>mdi-home</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-search" value="phe-search" class="mobile-nav-hide" :aria-label="$t('phe-search.title')">
+      <v-btn to="/phe-search" value="phe-search" :aria-label="$t('phe-search.title')">
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
 
@@ -259,19 +259,19 @@
         <v-icon>mdi-food-apple</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
-        <v-icon>mdi-text-box</v-icon>
-      </v-btn>
-
       <v-btn @click="dialog = true" value="add" :aria-label="$t('common.add')" class="add-button">
         <v-icon color="cyan" large>mdi-plus-circle</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
+        <v-icon>mdi-text-box</v-icon>
       </v-btn>
 
       <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
         <v-icon>mdi-book</v-icon>
       </v-btn>
 
-      <v-btn to="/amino-counter" value="amino-counter" :aria-label="$t('amino-counter.title')">
+      <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
         <v-icon>mdi-cup-water</v-icon>
       </v-btn>
 
