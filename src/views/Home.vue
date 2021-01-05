@@ -90,36 +90,36 @@
 
         <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
 
-        <v-btn
-          v-if="this.$i18n.locale === 'en'"
-          depressed
-          href="https://youtu.be/lmiejnEFccY"
-          target="_blank"
-          color="primary"
-          class="mr-3 mb-5"
-        >
-          <v-icon left>mdi-youtube</v-icon>
-          {{ $t("home.video") }}
-        </v-btn>
-
-        <v-btn
-          v-if="this.$i18n.locale === 'de'"
-          depressed
-          href="https://youtu.be/5_-F4tM8_RQ"
-          target="_blank"
-          color="primary"
-          class="mr-3 mb-5"
-        >
-          <v-icon left>mdi-play-circle-outline</v-icon>
-          {{ $t("home.video") }}
-        </v-btn>
-
-        <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
-          <v-icon left>mdi-play</v-icon>
-          {{ $t("home.mobile-video") }}
-        </v-btn>
-
         <div v-if="!userIsAuthenticated">
+          <v-btn
+            v-if="this.$i18n.locale === 'en'"
+            depressed
+            href="https://youtu.be/lmiejnEFccY"
+            target="_blank"
+            color="primary"
+            class="mr-3 mb-5"
+          >
+            <v-icon left>mdi-play-circle-outline</v-icon>
+            {{ $t("home.video") }}
+          </v-btn>
+
+          <v-btn
+            v-if="this.$i18n.locale === 'de'"
+            depressed
+            href="https://youtu.be/5_-F4tM8_RQ"
+            target="_blank"
+            color="primary"
+            class="mr-3 mb-5"
+          >
+            <v-icon left>mdi-play-circle-outline</v-icon>
+            {{ $t("home.video") }}
+          </v-btn>
+
+          <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
+            <v-icon left>mdi-play</v-icon>
+            {{ $t("home.mobile-video") }}
+          </v-btn>
+
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
           <FeatureComparison home class="mb-8" />
         </div>
