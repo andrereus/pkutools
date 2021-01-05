@@ -8,6 +8,8 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <v-alert dense text color="blue">{{ $t("app.info") }}</v-alert>
+
         <v-text-field
           v-model="search"
           :label="$t('phe-search.search')"
