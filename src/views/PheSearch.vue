@@ -8,51 +8,47 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p>{{ $t("phe-search.description-p1") }}</p>
-
-        <!-- Text inputs need keyup on mobile -->
         <v-text-field
-          :value="search"
-          @keyup="typing($event)"
+          v-model="search"
           :label="$t('phe-search.search')"
           filled
           single-line
-          ref="foodSearch"
-          clearable
-          @click:clear="typing($event)"
           autocomplete="off"
+          append-icon="mdi-magnify"
+          @click:append="searchFood"
+          @keyup.enter="searchFood"
         ></v-text-field>
 
-        <v-data-table
-          :headers="headers"
-          :items="loadedFood"
-          :search="search"
-          sort-by="name"
-          disable-pagination
-          hide-default-footer
-          mobile-breakpoint="0"
-        >
-          <template v-slot:item="{ item }">
-            <tr @click="loadItem(item)" class="tr-edit">
-              <td class="text-start">
-                <img
-                  :src="publicPath + 'img/food-icons/' + item.icon"
-                  v-if="item.icon !== undefined"
-                  width="25"
-                  class="food-icon"
-                />
-                <img
-                  :src="publicPath + 'img/food-icons/Organic Food.svg'"
-                  v-if="item.icon === undefined"
-                  width="25"
-                  class="food-icon"
-                />
-                {{ item.name }}
-              </td>
-              <td class="text-start">{{ item.phe }}</td>
-            </tr>
-          </template>
-        </v-data-table>
+        <!--        <v-data-table-->
+        <!--          :headers="headers"-->
+        <!--          :items="loadedFood"-->
+        <!--          :search="search"-->
+        <!--          sort-by="name"-->
+        <!--          disable-pagination-->
+        <!--          hide-default-footer-->
+        <!--          mobile-breakpoint="0"-->
+        <!--        >-->
+        <!--          <template v-slot:item="{ item }">-->
+        <!--            <tr @click="loadItem(item)" class="tr-edit">-->
+        <!--              <td class="text-start">-->
+        <!--                <img-->
+        <!--                  :src="publicPath + 'img/food-icons/' + item.icon"-->
+        <!--                  v-if="item.icon !== undefined"-->
+        <!--                  width="25"-->
+        <!--                  class="food-icon"-->
+        <!--                />-->
+        <!--                <img-->
+        <!--                  :src="publicPath + 'img/food-icons/Organic Food.svg'"-->
+        <!--                  v-if="item.icon === undefined"-->
+        <!--                  width="25"-->
+        <!--                  class="food-icon"-->
+        <!--                />-->
+        <!--                {{ item.name }}-->
+        <!--              </td>-->
+        <!--              <td class="text-start">{{ item.phe }}</td>-->
+        <!--            </tr>-->
+        <!--          </template>-->
+        <!--        </v-data-table>-->
 
         <v-dialog v-model="dialog" max-width="500px">
           <v-card>
@@ -85,10 +81,10 @@
           </v-card>
         </v-dialog>
 
-        <v-btn depressed @click="searchFood" class="my-6">
-          <v-icon left>mdi-arrow-down</v-icon>
-          {{ $t("phe-search.advanced") }}
-        </v-btn>
+        <!--        <v-btn depressed @click="searchFood" class="my-6">-->
+        <!--          <v-icon left>mdi-arrow-down</v-icon>-->
+        <!--          {{ $t("phe-search.advanced") }}-->
+        <!--        </v-btn>-->
 
         <v-data-table
           :headers="headers"
@@ -109,6 +105,13 @@
             </tr>
           </template>
         </v-data-table>
+
+        <v-img
+          src="../assets/searching.svg"
+          alt="Search Illustration"
+          class="mt-4 mb-8 illustration"
+          v-if="advancedFood === null"
+        ></v-img>
       </v-col>
     </v-row>
   </div>
@@ -118,8 +121,6 @@
 import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/database";
-import enFood from "../components/data/en-food.json";
-import deFood from "../components/data/de-food.json";
 
 export default {
   metaInfo() {
@@ -144,8 +145,6 @@ export default {
       },
       { text: "Phe", value: "phe" }
     ],
-    enFood,
-    deFood,
     advancedFood: null
   }),
   methods: {
@@ -172,20 +171,20 @@ export default {
       this.dialog = false;
       this.$router.push("phe-log");
     },
-    typing($event) {
-      this.search = $event.target.value;
-      this.advancedFood = null;
-    },
+    // typing($event) {
+    //   this.search = $event.target.value;
+    //   this.advancedFood = null;
+    // },
     async searchFood() {
       if (this.$i18n.locale === "de") {
-        const res = await fetch(this.publicPath + "data/de-food-advanced.json");
+        const res = await fetch(this.publicPath + "data/frida.json");
         const food = await res.json();
         this.advancedFood = food.filter(food => {
           const regex = new RegExp(`${this.search}`, `gi`);
           return food.name.match(regex);
         });
       } else {
-        const res = await fetch(this.publicPath + "data/en-food-advanced.json");
+        const res = await fetch(this.publicPath + "data/usda.json");
         const food = await res.json();
         this.advancedFood = food.filter(food => {
           const regex = new RegExp(`${this.search}`, `gi`);
@@ -225,5 +224,10 @@ export default {
 
 .v-btn {
   text-transform: none;
+}
+
+.illustration {
+  max-width: 200px;
+  margin: 0 auto;
 }
 </style>

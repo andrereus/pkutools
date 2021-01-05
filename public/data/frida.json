@@ -1,0 +1,4722 @@
+[
+	{
+		"name": "Erdbeere, roh",
+		"phe": "22"
+	},
+	{
+		"name": "Apfel, roh, alle Sorten",
+		"phe": "7"
+	},
+	{
+		"name": "Banane, roh",
+		"phe": "35"
+	},
+	{
+		"name": "Kartoffel, roh",
+		"phe": "81"
+	},
+	{
+		"name": "Himbeere, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Milch, ganz, konventional (nicht Bio), 3,5% Fett",
+		"phe": "172"
+	},
+	{
+		"name": "Petersilie, roh",
+		"phe": "178"
+	},
+	{
+		"name": "Birne, roh",
+		"phe": "12"
+	},
+	{
+		"name": "Rhabarber, roh",
+		"phe": "26"
+	},
+	{
+		"name": "Currant, schwarz, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Joghurt Ebene, Vollmilch",
+		"phe": "166"
+	},
+	{
+		"name": "Sellerie, roh",
+		"phe": "33"
+	},
+	{
+		"name": "Blumenkohl, alle Sorten, roh",
+		"phe": "82"
+	},
+	{
+		"name": "Plum, roh",
+		"phe": "16"
+	},
+	{
+		"name": "Heidelbeeren, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Brokkoli, roh",
+		"phe": "131"
+	},
+	{
+		"name": "Blackberry, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Bohnen, braun, getrocknet, roh",
+		"phe": "937"
+	},
+	{
+		"name": "Bohnen, Wachs, roh",
+		"phe": "57"
+	},
+	{
+		"name": "Zitrone, roh",
+		"phe": "18"
+	},
+	{
+		"name": "Dill, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kale, roh",
+		"phe": "201"
+	},
+	{
+		"name": "Möhre, roh",
+		"phe": "18"
+	},
+	{
+		"name": "Garfish, roh",
+		"phe": "774"
+	},
+	{
+		"name": "Kohl, weiß, roh",
+		"phe": "22"
+	},
+	{
+		"name": "Hagebutte, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Holunder, roh",
+		"phe": "40"
+	},
+	{
+		"name": "Kirsche, roh",
+		"phe": "24"
+	},
+	{
+		"name": "Lachs, Atlantik, wild, roh",
+		"phe": "736"
+	},
+	{
+		"name": "Zuckermais, on-the-Cob, roh",
+		"phe": "189"
+	},
+	{
+		"name": "Milch, Buttermilch",
+		"phe": "171"
+	},
+	{
+		"name": "Milch, teilweise entrahmter, konventional (nicht organisch), 1,5% Fett",
+		"phe": "176"
+	},
+	{
+		"name": "Makrele, roh",
+		"phe": "740"
+	},
+	{
+		"name": "Mandel, roh",
+		"phe": "1210"
+	},
+	{
+		"name": "Wassermelone, roh",
+		"phe": "3"
+	},
+	{
+		"name": "Pfeffer, süß, grün, roh",
+		"phe": "27"
+	},
+	{
+		"name": "Pfeffer, süß, rot, roh",
+		"phe": "28"
+	},
+	{
+		"name": "Rettich, roh",
+		"phe": "20"
+	},
+	{
+		"name": "Currant, rot, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Rosenkohl, roh",
+		"phe": "131"
+	},
+	{
+		"name": "Beet, rot, roh",
+		"phe": "16"
+	},
+	{
+		"name": "Kohl, rot, roh",
+		"phe": "27"
+	},
+	{
+		"name": "Scholle, roh",
+		"phe": "644"
+	},
+	{
+		"name": "Sellerie, Sellerie Wurzel, roh",
+		"phe": "45"
+	},
+	{
+		"name": "Hering, gebeizt, Konserven",
+		"phe": "515"
+	},
+	{
+		"name": "Hering, roh",
+		"phe": "653"
+	},
+	{
+		"name": "Kohl, Frühling, roh",
+		"phe": "46"
+	},
+	{
+		"name": "Spinat, roh",
+		"phe": "122"
+	},
+	{
+		"name": "Stachelbeere, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Tomate, reif, roh, Herkunft unbekannt",
+		"phe": "21"
+	},
+	{
+		"name": "Wasser, Wasserhahn, trinken, Mittelwerte",
+		"phe": "0"
+	},
+	{
+		"name": "Traube, roh",
+		"phe": "13"
+	},
+	{
+		"name": "Erbsen, grün, roh",
+		"phe": "209"
+	},
+	{
+		"name": "Squash, roh",
+		"phe": "48"
+	},
+	{
+		"name": "Artischocke, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Bohnen, Mung, getrocknet, roh",
+		"phe": "1450"
+	},
+	{
+		"name": "Hafer, gewalzt, Mittelwerte",
+		"phe": "729"
+	},
+	{
+		"name": "Roggenmehl, dunkel, ganz Mahlzeit",
+		"phe": "419"
+	},
+	{
+		"name": "Weizen, Mehl, Vollkorn",
+		"phe": "522"
+	},
+	{
+		"name": "Ingwerwurzel, roh",
+		"phe": "49"
+	},
+	{
+		"name": "Okra, roh",
+		"phe": "64"
+	},
+	{
+		"name": "Spargel, grün, roh",
+		"phe": "49"
+	},
+	{
+		"name": "Fenchel, Wurzel, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Seelachs, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Buchweizen, ganz, roh",
+		"phe": "576"
+	},
+	{
+		"name": "Aubergine, roh",
+		"phe": "41"
+	},
+	{
+		"name": "Orange, roh",
+		"phe": "20"
+	},
+	{
+		"name": "Lamm, Bein, nicht spezifiziert, roh",
+		"phe": "804"
+	},
+	{
+		"name": "Kabeljau, Filet, roh",
+		"phe": "689"
+	},
+	{
+		"name": "Käse, halbhart, Feta, 40% FIDM",
+		"phe": "1000"
+	},
+	{
+		"name": "Schweinefleisch, Kragen mit Rinde, Roh",
+		"phe": "603"
+	},
+	{
+		"name": "Reisgraupe, braun, roh",
+		"phe": "348"
+	},
+	{
+		"name": "Zucker, Saccharose, weiß",
+		"phe": "null"
+	},
+	{
+		"name": "Schmalz, Schweinefleisch, verfeinert, Raffinol",
+		"phe": "0"
+	},
+	{
+		"name": "Schmalz, Schweinefleisch",
+		"phe": "0"
+	},
+	{
+		"name": "Wasser, in Flaschen abgefüllt, mit Kohlensäure versetzt",
+		"phe": "0"
+	},
+	{
+		"name": "Soft-Drink, ohne Zuckerzusatz, Mittelwert",
+		"phe": "0"
+	},
+	{
+		"name": "Fischöl, hydriertes",
+		"phe": "null"
+	},
+	{
+		"name": "Gans, Fleisch und Haut, roh",
+		"phe": "660"
+	},
+	{
+		"name": "Nuss, Kokos, roh",
+		"phe": "232"
+	},
+	{
+		"name": "Snacks, erweitert, potatobasis",
+		"phe": "null"
+	},
+	{
+		"name": "Makrele Mayonnaise-Salat",
+		"phe": "null"
+	},
+	{
+		"name": "Alkoholfreies Getränk (Licht), konzentriert (1 + 10), ohne Zuckerzusatz",
+		"phe": "0"
+	},
+	{
+		"name": "Soja Soße",
+		"phe": "364"
+	},
+	{
+		"name": "Käse, fest, 40% FIDM., Alle Sorten",
+		"phe": "1330"
+	},
+	{
+		"name": "Ymer, fettarm",
+		"phe": "315"
+	},
+	{
+		"name": "Käse, halbhart, Mozzarella, 45% FIDM.",
+		"phe": "1250"
+	},
+	{
+		"name": "Die Schmelzkäse, 45% FIDM.",
+		"phe": "1250"
+	},
+	{
+		"name": "Ente, Fleisch und Haut, roh",
+		"phe": "460"
+	},
+	{
+		"name": "Roggenmehl, Weizenmehl, verschraubter",
+		"phe": "522"
+	},
+	{
+		"name": "Puddingpulver",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, halbhart, Havarti, 30% FIDM.",
+		"phe": "1560"
+	},
+	{
+		"name": "Käse, fest, Danbo, 45% FIDM.",
+		"phe": "1230"
+	},
+	{
+		"name": "Lamb, Flanke, gewürzt, gekocht",
+		"phe": "760"
+	},
+	{
+		"name": "Zwiebeln, gehackte und frittierte",
+		"phe": "134"
+	},
+	{
+		"name": "Tee, ready-to-drink",
+		"phe": "null"
+	},
+	{
+		"name": "Kastanien, roh",
+		"phe": "83"
+	},
+	{
+		"name": "Kaffee, Instant, zubereitet mit Wasser",
+		"phe": "3"
+	},
+	{
+		"name": "Käse, halbhart, Esrom, 45% FIDM.",
+		"phe": "1250"
+	},
+	{
+		"name": "Erfrischungsgetränk, Zucker hinzugefügt",
+		"phe": "0"
+	},
+	{
+		"name": "Käse, fest, Elbo, 40% FIDM.",
+		"phe": "1380"
+	},
+	{
+		"name": "Kartoffelchips, grobe",
+		"phe": "244"
+	},
+	{
+		"name": "Käse, Roquefort, Dänisch, 50% FIDM.",
+		"phe": "1040"
+	},
+	{
+		"name": "Kaffee, Instant, entkoffeiniert, mit Wasser hergestellt",
+		"phe": "3"
+	},
+	{
+		"name": "Käse, Danish Blau, 50% FIDM.",
+		"phe": "1060"
+	},
+	{
+		"name": "Käse, Brie, 60% FIDM.",
+		"phe": "934"
+	},
+	{
+		"name": "Bacon, Dünsten, roh",
+		"phe": "552"
+	},
+	{
+		"name": "Kaffee, Trinken",
+		"phe": "3"
+	},
+	{
+		"name": "Roggenkorn, ganz / geknackt",
+		"phe": "434"
+	},
+	{
+		"name": "Wurst, Leberwurst",
+		"phe": "579"
+	},
+	{
+		"name": "Sahne, kultiviert, 50% Fett",
+		"phe": "89"
+	},
+	{
+		"name": "Käse, fest, 45% FIDM., Alle Sorten",
+		"phe": "1280"
+	},
+	{
+		"name": "Linseeds, roh",
+		"phe": "1320"
+	},
+	{
+		"name": "Nuss, Erbse, getrocknet",
+		"phe": "1670"
+	},
+	{
+		"name": "Eis, Milchprodukte, (Vollmilch basiert)",
+		"phe": "218"
+	},
+	{
+		"name": "Sahne, 50% Fett",
+		"phe": "95"
+	},
+	{
+		"name": "Pfeffer, weiß",
+		"phe": "null"
+	},
+	{
+		"name": "Sojamehl, Vollfett",
+		"phe": "2020"
+	},
+	{
+		"name": "Reis, braun, roh",
+		"phe": "484"
+	},
+	{
+		"name": "Milch, Trockenmager, Pulver",
+		"phe": "1610"
+	},
+	{
+		"name": "Käse, halbhart, Havarti, 45% FIDM.",
+		"phe": "1270"
+	},
+	{
+		"name": "Hagebutte, getrocknet, Pulver",
+		"phe": "null"
+	},
+	{
+		"name": "Auster, roh",
+		"phe": "312"
+	},
+	{
+		"name": "Wein, weiß, trocken",
+		"phe": "null"
+	},
+	{
+		"name": "Fischbällchen, Konserven",
+		"phe": "359"
+	},
+	{
+		"name": "Roggenbrotkrümel mit braunem Zucker, Mittelwert",
+		"phe": "290"
+	},
+	{
+		"name": "Wein, weiß, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Wein, weiß, Rheinwein",
+		"phe": "null"
+	},
+	{
+		"name": "Tomaten, getrocknet",
+		"phe": "361"
+	},
+	{
+		"name": "Ymer",
+		"phe": "305"
+	},
+	{
+		"name": "Wein, rot, rose, nichtalkoholischer",
+		"phe": "null"
+	},
+	{
+		"name": "Wein, weiß, medium",
+		"phe": "null"
+	},
+	{
+		"name": "Keks, süß, 'Finnish'",
+		"phe": "275"
+	},
+	{
+		"name": "Wein, weiß, nicht-alkoholischen",
+		"phe": "null"
+	},
+	{
+		"name": "Gerste Grütze, roh",
+		"phe": "539"
+	},
+	{
+		"name": "Bier, lager, alc. 2,6 Vol.%",
+		"phe": "4"
+	},
+	{
+		"name": "Reisstärke",
+		"phe": "43"
+	},
+	{
+		"name": "LakritzeAllsorts",
+		"phe": "null"
+	},
+	{
+		"name": "Plundergebäck, quadratisch",
+		"phe": "239"
+	},
+	{
+		"name": "Salatdressing, Französisch",
+		"phe": "33"
+	},
+	{
+		"name": "Käse, Danish Blau, 60% FIDM.",
+		"phe": "842"
+	},
+	{
+		"name": "Käse, fest, Fynbo, 45% FIDM.",
+		"phe": "1340"
+	},
+	{
+		"name": "Eier, Geflügel, Eiweiß, pasteurisiert",
+		"phe": "562"
+	},
+	{
+		"name": "Lump, Seehase, geräuchert",
+		"phe": "null"
+	},
+	{
+		"name": "Weizen, Kerne, ganz / geknackt",
+		"phe": "550"
+	},
+	{
+		"name": "Fruchtsaft gemischt, ungesüßt, konzentriert",
+		"phe": "null"
+	},
+	{
+		"name": "Semmelbrösel",
+		"phe": "558"
+	},
+	{
+		"name": "Apfelsaft, Dosen oder Flaschen",
+		"phe": "2"
+	},
+	{
+		"name": "Bier, lager, alc. 4,4% vol.",
+		"phe": "5"
+	},
+	{
+		"name": "Perlmutt Sago (Kartoffelstärke)",
+		"phe": "8"
+	},
+	{
+		"name": "Käse, fest, Maribo, 45% FIDM.",
+		"phe": "1380"
+	},
+	{
+		"name": "Senf, braun, fertig gemacht",
+		"phe": "null"
+	},
+	{
+		"name": "Knoblauch, roh",
+		"phe": "184"
+	},
+	{
+		"name": "Wein, rosé",
+		"phe": "null"
+	},
+	{
+		"name": "Majonäse, fettarm",
+		"phe": "0"
+	},
+	{
+		"name": "Gehacktes Fleisch, Spaghetti-Sauce-Typ, mittlere Werte",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, fest, Samsö, 45% FIDM.",
+		"phe": "1400"
+	},
+	{
+		"name": "Sherry, mittel",
+		"phe": "null"
+	},
+	{
+		"name": "Weinrot",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, hart, Chesire, 50% FIDM.",
+		"phe": "1240"
+	},
+	{
+		"name": "Eier, Geflügel, Eiweiß, roh",
+		"phe": "667"
+	},
+	{
+		"name": "Bacon, Braten, roh",
+		"phe": "478"
+	},
+	{
+		"name": "Vermouth, trocken",
+		"phe": "null"
+	},
+	{
+		"name": "Vermouth, süß",
+		"phe": "null"
+	},
+	{
+		"name": "Pflaume, getrocknete Pflaumen",
+		"phe": "51"
+	},
+	{
+		"name": "Tamarinde, Indian Datum, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Gebäck, Croissant",
+		"phe": "392"
+	},
+	{
+		"name": "Bier, dänischer Haushalt, mit niedrigem Alkoholgehalt, Mittelwert",
+		"phe": "6"
+	},
+	{
+		"name": "Eier, Geflügel, Eiweiß, getrocknet",
+		"phe": "5140"
+	},
+	{
+		"name": "Essig",
+		"phe": "null"
+	},
+	{
+		"name": "Madeira",
+		"phe": "null"
+	},
+	{
+		"name": "Campari",
+		"phe": "null"
+	},
+	{
+		"name": "Gebäck mit Mohn",
+		"phe": "387"
+	},
+	{
+		"name": "Käse, Blaue und weiße Schimmel, 70% FIDM.",
+		"phe": "680"
+	},
+	{
+		"name": "Wein, weiß, süß",
+		"phe": "null"
+	},
+	{
+		"name": "BITTER, alle Arten, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Pfeffer, schwarz",
+		"phe": "null"
+	},
+	{
+		"name": "Bier, Danish Haushalt, niedriger Alkohol",
+		"phe": "7"
+	},
+	{
+		"name": "BITTER, Gammel Dansk Bitter Dram",
+		"phe": "null"
+	},
+	{
+		"name": "Brandy, Cognac",
+		"phe": "null"
+	},
+	{
+		"name": "Wein, weiß, Sekt, Champagner",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, fest, Svenbo, 45% FIDM.",
+		"phe": "1430"
+	},
+	{
+		"name": "Aquavit, gewürzt, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Sherry, trocken",
+		"phe": "null"
+	},
+	{
+		"name": "Oliven, schwarz, ohne Steine, in Salzlake",
+		"phe": "null"
+	},
+	{
+		"name": "Bier, Export, alc. 5,6 Vol.%",
+		"phe": "8"
+	},
+	{
+		"name": "Spirituosen, 70% Beweis",
+		"phe": "0"
+	},
+	{
+		"name": "Wodka",
+		"phe": "0"
+	},
+	{
+		"name": "Plain Kuchen, Zitronenkuchen",
+		"phe": "258"
+	},
+	{
+		"name": "BITTER, Krabask Bitter",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, hart, Emmentaler, 45% FIDM.",
+		"phe": "1450"
+	},
+	{
+		"name": "Frühstücksflocken, Reis Krispies",
+		"phe": "null"
+	},
+	{
+		"name": "Aquavit, 40% vol., Mittelwert",
+		"phe": "null"
+	},
+	{
+		"name": "Eis, Milchprodukte, popsickle, Erdbeere",
+		"phe": "null"
+	},
+	{
+		"name": "Wein, spanisch rot, süß",
+		"phe": "null"
+	},
+	{
+		"name": "Zitronensaft, frisch",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, halbhart, Esrom, 60% FIDM.",
+		"phe": "1000"
+	},
+	{
+		"name": "Sahnejoghurt, 9% Fett, mit Obst",
+		"phe": "150"
+	},
+	{
+		"name": "Tofu, Soja-Tofu",
+		"phe": "386"
+	},
+	{
+		"name": "Hafen",
+		"phe": "null"
+	},
+	{
+		"name": "Grapefruitjuice, Konserven, unswtnd.",
+		"phe": "5"
+	},
+	{
+		"name": "Plain Kuchen, Schokoladenkuchen",
+		"phe": "298"
+	},
+	{
+		"name": "Bouillon, Huhn, zubereitet",
+		"phe": "null"
+	},
+	{
+		"name": "Plundergebäck, kanelsnegl",
+		"phe": "229"
+	},
+	{
+		"name": "Plundergebäck, Mittelwert",
+		"phe": "229"
+	},
+	{
+		"name": "Plain Kuchen, Mittelwerte",
+		"phe": "255"
+	},
+	{
+		"name": "Pop Mai, Öl und Salz hinzugefügt, traditionell",
+		"phe": "493"
+	},
+	{
+		"name": "Bulgur, Parboiled, roh",
+		"phe": "565"
+	},
+	{
+		"name": "Linsen, Auswuchs, roh",
+		"phe": "445"
+	},
+	{
+		"name": "Whiskey",
+		"phe": "0"
+	},
+	{
+		"name": "Wurst, Rindfleisch Salami",
+		"phe": "772"
+	},
+	{
+		"name": "Käse, halbhart, Havarti, 60% FIDM.",
+		"phe": "1010"
+	},
+	{
+		"name": "Bier, stark, alc. 7,6 Vol.%",
+		"phe": "8"
+	},
+	{
+		"name": "Sahne, kultiviert, 9% Fett",
+		"phe": "321"
+	},
+	{
+		"name": "Schwein / Rind Wurst, Teewurst",
+		"phe": "null"
+	},
+	{
+		"name": "Haselnuss, getrocknet",
+		"phe": "667"
+	},
+	{
+		"name": "Creme, 9% Fett",
+		"phe": "166"
+	},
+	{
+		"name": "Pasta, roh",
+		"phe": "692"
+	},
+	{
+		"name": "Käse, Quarg, 5% FIDM.",
+		"phe": "473"
+	},
+	{
+		"name": "Die halbharten Käsen, Grana, 32% FIDM.",
+		"phe": "1740"
+	},
+	{
+		"name": "Käse, hart, Parmesan, 32% FIDM.",
+		"phe": "1740"
+	},
+	{
+		"name": "Gin",
+		"phe": "0"
+	},
+	{
+		"name": "Sahne, kultiviert, 9% Fett",
+		"phe": "156"
+	},
+	{
+		"name": "Gherkin, gebeizt, ohne Zuckerzusatz",
+		"phe": "null"
+	},
+	{
+		"name": "Hefe, baker`s, Druck",
+		"phe": "323"
+	},
+	{
+		"name": "Keks, süß, Vanille aromatisiert",
+		"phe": "231"
+	},
+	{
+		"name": "Käse, hart, Cheddar, Dänisch",
+		"phe": "1360"
+	},
+	{
+		"name": "Fischpudding, roh",
+		"phe": "381"
+	},
+	{
+		"name": "Rum",
+		"phe": "0"
+	},
+	{
+		"name": "Pistazien, getrocknete",
+		"phe": "1150"
+	},
+	{
+		"name": "Eischnee und Zucker mit Schokoladenüberzug",
+		"phe": "null"
+	},
+	{
+		"name": "Hirse, Flocken",
+		"phe": "637"
+	},
+	{
+		"name": "Käse, gereiftes, geräuchert, 1% Fett",
+		"phe": "587"
+	},
+	{
+		"name": "Cod, Leber, Konserven",
+		"phe": "162"
+	},
+	{
+		"name": "Erdbeeren, gefroren, ungesüßt",
+		"phe": "14"
+	},
+	{
+		"name": "Snacks, erweitert, cornbased",
+		"phe": "null"
+	},
+	{
+		"name": "Ananassaft, Konserven",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, Molke, Myseost, 33% FIDM.",
+		"phe": "776"
+	},
+	{
+		"name": "Die halbharten Käse, Gruyere, 45% FIDM.",
+		"phe": "1550"
+	},
+	{
+		"name": "Kohl, rot, Dosen, ohne Zuckerzusatz",
+		"phe": "9"
+	},
+	{
+		"name": "Plundergebäck, Brezel",
+		"phe": "219"
+	},
+	{
+		"name": "Sherry, süß",
+		"phe": "null"
+	},
+	{
+		"name": "Fig, getrocknet",
+		"phe": "79"
+	},
+	{
+		"name": "Cranberry, roh",
+		"phe": "36"
+	},
+	{
+		"name": "Gebäck, 'linse'",
+		"phe": "312"
+	},
+	{
+		"name": "Pop Mais, Öl und Salz hinzugefügt",
+		"phe": "493"
+	},
+	{
+		"name": "Plundergebäck, Weihnachtskuchen",
+		"phe": "264"
+	},
+	{
+		"name": "Wurst, Salami",
+		"phe": "564"
+	},
+	{
+		"name": "Biskuitkuchen, Napfkuchen",
+		"phe": "312"
+	},
+	{
+		"name": "Quitten, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kürbis, roh",
+		"phe": "146"
+	},
+	{
+		"name": "Salat-Dressing, Blauschimmelkäse",
+		"phe": "246"
+	},
+	{
+		"name": "Rettiche, orientalisch, Daikon, japanischer Rettich, roh",
+		"phe": "20"
+	},
+	{
+		"name": "Sesamsamen, ganz",
+		"phe": "993"
+	},
+	{
+		"name": "Oliven, grün, gebeizt, Konserven",
+		"phe": "null"
+	},
+	{
+		"name": "Algen, Agar, getrocknet",
+		"phe": "null"
+	},
+	{
+		"name": "Knäckebrot, Knäckebrot, Roggen, Grob-",
+		"phe": "457"
+	},
+	{
+		"name": "Makkaroni, Spaghetti, ganz Mahlzeit, roh",
+		"phe": "735"
+	},
+	{
+		"name": "Roggenbrot, dunkel, Vollkorn, importiert",
+		"phe": "272"
+	},
+	{
+		"name": "Birnen, Konserven",
+		"phe": "12"
+	},
+	{
+		"name": "Rübe, roh",
+		"phe": "12"
+	},
+	{
+		"name": "BITTER, süß, alle Arten, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Bean, Adzuki, Auswuchs, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Hirse, Vollkorn",
+		"phe": "580"
+	},
+	{
+		"name": "Pop-Mais, Mikrowelle",
+		"phe": "null"
+	},
+	{
+		"name": "Mussel, roh",
+		"phe": "495"
+	},
+	{
+		"name": "Gurken, roh",
+		"phe": "17"
+	},
+	{
+		"name": "Mispel, roh",
+		"phe": "14"
+	},
+	{
+		"name": "Cashew-Nüsse, geröstete Öl",
+		"phe": "858"
+	},
+	{
+		"name": "Plundergebäck, Butter Ring",
+		"phe": "219"
+	},
+	{
+		"name": "Nußpaste mit cacao, Aufstriche",
+		"phe": "null"
+	},
+	{
+		"name": "Corn Flakes, Mittelwerte",
+		"phe": "395"
+	},
+	{
+		"name": "Frühstücksflocken, Müsli, Mittelwert",
+		"phe": "534"
+	},
+	{
+		"name": "Melone, Honigtau, roh",
+		"phe": "18"
+	},
+	{
+		"name": "Schildkröte, Fälschung, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Tomatensaft, Konserven",
+		"phe": "21"
+	},
+	{
+		"name": "Aprikose, Konserven, Licht-Sirup Pack",
+		"phe": "21"
+	},
+	{
+		"name": "Gherkin, gebeizt",
+		"phe": "null"
+	},
+	{
+		"name": "Orangensaft, Konserven",
+		"phe": "7"
+	},
+	{
+		"name": "Fleischwurst, saveloy Typ, fettarm",
+		"phe": "null"
+	},
+	{
+		"name": "Traubensaft",
+		"phe": "12"
+	},
+	{
+		"name": "Crayfish, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Maisstärke",
+		"phe": "null"
+	},
+	{
+		"name": "Karotte, Konserven",
+		"phe": "21"
+	},
+	{
+		"name": "Kartoffeln, zerdrückte, Instant-Pulver mit Trockenmilch",
+		"phe": "436"
+	},
+	{
+		"name": "Roggenbrot, Licht",
+		"phe": "271"
+	},
+	{
+		"name": "Bitter, Jägermeister",
+		"phe": "null"
+	},
+	{
+		"name": "Salz, Tabelle",
+		"phe": "0"
+	},
+	{
+		"name": "Roggenbrot, dunkel, Pumpernickel",
+		"phe": "256"
+	},
+	{
+		"name": "Frühlingsrolle, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Aprikosen, in Dosen, ohne Zuckerzusatz",
+		"phe": "29"
+	},
+	{
+		"name": "Kürbis, Dosen",
+		"phe": "97"
+	},
+	{
+		"name": "Ananas, in Dosen",
+		"phe": "10"
+	},
+	{
+		"name": "Zwiebeln, gehackt, gefroren",
+		"phe": "18"
+	},
+	{
+		"name": "Sahnegebäck, Schichtkuchen",
+		"phe": "null"
+	},
+	{
+		"name": "Weizen Zwieback",
+		"phe": "473"
+	},
+	{
+		"name": "Weizen Zwieback",
+		"phe": "473"
+	},
+	{
+		"name": "Chayote Obst, rohes",
+		"phe": "47"
+	},
+	{
+		"name": "Knäckebrot, Knäckebrot, Roggen, fein",
+		"phe": "526"
+	},
+	{
+		"name": "Senf, gelb, bereit gemacht",
+		"phe": "219"
+	},
+	{
+		"name": "Pfirsich, in Dosen",
+		"phe": "10"
+	},
+	{
+		"name": "Likör, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Corn Flakes, mattiert",
+		"phe": "277"
+	},
+	{
+		"name": "Sonnenblumenkerne, geschälten, getrocknet",
+		"phe": "1050"
+	},
+	{
+		"name": "Sauce gravad lax",
+		"phe": "null"
+	},
+	{
+		"name": "Snacks, extrudiert, cornbased",
+		"phe": "null"
+	},
+	{
+		"name": "Hafer, gerollt, angereichert",
+		"phe": "735"
+	},
+	{
+		"name": "Muskmelon, roh",
+		"phe": "26"
+	},
+	{
+		"name": "Tomate, dänisch, reif, roh",
+		"phe": "19"
+	},
+	{
+		"name": "Tangerine, Konserven",
+		"phe": "15"
+	},
+	{
+		"name": "Scholle, Filet, paniert, Dybfrost",
+		"phe": "null"
+	},
+	{
+		"name": "Fruchtsaft gemischt, gesüßt, konzentriert",
+		"phe": "null"
+	},
+	{
+		"name": "Aprikose, getrocknet",
+		"phe": "96"
+	},
+	{
+		"name": "Sauce, Grill",
+		"phe": "null"
+	},
+	{
+		"name": "Frühstücksflocken, Müsli mit Zusatz von Zucker",
+		"phe": "679"
+	},
+	{
+		"name": "Frühstücksflocken, Müsli, ohne Zuckerzusatz",
+		"phe": "679"
+	},
+	{
+		"name": "Roggenbrot, fein mit Weizenmehl, industriell hergestellten",
+		"phe": "null"
+	},
+	{
+		"name": "Kalk, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Crab Apple, roh",
+		"phe": "11"
+	},
+	{
+		"name": "Holunder, Saft, konzentriert, Zucker hinzugefügt",
+		"phe": "30"
+	},
+	{
+		"name": "Sahne, 13% Fett (UHT)",
+		"phe": "140"
+	},
+	{
+		"name": "Froschschenkel, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Pfeffer, Hot Chili, Konserven",
+		"phe": "27"
+	},
+	{
+		"name": "Sesamsamen, geschälten",
+		"phe": "1160"
+	},
+	{
+		"name": "Erdbeersaft, konzentriert, Zucker hinzugefügt",
+		"phe": "17"
+	},
+	{
+		"name": "Himbeersaft, konzentriert, Zucker hinzugefügt",
+		"phe": "null"
+	},
+	{
+		"name": "Quappe, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Hake, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Sahne Gebäck, Erdbeerkuchen",
+		"phe": "null"
+	},
+	{
+		"name": "Salatsoße, Mayonnaise, kalorienarm",
+		"phe": "null"
+	},
+	{
+		"name": "Likör, Curacao",
+		"phe": "null"
+	},
+	{
+		"name": "Kopfsalat, Eisberg (inkl. Crisphead Typen), roh",
+		"phe": "40"
+	},
+	{
+		"name": "Hafer, gewalzt, nicht angereicherten",
+		"phe": "751"
+	},
+	{
+		"name": "Currant, Rot, Saft, Konzentrate, Zucker hinzugefügt",
+		"phe": "17"
+	},
+	{
+		"name": "Erdbeeren, gefroren, gesüßt, ganze",
+		"phe": "17"
+	},
+	{
+		"name": "Sahne, 13% Fett",
+		"phe": "146"
+	},
+	{
+		"name": "Ananas, roh",
+		"phe": "13"
+	},
+	{
+		"name": "Sacharin",
+		"phe": "null"
+	},
+	{
+		"name": "Wurst, Salami",
+		"phe": "511"
+	},
+	{
+		"name": "Rettich, weiß, roh",
+		"phe": "19"
+	},
+	{
+		"name": "Melone, cantaloup, roh",
+		"phe": "23"
+	},
+	{
+		"name": "Rote Rübe, rot, Dosen, ohne Zuckerzusatz",
+		"phe": "8"
+	},
+	{
+		"name": "Frikadellen, Konserven",
+		"phe": "null"
+	},
+	{
+		"name": "Octopus, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kren, roh",
+		"phe": "123"
+	},
+	{
+		"name": "Erdbeeren, Konserven",
+		"phe": "13"
+	},
+	{
+		"name": "Schweinefleisch in Curry-Sauce, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Currant, schwarz, Saft, Konzentrate, Zucker hinzugefügt",
+		"phe": "17"
+	},
+	{
+		"name": "Schnecke, essbar, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Möhre, gefroren",
+		"phe": "33"
+	},
+	{
+		"name": "Pfeffer, süß, Konserven",
+		"phe": "24"
+	},
+	{
+		"name": "Gebäck, Kokos-Makronen",
+		"phe": "null"
+	},
+	{
+		"name": "Eis, Milchprodukte, popsickle, Vanille",
+		"phe": "null"
+	},
+	{
+		"name": "Eis, Milchprodukte, Nougat",
+		"phe": "218"
+	},
+	{
+		"name": "Eis, Milchprodukte, Vanille",
+		"phe": "218"
+	},
+	{
+		"name": "Traube, grün, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Papaya, Papaya, roh",
+		"phe": "10"
+	},
+	{
+		"name": "Milch, Trocken, ganz, Pulver",
+		"phe": "1200"
+	},
+	{
+		"name": "Pizza Romana, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Kirschsaft, konzentriert, Zucker hinzugefügt",
+		"phe": "9"
+	},
+	{
+		"name": "Preiselbeere, Marmelade",
+		"phe": "null"
+	},
+	{
+		"name": "Pekannüsse, getrocknet",
+		"phe": "484"
+	},
+	{
+		"name": "Käse, Hütten, 20% FIDM.",
+		"phe": "686"
+	},
+	{
+		"name": "Garnelen, gekocht, Schale entfernt",
+		"phe": "672"
+	},
+	{
+		"name": "Schwede, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Quark mit Früchten",
+		"phe": "357"
+	},
+	{
+		"name": "Karottensaft, Konserven",
+		"phe": "24"
+	},
+	{
+		"name": "Aprikose, roh",
+		"phe": "48"
+	},
+	{
+		"name": "Dorsch, Rogen, Konserven",
+		"phe": "504"
+	},
+	{
+		"name": "Molke, süß, Flüssigkeit",
+		"phe": "27"
+	},
+	{
+		"name": "Garnele, Konserven",
+		"phe": "713"
+	},
+	{
+		"name": "Heidelbeeren, gefroren, ungesüßt",
+		"phe": "15"
+	},
+	{
+		"name": "Hagebuttensirup",
+		"phe": "null"
+	},
+	{
+		"name": "Datum, getrocknet",
+		"phe": "58"
+	},
+	{
+		"name": "Bouillon, Rindfleisch, Würfel, vorbereitet",
+		"phe": "null"
+	},
+	{
+		"name": "Eis, Milchprodukte, drei farbigen",
+		"phe": "218"
+	},
+	{
+		"name": "Teeblätter",
+		"phe": "null"
+	},
+	{
+		"name": "Rhabarber, gefroren",
+		"phe": "26"
+	},
+	{
+		"name": "Gherkin Gurken, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Zu, roh",
+		"phe": "694"
+	},
+	{
+		"name": "Gurke, groß, gebeizt",
+		"phe": "null"
+	},
+	{
+		"name": "Chicorée, roh",
+		"phe": "27"
+	},
+	{
+		"name": "Mango, roh",
+		"phe": "16"
+	},
+	{
+		"name": "Dab, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Niere, Kalb, roh",
+		"phe": "682"
+	},
+	{
+		"name": "Cod, Filet, paniert, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Blauer Wittling, Filet, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Leber, Schwein, in Sahne-Sauce, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Gebäck, Mittelwerte",
+		"phe": "340"
+	},
+	{
+		"name": "Grapefruit, roh",
+		"phe": "16"
+	},
+	{
+		"name": "Whiting, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Salz, Meersalz (kein Jod Anreicherung)",
+		"phe": "null"
+	},
+	{
+		"name": "Haferkleie, Dänisch",
+		"phe": "908"
+	},
+	{
+		"name": "Möhre, roh",
+		"phe": "21"
+	},
+	{
+		"name": "Tangerine, roh",
+		"phe": "27"
+	},
+	{
+		"name": "Barsch, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kabeljau, Filet, gekocht",
+		"phe": "689"
+	},
+	{
+		"name": "Roh Seewolf (Wels),",
+		"phe": "644"
+	},
+	{
+		"name": "Eis, Milch (Creme basiert)",
+		"phe": "null"
+	},
+	{
+		"name": "Herz, Kalbfleisch, roh",
+		"phe": "691"
+	},
+	{
+		"name": "Bohnen, weiß, getrocknet, roh",
+		"phe": "1160"
+	},
+	{
+		"name": "Niere, Ochse, roh",
+		"phe": "649"
+	},
+	{
+		"name": "Torsk, Lumb, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kabeljau, Filet, geräuchert, mit Haut",
+		"phe": "699"
+	},
+	{
+		"name": "Feigenkaktus, Kaktusfeige, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kohl, Chinesisch oder Sellerie, roh",
+		"phe": "36"
+	},
+	{
+		"name": "Niere, Schwein, rohes",
+		"phe": "742"
+	},
+	{
+		"name": "Stintdorsch, Fleisch, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Gebäck, frangipani Gebäck",
+		"phe": "320"
+	},
+	{
+		"name": "Feigen, roh",
+		"phe": "18"
+	},
+	{
+		"name": "Carambola, roh",
+		"phe": "37"
+	},
+	{
+		"name": "Steinbutt, roh",
+		"phe": "630"
+	},
+	{
+		"name": "Haddock, roh",
+		"phe": "786"
+	},
+	{
+		"name": "Schweinefleisch, Leberpastete, Dänisch, fettarm",
+		"phe": "464"
+	},
+	{
+		"name": "Flunder, roh",
+		"phe": "696"
+	},
+	{
+		"name": "Endivie (escarole), roh",
+		"phe": "50"
+	},
+	{
+		"name": "Pollack, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Plain Kuchen, frangipani Kuchen",
+		"phe": "292"
+	},
+	{
+		"name": "Kaviar, Dänisch (Rogen, klumpen Sauger)",
+		"phe": "475"
+	},
+	{
+		"name": "Pizza Napolitana, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Salat, looseleaf, roh",
+		"phe": "57"
+	},
+	{
+		"name": "Erbsen, reifen, trockenen, rohe",
+		"phe": "915"
+	},
+	{
+		"name": "Persimmon, Kaki, roh",
+		"phe": "30"
+	},
+	{
+		"name": "Ling, Filet, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Sole, roh",
+		"phe": "778"
+	},
+	{
+		"name": "Tomaten, geschält, in Dosen",
+		"phe": "33"
+	},
+	{
+		"name": "Fleischbällchen, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Fischbällchen, frittierten",
+		"phe": "571"
+	},
+	{
+		"name": "Endivie (Frisee), roh",
+		"phe": "52"
+	},
+	{
+		"name": "Salat, Lattich oder Romaine, roh",
+		"phe": "53"
+	},
+	{
+		"name": "Zander, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kartoffeln, zerdrückte, Instant-Pulver ohne Trockenmilch",
+		"phe": "329"
+	},
+	{
+		"name": "Rotbarsch, Rotbarsch, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Frühlingsrolle, frittierte, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Möhre, roh",
+		"phe": "26"
+	},
+	{
+		"name": "Cod, Leber, geräucherter",
+		"phe": "180"
+	},
+	{
+		"name": "Kabeljau, Leber, roh",
+		"phe": "180"
+	},
+	{
+		"name": "Pfirsich, roh",
+		"phe": "17"
+	},
+	{
+		"name": "Nektarine, roh",
+		"phe": "8"
+	},
+	{
+		"name": "Pike, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Salat-Dressing, Essig und Öl, kalorienarm",
+		"phe": "null"
+	},
+	{
+		"name": "Knödel, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Squash, alle Sorten, roh",
+		"phe": "60"
+	},
+	{
+		"name": "Weizenbrot, mit ganzen Körner",
+		"phe": "363"
+	},
+	{
+		"name": "Avocado, roh",
+		"phe": "67"
+	},
+	{
+		"name": "Weizenkleie",
+		"phe": "665"
+	},
+	{
+		"name": "Alkoholfreies Getränk, eingeengt (1 + 5), Zucker hinzugefügt",
+		"phe": "0"
+	},
+	{
+		"name": "Rote Rübe, rot, Konserven",
+		"phe": "9"
+	},
+	{
+		"name": "Linsen, braun, getrocknet, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Tomate, importiert, reif, roh",
+		"phe": "30"
+	},
+	{
+		"name": "Hummer, gekocht",
+		"phe": "748"
+	},
+	{
+		"name": "Hummer, Konserven",
+		"phe": "748"
+	},
+	{
+		"name": "Kopfsalat (US), Kopfsalat (UK), roh",
+		"phe": "41"
+	},
+	{
+		"name": "Margarine, 70% Fett, Tafel-, weich, pflanzliches Fett",
+		"phe": "38"
+	},
+	{
+		"name": "Kohl, rot, Konserven",
+		"phe": "18"
+	},
+	{
+		"name": "Litschi, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Pizza, gefroren, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Granatapfel, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Guava, gemeinsame, roh",
+		"phe": "2"
+	},
+	{
+		"name": "Spotted Wels, Filet, roh",
+		"phe": "640"
+	},
+	{
+		"name": "Muscheln, in Wasser, Konserven",
+		"phe": "707"
+	},
+	{
+		"name": "Kapstachelbeeren, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, gereiftes, geräuchert, 10% Fett",
+		"phe": "447"
+	},
+	{
+		"name": "Brassen, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Herz, Rindfleisch, Roh",
+		"phe": "822"
+	},
+	{
+		"name": "Kohl, Chinesisch, pak-choi, roh",
+		"phe": "43"
+	},
+	{
+		"name": "Herz, Schweinefleisch, roh",
+		"phe": "680"
+	},
+	{
+		"name": "Roggenbrot, dunkel mit hohem Fett Samen und ganzen Körner, industriell hergestellten",
+		"phe": "272"
+	},
+	{
+		"name": "Walnüsse, getrocknete",
+		"phe": "664"
+	},
+	{
+		"name": "Spargel, in Dosen",
+		"phe": "44"
+	},
+	{
+		"name": "Knoblauch, getrocknete, pulver",
+		"phe": "484"
+	},
+	{
+		"name": "Pizza mit Brokkoli, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Chickory, raddichio, roh",
+		"phe": "34"
+	},
+	{
+		"name": "Eier, Hähnchen, Trocken",
+		"phe": "2840"
+	},
+	{
+		"name": "Hummer, roh",
+		"phe": "784"
+	},
+	{
+		"name": "Norwegen Hummer, roh",
+		"phe": "784"
+	},
+	{
+		"name": "Knäckebrot, Knäckebrot, Weizen, groben",
+		"phe": "639"
+	},
+	{
+		"name": "Curry Pulver",
+		"phe": "null"
+	},
+	{
+		"name": "Norwegen Schellfisch, Filet, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kartoffelchips, fatreduced",
+		"phe": "200"
+	},
+	{
+		"name": "Wurst, Zungenwurst, Saveloy Typ",
+		"phe": "null"
+	},
+	{
+		"name": "Seelachs (UK), Seelachs (US), Filet, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Sahne, 18% Fett",
+		"phe": "135"
+	},
+	{
+		"name": "Bohnen, Wachs, Konserven",
+		"phe": "38"
+	},
+	{
+		"name": "Weizenbrot mit Weizenkleie",
+		"phe": "516"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, Wurstwaren, Dosen",
+		"phe": "578"
+	},
+	{
+		"name": "Brot, verschraubter Roggen und Weizen, sauer, mit Kümmel",
+		"phe": "354"
+	},
+	{
+		"name": "Eier, Huhn, lange Eier, gekocht, gefroren",
+		"phe": "670"
+	},
+	{
+		"name": "Blackberry, Marmelade",
+		"phe": "null"
+	},
+	{
+		"name": "Marmalade, Mango",
+		"phe": "7"
+	},
+	{
+		"name": "Sahne, kultiviert, 18% Fett",
+		"phe": "133"
+	},
+	{
+		"name": "Brot, Vollkorn",
+		"phe": "398"
+	},
+	{
+		"name": "Leber, Gans, roh",
+		"phe": "812"
+	},
+	{
+		"name": "Kalbfleisch, Kalbseemerrolle, gesalzen, gekocht",
+		"phe": "764"
+	},
+	{
+		"name": "Schokoladenmilch",
+		"phe": "341"
+	},
+	{
+		"name": "Brot, weiß",
+		"phe": "383"
+	},
+	{
+		"name": "Weizenbrot, Italien Typ, industriell hergestelltes",
+		"phe": "430"
+	},
+	{
+		"name": "Miso, Sojapaste",
+		"phe": "null"
+	},
+	{
+		"name": "Bohnen, grün, Konserven",
+		"phe": "41"
+	},
+	{
+		"name": "Linsen, getrocknet",
+		"phe": "1380"
+	},
+	{
+		"name": "Gizzard, Huhn, roh",
+		"phe": "757"
+	},
+	{
+		"name": "Kohlrabi, roh",
+		"phe": "38"
+	},
+	{
+		"name": "Kresse, roh",
+		"phe": "84"
+	},
+	{
+		"name": "Salatdressing, gesäuert frische Sahne, kalorienarm",
+		"phe": "null"
+	},
+	{
+		"name": "Eier, Huhn, Eigelb, getrocknet",
+		"phe": "1490"
+	},
+	{
+		"name": "Baguette, Weizen, fein, industriell hergestellte",
+		"phe": "431"
+	},
+	{
+		"name": "Kartoffel, Konserven",
+		"phe": "63"
+	},
+	{
+		"name": "Paranüsse, getrocknet, roh",
+		"phe": "666"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, gekocht, in Scheiben geschnitten",
+		"phe": "659"
+	},
+	{
+		"name": "Charr, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Fleischbällchen, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Eier, Geflügel, pasteurisiert",
+		"phe": "641"
+	},
+	{
+		"name": "Kalbfleisch, mageres Fleisch, roh",
+		"phe": "829"
+	},
+	{
+		"name": "Heilbutt, Atlantik, geräuchert",
+		"phe": "791"
+	},
+	{
+		"name": "Weizenbrot, zum Toasten, industriell hergestellten",
+		"phe": "416"
+	},
+	{
+		"name": "Blackberry, gefroren, ungesüßt",
+		"phe": "null"
+	},
+	{
+		"name": "Kokosnussfleisch, vertrocknet",
+		"phe": "295"
+	},
+	{
+		"name": "Sweatbread, Lamm, roh",
+		"phe": "514"
+	},
+	{
+		"name": "Huhn, Huhn, Fleisch nur",
+		"phe": "813"
+	},
+	{
+		"name": "Currant, rot, Gelee",
+		"phe": "null"
+	},
+	{
+		"name": "Heilbutt, Atlantik, roh",
+		"phe": "791"
+	},
+	{
+		"name": "Leber, Broiler oder Friteuse, roh",
+		"phe": "888"
+	},
+	{
+		"name": "Forelle, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Süßkartoffel, roh",
+		"phe": "81"
+	},
+	{
+		"name": "Chard, schweizer, roh",
+		"phe": "109"
+	},
+	{
+		"name": "Zwiebel, roh",
+		"phe": "28"
+	},
+	{
+		"name": "Erdbeermarmelade",
+		"phe": "10"
+	},
+	{
+		"name": "Sapodilla, roh",
+		"phe": "13"
+	},
+	{
+		"name": "Kaffee, Instant-Pulver",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, hart, Parmesan, gerieben",
+		"phe": "1990"
+	},
+	{
+		"name": "Rolls, Weizen mit Schrot, industriell hergestellte",
+		"phe": "433"
+	},
+	{
+		"name": "Kiwi-Früchte, rohes",
+		"phe": "37"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, Oberseite (M. Semimembranosus), lehnen, roh",
+		"phe": "787"
+	},
+	{
+		"name": "Zucker Kirsche, Konserven",
+		"phe": "18"
+	},
+	{
+		"name": "Kabeljau, Filet, gebraten",
+		"phe": "null"
+	},
+	{
+		"name": "Ente, Fleisch nur, roh",
+		"phe": "761"
+	},
+	{
+		"name": "Türkei, Brust, gekocht / geräuchert, in Scheiben geschnitten",
+		"phe": "773"
+	},
+	{
+		"name": "Pizza mit Thunfisch, eingefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Sahnegebäck, kartoffelkage",
+		"phe": "null"
+	},
+	{
+		"name": "Türkei, nur Fleisch, roh",
+		"phe": "806"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, Schmorbraten (M. semitendinosus), lehnen, roh",
+		"phe": "734"
+	},
+	{
+		"name": "Loganbeeren, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Roggenbrot, mit Krümeln (weich) und hohem Fettsamen, industriell hergestellten",
+		"phe": "310"
+	},
+	{
+		"name": "Lump, Seehase, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Ente, Brust-, Fleisch nur, roh",
+		"phe": "828"
+	},
+	{
+		"name": "Schweinefleisch, Lende, schlank, roh",
+		"phe": "827"
+	},
+	{
+		"name": "Zwiebeln, Frühling, roh",
+		"phe": "62"
+	},
+	{
+		"name": "Erbsen, Küken / garbanzo, trocken, roh",
+		"phe": "1180"
+	},
+	{
+		"name": "Leber, Rind, roh",
+		"phe": "974"
+	},
+	{
+		"name": "Schweinefleisch, Lendenfilet, geräuchert",
+		"phe": "714"
+	},
+	{
+		"name": "Gebäck, napoleon Hut",
+		"phe": "359"
+	},
+	{
+		"name": "Weizenbrot, mit Schrot, zum Toasten, industriell hergestellten",
+		"phe": "441"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, Schmorbraten (M. Beinbizeps), lehnen, roh",
+		"phe": "754"
+	},
+	{
+		"name": "Leber, Ente, roh",
+		"phe": "929"
+	},
+	{
+		"name": "Marzipanproduct, chocolatecover, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Sattel, geräuchert, roh",
+		"phe": "620"
+	},
+	{
+		"name": "Schweinefleisch, Sattel, geräuchert, gekocht",
+		"phe": "677"
+	},
+	{
+		"name": "Thunfisch, in Tomatensauce, Konserven",
+		"phe": "716"
+	},
+	{
+		"name": "Kohl, Wirsing, roh",
+		"phe": "64"
+	},
+	{
+		"name": "Spargel, alle Arten, roh",
+		"phe": "52"
+	},
+	{
+		"name": "Huhn, Brust, gekocht, in Scheiben geschnitten",
+		"phe": "758"
+	},
+	{
+		"name": "Linsen, rot, getrocknet, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Zitronenschale, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Pistazien, geröstet trocken mit Salz",
+		"phe": "1210"
+	},
+	{
+		"name": "Kirschsaft, konzentriert, Zuckerzusatz",
+		"phe": "9"
+	},
+	{
+		"name": "Currant, Rot, Saft, Konzentraten, Zuckerzusatz",
+		"phe": "17"
+	},
+	{
+		"name": "Himbeersaft, konzentriert, Zuckerzusatz",
+		"phe": "null"
+	},
+	{
+		"name": "Erdbeersaft, konzentriert, Zuckerzusatz",
+		"phe": "17"
+	},
+	{
+		"name": "Bohnen, grün, roh",
+		"phe": "52"
+	},
+	{
+		"name": "Dill, getrocknet",
+		"phe": "null"
+	},
+	{
+		"name": "Brot, weiß, für Würste",
+		"phe": "457"
+	},
+	{
+		"name": "Sellerie, Sellerieblätter, roh",
+		"phe": "45"
+	},
+	{
+		"name": "Felchen, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Preiselbeere, Roh",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Oberseite, Kappe, roh",
+		"phe": "892"
+	},
+	{
+		"name": "Schweinefleisch, Filet, getrimmt, roh",
+		"phe": "781"
+	},
+	{
+		"name": "Knäckebrot, Knäckebrot, Weizen, fein",
+		"phe": "557"
+	},
+	{
+		"name": "Hare, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Regenbogenforelle, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Koriandersamen",
+		"phe": "null"
+	},
+	{
+		"name": "Herz, Huhn, roh",
+		"phe": "697"
+	},
+	{
+		"name": "Schweinefleisch, Fleisch, mager, ca. 3% Fett, roh",
+		"phe": "810"
+	},
+	{
+		"name": "Dorsch, Rogen, roh",
+		"phe": "855"
+	},
+	{
+		"name": "Leber, Schwein, rohes",
+		"phe": "1040"
+	},
+	{
+		"name": "Blumenkohl, gefroren",
+		"phe": "71"
+	},
+	{
+		"name": "Krebsscheren, Fleisch, roh",
+		"phe": "916"
+	},
+	{
+		"name": "Krebsscheren, Fleisch, Konserven",
+		"phe": "916"
+	},
+	{
+		"name": "Türkei, Fleisch und Haut, roh",
+		"phe": "743"
+	},
+	{
+		"name": "Brot, weiß, grobkörniges",
+		"phe": "439"
+	},
+	{
+		"name": "Marzipan",
+		"phe": "1210"
+	},
+	{
+		"name": "Weizenbrot, weiß, mit gebrochener Kastanie",
+		"phe": "419"
+	},
+	{
+		"name": "Holunder, Saft, Konzentraten, Zuckerzusatz",
+		"phe": "30"
+	},
+	{
+		"name": "Fenchelsamen",
+		"phe": "657"
+	},
+	{
+		"name": "Marmalade, Englisch Art",
+		"phe": "null"
+	},
+	{
+		"name": "Huhn, Fleisch nur, roh",
+		"phe": "738"
+	},
+	{
+		"name": "Lamm, Bein, entfettet, roh",
+		"phe": "808"
+	},
+	{
+		"name": "Walfleisch, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kalbfleisch, dünn Fett, roh",
+		"phe": "806"
+	},
+	{
+		"name": "Blumenkohl, Dänisch, roh",
+		"phe": "67"
+	},
+	{
+		"name": "Krabbe, gekocht",
+		"phe": "804"
+	},
+	{
+		"name": "Kartoffel, gekocht",
+		"phe": "null"
+	},
+	{
+		"name": "Ptarmigan, Fleisch, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Marmalade, Aprikose",
+		"phe": "15"
+	},
+	{
+		"name": "Schokolade, Milch, mit Nüssen",
+		"phe": "422"
+	},
+	{
+		"name": "Rindfleisch, Rumpsteak, Kappe, roh",
+		"phe": "872"
+	},
+	{
+		"name": "Pinienkerne, getrocknet",
+		"phe": "596"
+	},
+	{
+		"name": "Kaninchen, Fleisch nur, roh",
+		"phe": "924"
+	},
+	{
+		"name": "Pfeffer, Hot Chili, roh",
+		"phe": "61"
+	},
+	{
+		"name": "Seal Fleisch, Lende, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Baguette, mit Roggen, industriell hergestellten",
+		"phe": "427"
+	},
+	{
+		"name": "Cashew-Nüsse, trocken geröstet",
+		"phe": "780"
+	},
+	{
+		"name": "Rolls, Italien-Typ, industriell hergestellte",
+		"phe": "467"
+	},
+	{
+		"name": "Rindfleisch, Fleisch, mageres (<5% Fett), roh",
+		"phe": "868"
+	},
+	{
+		"name": "Rindfleisch, dicke Flanke, Kappe, roh",
+		"phe": "848"
+	},
+	{
+		"name": "Kaviar, aus Masago",
+		"phe": "null"
+	},
+	{
+		"name": "Bohnen, grün, gefroren",
+		"phe": "54"
+	},
+	{
+		"name": "Frühstücksflocken, Guldkorn",
+		"phe": "null"
+	},
+	{
+		"name": "Leek, roh",
+		"phe": "50"
+	},
+	{
+		"name": "Thunfisch in Wasser, Konserven",
+		"phe": "961"
+	},
+	{
+		"name": "Garnelen, Krabben, gekocht",
+		"phe": "1040"
+	},
+	{
+		"name": "Sahnegebäck, Wales Brezel",
+		"phe": "null"
+	},
+	{
+		"name": "Roastbeef, in Scheiben geschnitten",
+		"phe": "868"
+	},
+	{
+		"name": "Sahnegebäck, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Filet, entfettet, roh",
+		"phe": "799"
+	},
+	{
+		"name": "Mutton, rund, roh",
+		"phe": "804"
+	},
+	{
+		"name": "Fruchtpaste, Feigen",
+		"phe": "65"
+	},
+	{
+		"name": "Koriander, Blatt, getrocknet",
+		"phe": "null"
+	},
+	{
+		"name": "Weizenbrot, mit ganzen Körner",
+		"phe": "472"
+	},
+	{
+		"name": "Roggenbrot, fein mit Weizenmehl und hohem Fettsamen, industriell hergestellten",
+		"phe": "null"
+	},
+	{
+		"name": "Rolls, weiß, industriell hergestellte",
+		"phe": "454"
+	},
+	{
+		"name": "Chips",
+		"phe": "233"
+	},
+	{
+		"name": "Marmalade, orange",
+		"phe": "11"
+	},
+	{
+		"name": "Schweinefleisch, Hinterbein ohne Schwarte, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Seeforelle, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Spinat, gehackt, gefroren",
+		"phe": "97"
+	},
+	{
+		"name": "Fasan, nur Fleisch, roh",
+		"phe": "905"
+	},
+	{
+		"name": "Yam, roh",
+		"phe": "74"
+	},
+	{
+		"name": "Kartoffel, neuer (Mai bis September), roh",
+		"phe": "72"
+	},
+	{
+		"name": "Hamburger-Sandwich mit Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Ei, Ente, ganz, roh",
+		"phe": "841"
+	},
+	{
+		"name": "Zunge, Schwein, roh",
+		"phe": "870"
+	},
+	{
+		"name": "Marmalade, Kiwi",
+		"phe": "7"
+	},
+	{
+		"name": "Zunge, Schwein, geheilt",
+		"phe": "870"
+	},
+	{
+		"name": "Vanille-Eis, Mittelwert",
+		"phe": "null"
+	},
+	{
+		"name": "Fruchtpaste, Mittelwerte",
+		"phe": "70"
+	},
+	{
+		"name": "Squab (Taube), Fleisch, roh",
+		"phe": "804"
+	},
+	{
+		"name": "Brot, weiß",
+		"phe": "462"
+	},
+	{
+		"name": "Currant, schwarz, Saft, Konzentraten, Zuckerzusatz",
+		"phe": "17"
+	},
+	{
+		"name": "Weizenbrot, weiß, mit Walnüssen",
+		"phe": "538"
+	},
+	{
+		"name": "Nuss, Erbse, oilroasted und gesalzen",
+		"phe": "1590"
+	},
+	{
+		"name": "Sprotte, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Koriander, Blatt, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Bambussprossen, Konserven, gesalzen",
+		"phe": "null"
+	},
+	{
+		"name": "Bambussprossen, Konserven, nonsalted",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, shin + Bein (Schaft), roh",
+		"phe": "856"
+	},
+	{
+		"name": "Rindfleisch, Roastbeef „Kappe“, roh",
+		"phe": "896"
+	},
+	{
+		"name": "Dock (USA), Sauerampfer (UK), roh",
+		"phe": "115"
+	},
+	{
+		"name": "Käse, Quarg, 45% FIDM.",
+		"phe": "579"
+	},
+	{
+		"name": "Ei, Gans, ganz, roh",
+		"phe": "910"
+	},
+	{
+		"name": "Zucker, braun",
+		"phe": "0"
+	},
+	{
+		"name": "Kaffee, Instant, entkoffeiniert, Pulver",
+		"phe": "241"
+	},
+	{
+		"name": "Spargel, weiß, roh",
+		"phe": "65"
+	},
+	{
+		"name": "Rindfleisch, draußen, rund, roh",
+		"phe": "856"
+	},
+	{
+		"name": "Rosine, kernlos",
+		"phe": "62"
+	},
+	{
+		"name": "Currant, schwarz, Marmelade",
+		"phe": "null"
+	},
+	{
+		"name": "Huhn, Bein, Fleisch und Haut, roh",
+		"phe": "710"
+	},
+	{
+		"name": "Marmalade, schwarze Johannisbeere",
+		"phe": "null"
+	},
+	{
+		"name": "Huhn, Trommelstock, Fleisch und Haut, roh",
+		"phe": "696"
+	},
+	{
+		"name": "Baguette, Weizen mit Roggen, fettreiche Samen, industriell hergestellte",
+		"phe": "449"
+	},
+	{
+		"name": "Kale, gefroren",
+		"phe": "84"
+	},
+	{
+		"name": "Kerbel, gehackt, gefroren",
+		"phe": "102"
+	},
+	{
+		"name": "Rindfleisch, Kalbseemerrolle, roh",
+		"phe": "860"
+	},
+	{
+		"name": "Plaintain, roh",
+		"phe": "44"
+	},
+	{
+		"name": "Kaugummi, Zucker hinzugefügt, alle Arten",
+		"phe": "null"
+	},
+	{
+		"name": "Cherimoya, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Halibut, grönland, Graved",
+		"phe": "null"
+	},
+	{
+		"name": "Halibut, grönland, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Knäckebrot, Weizen",
+		"phe": "447"
+	},
+	{
+		"name": "Weizenbrot, Sandwich / Toast Typ, hohe Fettsamen, industriell hergestellte",
+		"phe": "428"
+	},
+	{
+		"name": "Schweinefleisch, Würstchen, Frankfurter Würstchen, Konserven",
+		"phe": "390"
+	},
+	{
+		"name": "Saft, Gemüse, pasteurisiert",
+		"phe": "null"
+	},
+	{
+		"name": "Dornhai, gebückt, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Süßigkeiten, gekocht",
+		"phe": "0"
+	},
+	{
+		"name": "Thunfisch, roh",
+		"phe": "1100"
+	},
+	{
+		"name": "Türkei, Hackfleisch, 0-5% Fett, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Likör, Kaffee mit Sahne",
+		"phe": "139"
+	},
+	{
+		"name": "Huhn, Brust, Fleisch und Haut, roh",
+		"phe": "791"
+	},
+	{
+		"name": "Nougat",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Fleisch, 5-10% Fett, roh",
+		"phe": "844"
+	},
+	{
+		"name": "Zunge, Ochse, roh",
+		"phe": "674"
+	},
+	{
+		"name": "Zunge, Kalb, geheilt",
+		"phe": "622"
+	},
+	{
+		"name": "Brokkoli, gekocht",
+		"phe": "88"
+	},
+	{
+		"name": "Marmalade, alle Arten",
+		"phe": "null"
+	},
+	{
+		"name": "Marmalade, Kirsche",
+		"phe": "9"
+	},
+	{
+		"name": "Hering, paniert, gebraten, in Essig mit Zucker",
+		"phe": "null"
+	},
+	{
+		"name": "Eis, Milchprodukte, popsickle, Vanille mit Schokolade",
+		"phe": "null"
+	},
+	{
+		"name": "Lachs, Atlantik, wild, Konserven",
+		"phe": "844"
+	},
+	{
+		"name": "Tomatenketchup, heiß, in Flaschen abgefüllt",
+		"phe": "null"
+	},
+	{
+		"name": "Pferd, Fleisch, roh",
+		"phe": "730"
+	},
+	{
+		"name": "Sardine, in Tomatensauce, Konserven",
+		"phe": "628"
+	},
+	{
+		"name": "Hühnerfleischwürstchen",
+		"phe": "471"
+	},
+	{
+		"name": "Pilz, Konserven",
+		"phe": "60"
+	},
+	{
+		"name": "Weizenbrot, weiß, mit Sonnenblumenkernen",
+		"phe": "475"
+	},
+	{
+		"name": "Schnittlauch, roh",
+		"phe": "100"
+	},
+	{
+		"name": "Himbeere, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Kumquats, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Zunge, Kalb, roh",
+		"phe": "622"
+	},
+	{
+		"name": "Eis, popsickle, Limonade",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, Schmorbraten, 2 mm dick, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, gewürzt, entbeint",
+		"phe": "442"
+	},
+	{
+		"name": "Pastinake, Roh",
+		"phe": "64"
+	},
+	{
+		"name": "Kartoffel, automn (Oktober bis Januar), roh",
+		"phe": "88"
+	},
+	{
+		"name": "Cassava, roh",
+		"phe": "26"
+	},
+	{
+		"name": "Rindfleisch, Oberseite „Kappe auf“, roh",
+		"phe": "844"
+	},
+	{
+		"name": "Remoulade, fatreduced, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Hackfleisch, 10-15% Fett, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Kaugummi, ohne Zuckerzusatz, alle Arten",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Hals, roh",
+		"phe": "832"
+	},
+	{
+		"name": "Schweinefleisch, Hackfleisch, 5-10% Fett, roh",
+		"phe": "712"
+	},
+	{
+		"name": "Kartoffel, alt (Februar bis Juni) rohe",
+		"phe": "88"
+	},
+	{
+		"name": "Broccoli, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Stockfisch, Kabeljau, geteilt, gesalzen und getrocknet, roh",
+		"phe": "902"
+	},
+	{
+		"name": "Schweinefleisch, Kragen, entfettet, roh",
+		"phe": "664"
+	},
+	{
+		"name": "Topinambur, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Likör, Kaffee",
+		"phe": "null"
+	},
+	{
+		"name": "Gans, Fleisch nur, roh",
+		"phe": "946"
+	},
+	{
+		"name": "Brot, weiß, Rolle",
+		"phe": "496"
+	},
+	{
+		"name": "Kale, Konserven",
+		"phe": "109"
+	},
+	{
+		"name": "Spinat, Dosen",
+		"phe": "125"
+	},
+	{
+		"name": "Huhn, Fleisch und Haut, roh",
+		"phe": "692"
+	},
+	{
+		"name": "Makrele, in Tomatensauce, Konserven",
+		"phe": "468"
+	},
+	{
+		"name": "Pilz, Roh",
+		"phe": "70"
+	},
+	{
+		"name": "Rouladen, Aprikosen-Füllung",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Rumpsteak \"cap on\", roh",
+		"phe": "816"
+	},
+	{
+		"name": "Keks, süß",
+		"phe": "368"
+	},
+	{
+		"name": "Cress, Garten, roh",
+		"phe": "112"
+	},
+	{
+		"name": "Bohnensprossen, Mungo, roh",
+		"phe": "117"
+	},
+	{
+		"name": "Lakritze, süß",
+		"phe": "null"
+	},
+	{
+		"name": "Marmalade, Himbeere",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, Schmorbraten mit Rinde, Roh",
+		"phe": "null"
+	},
+	{
+		"name": "Hering, gebeizt, Konserven",
+		"phe": "512"
+	},
+	{
+		"name": "Petersilienwurzel, roh",
+		"phe": "55"
+	},
+	{
+		"name": "Molke, süß, getrocknet",
+		"phe": "405"
+	},
+	{
+		"name": "Sojasprossen, Mittelwert, roh",
+		"phe": "115"
+	},
+	{
+		"name": "Margarine, 30% Fett, pflanzliches Fett",
+		"phe": "25"
+	},
+	{
+		"name": "Rindfleisch, Schulter, Bauch Teil",
+		"phe": "764"
+	},
+	{
+		"name": "Dorsch, Rogen, geräuchert",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Wurst, Dänisch, roh",
+		"phe": "450"
+	},
+	{
+		"name": "Muscheln, gekocht",
+		"phe": "990"
+	},
+	{
+		"name": "Kalbfleisch, mittelFett, roh",
+		"phe": "768"
+	},
+	{
+		"name": "Schweinefleisch, von Hand mit Rinde, Roh",
+		"phe": "692"
+	},
+	{
+		"name": "Blended Aufstrich, 80% Fett",
+		"phe": "22"
+	},
+	{
+		"name": "Marshmallows, nicht näher bezeichnet",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Fleisch, ca. 10% Fett, roh",
+		"phe": "736"
+	},
+	{
+		"name": "Schweinefleisch, Sülze, Kopf Käse",
+		"phe": "458"
+	},
+	{
+		"name": "Huhn, Flügel, Fleisch und Haut, roh",
+		"phe": "707"
+	},
+	{
+		"name": "Weizenbrot, fettreichen Samen, industriell hergestellte",
+		"phe": "504"
+	},
+	{
+		"name": "Sprat (Sardine), in Tomatensoße, Konserven",
+		"phe": "580"
+	},
+	{
+		"name": "Lamb, Schulter, roh",
+		"phe": "740"
+	},
+	{
+		"name": "Fasan, Fleisch und Haut, roh",
+		"phe": "944"
+	},
+	{
+		"name": "Marmalade, Erdbeere",
+		"phe": "17"
+	},
+	{
+		"name": "Lachs, Atlantik, wild, kalt geräuchert",
+		"phe": "856"
+	},
+	{
+		"name": "Pastillen, ohne Zucker, nicht näher bezeichnet",
+		"phe": "null"
+	},
+	{
+		"name": "Halibut, grönland, geräuchert",
+		"phe": "548"
+	},
+	{
+		"name": "Schweinefleisch, Lende, entfettet (ca.. 3 mm dick), roh",
+		"phe": "708"
+	},
+	{
+		"name": "Blumenkohl, importiert, roh",
+		"phe": "104"
+	},
+	{
+		"name": "Fruktose",
+		"phe": "null"
+	},
+	{
+		"name": "Salz, Block",
+		"phe": "0"
+	},
+	{
+		"name": "Toffees, gemischt",
+		"phe": "null"
+	},
+	{
+		"name": "Mayonnaise",
+		"phe": "55"
+	},
+	{
+		"name": "Schweinefleisch, Leberpasteten, Dänisch",
+		"phe": "523"
+	},
+	{
+		"name": "Apfelgelee",
+		"phe": "13"
+	},
+	{
+		"name": "Currant, schwarz, Gelee",
+		"phe": "null"
+	},
+	{
+		"name": "Brot, weiß, rolle, grobkörniges",
+		"phe": "538"
+	},
+	{
+		"name": "Butter, Salz hinzugefügt",
+		"phe": "25"
+	},
+	{
+		"name": "Gänseschmalz",
+		"phe": "0"
+	},
+	{
+		"name": "Lamm, Bein mit Fett, roh",
+		"phe": "740"
+	},
+	{
+		"name": "Pflanzenmargarine, 80%, braten / backen",
+		"phe": "5"
+	},
+	{
+		"name": "Rindfleisch, Chuck, roh",
+		"phe": "749"
+	},
+	{
+		"name": "Margarine, 80% Fett, Tafel-, weich, pflanzliches Fett",
+		"phe": "38"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, geräuchert, gekocht",
+		"phe": "732"
+	},
+	{
+		"name": "Schokolade, bitter",
+		"phe": "201"
+	},
+	{
+		"name": "Suppe, Tomate, essfertig",
+		"phe": "55"
+	},
+	{
+		"name": "Hering, gebeizt, gewürzt, in Dosen",
+		"phe": "536"
+	},
+	{
+		"name": "Schweinefleisch, fein gehackt und mit Mehl und Ei gebunden, gekocht, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Hering, geräucherter",
+		"phe": "837"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, Unterschale (M. Biceps femoris), 5 mm Schwarte, roh",
+		"phe": "707"
+	},
+	{
+		"name": "Lachs, Atlantik, wild, Graved",
+		"phe": "848"
+	},
+	{
+		"name": "Margarine, 80% Fett, Tafel-, pflanzliches Fett",
+		"phe": "38"
+	},
+	{
+		"name": "Sardelle, gebeizt, Konserven",
+		"phe": "579"
+	},
+	{
+		"name": "Sprotte, gebeizt, Konserven",
+		"phe": "579"
+	},
+	{
+		"name": "Margarine, 80% Fett, zum Braten / Backen, Tier- und Pflanzenfett",
+		"phe": "null"
+	},
+	{
+		"name": "Huhn, Huhn, Fleisch und Haut, roh",
+		"phe": "658"
+	},
+	{
+		"name": "Margarine, 80% Fett, Tafel-, tierische und pflanzliche Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Rinderbrust, vorderer Teil, roh",
+		"phe": "677"
+	},
+	{
+		"name": "Broiler, Fleisch und Haut, roh",
+		"phe": "730"
+	},
+	{
+		"name": "Rindfleisch, Schulter, Rückenteil, roh",
+		"phe": "737"
+	},
+	{
+		"name": "Schweinefleisch, Schinken Wurst",
+		"phe": "null"
+	},
+	{
+		"name": "Margarine, (mehr als 50% Fett), durchschnittlich",
+		"phe": "null"
+	},
+	{
+		"name": "Sahnegebäck, Gänsebrust",
+		"phe": "null"
+	},
+	{
+		"name": "Salatdressing, italienisch",
+		"phe": "16"
+	},
+	{
+		"name": "Rolls, Weizen mit Schrot, fettreiche Samen, industriell hergestellte",
+		"phe": "475"
+	},
+	{
+		"name": "Milch, Mager, Bio",
+		"phe": "176"
+	},
+	{
+		"name": "Milch, Mager",
+		"phe": "176"
+	},
+	{
+		"name": "Bambussprossen, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Butter, Salz hinzugefügt",
+		"phe": "34"
+	},
+	{
+		"name": "Rindfleisch, Fleisch, ca. 15% Fett, roh",
+		"phe": "756"
+	},
+	{
+		"name": "Hering, gebeizt, in Madeirasauce, Konserven",
+		"phe": "null"
+	},
+	{
+		"name": "Passionsfrucht, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinswurst, Bierwurst",
+		"phe": "null"
+	},
+	{
+		"name": "Marmelade, Obst, Mittelwert",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Flanke, roh",
+		"phe": "670"
+	},
+	{
+		"name": "Rouladen, Himbeerfüllung",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, bayonne Stil, entbeint",
+		"phe": "765"
+	},
+	{
+		"name": "Zuckererbse (Snow Erbsen, Zuckerschoten) roh",
+		"phe": "null"
+	},
+	{
+		"name": "Rouladen, nicht näher bezeichnet",
+		"phe": "null"
+	},
+	{
+		"name": "Brot, Brötchen, dänisch",
+		"phe": "525"
+	},
+	{
+		"name": "Rindfleisch, Steiß, roh",
+		"phe": "745"
+	},
+	{
+		"name": "Lakritze, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Milch, Mager, 0,5% Fett",
+		"phe": "180"
+	},
+	{
+		"name": "Rindfleisch, Hackfleisch, 15-20% Fett, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Milch, Buttermilch mit Zitrone",
+		"phe": "165"
+	},
+	{
+		"name": "Rindfleisch, T-Bone-Steak, roh",
+		"phe": "780"
+	},
+	{
+		"name": "Kalb- und Schweinefleisch, Hackfleisch, 15-20% Fett, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Sahnegebäck, Medaille",
+		"phe": "null"
+	},
+	{
+		"name": "Italienische Mayonnaise-Salat",
+		"phe": "null"
+	},
+	{
+		"name": "Brüssel sprießen, gefroren",
+		"phe": "95"
+	},
+	{
+		"name": "Schweinswurst, Jagdwurst",
+		"phe": "null"
+	},
+	{
+		"name": "Kaffeebohne, geröstet, gemahlen",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Hackfleisch, 15-20% Fett, roh",
+		"phe": "673"
+	},
+	{
+		"name": "Schweinefleisch, dünnen Bauch, schlanke, ca. 2 mm Schale, roh",
+		"phe": "648"
+	},
+	{
+		"name": "Hering, gebeizt, in Currysauce, Konserven",
+		"phe": "null"
+	},
+	{
+		"name": "Kakao, Instant med Milch, Pulver",
+		"phe": "220"
+	},
+	{
+		"name": "Scholle, Filet, mißhandelte, frittierte",
+		"phe": "null"
+	},
+	{
+		"name": "Reiskleie",
+		"phe": "718"
+	},
+	{
+		"name": "Rindfleisch, Roastbeef, roh",
+		"phe": "780"
+	},
+	{
+		"name": "Gebäck, Kuchen Kranz",
+		"phe": "null"
+	},
+	{
+		"name": "Weizenkeime, roh",
+		"phe": "1350"
+	},
+	{
+		"name": "Haddock, paniert, gebraten",
+		"phe": "1040"
+	},
+	{
+		"name": "Thunfisch, in Öl, Konserven",
+		"phe": "996"
+	},
+	{
+		"name": "Schwarzwurzeln, schwarz, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Mutton, Schulter, roh",
+		"phe": "748"
+	},
+	{
+		"name": "Huhn, Fleisch und Haut, gegrillt",
+		"phe": "902"
+	},
+	{
+		"name": "Schokolade, ebene, Kuvertüre",
+		"phe": "201"
+	},
+	{
+		"name": "Frankfurt Wurst, gekocht, Fast-Food",
+		"phe": "467"
+	},
+	{
+		"name": "Sahnegebäck, Kuchen napoleon",
+		"phe": "null"
+	},
+	{
+		"name": "Löwenzahn, Blätter, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Zimtstange",
+		"phe": "null"
+	},
+	{
+		"name": "Sirup, Küche",
+		"phe": "null"
+	},
+	{
+		"name": "Pate, Leber",
+		"phe": "603"
+	},
+	{
+		"name": "Cantherelle, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinswurst, Saveloy Typ",
+		"phe": "430"
+	},
+	{
+		"name": "Sapotes, roh",
+		"phe": "54"
+	},
+	{
+		"name": "Speckchips",
+		"phe": "1370"
+	},
+	{
+		"name": "Schweinswurst, Malakoff",
+		"phe": "null"
+	},
+	{
+		"name": "Makrele, Filet, in natürlichen Säften, Konserven",
+		"phe": "790"
+	},
+	{
+		"name": "Sandwich, Rippenbraten",
+		"phe": "null"
+	},
+	{
+		"name": "Milch, Mager, mit Schokolade",
+		"phe": "177"
+	},
+	{
+		"name": "Milch, Mager, mit Schokolade (UHT)",
+		"phe": "180"
+	},
+	{
+		"name": "Rindfleisch, Roastbeef \"cap on\", roh",
+		"phe": "749"
+	},
+	{
+		"name": "Käse, Camembert, 30% FIDM.",
+		"phe": "1290"
+	},
+	{
+		"name": "Alfalfa Samen, Auswuchs, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Fleisch, ca. 20% Fett, roh",
+		"phe": "662"
+	},
+	{
+		"name": "Lakritz, Salz",
+		"phe": "null"
+	},
+	{
+		"name": "Keks, Vollkorn, Verdauungstyp",
+		"phe": "331"
+	},
+	{
+		"name": "Schweinefleisch, Lende mit Rinde, roh",
+		"phe": "672"
+	},
+	{
+		"name": "Fruchtgummi",
+		"phe": "null"
+	},
+	{
+		"name": "Sprat (Sardine), in Öl, Konserven",
+		"phe": "984"
+	},
+	{
+		"name": "Sardine, in Öl, Konserven",
+		"phe": "984"
+	},
+	{
+		"name": "cream Crackers",
+		"phe": "538"
+	},
+	{
+		"name": "Schweinefleisch, dünner Bauch mit Rinde, roh",
+		"phe": "613"
+	},
+	{
+		"name": "Menschliche Milch, Kolostrum",
+		"phe": "null"
+	},
+	{
+		"name": "Frühstücksflocken, Havrefras",
+		"phe": "null"
+	},
+	{
+		"name": "Schwein / Rind Wurst, saveloy Typ",
+		"phe": "428"
+	},
+	{
+		"name": "Minzgelee",
+		"phe": "null"
+	},
+	{
+		"name": "Hering, Herbst, roh",
+		"phe": "741"
+	},
+	{
+		"name": "Vecao",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Mettwurst, geräuchert",
+		"phe": "425"
+	},
+	{
+		"name": "Sandwich mit Schinken und Käse, geröstete, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Alfalfa Samen",
+		"phe": "null"
+	},
+	{
+		"name": "Salatsoße, Mayonnaise",
+		"phe": "50"
+	},
+	{
+		"name": "Roggenmehl, verschraubter (Extraktionsrate 70%)",
+		"phe": "300"
+	},
+	{
+		"name": "Rindfleisch, Entrecôte \"cap on\", roh",
+		"phe": "699"
+	},
+	{
+		"name": "Kipper, in Öl, Konserven",
+		"phe": "787"
+	},
+	{
+		"name": "Hering, gesalzen, gereift",
+		"phe": "503"
+	},
+	{
+		"name": "Milch, 1,5% Fett, kultiviert, Kefir",
+		"phe": "171"
+	},
+	{
+		"name": "Milch, Magerteilweise, organisch, 1,5% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Salat-Dressing, Essig und Öl",
+		"phe": "null"
+	},
+	{
+		"name": "Muskatnuss, ganz",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Flanke, gewürzt, gekocht",
+		"phe": "620"
+	},
+	{
+		"name": "Rosenkohl, Winter (Januar bis April) roher",
+		"phe": "127"
+	},
+	{
+		"name": "Kerbel, roh",
+		"phe": "102"
+	},
+	{
+		"name": "Schweinswurst, Thüringer Bratwurst",
+		"phe": "null"
+	},
+	{
+		"name": "Erdnussbutter",
+		"phe": "1300"
+	},
+	{
+		"name": "Schweinswurst, polony Typ",
+		"phe": "null"
+	},
+	{
+		"name": "Zuckermais, Kerne, Konserven",
+		"phe": "159"
+	},
+	{
+		"name": "Apfel, getrocknet",
+		"phe": "27"
+	},
+	{
+		"name": "Menschliche Milch, Übergangs- (10. Tag nach der Geburt)",
+		"phe": "null"
+	},
+	{
+		"name": "Joghurt mit Früchten, 1,5% Fett",
+		"phe": "158"
+	},
+	{
+		"name": "Wurst, Kalb- Leberwurst",
+		"phe": "null"
+	},
+	{
+		"name": "Kalbfleisch, Fett, roh",
+		"phe": "710"
+	},
+	{
+		"name": "Schweinefleisch, Hals, geräuchert, gekocht",
+		"phe": "718"
+	},
+	{
+		"name": "Keks, süß",
+		"phe": "260"
+	},
+	{
+		"name": "Sahne, Schlag, 38% Fett",
+		"phe": "106"
+	},
+	{
+		"name": "Honig",
+		"phe": "null"
+	},
+	{
+		"name": "Getränke, Soja, kommerziell hergestellt, unfortified",
+		"phe": "169"
+	},
+	{
+		"name": "Menschliche Milch, reifen",
+		"phe": "null"
+	},
+	{
+		"name": "Sahne, kultiviert, 38% Fett",
+		"phe": "100"
+	},
+	{
+		"name": "Lachs, Atlantik, wild, gesalzen",
+		"phe": "null"
+	},
+	{
+		"name": "Blutwurst, gekocht",
+		"phe": "548"
+	},
+	{
+		"name": "Eier, Huhn, Eigelb, gesalzen, pasteurisiert",
+		"phe": "650"
+	},
+	{
+		"name": "Charr, Filet, geräuchert",
+		"phe": "null"
+	},
+	{
+		"name": "Milch, mit Schokolade, teilweise abgeschöpft, 1,5% Fett (UHT)",
+		"phe": "180"
+	},
+	{
+		"name": "Gelatine",
+		"phe": "1810"
+	},
+	{
+		"name": "Margarine, (weniger als 50% Fett), durchschnittlich",
+		"phe": "25"
+	},
+	{
+		"name": "Frankfurt Wurst, gebraten, Fast-Food",
+		"phe": "517"
+	},
+	{
+		"name": "Pekannüsse, geröstet Öl",
+		"phe": "486"
+	},
+	{
+		"name": "Pekannüsse, trocken geröstet",
+		"phe": "502"
+	},
+	{
+		"name": "Margarine, 40% Fett, pflanzliches Fett",
+		"phe": "25"
+	},
+	{
+		"name": "Rosenkohl, automn (Oktober bis Dezember), roh",
+		"phe": "138"
+	},
+	{
+		"name": "Buchweizenmehl",
+		"phe": "583"
+	},
+	{
+		"name": "Hefe, getrocknet",
+		"phe": "1370"
+	},
+	{
+		"name": "Squab (Taube), roh",
+		"phe": "739"
+	},
+	{
+		"name": "Schweinefleisch, dicken Bauch, entfettet, ca. 2 mm Schale, roh",
+		"phe": "575"
+	},
+	{
+		"name": "Die Schmelzkäse, 20% FIDM.",
+		"phe": "1470"
+	},
+	{
+		"name": "Käse, fest, Danbo, 20% FIDM.",
+		"phe": "1470"
+	},
+	{
+		"name": "Algen, Kombu, getrocknet",
+		"phe": "null"
+	},
+	{
+		"name": "Milch, mit Schokolade, teilweise abgeschöpft, 1,5% Fett",
+		"phe": "184"
+	},
+	{
+		"name": "Kakao, Instant, ohne Milch, Pulver",
+		"phe": "212"
+	},
+	{
+		"name": "Hefeextrakt, Marmite",
+		"phe": "1070"
+	},
+	{
+		"name": "Curry-Mayonnaise-Salat",
+		"phe": "null"
+	},
+	{
+		"name": "Französisch frites, frittierte, Fast Food",
+		"phe": "148"
+	},
+	{
+		"name": "Ei, Huhn, Eigelb, Zucker hinzugefügt, pasteurisiert, gefroren",
+		"phe": "659"
+	},
+	{
+		"name": "Käse, fest, 20% FIDM., Alle Sorten",
+		"phe": "1540"
+	},
+	{
+		"name": "Käse, Sahne, 60% FIDM.",
+		"phe": "528"
+	},
+	{
+		"name": "Tomatenpaste, konzentriert",
+		"phe": "117"
+	},
+	{
+		"name": "Bohnen, Soja, getrocknet, roh",
+		"phe": "1770"
+	},
+	{
+		"name": "Fleischextrakt, Würfel",
+		"phe": "null"
+	},
+	{
+		"name": "Zuckermais, Kerne, gefroren",
+		"phe": "169"
+	},
+	{
+		"name": "Makrele, geräucherte",
+		"phe": "748"
+	},
+	{
+		"name": "Rinderbrust, in Salzlake",
+		"phe": "806"
+	},
+	{
+		"name": "Salatdressing, Tausend Insel",
+		"phe": "47"
+	},
+	{
+		"name": "Keks, süß",
+		"phe": "286"
+	},
+	{
+		"name": "Reisgraupe, roh",
+		"phe": "349"
+	},
+	{
+		"name": "Schweinefleisch, Schinken, geräuchert",
+		"phe": "1140"
+	},
+	{
+		"name": "Die Schmelzkäse, 30% FIDM.",
+		"phe": "1370"
+	},
+	{
+		"name": "Käse, Brie, 45% FIDM.",
+		"phe": "1070"
+	},
+	{
+		"name": "Huhn, Fleisch und Haut, zerschlagen, frittierte",
+		"phe": "902"
+	},
+	{
+		"name": "Ei, Huhn, Eigelb, roh",
+		"phe": "675"
+	},
+	{
+		"name": "Rindfleisch, Fleisch, ca. 25% Fett, roh",
+		"phe": "630"
+	},
+	{
+		"name": "Rindfleisch, Rinderbrust, posterioren Teil, roh",
+		"phe": "653"
+	},
+	{
+		"name": "Lamb, Fleisch, Mittelwert, roh",
+		"phe": "584"
+	},
+	{
+		"name": "Käse, Camembert, 45% FIDM.",
+		"phe": "1110"
+	},
+	{
+		"name": "Huhn, Fleisch und Haut, frittierte",
+		"phe": "1090"
+	},
+	{
+		"name": "Beef, brisket, Mittelteil, roh",
+		"phe": "611"
+	},
+	{
+		"name": "Bucklingpaté (süß kurierte Hering, geräuchert)",
+		"phe": "null"
+	},
+	{
+		"name": "Buchweizengrütze, roh",
+		"phe": "324"
+	},
+	{
+		"name": "Käse, halbhart, Feta, 50% FIDM",
+		"phe": "921"
+	},
+	{
+		"name": "Käse, fest, Magermilch, max. 5% FIDM.",
+		"phe": "2230"
+	},
+	{
+		"name": "Tomatenpüree",
+		"phe": "44"
+	},
+	{
+		"name": "Aal, roh",
+		"phe": "730"
+	},
+	{
+		"name": "Schweinefleisch, dicker Bauch mit Rinde, roh",
+		"phe": "562"
+	},
+	{
+		"name": "Remoulade, Mittelwerte",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, flatribs, roh",
+		"phe": "637"
+	},
+	{
+		"name": "Reis, poliert, roh",
+		"phe": "452"
+	},
+	{
+		"name": "Bouillon, Rindfleisch, konzentriert, Würfel",
+		"phe": "193"
+	},
+	{
+		"name": "Reismehl",
+		"phe": "393"
+	},
+	{
+		"name": "Kakaopulver",
+		"phe": "756"
+	},
+	{
+		"name": "Oliven, reife, gesalzen, ölbeschichtetem",
+		"phe": "null"
+	},
+	{
+		"name": "Roggenmehl, verschraubter (Extraktionsrate 85%)",
+		"phe": "383"
+	},
+	{
+		"name": "Käse, fest, Danbo, 30% FIDM.",
+		"phe": "1470"
+	},
+	{
+		"name": "Rindfleisch, Flanke, roh",
+		"phe": "618"
+	},
+	{
+		"name": "Tomatenketchup in Flaschen",
+		"phe": "77"
+	},
+	{
+		"name": "Bohnen, i Tomatensauce gebacken, Konserven",
+		"phe": "269"
+	},
+	{
+		"name": "Milch, Voll, 3.5, (UHT),% Fett",
+		"phe": "172"
+	},
+	{
+		"name": "Milch, ganz, Bio, 3,5% Fett",
+		"phe": "171"
+	},
+	{
+		"name": "Lamm, Lende, roh",
+		"phe": "632"
+	},
+	{
+		"name": "Schweinefleisch, Fleisch, ca. 32% Fett, roh",
+		"phe": "552"
+	},
+	{
+		"name": "Joghurt mit Erdbeeren",
+		"phe": "145"
+	},
+	{
+		"name": "Reis, Parboiled, roh",
+		"phe": "420"
+	},
+	{
+		"name": "Kartoffelmehl",
+		"phe": "8"
+	},
+	{
+		"name": "Joghurt mit gemischten Früchten",
+		"phe": "145"
+	},
+	{
+		"name": "Käse, fest, 30% FIDM., Alle Sorten",
+		"phe": "1480"
+	},
+	{
+		"name": "Babynahrung, Säuglingsnahrung, hohe Eisengehalt, Pulver",
+		"phe": "null"
+	},
+	{
+		"name": "Peach, getrocknet",
+		"phe": "109"
+	},
+	{
+		"name": "Käse, Camembert, 50% FIDM.",
+		"phe": "1010"
+	},
+	{
+		"name": "Milch, ganz, kultiviert",
+		"phe": "170"
+	},
+	{
+		"name": "Vergnügungsreise",
+		"phe": "170"
+	},
+	{
+		"name": "Milch, ganz, kultiviert (historisch)",
+		"phe": "170"
+	},
+	{
+		"name": "Milch, kultiviert, kefir (historische)",
+		"phe": "170"
+	},
+	{
+		"name": "Joghurt mit Pfirsich Melba",
+		"phe": "145"
+	},
+	{
+		"name": "Joghurt, Vollmilch, mit Früchten",
+		"phe": "145"
+	},
+	{
+		"name": "Käse, fest, Maribo, 30% FIDM.",
+		"phe": "1510"
+	},
+	{
+		"name": "Joghurt mit Birne und Banane",
+		"phe": "145"
+	},
+	{
+		"name": "Joghurt mit Kirschen",
+		"phe": "149"
+	},
+	{
+		"name": "Milch, acidophilus kultiviert",
+		"phe": "237"
+	},
+	{
+		"name": "Mohn",
+		"phe": "895"
+	},
+	{
+		"name": "Gerstenmehl, roh",
+		"phe": "537"
+	},
+	{
+		"name": "Pastillen, Zucker hinzugefügt, nicht näher bezeichnet",
+		"phe": "null"
+	},
+	{
+		"name": "Pasta, gekocht",
+		"phe": "281"
+	},
+	{
+		"name": "Maismehl",
+		"phe": "348"
+	},
+	{
+		"name": "Käse, halbhart, Mozzarella, 30% FIDM.",
+		"phe": "1500"
+	},
+	{
+		"name": "Weizenmehl",
+		"phe": "538"
+	},
+	{
+		"name": "Aal, geräuchert",
+		"phe": "807"
+	},
+	{
+		"name": "Käse, Sahne, 70% FIDM.",
+		"phe": "497"
+	},
+	{
+		"name": "Joghurt mit Müsli",
+		"phe": "154"
+	},
+	{
+		"name": "Milch, acidophilus kultiviert, mit Zitrone (historisch)",
+		"phe": "237"
+	},
+	{
+		"name": "Weizenmehl, Bäckerei- (Extraktionsrate 75%)",
+		"phe": "538"
+	},
+	{
+		"name": "Salatdressing, gesäuert frische Sahne",
+		"phe": "null"
+	},
+	{
+		"name": "Erbsen, grün, gefroren",
+		"phe": "205"
+	},
+	{
+		"name": "Grieß",
+		"phe": "484"
+	},
+	{
+		"name": "Backpulver",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, Brie, 50% FIDM.",
+		"phe": "1020"
+	},
+	{
+		"name": "Erbsen, grün, Konserven",
+		"phe": "245"
+	},
+	{
+		"name": "Lamb, Flanke, roh",
+		"phe": "580"
+	},
+	{
+		"name": "Lamb, der Brust, roh",
+		"phe": "580"
+	},
+	{
+		"name": "Beansprouts, Soja, roh",
+		"phe": "308"
+	},
+	{
+		"name": "Käse, fest, Samsö, 30% FIDM.",
+		"phe": "1560"
+	},
+	{
+		"name": "Ziegenmilch",
+		"phe": "156"
+	},
+	{
+		"name": "Distelöl",
+		"phe": "null"
+	},
+	{
+		"name": "Brötchen, süßer Teig Typ",
+		"phe": "468"
+	},
+	{
+		"name": "Weizenkeimöl",
+		"phe": "0"
+	},
+	{
+		"name": "Öl, Baumwollsamen",
+		"phe": "0"
+	},
+	{
+		"name": "Sorbitol",
+		"phe": "null"
+	},
+	{
+		"name": "Öl Palme",
+		"phe": "0"
+	},
+	{
+		"name": "Öl, Kakaobutter",
+		"phe": "0"
+	},
+	{
+		"name": "Palmkernöl",
+		"phe": "0"
+	},
+	{
+		"name": "Erdnussöl",
+		"phe": "0"
+	},
+	{
+		"name": "Sonnenblumenöl",
+		"phe": "0"
+	},
+	{
+		"name": "Walnussöl",
+		"phe": "0"
+	},
+	{
+		"name": "Lebertran",
+		"phe": "null"
+	},
+	{
+		"name": "Knödel, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Öl, Sesam",
+		"phe": "0"
+	},
+	{
+		"name": "Zucker, brauner Rohrzucker",
+		"phe": "null"
+	},
+	{
+		"name": "Maisöl",
+		"phe": "0"
+	},
+	{
+		"name": "Leinsamenöl",
+		"phe": "0"
+	},
+	{
+		"name": "Roggenbrot, weich, keine hohen Fettsamen, industriell hergestellte",
+		"phe": "240"
+	},
+	{
+		"name": "Weizenbrot, italienische Art, Einzelhandel Bäckerei",
+		"phe": "420"
+	},
+	{
+		"name": "Öl, Traubenkern",
+		"phe": "0"
+	},
+	{
+		"name": "Öl, Kokos",
+		"phe": "0"
+	},
+	{
+		"name": "Schellfisch, Lebertran",
+		"phe": "null"
+	},
+	{
+		"name": "Fett, Rindertalg",
+		"phe": "184"
+	},
+	{
+		"name": "Sojaöl, raffiniert",
+		"phe": "0"
+	},
+	{
+		"name": "Fischfilet, panierte, frittierte, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Olivenöl",
+		"phe": "0"
+	},
+	{
+		"name": "Öl, Raps (keine eruca Säure)",
+		"phe": "0"
+	},
+	{
+		"name": "Kürbissamen, getrocknete",
+		"phe": "1810"
+	},
+	{
+		"name": "Hartweizenmehl",
+		"phe": "640"
+	},
+	{
+		"name": "Weizenbrot, weiß, industriell hergestellte",
+		"phe": "444"
+	},
+	{
+		"name": "Brot, weiß, groß, Einzelhandel Bäckerei",
+		"phe": "538"
+	},
+	{
+		"name": "Weizenbrot, mit Schrot, industriell hergestelltem",
+		"phe": "470"
+	},
+	{
+		"name": "Weizenbrot, groß, mit Schrot, Einzelhandel Bäckerei",
+		"phe": "538"
+	},
+	{
+		"name": "Tiger Garnelen, Aquakultur, roh, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Garnele, Riesen Tiger, Aquakultur, gekocht, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Lachs, Atlantik, Aquakultur, kalt geräuchert",
+		"phe": "834"
+	},
+	{
+		"name": "Lachs, Atlantik, Aquakultur, heiß geräucherten",
+		"phe": "903"
+	},
+	{
+		"name": "Weißer Weizen, Vollkornmehl, ready-to-backen",
+		"phe": "null"
+	},
+	{
+		"name": "Butterkeks, Weizen, Dänisch, industriell hergestellte",
+		"phe": "538"
+	},
+	{
+		"name": "Amerikaner inspirierte Cookie",
+		"phe": "null"
+	},
+	{
+		"name": "Butterkeks, braun, (dänisch), industriell hergestellte",
+		"phe": "538"
+	},
+	{
+		"name": "Keks, süß, Pfeffer Nüsse, dänische Tradition, industriell hergestellten",
+		"phe": "538"
+	},
+	{
+		"name": "Kekse, Kokosnuss, industriell hergestellte",
+		"phe": "null"
+	},
+	{
+		"name": "Cookie, Trüffel Produkt / ungebrannten, industriell hergestellte",
+		"phe": "null"
+	},
+	{
+		"name": "Kranz Kuchen, Mandel basiert, dänische Tradition",
+		"phe": "null"
+	},
+	{
+		"name": "Zuckermais, baby, on-the-Cob, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Pomelo (Pommelo; shaddock), roh",
+		"phe": "null"
+	},
+	{
+		"name": "Keks, Roggen",
+		"phe": "298"
+	},
+	{
+		"name": "Keks, Weizen, süß mit Schokolade dick",
+		"phe": "null"
+	},
+	{
+		"name": "Keks, Doppel, Weizen, süß",
+		"phe": "null"
+	},
+	{
+		"name": "Keks, Hafer, süß",
+		"phe": "null"
+	},
+	{
+		"name": "Keks, Hafer, süß mit chokolate",
+		"phe": "null"
+	},
+	{
+		"name": "Müsliriegel",
+		"phe": "null"
+	},
+	{
+		"name": "Wafer-Sticks",
+		"phe": "null"
+	},
+	{
+		"name": "Keks, Grobkorn mit Obst und Gemüse",
+		"phe": "null"
+	},
+	{
+		"name": "Milch, Mager, 0,1% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Joghurt glatt, wenig Fett, 1,5% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Joghurt mit niedrigem Fettgehalt, 0,1% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Brot, Weizen, weiß Weizen, wholw Getreide, Einzelhandel Bäckerei",
+		"phe": "null"
+	},
+	{
+		"name": "Rolls, Weißer Weizen, Vollkorn, industriell hergestellte",
+		"phe": "null"
+	},
+	{
+		"name": "Brot, Weizen, weiß Weizen, wholw Getreide, industriell hergestellte",
+		"phe": "null"
+	},
+	{
+		"name": "Hering, Ostsee, nicht spezifiziert, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Rindfleisch, Hackfleisch, 5-10% Fett, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Hackfleisch, 10-15% Fett, roh",
+		"phe": "724"
+	},
+	{
+		"name": "Türkei, Hackfleisch, 5-10% Fett, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Hamburger, kleine Pastetchen, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Hamburger, mittlere Pastetchen, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Hamburger und Speck, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Cheeseburger, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Hamburger, Schinken und Käse, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Hamburger, Hähnchen, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich mit Huhn, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich mit Huhn und Speck, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich, Schinken und Käse, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich mit Eiern / Garnelen, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich mit Fisch, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich mit Kebab, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich mit Schweinebraten, Rotkohl und Gurken Gurken, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Triangle-Sandwich mit Huhn und Speck, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Dreieck-Sandwich mit Schinken und Käse, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Triangle Sandwich mit Eiern, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Sandwich mit Fleischbällchen, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pita-Sandwich mit Kebab, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pita Sandwich mit Huhn, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pita-Sandwich mit Garnelen, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pita-Sandwich mit Falaffel, Salat und Dressing, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pita-Sandwich mit Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Dürüm Rolle mit Kebab, Salat und Dressing, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Speckmantel Frankfurt Wurst, freid, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Französisch Hotdog, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Hotdog, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Frankfurt Wurstmischung, gebraten, mit frensh Pommes, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Kebab mischen und Französisch frites, frittierte, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Huhn, gegrillt, Fast-Food",
+		"phe": "null"
+	},
+	{
+		"name": "Chicken Nuggets, frittierte, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pizza mit Tomaten und Käse, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pizza mit Meeresfrüchten, Tomaten und Käse, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pizza mit Salami, Tomaten und Käse, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pizza mit Gemüse, Obst, Tomaten und Käse, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pizza mit Fleisch, Tomaten und Käse, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Pizza mit Fleisch und Meeresfrüchte, Tomaten und Käse, Fast Food",
+		"phe": "null"
+	},
+	{
+		"name": "Fischfilet, panierte, gebratene, delicatessens",
+		"phe": "null"
+	},
+	{
+		"name": "Thunfisch, Gelb, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Garnelen, gekocht, in Sole",
+		"phe": "668"
+	},
+	{
+		"name": "Lachs, Atlantik, Aquakultur, Graved",
+		"phe": "814"
+	},
+	{
+		"name": "Flunder, Filet, paniert, roh, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Fischstäbchen, panierte, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Lachs, Atlantik, Aquakultur, roh",
+		"phe": "779"
+	},
+	{
+		"name": "Salmon (SLAs op i FishBase)",
+		"phe": "null"
+	},
+	{
+		"name": "Gestreifte Wels, roh, gefroren",
+		"phe": "null"
+	},
+	{
+		"name": "Blaue Muschel, gekocht",
+		"phe": "null"
+	},
+	{
+		"name": "Eier, Hähnchen, Legehennen, roh",
+		"phe": "671"
+	},
+	{
+		"name": "Eier, Hähnchen, Freilandhaltung (im Freien) Hühner, roh",
+		"phe": "688"
+	},
+	{
+		"name": "Eier, Hähnchen, Freiland-Hühner (innen), roh",
+		"phe": "686"
+	},
+	{
+		"name": "Eier, Geflügel, ökologischer Landbau, roh",
+		"phe": "691"
+	},
+	{
+		"name": "Eier, Huhn, gekocht, gefroren",
+		"phe": "768"
+	},
+	{
+		"name": "Eier, Huhn, Eigelb, pasteurisiert",
+		"phe": "560"
+	},
+	{
+		"name": "Eier, Huhn, Rührei, industriell hergestellte",
+		"phe": "null"
+	},
+	{
+		"name": "Eier, Geflügel, Rührei mischen, industriell hergestellte",
+		"phe": "null"
+	},
+	{
+		"name": "Roggenbrot, dunkel, industriell hergestellten",
+		"phe": "254"
+	},
+	{
+		"name": "Roggenbrot, dunkel, Vollkornprodukte, industriell hergestellte",
+		"phe": "245"
+	},
+	{
+		"name": "Weizenbrot, mit Schrot und fettreiche Samen, Einzelhandel Bäckerei",
+		"phe": "457"
+	},
+	{
+		"name": "Roggenbrot, dunkel, Einzelhandel Bäckerei",
+		"phe": "290"
+	},
+	{
+		"name": "Roggenbrot, dunkel, Vollkornprodukte, Einzelhandel Bäckerei",
+		"phe": "246"
+	},
+	{
+		"name": "Roggenbrot, dunkel, mit hohem Fett Saatgut, Einzelhandel Bäckerei",
+		"phe": "357"
+	},
+	{
+		"name": "Roggenbrot, mit Krümeln (weich) und fettreiche Samen, Einzelhandel Bäckerei",
+		"phe": "387"
+	},
+	{
+		"name": "Joghurt mit Früchten, 0,1% Fett, ohne Zucker",
+		"phe": "null"
+	},
+	{
+		"name": "Käse, Ferienhaus, 5% FIDM.",
+		"phe": "null"
+	},
+	{
+		"name": "Lactose, trockene, pulver",
+		"phe": "null"
+	},
+	{
+		"name": "Joghurt mit Früchten, 0,4% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Buttermilk Dessert",
+		"phe": "null"
+	},
+	{
+		"name": "Milchshake",
+		"phe": "null"
+	},
+	{
+		"name": "Blended Aufstrich, 75% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Blended Ausbreitung, fettreduziert, 57% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, dicke Flanke, vollständig beschnitten, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, dünner Bauch mit Rinde, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Lende, 0-1 mm dick, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Schweinefleisch, Kiefer, getrimmt, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Oatmilk, unfortified",
+		"phe": "null"
+	},
+	{
+		"name": "Reismilch, unfortified",
+		"phe": "null"
+	},
+	{
+		"name": "Mandelmilch, unfortified",
+		"phe": "null"
+	},
+	{
+		"name": "Skyr, 0,2% Fett",
+		"phe": "null"
+	},
+	{
+		"name": "Kümmel, roh",
+		"phe": "867"
+	},
+	{
+		"name": "Kümmel, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Tahini",
+		"phe": "901"
+	},
+	{
+		"name": "Reismilch, mit zugesetztem Calcium",
+		"phe": "null"
+	},
+	{
+		"name": "Oatmilk mit zugesetztem Calcium",
+		"phe": "null"
+	},
+	{
+		"name": "Sojamilch, mit zugesetztem Calcium",
+		"phe": "null"
+	},
+	{
+		"name": "Rolls, italienische Art, Einzelhandel Bäckerei",
+		"phe": "475"
+	},
+	{
+		"name": "Weizenbrot, Fladen, weiß",
+		"phe": "398"
+	},
+	{
+		"name": "Sanddorn",
+		"phe": "null"
+	},
+	{
+		"name": "Pfeffer, süß, gelb, roh",
+		"phe": "null"
+	},
+	{
+		"name": "Dinkelmehl, verschraubt",
+		"phe": "615"
+	},
+	{
+		"name": "Dinkelmehl, ganze",
+		"phe": "680"
+	},
+	{
+		"name": "Quinoa, weiß, roh",
+		"phe": "524"
+	},
+	{
+		"name": "Quinoa, rot, roh",
+		"phe": "552"
+	},
+	{
+		"name": "Quinoa, schwarz, roh",
+		"phe": "532"
+	},
+	{
+		"name": "Roggenmehl, nicht näher bezeichnet",
+		"phe": "386"
+	},
+	{
+		"name": "Chia-Samen",
+		"phe": "989"
+	},
+	{
+		"name": "Perlförmig Dinkel",
+		"phe": "null"
+	},
+	{
+		"name": "Pearled Gerste",
+		"phe": ""
+	}
+]

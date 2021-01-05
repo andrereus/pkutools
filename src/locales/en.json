@@ -41,7 +41,6 @@
   "phe-search": {
     "title": "Phe Search",
     "description": "Search for phe values.",
-    "description-p1": "Selected foods from the USDA database including the possibility to search all foods.",
     "search": "Search",
     "weight": "Weight (in g)",
     "advanced": "Search all foods"
@@ -128,7 +127,7 @@
     "title": "About",
     "description": "About PKU Tools",
     "email": "Email",
-    "sources": "Sources: USDA National Nutrient Database"
+    "sources": "Sources: USDA, Agricultural Research Service. FoodData Central, 2019. & Frida Food Data (http://frida.fooddata.dk), version 4, 2019."
   },
   "disclaimer": {
     "title": "Disclaimer",
