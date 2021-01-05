@@ -28,11 +28,12 @@
           color="primary"
           class="mr-3 mb-3"
         >
-          <v-icon left>mdi-youtube</v-icon>
+          <v-icon left>mdi-play-circle-outline</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
         <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+          <v-icon left>mdi-play</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
 

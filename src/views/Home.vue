@@ -110,24 +110,29 @@
           color="primary"
           class="mr-3 mb-5"
         >
-          <v-icon left>mdi-youtube</v-icon>
+          <v-icon left>mdi-play-circle-outline</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
         <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
+          <v-icon left>mdi-play</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
 
         <div v-if="!userIsAuthenticated">
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
-          <FeatureComparison home class="mb-6" />
+          <FeatureComparison home class="mb-8" />
         </div>
 
-        <p>
-          <v-icon>mdi-information-outline</v-icon>
-          {{ $t("app.installation") }}
-        </p>
-        <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+        <v-card class="mt-4">
+          <v-card-text>
+            <p>
+              <v-icon>mdi-information-outline</v-icon>
+              {{ $t("app.installation") }}
+            </p>
+            <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
 
