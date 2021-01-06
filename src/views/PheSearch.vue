@@ -14,8 +14,8 @@
           filled
           single-line
           autocomplete="off"
-          append-icon="mdi-magnify"
-          @click:append="searchFood"
+          append-outer-icon="mdi-magnify"
+          @click:append-outer="searchFood"
           @keyup.enter="searchFood"
           clearable
         ></v-text-field>
