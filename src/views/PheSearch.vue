@@ -118,6 +118,10 @@
           class="mt-4 mb-8 illustration"
           v-if="advancedFood === null"
         ></v-img>
+
+        <p class="text--secondary text-center" v-if="$i18n.locale === 'de' && advancedFood === null">
+          Tipp: Probiere auch die Einzahl von Wörtern bei Suchbegriffen.
+        </p>
       </v-col>
     </v-row>
   </div>
