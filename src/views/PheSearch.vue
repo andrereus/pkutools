@@ -17,6 +17,7 @@
           append-icon="mdi-magnify"
           @click:append="searchFood"
           @keyup.enter="searchFood"
+          clearable
         ></v-text-field>
 
         <!--        <v-data-table-->
@@ -105,6 +106,11 @@
             </tr>
           </template>
         </v-data-table>
+
+        <p class="mt-6 text--secondary" v-if="advancedFood !== null">
+          <v-icon>mdi-information-variant</v-icon>
+          {{ $t("phe-search.source") }}
+        </p>
 
         <v-img
           src="../assets/searching.svg"

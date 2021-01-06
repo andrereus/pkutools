@@ -43,7 +43,8 @@
     "description": "Search for phe values.",
     "search": "Search",
     "weight": "Weight (in g)",
-    "advanced": "Search all foods"
+    "advanced": "Search all foods",
+    "source": "Source: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov."
   },
   "phe-calculator": {
     "title": "Phe Calculator",
