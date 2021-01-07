@@ -119,6 +119,7 @@
             </v-card>
           </v-dialog>
 
+          <v-btn depressed class="mr-3 mt-3" @click="exportDiary">{{ $t("phe-diary.export") }}</v-btn>
           <v-btn depressed class="mr-3 mt-3" @click="reset">{{ $t("common.reset") }}</v-btn>
         </div>
       </v-col>
@@ -142,6 +143,7 @@ import "firebase/auth";
 import "firebase/database";
 import { format, parseISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
+import XLSX from "xlsx";
 
 export default {
   metaInfo() {
@@ -269,6 +271,36 @@ export default {
         return format(parseISO(date), "eee P", { locale: locales[this.$i18n.locale] });
       } else {
         return "";
+      }
+    },
+    exportDiary() {
+      // TODO: DRY Translation
+      if (this.$i18n.locale === "de") {
+        let exportTable = this.pheDiary.map(item => {
+          return {
+            Datum: this.getlocalDate(item.date),
+            Phe: item.phe
+          };
+        });
+
+        let workbook = XLSX.utils.book_new();
+        let worksheet = XLSX.utils.json_to_sheet(exportTable);
+
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Tagebuch");
+        XLSX.writeFile(workbook, "PKU Tools - Phe Tagebuch.xlsx");
+      } else {
+        let exportTable = this.pheDiary.map(item => {
+          return {
+            Date: this.getlocalDate(item.date),
+            Phe: item.phe
+          };
+        });
+
+        let workbook = XLSX.utils.book_new();
+        let worksheet = XLSX.utils.json_to_sheet(exportTable);
+
+        XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Diary");
+        XLSX.writeFile(workbook, "PKU Tools - Phe Diary.xlsx");
       }
     }
   },

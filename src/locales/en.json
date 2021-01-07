@@ -89,7 +89,8 @@
     "date": "Date",
     "phe": "Total Phe (in mg)",
     "chart": "Not enough entries for the chart.",
-    "limit": "The Phe Diary has a limit of 90 entries"
+    "limit": "The Phe Diary has a limit of 90 entries",
+    "export": "Export"
   },
   "own-food": {
     "title": "Own Food",

@@ -89,7 +89,8 @@
     "date": "Datum",
     "phe": "Gesamt Phe (in mg)",
     "chart": "Noch nicht genug Einträge für das Diagramm.",
-    "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen"
+    "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen",
+    "export": "Exportieren"
   },
   "own-food": {
     "title": "Eigene Lebensmittel",
