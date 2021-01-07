@@ -19,7 +19,7 @@
   },
   {
     "name": "Weitere Funktionen",
-    "pkutools": "Beliebigen Wert vorspeichern, eigene Lebensmittel hinzufügen, Amino Zähler, Widgets, Dunkles Design, Lebensmittel mit Icons und mehr",
+    "pkutools": "Beliebigen Wert vorspeichern, eigene Lebensmittel hinzufügen, Amino Zähler, Dunkles Design und mehr",
     "pkumanager": "Beliebigen Wert vorspeichern & zuletzt verwendete Lebensmittel hinzufügen",
     "pherechner": "Gewicht vorspeichern & eigene Lebensmittel hinzufügen"
   },
@@ -34,6 +34,12 @@
     "pkutools": "Gespeichert in Account mit Sync zwischen Geräten",
     "pkumanager": "Gespeichert auf Gerät & Option Account zu nutzen (im Web)",
     "pherechner": "Gespeichert auf Gerät"
+  },
+  {
+    "name": "Export",
+    "pkutools": "Phe Tagebuch",
+    "pkumanager": "-",
+    "pherechner": "-"
   },
   {
     "name": "Sprachen",

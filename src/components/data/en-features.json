@@ -19,7 +19,7 @@
   },
   {
     "name": "Other features",
-    "pkutools": "Pre-save any value, add own food, Amino Counter, Widgets, Dark Design, food with icons and more",
+    "pkutools": "Pre-save any value, add own food, Amino Counter, Dark Design and more",
     "pkumanager": "Pre-save any value & add last used food",
     "pherechner": "Pre-save weight & add own food"
   },
@@ -34,6 +34,12 @@
     "pkutools": "Saved in account with sync between devices",
     "pkumanager": "Saved on device & option to use account (on web)",
     "pherechner": "Saved on device"
+  },
+  {
+    "name": "Export",
+    "pkutools": "Phe Diary",
+    "pkumanager": "-",
+    "pherechner": "-"
   },
   {
     "name": "Languages",
