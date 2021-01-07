@@ -14,11 +14,15 @@
           filled
           single-line
           autocomplete="off"
-          append-outer-icon="mdi-magnify"
-          @click:append-outer="searchFood"
           @keyup.enter="searchFood"
           clearable
-        ></v-text-field>
+        >
+          <template v-slot:append-outer>
+            <v-btn depressed fab small color="primary" @click="searchFood" class="mt-n2">
+              <v-icon>mdi-magnify</v-icon>
+            </v-btn>
+          </template>
+        </v-text-field>
 
         <!--        <v-data-table-->
         <!--          :headers="headers"-->
