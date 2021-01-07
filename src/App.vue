@@ -259,7 +259,7 @@
         <v-icon>mdi-food-apple</v-icon>
       </v-btn>
 
-      <v-btn @click="dialog = true" value="add" :aria-label="$t('common.add')" class="add-button">
+      <v-btn @click="sheet = true" value="add" :aria-label="$t('common.add')" class="add-button">
         <v-icon color="cyan" large>mdi-plus-circle</v-icon>
       </v-btn>
 
@@ -280,37 +280,38 @@
       </v-btn>
     </v-bottom-navigation>
 
-    <v-dialog v-model="dialog" max-width="500px">
-      <v-card>
-        <v-card-title>
-          <span class="headline mb-2">{{ $t("app.tools") }}</span>
-        </v-card-title>
+    <v-bottom-sheet v-model="sheet">
+      <v-list>
+        <v-subheader>{{ $t("app.tools") }}</v-subheader>
+        <v-list-item to="/phe-search" @click="sheet = false">
+          <v-list-item-icon>
+            <v-icon>mdi-magnify</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{ $t("phe-search.title") }}</v-list-item-title>
+        </v-list-item>
 
-        <v-card-text>
-          <v-btn depressed to="/phe-search" color="primary" class="mr-3 mb-3" @click="dialog = false">
-            <v-icon left>mdi-magnify</v-icon>
-            {{ $t("phe-search.title") }}
-          </v-btn>
-          <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mb-3" @click="dialog = false">
-            <v-icon left>mdi-calculator</v-icon>
-            {{ $t("phe-calculator.title") }}
-          </v-btn>
-          <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3" @click="dialog = false">
-            <v-icon left>mdi-calculator-variant</v-icon>
-            {{ $t("protein-calculator.title") }}
-          </v-btn>
-          <v-btn depressed to="/own-food" color="primary" class="mr-3 mb-3" @click="dialog = false">
-            <v-icon left>mdi-food-apple</v-icon>
-            {{ $t("own-food.title") }}
-          </v-btn>
-        </v-card-text>
+        <v-list-item to="/phe-calculator" @click="sheet = false">
+          <v-list-item-icon>
+            <v-icon>mdi-calculator</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{ $t("phe-calculator.title") }}</v-list-item-title>
+        </v-list-item>
 
-        <v-card-actions class="mt-n6">
-          <v-spacer></v-spacer>
-          <v-btn depressed @click="dialog = false">{{ $t("common.close") }}</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
+        <v-list-item to="/protein-calculator" @click="sheet = false">
+          <v-list-item-icon>
+            <v-icon>mdi-calculator-variant</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{ $t("protein-calculator.title") }}</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item to="/own-food" @click="sheet = false">
+          <v-list-item-icon>
+            <v-icon>mdi-food-apple</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{ $t("own-food.title") }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+    </v-bottom-sheet>
 
     <v-snackbar bottom color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update-info") }}
@@ -352,7 +353,7 @@ export default {
       { name: "Deutsch", abbr: "de" }
     ],
     bottomNav: null,
-    dialog: false,
+    sheet: false,
     offlineInfo: false
   }),
   mixins: [update],
