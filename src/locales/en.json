@@ -70,7 +70,7 @@
     "lock-info": "Weight and Phe are changed in parallel",
     "max": "Phe tolerance per day",
     "save-diary": "Save in Phe Diary and reset Phe Log",
-    "weight": "Weight (in mg)",
+    "weight": "Weight (in g)",
     "total": "Total",
     "remaining": "Remaining",
     "save-day": "Complete day"
