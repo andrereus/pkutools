@@ -159,7 +159,7 @@
       </v-menu>
 
       <v-btn icon to="/help" :aria-label="$t('help.title')">
-        <v-icon size="22">mdi-help-circle</v-icon>
+        <v-icon size="22">mdi-help-circle-outline</v-icon>
       </v-btn>
 
       <v-menu offset-y>
