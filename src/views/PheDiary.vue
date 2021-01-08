@@ -276,31 +276,37 @@ export default {
     exportDiary() {
       // TODO: DRY Translation
       if (this.$i18n.locale === "de") {
-        let exportTable = this.pheDiary.map(item => {
-          return {
-            Datum: this.getlocalDate(item.date),
-            Phe: item.phe
-          };
-        });
+        let r = confirm(this.$t("Übersicht in Excel exportieren") + "?");
+        if (r === true) {
+          let exportTable = this.pheDiary.map(item => {
+            return {
+              Datum: this.getlocalDate(item.date),
+              Phe: item.phe
+            };
+          });
 
-        let workbook = XLSX.utils.book_new();
-        let worksheet = XLSX.utils.json_to_sheet(exportTable);
+          let workbook = XLSX.utils.book_new();
+          let worksheet = XLSX.utils.json_to_sheet(exportTable);
 
-        XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Tagebuch");
-        XLSX.writeFile(workbook, "PKU Tools - Phe Tagebuch.xlsx");
+          XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Tagebuch");
+          XLSX.writeFile(workbook, "PKU Tools - Phe Tagebuch.xlsx");
+        }
       } else {
-        let exportTable = this.pheDiary.map(item => {
-          return {
-            Date: this.getlocalDate(item.date),
-            Phe: item.phe
-          };
-        });
+        let r = confirm(this.$t("Export overview in Excel") + "?");
+        if (r === true) {
+          let exportTable = this.pheDiary.map(item => {
+            return {
+              Date: this.getlocalDate(item.date),
+              Phe: item.phe
+            };
+          });
 
-        let workbook = XLSX.utils.book_new();
-        let worksheet = XLSX.utils.json_to_sheet(exportTable);
+          let workbook = XLSX.utils.book_new();
+          let worksheet = XLSX.utils.json_to_sheet(exportTable);
 
-        XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Diary");
-        XLSX.writeFile(workbook, "PKU Tools - Phe Diary.xlsx");
+          XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Diary");
+          XLSX.writeFile(workbook, "PKU Tools - Phe Diary.xlsx");
+        }
       }
     }
   },
