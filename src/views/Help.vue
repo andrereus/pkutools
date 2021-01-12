@@ -41,6 +41,10 @@
 
         <h3>{{ $t("help.install") }}</h3>
         <p>{{ $t("help.install-p1") }}</p>
+        <p>
+          <v-icon>mdi-information-outline</v-icon>
+          {{ $t("help.install-p2") }}
+        </p>
 
         <div class="install-clearfix">
           <v-card outlined color="primary" class="mt-1 mr-3 mb-3 float-left" min-width="150" min-height="35">
@@ -60,7 +64,7 @@
           </a>
         </div>
 
-        <p>{{ $t("help.install-p2") }}</p>
+        <p>{{ $t("help.install-p3") }}</p>
 
         <h3>{{ $t("help.sign-in") }}</h3>
         <p>{{ $t("help.sign-in-p1") }}</p>
