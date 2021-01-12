@@ -109,6 +109,7 @@
     "install": "Wie kann die App installiert werden?",
     "install-p1": "Diese Web App kann auf jedem Gerät installiert werden (Web, Android, iOS, Windows, Mac, Linux). Unten ist ein Button zur Installation (der nach Neuladen dieser Seite sichtbar ist, wenn noch nicht installiert).",
     "install-p2": "Die App ist auch im Google Play Store für Android zu finden.",
+    "install-p3": "Hinweis: Wenn Firefox als Standardbrowser gesetzt ist, wird leider noch eine Adresszeile angezeigt. Empfohlen werden Chromium Browser (Chrome, Edge, Brave, ...).",
     "sign-in": "Wie kann man sich anmelden?",
     "sign-in-p1": "Man kann sich (oben rechts über das Menü) mit Google oder Facebook anmelden.",
     "sign-in-p2": "Andere Anmeldemöglichkeiten sind im Moment nicht geplant.",
