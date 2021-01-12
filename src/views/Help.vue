@@ -43,7 +43,7 @@
         <p>{{ $t("help.install-p1") }}</p>
 
         <div class="install-clearfix">
-          <v-card outlined color="primary" class="mt-1 mr-3 mb-4 float-left" min-width="150" min-height="35">
+          <v-card outlined color="primary" class="mt-1 mr-3 mb-3 float-left" min-width="150" min-height="35">
             <v-card-text class="pa-0">
               <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
             </v-card-text>
