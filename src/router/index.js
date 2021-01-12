@@ -28,14 +28,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "protein-calculator" */ "../views/ProteinCalculator.vue")
   },
   {
+    path: "/own-food",
+    name: "Own Food",
+    component: () => import(/* webpackChunkName: "own-food" */ "../views/OwnFood.vue")
+  },
+  {
     path: "/phe-log",
     name: "Phe Log",
     component: () => import(/* webpackChunkName: "phe-log" */ "../views/PheLog.vue")
-  },
-  {
-    path: "/amino-counter",
-    name: "Amino Counter",
-    component: () => import(/* webpackChunkName: "amino-counter" */ "../views/AminoCounter.vue")
   },
   {
     path: "/phe-diary",
@@ -43,9 +43,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "phe-diary" */ "../views/PheDiary.vue")
   },
   {
-    path: "/own-food",
-    name: "Own Food",
-    component: () => import(/* webpackChunkName: "own-food" */ "../views/OwnFood.vue")
+    path: "/amino-counter",
+    name: "Amino Counter",
+    component: () => import(/* webpackChunkName: "amino-counter" */ "../views/AminoCounter.vue")
   },
   {
     path: "/help",

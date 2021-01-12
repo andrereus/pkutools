@@ -63,6 +63,14 @@
     "weight": "Gegessenes Gewicht (in g)",
     "name": "Lebensmittelname"
   },
+  "own-food": {
+    "title": "Eigene Lebensmittel",
+    "description": "Speichere eigene Lebensmittel und Phe-Werte.",
+    "phe": "Phe pro 100g (in mg)",
+    "weight": "Gewicht (in g)",
+    "date": "Datum",
+    "chart": "Noch nicht genug Einträge für das Diagramm."
+  },
   "phe-log": {
     "title": "Phe Protokoll",
     "description": "Protokolliere Phe-Werte über den Tag.",
@@ -75,14 +83,6 @@
     "remaining": "Übrig",
     "save-day": "Tag abschließen"
   },
-  "amino-counter": {
-    "title": "Amino Zähler",
-    "description": "Zähle die Portionen der Aminosäuremischung über den Tag.",
-    "progress": "Portion(en) genommen",
-    "date": "Letzter Eintrag",
-    "take": "Portion nehmen",
-    "amount": "Portionen pro Tag"
-  },
   "phe-diary": {
     "title": "Phe Tagebuch",
     "description": "Protokolliere Phe-Werte über mehrere Tage.",
@@ -92,13 +92,13 @@
     "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen",
     "export": "Exportieren"
   },
-  "own-food": {
-    "title": "Eigene Lebensmittel",
-    "description": "Speichere eigene Lebensmittel und Phe-Werte.",
-    "phe": "Phe pro 100g (in mg)",
-    "weight": "Gewicht (in g)",
-    "date": "Datum",
-    "chart": "Noch nicht genug Einträge für das Diagramm."
+  "amino-counter": {
+    "title": "Amino Zähler",
+    "description": "Zähle die Portionen der Aminosäuremischung über den Tag.",
+    "progress": "Portion(en) genommen",
+    "date": "Letzter Eintrag",
+    "take": "Portion nehmen",
+    "amount": "Portionen pro Tag"
   },
   "help": {
     "title": "Hilfe",

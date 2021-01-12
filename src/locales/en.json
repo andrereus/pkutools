@@ -63,6 +63,14 @@
     "weight": "Eaten weight (in g)",
     "name": "Food name"
   },
+  "own-food": {
+    "title": "Own Food",
+    "description": "Save own food and phe values.",
+    "phe": "Phe per 100g (in mg)",
+    "weight": "Weight (in g)",
+    "date": "Date",
+    "chart": "Not enough entries for the chart."
+  },
   "phe-log": {
     "title": "Phe Log",
     "description": "Log phe values throughout the day.",
@@ -75,14 +83,6 @@
     "remaining": "Remaining",
     "save-day": "Complete day"
   },
-  "amino-counter": {
-    "title": "Amino Counter",
-    "description": "Count the servings of the amino acid mixture throughout the day.",
-    "progress": "serving(s) taken",
-    "date": "Last entry",
-    "take": "Take serving",
-    "amount": "Servings per day"
-  },
   "phe-diary": {
     "title": "Phe Diary",
     "description": "Log phe values over several days.",
@@ -92,13 +92,13 @@
     "limit": "The Phe Diary has a limit of 90 entries",
     "export": "Export"
   },
-  "own-food": {
-    "title": "Own Food",
-    "description": "Save own food and phe values.",
-    "phe": "Phe per 100g (in mg)",
-    "weight": "Weight (in g)",
-    "date": "Date",
-    "chart": "Not enough entries for the chart."
+  "amino-counter": {
+    "title": "Amino Counter",
+    "description": "Count the servings of the amino acid mixture throughout the day.",
+    "progress": "serving(s) taken",
+    "date": "Last entry",
+    "take": "Take serving",
+    "amount": "Servings per day"
   },
   "help": {
     "title": "Help",
