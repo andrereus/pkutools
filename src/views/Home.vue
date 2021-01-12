@@ -121,18 +121,13 @@
           </v-btn>
 
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
-          <FeatureComparison home class="mb-8" />
-        </div>
+          <FeatureComparison home class="mb-6" />
 
-        <v-card class="mt-4">
-          <v-card-text>
-            <p>
-              <v-icon>mdi-information-outline</v-icon>
-              {{ $t("app.installation") }}
-            </p>
-            <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
-          </v-card-text>
-        </v-card>
+          <v-btn depressed to="/help" color="primary" class="mb-3">
+            <v-icon left>mdi-download</v-icon>
+            {{ $t("app.installation") }}
+          </v-btn>
+        </div>
       </v-col>
     </v-row>
 
@@ -215,12 +210,6 @@ export default {
   display: block;
   content: "";
   clear: both;
-}
-
-pwa-install::part(openButton) {
-  background: #3498db;
-  border-radius: 4px;
-  padding: 4px 16px;
 }
 
 .v-btn {
