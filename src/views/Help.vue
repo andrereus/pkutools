@@ -42,25 +42,25 @@
         <h3>{{ $t("help.install") }}</h3>
         <p>{{ $t("help.install-p1") }}</p>
 
-        <v-card class="my-4" max-width="185" outlined>
-          <v-card-text>
-            <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
-          </v-card-text>
-        </v-card>
+        <div class="install-clearfix">
+          <v-card outlined color="primary" class="mt-1 mr-3 mb-4 float-left" min-width="150" min-height="35">
+            <v-card-text class="pa-0">
+              <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
+            </v-card-text>
+          </v-card>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=com.pkutools.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          >
+            <img
+              alt="Get it on Google Play"
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              class="gplay-btn ml-n2 mt-n2 mb-2"
+            />
+          </a>
+        </div>
 
         <p>{{ $t("help.install-p2") }}</p>
-
-        <a
-          href="https://play.google.com/store/apps/details?id=com.pkutools.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-        >
-          <img
-            alt="Get it on Google Play"
-            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-            class="gplay-btn ml-n2 mt-n2 mb-2"
-          />
-        </a>
-
-        <p>{{ $t("help.install-p3") }}</p>
 
         <h3>{{ $t("help.sign-in") }}</h3>
         <p>{{ $t("help.sign-in-p1") }}</p>
@@ -121,5 +121,11 @@ pwa-install::part(openButton) {
 
 .gplay-btn {
   max-width: 150px;
+}
+
+.install-clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
 }
 </style>
