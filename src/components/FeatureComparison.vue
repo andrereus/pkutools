@@ -19,7 +19,11 @@
         </tr>
         <tr v-if="!home">
           <td>{{ $t("feature-comparison.links") }}</td>
-          <td></td>
+          <td>
+            <router-link to="/help">{{ $t("feature-comparison.any-device") }}</router-link>
+            ,
+            <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">Android</a>
+          </td>
           <td>
             <a href="https://pkumanager.com/" target="_blank">Web</a>
             ,

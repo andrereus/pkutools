@@ -143,6 +143,7 @@
   "feature-comparison": {
     "subject": "Feature",
     "details": "Details",
-    "links": "Links"
+    "links": "Links",
+    "any-device": "Any device"
   }
 }
