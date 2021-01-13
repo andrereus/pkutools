@@ -93,6 +93,8 @@
 </template>
 
 <script>
+import "@pwabuilder/pwainstall";
+
 export default {
   metaInfo() {
     return {
