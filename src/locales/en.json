@@ -109,7 +109,7 @@
     "email": "Email",
     "faq": "FAQ",
     "install": "How can the app be installed?",
-    "install-p1": "This Web App can be installed on any device (Web, Android, iOS, Windows, Mac, Linux).",
+    "install-p1": "This is a Progressive Web App and can be installed on any device (Web, Android, iOS, Windows, Mac, Linux).",
     "install-p2": "or",
     "install-p3": "Note: If Firefox is set as the default browser, unfortunately an address bar is still being displayed. Chromium browsers (Chrome, Edge, Brave, ...) are recommended.",
     "sign-in": "How can you sign in?",
