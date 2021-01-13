@@ -41,30 +41,30 @@
 
         <h3>{{ $t("help.install") }}</h3>
         <p>{{ $t("help.install-p1") }}</p>
-        <p>
-          <v-icon>mdi-information-outline</v-icon>
-          {{ $t("help.install-p2") }}
-        </p>
 
-        <div class="install-clearfix">
-          <v-card outlined color="primary" class="mt-1 mr-3 mb-3 float-left" min-width="150" min-height="35">
-            <v-card-text class="pa-0">
-              <pwa-install :installbuttontext="$t('app.install')"></pwa-install>
-            </v-card-text>
-          </v-card>
+        <pwa-install :installbuttontext="$t('app.install')" usecustom></pwa-install>
 
-          <a
-            href="https://play.google.com/store/apps/details?id=com.pkutools.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-          >
-            <img
-              alt="Get it on Google Play"
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-              class="gplay-btn ml-n2 mt-n2 mb-2"
-            />
-          </a>
-        </div>
+        <v-btn depressed color="primary" @click="installPWA" v-if="!getStatusPWA" class="mr-3 mb-3">
+          <v-icon left>mdi-download</v-icon>
+          {{ $t("app.install") }}
+        </v-btn>
 
-        <p>{{ $t("help.install-p3") }}</p>
+        <v-btn depressed disabled v-if="getStatusPWA" class="mr-3 mb-3">
+          <v-icon left>mdi-check</v-icon>
+          {{ $t("app.installed") }}
+        </v-btn>
+
+        <a
+          href="https://play.google.com/store/apps/details?id=com.pkutools.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+        >
+          <img
+            alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            class="gplay-btn ml-n2 mb-3"
+          />
+        </a>
+
+        <p>{{ $t("help.install-p2") }}</p>
 
         <h3>{{ $t("help.sign-in") }}</h3>
         <p>{{ $t("help.sign-in-p1") }}</p>
@@ -106,7 +106,15 @@ export default {
     part1: "heypku",
     part2: "gmail",
     part3: "com"
-  })
+  }),
+  methods: {
+    installPWA() {
+      document.querySelector("pwa-install").openPrompt();
+    },
+    getStatusPWA() {
+      return document.querySelector("pwa-install").getInstalledStatus();
+    }
+  }
 };
 </script>
 
@@ -119,19 +127,14 @@ export default {
   text-transform: none;
 }
 
-pwa-install::part(openButton) {
-  background: #3498db;
-  border-radius: 4px;
-  padding: 4px 16px;
-}
+//pwa-install::part(openButton) {
+//  background: #3498db;
+//  border-radius: 4px;
+//  padding: 4px 16px;
+//}
 
 .gplay-btn {
   max-width: 150px;
-}
-
-.install-clearfix:after {
-  display: block;
-  content: "";
-  clear: both;
+  vertical-align: middle;
 }
 </style>
