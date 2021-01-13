@@ -42,7 +42,7 @@
         <h3>{{ $t("help.install") }}</h3>
         <p>{{ $t("help.install-p1") }}</p>
 
-        <pwa-install :installbuttontext="$t('app.install')" usecustom></pwa-install>
+        <pwa-install :installbuttontext="$t('app.install-pwa')" usecustom></pwa-install>
 
         <v-btn depressed outlined color="primary" @click="refreshPage" class="mr-3 mb-3">
           <v-icon left>mdi-refresh</v-icon>

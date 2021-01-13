@@ -4,6 +4,7 @@
     "description": "Kostenlose Tools und Apps für Menschen mit PKU.",
     "refresh": "Neu laden",
     "install": "Installieren",
+    "install-pwa": "Installiere Web App",
     "signin-google": "Anmelden mit Google",
     "signin-facebook": "Anmelden mit Facebook",
     "signout": "Abmelden",
