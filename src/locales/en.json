@@ -37,7 +37,8 @@
     "features": "Features",
     "more": "And more",
     "video": "Watch video",
-    "mobile-video": "Mobile version"
+    "mobile-video": "Mobile version",
+    "installation": "Installation"
   },
   "phe-search": {
     "title": "Phe Search",

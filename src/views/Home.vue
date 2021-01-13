@@ -124,8 +124,8 @@
           <FeatureComparison home class="mb-7" />
 
           <v-btn depressed to="/help" color="primary" class="mb-3">
-            <v-icon left>mdi-download</v-icon>
-            {{ $t("app.installation") }}
+            <v-icon left>mdi-information-outline</v-icon>
+            {{ $t("home.installation") }}
           </v-btn>
         </div>
       </v-col>
