@@ -44,14 +44,9 @@
 
         <pwa-install :installbuttontext="$t('app.install')" usecustom></pwa-install>
 
-        <v-btn depressed color="primary" @click="installPWA" v-if="!getStatusPWA" class="mr-3 mb-3">
+        <v-btn depressed color="primary" @click="installPWA" class="mr-3 mb-3">
           <v-icon left>mdi-download</v-icon>
           {{ $t("app.install") }}
-        </v-btn>
-
-        <v-btn depressed disabled v-if="getStatusPWA" class="mr-3 mb-3">
-          <v-icon left>mdi-check</v-icon>
-          {{ $t("app.installed") }}
         </v-btn>
 
         <a
@@ -110,9 +105,6 @@ export default {
   methods: {
     installPWA() {
       document.querySelector("pwa-install").openPrompt();
-    },
-    getStatusPWA() {
-      return document.querySelector("pwa-install").getInstalledStatus();
     }
   }
 };
