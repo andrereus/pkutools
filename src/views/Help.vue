@@ -44,10 +44,17 @@
 
         <pwa-install :installbuttontext="$t('app.install')" usecustom></pwa-install>
 
+        <v-btn depressed outlined color="primary" @click="refreshPage" class="mr-3 mb-3">
+          <v-icon left>mdi-refresh</v-icon>
+          {{ $t("app.refresh") }}
+        </v-btn>
+
         <v-btn depressed color="primary" @click="installPWA" class="mr-3 mb-3">
           <v-icon left>mdi-download</v-icon>
           {{ $t("app.install") }}
         </v-btn>
+
+        <span class="mr-3">{{ $t("help.install-p2") }}</span>
 
         <a
           href="https://play.google.com/store/apps/details?id=com.pkutools.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
@@ -59,7 +66,7 @@
           />
         </a>
 
-        <p>{{ $t("help.install-p2") }}</p>
+        <p>{{ $t("help.install-p3") }}</p>
 
         <h3>{{ $t("help.sign-in") }}</h3>
         <p>{{ $t("help.sign-in-p1") }}</p>
@@ -103,6 +110,9 @@ export default {
     part3: "com"
   }),
   methods: {
+    refreshPage() {
+      location.reload();
+    },
     installPWA() {
       document.querySelector("pwa-install").openPrompt();
     }
