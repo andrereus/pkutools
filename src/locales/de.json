@@ -111,7 +111,6 @@
     "install": "Wie kann die App installiert werden?",
     "install-p1": "Dies ist eine Progressive Web App und kann auf jedem Gerät installiert werden (Web, Android, iOS, Windows, Mac, Linux).",
     "install-p2": "oder",
-    "install-p3": "Hinweis: Wenn Firefox als Standardbrowser gesetzt ist, wird leider noch eine Adresszeile angezeigt. Empfohlen werden Chromium Browser (Chrome, Edge, Brave, ...).",
     "sign-in": "Wie kann man sich anmelden?",
     "sign-in-p1": "Man kann sich (oben rechts über das Menü) mit Google oder Facebook anmelden.",
     "sign-in-p2": "Andere Anmeldemöglichkeiten sind im Moment nicht geplant.",

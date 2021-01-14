@@ -66,8 +66,6 @@
           />
         </a>
 
-        <p>{{ $t("help.install-p3") }}</p>
-
         <h3>{{ $t("help.sign-in") }}</h3>
         <p>{{ $t("help.sign-in-p1") }}</p>
         <p>{{ $t("help.sign-in-p2") }}</p>
