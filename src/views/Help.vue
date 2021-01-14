@@ -45,12 +45,12 @@
         <pwa-install :installbuttontext="$t('app.install-pwa')" usecustom></pwa-install>
 
         <v-btn depressed outlined color="primary" @click="refreshPage" class="mr-3 mb-3">
-          <v-icon left>mdi-refresh</v-icon>
+          <v-icon left>mdi-numeric-1-circle-outline</v-icon>
           {{ $t("app.refresh") }}
         </v-btn>
 
         <v-btn depressed color="primary" @click="installPWA" class="mr-3 mb-3">
-          <v-icon left>mdi-download</v-icon>
+          <v-icon left>mdi-numeric-2-circle-outline</v-icon>
           {{ $t("app.install") }}
         </v-btn>
 
