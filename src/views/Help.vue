@@ -41,6 +41,7 @@
 
         <h3>{{ $t("help.install") }}</h3>
         <p>{{ $t("help.install-p1") }}</p>
+        <p>{{ $t("help.install-p2") }}</p>
 
         <pwa-install :installbuttontext="$t('app.install-pwa')" usecustom></pwa-install>
 
@@ -54,7 +55,7 @@
           {{ $t("app.install") }}
         </v-btn>
 
-        <span class="mr-3">{{ $t("help.install-p2") }}</span>
+        <span class="mr-3">{{ $t("help.install-p3") }}</span>
 
         <a
           href="https://play.google.com/store/apps/details?id=com.pkutools.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
