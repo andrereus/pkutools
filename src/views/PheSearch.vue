@@ -123,8 +123,8 @@
           v-if="advancedFood === null"
         ></v-img>
 
-        <p class="text--secondary text-center" v-if="$i18n.locale === 'de' && advancedFood === null">
-          Tipp: Probiere auch die Einzahl von Wörtern bei Suchbegriffen.
+        <p class="text--secondary text-center" v-if="advancedFood === null">
+          {{ $t("phe-search.singular") }}
         </p>
       </v-col>
     </v-row>

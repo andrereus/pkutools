@@ -46,7 +46,8 @@
     "search": "Search",
     "weight": "Weight (in g)",
     "advanced": "Search all foods",
-    "source": "Source: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov."
+    "source": "Source: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov.",
+    "singular": "Tip: Also try the singular of words in search terms."
   },
   "phe-calculator": {
     "title": "Phe Calculator",
