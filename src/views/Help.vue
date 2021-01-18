@@ -99,8 +99,8 @@ import "@pwabuilder/pwainstall";
 export default {
   metaInfo() {
     return {
-      title: this.$t("about.title"),
-      meta: [{ name: "description", content: this.$t("about.description") }]
+      title: this.$t("help.title"),
+      meta: [{ name: "description", content: this.$t("help.description") }]
     };
   },
   data: () => ({
