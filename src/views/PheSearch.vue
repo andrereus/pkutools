@@ -194,14 +194,14 @@ export default {
         const res = await fetch(this.publicPath + "data/frida.json");
         const food = await res.json();
         this.advancedFood = food.filter(food => {
-          const regex = new RegExp(`${this.search}`, `gi`);
+          const regex = new RegExp(`${this.search.trim()}`, `gi`);
           return food.name.match(regex);
         });
       } else {
         const res = await fetch(this.publicPath + "data/usda.json");
         const food = await res.json();
         this.advancedFood = food.filter(food => {
-          const regex = new RegExp(`${this.search}`, `gi`);
+          const regex = new RegExp(`${this.search.trim()}`, `gi`);
           return food.name.match(regex);
         });
       }
