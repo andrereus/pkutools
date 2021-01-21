@@ -123,7 +123,7 @@
         <v-img
           src="../assets/searching.svg"
           alt="Search Illustration"
-          class="mt-7 illustration"
+          class="mt-8 illustration"
           v-if="advancedFood === null"
         ></v-img>
       </v-col>
