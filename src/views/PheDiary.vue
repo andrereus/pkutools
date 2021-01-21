@@ -76,6 +76,8 @@
                   type="number"
                 ></v-text-field>
 
+                <p v-if="editedItem.log">{{ $t("phe-diary.read-only") }}</p>
+
                 <v-data-table
                   :headers="headers2"
                   :items="editedItem.log"
@@ -276,7 +278,7 @@ export default {
     exportDiary() {
       // TODO: DRY Translation
       if (this.$i18n.locale === "de") {
-        let r = confirm(this.$t("Übersicht in Excel exportieren") + "?");
+        let r = confirm("Übersicht in Excel exportieren? Protokolle sind (noch) nicht enthalten.");
         if (r === true) {
           let exportTable = this.pheDiary.map(item => {
             return {
@@ -292,7 +294,7 @@ export default {
           XLSX.writeFile(workbook, "PKU Tools - Phe Tagebuch.xlsx");
         }
       } else {
-        let r = confirm(this.$t("Export overview in Excel") + "?");
+        let r = confirm("Export overview in Excel? Logs are not (yet) included.");
         if (r === true) {
           let exportTable = this.pheDiary.map(item => {
             return {

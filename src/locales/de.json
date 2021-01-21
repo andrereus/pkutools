@@ -93,7 +93,8 @@
     "phe": "Gesamt Phe (in mg)",
     "chart": "Noch nicht genug Einträge für das Diagramm.",
     "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen",
-    "export": "Exportieren"
+    "export": "Exportieren",
+    "read-only": "Protokoll (nur lesen)"
   },
   "amino-counter": {
     "title": "Amino Zähler",
