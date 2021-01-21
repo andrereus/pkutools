@@ -278,7 +278,7 @@ export default {
     exportDiary() {
       // TODO: DRY Translation
       if (this.$i18n.locale === "de") {
-        let r = confirm("Übersicht in Excel exportieren? Protokolle sind (noch) nicht enthalten.");
+        let r = confirm("Übersicht in Excel exportieren? Protokolle sind nicht enthalten.");
         if (r === true) {
           let exportTable = this.pheDiary.map(item => {
             return {
@@ -294,7 +294,7 @@ export default {
           XLSX.writeFile(workbook, "PKU Tools - Phe Tagebuch.xlsx");
         }
       } else {
-        let r = confirm("Export overview in Excel? Logs are not (yet) included.");
+        let r = confirm("Export overview in Excel? Logs are not included.");
         if (r === true) {
           let exportTable = this.pheDiary.map(item => {
             return {
