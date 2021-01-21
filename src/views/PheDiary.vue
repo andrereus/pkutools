@@ -57,9 +57,9 @@
                 <v-menu v-model="menu" :close-on-content-click="false" transition="scale-transition" min-width="290px">
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field
+                      filled
                       :value="computelocalDate"
                       :label="$t('phe-diary.date')"
-                      prepend-icon="mdi-calendar"
                       readonly
                       v-bind="attrs"
                       v-on="on"
@@ -76,7 +76,7 @@
                   type="number"
                 ></v-text-field>
 
-                <p v-if="editedItem.log">{{ $t("phe-diary.read-only") }}</p>
+                <p v-if="editedItem.log" class="ml-3 mt-n2 text-caption">{{ $t("phe-diary.read-only") }}</p>
 
                 <v-data-table
                   :headers="headers2"
@@ -84,7 +84,7 @@
                   disable-pagination
                   hide-default-footer
                   mobile-breakpoint="0"
-                  class="table-read-only mt-n2 mb-3"
+                  class="table-read-only mt-n2 mb-6"
                   v-if="editedItem.log"
                 >
                   <template v-slot:item="{ item }">
