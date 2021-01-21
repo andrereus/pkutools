@@ -116,16 +116,16 @@
           {{ $t("phe-search.source") }}
         </p>
 
+        <p class="text--secondary text-center mt-1" v-if="advancedFood === null">
+          {{ $t("phe-search.singular") }}
+        </p>
+
         <v-img
           src="../assets/searching.svg"
           alt="Search Illustration"
-          class="mt-4 mb-8 illustration"
+          class="mt-7 illustration"
           v-if="advancedFood === null"
         ></v-img>
-
-        <p class="text--secondary text-center" v-if="advancedFood === null">
-          {{ $t("phe-search.singular") }}
-        </p>
       </v-col>
     </v-row>
   </div>
