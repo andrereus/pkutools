@@ -132,7 +132,7 @@ export default {
         de: "Windows",
         pkutools: 1,
         pkumanager: 3,
-        pherechner: 3
+        pherechner: 2
       },
       {
         icon: "mdi-desktop-mac",
