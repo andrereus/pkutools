@@ -136,8 +136,8 @@ export default {
       },
       {
         icon: "mdi-desktop-mac",
-        en: "MacOS",
-        de: "MacOS",
+        en: "macOS",
+        de: "macOS",
         pkutools: 1,
         pkumanager: 3,
         pherechner: 3
