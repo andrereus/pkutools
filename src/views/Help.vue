@@ -37,21 +37,25 @@
           {{ $t("home.mobile-video") }}
         </v-btn>
 
+        <h2 class="headline my-6">{{ $t("help.contact") }}</h2>
+
+        <!-- prettier-ignore -->
+        <p>{{ $t("help.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
+
         <h2 class="headline my-6">{{ $t("help.faq") }}</h2>
 
         <h3>{{ $t("help.install") }}</h3>
         <p>{{ $t("help.install-p1") }}</p>
-        <p>{{ $t("help.install-p2") }}</p>
 
         <pwa-install :installbuttontext="$t('app.install-pwa')" usecustom></pwa-install>
 
         <v-btn depressed outlined color="primary" @click="refreshPage" class="mr-3 mb-3">
-          <v-icon left>mdi-numeric-1-circle-outline</v-icon>
+          <v-icon left>mdi-refresh</v-icon>
           {{ $t("app.refresh") }}
         </v-btn>
 
         <v-btn depressed color="primary" @click="installPWA" class="mr-3 mb-3">
-          <v-icon left>mdi-numeric-2-circle-outline</v-icon>
+          <v-icon left>mdi-download</v-icon>
           {{ $t("app.install") }}
         </v-btn>
 
@@ -66,6 +70,11 @@
             class="gplay-btn ml-n2 mb-3"
           />
         </a>
+
+        <p>
+          <v-icon>mdi-information-outline</v-icon>
+          {{ $t("help.install-p2") }}
+        </p>
 
         <h3>{{ $t("help.sign-in") }}</h3>
         <p>{{ $t("help.sign-in-p1") }}</p>
@@ -83,11 +92,6 @@
           <a href="https://www.buymeacoffee.com/andrereus" target="_blank">https://www.buymeacoffee.com/andrereus</a>
           😉
         </p>
-
-        <h2 class="headline my-6">{{ $t("help.contact") }}</h2>
-
-        <!-- prettier-ignore -->
-        <p>{{ $t("help.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
       </v-col>
     </v-row>
   </div>

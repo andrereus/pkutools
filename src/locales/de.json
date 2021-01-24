@@ -115,7 +115,7 @@
     "faq": "FAQ",
     "install": "Wie kann die App installiert werden?",
     "install-p1": "Dies ist eine Progressive Web App und kann auf jedem Gerät installiert werden (Web, Android, iOS, Windows, Mac, Linux).",
-    "install-p2": "Damit der Button zur Installation funktioniert, muss diese Seite neu geladen werden.",
+    "install-p2": "Damit der \"Installieren\"-Button funktioniert, muss diese Seite neu geladen werden.",
     "install-p3": "oder",
     "sign-in": "Wie kann man sich anmelden?",
     "sign-in-p1": "Man kann sich (oben rechts über das Menü) mit Google oder Facebook anmelden.",
