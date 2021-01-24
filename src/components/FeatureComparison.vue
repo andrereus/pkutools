@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in features" :key="item.name">
+        <tr v-for="item in features" :key="item.name" class="tr-read-only">
           <td class="feature-name">
             <v-icon left>{{ item.icon }}</v-icon>
             <span v-if="$i18n.locale === 'en'">{{ item.en }}</span>
@@ -202,5 +202,9 @@ export default {
 
 .feature-name {
   white-space: nowrap;
+}
+
+.tr-read-only:hover {
+  background-color: inherit !important;
 }
 </style>
