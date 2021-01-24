@@ -75,7 +75,7 @@ export default {
         en: "Own Food",
         de: "Eigene Lebensmittel",
         pkutools: 1,
-        pkumanager: 3,
+        pkumanager: 2,
         pherechner: 1
       },
       {
