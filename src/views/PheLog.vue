@@ -23,14 +23,14 @@
             src="../assets/en-phe-log.png"
             :alt="$t('phe-log.title')"
             max-width="400"
-            class="mt-8"
+            class="mt-10"
             v-if="$i18n.locale === 'en'"
           ></v-img>
           <v-img
             src="../assets/de-phe-log.png"
             :alt="$t('phe-log.title')"
             max-width="400"
-            class="mt-8"
+            class="mt-10"
             v-if="$i18n.locale === 'de'"
           ></v-img>
         </div>
