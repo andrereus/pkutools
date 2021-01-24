@@ -18,6 +18,21 @@
             <v-icon left>mdi-facebook</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
+
+          <v-img
+            src="../assets/en-amino-counter.png"
+            :alt="$t('amino-counter.title')"
+            max-width="400"
+            class="mt-8"
+            v-if="$i18n.locale === 'en'"
+          ></v-img>
+          <v-img
+            src="../assets/de-amino-counter.png"
+            :alt="$t('amino-counter.title')"
+            max-width="400"
+            class="mt-8"
+            v-if="$i18n.locale === 'de'"
+          ></v-img>
         </div>
 
         <div v-if="userIsAuthenticated">
