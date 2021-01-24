@@ -38,7 +38,8 @@
     "more": "And more",
     "video": "Watch video",
     "mobile-video": "Mobile version",
-    "installation": "Installation"
+    "installation": "Install app",
+    "compare": "Compare features"
   },
   "phe-search": {
     "title": "Phe Search",
@@ -149,8 +150,6 @@
   },
   "feature-comparison": {
     "subject": "Feature",
-    "details": "Details",
-    "links": "Links",
-    "any-device": "Any device"
+    "included": "Included"
   }
 }

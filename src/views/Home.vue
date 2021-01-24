@@ -121,9 +121,13 @@
           </v-btn>
 
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
-          <FeatureComparison home class="mb-7" />
+          <FeatureComparison home class="mb-6" />
 
-          <v-btn depressed to="/help" color="primary" class="mb-3">
+          <v-btn depressed to="/other-apps" class="mr-3 mb-3">
+            <v-icon left>mdi-compare-horizontal</v-icon>
+            {{ $t("home.compare") }}
+          </v-btn>
+          <v-btn depressed to="/help" class="mr-3 mb-3">
             <v-icon left>mdi-information-outline</v-icon>
             {{ $t("home.installation") }}
           </v-btn>
