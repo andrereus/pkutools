@@ -18,17 +18,17 @@
             <span v-if="$i18n.locale === 'de'">{{ item.de }}</span>
           </td>
           <td>
-            <v-icon v-if="item.pkutools === 1">mdi-checkbox-marked-circle</v-icon>
+            <v-icon v-if="item.pkutools === 1" color="success">mdi-check-bold</v-icon>
             <v-icon v-if="item.pkutools === 2">mdi-circle-half-full</v-icon>
             <v-icon v-if="item.pkutools === 3">mdi-close-circle-outline</v-icon>
           </td>
           <td v-if="!home">
-            <v-icon v-if="item.pkumanager === 1">mdi-checkbox-marked-circle</v-icon>
+            <v-icon v-if="item.pkumanager === 1" color="success">mdi-check-bold</v-icon>
             <v-icon v-if="item.pkumanager === 2">mdi-circle-half-full</v-icon>
             <v-icon v-if="item.pkumanager === 3">mdi-close-circle-outline</v-icon>
           </td>
           <td v-if="!home">
-            <v-icon v-if="item.pherechner === 1">mdi-checkbox-marked-circle</v-icon>
+            <v-icon v-if="item.pherechner === 1" color="success">mdi-check-bold</v-icon>
             <v-icon v-if="item.pherechner === 2">mdi-circle-half-full</v-icon>
             <v-icon v-if="item.pherechner === 3">mdi-close-circle-outline</v-icon>
           </td>
