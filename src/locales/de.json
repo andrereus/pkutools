@@ -94,7 +94,10 @@
     "chart": "Noch nicht genug Einträge für das Diagramm.",
     "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen",
     "export": "Exportieren",
-    "read-only": "Protokoll (nur lesen)"
+    "read-only": "Protokoll (nur lesen)",
+    "export-confirm": "Phe Tagebuch in Excel exportieren",
+    "export-overview": "Übersicht",
+    "export-filename": "PKU Tools - Phe Tagebuch"
   },
   "amino-counter": {
     "title": "Amino Zähler",

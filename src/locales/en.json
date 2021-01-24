@@ -94,7 +94,10 @@
     "chart": "Not enough entries for the chart.",
     "limit": "The Phe Diary has a limit of 90 entries",
     "export": "Export",
-    "read-only": "Log (read only)"
+    "read-only": "Log (read only)",
+    "export-confirm": "Export Phe Diary in Excel",
+    "export-overview": "Overview",
+    "export-filename": "PKU Tools - Phe Diary"
   },
   "amino-counter": {
     "title": "Amino Counter",

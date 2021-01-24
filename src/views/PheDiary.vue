@@ -143,7 +143,7 @@ import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
-import { format, parseISO } from "date-fns";
+import { format, parseISO, formatISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
 import XLSX from "xlsx";
 
@@ -276,39 +276,55 @@ export default {
       }
     },
     exportDiary() {
-      // TODO: DRY Translation
-      if (this.$i18n.locale === "de") {
-        let r = confirm("Übersicht in Excel exportieren? (Protokolle sind noch nicht enthalten)");
-        if (r === true) {
-          let exportTable = this.pheDiary.map(item => {
+      let r = confirm(this.$t("phe-diary.export-confirm") + "?");
+      if (r === true) {
+        let exportTable = this.pheDiary.map(item => {
+          if (this.$i18n.locale === "de") {
             return {
-              Datum: this.getlocalDate(item.date),
+              Datum: formatISO(parseISO(item.date), { representation: "date" }),
               Phe: item.phe
             };
-          });
-
-          let workbook = XLSX.utils.book_new();
-          let worksheet = XLSX.utils.json_to_sheet(exportTable);
-
-          XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Tagebuch");
-          XLSX.writeFile(workbook, "PKU Tools - Phe Tagebuch.xlsx");
-        }
-      } else {
-        let r = confirm("Export overview in Excel? (Logs are not yet included)");
-        if (r === true) {
-          let exportTable = this.pheDiary.map(item => {
+          } else {
             return {
-              Date: this.getlocalDate(item.date),
+              Date: formatISO(parseISO(item.date), { representation: "date" }),
               Phe: item.phe
             };
-          });
+          }
+        });
 
-          let workbook = XLSX.utils.book_new();
-          let worksheet = XLSX.utils.json_to_sheet(exportTable);
+        let workbook = XLSX.utils.book_new();
 
-          XLSX.utils.book_append_sheet(workbook, worksheet, "Phe Diary");
-          XLSX.writeFile(workbook, "PKU Tools - Phe Diary.xlsx");
-        }
+        let worksheet = XLSX.utils.json_to_sheet(exportTable);
+        XLSX.utils.book_append_sheet(workbook, worksheet, this.$t("phe-diary.export-overview") + "");
+
+        this.pheDiary.forEach(item => {
+          if (item.log !== undefined) {
+            let exportTable2 = item.log.map(item => {
+              if (this.$i18n.locale === "de") {
+                return {
+                  Name: item.name,
+                  Gewicht: item.weight,
+                  Phe: item.phe
+                };
+              } else {
+                return {
+                  Name: item.name,
+                  Weight: item.weight,
+                  Phe: item.phe
+                };
+              }
+            });
+
+            let worksheet2 = XLSX.utils.json_to_sheet(exportTable2);
+            XLSX.utils.book_append_sheet(
+              workbook,
+              worksheet2,
+              formatISO(parseISO(item.date), { representation: "date" })
+            );
+          }
+        });
+
+        XLSX.writeFile(workbook, this.$t("phe-diary.export-filename") + ".xlsx");
       }
     }
   },
