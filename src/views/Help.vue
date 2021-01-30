@@ -90,6 +90,8 @@
                 </a>
                 😉
               </p>
+
+              <p>{{ $t("help.support-p2") }}</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
