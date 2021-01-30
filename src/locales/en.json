@@ -112,9 +112,9 @@
   "help": {
     "title": "Help",
     "description": "Help and FAQ for PKU Tools.",
-    "contact": "Contact",
-    "feedback": "Feedback / Question",
     "faq": "FAQ",
+    "more": "More",
+    "feedback": "Give feedback",
     "install": "How can the app be installed?",
     "install-p1": "This is a Progressive Web App and can be installed on any device (Web, Android, iOS, Windows, Mac, Linux).",
     "install-p2": "For the \"Install\" button to work, this page has to be refreshed.",
