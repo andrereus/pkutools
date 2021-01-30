@@ -8,7 +8,6 @@
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'"
   },
   "dependencies": {
-    "@pwabuilder/pwainstall": "^1.6.7",
     "core-js": "^3.6.4",
     "date-fns": "^2.16.1",
     "firebase": "^7.21.1",

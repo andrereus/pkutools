@@ -46,34 +46,16 @@
             <v-expansion-panel-content>
               <p>{{ $t("help.install-p1") }}</p>
 
-              <v-btn depressed outlined color="primary" @click="refreshPage" class="mr-3 mb-3">
-                <v-icon left>mdi-refresh</v-icon>
-                {{ $t("app.refresh") }}
-              </v-btn>
-
-              <v-btn depressed color="primary" @click="installPWA" class="mr-3 mb-3">
-                <v-icon left>mdi-download</v-icon>
-                {{ $t("app.install") }}
-              </v-btn>
-
-              <pwa-install :installbuttontext="$t('app.install-pwa')" usecustom></pwa-install>
-
-              <span class="mr-3">{{ $t("help.install-p3") }}</span>
-
-              <a
-                href="https://play.google.com/store/apps/details?id=com.pkutools.twa&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-              >
+              <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">
                 <img
                   alt="Get it on Google Play"
                   src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                  class="gplay-btn ml-n2 mb-3"
+                  class="gplay-btn ml-n2 mt-n1 mb-3"
                 />
               </a>
 
-              <p>
-                <v-icon>mdi-information-outline</v-icon>
-                {{ $t("help.install-p2") }}
-              </p>
+              <p>{{ $t("help.install-p2") }}</p>
+              <p>{{ $t("help.install-p3") }}</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
 
@@ -146,8 +128,6 @@
 </template>
 
 <script>
-import "@pwabuilder/pwainstall";
-
 export default {
   metaInfo() {
     return {
@@ -159,15 +139,7 @@ export default {
     part1: "heypku",
     part2: "gmail",
     part3: "com"
-  }),
-  methods: {
-    refreshPage() {
-      location.reload();
-    },
-    installPWA() {
-      document.querySelector("pwa-install").openPrompt();
-    }
-  }
+  })
 };
 </script>
 
@@ -179,12 +151,6 @@ export default {
 .v-btn {
   text-transform: none;
 }
-
-//pwa-install::part(openButton) {
-//  background: #3498db;
-//  border-radius: 4px;
-//  padding: 4px 16px;
-//}
 
 .gplay-btn {
   max-width: 150px;
