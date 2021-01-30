@@ -72,10 +72,7 @@
             <v-expansion-panel-header>{{ $t("help.roadmap") }}</v-expansion-panel-header>
 
             <v-expansion-panel-content>
-              <p>
-                {{ $t("help.roadmap-p1") }}
-                <a href="https://trello.com/b/jJiZ0tJm" target="_blank">https://trello.com/b/jJiZ0tJm</a>
-              </p>
+              <p>{{ $t("help.roadmap-p1") }}</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
 
