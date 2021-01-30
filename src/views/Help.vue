@@ -93,7 +93,7 @@
         <v-btn
           v-if="this.$i18n.locale === 'en'"
           depressed
-          href="https://andrereus.getform.com/q0ko3"
+          href="https://andre.getform.com/q0ko3"
           color="primary"
           class="mr-3 mb-3"
         >
@@ -104,7 +104,7 @@
         <v-btn
           v-if="this.$i18n.locale === 'de'"
           depressed
-          href="https://andrereus.getform.com/69zrd"
+          href="https://andre.getform.com/69zrd"
           color="primary"
           class="mr-3 mb-3"
         >
