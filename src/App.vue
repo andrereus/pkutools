@@ -213,6 +213,20 @@
 
           <v-divider></v-divider>
 
+          <v-list-item v-if="this.$i18n.locale === 'en'" href="https://andrereus.getform.com/q0ko3">
+            <span>
+              <v-icon>mdi-comment-quote-outline</v-icon>
+              {{ $t("app.feedback") }}
+            </span>
+          </v-list-item>
+
+          <v-list-item v-if="this.$i18n.locale === 'de'" href="https://andrereus.getform.com/69zrd">
+            <span>
+              <v-icon>mdi-comment-quote-outline</v-icon>
+              {{ $t("app.feedback") }}
+            </span>
+          </v-list-item>
+
           <v-list-item @click="dark = !dark">
             <span>
               <v-icon v-if="!dark">mdi-brightness-4</v-icon>

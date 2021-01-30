@@ -37,17 +37,10 @@
           {{ $t("home.mobile-video") }}
         </v-btn>
 
-        <h2 class="headline my-6">{{ $t("help.contact") }}</h2>
-
-        <!-- prettier-ignore -->
-        <p>{{ $t("help.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
-
         <h2 class="headline my-6">{{ $t("help.faq") }}</h2>
 
         <h3>{{ $t("help.install") }}</h3>
         <p>{{ $t("help.install-p1") }}</p>
-
-        <pwa-install :installbuttontext="$t('app.install-pwa')" usecustom></pwa-install>
 
         <v-btn depressed outlined color="primary" @click="refreshPage" class="mr-3 mb-3">
           <v-icon left>mdi-refresh</v-icon>
@@ -58,6 +51,8 @@
           <v-icon left>mdi-download</v-icon>
           {{ $t("app.install") }}
         </v-btn>
+
+        <pwa-install :installbuttontext="$t('app.install-pwa')" usecustom></pwa-install>
 
         <span class="mr-3">{{ $t("help.install-p3") }}</span>
 
@@ -92,6 +87,30 @@
           <a href="https://www.buymeacoffee.com/andrereus" target="_blank">https://www.buymeacoffee.com/andrereus</a>
           😉
         </p>
+
+        <h2 class="headline my-6">{{ $t("help.feedback") }}</h2>
+
+        <v-btn
+          v-if="this.$i18n.locale === 'en'"
+          depressed
+          href="https://andrereus.getform.com/q0ko3"
+          color="primary"
+          class="mr-3 mb-3"
+        >
+          <v-icon left>mdi-email</v-icon>
+          {{ $t("help.contact") }}
+        </v-btn>
+
+        <v-btn
+          v-if="this.$i18n.locale === 'de'"
+          depressed
+          href="https://andrereus.getform.com/69zrd"
+          color="primary"
+          class="mr-3 mb-3"
+        >
+          <v-icon left>mdi-email</v-icon>
+          {{ $t("help.contact") }}
+        </v-btn>
       </v-col>
     </v-row>
   </div>
@@ -107,11 +126,6 @@ export default {
       meta: [{ name: "description", content: this.$t("help.description") }]
     };
   },
-  data: () => ({
-    part1: "heypku",
-    part2: "gmail",
-    part3: "com"
-  }),
   methods: {
     refreshPage() {
       location.reload();
@@ -124,10 +138,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.hidden {
-  display: none;
-}
-
 .v-btn {
   text-transform: none;
 }

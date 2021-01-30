@@ -19,7 +19,8 @@
     "profile-picture": "Profilbild",
     "new": "Neu",
     "tools": "Tools",
-    "logs": "Protokolle"
+    "logs": "Protokolle",
+    "feedback": "Feedback"
   },
   "common": {
     "add": "Hinzufügen",
@@ -96,7 +97,7 @@
     "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen",
     "export": "Exportieren",
     "read-only": "Protokoll (nur lesen)",
-    "export-confirm": "Phe Tagebuch in Excel exportieren",
+    "export-confirm": "Phe Tagebuch in Excel exportieren? (Hinweis: Vermeide ein doppeltes Datum im Phe Tagebuch.)",
     "export-overview": "Übersicht",
     "export-filename": "PKU Tools - Phe Tagebuch"
   },
@@ -112,7 +113,7 @@
     "title": "Hilfe",
     "description": "Hilfe und FAQ für PKU Tools.",
     "contact": "Kontakt",
-    "email": "E-Mail",
+    "feedback": "Feedback / Frage",
     "faq": "FAQ",
     "install": "Wie kann die App installiert werden?",
     "install-p1": "Dies ist eine Progressive Web App und kann auf jedem Gerät installiert werden (Web, Android, iOS, Windows, Mac, Linux).",

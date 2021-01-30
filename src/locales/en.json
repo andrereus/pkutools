@@ -19,7 +19,8 @@
     "profile-picture": "Profile picture",
     "new": "New",
     "tools": "Tools",
-    "logs": "Logs"
+    "logs": "Logs",
+    "feedback": "Feedback"
   },
   "common": {
     "add": "Add",
@@ -96,7 +97,7 @@
     "limit": "The Phe Diary has a limit of 90 entries",
     "export": "Export",
     "read-only": "Log (read only)",
-    "export-confirm": "Export Phe Diary in Excel",
+    "export-confirm": "Export Phe Diary in Excel? (Note: Avoid duplicate dates in the Phe Diary.)",
     "export-overview": "Overview",
     "export-filename": "PKU Tools - Phe Diary"
   },
@@ -112,7 +113,7 @@
     "title": "Help",
     "description": "Help and FAQ for PKU Tools.",
     "contact": "Contact",
-    "email": "Email",
+    "feedback": "Feedback / Question",
     "faq": "FAQ",
     "install": "How can the app be installed?",
     "install-p1": "This is a Progressive Web App and can be installed on any device (Web, Android, iOS, Windows, Mac, Linux).",
