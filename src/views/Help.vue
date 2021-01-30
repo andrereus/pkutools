@@ -91,6 +91,14 @@
               <p>{{ $t("help.support-p2") }}</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
+
+          <v-expansion-panel>
+            <v-expansion-panel-header>{{ $t("help.translate") }}</v-expansion-panel-header>
+
+            <v-expansion-panel-content>
+              <p>{{ $t("help.translate-p1") }}</p>
+            </v-expansion-panel-content>
+          </v-expansion-panel>
         </v-expansion-panels>
 
         <h2 class="headline my-6">{{ $t("help.more") }}</h2>

@@ -123,7 +123,9 @@
     "support-p1": "All support is completely voluntary, the app is free and will probably remain so! You can buy me coffee here if you want to:",
     "support-p2": "In addition the app is Open Source. If you want to contribute, contact me.",
     "roadmap": "What's new?",
-    "roadmap-p1": "The app is constantly being optimized. At the moment only major updates are occasionally communicated in a Facebook group. Contact me for more info."
+    "roadmap-p1": "The app is constantly being optimized. At the moment only major updates are occasionally communicated in a Facebook group. Contact me for more info.",
+    "translate": "Are there other languages?",
+    "translate-p1": "Not at the moment, but you can help with the translation into other languages. Contact me for more."
   },
   "other-apps": {
     "title": "Other Apps",
