@@ -47,7 +47,18 @@
             <template v-slot:item="{ item }">
               <tr @click="addItem(item)" class="tr-edit">
                 <td class="text-start">
-                  <img :src="publicPath + 'img/food-icons/Organic Food.svg'" width="25" class="food-icon" />
+                  <img
+                    :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
+                    v-if="item.icon !== undefined"
+                    width="25"
+                    class="food-icon"
+                  />
+                  <img
+                    :src="publicPath + 'img/food-icons/organic-food.svg'"
+                    v-if="item.icon === undefined"
+                    width="25"
+                    class="food-icon"
+                  />
                   {{ item.name }}
                 </td>
                 <td class="text-start">{{ item.phe }}</td>
@@ -126,7 +137,18 @@
             <v-card>
               <v-card-title>
                 <span class="headline">
-                  <img :src="publicPath + 'img/food-icons/Organic Food.svg'" width="35" class="food-icon" />
+                  <img
+                    :src="publicPath + 'img/food-icons/' + editedItem.icon + '.svg'"
+                    v-if="editedItem.icon !== undefined"
+                    width="35"
+                    class="food-icon"
+                  />
+                  <img
+                    :src="publicPath + 'img/food-icons/organic-food.svg'"
+                    v-if="editedItem.icon === undefined"
+                    width="35"
+                    class="food-icon"
+                  />
                   {{ editedItem.name }}
                 </span>
               </v-card-title>
@@ -198,10 +220,12 @@ export default {
     editedIndex: -1,
     editedItem: {
       name: "",
+      icon: null,
       phe: null
     },
     defaultItem: {
       name: "",
+      icon: null,
       phe: null
     },
     weight: 100,
@@ -269,6 +293,7 @@ export default {
           .ref(this.user.id + "/ownFood/" + this.editedKey)
           .update({
             name: this.editedItem.name,
+            icon: this.editedItem.icon || null,
             phe: Number(this.editedItem.phe)
           });
       } else {
@@ -277,6 +302,7 @@ export default {
           .ref(this.user.id + "/ownFood")
           .push({
             name: this.editedItem.name,
+            icon: this.editedItem.icon || null,
             phe: Number(this.editedItem.phe)
           });
       }
@@ -297,6 +323,7 @@ export default {
         .ref(this.user.id + "/pheLog")
         .push({
           name: this.editedItem.name,
+          icon: this.editedItem.icon || null,
           weight: Number(this.weight),
           phe: this.calculatePhe()
         });
