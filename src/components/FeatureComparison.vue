@@ -189,6 +189,14 @@ export default {
         pkutools: 1,
         pkumanager: 3,
         pherechner: 3
+      },
+      {
+        icon: "mdi-food-apple-outline",
+        en: "Food Icons",
+        de: "Lebensmittel Icons",
+        pkutools: 1,
+        pkumanager: 3,
+        pherechner: 3
       }
     ]
   })
