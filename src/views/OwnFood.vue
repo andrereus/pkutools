@@ -86,13 +86,13 @@
                         <v-btn fab small depressed v-bind="attrs" v-on="on" class="mt-n2">
                           <img
                             :src="publicPath + 'img/food-icons/' + editedItem.icon + '.svg'"
-                            v-if="editedItem.icon !== undefined"
+                            v-if="editedItem.icon !== undefined && editedItem.icon !== null"
                             width="40"
                             class="food-icon"
                           />
                           <img
                             :src="publicPath + 'img/food-icons/organic-food.svg'"
-                            v-if="editedItem.icon === undefined"
+                            v-if="editedItem.icon === undefined || editedItem.icon === null"
                             width="40"
                             class="food-icon"
                           />

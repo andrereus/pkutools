@@ -106,14 +106,14 @@
                     <tr class="tr-read-only">
                       <td class="text-start">
                         <img
-                          :src="publicPath + 'img/food-icons/' + item.icon"
-                          v-if="item.icon !== undefined"
+                          :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
+                          v-if="item.icon !== undefined && item.icon !== 'Organic Food.svg'"
                           width="25"
                           class="food-icon"
                         />
                         <img
-                          :src="publicPath + 'img/food-icons/Organic Food.svg'"
-                          v-if="item.icon === undefined"
+                          :src="publicPath + 'img/food-icons/organic-food.svg'"
+                          v-if="item.icon === undefined || item.icon === 'Organic Food.svg'"
                           width="25"
                           class="food-icon"
                         />

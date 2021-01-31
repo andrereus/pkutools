@@ -59,7 +59,7 @@
           <v-card>
             <v-card-title>
               <span class="headline">
-                <img :src="publicPath + 'img/food-icons/' + icon" width="35" class="food-icon" />
+                <img :src="publicPath + 'img/food-icons/' + icon + '.svg'" width="35" class="food-icon" />
                 {{ name }}
               </span>
             </v-card-title>
@@ -103,7 +103,18 @@
           <template v-slot:item="{ item }">
             <tr @click="loadItem(item)" class="tr-edit">
               <td class="text-start">
-                <img :src="publicPath + 'img/food-icons/Organic Food.svg'" width="25" class="food-icon" />
+                <img
+                  :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
+                  v-if="item.icon !== undefined"
+                  width="25"
+                  class="food-icon"
+                />
+                <img
+                  :src="publicPath + 'img/food-icons/organic-food.svg'"
+                  v-if="item.icon === undefined"
+                  width="25"
+                  class="food-icon"
+                />
                 {{ item.name }}
               </td>
               <td class="text-start">{{ item.phe }}</td>
@@ -150,7 +161,7 @@ export default {
     phe: null,
     weight: 100,
     name: "",
-    icon: "Organic Food.svg",
+    icon: "organic-food",
     headers: [
       {
         text: "Name",
@@ -164,7 +175,7 @@ export default {
   methods: {
     loadItem(item) {
       this.name = item.name;
-      this.icon = item.icon !== undefined ? item.icon : "Organic Food.svg";
+      this.icon = item.icon !== undefined ? item.icon : "organic-food";
       this.phe = item.phe;
       this.weight = 100;
       this.dialog = true;

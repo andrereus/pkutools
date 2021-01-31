@@ -41,13 +41,13 @@
               <tr @click="editItem(item)" class="tr-edit">
                 <td class="text-start">
                   <img
-                    :src="publicPath + 'img/food-icons/' + item.icon"
+                    :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
                     v-if="item.icon !== undefined"
                     width="25"
                     class="food-icon"
                   />
                   <img
-                    :src="publicPath + 'img/food-icons/Organic Food.svg'"
+                    :src="publicPath + 'img/food-icons/organic-food.svg'"
                     v-if="item.icon === undefined"
                     width="25"
                     class="food-icon"
@@ -83,7 +83,39 @@
               </v-card-title>
 
               <v-card-text>
-                <v-text-field filled label="Name" v-model="editedItem.name" class="mt-6"></v-text-field>
+                <v-text-field filled label="Name" v-model="editedItem.name" class="mt-6">
+                  <template v-slot:append-outer>
+                    <v-menu offset-y>
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn fab small depressed v-bind="attrs" v-on="on" class="mt-n2">
+                          <img
+                            :src="publicPath + 'img/food-icons/' + editedItem.icon + '.svg'"
+                            v-if="editedItem.icon !== undefined && editedItem.icon !== null"
+                            width="40"
+                            class="food-icon"
+                          />
+                          <img
+                            :src="publicPath + 'img/food-icons/organic-food.svg'"
+                            v-if="editedItem.icon === undefined || editedItem.icon === null"
+                            width="40"
+                            class="food-icon"
+                          />
+                        </v-btn>
+                      </template>
+                      <v-card max-width="300" max-height="250" class="overflow-y-auto">
+                        <span v-for="(item, index) in foodIcons" :key="index" class="px-1">
+                          <img
+                            :src="publicPath + 'img/food-icons/' + item.svg + '.svg'"
+                            v-if="item.svg !== undefined"
+                            width="40"
+                            class="food-icon pick-icon"
+                            @click="editedItem.icon = item.svg"
+                          />
+                        </span>
+                      </v-card>
+                    </v-menu>
+                  </template>
+                </v-text-field>
 
                 <v-text-field
                   filled
@@ -185,6 +217,7 @@ import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 import { format } from "date-fns";
+import foodIcons from "../components/data/food-icons.json";
 
 export default {
   metaInfo() {
@@ -209,16 +242,19 @@ export default {
     editedIndex: -1,
     editedItem: {
       name: "",
+      icon: null,
       weight: null,
       phe: null
     },
     defaultItem: {
       name: "",
+      icon: null,
       weight: null,
       phe: null
     },
     offlineInfo: false,
-    lockedValues: false
+    lockedValues: false,
+    foodIcons
   }),
   methods: {
     signInGoogle() {
@@ -284,6 +320,7 @@ export default {
           .ref(this.user.id + "/pheLog/" + this.editedKey)
           .update({
             name: this.editedItem.name,
+            icon: this.editedItem.icon || null,
             weight: Number(this.editedItem.weight),
             phe: Number(this.editedItem.phe)
           });
@@ -293,6 +330,7 @@ export default {
           .ref(this.user.id + "/pheLog")
           .push({
             name: this.editedItem.name,
+            icon: this.editedItem.icon || null,
             weight: Number(this.editedItem.weight),
             phe: Number(this.editedItem.phe)
           });
@@ -401,6 +439,10 @@ export default {
 
 .food-icon {
   vertical-align: bottom;
+}
+
+.pick-icon {
+  cursor: pointer;
 }
 
 //.checkbox-clearfix {
