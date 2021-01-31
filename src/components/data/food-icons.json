@@ -1,731 +1,5 @@
 [
 	{
-		"svg": "dinner"
-	},
-	{
-		"svg": "dolma"
-	},
-	{
-		"svg": "doughnut"
-	},
-	{
-		"svg": "dozen-eggs"
-	},
-	{
-		"svg": "drachenfrucht"
-	},
-	{
-		"svg": "durian"
-	},
-	{
-		"svg": "egg-basket"
-	},
-	{
-		"svg": "eggplant"
-	},
-	{
-		"svg": "eier"
-	},
-	{
-		"svg": "eierkarton"
-	},
-	{
-		"svg": "einkaufsbeutel"
-	},
-	{
-		"svg": "einwickeln"
-	},
-	{
-		"svg": "eis-im-becher"
-	},
-	{
-		"svg": "eis-in-der-waffel"
-	},
-	{
-		"svg": "empty-jam-jar"
-	},
-	{
-		"svg": "erdbeere"
-	},
-	{
-		"svg": "erdnüsse"
-	},
-	{
-		"svg": "essen-und-wein"
-	},
-	{
-		"svg": "faser"
-	},
-	{
-		"svg": "finocchio"
-	},
-	{
-		"svg": "firm-tofu"
-	},
-	{
-		"svg": "fischfutter"
-	},
-	{
-		"svg": "flax-seeds"
-	},
-	{
-		"svg": "flour"
-	},
-	{
-		"svg": "flour-in-paper-packaging"
-	},
-	{
-		"svg": "fondue"
-	},
-	{
-		"svg": "food-donor"
-	},
-	{
-		"svg": "food-receiver"
-	},
-	{
-		"svg": "frühlingsrolle"
-	},
-	{
-		"svg": "fruit-bag"
-	},
-	{
-		"svg": "fry"
-	},
-	{
-		"svg": "gailan"
-	},
-	{
-		"svg": "garlic"
-	},
-	{
-		"svg": "geburtstagskuchen"
-	},
-	{
-		"svg": "gelee"
-	},
-	{
-		"svg": "ginger"
-	},
-	{
-		"svg": "grains-of-rice"
-	},
-	{
-		"svg": "granatapfel"
-	},
-	{
-		"svg": "granulated-garlic"
-	},
-	{
-		"svg": "greek-salad"
-	},
-	{
-		"svg": "green-tea"
-	},
-	{
-		"svg": "grocery-shelf"
-	},
-	{
-		"svg": "group-of-fruits"
-	},
-	{
-		"svg": "group-of-vegetables"
-	},
-	{
-		"svg": "gum"
-	},
-	{
-		"svg": "gurke"
-	},
-	{
-		"svg": "gyoza"
-	},
-	{
-		"svg": "haferbrei"
-	},
-	{
-		"svg": "hamburger"
-	},
-	{
-		"svg": "hamper"
-	},
-	{
-		"svg": "haselnuss"
-	},
-	{
-		"svg": "healthy-food"
-	},
-	{
-		"svg": "healthy-food-calories-calculator"
-	},
-	{
-		"svg": "heinz-bohnen"
-	},
-	{
-		"svg": "hemp-milk"
-	},
-	{
-		"svg": "himbeere"
-	},
-	{
-		"svg": "honey-spoon"
-	},
-	{
-		"svg": "honig"
-	},
-	{
-		"svg": "hot-dog"
-	},
-	{
-		"svg": "ingredients-for-cooking"
-	},
-	{
-		"svg": "jackfruit"
-	},
-	{
-		"svg": "jam"
-	},
-	{
-		"svg": "jamon"
-	},
-	{
-		"svg": "joghurt"
-	},
-	{
-		"svg": "karotte"
-	},
-	{
-		"svg": "käse"
-	},
-	{
-		"svg": "kawaii-bread"
-	},
-	{
-		"svg": "kawaii-coffee"
-	},
-	{
-		"svg": "kawaii-cupcake"
-	},
-	{
-		"svg": "kawaii-egg"
-	},
-	{
-		"svg": "kawaii-french-fries"
-	},
-	{
-		"svg": "kawaii-ice-cream"
-	},
-	{
-		"svg": "kawaii-pizza"
-	},
-	{
-		"svg": "kawaii-soda"
-	},
-	{
-		"svg": "kawaii-steak"
-	},
-	{
-		"svg": "kawaii-sushi"
-	},
-	{
-		"svg": "kawaii-taco"
-	},
-	{
-		"svg": "keine-erdnuss"
-	},
-	{
-		"svg": "keine-krustentiere"
-	},
-	{
-		"svg": "keine-lupinen"
-	},
-	{
-		"svg": "kein-soja"
-	},
-	{
-		"svg": "kekse"
-	},
-	{
-		"svg": "kirsche"
-	},
-	{
-		"svg": "kiwi"
-	},
-	{
-		"svg": "kohlenhydrate"
-	},
-	{
-		"svg": "kohlrabi"
-	},
-	{
-		"svg": "kokosnuss"
-	},
-	{
-		"svg": "korean-rice-cake"
-	},
-	{
-		"svg": "kuchen"
-	},
-	{
-		"svg": "kürbis"
-	},
-	{
-		"svg": "lasagna"
-	},
-	{
-		"svg": "lauch"
-	},
-	{
-		"svg": "lebkuchenhaus"
-	},
-	{
-		"svg": "lemonade"
-	},
-	{
-		"svg": "lentil"
-	},
-	{
-		"svg": "lettuce"
-	},
-	{
-		"svg": "lime"
-	},
-	{
-		"svg": "lipide"
-	},
-	{
-		"svg": "list-view"
-	},
-	{
-		"svg": "löffel-zucker"
-	},
-	{
-		"svg": "lychee"
-	},
-	{
-		"svg": "macaron"
-	},
-	{
-		"svg": "mais"
-	},
-	{
-		"svg": "mango"
-	},
-	{
-		"svg": "mangosteen"
-	},
-	{
-		"svg": "maple-syrup"
-	},
-	{
-		"svg": "mcdonald`s-pommes-frites"
-	},
-	{
-		"svg": "melone"
-	},
-	{
-		"svg": "melting-ice-cream"
-	},
-	{
-		"svg": "merry-pie"
-	},
-	{
-		"svg": "milchflasche"
-	},
-	{
-		"svg": "milk-carton"
-	},
-	{
-		"svg": "mittagessen"
-	},
-	{
-		"svg": "muffin"
-	},
-	{
-		"svg": "muschel"
-	},
-	{
-		"svg": "mushroom"
-	},
-	{
-		"svg": "naan"
-	},
-	{
-		"svg": "nachos"
-	},
-	{
-		"svg": "natrium"
-	},
-	{
-		"svg": "natural-food"
-	},
-	{
-		"svg": "nicht-vegetarisches-essen-symbol"
-	},
-	{
-		"svg": "no-apple"
-	},
-	{
-		"svg": "no-celery"
-	},
-	{
-		"svg": "no-eggs"
-	},
-	{
-		"svg": "no-fish"
-	},
-	{
-		"svg": "no-gmo"
-	},
-	{
-		"svg": "no-meat"
-	},
-	{
-		"svg": "no-nuts"
-	},
-	{
-		"svg": "nonya-kueh"
-	},
-	{
-		"svg": "no-shellfish"
-	},
-	{
-		"svg": "no-sugar"
-	},
-	{
-		"svg": "nudeln"
-	},
-	{
-		"svg": "nuss"
-	},
-	{
-		"svg": "oat-milk"
-	},
-	{
-		"svg": "octopus"
-	},
-	{
-		"svg": "ohne-fruktose"
-	},
-	{
-		"svg": "ohne-gluten"
-	},
-	{
-		"svg": "ohne-milch"
-	},
-	{
-		"svg": "ohne-senf"
-	},
-	{
-		"svg": "ohne-sesam"
-	},
-	{
-		"svg": "olive"
-	},
-	{
-		"svg": "olivenöl"
-	},
-	{
-		"svg": "onion"
-	},
-	{
-		"svg": "orange"
-	},
-	{
-		"svg": "organic-food"
-	},
-	{
-		"svg": "paella"
-	},
-	{
-		"svg": "papaya"
-	},
-	{
-		"svg": "paprika"
-	},
-	{
-		"svg": "pastel-de-nata"
-	},
-	{
-		"svg": "peanut-butter"
-	},
-	{
-		"svg": "peas"
-	},
-	{
-		"svg": "pecan"
-	},
-	{
-		"svg": "pfannkuchen"
-	},
-	{
-		"svg": "pfirsich"
-	},
-	{
-		"svg": "pistachio-sauce"
-	},
-	{
-		"svg": "pizza"
-	},
-	{
-		"svg": "pizza-five-eighths"
-	},
-	{
-		"svg": "plastic-food-container"
-	},
-	{
-		"svg": "plum"
-	},
-	{
-		"svg": "pommes"
-	},
-	{
-		"svg": "popcorn"
-	},
-	{
-		"svg": "potato"
-	},
-	{
-		"svg": "potato-chips"
-	},
-	{
-		"svg": "prawn"
-	},
-	{
-		"svg": "proteine"
-	},
-	{
-		"svg": "quesadilla"
-	},
-	{
-		"svg": "rack-of-lamb"
-	},
-	{
-		"svg": "radish"
-	},
-	{
-		"svg": "raisins"
-	},
-	{
-		"svg": "real-food-for-meals"
-	},
-	{
-		"svg": "refreshments"
-	},
-	{
-		"svg": "reisschüssel"
-	},
-	{
-		"svg": "rice-vinegar"
-	},
-	{
-		"svg": "roast"
-	},
-	{
-		"svg": "rolled-oats"
-	},
-	{
-		"svg": "salami"
-	},
-	{
-		"svg": "salat"
-	},
-	{
-		"svg": "salt"
-	},
-	{
-		"svg": "salt-shaker"
-	},
-	{
-		"svg": "samosa"
-	},
-	{
-		"svg": "sandwich"
-	},
-	{
-		"svg": "sauce-bottle"
-	},
-	{
-		"svg": "schokoriegel"
-	},
-	{
-		"svg": "sellerie"
-	},
-	{
-		"svg": "sesame"
-	},
-	{
-		"svg": "silken-tofu"
-	},
-	{
-		"svg": "smoked-paprika"
-	},
-	{
-		"svg": "soja"
-	},
-	{
-		"svg": "soße"
-	},
-	{
-		"svg": "soup-plate"
-	},
-	{
-		"svg": "souvla"
-	},
-	{
-		"svg": "soy-sauce"
-	},
-	{
-		"svg": "spaghetti"
-	},
-	{
-		"svg": "spam-dose"
-	},
-	{
-		"svg": "spargel"
-	},
-	{
-		"svg": "speck"
-	},
-	{
-		"svg": "spice"
-	},
-	{
-		"svg": "spieß"
-	},
-	{
-		"svg": "spinach"
-	},
-	{
-		"svg": "squash"
-	},
-	{
-		"svg": "stachelannone"
-	},
-	{
-		"svg": "steak"
-	},
-	{
-		"svg": "stir"
-	},
-	{
-		"svg": "stück-würfelzucker"
-	},
-	{
-		"svg": "sugar"
-	},
-	{
-		"svg": "sugar-cubes"
-	},
-	{
-		"svg": "sugar-free"
-	},
-	{
-		"svg": "sunflower-butter"
-	},
-	{
-		"svg": "sunny-side-up-eggs"
-	},
-	{
-		"svg": "sushi"
-	},
-	{
-		"svg": "süßigkeit"
-	},
-	{
-		"svg": "süßstoff"
-	},
-	{
-		"svg": "sweet-potato"
-	},
-	{
-		"svg": "sweets"
-	},
-	{
-		"svg": "taco"
-	},
-	{
-		"svg": "tapas"
-	},
-	{
-		"svg": "tea-pair"
-	},
-	{
-		"svg": "tempeh"
-	},
-	{
-		"svg": "thanksgiving"
-	},
-	{
-		"svg": "thyme"
-	},
-	{
-		"svg": "tomate"
-	},
-	{
-		"svg": "trauben"
-	},
-	{
-		"svg": "tumeric"
-	},
-	{
-		"svg": "veganes-essen"
-	},
-	{
-		"svg": "vegan-symbol"
-	},
-	{
-		"svg": "vegetable-bouillion-paste"
-	},
-	{
-		"svg": "vegetables-bag"
-	},
-	{
-		"svg": "vegetarian-food-symbol"
-	},
-	{
-		"svg": "vegetarian-mark"
-	},
-	{
-		"svg": "vegetarisches-essen"
-	},
-	{
-		"svg": "verfaulte-tomaten"
-	},
-	{
-		"svg": "wassermelone"
-	},
-	{
-		"svg": "wenig-salz"
-	},
-	{
-		"svg": "white-beans"
-	},
-	{
-		"svg": "wine-and-glass"
-	},
-	{
-		"svg": "würste"
-	},
-	{
-		"svg": "you-choy"
-	},
-	{
-		"svg": "zimtschnecke"
-	},
-	{
-		"svg": "zimtstangen"
-	},
-	{
-		"svg": "zucchini"
-	},
-	{
-		"svg": "zuckerwatte"
-	},
-	{
-		"svg": "zutaten"
-	},
-	{
 		"svg": "almond-butter"
 	},
 	{
@@ -849,7 +123,7 @@
 		"svg": "caviar"
 	},
 	{
-		"svg": "caviar-1"
+		"svg": "caviar1"
 	},
 	{
 		"svg": "cereal"
@@ -919,5 +193,731 @@
 	},
 	{
 		"svg": "dim-sum"
+	},
+	{
+		"svg": "dinner"
+	},
+	{
+		"svg": "dolma"
+	},
+	{
+		"svg": "doughnut"
+	},
+	{
+		"svg": "dozen-eggs"
+	},
+	{
+		"svg": "drachenfrucht"
+	},
+	{
+		"svg": "durian"
+	},
+	{
+		"svg": "egg-basket"
+	},
+	{
+		"svg": "eggplant"
+	},
+	{
+		"svg": "eier"
+	},
+	{
+		"svg": "eierkarton"
+	},
+	{
+		"svg": "einkaufsbeutel"
+	},
+	{
+		"svg": "einwickeln"
+	},
+	{
+		"svg": "eis-im-becher"
+	},
+	{
+		"svg": "eis-in-der-waffel"
+	},
+	{
+		"svg": "empty-jam-jar"
+	},
+	{
+		"svg": "erdbeere"
+	},
+	{
+		"svg": "erdnuesse"
+	},
+	{
+		"svg": "essen-und-wein"
+	},
+	{
+		"svg": "faser"
+	},
+	{
+		"svg": "finocchio"
+	},
+	{
+		"svg": "firm-tofu"
+	},
+	{
+		"svg": "fischfutter"
+	},
+	{
+		"svg": "flax-seeds"
+	},
+	{
+		"svg": "flour"
+	},
+	{
+		"svg": "flour-in-paper-packaging"
+	},
+	{
+		"svg": "fondue"
+	},
+	{
+		"svg": "food-donor"
+	},
+	{
+		"svg": "food-receiver"
+	},
+	{
+		"svg": "fruehlingsrolle"
+	},
+	{
+		"svg": "fruit-bag"
+	},
+	{
+		"svg": "fry"
+	},
+	{
+		"svg": "gailan"
+	},
+	{
+		"svg": "garlic"
+	},
+	{
+		"svg": "geburtstagskuchen"
+	},
+	{
+		"svg": "gelee"
+	},
+	{
+		"svg": "ginger"
+	},
+	{
+		"svg": "grains-of-rice"
+	},
+	{
+		"svg": "granatapfel"
+	},
+	{
+		"svg": "granulated-garlic"
+	},
+	{
+		"svg": "greek-salad"
+	},
+	{
+		"svg": "green-tea"
+	},
+	{
+		"svg": "grocery-shelf"
+	},
+	{
+		"svg": "group-of-fruits"
+	},
+	{
+		"svg": "group-of-vegetables"
+	},
+	{
+		"svg": "gum"
+	},
+	{
+		"svg": "gurke"
+	},
+	{
+		"svg": "gyoza"
+	},
+	{
+		"svg": "haferbrei"
+	},
+	{
+		"svg": "hamburger"
+	},
+	{
+		"svg": "hamper"
+	},
+	{
+		"svg": "haselnuss"
+	},
+	{
+		"svg": "healthy-food"
+	},
+	{
+		"svg": "healthy-food-calories-calculator"
+	},
+	{
+		"svg": "heinz-bohnen"
+	},
+	{
+		"svg": "hemp-milk"
+	},
+	{
+		"svg": "himbeere"
+	},
+	{
+		"svg": "honey-spoon"
+	},
+	{
+		"svg": "honig"
+	},
+	{
+		"svg": "hot-dog"
+	},
+	{
+		"svg": "ingredients-for-cooking"
+	},
+	{
+		"svg": "jackfruit"
+	},
+	{
+		"svg": "jam"
+	},
+	{
+		"svg": "jamon"
+	},
+	{
+		"svg": "joghurt"
+	},
+	{
+		"svg": "kaese"
+	},
+	{
+		"svg": "karotte"
+	},
+	{
+		"svg": "kawaii-bread"
+	},
+	{
+		"svg": "kawaii-coffee"
+	},
+	{
+		"svg": "kawaii-cupcake"
+	},
+	{
+		"svg": "kawaii-egg"
+	},
+	{
+		"svg": "kawaii-french-fries"
+	},
+	{
+		"svg": "kawaii-ice-cream"
+	},
+	{
+		"svg": "kawaii-pizza"
+	},
+	{
+		"svg": "kawaii-soda"
+	},
+	{
+		"svg": "kawaii-steak"
+	},
+	{
+		"svg": "kawaii-sushi"
+	},
+	{
+		"svg": "kawaii-taco"
+	},
+	{
+		"svg": "keine-erdnuss"
+	},
+	{
+		"svg": "keine-krustentiere"
+	},
+	{
+		"svg": "keine-lupinen"
+	},
+	{
+		"svg": "kein-soja"
+	},
+	{
+		"svg": "kekse"
+	},
+	{
+		"svg": "kirsche"
+	},
+	{
+		"svg": "kiwi"
+	},
+	{
+		"svg": "kohlenhydrate"
+	},
+	{
+		"svg": "kohlrabi"
+	},
+	{
+		"svg": "kokosnuss"
+	},
+	{
+		"svg": "korean-rice-cake"
+	},
+	{
+		"svg": "kuchen"
+	},
+	{
+		"svg": "kuerbis"
+	},
+	{
+		"svg": "lasagna"
+	},
+	{
+		"svg": "lauch"
+	},
+	{
+		"svg": "lebkuchenhaus"
+	},
+	{
+		"svg": "lemonade"
+	},
+	{
+		"svg": "lentil"
+	},
+	{
+		"svg": "lettuce"
+	},
+	{
+		"svg": "lime"
+	},
+	{
+		"svg": "lipide"
+	},
+	{
+		"svg": "list-view"
+	},
+	{
+		"svg": "loeffel-zucker"
+	},
+	{
+		"svg": "lychee"
+	},
+	{
+		"svg": "macaron"
+	},
+	{
+		"svg": "mais"
+	},
+	{
+		"svg": "mango"
+	},
+	{
+		"svg": "mangosteen"
+	},
+	{
+		"svg": "maple-syrup"
+	},
+	{
+		"svg": "mcdonalds-pommes-frites"
+	},
+	{
+		"svg": "melone"
+	},
+	{
+		"svg": "melting-ice-cream"
+	},
+	{
+		"svg": "merry-pie"
+	},
+	{
+		"svg": "milchflasche"
+	},
+	{
+		"svg": "milk-carton"
+	},
+	{
+		"svg": "mittagessen"
+	},
+	{
+		"svg": "muffin"
+	},
+	{
+		"svg": "muschel"
+	},
+	{
+		"svg": "mushroom"
+	},
+	{
+		"svg": "naan"
+	},
+	{
+		"svg": "nachos"
+	},
+	{
+		"svg": "natrium"
+	},
+	{
+		"svg": "natural-food"
+	},
+	{
+		"svg": "nicht-vegetarisches-essen-symbol"
+	},
+	{
+		"svg": "no-apple"
+	},
+	{
+		"svg": "no-celery"
+	},
+	{
+		"svg": "no-eggs"
+	},
+	{
+		"svg": "no-fish"
+	},
+	{
+		"svg": "no-gmo"
+	},
+	{
+		"svg": "no-meat"
+	},
+	{
+		"svg": "no-nuts"
+	},
+	{
+		"svg": "nonya-kueh"
+	},
+	{
+		"svg": "no-shellfish"
+	},
+	{
+		"svg": "no-sugar"
+	},
+	{
+		"svg": "nudeln"
+	},
+	{
+		"svg": "nuss"
+	},
+	{
+		"svg": "oat-milk"
+	},
+	{
+		"svg": "octopus"
+	},
+	{
+		"svg": "ohne-fruktose"
+	},
+	{
+		"svg": "ohne-gluten"
+	},
+	{
+		"svg": "ohne-milch"
+	},
+	{
+		"svg": "ohne-senf"
+	},
+	{
+		"svg": "ohne-sesam"
+	},
+	{
+		"svg": "olive"
+	},
+	{
+		"svg": "olivenoel"
+	},
+	{
+		"svg": "onion"
+	},
+	{
+		"svg": "orange"
+	},
+	{
+		"svg": "organic-food"
+	},
+	{
+		"svg": "paella"
+	},
+	{
+		"svg": "papaya"
+	},
+	{
+		"svg": "paprika"
+	},
+	{
+		"svg": "pastel-de-nata"
+	},
+	{
+		"svg": "peanut-butter"
+	},
+	{
+		"svg": "peas"
+	},
+	{
+		"svg": "pecan"
+	},
+	{
+		"svg": "pfannkuchen"
+	},
+	{
+		"svg": "pfirsich"
+	},
+	{
+		"svg": "pistachio-sauce"
+	},
+	{
+		"svg": "pizza"
+	},
+	{
+		"svg": "pizza-five-eighths"
+	},
+	{
+		"svg": "plastic-food-container"
+	},
+	{
+		"svg": "plum"
+	},
+	{
+		"svg": "pommes"
+	},
+	{
+		"svg": "popcorn"
+	},
+	{
+		"svg": "potato"
+	},
+	{
+		"svg": "potato-chips"
+	},
+	{
+		"svg": "prawn"
+	},
+	{
+		"svg": "proteine"
+	},
+	{
+		"svg": "quesadilla"
+	},
+	{
+		"svg": "rack-of-lamb"
+	},
+	{
+		"svg": "radish"
+	},
+	{
+		"svg": "raisins"
+	},
+	{
+		"svg": "real-food-for-meals"
+	},
+	{
+		"svg": "refreshments"
+	},
+	{
+		"svg": "reisschuessel"
+	},
+	{
+		"svg": "rice-vinegar"
+	},
+	{
+		"svg": "roast"
+	},
+	{
+		"svg": "rolled-oats"
+	},
+	{
+		"svg": "salami"
+	},
+	{
+		"svg": "salat"
+	},
+	{
+		"svg": "salt"
+	},
+	{
+		"svg": "salt-shaker"
+	},
+	{
+		"svg": "samosa"
+	},
+	{
+		"svg": "sandwich"
+	},
+	{
+		"svg": "sauce-bottle"
+	},
+	{
+		"svg": "schokoriegel"
+	},
+	{
+		"svg": "sellerie"
+	},
+	{
+		"svg": "sesame"
+	},
+	{
+		"svg": "silken-tofu"
+	},
+	{
+		"svg": "smoked-paprika"
+	},
+	{
+		"svg": "soja"
+	},
+	{
+		"svg": "sosse"
+	},
+	{
+		"svg": "soup-plate"
+	},
+	{
+		"svg": "souvla"
+	},
+	{
+		"svg": "soy-sauce"
+	},
+	{
+		"svg": "spaghetti"
+	},
+	{
+		"svg": "spam-dose"
+	},
+	{
+		"svg": "spargel"
+	},
+	{
+		"svg": "speck"
+	},
+	{
+		"svg": "spice"
+	},
+	{
+		"svg": "spiess"
+	},
+	{
+		"svg": "spinach"
+	},
+	{
+		"svg": "squash"
+	},
+	{
+		"svg": "stachelannone"
+	},
+	{
+		"svg": "steak"
+	},
+	{
+		"svg": "stir"
+	},
+	{
+		"svg": "stueck-wuerfelzucker"
+	},
+	{
+		"svg": "suessigkeit"
+	},
+	{
+		"svg": "suessstoff"
+	},
+	{
+		"svg": "sugar"
+	},
+	{
+		"svg": "sugar-cubes"
+	},
+	{
+		"svg": "sugar-free"
+	},
+	{
+		"svg": "sunflower-butter"
+	},
+	{
+		"svg": "sunny-side-up-eggs"
+	},
+	{
+		"svg": "sushi"
+	},
+	{
+		"svg": "sweet-potato"
+	},
+	{
+		"svg": "sweets"
+	},
+	{
+		"svg": "taco"
+	},
+	{
+		"svg": "tapas"
+	},
+	{
+		"svg": "tea-pair"
+	},
+	{
+		"svg": "tempeh"
+	},
+	{
+		"svg": "thanksgiving"
+	},
+	{
+		"svg": "thyme"
+	},
+	{
+		"svg": "tomate"
+	},
+	{
+		"svg": "trauben"
+	},
+	{
+		"svg": "tumeric"
+	},
+	{
+		"svg": "veganes-essen"
+	},
+	{
+		"svg": "vegan-symbol"
+	},
+	{
+		"svg": "vegetable-bouillion-paste"
+	},
+	{
+		"svg": "vegetables-bag"
+	},
+	{
+		"svg": "vegetarian-food-symbol"
+	},
+	{
+		"svg": "vegetarian-mark"
+	},
+	{
+		"svg": "vegetarisches-essen"
+	},
+	{
+		"svg": "verfaulte-tomaten"
+	},
+	{
+		"svg": "wassermelone"
+	},
+	{
+		"svg": "wenig-salz"
+	},
+	{
+		"svg": "white-beans"
+	},
+	{
+		"svg": "wine-and-glass"
+	},
+	{
+		"svg": "wuerste"
+	},
+	{
+		"svg": "you-choy"
+	},
+	{
+		"svg": "zimtschnecke"
+	},
+	{
+		"svg": "zimtstangen"
+	},
+	{
+		"svg": "zucchini"
+	},
+	{
+		"svg": "zuckerwatte"
+	},
+	{
+		"svg": "zutaten"
 	}
 ]
