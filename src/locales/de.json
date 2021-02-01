@@ -91,7 +91,7 @@
     "date": "Datum",
     "phe": "Gesamt Phe (in mg)",
     "chart": "Noch nicht genug Einträge für das Diagramm.",
-    "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen",
+    "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen. Exportiere deine Daten in Excel",
     "export": "Exportieren",
     "log": "Protokoll (nicht bearbeitbar, exportiere zum Bearbeiten)",
     "export-confirm": "Phe Tagebuch in Excel exportieren? (Hinweis: Vermeide ein doppeltes Datum im Phe Tagebuch.)",
