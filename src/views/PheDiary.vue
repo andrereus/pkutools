@@ -9,12 +9,12 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
-          <v-btn depressed @click="signInGoogle" class="mt-2">
+          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
             <v-icon left>mdi-google</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
-          <v-btn depressed @click="signInFacebook" class="mt-2">
+          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
             <v-icon left>mdi-facebook</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
@@ -58,7 +58,7 @@
 
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
+              <v-btn depressed rounded color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
                 {{ $t("common.add") }}
               </v-btn>
             </template>
@@ -73,6 +73,7 @@
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field
                       filled
+                      rounded
                       :value="computelocalDate"
                       :label="$t('phe-diary.date')"
                       readonly
@@ -86,6 +87,7 @@
 
                 <v-text-field
                   filled
+                  rounded
                   :label="$t('phe-diary.phe')"
                   v-model.number="editedItem.phe"
                   type="number"
@@ -136,8 +138,8 @@
             </v-card>
           </v-dialog>
 
-          <v-btn depressed class="mr-3 mt-3" @click="exportDiary">{{ $t("phe-diary.export") }}</v-btn>
-          <v-btn depressed class="mr-3 mt-3" @click="reset">{{ $t("common.reset") }}</v-btn>
+          <v-btn depressed rounded class="mr-3 mt-3" @click="exportDiary">{{ $t("phe-diary.export") }}</v-btn>
+          <v-btn depressed rounded class="mr-3 mt-3" @click="reset">{{ $t("common.reset") }}</v-btn>
 
           <p class="text--secondary mt-5">
             <v-icon>mdi-information-variant</v-icon>

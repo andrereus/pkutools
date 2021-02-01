@@ -12,6 +12,7 @@
           v-model="search"
           :label="$t('phe-search.search')"
           filled
+          rounded
           single-line
           autocomplete="off"
           @keyup.enter="searchFood"
@@ -72,6 +73,7 @@
             <v-card-text>
               <v-text-field
                 filled
+                rounded
                 :label="$t('phe-search.weight')"
                 v-model.number="weight"
                 type="number"

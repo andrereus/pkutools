@@ -9,12 +9,12 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
-          <v-btn depressed @click="signInGoogle" class="mt-2">
+          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
             <v-icon left>mdi-google</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
-          <v-btn depressed @click="signInFacebook" class="mt-2">
+          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
             <v-icon left>mdi-facebook</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
@@ -41,7 +41,7 @@
           <v-progress-linear
             :value="((aminoCounter.count || 0) * 100) / (settings.maxAmino || 3)"
             height="40"
-            class="white--text my-6"
+            class="white--text my-6 amino-progress"
             rounded
             color="teal"
           >
@@ -50,16 +50,16 @@
 
           <p>{{ $t("amino-counter.date") }}: {{ getlocalDate(aminoCounter.date) }}</p>
 
-          <v-btn depressed @click="takeAM" color="primary" class="mr-3 mt-3">
+          <v-btn depressed rounded @click="takeAM" color="primary" class="mr-3 mt-3">
             {{ $t("amino-counter.take") }}
           </v-btn>
-          <v-btn depressed @click="resetAM" class="mr-3 mt-3">
+          <v-btn depressed rounded @click="resetAM" class="mr-3 mt-3">
             {{ $t("common.reset") }}
           </v-btn>
 
           <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed v-bind="attrs" v-on="on" class="mr-3 mt-3">
+              <v-btn depressed rounded v-bind="attrs" v-on="on" class="mr-3 mt-3">
                 {{ $t("common.settings") }}
               </v-btn>
             </template>
@@ -72,6 +72,7 @@
               <v-card-text>
                 <v-text-field
                   filled
+                  rounded
                   :label="$t('amino-counter.amount')"
                   v-model.number="settings.maxAmino"
                   type="number"
@@ -187,5 +188,9 @@ export default {
 <style lang="scss" scoped>
 .v-btn {
   text-transform: none;
+}
+
+.amino-progress {
+  border-radius: 20px;
 }
 </style>

@@ -11,6 +11,7 @@
         <v-btn
           v-if="this.$i18n.locale === 'en'"
           depressed
+          rounded
           href="https://youtu.be/lmiejnEFccY"
           target="_blank"
           color="primary"
@@ -23,6 +24,7 @@
         <v-btn
           v-if="this.$i18n.locale === 'de'"
           depressed
+          rounded
           href="https://youtu.be/5_-F4tM8_RQ"
           target="_blank"
           color="primary"
@@ -32,7 +34,7 @@
           {{ $t("home.video") }}
         </v-btn>
 
-        <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+        <v-btn text rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
           <v-icon left>mdi-play</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
@@ -109,6 +111,7 @@
         <v-btn
           v-if="this.$i18n.locale === 'en'"
           depressed
+          rounded
           outlined
           href="https://andre.getform.com/q0ko3"
           color="primary"
@@ -121,6 +124,7 @@
         <v-btn
           v-if="this.$i18n.locale === 'de'"
           depressed
+          rounded
           outlined
           href="https://andre.getform.com/69zrd"
           color="primary"

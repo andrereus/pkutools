@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-navigation-drawer app clipped v-model="drawer" floating class="nav-layout">
-      <v-list>
+      <v-list rounded dense>
         <v-list-item to="/">
           <v-list-item-action>
             <v-icon>mdi-home</v-icon>
@@ -463,8 +463,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.theme--light.v-navigation-drawer {
-  background-color: #f5f5f5;
+//.theme--light.v-navigation-drawer {
+//  background-color: #f5f5f5;
+//}
+
+.theme--dark.v-navigation-drawer {
+  background-color: #121212 !important;
 }
 
 .v-item-group.v-bottom-navigation {
@@ -516,5 +520,11 @@ export default {
 
 .lang-button {
   text-transform: uppercase;
+}
+
+.v-list--dense .v-list-item .v-list-item__title {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 </style>

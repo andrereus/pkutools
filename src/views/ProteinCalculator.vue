@@ -12,6 +12,7 @@
 
         <v-text-field
           filled
+          rounded
           :label="$t('protein-calculator.protein')"
           v-model.number="protein"
           type="number"
@@ -21,6 +22,7 @@
 
         <v-text-field
           filled
+          rounded
           :label="$t('protein-calculator.weight')"
           v-model.number="weight"
           type="number"
@@ -31,7 +33,7 @@
 
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn depressed color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
+            <v-btn depressed rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
               {{ $t("common.add") }}
             </v-btn>
           </template>
@@ -42,7 +44,13 @@
             </v-card-title>
 
             <v-card-text>
-              <v-text-field filled :label="$t('protein-calculator.name')" v-model="name" class="mt-6"></v-text-field>
+              <v-text-field
+                filled
+                rounded
+                :label="$t('protein-calculator.name')"
+                v-model="name"
+                class="mt-6"
+              ></v-text-field>
             </v-card-text>
 
             <v-card-actions class="mt-n6">

@@ -12,14 +12,26 @@
           {{ $t("phe-calculator.protein-link") }}
         </router-link>
 
-        <v-text-field filled :label="$t('phe-calculator.phe')" v-model.number="phe" type="number"></v-text-field>
-        <v-text-field filled :label="$t('phe-calculator.weight')" v-model.number="weight" type="number"></v-text-field>
+        <v-text-field
+          filled
+          rounded
+          :label="$t('phe-calculator.phe')"
+          v-model.number="phe"
+          type="number"
+        ></v-text-field>
+        <v-text-field
+          filled
+          rounded
+          :label="$t('phe-calculator.weight')"
+          v-model.number="weight"
+          type="number"
+        ></v-text-field>
 
         <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
 
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn depressed color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
+            <v-btn depressed rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
               {{ $t("common.add") }}
             </v-btn>
           </template>
@@ -30,7 +42,13 @@
             </v-card-title>
 
             <v-card-text>
-              <v-text-field filled :label="$t('phe-calculator.name')" v-model="name" class="mt-6"></v-text-field>
+              <v-text-field
+                filled
+                rounded
+                :label="$t('phe-calculator.name')"
+                v-model="name"
+                class="mt-6"
+              ></v-text-field>
             </v-card-text>
 
             <v-card-actions class="mt-n6">

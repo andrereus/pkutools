@@ -17,8 +17,13 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://pkumanager.com/" target="_blank">Web</v-btn>
-            <v-btn text href="https://play.google.com/store/apps/details?id=com.andrereus.pkumanager" target="_blank">
+            <v-btn text rounded href="https://pkumanager.com/" target="_blank">Web</v-btn>
+            <v-btn
+              text
+              rounded
+              href="https://play.google.com/store/apps/details?id=com.andrereus.pkumanager"
+              target="_blank"
+            >
               Android
             </v-btn>
           </v-card-actions>
@@ -35,12 +40,18 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://pherechner.de/" target="_blank">Web</v-btn>
-            <v-btn text href="https://play.google.com/store/apps/details?id=com.endofweb.pherechner" target="_blank">
+            <v-btn text rounded href="https://pherechner.de/" target="_blank">Web</v-btn>
+            <v-btn
+              text
+              rounded
+              href="https://play.google.com/store/apps/details?id=com.endofweb.pherechner"
+              target="_blank"
+            >
               Android
             </v-btn>
             <v-btn
               text
+              rounded
               href="https://chrome.google.com/webstore/detail/phe-rechner/phihennkfhbchhbegacdmondhhkpmfjj"
               target="_blank"
             >
@@ -60,7 +71,7 @@
           </v-card-text>
 
           <v-card-actions>
-            <v-btn text href="https://simple-nutrition-calculator.com/" target="_blank">Web</v-btn>
+            <v-btn text rounded href="https://simple-nutrition-calculator.com/" target="_blank">Web</v-btn>
           </v-card-actions>
         </v-card>
       </v-col>

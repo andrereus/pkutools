@@ -52,22 +52,22 @@
         </div>
 
         <div v-if="!userIsAuthenticated">
-          <v-btn depressed to="/phe-search" color="primary" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/phe-search" color="primary" class="mr-3 mb-3">
             <v-icon left>mdi-magnify</v-icon>
             {{ $t("phe-search.title") }}
           </v-btn>
-          <v-btn depressed to="/phe-calculator" color="primary" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/phe-calculator" color="primary" class="mr-3 mb-3">
             <v-icon left>mdi-calculator</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
-          <v-btn depressed to="/protein-calculator" color="primary" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/protein-calculator" color="primary" class="mr-3 mb-3">
             <v-icon left>mdi-calculator-variant</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
 
           <v-menu offset-y>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn text class="mr-3 mb-3" v-bind="attrs" v-on="on">
+              <v-btn text rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
                 {{ $t("home.more") }}
               </v-btn>
             </template>
@@ -94,6 +94,7 @@
           <v-btn
             v-if="this.$i18n.locale === 'en'"
             depressed
+            rounded
             href="https://youtu.be/lmiejnEFccY"
             target="_blank"
             color="primary"
@@ -106,6 +107,7 @@
           <v-btn
             v-if="this.$i18n.locale === 'de'"
             depressed
+            rounded
             href="https://youtu.be/5_-F4tM8_RQ"
             target="_blank"
             color="primary"
@@ -115,19 +117,20 @@
             {{ $t("home.video") }}
           </v-btn>
 
-          <v-btn text href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
+          <v-btn text rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
             <v-icon left>mdi-play</v-icon>
             {{ $t("home.mobile-video") }}
           </v-btn>
 
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
+
           <FeatureComparison home class="mb-6" />
 
-          <v-btn depressed to="/other-apps" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
             <v-icon left>mdi-compare-horizontal</v-icon>
             {{ $t("home.compare") }}
           </v-btn>
-          <v-btn depressed to="/help" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/help" class="mr-3 mb-3">
             <v-icon left>mdi-information-outline</v-icon>
             {{ $t("home.installation") }}
           </v-btn>
