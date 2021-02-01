@@ -223,6 +223,7 @@ import "firebase/auth";
 import "firebase/database";
 import { format } from "date-fns";
 import foodIcons from "../components/data/food-icons.json";
+import confetti from "canvas-confetti";
 
 export default {
   metaInfo() {
@@ -384,24 +385,27 @@ export default {
       if (this.pheDiary.length >= 90) {
         alert(this.$t("phe-diary.limit") + ".");
       } else {
-        let r = confirm(this.$t("phe-log.save-diary") + "?");
-        if (r === true) {
-          firebase
-            .database()
-            .ref(this.user.id + "/pheDiary")
-            .push({
-              date: format(new Date(), "yyyy-MM-dd"),
-              phe: this.pheResult,
-              log: this.pheLog
-            })
-            .then(() => {
-              firebase
-                .database()
-                .ref(this.user.id + "/pheLog")
-                .remove();
-            });
-          this.$router.push("phe-diary");
-        }
+        confetti();
+        setTimeout(() => {
+          let r = confirm(this.$t("phe-log.save-diary") + "?");
+          if (r === true) {
+            firebase
+              .database()
+              .ref(this.user.id + "/pheDiary")
+              .push({
+                date: format(new Date(), "yyyy-MM-dd"),
+                phe: this.pheResult,
+                log: this.pheLog
+              })
+              .then(() => {
+                firebase
+                  .database()
+                  .ref(this.user.id + "/pheLog")
+                  .remove();
+              });
+            this.$router.push("phe-diary");
+          }
+        }, 600);
       }
     }
   },
