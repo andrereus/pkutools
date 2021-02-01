@@ -284,7 +284,7 @@
       </v-btn>
 
       <v-btn @click="sheet = true" value="add" :aria-label="$t('common.add')" class="add-button">
-        <v-icon color="primary" x-large>mdi-plus-circle</v-icon>
+        <v-icon color="primary" large>mdi-plus-circle</v-icon>
       </v-btn>
 
       <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
