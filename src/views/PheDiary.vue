@@ -91,7 +91,7 @@
                   type="number"
                 ></v-text-field>
 
-                <p v-if="editedItem.log" class="ml-3 mt-n2 text-caption">{{ $t("phe-diary.read-only") }}</p>
+                <p v-if="editedItem.log" class="ml-2 mt-n2 text-caption">{{ $t("phe-diary.log") }}</p>
 
                 <v-data-table
                   :headers="headers2"

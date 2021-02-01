@@ -128,6 +128,8 @@
         </p>
 
         <p class="text--secondary text-center mt-1" v-if="advancedFood === null">
+          {{ $t("phe-search.note") }}
+          <br />
           {{ $t("phe-search.singular") }}
         </p>
 

@@ -46,7 +46,8 @@
     "weight": "Weight (in g)",
     "advanced": "Search all foods",
     "source": "Source: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov.",
-    "singular": "Tip: Use the singular of words and short search terms."
+    "singular": "Tip: Use the singular of words and short search terms.",
+    "note": "Note: The Phe Search is still being optimized."
   },
   "phe-calculator": {
     "title": "Phe Calculator",
@@ -93,7 +94,7 @@
     "chart": "Not enough entries for the chart.",
     "limit": "The Phe Diary has a limit of 90 entries",
     "export": "Export",
-    "read-only": "Log (read only)",
+    "log": "Log (not editable, export to edit)",
     "export-confirm": "Export Phe Diary in Excel? (Note: Avoid duplicate dates in the Phe Diary.)",
     "export-overview": "Overview",
     "export-filename": "PKU Tools - Phe Diary"

@@ -46,7 +46,8 @@
     "weight": "Gewicht (in g)",
     "advanced": "Ergebnisse aus dem Web",
     "source": "Quelle: Frida Food Data (http://frida.fooddata.dk), version 4, 2019, National Food Institute, Technical University of Denmark.",
-    "singular": "Tipp: Verwende die Einzahl von Wörtern und kurze Suchbegriffe."
+    "singular": "Tipp: Verwende die Einzahl von Wörtern und kurze Suchbegriffe.",
+    "note": "Hinweis: Die Phe Suche wird noch optimiert."
   },
   "phe-calculator": {
     "title": "Phe Rechner",
@@ -93,7 +94,7 @@
     "chart": "Noch nicht genug Einträge für das Diagramm.",
     "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen",
     "export": "Exportieren",
-    "read-only": "Protokoll (nur lesen)",
+    "log": "Protokoll (nicht bearbeitbar, exportiere zum Bearbeiten)",
     "export-confirm": "Phe Tagebuch in Excel exportieren? (Hinweis: Vermeide ein doppeltes Datum im Phe Tagebuch.)",
     "export-overview": "Übersicht",
     "export-filename": "PKU Tools - Phe Tagebuch"
