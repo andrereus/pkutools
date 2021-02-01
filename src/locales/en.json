@@ -96,7 +96,8 @@
     "log": "Log (not editable, export to edit)",
     "export-confirm": "Export Phe Diary in Excel? (Note: Avoid duplicate dates in the Phe Diary.)",
     "export-overview": "Overview",
-    "export-filename": "PKU Tools - Phe Diary"
+    "export-filename": "PKU Tools - Phe Diary",
+    "note": "Export from time to time, the limit are 90 entries (3 months)."
   },
   "amino-counter": {
     "title": "Amino Counter",
