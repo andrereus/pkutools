@@ -298,7 +298,7 @@ export default {
       }
     },
     exportDiary() {
-      let r = confirm(this.$t("phe-diary.export-confirm") + "?");
+      let r = confirm(this.$t("phe-diary.export-confirm") + ".");
       if (r === true) {
         let exportTable = this.pheDiary.map(item => {
           if (this.$i18n.locale === "de") {

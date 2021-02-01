@@ -94,7 +94,7 @@
     "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen. Exportiere deine Daten in Excel",
     "export": "Exportieren",
     "log": "Protokoll (nicht bearbeitbar, exportiere zum Bearbeiten)",
-    "export-confirm": "Phe Tagebuch in Excel exportieren? (Hinweis: Vermeide ein doppeltes Datum im Phe Tagebuch.)",
+    "export-confirm": "Phe Tagebuch in Excel exportieren? Hinweis: Vermeide ein doppeltes Datum im Phe Tagebuch",
     "export-overview": "Übersicht",
     "export-filename": "PKU Tools - Phe Tagebuch",
     "note": "Exportiere ab und zu, das Limit sind 90 Einträge (3 Monate)."
