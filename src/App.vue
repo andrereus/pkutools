@@ -148,7 +148,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app clipped-left flat class="nav-layout">
+    <v-app-bar app clipped-left flat dark class="nav-layout custom-app-bar">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" :aria-label="$t('app.main-menu')" />
       <router-link to="/" class="app-logo">
         <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
@@ -526,5 +526,13 @@ export default {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+}
+
+.theme--light .custom-app-bar {
+  background: linear-gradient(90deg, rgba(41, 128, 185, 1) 0%, rgba(52, 152, 219, 1) 100%);
+}
+
+.theme--dark .custom-app-bar {
+  background: linear-gradient(90deg, rgba(41, 128, 185, 1) 0%, rgba(52, 73, 94, 1) 100%);
 }
 </style>
