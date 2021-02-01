@@ -24,6 +24,11 @@
           </template>
         </v-text-field>
 
+        <p class="text--secondary mt-n3">
+          <v-icon>mdi-information-outline</v-icon>
+          {{ $t("phe-search.note") }}
+        </p>
+
         <!--        <v-data-table-->
         <!--          :headers="headers"-->
         <!--          :items="loadedFood"-->
@@ -127,16 +132,10 @@
           {{ $t("phe-search.source") }}
         </p>
 
-        <p class="text--secondary text-center mt-1" v-if="advancedFood === null">
-          {{ $t("phe-search.note") }}
-          <br />
-          {{ $t("phe-search.singular") }}
-        </p>
-
         <v-img
           src="../assets/searching.svg"
           alt="Search Illustration"
-          class="mt-8 illustration"
+          class="mt-10 illustration"
           v-if="advancedFood === null"
         ></v-img>
       </v-col>
