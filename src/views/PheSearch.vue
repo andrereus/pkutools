@@ -19,7 +19,7 @@
           clearable
         >
           <template v-slot:append-outer>
-            <v-btn depressed fab small color="primary" @click="searchFood" class="mt-n2">
+            <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
               <v-icon>mdi-magnify</v-icon>
             </v-btn>
           </template>
@@ -149,6 +149,7 @@
 import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/database";
+import lunr from "lunr";
 
 export default {
   metaInfo() {
@@ -173,7 +174,8 @@ export default {
       },
       { text: "Phe", value: "phe" }
     ],
-    advancedFood: null
+    advancedFood: null,
+    loading: false
   }),
   methods: {
     loadItem(item) {
@@ -204,21 +206,26 @@ export default {
     //   this.advancedFood = null;
     // },
     async searchFood() {
-      if (this.$i18n.locale === "de") {
-        const res = await fetch(this.publicPath + "data/frida.json");
-        const food = await res.json();
-        this.advancedFood = food.filter(food => {
-          const regex = new RegExp(`${this.search.trim()}`, `gi`);
-          return food.name.match(regex);
+      this.loading = true;
+      const res = await fetch(this.publicPath + (this.$i18n.locale === "de" ? "data/frida.json" : "data/usda.json"));
+      const food = await res.json();
+
+      let idx = lunr(function () {
+        this.ref("name");
+        this.field("name");
+        food.forEach(doc => {
+          this.add(doc);
         });
-      } else {
-        const res = await fetch(this.publicPath + "data/usda.json");
-        const food = await res.json();
-        this.advancedFood = food.filter(food => {
-          const regex = new RegExp(`${this.search.trim()}`, `gi`);
-          return food.name.match(regex);
+      });
+
+      let results = idx.search(this.search + "~1 *" + this.search + "*");
+
+      this.advancedFood = food.filter(food => {
+        return results.some(result => {
+          return result.ref === food.name;
         });
-      }
+      });
+      this.loading = false;
     }
   },
   computed: {
