@@ -25,11 +25,6 @@
           </template>
         </v-text-field>
 
-        <p class="text--secondary mt-n3">
-          <v-icon>mdi-information-outline</v-icon>
-          {{ $t("phe-search.note") }}
-        </p>
-
         <!--        <v-data-table-->
         <!--          :headers="headers"-->
         <!--          :items="loadedFood"-->
@@ -137,9 +132,14 @@
         <v-img
           src="../assets/searching.svg"
           alt="Search Illustration"
-          class="mt-10 illustration"
+          class="mt-6 illustration"
           v-if="advancedFood === null"
         ></v-img>
+
+        <p class="text--secondary text-center mt-10" v-if="$i18n.locale === 'de' && advancedFood === null">
+          <v-icon>mdi-information-outline</v-icon>
+          Die deutsche Phe Suche wird im Moment noch optimiert.
+        </p>
       </v-col>
     </v-row>
   </div>
