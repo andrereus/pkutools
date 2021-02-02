@@ -149,7 +149,7 @@
 import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/database";
-import lunr from "lunr";
+import Fuse from "fuse.js";
 
 export default {
   metaInfo() {
@@ -210,20 +210,17 @@ export default {
       const res = await fetch(this.publicPath + (this.$i18n.locale === "de" ? "data/frida.json" : "data/usda.json"));
       const food = await res.json();
 
-      let idx = lunr(function () {
-        this.ref("name");
-        this.field("name");
-        food.forEach(doc => {
-          this.add(doc);
-        });
+      const fuse = new Fuse(food, {
+        keys: ["name", "phe"],
+        threshold: 0.2,
+        minMatchCharLength: 2,
+        ignoreLocation: true
       });
 
-      let results = idx.search(this.search.trim() + "~1 *" + this.search.trim() + "*");
+      let results = fuse.search(this.search.trim());
 
-      this.advancedFood = food.filter(food => {
-        return results.some(result => {
-          return result.ref === food.name;
-        });
+      this.advancedFood = results.map(result => {
+        return result.item;
       });
       this.loading = false;
     }
