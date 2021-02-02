@@ -218,7 +218,7 @@ export default {
         });
       });
 
-      let results = idx.search(this.search + "~1 *" + this.search + "*");
+      let results = idx.search(this.search.trim() + "~1 *" + this.search.trim() + "*");
 
       this.advancedFood = food.filter(food => {
         return results.some(result => {
