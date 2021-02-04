@@ -82,15 +82,17 @@
             <v-expansion-panel-header>{{ $t("help.support") }}</v-expansion-panel-header>
 
             <v-expansion-panel-content>
-              <p>
-                {{ $t("help.support-p1") }}
-                <a href="https://www.buymeacoffee.com/andrereus" target="_blank">
-                  https://www.buymeacoffee.com/andrereus
-                </a>
-                😉
-              </p>
+              <p>{{ $t("help.support-p1") }}</p>
 
-              <p>{{ $t("help.support-p2") }}</p>
+              <a href="https://www.buymeacoffee.com/andrereus" target="_blank">
+                <img
+                  src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png"
+                  alt="Buy Me A Coffee"
+                  style="height: 60px !important; width: 217px !important"
+                />
+              </a>
+
+              <p class="mt-2">{{ $t("help.support-p2") }}</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
 
