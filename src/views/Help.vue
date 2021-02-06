@@ -118,6 +118,7 @@
           href="https://andre.getform.com/q0ko3"
           color="primary"
           class="mr-3 mb-3"
+          target="_blank"
         >
           <v-icon left>mdi-comment-quote-outline</v-icon>
           {{ $t("help.feedback") }}
@@ -131,6 +132,7 @@
           href="https://andre.getform.com/69zrd"
           color="primary"
           class="mr-3 mb-3"
+          target="_blank"
         >
           <v-icon left>mdi-comment-quote-outline</v-icon>
           {{ $t("help.feedback") }}

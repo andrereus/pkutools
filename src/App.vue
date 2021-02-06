@@ -213,14 +213,14 @@
 
           <v-divider></v-divider>
 
-          <v-list-item v-if="this.$i18n.locale === 'en'" href="https://andre.getform.com/q0ko3">
+          <v-list-item v-if="this.$i18n.locale === 'en'" href="https://andre.getform.com/q0ko3" target="_blank">
             <span>
               <v-icon>mdi-comment-quote-outline</v-icon>
               {{ $t("app.feedback") }}
             </span>
           </v-list-item>
 
-          <v-list-item v-if="this.$i18n.locale === 'de'" href="https://andre.getform.com/69zrd">
+          <v-list-item v-if="this.$i18n.locale === 'de'" href="https://andre.getform.com/69zrd" target="_blank">
             <span>
               <v-icon>mdi-comment-quote-outline</v-icon>
               {{ $t("app.feedback") }}
