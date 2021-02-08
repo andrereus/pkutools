@@ -70,7 +70,8 @@
     "phe": "Phe per 100g (in mg)",
     "weight": "Weight (in g)",
     "date": "Date",
-    "chart": "Not enough entries for the chart."
+    "chart": "Not enough entries for the chart.",
+    "limit": "Own Food is limited to 500 entries"
   },
   "phe-log": {
     "title": "Phe Log",

@@ -299,14 +299,18 @@ export default {
             phe: Number(this.editedItem.phe)
           });
       } else {
-        firebase
-          .database()
-          .ref(this.user.id + "/ownFood")
-          .push({
-            name: this.editedItem.name,
-            icon: this.editedItem.icon || null,
-            phe: Number(this.editedItem.phe)
-          });
+        if (this.ownFood.length >= 500) {
+          alert(this.$t("own-food.limit") + ".");
+        } else {
+          firebase
+            .database()
+            .ref(this.user.id + "/ownFood")
+            .push({
+              name: this.editedItem.name,
+              icon: this.editedItem.icon || null,
+              phe: Number(this.editedItem.phe)
+            });
+        }
       }
       this.close();
     },

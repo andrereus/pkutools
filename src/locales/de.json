@@ -70,7 +70,8 @@
     "phe": "Phe pro 100g (in mg)",
     "weight": "Gewicht (in g)",
     "date": "Datum",
-    "chart": "Noch nicht genug Einträge für das Diagramm."
+    "chart": "Noch nicht genug Einträge für das Diagramm.",
+    "limit": "Eigene Lebensmittel sind auf 500 Einträge limitiert"
   },
   "phe-log": {
     "title": "Phe Protokoll",
