@@ -51,16 +51,16 @@
           <p>{{ $t("amino-counter.date") }}</p>
           <p class="title font-weight-regular mt-n3">{{ getlocalDate(aminoCounter.date) }}</p>
 
-          <v-btn depressed rounded @click="takeAM" color="primary" class="mr-3 mt-3">
+          <v-btn depressed rounded @click="takeAM" color="primary" class="mr-3 mb-3">
             {{ $t("amino-counter.take") }}
           </v-btn>
-          <v-btn depressed rounded @click="resetAM" class="mr-3 mt-3">
+          <v-btn depressed rounded @click="resetAM" class="mr-3 mb-3">
             {{ $t("common.reset") }}
           </v-btn>
 
           <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed rounded v-bind="attrs" v-on="on" class="mr-3 mt-3">
+              <v-btn depressed rounded v-bind="attrs" v-on="on" class="mr-3 mb-3">
                 {{ $t("common.settings") }}
               </v-btn>
             </template>
