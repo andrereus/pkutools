@@ -36,7 +36,13 @@
         </div>
 
         <div v-if="userIsAuthenticated">
-          <v-sparkline :value="graph" fill smooth></v-sparkline>
+          <apexchart
+            v-if="pheDiary.length >= 1"
+            type="bar"
+            height="300"
+            :options="chartOptions"
+            :series="graph"
+          ></apexchart>
 
           <v-data-table
             :headers="headers"
@@ -44,8 +50,6 @@
             disable-pagination
             hide-default-footer
             mobile-breakpoint="0"
-            sort-by="date"
-            sort-desc
             class="mb-3"
           >
             <template v-slot:item="{ item }">
@@ -168,8 +172,12 @@ import "firebase/database";
 import { format, parseISO, formatISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
 import XLSX from "xlsx";
+import VueApexCharts from "vue-apexcharts";
 
 export default {
+  components: {
+    apexchart: VueApexCharts
+  },
   metaInfo() {
     return {
       title: this.$t("phe-diary.title"),
@@ -205,7 +213,25 @@ export default {
       date: "",
       phe: null
     },
-    offlineInfo: false
+    offlineInfo: false,
+    chartOptions: {
+      chart: {
+        height: 300,
+        type: "bar",
+        zoom: {
+          enabled: false
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      xaxis: {
+        type: "datetime"
+      },
+      yaxis: {
+        show: false
+      }
+    }
   }),
   methods: {
     signInGoogle() {
@@ -373,11 +399,15 @@ export default {
     },
     graph() {
       let newPheDiary = this.pheDiary;
-      return newPheDiary
-        .sort((a, b) => {
-          return new Date(a.date) - new Date(b.date);
-        })
-        .map(obj => obj.phe);
+      let finalPheDiary = newPheDiary.map(obj => {
+        return { x: obj.date, y: obj.phe };
+      });
+      return [
+        {
+          name: "Phe",
+          data: finalPheDiary
+        }
+      ];
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
