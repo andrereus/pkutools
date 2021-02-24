@@ -101,9 +101,9 @@
   },
   "amino-counter": {
     "title": "Amino Counter",
-    "description": "Count the servings of the amino acid mixture throughout the day.",
+    "description": "Count the servings of the amino acid mixture taken during the day.",
     "progress": "serving(s) taken",
-    "date": "Last entry",
+    "date": "Last serving taken",
     "take": "Take serving",
     "amount": "Servings per day"
   },

@@ -48,7 +48,8 @@
             {{ aminoCounter.count || 0 }} {{ $t("amino-counter.progress") }}
           </v-progress-linear>
 
-          <p>{{ $t("amino-counter.date") }}: {{ getlocalDate(aminoCounter.date) }}</p>
+          <p>{{ $t("amino-counter.date") }}</p>
+          <p class="title font-weight-regular mt-n3">{{ getlocalDate(aminoCounter.date) }}</p>
 
           <v-btn depressed rounded @click="takeAM" color="primary" class="mr-3 mt-3">
             {{ $t("amino-counter.take") }}
