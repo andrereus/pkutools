@@ -39,7 +39,7 @@
           <apexchart
             v-if="pheDiary.length >= 1"
             type="bar"
-            height="300"
+            height="250"
             :options="chartOptions"
             :series="graph"
           ></apexchart>
@@ -216,7 +216,7 @@ export default {
     offlineInfo: false,
     chartOptions: {
       chart: {
-        height: 300,
+        height: 250,
         type: "bar",
         zoom: {
           enabled: false
