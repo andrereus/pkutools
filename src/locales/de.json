@@ -97,8 +97,7 @@
     "export-confirm": "Phe Tagebuch in Excel exportieren? Hinweis: Vermeide ein doppeltes Datum im Phe Tagebuch",
     "export-overview": "Übersicht",
     "export-filename": "PKU Tools - Phe Tagebuch",
-    "note": "Exportiere ab und zu, das Limit sind 90 Einträge (3 Monate).",
-    "bug": "Entschuldigung, das ist im Moment leider nicht möglich wegen eines Bugs. Bitte exportiere zum Bearbeiten"
+    "note": "Exportiere ab und zu, das Limit sind 90 Einträge (3 Monate)."
   },
   "amino-counter": {
     "title": "Amino Zähler",

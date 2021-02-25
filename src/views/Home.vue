@@ -193,11 +193,14 @@ export default {
     },
     graph() {
       let newPheDiary = this.pheDiary;
-      return newPheDiary
-        .sort((a, b) => {
-          return new Date(a.date) - new Date(b.date);
-        })
-        .map(obj => obj.phe);
+      return (
+        newPheDiary
+          // Affects this.PheDiary!
+          // .sort((a, b) => {
+          //   return new Date(a.date) - new Date(b.date);
+          // })
+          .map(obj => obj.phe)
+      );
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
