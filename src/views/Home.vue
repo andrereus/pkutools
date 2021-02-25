@@ -45,8 +45,17 @@
           <v-card width="280" height="175" to="/phe-diary" class="float-left mr-3 mb-3">
             <v-card-text>
               <p>{{ $t("phe-diary.title") }}</p>
-              <p>{{ $t("phe-diary.chart") }}</p>
-              <!--<v-sparkline :value="graph" fill smooth height="125"></v-sparkline>-->
+              <p v-if="pheDiary.length < 1" class="text-center mt-12">
+                <v-icon>mdi-poll</v-icon>
+              </p>
+              <apexchart
+                v-if="pheDiary.length >= 1"
+                type="bar"
+                height="115"
+                :options="chartOptions"
+                :series="graph"
+                class="mt-n2"
+              ></apexchart>
             </v-card-text>
           </v-card>
         </div>
@@ -152,17 +161,19 @@
 <script>
 import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
+import VueApexCharts from "vue-apexcharts";
 
 export default {
+  components: {
+    FeatureComparison,
+    apexchart: VueApexCharts
+  },
   metaInfo() {
     return {
       title: this.$t("app.title"),
       titleTemplate: null,
       meta: [{ name: "description", content: this.$t("app.description") }]
     };
-  },
-  components: {
-    FeatureComparison
   },
   data: () => ({
     offlineInfo: false
@@ -193,14 +204,37 @@ export default {
     },
     graph() {
       let newPheDiary = this.pheDiary;
-      return (
-        newPheDiary
-          // Affects this.PheDiary!
-          // .sort((a, b) => {
-          //   return new Date(a.date) - new Date(b.date);
-          // })
-          .map(obj => obj.phe)
-      );
+      let finalPheDiary = newPheDiary.map(obj => {
+        return { x: obj.date, y: obj.phe };
+      });
+      return [
+        {
+          name: "Phe",
+          data: finalPheDiary
+        }
+      ];
+    },
+    chartOptions() {
+      return {
+        chart: {
+          height: 115,
+          type: "bar",
+          sparkline: {
+            enabled: true
+          },
+          background: "transparent"
+        },
+        xaxis: {
+          type: "datetime"
+        },
+        theme: {
+          mode: this.$vuetify.theme.dark === true ? "dark" : "light"
+        },
+        colors: ["#3498db"],
+        tooltip: {
+          enabled: false
+        }
+      };
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;

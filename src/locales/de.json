@@ -90,7 +90,7 @@
     "description": "Protokolliere Phe-Werte über mehrere Tage.",
     "date": "Datum",
     "phe": "Gesamt Phe (in mg)",
-    "chart": "Widget wird im Moment umgebaut.",
+    "chart": "Eintrag hinzufügen",
     "limit": "Das Phe Tagebuch hat ein Limit von 90 Einträgen. Exportiere deine Daten in Excel",
     "export": "Exportieren",
     "log": "Protokoll (nicht bearbeitbar, exportiere zum Bearbeiten)",
