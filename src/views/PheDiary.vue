@@ -405,11 +405,6 @@ export default {
           type: "bar",
           zoom: {
             enabled: false
-          },
-          toolbar: {
-            tools: {
-              download: false
-            }
           }
         },
         dataLabels: {
