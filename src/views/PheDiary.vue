@@ -401,10 +401,7 @@ export default {
           locales: [en, de],
           defaultLocale: this.$i18n.locale,
           height: 250,
-          type: "bar",
-          zoom: {
-            enabled: false
-          }
+          type: "bar"
         },
         dataLabels: {
           enabled: false
