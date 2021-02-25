@@ -42,6 +42,7 @@
             height="250"
             :options="chartOptions"
             :series="graph"
+            class="mt-n2 mb-2"
           ></apexchart>
 
           <v-data-table
@@ -415,6 +416,9 @@ export default {
           type: "datetime"
         },
         yaxis: {
+          show: false
+        },
+        grid: {
           show: false
         },
         theme: {
