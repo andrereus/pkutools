@@ -42,7 +42,7 @@
             height="250"
             :options="chartOptions"
             :series="graph"
-            class="mt-n2 mb-2"
+            class="mt-n1 mb-1"
           ></apexchart>
 
           <v-data-table
@@ -415,12 +415,19 @@ export default {
         xaxis: {
           type: "datetime"
         },
-        yaxis: {
-          show: false
-        },
-        grid: {
-          show: false
-        },
+        responsive: [
+          {
+            breakpoint: 600,
+            options: {
+              yaxis: {
+                show: false
+              },
+              grid: {
+                show: false
+              }
+            }
+          }
+        ],
         theme: {
           mode: this.$vuetify.theme.dark === true ? "dark" : "light"
         },
