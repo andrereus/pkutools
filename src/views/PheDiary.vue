@@ -50,7 +50,7 @@
             disable-pagination
             hide-default-footer
             mobile-breakpoint="0"
-            disable-sort
+            sort-by="date"
             class="mb-3"
           >
             <template v-slot:item="{ item }">
@@ -247,21 +247,22 @@ export default {
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
     },
-    deleteItem(editedIndex) {
-      let r = confirm(this.$t("common.delete") + "?");
-      if (r === true) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary")
-          .once("value", snapshot => {
-            this.editedKey = Object.keys(snapshot.val())[editedIndex];
-          });
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary/" + this.editedKey)
-          .remove();
-        this.close();
-      }
+    deleteItem(/*editedIndex*/) {
+      alert(this.$t("phe-diary.bug") + ".");
+      // let r = confirm(this.$t("common.delete") + "?");
+      // if (r === true) {
+      //   firebase
+      //     .database()
+      //     .ref(this.user.id + "/pheDiary")
+      //     .once("value", snapshot => {
+      //       this.editedKey = Object.keys(snapshot.val())[editedIndex];
+      //     });
+      //   firebase
+      //     .database()
+      //     .ref(this.user.id + "/pheDiary/" + this.editedKey)
+      //     .remove();
+      //   this.close();
+      // }
     },
     close() {
       this.dialog = false;
@@ -272,19 +273,20 @@ export default {
     },
     save() {
       if (this.editedIndex > -1) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary")
-          .once("value", snapshot => {
-            this.editedKey = Object.keys(snapshot.val())[this.editedIndex];
-          });
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary/" + this.editedKey)
-          .update({
-            date: this.editedItem.date,
-            phe: Number(this.editedItem.phe)
-          });
+        alert(this.$t("phe-diary.bug") + ".");
+        // firebase
+        //   .database()
+        //   .ref(this.user.id + "/pheDiary")
+        //   .once("value", snapshot => {
+        //     this.editedKey = Object.keys(snapshot.val())[this.editedIndex];
+        //   });
+        // firebase
+        //   .database()
+        //   .ref(this.user.id + "/pheDiary/" + this.editedKey)
+        //   .update({
+        //     date: this.editedItem.date,
+        //     phe: Number(this.editedItem.phe)
+        //   });
       } else {
         if (this.pheDiary.length >= 90) {
           alert(this.$t("phe-diary.limit") + ".");
