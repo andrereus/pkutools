@@ -405,7 +405,8 @@ export default {
           type: "bar",
           zoom: {
             enabled: false
-          }
+          },
+          background: "transparent"
         },
         dataLabels: {
           enabled: false
@@ -418,7 +419,8 @@ export default {
         },
         theme: {
           mode: this.$vuetify.theme.dark === true ? "dark" : "light"
-        }
+        },
+        colors: ["#3498db"]
       };
     },
     userIsAuthenticated() {
