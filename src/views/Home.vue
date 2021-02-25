@@ -18,7 +18,7 @@
               <v-progress-circular
                 :rotate="-90"
                 :size="105"
-                :width="10"
+                :width="12"
                 :value="(pheResult * 100) / (settings.maxPhe || 0)"
                 color="primary"
               >
@@ -33,7 +33,7 @@
               <v-progress-circular
                 :rotate="-90"
                 :size="105"
-                :width="10"
+                :width="12"
                 :value="((aminoCounter.count || 0) * 100) / (settings.maxAmino || 3)"
                 color="teal"
               >

@@ -62,7 +62,7 @@
 
           <v-progress-linear
             :value="(pheResult * 100) / (settings.maxPhe || 0)"
-            height="10"
+            height="15"
             class="mt-8"
             rounded
           ></v-progress-linear>
