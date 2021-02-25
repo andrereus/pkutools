@@ -45,7 +45,7 @@
           <v-card width="280" height="175" to="/phe-diary" class="float-left mr-3 mb-3">
             <v-card-text>
               <p>{{ $t("phe-diary.title") }}</p>
-              <p v-if="graph.length < 2">{{ $t("phe-diary.chart") }}</p>
+              <p>{{ $t("phe-diary.chart") }}</p>
               <!--<v-sparkline :value="graph" fill smooth height="125"></v-sparkline>-->
             </v-card-text>
           </v-card>

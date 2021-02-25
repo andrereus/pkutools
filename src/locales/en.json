@@ -90,7 +90,7 @@
     "description": "Log phe values over several days.",
     "date": "Date",
     "phe": "Total Phe (in mg)",
-    "chart": "Not enough entries for the chart.",
+    "chart": "Widget is currently being rebuilt.",
     "limit": "The Phe Diary has a limit of 90 entries. Export your data in Excel",
     "export": "Export",
     "log": "Log (not editable, export to edit)",
