@@ -173,6 +173,8 @@ import { format, parseISO, formatISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
 import XLSX from "xlsx";
 import VueApexCharts from "vue-apexcharts";
+import enChart from "apexcharts/dist/locales/en.json";
+import deChart from "apexcharts/dist/locales/de.json";
 
 export default {
   components: {
@@ -213,25 +215,7 @@ export default {
       date: "",
       phe: null
     },
-    offlineInfo: false,
-    chartOptions: {
-      chart: {
-        height: 250,
-        type: "bar",
-        zoom: {
-          enabled: false
-        }
-      },
-      dataLabels: {
-        enabled: false
-      },
-      xaxis: {
-        type: "datetime"
-      },
-      yaxis: {
-        show: false
-      }
-    }
+    offlineInfo: false
   }),
   methods: {
     signInGoogle() {
@@ -408,6 +392,33 @@ export default {
           data: finalPheDiary
         }
       ];
+    },
+    chartOptions() {
+      let en = enChart;
+      let de = deChart;
+      return {
+        chart: {
+          locales: [en, de],
+          defaultLocale: this.$i18n.locale,
+          height: 250,
+          type: "bar",
+          zoom: {
+            enabled: false
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        xaxis: {
+          type: "datetime"
+        },
+        yaxis: {
+          show: false
+        },
+        theme: {
+          mode: this.$vuetify.theme.dark === true ? "dark" : "light"
+        }
+      };
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
