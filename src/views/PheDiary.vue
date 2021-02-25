@@ -50,6 +50,7 @@
             disable-pagination
             hide-default-footer
             mobile-breakpoint="0"
+            disable-sort
             class="mb-3"
           >
             <template v-slot:item="{ item }">
