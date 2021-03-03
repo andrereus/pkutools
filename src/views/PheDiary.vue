@@ -52,6 +52,7 @@
             hide-default-footer
             mobile-breakpoint="0"
             sort-by="date"
+            sort-desc
             class="mb-3"
           >
             <template v-slot:item="{ item }">
