@@ -135,11 +135,6 @@
           class="mt-6 illustration"
           v-if="advancedFood === null"
         ></v-img>
-
-        <p class="text--secondary text-center mt-10" v-if="$i18n.locale === 'de' && advancedFood === null">
-          <v-icon>mdi-information-outline</v-icon>
-          Die deutsche Phe Suche wird im Moment noch optimiert.
-        </p>
       </v-col>
     </v-row>
   </div>
