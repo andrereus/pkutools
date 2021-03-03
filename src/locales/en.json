@@ -105,7 +105,8 @@
     "progress": "serving(s) today",
     "take": "Add serving",
     "amount": "Servings per day",
-    "serving": "1 serving"
+    "serving": "1 serving",
+    "limit": "The Amino Counter has a limit of 30 entries"
   },
   "help": {
     "title": "Help",

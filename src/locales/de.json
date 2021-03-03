@@ -105,7 +105,8 @@
     "progress": "Portion(en) heute",
     "take": "Portion hinzufügen",
     "amount": "Portionen pro Tag",
-    "serving": "1 Portion"
+    "serving": "1 Portion",
+    "limit": "Der Amino Zähler hat ein Limit von 30 Einträgen"
   },
   "help": {
     "title": "Hilfe",

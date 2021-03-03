@@ -139,12 +139,16 @@ export default {
       }
     },
     takeAM() {
-      firebase
-        .database()
-        .ref(this.user.id + "/aminoCounter")
-        .push({
-          date: new Date().toISOString()
-        });
+      if (this.aminoCounter.length >= 30) {
+        alert(this.$t("amino-counter.limit") + ".");
+      } else {
+        firebase
+          .database()
+          .ref(this.user.id + "/aminoCounter")
+          .push({
+            date: new Date().toISOString()
+          });
+      }
     },
     resetAM() {
       let r = confirm(this.$t("common.reset") + "?");
