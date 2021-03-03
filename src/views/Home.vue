@@ -34,10 +34,10 @@
                 :rotate="-90"
                 :size="105"
                 :width="12"
-                :value="((aminoCounter.count || 0) * 100) / (settings.maxAmino || 3)"
+                :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
                 color="teal"
               >
-                {{ aminoCounter.count || 0 }}
+                {{ calculateAmino }}
               </v-progress-circular>
             </v-card-text>
           </v-card>
@@ -162,6 +162,7 @@
 import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
 import VueApexCharts from "vue-apexcharts";
+import { parseISO, isToday } from "date-fns";
 
 export default {
   components: {
@@ -195,6 +196,11 @@ export default {
     }
   },
   computed: {
+    calculateAmino() {
+      return this.aminoCounter.filter(item => {
+        return isToday(parseISO(item.date));
+      }).length;
+    },
     pheResult() {
       let phe = 0;
       this.pheLog.forEach(item => {

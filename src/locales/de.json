@@ -102,8 +102,7 @@
   "amino-counter": {
     "title": "Amino Zähler",
     "description": "Zähle Portionen der Aminosäuremischung.",
-    "progress": "Portion(en) genommen",
-    "date": "Letzte Portion genommen",
+    "progress": "Portion(en) heute",
     "take": "Portion hinzufügen",
     "amount": "Portionen pro Tag",
     "serving": "1 Portion"

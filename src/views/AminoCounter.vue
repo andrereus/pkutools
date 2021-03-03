@@ -38,55 +38,15 @@
         <div v-if="userIsAuthenticated">
           <p>{{ $t("amino-counter.description") }}</p>
 
-          <!--          <v-progress-linear-->
-          <!--            :value="((aminoCounter.count || 0) * 100) / (settings.maxAmino || 3)"-->
-          <!--            height="40"-->
-          <!--            class="white&#45;&#45;text my-6 amino-progress"-->
-          <!--            rounded-->
-          <!--            color="teal"-->
-          <!--          >-->
-          <!--            {{ aminoCounter.count || 0 }} {{ $t("amino-counter.progress") }}-->
-          <!--          </v-progress-linear>-->
-
-          <!--          <p>{{ $t("amino-counter.date") }}</p>-->
-          <!--          <p class="title font-weight-regular mt-n3">{{ getlocalDate(aminoCounter.date) }}</p>-->
-
-          <!--          <v-btn depressed rounded @click="takeAM" color="primary" class="mr-3 mb-3">-->
-          <!--            {{ $t("amino-counter.take") }}-->
-          <!--          </v-btn>-->
-          <!--          <v-btn depressed rounded @click="resetAM" class="mr-3 mb-3">-->
-          <!--            {{ $t("common.reset") }}-->
-          <!--          </v-btn>-->
-
-          <!--          <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">-->
-          <!--            <template v-slot:activator="{ on, attrs }">-->
-          <!--              <v-btn depressed rounded v-bind="attrs" v-on="on" class="mr-3 mb-3">-->
-          <!--                {{ $t("common.settings") }}-->
-          <!--              </v-btn>-->
-          <!--            </template>-->
-
-          <!--            <v-card>-->
-          <!--              <v-card-title>-->
-          <!--                <span class="headline">{{ $t("common.settings") }}</span>-->
-          <!--              </v-card-title>-->
-
-          <!--              <v-card-text>-->
-          <!--                <v-text-field-->
-          <!--                  filled-->
-          <!--                  rounded-->
-          <!--                  :label="$t('amino-counter.amount')"-->
-          <!--                  v-model.number="settings.maxAmino"-->
-          <!--                  type="number"-->
-          <!--                  class="mt-6"-->
-          <!--                ></v-text-field>-->
-          <!--              </v-card-text>-->
-
-          <!--              <v-card-actions class="mt-n6">-->
-          <!--                <v-spacer></v-spacer>-->
-          <!--                <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>-->
-          <!--              </v-card-actions>-->
-          <!--            </v-card>-->
-          <!--          </v-dialog>-->
+          <v-progress-linear
+            :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
+            height="40"
+            class="white--text my-6 amino-progress"
+            rounded
+            color="teal"
+          >
+            {{ calculateAmino }} {{ $t("amino-counter.progress") }}
+          </v-progress-linear>
 
           <v-timeline dense>
             <v-timeline-item v-for="(item, index) in aminoCounter" :key="index" small>
@@ -100,8 +60,35 @@
               <v-btn depressed rounded @click="resetAM" class="mr-3 mt-2">
                 {{ $t("common.reset") }}
               </v-btn>
+              <v-btn depressed rounded @click="dialog = true" class="mr-3 mt-2">
+                {{ $t("common.settings") }}
+              </v-btn>
             </v-timeline-item>
           </v-timeline>
+
+          <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
+            <v-card>
+              <v-card-title>
+                <span class="headline">{{ $t("common.settings") }}</span>
+              </v-card-title>
+
+              <v-card-text>
+                <v-text-field
+                  filled
+                  rounded
+                  :label="$t('amino-counter.amount')"
+                  v-model.number="settings.maxAmino"
+                  type="number"
+                  class="mt-6"
+                ></v-text-field>
+              </v-card-text>
+
+              <v-card-actions class="mt-n6">
+                <v-spacer></v-spacer>
+                <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </div>
       </v-col>
     </v-row>
@@ -122,7 +109,7 @@ import { mapState } from "vuex";
 import * as firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
-import { formatRelative, parseISO } from "date-fns";
+import { formatRelative, isToday, parseISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
 
 export default {
@@ -190,6 +177,11 @@ export default {
     }
   },
   computed: {
+    calculateAmino() {
+      return this.aminoCounter.filter(item => {
+        return isToday(parseISO(item.date));
+      }).length;
+    },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
