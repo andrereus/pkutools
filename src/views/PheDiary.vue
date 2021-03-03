@@ -288,7 +288,7 @@ export default {
             phe: Number(this.editedItem.phe)
           });
       } else {
-        if (this.pheDiary.length >= 90) {
+        if (this.pheDiary.length >= 60) {
           alert(this.$t("phe-diary.limit") + ".");
         } else {
           firebase

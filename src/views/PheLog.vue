@@ -382,7 +382,7 @@ export default {
       this.dialog2 = false;
     },
     saveResult() {
-      if (this.pheDiary.length >= 90) {
+      if (this.pheDiary.length >= 60) {
         alert(this.$t("phe-diary.limit") + ".");
       } else {
         confetti();
