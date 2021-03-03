@@ -54,13 +54,13 @@
             </v-timeline-item>
 
             <v-timeline-item fill-dot color="primary" large icon="mdi-cup-water">
-              <v-btn depressed rounded @click="takeAM" color="primary" class="mr-3 mt-2">
+              <v-btn depressed rounded @click="takeAM" color="primary" class="mr-2 mt-2">
                 {{ $t("amino-counter.take") }}
               </v-btn>
-              <v-btn depressed rounded @click="resetAM" class="mr-3 mt-2">
+              <v-btn depressed rounded @click="resetAM" class="mr-2 mt-2">
                 {{ $t("common.reset") }}
               </v-btn>
-              <v-btn depressed rounded @click="dialog = true" class="mr-3 mt-2">
+              <v-btn depressed rounded @click="dialog = true" class="mr-2 mt-2">
                 {{ $t("common.settings") }}
               </v-btn>
             </v-timeline-item>
