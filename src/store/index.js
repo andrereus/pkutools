@@ -11,7 +11,7 @@ export default new Vuex.Store({
   state: {
     user: null,
     pheLog: [],
-    aminoCounter: {},
+    aminoCounter: [],
     pheDiary: [],
     ownFood: [],
     settings: {}
