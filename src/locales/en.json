@@ -104,7 +104,7 @@
     "description": "Count servings of the amino acid mixture.",
     "progress": "serving(s) taken",
     "date": "Last serving taken",
-    "take": "Take serving",
+    "take": "Add serving",
     "amount": "Servings per day",
     "serving": "1 serving"
   },
