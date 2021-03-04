@@ -139,7 +139,7 @@ export default {
       }
     },
     takeAM() {
-      if (this.aminoCounter.length >= 30) {
+      if (this.aminoCounter.length >= 60) {
         alert(this.$t("amino-counter.limit") + ".");
       } else {
         firebase
