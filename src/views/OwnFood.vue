@@ -177,6 +177,18 @@
               </v-card-actions>
             </v-card>
           </v-dialog>
+
+          <v-dialog v-model="alert" max-width="300">
+            <v-card>
+              <v-card-title>{{ $t("common.note") }}</v-card-title>
+              <v-card-text>{{ $t("own-food.limit") }}</v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </div>
       </v-col>
     </v-row>
@@ -210,6 +222,7 @@ export default {
     publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,
+    alert: false,
     menu: false,
     headers: [
       {
@@ -300,7 +313,7 @@ export default {
           });
       } else {
         if (this.ownFood.length >= 500) {
-          alert(this.$t("own-food.limit") + ".");
+          this.alert = true;
         } else {
           firebase
             .database()

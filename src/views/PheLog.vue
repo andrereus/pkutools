@@ -201,6 +201,18 @@
               </v-card-actions>
             </v-card>
           </v-dialog>
+
+          <v-dialog v-model="alert" max-width="300">
+            <v-card>
+              <v-card-title>{{ $t("common.note") }}</v-card-title>
+              <v-card-text>{{ $t("phe-diary.limit") }}</v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
         </div>
       </v-col>
     </v-row>
@@ -236,6 +248,7 @@ export default {
     publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,
+    alert: false,
     headers: [
       {
         text: "Name",
@@ -383,7 +396,7 @@ export default {
     },
     saveResult() {
       if (this.pheDiary.length >= 60) {
-        alert(this.$t("phe-diary.limit") + ".");
+        this.alert = true;
       } else {
         confetti();
         setTimeout(() => {

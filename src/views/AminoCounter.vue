@@ -60,7 +60,7 @@
               <v-btn depressed rounded @click="resetAM" class="mr-2 mt-2">
                 {{ $t("common.reset") }}
               </v-btn>
-              <v-btn depressed rounded @click="dialog = true" class="mr-2 mt-2">
+              <v-btn depressed rounded @click.stop="dialog = true" class="mr-2 mt-2">
                 {{ $t("common.settings") }}
               </v-btn>
             </v-timeline-item>
@@ -86,6 +86,18 @@
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
                 <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+
+          <v-dialog v-model="alert" max-width="300">
+            <v-card>
+              <v-card-title>{{ $t("common.note") }}</v-card-title>
+              <v-card-text>{{ $t("amino-counter.limit") }}</v-card-text>
+
+              <v-card-actions>
+                <v-spacer></v-spacer>
+                <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -121,6 +133,7 @@ export default {
   },
   data: () => ({
     dialog: false,
+    alert: false,
     offlineInfo: false
   }),
   methods: {
@@ -140,7 +153,7 @@ export default {
     },
     takeAM() {
       if (this.aminoCounter.length >= 60) {
-        alert(this.$t("amino-counter.limit") + ".");
+        this.alert = true;
       } else {
         firebase
           .database()

@@ -28,7 +28,8 @@
     "close": "Close",
     "reset": "Reset",
     "settings": "Settings",
-    "ok": "Ok"
+    "ok": "Ok",
+    "note": "Note"
   },
   "home": {
     "title": "Home",
@@ -71,7 +72,7 @@
     "weight": "Weight (in g)",
     "date": "Date",
     "chart": "Not enough entries for the chart.",
-    "limit": "Own Food is limited to 500 entries"
+    "limit": "Own Food is limited to 500 entries."
   },
   "phe-log": {
     "title": "Phe Log",
@@ -91,7 +92,7 @@
     "date": "Date",
     "phe": "Total Phe (in mg)",
     "chart": "Add entry",
-    "limit": "The Phe Diary has a limit of 60 entries. Export your data in Excel",
+    "limit": "The Phe Diary has a limit of 60 entries. Export your data in Excel.",
     "export": "Export",
     "log": "Log (not editable, export to edit)",
     "export-confirm": "Export Phe Diary in Excel? Note: Avoid duplicate dates in the Phe Diary",
@@ -106,7 +107,7 @@
     "take": "Add serving",
     "amount": "Servings per day",
     "serving": "1 serving",
-    "limit": "The Amino Counter has a limit of 60 entries"
+    "limit": "The Amino Counter has a limit of 60 entries."
   },
   "help": {
     "title": "Help",
