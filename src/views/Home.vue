@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <h2 class="headline" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
-        <h2 class="headline" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
+        <h2 class="headline ml-3 mt-2" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
       </v-col>
     </v-row>
 
@@ -11,8 +11,8 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
 
-        <div class="cards-clearfix mb-1" v-if="userIsAuthenticated">
-          <v-card max-width="135" to="/phe-log" class="float-left mr-3 mb-3">
+        <div class="cards-clearfix mt-n1 mb-1" v-if="userIsAuthenticated">
+          <v-card outlined max-width="135" to="/phe-log" class="float-left mr-3 mb-3 stat-card">
             <v-card-text>
               <p>{{ $t("phe-log.title") }}</p>
               <v-progress-circular
@@ -27,7 +27,7 @@
             </v-card-text>
           </v-card>
 
-          <v-card max-width="135" to="/amino-counter" class="float-left mr-3 mb-3">
+          <v-card outlined max-width="135" to="/amino-counter" class="float-left mr-3 mb-3 stat-card">
             <v-card-text>
               <p>{{ $t("amino-counter.title") }}</p>
               <v-progress-circular
@@ -42,7 +42,7 @@
             </v-card-text>
           </v-card>
 
-          <v-card width="280" height="175" to="/phe-diary" class="float-left mr-3 mb-3">
+          <v-card outlined width="280" height="175" to="/phe-diary" class="float-left mr-3 mb-3 stat-card">
             <v-card-text>
               <p>{{ $t("phe-diary.title") }}</p>
               <p v-if="pheDiary.length < 1" class="text-center mt-12">
@@ -51,10 +51,10 @@
               <apexchart
                 v-if="pheDiary.length >= 1"
                 type="bar"
-                height="115"
+                height="100"
                 :options="chartOptions"
                 :series="graph"
-                class="mt-n2"
+                class="ml-n1"
               ></apexchart>
             </v-card-text>
           </v-card>
@@ -223,7 +223,7 @@ export default {
     chartOptions() {
       return {
         chart: {
-          height: 115,
+          height: 100,
           type: "bar",
           sparkline: {
             enabled: true
@@ -263,5 +263,13 @@ export default {
 
 .v-btn {
   text-transform: none;
+}
+
+.stat-card {
+  border: none;
+}
+
+.theme--dark.stat-card {
+  background-color: transparent;
 }
 </style>
