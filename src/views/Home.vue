@@ -13,14 +13,14 @@
 
         <v-row no-gutters v-if="userIsAuthenticated">
           <v-col cols="6" sm="3" md="3" lg="3">
-            <v-card outlined to="/phe-log" class="mr-1 mb-1 stat-card">
+            <v-card outlined height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
               <v-card-text>
-                <p>{{ $t("phe-log.title") }}</p>
+                <p class="mb-6">{{ $t("phe-log.title") }}</p>
                 <div class="text-center">
                   <v-progress-circular
                     :rotate="-90"
                     :size="110"
-                    :width="14"
+                    :width="15"
                     :value="(pheResult * 100) / (settings.maxPhe || 0)"
                     color="primary"
                   >
@@ -32,14 +32,14 @@
           </v-col>
 
           <v-col cols="6" sm="3" md="3" lg="3">
-            <v-card outlined to="/amino-counter" class="mr-1 mb-1 stat-card">
+            <v-card outlined height="200" to="/amino-counter" class="mr-1 mb-1 stat-card">
               <v-card-text>
-                <p>{{ $t("amino-counter.title") }}</p>
+                <p class="mb-6">{{ $t("amino-counter.title") }}</p>
                 <div class="text-center">
                   <v-progress-circular
                     :rotate="-90"
                     :size="110"
-                    :width="14"
+                    :width="15"
                     :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
                     color="teal"
                   >
@@ -51,9 +51,9 @@
           </v-col>
 
           <v-col cols="12" sm="6" md="6" lg="6">
-            <v-card outlined height="180" to="/phe-diary" class="mr-1 mb-1 stat-card">
+            <v-card outlined height="200" to="/phe-diary" class="mr-1 mb-1 stat-card">
               <v-card-text>
-                <p>{{ $t("phe-diary.title") }}</p>
+                <p class="mb-6">{{ $t("phe-diary.title") }}</p>
                 <p v-if="pheDiary.length < 1" class="text-center mt-12">
                   <v-icon>mdi-poll</v-icon>
                 </p>
