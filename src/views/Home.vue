@@ -13,7 +13,7 @@
 
         <v-row no-gutters v-if="userIsAuthenticated">
           <v-col cols="6" sm="3" md="3" lg="3">
-            <v-card outlined to="/phe-log" class="ml-1 mb-1 stat-card">
+            <v-card outlined to="/phe-log" class="mr-1 mb-1 stat-card">
               <v-card-text>
                 <p>{{ $t("phe-log.title") }}</p>
                 <div class="text-center">
@@ -32,7 +32,7 @@
           </v-col>
 
           <v-col cols="6" sm="3" md="3" lg="3">
-            <v-card outlined to="/amino-counter" class="ml-1 mb-1 stat-card">
+            <v-card outlined to="/amino-counter" class="mr-1 mb-1 stat-card">
               <v-card-text>
                 <p>{{ $t("amino-counter.title") }}</p>
                 <div class="text-center">
@@ -51,7 +51,7 @@
           </v-col>
 
           <v-col cols="12" sm="6" md="6" lg="6">
-            <v-card outlined height="180" to="/phe-diary" class="ml-1 mb-1 stat-card">
+            <v-card outlined height="180" to="/phe-diary" class="mr-1 mb-1 stat-card">
               <v-card-text>
                 <p>{{ $t("phe-diary.title") }}</p>
                 <p v-if="pheDiary.length < 1" class="text-center mt-12">
