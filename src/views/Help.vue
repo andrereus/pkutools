@@ -110,7 +110,7 @@
         <iframe
           src="https://tally.so/embed/mRW5v3?hideTitle=1&alignLeft=1&transparentBackground=1"
           width="100%"
-          height="500"
+          height="400"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
