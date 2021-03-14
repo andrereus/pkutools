@@ -41,23 +41,25 @@
 
         <h2 class="headline my-6">{{ $t("help.faq") }}</h2>
 
-        <v-expansion-panels>
+        <v-expansion-panels v-model="panel">
           <v-expansion-panel>
             <v-expansion-panel-header>{{ $t("help.install") }}</v-expansion-panel-header>
 
             <v-expansion-panel-content>
               <p>{{ $t("help.install-p1") }}</p>
+              <p>
+                {{ $t("help.install-p2") }}
+                <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">
+                  <img
+                    alt="Get it on Google Play"
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                    class="gplay-btn mb-1"
+                  />
+                </a>
+              </p>
 
-              <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">
-                <img
-                  alt="Get it on Google Play"
-                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                  class="gplay-btn ml-n2 mt-n1 mb-3"
-                />
-              </a>
-
-              <p>{{ $t("help.install-p2") }}</p>
               <p>{{ $t("help.install-p3") }}</p>
+              <p>{{ $t("help.install-p4") }}</p>
             </v-expansion-panel-content>
           </v-expansion-panel>
 
@@ -129,7 +131,10 @@ export default {
       title: this.$t("help.title"),
       meta: [{ name: "description", content: this.$t("help.description") }]
     };
-  }
+  },
+  data: () => ({
+    panel: 0
+  })
 };
 </script>
 
@@ -139,7 +144,7 @@ export default {
 }
 
 .gplay-btn {
-  max-width: 150px;
+  max-width: 125px;
   vertical-align: middle;
 }
 
