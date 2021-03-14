@@ -145,13 +145,14 @@
 
           <FeatureComparison home class="mb-6" />
 
+          <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
+            <v-icon left>mdi-information-outline</v-icon>
+            {{ $t("home.installation") }}
+          </v-btn>
+
           <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
             <v-icon left>mdi-compare-horizontal</v-icon>
             {{ $t("home.compare") }}
-          </v-btn>
-          <v-btn depressed rounded to="/help" class="mr-3 mb-3">
-            <v-icon left>mdi-information-outline</v-icon>
-            {{ $t("home.installation") }}
           </v-btn>
         </div>
       </v-col>

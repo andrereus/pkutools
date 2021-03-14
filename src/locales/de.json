@@ -17,7 +17,7 @@
     "new": "Neu",
     "tools": "Tools",
     "logs": "Protokolle",
-    "feedback": "Feedback"
+    "help": "Hilfe / Kontakt"
   },
   "common": {
     "add": "Hinzufügen",
@@ -113,8 +113,7 @@
     "title": "Hilfe",
     "description": "Hilfe und FAQ für PKU Tools.",
     "faq": "FAQ",
-    "more": "Mehr",
-    "feedback": "Feedback geben",
+    "contact": "Kontakt",
     "install": "Wie kann man die App installieren?",
     "install-p1": "Dies ist eine Progressive Web App und kann auf jedem Gerät installiert werden.",
     "install-p2": "iOS Safari: Klicke den Teilen-Button und dann \"Zum Home-Bildschirm\".",

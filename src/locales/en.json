@@ -17,7 +17,7 @@
     "new": "New",
     "tools": "Tools",
     "logs": "Logs",
-    "feedback": "Feedback"
+    "help": "Help / Contact"
   },
   "common": {
     "add": "Add",
@@ -113,8 +113,7 @@
     "title": "Help",
     "description": "Help and FAQ for PKU Tools.",
     "faq": "FAQ",
-    "more": "More",
-    "feedback": "Give feedback",
+    "contact": "Contact",
     "install": "How to install the app?",
     "install-p1": "This is a Progressive Web App and can be installed on any device.",
     "install-p2": "iOS Safari: Tap the share button and then \"Add to Home Screen\".",

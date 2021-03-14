@@ -101,17 +101,7 @@
             </v-list-item-action>
 
             <v-list-item-content>
-              <v-list-item-title>{{ $t("help.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
-          <v-list-item dense to="/other-apps">
-            <v-list-item-action>
-              <v-icon></v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("other-apps.title") }}</v-list-item-title>
+              <v-list-item-title>{{ $t("app.help") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
@@ -144,6 +134,16 @@
               <v-list-item-title>{{ $t("privacy-policy.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+
+          <v-list-item dense to="/other-apps">
+            <v-list-item-action>
+              <v-icon></v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("other-apps.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list-group>
       </v-list>
     </v-navigation-drawer>
@@ -167,10 +167,6 @@
           </v-list-item>
         </v-list>
       </v-menu>
-
-      <v-btn icon to="/help" :aria-label="$t('help.title')">
-        <v-icon size="22">mdi-help-circle-outline</v-icon>
-      </v-btn>
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
@@ -213,17 +209,10 @@
 
           <v-divider></v-divider>
 
-          <v-list-item v-if="this.$i18n.locale === 'en'" href="https://andre.getform.com/q0ko3" target="_blank">
+          <v-list-item to="/help">
             <span>
-              <v-icon>mdi-comment-quote-outline</v-icon>
-              {{ $t("app.feedback") }}
-            </span>
-          </v-list-item>
-
-          <v-list-item v-if="this.$i18n.locale === 'de'" href="https://andre.getform.com/69zrd" target="_blank">
-            <span>
-              <v-icon>mdi-comment-quote-outline</v-icon>
-              {{ $t("app.feedback") }}
+              <v-icon>mdi-help-circle-outline</v-icon>
+              {{ $t("app.help") }}
             </span>
           </v-list-item>
 

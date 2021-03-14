@@ -105,38 +105,18 @@
           </v-expansion-panel>
         </v-expansion-panels>
 
-        <h2 class="headline my-6">{{ $t("help.more") }}</h2>
+        <h2 class="headline mt-9 mb-3">{{ $t("help.contact") }}</h2>
 
-        <!-- prettier-ignore -->
-        <p><v-icon left>mdi-email</v-icon>{{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
-
-        <v-btn
-          v-if="this.$i18n.locale === 'en'"
-          depressed
-          rounded
-          outlined
-          href="https://andre.getform.com/q0ko3"
-          color="primary"
-          class="mr-3 mb-3"
-          target="_blank"
-        >
-          <v-icon left>mdi-comment-quote-outline</v-icon>
-          {{ $t("help.feedback") }}
-        </v-btn>
-
-        <v-btn
-          v-if="this.$i18n.locale === 'de'"
-          depressed
-          rounded
-          outlined
-          href="https://andre.getform.com/69zrd"
-          color="primary"
-          class="mr-3 mb-3"
-          target="_blank"
-        >
-          <v-icon left>mdi-comment-quote-outline</v-icon>
-          {{ $t("help.feedback") }}
-        </v-btn>
+        <iframe
+          src="https://tally.so/embed/mRW5v3?hideTitle=1&alignLeft=1&transparentBackground=1"
+          width="100%"
+          height="500"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          title="Contact"
+          class="contact-form"
+        ></iframe>
       </v-col>
     </v-row>
   </div>
@@ -149,20 +129,11 @@ export default {
       title: this.$t("help.title"),
       meta: [{ name: "description", content: this.$t("help.description") }]
     };
-  },
-  data: () => ({
-    part1: "heypku",
-    part2: "gmail",
-    part3: "com"
-  })
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-.hidden {
-  display: none;
-}
-
 .v-btn {
   text-transform: none;
 }
@@ -170,5 +141,10 @@ export default {
 .gplay-btn {
   max-width: 150px;
   vertical-align: middle;
+}
+
+.contact-form {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 </style>
