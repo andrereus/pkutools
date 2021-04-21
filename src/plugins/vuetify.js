@@ -1,3 +1,4 @@
+import "@mdi/font/css/materialdesignicons.css";
 import Vue from "vue";
 import Vuetify from "vuetify/lib";
 import i18n from "./i18n";
@@ -17,5 +18,8 @@ export default new Vuetify({
   lang: {
     locales: { en, de },
     current: i18n.locale
+  },
+  icons: {
+    iconfont: "mdi"
   }
 });
