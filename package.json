@@ -14,6 +14,7 @@
     "date-fns": "^2.16.1",
     "firebase": "^7.21.1",
     "fuse.js": "^6.4.6",
+    "prerender-spa-plugin": "^3.4.0",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.12",
     "vue-apexcharts": "^1.6.0",

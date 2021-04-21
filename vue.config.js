@@ -1,3 +1,6 @@
+const path = require("path");
+const PrerenderSPAPlugin = require("prerender-spa-plugin");
+
 module.exports = {
   transpileDependencies: ["vuetify"],
 
@@ -17,5 +20,29 @@ module.exports = {
       localeDir: "locales",
       enableInSFC: true
     }
+  },
+
+  configureWebpack: () => {
+    if (process.env.NODE_ENV !== "production") return;
+
+    return {
+      plugins: [
+        new PrerenderSPAPlugin(path.join(__dirname, "dist"), [
+          "/",
+          "/phe-search",
+          "/phe-calculator",
+          "/protein-calculator",
+          "/own-food",
+          "/phe-log",
+          "/phe-diary",
+          "/amino-counter",
+          "/help",
+          "/other-apps",
+          "/about",
+          "/disclaimer",
+          "/privacy-policy"
+        ])
+      ]
+    };
   }
 };
