@@ -416,9 +416,6 @@ export default {
   watch: {
     dialog(val) {
       val || this.close();
-    },
-    dialog2(val) {
-      val || this.close();
     }
   },
   computed: {
