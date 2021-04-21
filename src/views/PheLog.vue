@@ -159,7 +159,7 @@
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
                 <v-btn depressed color="primary" @click="save">{{ $t("common.save") }}</v-btn>
-                <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem(editedIndex)">
+                <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem()">
                   {{ $t("common.delete") }}
                 </v-btn>
                 <v-btn depressed @click="close">{{ $t("common.cancel") }}</v-btn>
@@ -259,6 +259,7 @@ export default {
       { text: "Phe", value: "phe" }
     ],
     editedIndex: -1,
+    editedKey: null,
     editedItem: {
       name: "",
       icon: null,
@@ -301,17 +302,12 @@ export default {
     },
     editItem(item) {
       this.editedIndex = this.pheLog.indexOf(item);
+      this.editedKey = item[".key"];
       this.editedItem = Object.assign({}, item);
       this.lockValues();
       this.dialog = true;
     },
-    deleteItem(editedIndex) {
-      firebase
-        .database()
-        .ref(this.user.id + "/pheLog")
-        .once("value", snapshot => {
-          this.editedKey = Object.keys(snapshot.val())[editedIndex];
-        });
+    deleteItem() {
       firebase
         .database()
         .ref(this.user.id + "/pheLog/" + this.editedKey)
@@ -324,16 +320,11 @@ export default {
       this.$nextTick(() => {
         this.editedItem = Object.assign({}, this.defaultItem);
         this.editedIndex = -1;
+        this.editedKey = null;
       });
     },
     save() {
       if (this.editedIndex > -1) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheLog")
-          .once("value", snapshot => {
-            this.editedKey = Object.keys(snapshot.val())[this.editedIndex];
-          });
         firebase
           .database()
           .ref(this.user.id + "/pheLog/" + this.editedKey)
