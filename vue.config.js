@@ -44,7 +44,13 @@ module.exports = {
             "/about",
             "/disclaimer",
             "/privacy-policy"
-          ]
+          ],
+          renderer: new Renderer({
+            injectProperty: "__PRERENDER_INJECTED",
+            inject: {
+              foo: "bar"
+            }
+          })
         })
       ]
     };

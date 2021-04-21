@@ -9,26 +9,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css" />
     <script type="text/javascript">
-      var _iub = _iub || [];
-      _iub.csConfiguration = {
-        countryDetection: true,
-        consentOnContinuedBrowsing: false,
-        lang: "en",
-        siteId: 1980005,
-        cookiePolicyId: 19763599,
-        banner: {
-          acceptButtonDisplay: true,
-          acceptButtonColor: "#212121",
-          acceptButtonCaption: "Close",
-          closeButtonDisplay: false,
-          position: "float-center",
-          backgroundOverlay: true,
-          textColor: "black",
-          backgroundColor: "white"
-        }
-      };
+      if (window.__PRERENDER_INJECTED === undefined) {
+        var _iub = _iub || [];
+        _iub.csConfiguration = {
+          countryDetection: true,
+          consentOnContinuedBrowsing: false,
+          lang: "en",
+          siteId: 1980005,
+          cookiePolicyId: 19763599,
+          banner: {
+            acceptButtonDisplay: true,
+            acceptButtonColor: "#212121",
+            acceptButtonCaption: "Close",
+            closeButtonDisplay: false,
+            position: "float-center",
+            backgroundOverlay: true,
+            textColor: "black",
+            backgroundColor: "white"
+          }
+        };
+        const iuscript = document.createElement("script");
+        iuscript.src = "//cdn.iubenda.com/cs/iubenda_cs.js";
+        iuscript.async = true;
+        document.head.appendChild(iuscript);
+      }
     </script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
     <script class="_iub_cs_activate-inline" type="text/plain">
       window.smartlook ||
         (function(d) {
