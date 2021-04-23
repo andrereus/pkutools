@@ -142,7 +142,7 @@
 
 <script>
 import { mapState } from "vuex";
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
 import "firebase/database";
 import Fuse from "fuse.js";
 

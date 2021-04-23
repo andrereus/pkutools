@@ -181,7 +181,7 @@
 
 <script>
 import { mapState } from "vuex";
-import * as firebase from "firebase/app";
+import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 import { format, parseISO, formatISO } from "date-fns";

@@ -12,7 +12,7 @@
     "canvas-confetti": "^1.4.0",
     "core-js": "^3.11.0",
     "date-fns": "^2.21.1",
-    "firebase": "^7.24.0",
+    "firebase": "^8.4.1",
     "fuse.js": "^6.4.6",
     "prerender-spa-plugin": "^3.4.0",
     "register-service-worker": "^1.7.2",
@@ -27,7 +27,7 @@
     "xlsx": "^0.16.9"
   },
   "devDependencies": {
-    "@intlify/vue-i18n-loader": "^1.1.0",
+    "@intlify/vue-i18n-loader": "^2.1.0",
     "@mdi/font": "^5.9.55",
     "@vue/cli-plugin-babel": "^4.5.12",
     "@vue/cli-plugin-eslint": "^4.5.12",
@@ -40,7 +40,7 @@
     "eslint": "^7.24.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.9.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^5.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.11",
     "sass-loader": "^10.1.1",
