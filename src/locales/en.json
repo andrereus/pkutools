@@ -109,6 +109,13 @@
     "serving": "1 serving",
     "limit": "The Amino Counter has a limit of 60 entries."
   },
+  "settings": {
+    "title": "Settings",
+    "description": "App / Account Settings",
+    "max-amino": "Amino servings per day",
+    "max-phe": "Phe tolerance per day",
+    "saved": "Saved"
+  },
   "help": {
     "title": "Help",
     "description": "Help and FAQ for PKU Tools.",

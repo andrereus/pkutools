@@ -48,6 +48,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "amino-counter" */ "../views/AminoCounter.vue")
   },
   {
+    path: "/settings",
+    name: "Settings",
+    component: () => import(/* webpackChunkName: "settings" */ "../views/Settings.vue")
+  },
+  {
     path: "/help",
     name: "Help",
     component: () => import(/* webpackChunkName: "help" */ "../views/Help.vue")

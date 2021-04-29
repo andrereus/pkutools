@@ -39,6 +39,7 @@ module.exports = {
             "/phe-log",
             "/phe-diary",
             "/amino-counter",
+            "/settings",
             "/help",
             "/other-apps",
             "/about",

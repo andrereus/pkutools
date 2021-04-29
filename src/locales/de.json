@@ -109,6 +109,13 @@
     "serving": "1 Portion",
     "limit": "Der Amino Zähler hat ein Limit von 60 Einträgen."
   },
+  "settings": {
+    "title": "Einstellungen",
+    "description": "App / Account Einstellungen",
+    "max-amino": "Amino-Portionen pro Tag",
+    "max-phe": "Phe-Toleranz pro Tag",
+    "saved": "Gespeichert"
+  },
   "help": {
     "title": "Hilfe",
     "description": "Hilfe und FAQ für PKU Tools.",

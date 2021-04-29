@@ -88,6 +88,16 @@
               <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+
+          <v-list-item to="/settings">
+            <v-list-item-action>
+              <v-icon>mdi-cog</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("settings.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list-item-group>
 
         <v-list-group prepend-icon="mdi-information">
@@ -286,6 +296,10 @@
 
       <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
         <v-icon>mdi-cup-water</v-icon>
+      </v-btn>
+
+      <v-btn to="/settings" value="settings" class="mobile-nav-hide" :aria-label="$t('settings.title')">
+        <v-icon>mdi-cog</v-icon>
       </v-btn>
 
       <v-btn to="/help" value="help" class="mobile-nav-hide" :aria-label="$t('help.title')">
