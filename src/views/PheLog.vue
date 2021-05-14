@@ -83,6 +83,33 @@
               </v-card-title>
 
               <v-card-text>
+                <v-slide-group class="mt-2">
+                  <v-slide-item>
+                    <v-btn depressed rounded small to="/phe-search" class="mr-1">
+                      <v-icon left>mdi-magnify</v-icon>
+                      {{ $t("phe-search.title") }}
+                    </v-btn>
+                  </v-slide-item>
+                  <v-slide-item>
+                    <v-btn depressed rounded small to="/phe-calculator" class="mr-1">
+                      <v-icon left>mdi-calculator</v-icon>
+                      {{ $t("phe-calculator.title") }}
+                    </v-btn>
+                  </v-slide-item>
+                  <v-slide-item>
+                    <v-btn depressed rounded small to="/protein-calculator" class="mr-1">
+                      <v-icon left>mdi-calculator-variant</v-icon>
+                      {{ $t("protein-calculator.title") }}
+                    </v-btn>
+                  </v-slide-item>
+                  <v-slide-item>
+                    <v-btn depressed rounded small to="/own-food" class="mr-1">
+                      <v-icon left>mdi-food-apple</v-icon>
+                      {{ $t("own-food.title") }}
+                    </v-btn>
+                  </v-slide-item>
+                </v-slide-group>
+
                 <v-text-field filled rounded label="Name" v-model="editedItem.name" class="mt-6">
                   <template v-slot:append-outer>
                     <v-menu offset-y>
