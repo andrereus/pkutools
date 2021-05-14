@@ -9,68 +9,9 @@
 
     <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
-
-        <v-row no-gutters v-if="userIsAuthenticated">
-          <v-col cols="6" sm="3" md="3" lg="3">
-            <v-card outlined height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
-              <v-card-text>
-                <p class="mb-6">{{ $t("phe-log.title") }}</p>
-                <div class="text-center">
-                  <v-progress-circular
-                    :rotate="-90"
-                    :size="110"
-                    :width="15"
-                    :value="(pheResult * 100) / (settings.maxPhe || 0)"
-                    color="primary"
-                  >
-                    {{ pheResult }}
-                  </v-progress-circular>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-
-          <v-col cols="6" sm="3" md="3" lg="3">
-            <v-card outlined height="200" to="/amino-counter" class="mr-1 mb-1 stat-card">
-              <v-card-text>
-                <p class="mb-6">{{ $t("amino-counter.title") }}</p>
-                <div class="text-center">
-                  <v-progress-circular
-                    :rotate="-90"
-                    :size="110"
-                    :width="15"
-                    :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
-                    color="teal"
-                  >
-                    {{ calculateAmino }}
-                  </v-progress-circular>
-                </div>
-              </v-card-text>
-            </v-card>
-          </v-col>
-
-          <v-col cols="12" sm="6" md="6" lg="6">
-            <v-card outlined height="200" to="/phe-diary" class="mr-1 mb-1 stat-card">
-              <v-card-text>
-                <p class="mb-6">{{ $t("phe-diary.title") }}</p>
-                <p v-if="pheDiary.length < 1" class="text-center mt-16">
-                  <v-icon>mdi-poll</v-icon>
-                </p>
-                <apexchart
-                  v-if="pheDiary.length >= 1"
-                  type="bar"
-                  height="110"
-                  :options="chartOptions"
-                  :series="graph"
-                  class="ml-n1"
-                ></apexchart>
-              </v-card-text>
-            </v-card>
-          </v-col>
-        </v-row>
-
         <div v-if="!userIsAuthenticated">
+          <p class="mb-6">{{ $t("app.description") }}</p>
+
           <v-btn depressed rounded to="/phe-search" color="primary" class="mr-3 mb-3">
             <v-icon left>mdi-magnify</v-icon>
             {{ $t("phe-search.title") }}
@@ -105,6 +46,84 @@
               </v-list-item>
             </v-list>
           </v-menu>
+        </div>
+
+        <div v-if="userIsAuthenticated">
+          <v-btn depressed rounded to="/phe-search" class="mr-3 mb-3">
+            <v-icon left>mdi-magnify</v-icon>
+            {{ $t("phe-search.title") }}
+          </v-btn>
+          <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
+            <v-icon left>mdi-calculator</v-icon>
+            {{ $t("phe-calculator.title") }}
+          </v-btn>
+          <v-btn depressed rounded to="/protein-calculator" class="mr-3 mb-3">
+            <v-icon left>mdi-calculator-variant</v-icon>
+            {{ $t("protein-calculator.title") }}
+          </v-btn>
+          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-3 mb-3">
+            <v-icon left>mdi-food-apple</v-icon>
+            {{ $t("own-food.title") }}
+          </v-btn>
+
+          <v-row no-gutters class="mt-4">
+            <v-col cols="6" sm="3" md="3" lg="3">
+              <v-card outlined height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
+                <v-card-text>
+                  <p class="mb-6">{{ $t("phe-log.title") }}</p>
+                  <div class="text-center">
+                    <v-progress-circular
+                      :rotate="-90"
+                      :size="110"
+                      :width="15"
+                      :value="(pheResult * 100) / (settings.maxPhe || 0)"
+                      color="primary"
+                    >
+                      {{ pheResult }}
+                    </v-progress-circular>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="6" sm="3" md="3" lg="3">
+              <v-card outlined height="200" to="/amino-counter" class="mr-1 mb-1 stat-card">
+                <v-card-text>
+                  <p class="mb-6">{{ $t("amino-counter.title") }}</p>
+                  <div class="text-center">
+                    <v-progress-circular
+                      :rotate="-90"
+                      :size="110"
+                      :width="15"
+                      :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
+                      color="teal"
+                    >
+                      {{ calculateAmino }}
+                    </v-progress-circular>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="12" sm="6" md="6" lg="6">
+              <v-card outlined height="200" to="/phe-diary" class="mr-1 mb-1 stat-card">
+                <v-card-text>
+                  <p class="mb-6">{{ $t("phe-diary.title") }}</p>
+                  <p v-if="pheDiary.length < 1" class="text-center mt-16">
+                    <v-icon>mdi-poll</v-icon>
+                  </p>
+                  <apexchart
+                    v-if="pheDiary.length >= 1"
+                    type="bar"
+                    height="110"
+                    :options="chartOptions"
+                    :series="graph"
+                    class="ml-n1"
+                  ></apexchart>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </div>
 
         <div v-if="!userIsAuthenticated">
