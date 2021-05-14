@@ -83,7 +83,7 @@
               </v-card-title>
 
               <v-card-text>
-                <v-slide-group class="mt-2">
+                <v-slide-group v-if="editedIndex === -1" class="mt-2">
                   <v-slide-item>
                     <v-btn depressed rounded small to="/phe-search" class="mr-1">
                       <v-icon left>mdi-magnify</v-icon>
