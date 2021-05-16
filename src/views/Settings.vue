@@ -37,6 +37,8 @@
             type="number"
           ></v-text-field>
 
+          <v-switch v-model="$vuetify.theme.dark" inset :label="$t('app.dark')" class="mt-n1 mb-2 ml-1"></v-switch>
+
           <v-btn depressed rounded color="primary" @click="save">{{ $t("common.save") }}</v-btn>
 
           <v-snackbar bottom color="teal" v-model="snackbar">
@@ -103,6 +105,7 @@ export default {
           maxAmino: this.settings.maxAmino || 3
         })
         .then(() => {
+          localStorage.vuetifyThemeDark = JSON.stringify(this.$vuetify.theme.dark);
           this.snackbar = true;
         });
     }

@@ -226,13 +226,13 @@
             </span>
           </v-list-item>
 
-          <v-list-item @click="dark = !dark">
+          <v-list-item @click="updateDesign">
             <span>
-              <v-icon v-if="!dark">mdi-brightness-4</v-icon>
-              <v-icon v-if="dark">mdi-brightness-7</v-icon>
+              <v-icon v-if="!$vuetify.theme.dark">mdi-brightness-4</v-icon>
+              <v-icon v-if="$vuetify.theme.dark">mdi-brightness-7</v-icon>
               &nbsp;
-              <span v-if="!dark">{{ $t("app.dark") }}</span>
-              <span v-if="dark">{{ $t("app.light") }}</span>
+              <span v-if="!$vuetify.theme.dark">{{ $t("app.dark") }}</span>
+              <span v-if="$vuetify.theme.dark">{{ $t("app.light") }}</span>
             </span>
           </v-list-item>
         </v-list>
@@ -374,7 +374,6 @@ export default {
   },
   data: () => ({
     drawer: null,
-    dark: false,
     lang: [
       { name: "English", abbr: "en" },
       { name: "Deutsch", abbr: "de" }
@@ -401,6 +400,10 @@ export default {
     },
     signOut() {
       this.$store.dispatch("signOut");
+    },
+    updateDesign() {
+      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+      localStorage.vuetifyThemeDark = JSON.stringify(this.$vuetify.theme.dark);
     }
   },
   beforeCreate() {
@@ -431,14 +434,7 @@ export default {
   },
   mounted() {
     if (localStorage.vuetifyThemeDark) {
-      this.dark = JSON.parse(localStorage.vuetifyThemeDark);
-      this.$vuetify.theme.dark = this.dark;
-    }
-  },
-  watch: {
-    dark(newDark) {
-      localStorage.vuetifyThemeDark = JSON.stringify(newDark);
-      this.$vuetify.theme.dark = newDark;
+      this.$vuetify.theme.dark = JSON.parse(localStorage.vuetifyThemeDark);
     }
   },
   computed: {
