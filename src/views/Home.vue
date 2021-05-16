@@ -49,7 +49,7 @@
         </div>
 
         <div v-if="userIsAuthenticated">
-          <h3 class="text-overline mt-n3 mb-3 ml-1">{{ $t("app.tools") }}</h3>
+          <h3 class="text-caption mt-n3 mb-4 ml-1">{{ $t("app.tools") }}</h3>
 
           <v-btn depressed rounded to="/phe-search" class="mr-2 mb-3">
             <v-icon left>mdi-magnify</v-icon>
@@ -68,7 +68,7 @@
             {{ $t("protein-calculator.title") }}
           </v-btn>
 
-          <h3 class="text-overline mt-1 mb-n1 ml-1">{{ $t("app.logs") }}</h3>
+          <h3 class="text-caption mt-2 ml-1">{{ $t("app.logs") }}</h3>
 
           <v-row no-gutters class="mt-4">
             <v-col cols="6" sm="3" md="3" lg="3">
