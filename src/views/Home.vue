@@ -68,7 +68,7 @@
             {{ $t("protein-calculator.title") }}
           </v-btn>
 
-          <h3 class="text-caption mt-2 ml-1">{{ $t("app.logs") }}</h3>
+          <h3 class="text-caption mt-3 mb-5 ml-1">{{ $t("app.logs") }}</h3>
 
           <v-row no-gutters class="mt-4">
             <v-col cols="6" sm="3" md="3" lg="3">
