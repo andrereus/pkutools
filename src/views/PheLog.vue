@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline">{{ $t("phe-log.title") }}</h2>
+        <h2 class="headline mt-1">{{ $t("phe-log.title") }}</h2>
       </v-col>
     </v-row>
 
@@ -83,7 +83,7 @@
               </v-card-title>
 
               <v-card-text>
-                <v-slide-group v-if="editedIndex === -1" class="mt-2">
+                <v-slide-group v-if="editedIndex === -1" class="mt-2" show-arrows="desktop">
                   <v-slide-item>
                     <v-btn depressed rounded small to="/phe-search" class="mr-1">
                       <v-icon left>mdi-magnify</v-icon>

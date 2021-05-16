@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" lg="9">
-        <h2 class="headline">{{ $t("other-apps.title") }}</h2>
+        <h2 class="headline mt-1">{{ $t("other-apps.title") }}</h2>
       </v-col>
     </v-row>
 

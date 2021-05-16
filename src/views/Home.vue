@@ -2,8 +2,8 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
-        <h2 class="headline" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
+        <h2 class="headline mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
+        <h2 class="headline mt-1" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
       </v-col>
     </v-row>
 
@@ -49,6 +49,8 @@
         </div>
 
         <div v-if="userIsAuthenticated">
+          <h3 class="text-overline mt-n3 mb-3 ml-1">{{ $t("app.tools") }}</h3>
+
           <v-btn depressed rounded to="/phe-search" class="mr-2 mb-3">
             <v-icon left>mdi-magnify</v-icon>
             {{ $t("phe-search.title") }}
@@ -65,6 +67,8 @@
             <v-icon left>mdi-calculator-variant</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
+
+          <h3 class="text-overline mt-1 mb-n1 ml-1">{{ $t("app.logs") }}</h3>
 
           <v-row no-gutters class="mt-4">
             <v-col cols="6" sm="3" md="3" lg="3">
