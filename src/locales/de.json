@@ -38,7 +38,8 @@
     "video": "Video ansehen",
     "mobile-video": "Mobile Version",
     "installation": "App installieren",
-    "compare": "Funktionen vergleichen"
+    "compare": "Funktionen vergleichen",
+    "own-food": "Eigene LM."
   },
   "phe-search": {
     "title": "Phe Suche",
@@ -84,7 +85,8 @@
     "weight": "Gewicht (in g)",
     "total": "Gesamt",
     "remaining": "Übrig",
-    "save-day": "Protokoll abschließen"
+    "save-day": "Protokoll abschließen",
+    "own-food": "Eigene LM."
   },
   "phe-diary": {
     "title": "Phe Tagebuch",

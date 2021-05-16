@@ -38,7 +38,8 @@
     "video": "Watch video",
     "mobile-video": "Mobile version",
     "installation": "Install app",
-    "compare": "Compare features"
+    "compare": "Compare features",
+    "own-food": "Own food"
   },
   "phe-search": {
     "title": "Phe Search",
@@ -84,7 +85,8 @@
     "weight": "Weight (in g)",
     "total": "Total",
     "remaining": "Remaining",
-    "save-day": "Finish log"
+    "save-day": "Finish log",
+    "own-food": "Own food"
   },
   "phe-diary": {
     "title": "Phe Diary",

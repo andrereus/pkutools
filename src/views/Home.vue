@@ -49,21 +49,21 @@
         </div>
 
         <div v-if="userIsAuthenticated">
-          <v-btn depressed rounded to="/phe-search" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/phe-search" class="mr-2 mb-3">
             <v-icon left>mdi-magnify</v-icon>
             {{ $t("phe-search.title") }}
           </v-btn>
-          <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
+          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
+            <v-icon left>mdi-food-apple</v-icon>
+            {{ $t("home.own-food") }}
+          </v-btn>
+          <v-btn depressed rounded to="/phe-calculator" class="mr-2 mb-3">
             <v-icon left>mdi-calculator</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
-          <v-btn depressed rounded to="/protein-calculator" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/protein-calculator" class="mr-2 mb-3">
             <v-icon left>mdi-calculator-variant</v-icon>
             {{ $t("protein-calculator.title") }}
-          </v-btn>
-          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-3 mb-3">
-            <v-icon left>mdi-food-apple</v-icon>
-            {{ $t("own-food.title") }}
           </v-btn>
 
           <v-row no-gutters class="mt-4">

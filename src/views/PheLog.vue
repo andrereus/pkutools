@@ -91,6 +91,12 @@
                     </v-btn>
                   </v-slide-item>
                   <v-slide-item>
+                    <v-btn depressed rounded small to="/own-food" class="mr-1">
+                      <v-icon left>mdi-food-apple</v-icon>
+                      {{ $t("phe-log.own-food") }}
+                    </v-btn>
+                  </v-slide-item>
+                  <v-slide-item>
                     <v-btn depressed rounded small to="/phe-calculator" class="mr-1">
                       <v-icon left>mdi-calculator</v-icon>
                       {{ $t("phe-calculator.title") }}
@@ -100,12 +106,6 @@
                     <v-btn depressed rounded small to="/protein-calculator" class="mr-1">
                       <v-icon left>mdi-calculator-variant</v-icon>
                       {{ $t("protein-calculator.title") }}
-                    </v-btn>
-                  </v-slide-item>
-                  <v-slide-item>
-                    <v-btn depressed rounded small to="/own-food" class="mr-1">
-                      <v-icon left>mdi-food-apple</v-icon>
-                      {{ $t("own-food.title") }}
                     </v-btn>
                   </v-slide-item>
                 </v-slide-group>
