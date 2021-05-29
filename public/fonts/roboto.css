@@ -9,6 +9,7 @@
     /* Super Modern Browsers */ url("roboto-v27-latin-300.woff") format("woff"),
     /* Modern Browsers */ url("roboto-v27-latin-300.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("roboto-v27-latin-300.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-regular - latin */
 @font-face {
@@ -21,6 +22,7 @@
     /* Super Modern Browsers */ url("roboto-v27-latin-regular.woff") format("woff"),
     /* Modern Browsers */ url("roboto-v27-latin-regular.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("roboto-v27-latin-regular.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-500 - latin */
 @font-face {
@@ -33,6 +35,7 @@
     /* Super Modern Browsers */ url("roboto-v27-latin-500.woff") format("woff"),
     /* Modern Browsers */ url("roboto-v27-latin-500.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("roboto-v27-latin-500.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-700 - latin */
 @font-face {
@@ -45,6 +48,7 @@
     /* Super Modern Browsers */ url("roboto-v27-latin-700.woff") format("woff"),
     /* Modern Browsers */ url("roboto-v27-latin-700.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("roboto-v27-latin-700.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-900 - latin */
 @font-face {
@@ -57,6 +61,7 @@
     /* Super Modern Browsers */ url("roboto-v27-latin-900.woff") format("woff"),
     /* Modern Browsers */ url("roboto-v27-latin-900.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("roboto-v27-latin-900.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 /* roboto-100 - latin */
 @font-face {
@@ -69,4 +74,5 @@
     /* Super Modern Browsers */ url("roboto-v27-latin-100.woff") format("woff"),
     /* Modern Browsers */ url("roboto-v27-latin-100.ttf") format("truetype"),
     /* Safari, Android, iOS */ url("roboto-v27-latin-100.svg#Roboto") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
