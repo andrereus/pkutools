@@ -149,7 +149,7 @@
           <v-btn depressed rounded class="mr-3 mt-3" @click="reset">{{ $t("common.reset") }}</v-btn>
 
           <p class="text--secondary mt-5">
-            <v-icon>mdi-information-variant</v-icon>
+            <v-icon>{{ mdiInformationVariant }}</v-icon>
             {{ $t("phe-diary.note") }}
           </p>
 
