@@ -4,6 +4,7 @@ const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
 
 module.exports = {
   transpileDependencies: ["vuetify"],
+  productionSourceMap: false,
 
   pwa: {
     name: "PKU Tools",
