@@ -18,19 +18,19 @@
             <span v-if="$i18n.locale === 'de'">{{ item.de }}</span>
           </td>
           <td>
-            <v-icon v-if="item.pkutools === 1" color="success">mdi-check-bold</v-icon>
-            <v-icon v-if="item.pkutools === 2">mdi-circle-half-full</v-icon>
-            <v-icon v-if="item.pkutools === 3">mdi-close-circle-outline</v-icon>
+            <v-icon v-if="item.pkutools === 1" color="success">{{ mdiCheckBold }}</v-icon>
+            <v-icon v-if="item.pkutools === 2">{{ mdiCircleHalfFull }}</v-icon>
+            <v-icon v-if="item.pkutools === 3">{{ mdiCloseCircleOutline }}</v-icon>
           </td>
           <td v-if="!home">
-            <v-icon v-if="item.pkumanager === 1" color="success">mdi-check-bold</v-icon>
-            <v-icon v-if="item.pkumanager === 2">mdi-circle-half-full</v-icon>
-            <v-icon v-if="item.pkumanager === 3">mdi-close-circle-outline</v-icon>
+            <v-icon v-if="item.pkumanager === 1" color="success">{{ mdiCheckBold }}</v-icon>
+            <v-icon v-if="item.pkumanager === 2">{{ mdiCircleHalfFull }}</v-icon>
+            <v-icon v-if="item.pkumanager === 3">{{ mdiCloseCircleOutline }}</v-icon>
           </td>
           <td v-if="!home">
-            <v-icon v-if="item.pherechner === 1" color="success">mdi-check-bold</v-icon>
-            <v-icon v-if="item.pherechner === 2">mdi-circle-half-full</v-icon>
-            <v-icon v-if="item.pherechner === 3">mdi-close-circle-outline</v-icon>
+            <v-icon v-if="item.pherechner === 1" color="success">{{ mdiCheckBold }}</v-icon>
+            <v-icon v-if="item.pherechner === 2">{{ mdiCircleHalfFull }}</v-icon>
+            <v-icon v-if="item.pherechner === 3">{{ mdiCloseCircleOutline }}</v-icon>
           </td>
         </tr>
       </tbody>
@@ -39,15 +39,42 @@
 </template>
 
 <script>
+import {
+  mdiMagnify,
+  mdiCalculator,
+  mdiCalculatorVariant,
+  mdiFoodApple,
+  mdiTextBox,
+  mdiBook,
+  mdiCupWater,
+  mdiWeb,
+  mdiAndroid,
+  mdiApple,
+  mdiMicrosoftWindows,
+  mdiDesktopMac,
+  mdiCloudOffOutline,
+  mdiSync,
+  mdiExport,
+  mdiTranslate,
+  mdiBrightness4,
+  mdiFoodAppleOutline,
+  mdiCheckBold,
+  mdiCircleHalfFull,
+  mdiCloseCircleOutline
+} from "@mdi/js";
+
 export default {
   name: "FeatureComparison",
   props: {
     home: Boolean
   },
   data: () => ({
+    mdiCheckBold,
+    mdiCircleHalfFull,
+    mdiCloseCircleOutline,
     features: [
       {
-        icon: "mdi-magnify",
+        icon: mdiMagnify,
         en: "Phe Search",
         de: "Phe Suche",
         pkutools: 1,
@@ -55,7 +82,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-calculator",
+        icon: mdiCalculator,
         en: "Phe Calculator",
         de: "Phe Rechner",
         pkutools: 1,
@@ -63,7 +90,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-calculator-variant",
+        icon: mdiCalculatorVariant,
         en: "Protein Calculator",
         de: "Eiweiß Rechner",
         pkutools: 1,
@@ -71,7 +98,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-food-apple",
+        icon: mdiFoodApple,
         en: "Own Food",
         de: "Eigene Lebensmittel",
         pkutools: 1,
@@ -79,7 +106,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-text-box",
+        icon: mdiTextBox,
         en: "Phe Log",
         de: "Phe Protokoll",
         pkutools: 1,
@@ -87,7 +114,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-book",
+        icon: mdiBook,
         en: "Phe Diary",
         de: "Phe Tagebuch",
         pkutools: 1,
@@ -95,7 +122,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-cup-water",
+        icon: mdiCupWater,
         en: "Amino Counter",
         de: "Amino Zähler",
         pkutools: 1,
@@ -103,7 +130,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-web",
+        icon: mdiWeb,
         en: "Web",
         de: "Web",
         pkutools: 1,
@@ -111,7 +138,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-android",
+        icon: mdiAndroid,
         en: "Android",
         de: "Android",
         pkutools: 1,
@@ -119,7 +146,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-apple",
+        icon: mdiApple,
         en: "iOS",
         de: "iOS",
         pkutools: 1,
@@ -127,7 +154,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-microsoft-windows",
+        icon: mdiMicrosoftWindows,
         en: "Windows",
         de: "Windows",
         pkutools: 1,
@@ -135,7 +162,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-desktop-mac",
+        icon: mdiDesktopMac,
         en: "macOS",
         de: "macOS",
         pkutools: 1,
@@ -143,7 +170,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-cloud-off-outline",
+        icon: mdiCloudOffOutline,
         en: "Offline",
         de: "Offline",
         pkutools: 1,
@@ -151,7 +178,7 @@ export default {
         pherechner: 2
       },
       {
-        icon: "mdi-sync",
+        icon: mdiSync,
         en: "Sync",
         de: "Sync",
         pkutools: 1,
@@ -159,7 +186,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-export",
+        icon: mdiExport,
         en: "Export",
         de: "Export",
         pkutools: 1,
@@ -167,7 +194,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-translate",
+        icon: mdiTranslate,
         en: "English",
         de: "Englisch",
         pkutools: 1,
@@ -175,7 +202,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-translate",
+        icon: mdiTranslate,
         en: "German",
         de: "Deutsch",
         pkutools: 1,
@@ -183,7 +210,7 @@ export default {
         pherechner: 1
       },
       {
-        icon: "mdi-brightness-4",
+        icon: mdiBrightness4,
         en: "Dark Design",
         de: "Dunkles Design",
         pkutools: 1,
@@ -191,7 +218,7 @@ export default {
         pherechner: 3
       },
       {
-        icon: "mdi-food-apple-outline",
+        icon: mdiFoodAppleOutline,
         en: "Food Icons",
         de: "Lebensmittel Icons",
         pkutools: 1,

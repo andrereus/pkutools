@@ -17,7 +17,7 @@
           color="primary"
           class="mr-3 mb-3"
         >
-          <v-icon left>mdi-play-circle-outline</v-icon>
+          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
@@ -30,12 +30,12 @@
           color="primary"
           class="mr-3 mb-3"
         >
-          <v-icon left>mdi-play-circle-outline</v-icon>
+          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
         <v-btn text rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
-          <v-icon left>mdi-play</v-icon>
+          <v-icon left>{{ mdiPlay }}</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
 
@@ -125,6 +125,8 @@
 </template>
 
 <script>
+import { mdiPlayCircleOutline, mdiPlay } from "@mdi/js";
+
 export default {
   metaInfo() {
     return {
@@ -133,6 +135,8 @@ export default {
     };
   },
   data: () => ({
+    mdiPlayCircleOutline,
+    mdiPlay,
     panel: 0
   })
 };

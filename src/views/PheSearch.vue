@@ -20,7 +20,7 @@
         >
           <template v-slot:append-outer>
             <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
-              <v-icon>mdi-magnify</v-icon>
+              <v-icon>{{ mdiMagnify }}</v-icon>
             </v-btn>
           </template>
         </v-text-field>
@@ -125,7 +125,7 @@
         </v-data-table>
 
         <p class="mt-6 text--secondary" v-if="advancedFood !== null">
-          <v-icon>mdi-information-variant</v-icon>
+          <v-icon>{{ mdiInformationVariant }}</v-icon>
           {{ $t("phe-search.source") }}
         </p>
 
@@ -145,6 +145,7 @@ import { mapState } from "vuex";
 import firebase from "firebase/app";
 import "firebase/database";
 import Fuse from "fuse.js";
+import { mdiMagnify, mdiInformationVariant } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -154,6 +155,8 @@ export default {
     };
   },
   data: () => ({
+    mdiMagnify,
+    mdiInformationVariant,
     publicPath: process.env.BASE_URL,
     dialog: false,
     search: null,

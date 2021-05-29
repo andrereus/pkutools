@@ -10,12 +10,12 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
           <v-btn depressed rounded @click="signInGoogle" class="mt-2">
-            <v-icon left>mdi-google</v-icon>
+            <v-icon left>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
           <v-btn depressed rounded @click="signInFacebook" class="mt-2">
-            <v-icon left>mdi-facebook</v-icon>
+            <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
 
@@ -210,6 +210,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import "firebase/database";
 import foodIcons from "../components/data/food-icons.json";
+import { mdiGoogle, mdiFacebook } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -219,6 +220,8 @@ export default {
     };
   },
   data: () => ({
+    mdiGoogle,
+    mdiFacebook,
     publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,

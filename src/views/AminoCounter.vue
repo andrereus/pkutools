@@ -10,12 +10,12 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
           <v-btn depressed rounded @click="signInGoogle" class="mt-2">
-            <v-icon left>mdi-google</v-icon>
+            <v-icon left>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
           <v-btn depressed rounded @click="signInFacebook" class="mt-2">
-            <v-icon left>mdi-facebook</v-icon>
+            <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
 
@@ -53,7 +53,7 @@
               <p class="mb-0">{{ $t("amino-counter.serving") }} {{ getlocalDate(item.date) }}</p>
             </v-timeline-item>
 
-            <v-timeline-item fill-dot color="primary" large icon="mdi-cup-water">
+            <v-timeline-item fill-dot color="primary" large :icon="mdiCupWater">
               <v-btn depressed rounded @click="takeAM" color="primary" class="mr-2 mt-2">
                 {{ $t("amino-counter.take") }}
               </v-btn>
@@ -123,6 +123,7 @@ import "firebase/auth";
 import "firebase/database";
 import { formatRelative, isToday, parseISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
+import { mdiGoogle, mdiFacebook, mdiCupWater } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -132,6 +133,9 @@ export default {
     };
   },
   data: () => ({
+    mdiGoogle,
+    mdiFacebook,
+    mdiCupWater,
     dialog: false,
     alert: false,
     offlineInfo: false

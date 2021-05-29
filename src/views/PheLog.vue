@@ -10,12 +10,12 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
           <v-btn depressed rounded @click="signInGoogle" class="mt-2">
-            <v-icon left>mdi-google</v-icon>
+            <v-icon left>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
           <v-btn depressed rounded @click="signInFacebook" class="mt-2">
-            <v-icon left>mdi-facebook</v-icon>
+            <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
 
@@ -86,25 +86,25 @@
                 <v-slide-group v-if="editedIndex === -1" class="mt-2" show-arrows="desktop">
                   <v-slide-item>
                     <v-btn depressed rounded small to="/phe-search" class="mr-1">
-                      <v-icon left>mdi-magnify</v-icon>
+                      <v-icon left>{{ mdiMagnify }}</v-icon>
                       {{ $t("phe-search.title") }}
                     </v-btn>
                   </v-slide-item>
                   <v-slide-item>
                     <v-btn depressed rounded small to="/own-food" class="mr-1">
-                      <v-icon left>mdi-food-apple</v-icon>
+                      <v-icon left>{{ mdiFoodApple }}</v-icon>
                       {{ $t("phe-log.own-food") }}
                     </v-btn>
                   </v-slide-item>
                   <v-slide-item>
                     <v-btn depressed rounded small to="/phe-calculator" class="mr-1">
-                      <v-icon left>mdi-calculator</v-icon>
+                      <v-icon left>{{ mdiCalculator }}</v-icon>
                       {{ $t("phe-calculator.title") }}
                     </v-btn>
                   </v-slide-item>
                   <v-slide-item>
                     <v-btn depressed rounded small to="/protein-calculator" class="mr-1">
-                      <v-icon left>mdi-calculator-variant</v-icon>
+                      <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
                       {{ $t("protein-calculator.title") }}
                     </v-btn>
                   </v-slide-item>
@@ -151,7 +151,7 @@
                   :value="editedItem.weight"
                   @keyup="editWeight"
                   type="number"
-                  :append-icon="lockedValues ? 'mdi-lock' : 'mdi-lock-open-variant'"
+                  :append-icon="lockedValues ? mdiLock : mdiLockOpenVariant"
                   @click:append="lockValues"
                 ></v-text-field>
 
@@ -162,7 +162,7 @@
                   :value="editedItem.phe"
                   @keyup="editPhe"
                   type="number"
-                  :append-icon="lockedValues ? 'mdi-lock' : 'mdi-lock-open-variant'"
+                  :append-icon="lockedValues ? mdiLock : mdiLockOpenVariant"
                   @click:append="lockValues"
                 ></v-text-field>
 
@@ -263,6 +263,16 @@ import "firebase/database";
 import { format } from "date-fns";
 import foodIcons from "../components/data/food-icons.json";
 import confetti from "canvas-confetti";
+import {
+  mdiGoogle,
+  mdiFacebook,
+  mdiMagnify,
+  mdiCalculator,
+  mdiCalculatorVariant,
+  mdiFoodApple,
+  mdiLock,
+  mdiLockOpenVariant
+} from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -272,6 +282,14 @@ export default {
     };
   },
   data: () => ({
+    mdiGoogle,
+    mdiFacebook,
+    mdiMagnify,
+    mdiCalculator,
+    mdiCalculatorVariant,
+    mdiFoodApple,
+    mdiLock,
+    mdiLockOpenVariant,
     publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,

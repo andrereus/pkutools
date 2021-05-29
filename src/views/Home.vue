@@ -13,15 +13,15 @@
           <p class="mb-6">{{ $t("app.description") }}</p>
 
           <v-btn depressed rounded to="/phe-search" color="primary" class="mr-3 mb-3">
-            <v-icon left>mdi-magnify</v-icon>
+            <v-icon left>{{ mdiMagnify }}</v-icon>
             {{ $t("phe-search.title") }}
           </v-btn>
           <v-btn depressed rounded to="/phe-calculator" color="primary" class="mr-3 mb-3">
-            <v-icon left>mdi-calculator</v-icon>
+            <v-icon left>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
           <v-btn depressed rounded to="/protein-calculator" color="primary" class="mr-3 mb-3">
-            <v-icon left>mdi-calculator-variant</v-icon>
+            <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
 
@@ -34,13 +34,13 @@
             <v-list>
               <v-list-item @click="signInGoogle">
                 <span>
-                  <v-icon>mdi-google</v-icon>
+                  <v-icon>{{ mdiGoogle }}</v-icon>
                   {{ $t("app.signin-google") }}
                 </span>
               </v-list-item>
               <v-list-item @click="signInFacebook">
                 <span>
-                  <v-icon>mdi-facebook</v-icon>
+                  <v-icon>{{ mdiFacebook }}</v-icon>
                   {{ $t("app.signin-facebook") }}
                 </span>
               </v-list-item>
@@ -52,19 +52,19 @@
           <h3 class="text-caption mt-n3 mb-4 ml-1">{{ $t("app.tools") }}</h3>
 
           <v-btn depressed rounded to="/phe-search" class="mr-2 mb-3">
-            <v-icon left>mdi-magnify</v-icon>
+            <v-icon left>{{ mdiMagnify }}</v-icon>
             {{ $t("phe-search.title") }}
           </v-btn>
           <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
-            <v-icon left>mdi-food-apple</v-icon>
+            <v-icon left>{{ mdiFoodApple }}</v-icon>
             {{ $t("home.own-food") }}
           </v-btn>
           <v-btn depressed rounded to="/phe-calculator" class="mr-2 mb-3">
-            <v-icon left>mdi-calculator</v-icon>
+            <v-icon left>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
           <v-btn depressed rounded to="/protein-calculator" class="mr-2 mb-3">
-            <v-icon left>mdi-calculator-variant</v-icon>
+            <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
 
@@ -114,7 +114,7 @@
                 <v-card-text>
                   <p class="mb-6">{{ $t("phe-diary.title") }}</p>
                   <p v-if="pheDiary.length < 1" class="text-center mt-16">
-                    <v-icon>mdi-poll</v-icon>
+                    <v-icon>{{ mdiPoll }}</v-icon>
                   </p>
                   <apexchart
                     v-if="pheDiary.length >= 1"
@@ -142,7 +142,7 @@
             color="primary"
             class="mr-3 mb-5"
           >
-            <v-icon left>mdi-play-circle-outline</v-icon>
+            <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
             {{ $t("home.video") }}
           </v-btn>
 
@@ -155,12 +155,12 @@
             color="primary"
             class="mr-3 mb-5"
           >
-            <v-icon left>mdi-play-circle-outline</v-icon>
+            <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
             {{ $t("home.video") }}
           </v-btn>
 
           <v-btn text rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
-            <v-icon left>mdi-play</v-icon>
+            <v-icon left>{{ mdiPlay }}</v-icon>
             {{ $t("home.mobile-video") }}
           </v-btn>
 
@@ -169,12 +169,12 @@
           <FeatureComparison home class="mb-6" />
 
           <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
-            <v-icon left>mdi-information-outline</v-icon>
+            <v-icon left>{{ mdiInformationOutline }}</v-icon>
             {{ $t("home.installation") }}
           </v-btn>
 
           <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
-            <v-icon left>mdi-compare-horizontal</v-icon>
+            <v-icon left>{{ mdiCompareHorizontal }}</v-icon>
             {{ $t("home.compare") }}
           </v-btn>
         </div>
@@ -197,6 +197,19 @@ import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
 import VueApexCharts from "vue-apexcharts";
 import { parseISO, isToday } from "date-fns";
+import {
+  mdiGoogle,
+  mdiFacebook,
+  mdiMagnify,
+  mdiCalculator,
+  mdiCalculatorVariant,
+  mdiFoodApple,
+  mdiPoll,
+  mdiPlayCircleOutline,
+  mdiPlay,
+  mdiInformationOutline,
+  mdiCompareHorizontal
+} from "@mdi/js";
 
 export default {
   components: {
@@ -211,6 +224,17 @@ export default {
     };
   },
   data: () => ({
+    mdiGoogle,
+    mdiFacebook,
+    mdiMagnify,
+    mdiCalculator,
+    mdiCalculatorVariant,
+    mdiFoodApple,
+    mdiPoll,
+    mdiPlayCircleOutline,
+    mdiPlay,
+    mdiInformationOutline,
+    mdiCompareHorizontal,
     offlineInfo: false
   }),
   methods: {

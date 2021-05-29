@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^2.1.0",
-    "@mdi/font": "^5.9.55",
+    "@mdi/js": "^5.9.55",
     "@vue/cli-plugin-babel": "^4.5.13",
     "@vue/cli-plugin-eslint": "^4.5.13",
     "@vue/cli-plugin-pwa": "^4.5.13",

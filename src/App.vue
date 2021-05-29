@@ -4,7 +4,7 @@
       <v-list rounded dense>
         <v-list-item to="/">
           <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
+            <v-icon>{{ mdiHome }}</v-icon>
           </v-list-item-action>
 
           <v-list-item-content>
@@ -17,7 +17,7 @@
 
           <v-list-item to="/phe-search">
             <v-list-item-action>
-              <v-icon>mdi-magnify</v-icon>
+              <v-icon>{{ mdiMagnify }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -27,7 +27,7 @@
 
           <v-list-item to="/phe-calculator">
             <v-list-item-action>
-              <v-icon>mdi-calculator</v-icon>
+              <v-icon>{{ mdiCalculator }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -37,7 +37,7 @@
 
           <v-list-item to="/protein-calculator">
             <v-list-item-action>
-              <v-icon>mdi-calculator-variant</v-icon>
+              <v-icon>{{ mdiCalculatorVariant }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -47,7 +47,7 @@
 
           <v-list-item to="/own-food">
             <v-list-item-action>
-              <v-icon>mdi-food-apple</v-icon>
+              <v-icon>{{ mdiFoodApple }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -61,7 +61,7 @@
 
           <v-list-item to="/phe-log">
             <v-list-item-action>
-              <v-icon>mdi-text-box</v-icon>
+              <v-icon>{{ mdiTextBox }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -71,7 +71,7 @@
 
           <v-list-item to="/phe-diary">
             <v-list-item-action>
-              <v-icon>mdi-book</v-icon>
+              <v-icon>{{ mdiBook }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -81,7 +81,7 @@
 
           <v-list-item to="/amino-counter">
             <v-list-item-action>
-              <v-icon>mdi-cup-water</v-icon>
+              <v-icon>{{ mdiCupWater }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -91,7 +91,7 @@
 
           <v-list-item to="/settings">
             <v-list-item-action>
-              <v-icon>mdi-cog</v-icon>
+              <v-icon>{{ mdiCog }}</v-icon>
             </v-list-item-action>
 
             <v-list-item-content>
@@ -100,7 +100,7 @@
           </v-list-item>
         </v-list-item-group>
 
-        <v-list-group prepend-icon="mdi-information">
+        <v-list-group :prepend-icon="mdiInformation">
           <template v-slot:activator>
             <v-list-item-title>{{ $t("app.more") }}</v-list-item-title>
           </template>
@@ -182,7 +182,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" :aria-label="$t('app.account-menu')">
             <v-avatar size="32">
-              <v-icon v-if="!userIsAuthenticated">mdi-account-circle</v-icon>
+              <v-icon v-if="!userIsAuthenticated">{{ mdiAccountCircle }}</v-icon>
               <img v-if="userIsAuthenticated" :src="userPhotoUrl" :alt="$t('app.profile-picture')" />
             </v-avatar>
           </v-btn>
@@ -191,28 +191,28 @@
         <v-list>
           <v-list-item v-if="!userIsAuthenticated" @click="signInGoogle">
             <span>
-              <v-icon>mdi-google</v-icon>
+              <v-icon>{{ mdiGoogle }}</v-icon>
               {{ $t("app.signin-google") }}
             </span>
           </v-list-item>
 
           <v-list-item v-if="!userIsAuthenticated" @click="signInFacebook">
             <span>
-              <v-icon>mdi-facebook</v-icon>
+              <v-icon>{{ mdiFacebook }}</v-icon>
               {{ $t("app.signin-facebook") }}
             </span>
           </v-list-item>
 
           <v-list-item v-if="userIsAuthenticated">
             <span>
-              <v-icon>mdi-account</v-icon>
+              <v-icon>{{ mdiAccount }}</v-icon>
               {{ user.name }}
             </span>
           </v-list-item>
 
           <v-list-item v-if="userIsAuthenticated" @click="signOut">
             <span>
-              <v-icon>mdi-logout-variant</v-icon>
+              <v-icon>{{ mdiLogoutVariant }}</v-icon>
               {{ $t("app.signout") }}
             </span>
           </v-list-item>
@@ -221,15 +221,15 @@
 
           <v-list-item to="/help">
             <span>
-              <v-icon>mdi-help-circle-outline</v-icon>
+              <v-icon>{{ mdiHelpCircleOutline }}</v-icon>
               {{ $t("app.help") }}
             </span>
           </v-list-item>
 
           <v-list-item @click="updateDesign">
             <span>
-              <v-icon v-if="!$vuetify.theme.dark">mdi-brightness-4</v-icon>
-              <v-icon v-if="$vuetify.theme.dark">mdi-brightness-7</v-icon>
+              <v-icon v-if="!$vuetify.theme.dark">{{ mdiBrightness4 }}</v-icon>
+              <v-icon v-if="$vuetify.theme.dark">{{ mdiBrightness7 }}</v-icon>
               &nbsp;
               <span v-if="!$vuetify.theme.dark">{{ $t("app.dark") }}</span>
               <span v-if="$vuetify.theme.dark">{{ $t("app.light") }}</span>
@@ -253,11 +253,11 @@
       grow
     >
       <v-btn to="/" value="home" :aria-label="$t('home.title')">
-        <v-icon>mdi-home</v-icon>
+        <v-icon>{{ mdiHome }}</v-icon>
       </v-btn>
 
       <v-btn to="/phe-search" value="phe-search" :aria-label="$t('phe-search.title')">
-        <v-icon>mdi-magnify</v-icon>
+        <v-icon>{{ mdiMagnify }}</v-icon>
       </v-btn>
 
       <v-btn
@@ -266,7 +266,7 @@
         class="mobile-nav-hide"
         :aria-label="$t('phe-calculator.title')"
       >
-        <v-icon>mdi-calculator</v-icon>
+        <v-icon>{{ mdiCalculator }}</v-icon>
       </v-btn>
 
       <v-btn
@@ -275,35 +275,35 @@
         class="mobile-nav-hide"
         :aria-label="$t('protein-calculator.title')"
       >
-        <v-icon>mdi-calculator-variant</v-icon>
+        <v-icon>{{ mdiCalculatorVariant }}</v-icon>
       </v-btn>
 
       <v-btn to="/own-food" value="own-food" class="mobile-nav-hide" :aria-label="$t('own-food.title')">
-        <v-icon>mdi-food-apple</v-icon>
+        <v-icon>{{ mdiFoodApple }}</v-icon>
       </v-btn>
 
       <v-btn @click="sheet = true" value="add" :aria-label="$t('common.add')" class="add-button">
-        <v-icon color="primary" large>mdi-plus-circle</v-icon>
+        <v-icon color="primary" large>{{ mdiPlusCircle }}</v-icon>
       </v-btn>
 
       <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
-        <v-icon>mdi-text-box</v-icon>
+        <v-icon>{{ mdiTextBox }}</v-icon>
       </v-btn>
 
       <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
-        <v-icon>mdi-book</v-icon>
+        <v-icon>{{ mdiBook }}</v-icon>
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
-        <v-icon>mdi-cup-water</v-icon>
+        <v-icon>{{ mdiCupWater }}</v-icon>
       </v-btn>
 
       <v-btn to="/settings" value="settings" class="mobile-nav-hide" :aria-label="$t('settings.title')">
-        <v-icon>mdi-cog</v-icon>
+        <v-icon>{{ mdiCog }}</v-icon>
       </v-btn>
 
       <v-btn to="/help" value="help" class="mobile-nav-hide" :aria-label="$t('help.title')">
-        <v-icon>mdi-help-circle</v-icon>
+        <v-icon>{{ mdiHelpCircle }}</v-icon>
       </v-btn>
     </v-bottom-navigation>
 
@@ -312,28 +312,28 @@
         <v-subheader>{{ $t("app.tools") }}</v-subheader>
         <v-list-item to="/phe-search" @click="sheet = false">
           <v-list-item-icon>
-            <v-icon>mdi-magnify</v-icon>
+            <v-icon>{{ mdiMagnify }}</v-icon>
           </v-list-item-icon>
           <v-list-item-title>{{ $t("phe-search.title") }}</v-list-item-title>
         </v-list-item>
 
         <v-list-item to="/phe-calculator" @click="sheet = false">
           <v-list-item-icon>
-            <v-icon>mdi-calculator</v-icon>
+            <v-icon>{{ mdiCalculator }}</v-icon>
           </v-list-item-icon>
           <v-list-item-title>{{ $t("phe-calculator.title") }}</v-list-item-title>
         </v-list-item>
 
         <v-list-item to="/protein-calculator" @click="sheet = false">
           <v-list-item-icon>
-            <v-icon>mdi-calculator-variant</v-icon>
+            <v-icon>{{ mdiCalculatorVariant }}</v-icon>
           </v-list-item-icon>
           <v-list-item-title>{{ $t("protein-calculator.title") }}</v-list-item-title>
         </v-list-item>
 
         <v-list-item to="/own-food" @click="sheet = false">
           <v-list-item-icon>
-            <v-icon>mdi-food-apple</v-icon>
+            <v-icon>{{ mdiFoodApple }}</v-icon>
           </v-list-item-icon>
           <v-list-item-title>{{ $t("own-food.title") }}</v-list-item-title>
         </v-list-item>
@@ -366,6 +366,28 @@ import "firebase/auth";
 import "firebase/database";
 import { mapState } from "vuex";
 import update from "./mixins/update";
+import {
+  mdiGoogle,
+  mdiFacebook,
+  mdiHome,
+  mdiMagnify,
+  mdiCalculator,
+  mdiCalculatorVariant,
+  mdiFoodApple,
+  mdiTextBox,
+  mdiBook,
+  mdiCupWater,
+  mdiCog,
+  mdiInformation,
+  mdiAccountCircle,
+  mdiAccount,
+  mdiLogoutVariant,
+  mdiHelpCircleOutline,
+  mdiBrightness4,
+  mdiBrightness7,
+  mdiPlusCircle,
+  mdiHelpCircle
+} from "@mdi/js";
 
 export default {
   metaInfo: {
@@ -373,6 +395,26 @@ export default {
     titleTemplate: "PKU Tools | %s"
   },
   data: () => ({
+    mdiGoogle,
+    mdiFacebook,
+    mdiHome,
+    mdiMagnify,
+    mdiCalculator,
+    mdiCalculatorVariant,
+    mdiFoodApple,
+    mdiTextBox,
+    mdiBook,
+    mdiCupWater,
+    mdiCog,
+    mdiInformation,
+    mdiAccountCircle,
+    mdiAccount,
+    mdiLogoutVariant,
+    mdiHelpCircleOutline,
+    mdiBrightness4,
+    mdiBrightness7,
+    mdiPlusCircle,
+    mdiHelpCircle,
     drawer: null,
     lang: [
       { name: "English", abbr: "en" },
