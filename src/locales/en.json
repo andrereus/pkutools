@@ -95,13 +95,13 @@
     "date": "Date",
     "phe": "Total Phe (in mg)",
     "chart": "Add entry",
-    "limit": "The Phe Diary has a limit of 60 entries. Export your data in Excel.",
+    "limit": "The Phe Diary has a limit of 100 entries. Export your data in Excel.",
     "export": "Export",
     "log": "Log (not editable, export to edit)",
     "export-confirm": "Export Phe Diary in Excel? Note: Avoid duplicate dates in the Phe Diary",
     "export-overview": "Overview",
     "export-filename": "PKU Tools - Phe Diary",
-    "note": "Export from time to time, the limit are 60 entries (2 months)."
+    "note": "Export from time to time, the limit are 100 entries (~3 months)."
   },
   "amino-counter": {
     "title": "Amino Counter",
@@ -110,7 +110,7 @@
     "take": "Add serving",
     "amount": "Servings per day",
     "serving": "1 serving",
-    "limit": "The Amino Counter has a limit of 60 entries. Please reset the history."
+    "limit": "The Amino Counter has a limit of 100 entries. Please reset the history."
   },
   "settings": {
     "title": "Settings",

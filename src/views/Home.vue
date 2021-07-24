@@ -419,7 +419,7 @@ export default {
       this.loading = false;
     },
     takeAM() {
-      if (this.aminoCounter.length >= 60) {
+      if (this.aminoCounter.length >= 100) {
         this.alert = true;
       } else {
         firebase

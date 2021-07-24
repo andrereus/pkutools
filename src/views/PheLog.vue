@@ -431,7 +431,7 @@ export default {
       this.dialog2 = false;
     },
     saveResult() {
-      if (this.pheDiary.length >= 60) {
+      if (this.pheDiary.length >= 100) {
         this.alert = true;
       } else {
         confetti();

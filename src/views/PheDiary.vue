@@ -296,7 +296,7 @@ export default {
             phe: Number(this.editedItem.phe)
           });
       } else {
-        if (this.pheDiary.length >= 60) {
+        if (this.pheDiary.length >= 100) {
           this.alert = true;
         } else {
           firebase
