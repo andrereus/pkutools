@@ -25,37 +25,6 @@
           </template>
         </v-text-field>
 
-        <!--        <v-data-table-->
-        <!--          :headers="headers"-->
-        <!--          :items="loadedFood"-->
-        <!--          :search="search"-->
-        <!--          sort-by="name"-->
-        <!--          disable-pagination-->
-        <!--          hide-default-footer-->
-        <!--          mobile-breakpoint="0"-->
-        <!--        >-->
-        <!--          <template v-slot:item="{ item }">-->
-        <!--            <tr @click="loadItem(item)" class="tr-edit">-->
-        <!--              <td class="text-start">-->
-        <!--                <img-->
-        <!--                  :src="publicPath + 'img/food-icons/' + item.icon"-->
-        <!--                  v-if="item.icon !== undefined"-->
-        <!--                  width="25"-->
-        <!--                  class="food-icon"-->
-        <!--                />-->
-        <!--                <img-->
-        <!--                  :src="publicPath + 'img/food-icons/Organic Food.svg'"-->
-        <!--                  v-if="item.icon === undefined"-->
-        <!--                  width="25"-->
-        <!--                  class="food-icon"-->
-        <!--                />-->
-        <!--                {{ item.name }}-->
-        <!--              </td>-->
-        <!--              <td class="text-start">{{ item.phe }}</td>-->
-        <!--            </tr>-->
-        <!--          </template>-->
-        <!--        </v-data-table>-->
-
         <v-dialog v-model="dialog" max-width="500px">
           <v-card>
             <v-card-title>
@@ -87,11 +56,6 @@
             </v-card-actions>
           </v-card>
         </v-dialog>
-
-        <!--        <v-btn depressed @click="searchFood" class="my-6">-->
-        <!--          <v-icon left>mdi-arrow-down</v-icon>-->
-        <!--          {{ $t("phe-search.advanced") }}-->
-        <!--        </v-btn>-->
 
         <v-data-table
           :headers="headers"
@@ -199,10 +163,6 @@ export default {
       this.dialog = false;
       this.$router.push("phe-log");
     },
-    // typing($event) {
-    //   this.search = $event.target.value;
-    //   this.advancedFood = null;
-    // },
     async searchFood() {
       this.loading = true;
       let res, food;
@@ -233,13 +193,6 @@ export default {
     }
   },
   computed: {
-    loadedFood() {
-      if (this.$i18n.locale === "de") {
-        return this.deFood;
-      } else {
-        return this.enFood;
-      }
-    },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },

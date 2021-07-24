@@ -15,7 +15,7 @@
         <v-list-item-group>
           <v-subheader>{{ $t("app.tools") }}</v-subheader>
 
-          <v-list-item to="/phe-search">
+          <v-list-item to="/phe-search" class="nav-hide">
             <v-list-item-action>
               <v-icon>{{ mdiMagnify }}</v-icon>
             </v-list-item-action>
@@ -79,7 +79,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/amino-counter">
+          <v-list-item to="/amino-counter" class="nav-hide">
             <v-list-item-action>
               <v-icon>{{ mdiCupWater }}</v-icon>
             </v-list-item-action>
@@ -145,7 +145,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item dense to="/other-apps">
+          <v-list-item dense to="/other-apps" class="nav-hide">
             <v-list-item-action>
               <v-icon></v-icon>
             </v-list-item-action>
@@ -256,16 +256,11 @@
         <v-icon>{{ mdiHome }}</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-search" value="phe-search" :aria-label="$t('phe-search.title')">
+      <v-btn to="/phe-search" value="phe-search" class="mobile-nav-hide" :aria-label="$t('phe-search.title')">
         <v-icon>{{ mdiMagnify }}</v-icon>
       </v-btn>
 
-      <v-btn
-        to="/phe-calculator"
-        value="phe-calculator"
-        class="mobile-nav-hide"
-        :aria-label="$t('phe-calculator.title')"
-      >
+      <v-btn to="/phe-calculator" value="phe-calculator" :aria-label="$t('phe-calculator.title')">
         <v-icon>{{ mdiCalculator }}</v-icon>
       </v-btn>
 
@@ -282,7 +277,7 @@
         <v-icon>{{ mdiFoodApple }}</v-icon>
       </v-btn>
 
-      <v-btn @click="sheet = true" value="add" :aria-label="$t('common.add')" class="add-button">
+      <v-btn @click="sheet = true" value="add" :aria-label="$t('common.add')" class="add-button mobile-nav-hide">
         <v-icon color="primary" large>{{ mdiPlusCircle }}</v-icon>
       </v-btn>
 
@@ -290,7 +285,7 @@
         <v-icon>{{ mdiTextBox }}</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
+      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide" :aria-label="$t('phe-diary.title')">
         <v-icon>{{ mdiBook }}</v-icon>
       </v-btn>
 
@@ -298,7 +293,7 @@
         <v-icon>{{ mdiCupWater }}</v-icon>
       </v-btn>
 
-      <v-btn to="/settings" value="settings" class="mobile-nav-hide" :aria-label="$t('settings.title')">
+      <v-btn to="/settings" value="settings" :aria-label="$t('settings.title')">
         <v-icon>{{ mdiCog }}</v-icon>
       </v-btn>
 
@@ -551,6 +546,7 @@ export default {
   }
 }
 
+.nav-hide,
 .mobile-nav-hide {
   display: none;
 }

@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Free tools and apps for people with PKU.",
+    "description": "Free tools and apps for Phenylketonuria.",
     "signin-google": "Sign in with Google",
     "signin-facebook": "Sign in with Facebook",
     "signout": "Sign out",
@@ -36,15 +36,15 @@
     "features": "Features",
     "more": "And more",
     "video": "Watch video",
-    "mobile-video": "Mobile version",
-    "installation": "Install app",
+    "mobile-video": "Video (Mobile)",
+    "installation": "Installation guide",
     "compare": "Compare features",
     "own-food": "Own food"
   },
   "phe-search": {
     "title": "Phe Search",
     "description": "Search for phe values.",
-    "search": "Search",
+    "search": "Phe Search",
     "weight": "Weight (in g)",
     "advanced": "Search all foods",
     "source": "Source: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov."

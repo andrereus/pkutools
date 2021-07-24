@@ -11,11 +11,98 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
           <p class="mb-6">{{ $t("app.description") }}</p>
+        </div>
 
-          <v-btn depressed rounded to="/phe-search" color="primary" class="mr-3 mb-3">
-            <v-icon left>{{ mdiMagnify }}</v-icon>
-            {{ $t("phe-search.title") }}
-          </v-btn>
+        <div>
+          <v-text-field
+            v-model="search"
+            :label="$t('phe-search.search')"
+            filled
+            rounded
+            autocomplete="off"
+            @keyup.enter="searchFood"
+            clearable
+            @click:clear="advancedFood = null"
+            autofocus
+            class="mb-n2"
+          >
+            <template v-slot:append-outer>
+              <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
+                <v-icon>{{ mdiMagnify }}</v-icon>
+              </v-btn>
+            </template>
+          </v-text-field>
+
+          <v-dialog v-model="dialog" max-width="500px">
+            <v-card>
+              <v-card-title>
+                <span class="headline">
+                  <img :src="publicPath + 'img/food-icons/' + icon + '.svg'" width="35" class="food-icon" />
+                  {{ name }}
+                </span>
+              </v-card-title>
+
+              <v-card-text>
+                <v-text-field
+                  filled
+                  rounded
+                  :label="$t('phe-search.weight')"
+                  v-model.number="weight"
+                  type="number"
+                  class="mt-6"
+                  clearable
+                ></v-text-field>
+                <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
+              </v-card-text>
+
+              <v-card-actions class="mt-n6">
+                <v-spacer></v-spacer>
+                <v-btn depressed color="primary" @click="save" v-if="userIsAuthenticated">
+                  {{ $t("common.add") }}
+                </v-btn>
+                <v-btn depressed @click="dialog = false">{{ $t("common.close") }}</v-btn>
+              </v-card-actions>
+            </v-card>
+          </v-dialog>
+
+          <v-data-table
+            :headers="headers"
+            :items="advancedFood"
+            sort-by="name"
+            disable-pagination
+            hide-default-footer
+            mobile-breakpoint="0"
+            v-if="advancedFood !== null"
+          >
+            <template v-slot:item="{ item }">
+              <tr @click="loadItem(item)" class="tr-edit">
+                <td class="text-start">
+                  <img
+                    :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
+                    v-if="item.icon !== undefined"
+                    width="25"
+                    class="food-icon"
+                  />
+                  <img
+                    :src="publicPath + 'img/food-icons/organic-food.svg'"
+                    v-if="item.icon === undefined"
+                    width="25"
+                    class="food-icon"
+                  />
+                  {{ item.name }}
+                </td>
+                <td class="text-start">{{ item.phe }}</td>
+              </tr>
+            </template>
+          </v-data-table>
+
+          <p class="mt-6 text--secondary" v-if="advancedFood !== null">
+            <v-icon>{{ mdiInformationVariant }}</v-icon>
+            {{ $t("phe-search.source") }}
+          </p>
+        </div>
+
+        <div v-if="advancedFood === null">
           <v-btn depressed rounded to="/phe-calculator" color="primary" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
@@ -24,10 +111,14 @@
             <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
+          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
+            <v-icon left>{{ mdiFoodApple }}</v-icon>
+            {{ $t("home.own-food") }}
+          </v-btn>
 
-          <v-menu offset-y>
+          <v-menu v-if="!userIsAuthenticated" offset-y>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn text rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
+              <v-btn depressed rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
                 {{ $t("home.more") }}
               </v-btn>
             </template>
@@ -48,26 +139,7 @@
           </v-menu>
         </div>
 
-        <div v-if="userIsAuthenticated">
-          <h3 class="text-caption mt-n3 mb-4 ml-1">{{ $t("app.tools") }}</h3>
-
-          <v-btn depressed rounded to="/phe-search" class="mr-2 mb-3">
-            <v-icon left>{{ mdiMagnify }}</v-icon>
-            {{ $t("phe-search.title") }}
-          </v-btn>
-          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
-            <v-icon left>{{ mdiFoodApple }}</v-icon>
-            {{ $t("home.own-food") }}
-          </v-btn>
-          <v-btn depressed rounded to="/phe-calculator" class="mr-2 mb-3">
-            <v-icon left>{{ mdiCalculator }}</v-icon>
-            {{ $t("phe-calculator.title") }}
-          </v-btn>
-          <v-btn depressed rounded to="/protein-calculator" class="mr-2 mb-3">
-            <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
-            {{ $t("protein-calculator.title") }}
-          </v-btn>
-
+        <div v-if="userIsAuthenticated && advancedFood === null">
           <h3 class="text-caption mt-3 mb-5 ml-1">{{ $t("app.logs") }}</h3>
 
           <v-row no-gutters class="mt-4">
@@ -130,8 +202,12 @@
           </v-row>
         </div>
 
-        <div v-if="!userIsAuthenticated">
+        <div v-if="!userIsAuthenticated && advancedFood === null">
           <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
+
+          <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
+
+          <FeatureComparison home class="mb-6" />
 
           <v-btn
             v-if="this.$i18n.locale === 'en'"
@@ -139,7 +215,6 @@
             rounded
             href="https://youtu.be/lmiejnEFccY"
             target="_blank"
-            color="primary"
             class="mr-3 mb-5"
           >
             <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
@@ -152,21 +227,18 @@
             rounded
             href="https://youtu.be/5_-F4tM8_RQ"
             target="_blank"
-            color="primary"
             class="mr-3 mb-5"
           >
             <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
             {{ $t("home.video") }}
           </v-btn>
 
-          <v-btn text rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
+          <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
             <v-icon left>{{ mdiPlay }}</v-icon>
             {{ $t("home.mobile-video") }}
           </v-btn>
 
-          <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
-
-          <FeatureComparison home class="mb-6" />
+          <br />
 
           <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
             <v-icon left>{{ mdiInformationOutline }}</v-icon>
@@ -195,6 +267,9 @@
 <script>
 import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
+import firebase from "firebase/app";
+import "firebase/database";
+import Fuse from "fuse.js";
 import VueApexCharts from "vue-apexcharts";
 import { parseISO, isToday } from "date-fns";
 import {
@@ -208,7 +283,8 @@ import {
   mdiPlayCircleOutline,
   mdiPlay,
   mdiInformationOutline,
-  mdiCompareHorizontal
+  mdiCompareHorizontal,
+  mdiInformationVariant
 } from "@mdi/js";
 
 export default {
@@ -235,7 +311,25 @@ export default {
     mdiPlay,
     mdiInformationOutline,
     mdiCompareHorizontal,
-    offlineInfo: false
+    mdiInformationVariant,
+    offlineInfo: false,
+    publicPath: process.env.BASE_URL,
+    dialog: false,
+    search: null,
+    phe: null,
+    weight: 100,
+    name: "",
+    icon: "organic-food",
+    headers: [
+      {
+        text: "Name",
+        align: "start",
+        value: "name"
+      },
+      { text: "Phe", value: "phe" }
+    ],
+    advancedFood: null,
+    loading: false
   }),
   methods: {
     signInGoogle() {
@@ -251,6 +345,57 @@ export default {
       } else {
         this.offlineInfo = true;
       }
+    },
+    loadItem(item) {
+      this.name = item.name;
+      this.icon = item.icon !== undefined ? item.icon : "organic-food";
+      this.phe = item.phe;
+      this.weight = 100;
+      this.dialog = true;
+    },
+    calculatePhe() {
+      return Math.round((this.weight * this.phe) / 100);
+    },
+    save() {
+      firebase
+        .database()
+        .ref(this.user.id + "/pheLog")
+        .push({
+          name: this.name,
+          icon: this.icon,
+          weight: Number(this.weight),
+          phe: this.calculatePhe()
+        });
+      this.dialog = false;
+      this.$router.push("phe-log");
+    },
+    async searchFood() {
+      this.loading = true;
+      let res, food;
+      if (this.$i18n.locale === "de") {
+        const res1 = await fetch(this.publicPath + "data/frida.json");
+        const res2 = await fetch(this.publicPath + "data/deda.json");
+        const food1 = await res1.json();
+        const food2 = await res2.json();
+        food = food1.concat(food2);
+      } else {
+        res = await fetch(this.publicPath + "data/usda.json");
+        food = await res.json();
+      }
+
+      const fuse = new Fuse(food, {
+        keys: ["name", "phe"],
+        threshold: 0.2,
+        minMatchCharLength: 2,
+        ignoreLocation: true
+      });
+
+      let results = fuse.search(this.search.trim());
+
+      this.advancedFood = results.map(result => {
+        return result.item;
+      });
+      this.loading = false;
     }
   },
   computed: {
@@ -322,6 +467,18 @@ export default {
 }
 
 .theme--light.stat-card {
+  background-color: #fafafa;
+}
+
+.tr-edit {
+  cursor: pointer;
+}
+
+.food-icon {
+  vertical-align: bottom;
+}
+
+.theme--light.v-data-table {
   background-color: #fafafa;
 }
 </style>

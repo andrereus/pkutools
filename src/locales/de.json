@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Kostenlose Tools und Apps für Menschen mit PKU.",
+    "description": "Kostenlose Tools und Apps für die Phenylketonurie.",
     "signin-google": "Anmelden mit Google",
     "signin-facebook": "Anmelden mit Facebook",
     "signout": "Abmelden",
@@ -36,15 +36,15 @@
     "features": "Funktionen",
     "more": "Und mehr",
     "video": "Video ansehen",
-    "mobile-video": "Mobile Version",
-    "installation": "App installieren",
+    "mobile-video": "Video (Mobile)",
+    "installation": "Installationsanleitung",
     "compare": "Funktionen vergleichen",
     "own-food": "Eigene LM."
   },
   "phe-search": {
     "title": "Phe Suche",
     "description": "Suche nach Phe-Werten.",
-    "search": "Suche",
+    "search": "Phe Suche",
     "weight": "Gewicht (in g)",
     "advanced": "Ergebnisse aus dem Web",
     "source": "Quelle: Frida Food Data (http://frida.fooddata.dk), version 4, 2019, National Food Institute, Technical University of Denmark."
