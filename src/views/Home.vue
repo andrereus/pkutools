@@ -162,21 +162,28 @@
             </v-col>
 
             <v-col cols="6" sm="3" md="3" lg="3">
-              <v-card outlined height="200" to="/amino-counter" class="mr-1 mb-1 stat-card">
-                <v-card-text>
-                  <p class="mb-6">{{ $t("amino-counter.title") }}</p>
-                  <div class="text-center">
-                    <v-progress-circular
-                      :rotate="-90"
-                      :size="110"
-                      :width="15"
-                      :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
-                      color="teal"
-                    >
-                      {{ calculateAmino }}
-                    </v-progress-circular>
-                  </div>
-                </v-card-text>
+              <v-card outlined height="200" class="mr-1 mb-1 stat-card">
+                <router-link to="/amino-counter" class="amino-router">
+                  <v-card-text>
+                    <p class="mb-6">{{ $t("amino-counter.title") }}</p>
+                    <div class="text-center">
+                      <v-progress-circular
+                        :rotate="-90"
+                        :size="110"
+                        :width="15"
+                        :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
+                        color="teal"
+                      >
+                        {{ calculateAmino }}
+                      </v-progress-circular>
+                    </div>
+                  </v-card-text>
+                </router-link>
+                <v-card-actions>
+                  <v-btn depressed fab x-small @click="takeAM" class="add-amino">
+                    <v-icon>{{ mdiPlus }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
               </v-card>
             </v-col>
 
@@ -283,7 +290,8 @@ import {
   mdiPlay,
   mdiInformationOutline,
   mdiCompareHorizontal,
-  mdiInformationVariant
+  mdiInformationVariant,
+  mdiPlus
 } from "@mdi/js";
 
 export default {
@@ -311,6 +319,7 @@ export default {
     mdiInformationOutline,
     mdiCompareHorizontal,
     mdiInformationVariant,
+    mdiPlus,
     offlineInfo: false,
     publicPath: process.env.BASE_URL,
     dialog: false,
@@ -395,6 +404,18 @@ export default {
         return result.item;
       });
       this.loading = false;
+    },
+    takeAM() {
+      if (this.aminoCounter.length >= 60) {
+        this.alert = true;
+      } else {
+        firebase
+          .database()
+          .ref(this.user.id + "/aminoCounter")
+          .push({
+            date: new Date().toISOString()
+          });
+      }
     }
   },
   computed: {
@@ -479,5 +500,21 @@ export default {
 
 .theme--light.v-data-table {
   background-color: #fafafa;
+}
+
+.add-amino {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.theme--light .amino-router {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: inherit;
+}
+
+.theme--dark .amino-router {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: inherit;
 }
 </style>
