@@ -34,12 +34,13 @@
   "home": {
     "title": "Start",
     "features": "Funktionen",
-    "more": "Und mehr",
+    "more": "Und mehr angemeldet",
     "video": "Video ansehen",
     "mobile-video": "Video (Mobile)",
     "installation": "Installationsanleitung",
     "compare": "Funktionen vergleichen",
-    "own-food": "Eigene LM."
+    "own-food": "Eigene LM.",
+    "own-food-long": "Eigene Lebensmittel"
   },
   "phe-search": {
     "title": "Phe Suche",

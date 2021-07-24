@@ -34,12 +34,13 @@
   "home": {
     "title": "Home",
     "features": "Features",
-    "more": "And more",
+    "more": "And more signed in",
     "video": "Watch video",
     "mobile-video": "Video (Mobile)",
     "installation": "Installation guide",
     "compare": "Compare features",
-    "own-food": "Own food"
+    "own-food": "Own food",
+    "own-food-long": "Own food"
   },
   "phe-search": {
     "title": "Phe Search",

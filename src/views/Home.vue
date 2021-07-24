@@ -112,7 +112,7 @@
           </v-btn>
           <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
             <v-icon left>{{ mdiFoodApple }}</v-icon>
-            {{ $t("home.own-food") }}
+            {{ $t("home.own-food-long") }}
           </v-btn>
 
           <v-menu v-if="!userIsAuthenticated" offset-y>
