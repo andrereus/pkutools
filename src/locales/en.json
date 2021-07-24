@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Free tools and apps for Phenylketonuria (PKU).",
+    "description": "Free tools and apps for PKU.",
     "signin-google": "Sign in with Google",
     "signin-facebook": "Sign in with Facebook",
     "signout": "Sign out",
