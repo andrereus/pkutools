@@ -23,7 +23,6 @@
             @keyup.enter="searchFood"
             clearable
             @click:clear="advancedFood = null"
-            autofocus
             class="mb-n2"
           >
             <template v-slot:append-outer>
