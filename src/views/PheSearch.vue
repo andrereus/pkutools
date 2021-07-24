@@ -15,7 +15,7 @@
           rounded
           single-line
           autocomplete="off"
-          @keyup.enter="searchFood"
+          @keyup="searchFood"
           clearable
         >
           <template v-slot:append-outer>
