@@ -34,7 +34,7 @@
           {{ $t("home.video") }}
         </v-btn>
 
-        <v-btn text rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+        <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
           <v-icon left>{{ mdiPlay }}</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
@@ -109,16 +109,8 @@
 
         <h2 class="headline mt-9 mb-3">{{ $t("help.contact") }}</h2>
 
-        <iframe
-          src="https://tally.so/embed/mRW5v3?hideTitle=1&alignLeft=1&transparentBackground=1"
-          width="100%"
-          height="400"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          title="Contact"
-          class="contact-form"
-        ></iframe>
+        <!-- prettier-ignore -->
+        <p>{{ $t("about.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
       </v-col>
     </v-row>
   </div>
@@ -137,7 +129,10 @@ export default {
   data: () => ({
     mdiPlayCircleOutline,
     mdiPlay,
-    panel: 0
+    panel: null,
+    part1: "heypku",
+    part2: "gmail",
+    part3: "com"
   })
 };
 </script>
@@ -155,5 +150,9 @@ export default {
 .contact-form {
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.hidden {
+  display: none;
 }
 </style>

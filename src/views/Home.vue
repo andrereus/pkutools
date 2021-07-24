@@ -23,7 +23,7 @@
             @keyup.enter="searchFood"
             clearable
             @click:clear="advancedFood = null"
-            class="mb-n2"
+            class="mb-n1"
           >
             <template v-slot:append-outer>
               <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
@@ -102,11 +102,11 @@
         </div>
 
         <div v-if="advancedFood === null">
-          <v-btn depressed rounded to="/phe-calculator" color="primary" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
-          <v-btn depressed rounded to="/protein-calculator" color="primary" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/protein-calculator" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
