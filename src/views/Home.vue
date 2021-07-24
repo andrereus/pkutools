@@ -20,7 +20,7 @@
             filled
             rounded
             autocomplete="off"
-            @keyup.enter="searchFood"
+            @keyup="searchFood"
             clearable
             @click:clear="advancedFood = null"
             class="mb-n1"
