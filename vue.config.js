@@ -11,7 +11,7 @@ module.exports = {
     themeColor: "#3498db",
     msTileColor: "#3498db",
     appleMobileWebAppCapable: "yes",
-    appleMobileWebAppStatusBarStyle: "#3498db",
+    appleMobileWebAppStatusBarStyle: "black-translucent",
     manifestOptions: {
       description: "Free tools and apps for PKU."
     }
