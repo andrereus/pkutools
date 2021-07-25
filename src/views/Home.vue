@@ -9,9 +9,8 @@
 
     <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <div v-if="!userIsAuthenticated">
-          <p class="mb-6">{{ $t("app.description") }}</p>
-        </div>
+        <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
+        <h3 v-if="userIsAuthenticated" class="text-caption mt-n3 mb-4 ml-1">{{ $t("app.tools") }}</h3>
 
         <div>
           <v-text-field
