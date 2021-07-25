@@ -17,7 +17,8 @@
     "new": "New",
     "tools": "Tools",
     "logs": "Logs",
-    "help": "Help"
+    "help": "Help",
+    "install": "Install app"
   },
   "common": {
     "add": "Add",
@@ -37,7 +38,6 @@
     "more": "And more signed in",
     "video": "Watch video",
     "mobile-video": "Video (Mobile)",
-    "installation": "Installation guide",
     "compare": "Compare features",
     "own-food": "Own food",
     "own-food-long": "Own food"
@@ -127,18 +127,18 @@
     "install": "How to install the app?",
     "install-p1": "This is a Progressive Web App and can be installed on any device.",
     "install-p2": "Android:",
-    "install-p3": "iOS Safari: Tap the share button and then \"Add to Home Screen\".",
-    "install-p4": "Chrome/Brave/Edge on desktop: Click the little installation icon in the address bar.",
+    "install-p3": "Tap the share button and then \"Add to Home Screen\" in Safari.",
+    "install-p4": "Click the little installation icon in the address bar in Chrome, Brave or Edge.",
     "sign-in": "How to sign in?",
     "sign-in-p1": "You can sign in with Google or Facebook (from the menu in the top right corner).",
     "sign-in-p2": "Other sign in options are not planned at the moment.",
     "support": "How to support?",
-    "support-p1": "You can buy me coffee if you want, but all support is voluntary, as I provide PKU Tools free of charge.",
+    "support-p1": "I provide PKU Tools free of charge. With the link below you can support me financially :)",
     "support-p2": "By the way, the app is Open Source. If you want to contribute, contact me.",
     "roadmap": "What's new?",
     "roadmap-p1": "The app is constantly being optimized. At the moment only major updates are occasionally communicated in a Facebook group. Contact me for more info.",
     "translate": "Are there other languages?",
-    "translate-p1": "Not at the moment, but you can help with the translation into other languages. Contact me for more."
+    "translate-p1": "Not at the moment, but you can help with the translation into other languages. Contact me for more info."
   },
   "other-apps": {
     "title": "Other Apps",

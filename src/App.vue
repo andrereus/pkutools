@@ -226,6 +226,13 @@
             </span>
           </v-list-item>
 
+          <v-list-item to="/help">
+            <span>
+              <v-icon>{{ mdiHelpCircleOutline }}</v-icon>
+              {{ $t("app.install") }}
+            </span>
+          </v-list-item>
+
           <v-list-item @click="updateDesign">
             <span>
               <v-icon v-if="!$vuetify.theme.dark">{{ mdiBrightness4 }}</v-icon>

@@ -17,7 +17,8 @@
     "new": "Neu",
     "tools": "Tools",
     "logs": "Protokolle",
-    "help": "Hilfe"
+    "help": "Hilfe",
+    "install": "App installieren"
   },
   "common": {
     "add": "Hinzufügen",
@@ -37,7 +38,6 @@
     "more": "Und mehr angemeldet",
     "video": "Video ansehen",
     "mobile-video": "Video (Mobile)",
-    "installation": "Installationsanleitung",
     "compare": "Funktionen vergleichen",
     "own-food": "Eigene LM.",
     "own-food-long": "Eigene Lebensmittel"
@@ -127,18 +127,18 @@
     "install": "Wie kann man die App installieren?",
     "install-p1": "Dies ist eine Progressive Web App und kann auf jedem Gerät installiert werden.",
     "install-p2": "Android:",
-    "install-p3": "iOS Safari: Klicke den Teilen-Button und dann \"Zum Home-Bildschirm\".",
-    "install-p4": "Chrome/Brave/Edge am Desktop: Klicke das kleine Installations-Icon in der Adressleiste.",
+    "install-p3": "Klicke den Teilen-Button und dann \"Zum Home-Bildschirm\" in Safari.",
+    "install-p4": "Klicke das kleine Installations-Icon in der Adressleiste in Chrome, Brave oder Edge.",
     "sign-in": "Wie kann man sich anmelden?",
     "sign-in-p1": "Man kann sich (oben rechts über das Menü) mit Google oder Facebook anmelden.",
     "sign-in-p2": "Andere Anmeldemöglichkeiten sind im Moment nicht geplant.",
     "support": "Wie kann man unterstützen?",
-    "support-p1": "Du kannst mir Kaffee kaufen wenn du willst, jede Unterstützung ist aber freiwillig, da ich PKU Tools kostenlos zur Verfügung stelle.",
+    "support-p1": "Ich stelle PKU Tools kostenlos zur Verfügung. Mit dem untenstehenden Link kannst du mich finanziell unterstützen :)",
     "support-p2": "Übrigens ist die App Open Source. Wenn du dazu beitragen willst, kontaktiere mich.",
     "roadmap": "Was ist neu?",
-    "roadmap-p1": "Die App wird ständig optimiert. Im Moment werden nur größere Updates gelegentlich in einer Facebook Gruppe kommuniziert. Kontaktiere mich für mehr Info.",
+    "roadmap-p1": "Die App wird ständig optimiert. Im Moment werden nur größere Updates gelegentlich in einer Facebook Gruppe kommuniziert. Kontaktiere mich für mehr Infos.",
     "translate": "Gibt es auch andere Sprachen?",
-    "translate-p1": "Im Moment nicht, aber du kannst bei der Übersetzung in andere Sprachen helfen. Kontaktiere mich für mehr."
+    "translate-p1": "Im Moment nicht, aber du kannst bei der Übersetzung in andere Sprachen helfen. Kontaktiere mich für mehr Infos."
   },
   "other-apps": {
     "title": "Andere Apps",

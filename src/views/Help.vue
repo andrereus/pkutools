@@ -14,7 +14,6 @@
           rounded
           href="https://youtu.be/lmiejnEFccY"
           target="_blank"
-          color="primary"
           class="mr-3 mb-3"
         >
           <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
@@ -27,7 +26,6 @@
           rounded
           href="https://youtu.be/5_-F4tM8_RQ"
           target="_blank"
-          color="primary"
           class="mr-3 mb-3"
         >
           <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
@@ -43,23 +41,29 @@
 
         <v-expansion-panels v-model="panel">
           <v-expansion-panel>
-            <v-expansion-panel-header>{{ $t("help.install") }}</v-expansion-panel-header>
+            <v-expansion-panel-header class="font-weight-bold">{{ $t("help.install") }}</v-expansion-panel-header>
 
             <v-expansion-panel-content>
               <p>{{ $t("help.install-p1") }}</p>
               <p>
-                {{ $t("help.install-p2") }}
+                <span class="font-weight-bold">{{ $t("help.install-p2") }}</span>
                 <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">
                   <img
                     alt="Get it on Google Play"
                     src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                    class="gplay-btn mb-1"
+                    class="gplay-btn"
                   />
                 </a>
               </p>
 
-              <p>{{ $t("help.install-p3") }}</p>
-              <p>{{ $t("help.install-p4") }}</p>
+              <p>
+                <span class="font-weight-bold">iOS:</span>
+                {{ $t("help.install-p3") }}
+              </p>
+              <p>
+                <span class="font-weight-bold">Desktop:</span>
+                {{ $t("help.install-p4") }}
+              </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
 
@@ -143,7 +147,7 @@ export default {
 }
 
 .gplay-btn {
-  max-width: 125px;
+  max-width: 100px;
   vertical-align: middle;
 }
 

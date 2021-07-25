@@ -214,13 +214,18 @@
 
           <FeatureComparison home class="mb-6" />
 
+          <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
+            <v-icon left>{{ mdiHelpCircleOutline }}</v-icon>
+            {{ $t("app.install") }}
+          </v-btn>
+
           <v-btn
             v-if="this.$i18n.locale === 'en'"
             depressed
             rounded
             href="https://youtu.be/lmiejnEFccY"
             target="_blank"
-            class="mr-3 mb-5"
+            class="mr-3 mb-3"
           >
             <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
             {{ $t("home.video") }}
@@ -232,26 +237,18 @@
             rounded
             href="https://youtu.be/5_-F4tM8_RQ"
             target="_blank"
-            class="mr-3 mb-5"
+            class="mr-3 mb-3"
           >
             <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
             {{ $t("home.video") }}
           </v-btn>
 
-          <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-5">
+          <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
             <v-icon left>{{ mdiPlay }}</v-icon>
             {{ $t("home.mobile-video") }}
           </v-btn>
 
-          <br />
-
-          <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
-            <v-icon left>{{ mdiInformationOutline }}</v-icon>
-            {{ $t("home.installation") }}
-          </v-btn>
-
           <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
-            <v-icon left>{{ mdiCompareHorizontal }}</v-icon>
             {{ $t("home.compare") }}
           </v-btn>
         </div>
@@ -299,10 +296,9 @@ import {
   mdiPoll,
   mdiPlayCircleOutline,
   mdiPlay,
-  mdiInformationOutline,
-  mdiCompareHorizontal,
   mdiInformationVariant,
-  mdiPlus
+  mdiPlus,
+  mdiHelpCircleOutline
 } from "@mdi/js";
 
 export default {
@@ -327,10 +323,9 @@ export default {
     mdiPoll,
     mdiPlayCircleOutline,
     mdiPlay,
-    mdiInformationOutline,
-    mdiCompareHorizontal,
     mdiInformationVariant,
     mdiPlus,
+    mdiHelpCircleOutline,
     offlineInfo: false,
     publicPath: process.env.BASE_URL,
     dialog: false,
