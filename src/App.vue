@@ -521,6 +521,8 @@ export default {
   @media (max-height: 565px) {
     display: none;
   }
+
+  margin-bottom: env(safe-area-inset-bottom); // iOS fix
 }
 
 .bottom-nav--active:before {
@@ -574,9 +576,5 @@ export default {
 
 .theme--dark .custom-app-bar {
   background: linear-gradient(90deg, rgba(41, 128, 185, 1) 0%, rgba(52, 73, 94, 1) 100%);
-}
-
-.v-bottom-navigation {
-  margin-bottom: env(safe-area-inset-bottom); // iOS fix
 }
 </style>
