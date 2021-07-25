@@ -521,8 +521,6 @@ export default {
   @media (max-height: 565px) {
     display: none;
   }
-
-  margin-bottom: env(safe-area-inset-bottom) !important; // iOS fix
 }
 
 .bottom-nav--active:before {
