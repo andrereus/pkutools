@@ -522,7 +522,7 @@ export default {
     display: none;
   }
 
-  margin-bottom: env(safe-area-inset-bottom); // iOS fix
+  margin-bottom: env(safe-area-inset-bottom) !important; // iOS fix
 }
 
 .bottom-nav--active:before {
