@@ -8,8 +8,6 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-checkbox v-model="factor" :label="$t('protein-calculator.factor')" class="mt-n1"></v-checkbox>
-
         <v-text-field
           filled
           rounded
@@ -18,7 +16,7 @@
           type="number"
         ></v-text-field>
 
-        <!--<p class="mt-n1 mb-6">~ {{ calculateProtein() }} mg {{ $t("protein-calculator.phe") }}</p>-->
+        <v-checkbox v-model="factor" :label="$t('protein-calculator.factor')" class="mt-n3"></v-checkbox>
 
         <v-text-field
           filled

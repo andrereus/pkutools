@@ -165,22 +165,6 @@
                   :append-icon="lockedValues ? mdiLock : mdiLockOpenVariant"
                   @click:append="lockValues"
                 ></v-text-field>
-
-                <!--                <div class="checkbox-clearfix">-->
-                <!--                  <v-checkbox-->
-                <!--                    :value="lockedValues"-->
-                <!--                    @click="lockValues"-->
-                <!--                    :label="$t('phe-log.lock-values')"-->
-                <!--                    class="mt-n1 float-left"-->
-                <!--                  ></v-checkbox>-->
-
-                <!--                  <v-tooltip top>-->
-                <!--                    <template v-slot:activator="{ on, attrs }">-->
-                <!--                      <v-icon v-bind="attrs" v-on="on" class="ml-2">mdi-information-outline</v-icon>-->
-                <!--                    </template>-->
-                <!--                    <span>{{ $t("phe-log.lock-info") }}</span>-->
-                <!--                  </v-tooltip>-->
-                <!--                </div>-->
               </v-card-text>
 
               <v-card-actions class="mt-n6">
