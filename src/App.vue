@@ -507,7 +507,7 @@ export default {
 
 <style lang="scss" scoped>
 #app {
-  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-left);
+  margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-left);
 }
 
 .theme--dark.v-navigation-drawer {
