@@ -178,7 +178,7 @@
         </v-list>
       </v-menu>
 
-      <v-menu offset-y>
+      <v-menu offset-y class="account-menu">
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" :aria-label="$t('app.account-menu')">
             <v-avatar size="32">
@@ -506,16 +506,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.v-navigation-drawer {
-  margin-left: env(safe-area-inset-left) !important;
-  padding-top: env(safe-area-inset-top) !important;
-  padding-bottom: env(safe-area-inset-bottom) !important;
-}
-
 .v-app-bar {
   padding-left: env(safe-area-inset-left) !important;
   padding-top: env(safe-area-inset-top) !important;
   padding-right: env(safe-area-inset-right) !important;
+}
+
+.v-navigation-drawer {
+  padding-left: env(safe-area-inset-left) !important;
+  padding-top: env(safe-area-inset-top) !important;
+  padding-bottom: env(safe-area-inset-bottom) !important;
+}
+
+.account-menu {
+  margin-top: env(safe-area-inset-top) !important;
+  margin-right: env(safe-area-inset-right) !important;
+  margin-bottom: env(safe-area-inset-bottom) !important;
 }
 
 .v-main {
