@@ -508,12 +508,12 @@ export default {
 <style lang="scss" scoped>
 .v-app-bar {
   padding-left: env(safe-area-inset-left) !important;
-  padding-top: env(safe-area-inset-top) !important;
+  margin-top: env(safe-area-inset-top) !important;
   padding-right: env(safe-area-inset-right) !important;
 }
 
 .v-navigation-drawer {
-  padding-left: env(safe-area-inset-left) !important;
+  left: env(safe-area-inset-left) !important;
   padding-top: env(safe-area-inset-top) !important;
   padding-bottom: env(safe-area-inset-bottom) !important;
 }
@@ -526,7 +526,13 @@ export default {
 .v-bottom-navigation {
   padding-left: env(safe-area-inset-left) !important;
   padding-right: env(safe-area-inset-right) !important;
-  margin-bottom: env(safe-area-inset-bottom) !important;
+  padding-bottom: env(safe-area-inset-bottom) !important;
+
+  height: auto !important;
+
+  .v-btn {
+    padding: 15px !important;
+  }
 }
 
 .theme--dark.v-navigation-drawer {
