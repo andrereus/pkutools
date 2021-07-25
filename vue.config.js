@@ -10,6 +10,8 @@ module.exports = {
     name: "PKU Tools",
     themeColor: "#3498db",
     msTileColor: "#3498db",
+    appleMobileWebAppCapable: "yes",
+    appleMobileWebAppStatusBarStyle: "#3498db",
     manifestOptions: {
       description: "Free tools and apps for PKU."
     }
