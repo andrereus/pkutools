@@ -576,7 +576,7 @@ export default {
   background: linear-gradient(90deg, rgba(41, 128, 185, 1) 0%, rgba(52, 73, 94, 1) 100%);
 }
 
-.v-bottom-navigation .v-btn__content {
+.v-bottom-navigation {
   margin-bottom: env(safe-area-inset-bottom); // iOS fix
 }
 </style>
