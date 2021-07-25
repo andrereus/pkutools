@@ -522,7 +522,7 @@ export default {
     display: none;
   }
 
-  padding-bottom: env(safe-area-inset-bottom) !important;
+  margin-bottom: env(safe-area-inset-bottom) !important;
 }
 
 .bottom-nav--active:before {
