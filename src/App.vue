@@ -506,10 +506,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-//.theme--light.v-navigation-drawer {
-//  background-color: #f5f5f5;
-//}
-
 .theme--dark.v-navigation-drawer {
   background-color: #121212 !important;
 }
@@ -578,5 +574,9 @@ export default {
 
 .theme--dark .custom-app-bar {
   background: linear-gradient(90deg, rgba(41, 128, 185, 1) 0%, rgba(52, 73, 94, 1) 100%);
+}
+
+.v-bottom-navigation .v-btn__content {
+  margin-bottom: env(safe-area-inset-bottom); // iOS fix
 }
 </style>
