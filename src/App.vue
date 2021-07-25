@@ -188,7 +188,7 @@
           </v-btn>
         </template>
 
-        <v-list>
+        <v-list class="account-menu">
           <v-list-item v-if="!userIsAuthenticated" @click="signInGoogle">
             <span>
               <v-icon>{{ mdiGoogle }}</v-icon>
@@ -518,7 +518,7 @@ export default {
   padding-bottom: env(safe-area-inset-bottom) !important;
 }
 
-.v-main {
+.v-app {
   padding-left: env(safe-area-inset-left) !important;
   padding-right: env(safe-area-inset-right) !important;
 }
@@ -603,5 +603,9 @@ export default {
 
 .theme--dark .custom-app-bar {
   background: linear-gradient(90deg, rgba(41, 128, 185, 1) 0%, rgba(52, 73, 94, 1) 100%);
+}
+
+.account-menu {
+  min-width: 200px;
 }
 </style>
