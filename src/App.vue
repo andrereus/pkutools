@@ -506,10 +506,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-#app {
-  margin: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-left);
-}
-
 .theme--dark.v-navigation-drawer {
   background-color: #121212 !important;
 }
