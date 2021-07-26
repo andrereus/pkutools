@@ -114,21 +114,48 @@
                   <template v-slot:item="{ item }">
                     <tr class="tr-read-only">
                       <td class="text-start">
-                        <img
-                          :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
-                          v-if="item.icon !== undefined && item.icon !== 'Organic Food.svg'"
-                          width="25"
-                          class="food-icon"
-                        />
-                        <img
-                          :src="publicPath + 'img/food-icons/organic-food.svg'"
-                          v-if="item.icon === undefined || item.icon === 'Organic Food.svg'"
-                          width="25"
-                          class="food-icon"
-                        />
-                        {{ item.name }}
+                        <v-edit-dialog
+                          :return-value.sync="item.name"
+                          large
+                          :cancel-text="$t('common.cancel')"
+                          :save-text="$t('common.ok')"
+                        >
+                          <img
+                            :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
+                            v-if="item.icon !== undefined && item.icon !== 'Organic Food.svg'"
+                            width="25"
+                            class="food-icon"
+                          />
+                          <img
+                            :src="publicPath + 'img/food-icons/organic-food.svg'"
+                            v-if="item.icon === undefined || item.icon === 'Organic Food.svg'"
+                            width="25"
+                            class="food-icon"
+                          />
+                          {{ item.name }}
+                          <template v-slot:input>
+                            <v-text-field v-model="item.name" :label="formTitle" single-line></v-text-field>
+                          </template>
+                        </v-edit-dialog>
                       </td>
-                      <td class="text-start">{{ item.phe }}</td>
+                      <td class="text-start">
+                        <v-edit-dialog
+                          :return-value.sync="item.phe"
+                          large
+                          :cancel-text="$t('common.cancel')"
+                          :save-text="$t('common.ok')"
+                        >
+                          {{ item.phe }}
+                          <template v-slot:input>
+                            <v-text-field
+                              v-model.number="item.phe"
+                              :label="formTitle"
+                              single-line
+                              type="number"
+                            ></v-text-field>
+                          </template>
+                        </v-edit-dialog>
+                      </td>
                     </tr>
                   </template>
                 </v-data-table>
@@ -288,13 +315,24 @@ export default {
     },
     save() {
       if (this.editedIndex > -1) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary/" + this.editedKey)
-          .update({
-            date: this.editedItem.date,
-            phe: Number(this.editedItem.phe)
-          });
+        if (this.editedItem.log) {
+          firebase
+            .database()
+            .ref(this.user.id + "/pheDiary/" + this.editedKey)
+            .update({
+              date: this.editedItem.date,
+              phe: Number(this.editedItem.phe),
+              log: this.editedItem.log
+            });
+        } else {
+          firebase
+            .database()
+            .ref(this.user.id + "/pheDiary/" + this.editedKey)
+            .update({
+              date: this.editedItem.date,
+              phe: Number(this.editedItem.phe)
+            });
+        }
       } else {
         if (this.pheDiary.length >= 100) {
           this.alert = true;

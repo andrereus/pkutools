@@ -97,7 +97,7 @@
     "chart": "Add entry",
     "limit": "The Phe Diary has a limit of 100 entries. Export your data in Excel.",
     "export": "Export",
-    "log": "Log (not editable, export to edit)",
+    "log": "Log (Editing does not update Total Phe!)",
     "export-confirm": "Export Phe Diary in Excel? Note: Avoid duplicate dates in the Phe Diary",
     "export-overview": "Overview",
     "export-filename": "PKU Tools - Phe Diary",
