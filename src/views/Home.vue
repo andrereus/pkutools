@@ -392,7 +392,7 @@ export default {
         const res2 = await fetch(this.publicPath + "data/deda.json");
         const food1 = await res1.json();
         const food2 = await res2.json();
-        food = food1.concat(food2);
+        food = food1.concat(food2).concat(this.ownFood);
       } else {
         res = await fetch(this.publicPath + "data/usda.json");
         food = await res.json();
@@ -475,7 +475,7 @@ export default {
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "pheLog", "aminoCounter", "pheDiary", "settings"])
+    ...mapState(["user", "pheLog", "aminoCounter", "pheDiary", "settings", "ownFood"])
   }
 };
 </script>
