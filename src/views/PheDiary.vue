@@ -46,7 +46,7 @@
           ></apexchart>
 
           <v-data-table
-            :headers="headers"
+            :headers="$i18n.locale === 'en' ? headersEn : headersDe"
             :items="pheDiary"
             disable-pagination
             hide-default-footer
@@ -237,9 +237,17 @@ export default {
     dialog: false,
     alert: false,
     menu: false,
-    headers: [
+    headersEn: [
       {
         text: "Date",
+        align: "start",
+        value: "date"
+      },
+      { text: "Phe", value: "phe" }
+    ],
+    headersDe: [
+      {
+        text: "Datum",
         align: "start",
         value: "date"
       },

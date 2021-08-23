@@ -36,7 +36,13 @@
         </div>
 
         <div v-if="userIsAuthenticated">
-          <v-data-table :headers="headers" :items="pheLog" disable-pagination hide-default-footer mobile-breakpoint="0">
+          <v-data-table
+            :headers="$i18n.locale === 'en' ? headersEn : headersDe"
+            :items="pheLog"
+            disable-pagination
+            hide-default-footer
+            mobile-breakpoint="0"
+          >
             <template v-slot:item="{ item }">
               <tr @click="editItem(item)" class="tr-edit">
                 <td class="text-start">
@@ -278,13 +284,22 @@ export default {
     dialog: false,
     dialog2: false,
     alert: false,
-    headers: [
+    headersEn: [
       {
         text: "Name",
         align: "start",
         value: "name"
       },
       { text: "Weight", value: "weight" },
+      { text: "Phe", value: "phe" }
+    ],
+    headersDe: [
+      {
+        text: "Name",
+        align: "start",
+        value: "name"
+      },
+      { text: "Gewicht", value: "weight" },
       { text: "Phe", value: "phe" }
     ],
     editedIndex: -1,
