@@ -195,7 +195,7 @@
                   </p>
                   <apexchart
                     v-if="pheDiary.length >= 1"
-                    type="bar"
+                    type="area"
                     height="110"
                     :options="chartOptions"
                     :series="graph"
@@ -440,25 +440,30 @@ export default {
     },
     graph() {
       let newPheDiary = this.pheDiary;
-      let finalPheDiary = newPheDiary.map(obj => {
-        return { x: obj.date, y: obj.phe };
-      });
+      let chartPheDiary = newPheDiary
+        .map(obj => {
+          return { x: obj.date, y: obj.phe };
+        })
+        .sort((a, b) => {
+          return parseISO(a.x) - parseISO(b.x);
+        });
       return [
         {
           name: "Phe",
-          data: finalPheDiary
+          data: chartPheDiary
         }
       ];
     },
     chartOptions() {
       return {
         chart: {
-          height: 110,
-          type: "bar",
           sparkline: {
             enabled: true
           },
           background: "transparent"
+        },
+        stroke: {
+          curve: "smooth"
         },
         xaxis: {
           type: "datetime"

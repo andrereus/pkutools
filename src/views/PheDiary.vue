@@ -38,7 +38,7 @@
         <div v-if="userIsAuthenticated">
           <apexchart
             v-if="pheDiary.length >= 1"
-            type="bar"
+            type="area"
             height="250"
             :options="chartOptions"
             :series="graph"
@@ -446,13 +446,17 @@ export default {
     },
     graph() {
       let newPheDiary = this.pheDiary;
-      let finalPheDiary = newPheDiary.map(obj => {
-        return { x: obj.date, y: obj.phe };
-      });
+      let chartPheDiary = newPheDiary
+        .map(obj => {
+          return { x: obj.date, y: obj.phe };
+        })
+        .sort((a, b) => {
+          return parseISO(a.x) - parseISO(b.x);
+        });
       return [
         {
           name: "Phe",
-          data: finalPheDiary
+          data: chartPheDiary
         }
       ];
     },
@@ -463,12 +467,13 @@ export default {
         chart: {
           locales: [en, de],
           defaultLocale: this.$i18n.locale,
-          height: 250,
-          type: "bar",
           zoom: {
             enabled: false
           },
           background: "transparent"
+        },
+        stroke: {
+          curve: "smooth"
         },
         dataLabels: {
           enabled: false
