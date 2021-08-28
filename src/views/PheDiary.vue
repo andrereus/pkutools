@@ -134,7 +134,7 @@
                           />
                           {{ item.name }}
                           <template v-slot:input>
-                            <v-text-field v-model="item.name" :label="formTitle" single-line></v-text-field>
+                            <v-text-field v-model="item.name" label="Name" class="mt-4 mb-n2"></v-text-field>
                           </template>
                         </v-edit-dialog>
                       </td>
@@ -148,10 +148,16 @@
                           {{ item.phe }}
                           <template v-slot:input>
                             <v-text-field
-                              v-model.number="item.phe"
-                              :label="formTitle"
-                              single-line
+                              v-model.number="item.weight"
+                              :label="$t('phe-log.weight')"
                               type="number"
+                              class="mt-4"
+                            ></v-text-field>
+                            <v-text-field
+                              v-model.number="item.phe"
+                              label="Phe (in mg)"
+                              type="number"
+                              class="mb-n2"
                             ></v-text-field>
                           </template>
                         </v-edit-dialog>
