@@ -131,8 +131,8 @@ export default {
       },
       {
         icon: mdiWeb,
-        en: "Web",
-        de: "Web",
+        en: "Web App",
+        de: "Web App",
         pkutools: 1,
         pkumanager: 1,
         pherechner: 1
@@ -171,8 +171,8 @@ export default {
       },
       {
         icon: mdiCloudOffOutline,
-        en: "Offline",
-        de: "Offline",
+        en: "Offline capable",
+        de: "Offlinefähig",
         pkutools: 1,
         pkumanager: 2,
         pherechner: 2

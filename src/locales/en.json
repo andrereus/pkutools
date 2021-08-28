@@ -54,7 +54,7 @@
     "title": "Phe Calculator",
     "description": "Calculate phe values.",
     "phe": "Phe per 100g (in mg)",
-    "weight": "Eaten weight (in g)",
+    "weight": "Consumed weight (in g)",
     "name": "Food name",
     "protein-link": "Calculate with protein instead ->"
   },
@@ -64,7 +64,7 @@
     "factor": "Calculation of fruits or vegetables",
     "protein": "Protein per 100g (in g)",
     "phe": "Phe per 100g",
-    "weight": "Eaten weight (in g)",
+    "weight": "Consumed weight (in g)",
     "name": "Food name"
   },
   "own-food": {
