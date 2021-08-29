@@ -190,11 +190,11 @@
               <v-card outlined height="200" to="/phe-diary" class="mr-1 mb-1 stat-card">
                 <v-card-text>
                   <p class="mb-6">{{ $t("phe-diary.title") }}</p>
-                  <p v-if="pheDiary.length < 1" class="text-center mt-16">
+                  <p v-if="pheDiary.length < 2" class="text-center mt-16">
                     <v-icon>{{ mdiPoll }}</v-icon>
                   </p>
                   <apexchart
-                    v-if="pheDiary.length >= 1"
+                    v-if="pheDiary.length >= 2"
                     type="area"
                     height="110"
                     :options="chartOptions"

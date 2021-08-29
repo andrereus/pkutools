@@ -37,7 +37,7 @@
 
         <div v-if="userIsAuthenticated">
           <apexchart
-            v-if="pheDiary.length >= 1"
+            v-if="pheDiary.length >= 2"
             type="area"
             height="250"
             :options="chartOptions"
