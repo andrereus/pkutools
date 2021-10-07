@@ -267,7 +267,12 @@
         <v-icon>{{ mdiMagnify }}</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-calculator" value="phe-calculator" :aria-label="$t('phe-calculator.title')">
+      <v-btn
+        to="/phe-calculator"
+        value="phe-calculator"
+        class="mobile-nav-hide"
+        :aria-label="$t('phe-calculator.title')"
+      >
         <v-icon>{{ mdiCalculator }}</v-icon>
       </v-btn>
 
@@ -280,7 +285,7 @@
         <v-icon>{{ mdiCalculatorVariant }}</v-icon>
       </v-btn>
 
-      <v-btn to="/own-food" value="own-food" class="mobile-nav-hide" :aria-label="$t('own-food.title')">
+      <v-btn to="/own-food" value="own-food" :aria-label="$t('own-food.title')">
         <v-icon>{{ mdiFoodApple }}</v-icon>
       </v-btn>
 
