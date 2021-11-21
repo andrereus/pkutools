@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: pkutools.com
+Token: cab1903d32e4938507e83ffe6fd3c48fe356f48a9a97b6285fe21cc3c8d8cee7
