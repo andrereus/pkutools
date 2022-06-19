@@ -61,21 +61,6 @@
         </v-card>
       </v-col>
 
-      <v-col cols="12" sm="6" md="4" lg="3">
-        <v-card max-width="400">
-          <v-img src="../assets/simple-nutrition-calculator-app.png" alt="Simple Nutrition Calculator App"></v-img>
-          <v-card-title>Simple Nutrition Calculator</v-card-title>
-
-          <v-card-text>
-            <div>{{ $t("other-apps.simple-nutrition-calculator") }}</div>
-          </v-card-text>
-
-          <v-card-actions>
-            <v-btn text rounded href="https://simple-nutrition-calculator.com/" target="_blank">Web</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
-
       <v-col cols="12" lg="9">
         <h2 class="headline my-6">{{ $t("other-apps.features") }}</h2>
         <FeatureComparison />
