@@ -35,5 +35,3 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 "vetur.format.defaultFormatter.html": "prettier"
 ```
-
-.
