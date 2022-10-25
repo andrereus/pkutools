@@ -281,8 +281,8 @@
 <script>
 import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
-import firebase from "firebase/app";
-import "firebase/database";
+import firebase from "firebase/compat/app";
+import "firebase/compat/database";
 import Fuse from "fuse.js";
 import VueApexCharts from "vue-apexcharts";
 import { parseISO, isToday } from "date-fns";

@@ -214,9 +214,9 @@
 
 <script>
 import { mapState } from "vuex";
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/database";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/database";
 import { format, parseISO, formatISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
 import XLSX from "xlsx";

@@ -65,8 +65,8 @@
 
 <script>
 import { mapState } from "vuex";
-import firebase from "firebase/app";
-import "firebase/database";
+import firebase from "firebase/compat/app";
+import "firebase/compat/database";
 
 export default {
   metaInfo() {

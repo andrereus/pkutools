@@ -206,9 +206,9 @@
 
 <script>
 import { mapState } from "vuex";
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/database";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/database";
 import foodIcons from "../components/data/food-icons.json";
 import { mdiGoogle, mdiFacebook } from "@mdi/js";
 

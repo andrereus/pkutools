@@ -106,8 +106,8 @@
 
 <script>
 import { mapState } from "vuex";
-import firebase from "firebase/app";
-import "firebase/database";
+import firebase from "firebase/compat/app";
+import "firebase/compat/database";
 import Fuse from "fuse.js";
 import { mdiMagnify, mdiInformationVariant } from "@mdi/js";
 

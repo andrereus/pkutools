@@ -247,9 +247,9 @@
 
 <script>
 import { mapState } from "vuex";
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/database";
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/database";
 import { format } from "date-fns";
 import foodIcons from "../components/data/food-icons.json";
 import confetti from "canvas-confetti";
