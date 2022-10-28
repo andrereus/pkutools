@@ -1,6 +1,0 @@
-{
-  "appId": "com.pkutools.app",
-  "appName": "PKU Tools",
-  "webDir": "dist",
-  "bundledWebRuntime": false
-}
