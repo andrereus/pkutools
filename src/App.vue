@@ -4,7 +4,7 @@
       <v-list rounded dense>
         <v-list-item to="/">
           <v-list-item-action>
-            <v-icon>{{ mdiHome }}</v-icon>
+            <v-icon>{{ mdiHomeSearch }}</v-icon>
           </v-list-item-action>
 
           <v-list-item-content>
@@ -250,7 +250,7 @@
       grow
     >
       <v-btn to="/" value="home" :aria-label="$t('home.title')">
-        <v-icon>{{ mdiHome }}</v-icon>
+        <v-icon>{{ mdiHomeSearch }}</v-icon>
       </v-btn>
 
       <v-btn to="/phe-calculator" value="phe-calculator" :aria-label="$t('phe-calculator.title')">
@@ -351,7 +351,6 @@ import update from "./mixins/update";
 import {
   mdiGoogle,
   mdiFacebook,
-  mdiHome,
   mdiMagnify,
   mdiCalculator,
   mdiCalculatorVariant,
@@ -369,7 +368,8 @@ import {
   mdiBrightness7,
   mdiPlusCircle,
   mdiHelpCircle,
-  mdiChartBox
+  mdiChartBox,
+  mdiHomeSearch
 } from "@mdi/js";
 
 export default {
@@ -380,7 +380,6 @@ export default {
   data: () => ({
     mdiGoogle,
     mdiFacebook,
-    mdiHome,
     mdiMagnify,
     mdiCalculator,
     mdiCalculatorVariant,
@@ -399,6 +398,7 @@ export default {
     mdiPlusCircle,
     mdiHelpCircle,
     mdiChartBox,
+    mdiHomeSearch,
     drawer: null,
     lang: [
       { name: "English", abbr: "en" },
