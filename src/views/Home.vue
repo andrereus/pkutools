@@ -10,6 +10,7 @@
     <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
+
         <div>
           <v-text-field
             v-model="search"
@@ -97,6 +98,7 @@
           </p>
         </div>
 
+        <h3 class="text-caption mt-n2 mb-5 ml-1">{{ $t("phe-log.title") }}</h3>
         <PheLog v-if="advancedFood === null" />
 
         <div v-if="!userIsAuthenticated && advancedFood === null">
