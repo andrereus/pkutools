@@ -20,7 +20,6 @@
             @keyup="searchFood"
             clearable
             @click:clear="advancedFood = null"
-            class="mb-n1"
           >
             <template v-slot:append-outer>
               <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
