@@ -15,16 +15,6 @@
         <v-list-item-group>
           <v-subheader>{{ $t("app.tools") }}</v-subheader>
 
-          <v-list-item to="/phe-search" class="nav-hide">
-            <v-list-item-action>
-              <v-icon>{{ mdiMagnify }}</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("phe-search.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
           <v-list-item to="/phe-calculator">
             <v-list-item-action>
               <v-icon>{{ mdiCalculator }}</v-icon>
@@ -263,10 +253,6 @@
         <v-icon>{{ mdiHome }}</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-search" value="phe-search" class="mobile-nav-hide" :aria-label="$t('phe-search.title')">
-        <v-icon>{{ mdiMagnify }}</v-icon>
-      </v-btn>
-
       <v-btn
         to="/phe-calculator"
         value="phe-calculator"
@@ -317,12 +303,6 @@
     <v-bottom-sheet v-model="sheet">
       <v-list>
         <v-subheader>{{ $t("app.tools") }}</v-subheader>
-        <v-list-item to="/phe-search" @click="sheet = false">
-          <v-list-item-icon>
-            <v-icon>{{ mdiMagnify }}</v-icon>
-          </v-list-item-icon>
-          <v-list-item-title>{{ $t("phe-search.title") }}</v-list-item-title>
-        </v-list-item>
 
         <v-list-item to="/phe-calculator" @click="sheet = false">
           <v-list-item-icon>

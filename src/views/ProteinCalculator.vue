@@ -99,7 +99,7 @@ export default {
           phe: this.calculatePhe()
         });
       this.dialog = false;
-      this.$router.push("phe-log");
+      this.$router.push("home");
     }
   },
   computed: {

@@ -158,7 +158,7 @@
                 <v-text-field
                   filled
                   rounded
-                  :label="$t('phe-search.weight')"
+                  :label="$t('own-food.weight')"
                   v-model.number="weight"
                   type="number"
                   class="mt-6"
@@ -341,7 +341,7 @@ export default {
           phe: this.calculatePhe()
         });
       this.dialog2 = false;
-      this.$router.push("phe-log");
+      this.$router.push("home");
     }
   },
   watch: {

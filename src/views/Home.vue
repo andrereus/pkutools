@@ -296,7 +296,7 @@ export default {
           phe: this.calculatePhe()
         });
       this.dialog = false;
-      this.$router.push("phe-log");
+      this.$router.push("home");
     },
     async searchFood() {
       this.loading = true;
