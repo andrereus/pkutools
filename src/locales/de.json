@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Kostenlose Tools und Apps für PKU.",
+    "description": "Tools und Apps für PKU.",
     "signin-google": "Anmelden mit Google",
     "signin-facebook": "Anmelden mit Facebook",
     "signout": "Abmelden",
@@ -142,7 +142,7 @@
   },
   "other-apps": {
     "title": "Andere Apps",
-    "description": "Andere kostenlose PKU Apps",
+    "description": "Andere PKU Apps",
     "phe-rechner": "Deutsche PKU App die Taschenrechner, Bleistift, Papier und Nährwerttabelle kombiniert (~ 2017).",
     "pku-manager": "Englische PKU App zum Suchen, Berechnen und Tracken von Lebensmitteln (~ 2018).",
     "features": "Funktionsvergleich"

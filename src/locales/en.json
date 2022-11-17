@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Free tools and apps for PKU.",
+    "description": "Tools and apps for PKU.",
     "signin-google": "Sign in with Google",
     "signin-facebook": "Sign in with Facebook",
     "signout": "Sign out",
@@ -142,7 +142,7 @@
   },
   "other-apps": {
     "title": "Other Apps",
-    "description": "Other free PKU apps",
+    "description": "Other PKU apps",
     "phe-rechner": "German PKU app that combines calculator, pen, paper and nutrition table (~ 2017).",
     "pku-manager": "English PKU app for searching, calculating and tracking food (~ 2018).",
     "features": "Feature Comparison"

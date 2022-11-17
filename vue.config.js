@@ -7,7 +7,7 @@ module.exports = {
     themeColor: "#3498db",
     msTileColor: "#3498db",
     manifestOptions: {
-      description: "Free tools and apps for PKU."
+      description: "Tools and apps for PKU."
     }
   },
 
