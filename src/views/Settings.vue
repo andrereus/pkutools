@@ -39,7 +39,23 @@
 
           <v-switch v-model="$vuetify.theme.dark" inset :label="$t('app.dark')" class="mt-n1 mb-2 ml-1"></v-switch>
 
-          <v-btn depressed rounded color="primary" @click="save">{{ $t("common.save") }}</v-btn>
+          <v-btn depressed rounded color="primary" class="mr-3 mb-3" @click="save">{{ $t("common.save") }}</v-btn>
+
+          <h2 class="headline mt-6 mb-4">{{ $t("settings.reset-heading") }}</h2>
+
+          <v-btn depressed rounded class="mr-3 mb-3" @click="resetLog">
+            {{ $t("settings.reset-log") }}
+          </v-btn>
+          <v-btn depressed rounded class="mr-3 mb-3" @click="resetDiary">
+            {{ $t("settings.reset-diary") }}
+          </v-btn>
+          <br />
+          <v-btn depressed rounded class="mr-3 mb-3" @click="resetOwnFood">
+            {{ $t("settings.reset-own-food") }}
+          </v-btn>
+          <v-btn depressed rounded class="mr-3 mb-3" @click="resetAM">
+            {{ $t("settings.reset-am") }}
+          </v-btn>
 
           <v-snackbar bottom color="teal" v-model="snackbar">
             {{ $t("settings.saved") }}
@@ -111,6 +127,46 @@ export default {
           localStorage.vuetifyThemeDark = JSON.stringify(this.$vuetify.theme.dark);
           this.snackbar = true;
         });
+    },
+    resetLog() {
+      let r = confirm(this.$t("settings.reset-log") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/pheLog")
+          .remove();
+        this.$router.push("/");
+      }
+    },
+    resetDiary() {
+      let r = confirm(this.$t("settings.reset-diary") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/pheDiary")
+          .remove();
+        this.$router.push("phe-diary");
+      }
+    },
+    resetOwnFood() {
+      let r = confirm(this.$t("settings.reset-own-food") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/ownFood")
+          .remove();
+        this.$router.push("own-food");
+      }
+    },
+    resetAM() {
+      let r = confirm(this.$t("settings.reset-am") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/aminoCounter")
+          .remove();
+        this.$router.push("amino-counter");
+      }
     }
   },
   computed: {

@@ -132,8 +132,6 @@
             </v-card>
           </v-dialog>
 
-          <v-btn depressed rounded class="mr-3 mt-3" @click="reset">{{ $t("common.reset") }}</v-btn>
-
           <v-dialog v-model="dialog2" max-width="500px">
             <v-card>
               <v-card-title>
@@ -264,15 +262,6 @@ export default {
         this.$store.dispatch("signInFacebook");
       } else {
         this.offlineInfo = true;
-      }
-    },
-    reset() {
-      let r = confirm(this.$t("common.reset") + "?");
-      if (r === true) {
-        firebase
-          .database()
-          .ref(this.user.id + "/ownFood")
-          .remove();
       }
     },
     editItem() {

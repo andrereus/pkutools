@@ -179,7 +179,6 @@
           </v-dialog>
 
           <v-btn depressed rounded class="mr-3 mt-3" @click="exportDiary">{{ $t("phe-diary.export") }}</v-btn>
-          <v-btn depressed rounded class="mr-3 mt-3" @click="reset">{{ $t("common.reset") }}</v-btn>
 
           <p class="text--secondary mt-5">
             <v-icon>{{ mdiInformationVariant }}</v-icon>
@@ -292,15 +291,6 @@ export default {
         this.$store.dispatch("signInFacebook");
       } else {
         this.offlineInfo = true;
-      }
-    },
-    reset() {
-      let r = confirm(this.$t("common.reset") + "?");
-      if (r === true) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary")
-          .remove();
       }
     },
     editItem(item) {

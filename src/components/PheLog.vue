@@ -146,7 +146,6 @@
       <v-btn depressed rounded color="success" class="mr-3 mb-3" @click="saveResult">
         {{ $t("phe-log.save-day") }}
       </v-btn>
-      <v-btn depressed rounded class="mr-3 mb-3" @click="reset">{{ $t("common.reset") }}</v-btn>
 
       <v-dialog v-model="dialog2" max-width="500px" @click:outside="setMax">
         <template v-slot:activator="{ on, attrs }">
@@ -285,15 +284,6 @@ export default {
         this.$store.dispatch("signInFacebook");
       } else {
         this.offlineInfo = true;
-      }
-    },
-    reset() {
-      let r = confirm(this.$t("common.reset") + "?");
-      if (r === true) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheLog")
-          .remove();
       }
     },
     editItem(item) {

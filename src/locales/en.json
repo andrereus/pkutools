@@ -121,7 +121,12 @@
     "description": "App / Account Settings",
     "max-amino": "Amino servings per day",
     "max-phe": "Phe tolerance per day",
-    "saved": "Saved"
+    "saved": "Saved",
+    "reset-heading": "Reset",
+    "reset-log": "Delete todays log",
+    "reset-diary": "Delete Phe Diary",
+    "reset-own-food": "Delete Own Food",
+    "reset-am": "Delete amino acid mixtures"
   },
   "help": {
     "title": "Help",
