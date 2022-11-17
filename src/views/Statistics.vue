@@ -3,145 +3,26 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <v-alert dense type="warning" class="mt-2">{{ $t("statistics.wip") }}</v-alert>
-        <h2 class="headline mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
-        <h2 class="headline mt-1" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
+        <h2 class="headline mt-1">{{ $t("statistics.title") }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
-        <h3 v-if="userIsAuthenticated" class="text-caption mt-n3 mb-4 ml-1">{{ $t("app.tools") }}</h3>
-
-        <div>
-          <v-text-field
-            v-model="search"
-            :label="$t('phe-search.search')"
-            filled
-            rounded
-            autocomplete="off"
-            @keyup="searchFood"
-            clearable
-            @click:clear="advancedFood = null"
-            class="mb-n1"
-          >
-            <template v-slot:append-outer>
-              <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
-                <v-icon>{{ mdiMagnify }}</v-icon>
-              </v-btn>
-            </template>
-          </v-text-field>
-
-          <v-dialog v-model="dialog" max-width="500px">
-            <v-card>
-              <v-card-title>
-                <span class="headline">
-                  <img :src="publicPath + 'img/food-icons/' + icon + '.svg'" width="35" class="food-icon" />
-                  {{ name }}
-                </span>
-              </v-card-title>
-
-              <v-card-text>
-                <v-text-field
-                  filled
-                  rounded
-                  :label="$t('phe-search.weight')"
-                  v-model.number="weight"
-                  type="number"
-                  class="mt-6"
-                  clearable
-                ></v-text-field>
-                <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
-              </v-card-text>
-
-              <v-card-actions class="mt-n6">
-                <v-spacer></v-spacer>
-                <v-btn depressed color="primary" @click="save" v-if="userIsAuthenticated">
-                  {{ $t("common.add") }}
-                </v-btn>
-                <v-btn depressed @click="dialog = false">{{ $t("common.close") }}</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-dialog>
-
-          <v-data-table
-            :headers="headers"
-            :items="advancedFood"
-            sort-by="name"
-            disable-pagination
-            hide-default-footer
-            mobile-breakpoint="0"
-            v-if="advancedFood !== null"
-          >
-            <template v-slot:item="{ item }">
-              <tr @click="loadItem(item)" class="tr-edit">
-                <td class="text-start">
-                  <img
-                    :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
-                    v-if="item.icon !== undefined"
-                    width="25"
-                    class="food-icon"
-                  />
-                  <img
-                    :src="publicPath + 'img/food-icons/organic-food.svg'"
-                    v-if="item.icon === undefined"
-                    width="25"
-                    class="food-icon"
-                  />
-                  {{ item.name }}
-                </td>
-                <td class="text-start">{{ item.phe }}</td>
-              </tr>
-            </template>
-          </v-data-table>
-
-          <p class="mt-6 text--secondary" v-if="advancedFood !== null">
-            <v-icon>{{ mdiInformationVariant }}</v-icon>
-            {{ $t("phe-search.source") }}
-          </p>
+        <div v-if="!userIsAuthenticated">
+          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
+            <v-icon left>{{ mdiGoogle }}</v-icon>
+            {{ $t("app.signin-google") }}
+          </v-btn>
+          <br />
+          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
+            <v-icon left>{{ mdiFacebook }}</v-icon>
+            {{ $t("app.signin-facebook") }}
+          </v-btn>
         </div>
 
-        <div v-if="advancedFood === null">
-          <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
-            <v-icon left>{{ mdiCalculator }}</v-icon>
-            {{ $t("phe-calculator.title") }}
-          </v-btn>
-          <v-btn depressed rounded to="/protein-calculator" class="mr-3 mb-3">
-            <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
-            {{ $t("protein-calculator.title") }}
-          </v-btn>
-          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
-            <v-icon left>{{ mdiFoodApple }}</v-icon>
-            {{ $t("home.own-food-long") }}
-          </v-btn>
-
-          <v-menu v-if="!userIsAuthenticated" offset-y>
-            <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
-                {{ $t("home.more") }}
-              </v-btn>
-            </template>
-            <v-list>
-              <v-list-item @click="signInGoogle">
-                <span>
-                  <v-icon>{{ mdiGoogle }}</v-icon>
-                  {{ $t("app.signin-google") }}
-                </span>
-              </v-list-item>
-              <v-list-item @click="signInFacebook">
-                <span>
-                  <v-icon>{{ mdiFacebook }}</v-icon>
-                  {{ $t("app.signin-facebook") }}
-                </span>
-              </v-list-item>
-            </v-list>
-          </v-menu>
-        </div>
-
-        <div v-if="userIsAuthenticated && advancedFood === null">
-          <h3 class="text-caption mt-3 mb-5 ml-1">{{ $t("app.logs") }}</h3>
-
-          <v-row no-gutters class="mt-4">
+        <div v-if="userIsAuthenticated">
+          <v-row no-gutters>
             <v-col cols="6" sm="3" md="3" lg="3">
               <v-card outlined height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
                 <v-card-text>
@@ -207,85 +88,16 @@
             </v-col>
           </v-row>
         </div>
-
-        <div v-if="!userIsAuthenticated && advancedFood === null">
-          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
-
-          <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
-
-          <FeatureComparison home class="mb-6" />
-
-          <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
-            <v-icon left>{{ mdiHelpCircleOutline }}</v-icon>
-            {{ $t("app.install") }}
-          </v-btn>
-
-          <v-btn
-            v-if="this.$i18n.locale === 'en'"
-            depressed
-            rounded
-            href="https://youtu.be/lmiejnEFccY"
-            target="_blank"
-            class="mr-3 mb-3"
-          >
-            <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
-            {{ $t("home.video") }}
-          </v-btn>
-
-          <v-btn
-            v-if="this.$i18n.locale === 'de'"
-            depressed
-            rounded
-            href="https://youtu.be/5_-F4tM8_RQ"
-            target="_blank"
-            class="mr-3 mb-3"
-          >
-            <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
-            {{ $t("home.video") }}
-          </v-btn>
-
-          <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
-            <v-icon left>{{ mdiPlay }}</v-icon>
-            {{ $t("home.mobile-video") }}
-          </v-btn>
-
-          <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
-            {{ $t("home.compare") }}
-          </v-btn>
-        </div>
       </v-col>
     </v-row>
-
-    <v-dialog v-model="alert" max-width="300">
-      <v-card>
-        <v-card-title>{{ $t("common.note") }}</v-card-title>
-        <v-card-text>{{ $t("amino-counter.limit") }}</v-card-text>
-
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-
-    <v-snackbar bottom color="warning" v-model="offlineInfo">
-      {{ $t("app.offline") }}
-      <template v-slot:action="{ attrs }">
-        <v-btn text v-bind="attrs" @click="offlineInfo = false">
-          {{ $t("common.close") }}
-        </v-btn>
-      </template>
-    </v-snackbar>
   </div>
 </template>
 
 <script>
-import FeatureComparison from "../components/FeatureComparison.vue";
 import { mapState } from "vuex";
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
 import Fuse from "fuse.js";
-import VueApexCharts from "vue-apexcharts";
 import { parseISO, isToday } from "date-fns";
 import {
   mdiGoogle,
@@ -303,10 +115,6 @@ import {
 } from "@mdi/js";
 
 export default {
-  components: {
-    FeatureComparison,
-    apexchart: VueApexCharts
-  },
   metaInfo() {
     return {
       title: this.$t("app.title"),
