@@ -69,16 +69,6 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/amino-counter" class="nav-hide">
-            <v-list-item-action>
-              <v-icon>{{ mdiCupWater }}</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
           <v-list-item to="/settings">
             <v-list-item-action>
               <v-icon>{{ mdiCog }}</v-icon>
@@ -94,6 +84,16 @@
           <template v-slot:activator>
             <v-list-item-title>{{ $t("app.more") }}</v-list-item-title>
           </template>
+
+          <v-list-item dense to="/amino-counter">
+            <v-list-item-action>
+              <v-icon></v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("amino-counter.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
 
           <v-list-item dense to="/help">
             <v-list-item-action>
@@ -135,7 +135,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item dense to="/other-apps" class="nav-hide">
+          <v-list-item dense to="/other-apps">
             <v-list-item-action>
               <v-icon></v-icon>
             </v-list-item-action>
