@@ -103,6 +103,10 @@
     "export-filename": "PKU Tools - Phe Tagebuch",
     "note": "Exportiere ab und zu, das Limit sind 100 Einträge (~3 Monate)."
   },
+  "statistics": {
+    "title": "Statistiken",
+    "wip": "In Bearbeitung"
+  },
   "amino-counter": {
     "title": "Amino Zähler",
     "description": "Zähle Portionen der Aminosäuremischung.",

@@ -2,6 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <v-alert dense type="warning" class="mt-2">{{ $t("statistics.wip") }}</v-alert>
         <h2 class="headline mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
         <h2 class="headline mt-1" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
       </v-col>
@@ -10,6 +11,8 @@
     <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
         <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
+        <h3 v-if="userIsAuthenticated" class="text-caption mt-n3 mb-4 ml-1">{{ $t("app.tools") }}</h3>
+
         <div>
           <v-text-field
             v-model="search"
@@ -98,9 +101,7 @@
           </p>
         </div>
 
-        <PheLog v-if="advancedFood === null" />
-
-        <div v-if="!userIsAuthenticated && advancedFood === null">
+        <div v-if="advancedFood === null">
           <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
@@ -135,7 +136,79 @@
               </v-list-item>
             </v-list>
           </v-menu>
+        </div>
 
+        <div v-if="userIsAuthenticated && advancedFood === null">
+          <h3 class="text-caption mt-3 mb-5 ml-1">{{ $t("app.logs") }}</h3>
+
+          <v-row no-gutters class="mt-4">
+            <v-col cols="6" sm="3" md="3" lg="3">
+              <v-card outlined height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
+                <v-card-text>
+                  <p class="mb-6">{{ $t("phe-log.title") }}</p>
+                  <div class="text-center">
+                    <v-progress-circular
+                      :rotate="-90"
+                      :size="110"
+                      :width="15"
+                      :value="(pheResult * 100) / (settings.maxPhe || 0)"
+                      color="primary"
+                    >
+                      {{ pheResult }}
+                    </v-progress-circular>
+                  </div>
+                </v-card-text>
+              </v-card>
+            </v-col>
+
+            <v-col cols="6" sm="3" md="3" lg="3">
+              <v-card outlined height="200" class="mr-1 mb-1 stat-card">
+                <router-link to="/amino-counter" class="amino-router">
+                  <v-card-text>
+                    <p class="mb-6">{{ $t("amino-counter.title") }}</p>
+                    <div class="text-center">
+                      <v-progress-circular
+                        :rotate="-90"
+                        :size="110"
+                        :width="15"
+                        :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
+                        color="teal"
+                      >
+                        {{ calculateAmino }}
+                      </v-progress-circular>
+                    </div>
+                  </v-card-text>
+                </router-link>
+                <v-card-actions>
+                  <v-btn depressed fab x-small @click="takeAM" class="add-amino">
+                    <v-icon>{{ mdiPlus }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+              </v-card>
+            </v-col>
+
+            <v-col cols="12" sm="6" md="6" lg="6">
+              <v-card outlined height="200" to="/phe-diary" class="mr-1 mb-1 stat-card">
+                <v-card-text>
+                  <p class="mb-6">{{ $t("phe-diary.title") }}</p>
+                  <p v-if="pheDiary.length < 2" class="text-center mt-16">
+                    <v-icon>{{ mdiPoll }}</v-icon>
+                  </p>
+                  <apexchart
+                    v-if="pheDiary.length >= 2"
+                    type="area"
+                    height="110"
+                    :options="chartOptions"
+                    :series="graph"
+                    class="ml-n1"
+                  ></apexchart>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </div>
+
+        <div v-if="!userIsAuthenticated && advancedFood === null">
           <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
 
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
@@ -182,6 +255,19 @@
         </div>
       </v-col>
     </v-row>
+
+    <v-dialog v-model="alert" max-width="300">
+      <v-card>
+        <v-card-title>{{ $t("common.note") }}</v-card-title>
+        <v-card-text>{{ $t("amino-counter.limit") }}</v-card-text>
+
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
+
     <v-snackbar bottom color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
@@ -199,7 +285,8 @@ import { mapState } from "vuex";
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
 import Fuse from "fuse.js";
-import PheLog from "../components/PheLog.vue";
+import VueApexCharts from "vue-apexcharts";
+import { parseISO, isToday } from "date-fns";
 import {
   mdiGoogle,
   mdiFacebook,
@@ -218,7 +305,7 @@ import {
 export default {
   components: {
     FeatureComparison,
-    PheLog
+    apexchart: VueApexCharts
   },
   metaInfo() {
     return {
@@ -257,7 +344,8 @@ export default {
       { text: "Phe", value: "phe" }
     ],
     advancedFood: null,
-    loading: false
+    loading: false,
+    alert: false
   }),
   methods: {
     signInGoogle() {
@@ -324,13 +412,76 @@ export default {
         return result.item;
       });
       this.loading = false;
+    },
+    takeAM() {
+      if (this.aminoCounter.length >= 100) {
+        this.alert = true;
+      } else {
+        firebase
+          .database()
+          .ref(this.user.id + "/aminoCounter")
+          .push({
+            date: new Date().toISOString()
+          });
+      }
     }
   },
   computed: {
+    calculateAmino() {
+      return this.aminoCounter.filter(item => {
+        return isToday(parseISO(item.date));
+      }).length;
+    },
+    pheResult() {
+      let phe = 0;
+      this.pheLog.forEach(item => {
+        phe += item.phe;
+      });
+      return Math.round(phe);
+    },
+    graph() {
+      let newPheDiary = this.pheDiary;
+      let chartPheDiary = newPheDiary
+        .map(obj => {
+          return { x: obj.date, y: obj.phe };
+        })
+        .sort((a, b) => {
+          return parseISO(a.x) - parseISO(b.x);
+        });
+      return [
+        {
+          name: "Phe",
+          data: chartPheDiary
+        }
+      ];
+    },
+    chartOptions() {
+      return {
+        chart: {
+          sparkline: {
+            enabled: true
+          },
+          background: "transparent"
+        },
+        stroke: {
+          curve: "smooth"
+        },
+        xaxis: {
+          type: "datetime"
+        },
+        theme: {
+          mode: this.$vuetify.theme.dark === true ? "dark" : "light"
+        },
+        colors: ["#3498db"],
+        tooltip: {
+          enabled: false
+        }
+      };
+    },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "ownFood"])
+    ...mapState(["user", "pheLog", "aminoCounter", "pheDiary", "settings", "ownFood"])
   }
 };
 </script>
@@ -343,6 +494,15 @@ export default {
 .v-btn {
   text-transform: none;
 }
+
+.stat-card {
+  border: none;
+}
+
+.theme--light.stat-card {
+  background-color: #fafafa;
+}
+
 .tr-edit {
   cursor: pointer;
 }
@@ -355,7 +515,19 @@ export default {
   background-color: #fafafa;
 }
 
-.v-btn {
-  text-transform: none;
+.add-amino {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.theme--light .amino-router {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: inherit;
+}
+
+.theme--dark .amino-router {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: inherit;
 }
 </style>

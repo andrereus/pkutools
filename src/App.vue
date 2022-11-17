@@ -59,16 +59,6 @@
         <v-list-item-group>
           <v-subheader>{{ $t("app.logs") }}</v-subheader>
 
-          <v-list-item to="/phe-log">
-            <v-list-item-action>
-              <v-icon>{{ mdiTextBox }}</v-icon>
-            </v-list-item-action>
-
-            <v-list-item-content>
-              <v-list-item-title>{{ $t("phe-log.title") }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-
           <v-list-item to="/phe-diary">
             <v-list-item-action>
               <v-icon>{{ mdiBook }}</v-icon>
@@ -76,6 +66,16 @@
 
             <v-list-item-content>
               <v-list-item-title>{{ $t("phe-diary.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item to="/statistics">
+            <v-list-item-action>
+              <v-icon>{{ mdiChartBox }}</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("statistics.title") }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
 
@@ -285,6 +285,10 @@
         <v-icon>{{ mdiCalculatorVariant }}</v-icon>
       </v-btn>
 
+      <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
+        <v-icon>{{ mdiBook }}</v-icon>
+      </v-btn>
+
       <v-btn to="/own-food" value="own-food" :aria-label="$t('own-food.title')">
         <v-icon>{{ mdiFoodApple }}</v-icon>
       </v-btn>
@@ -293,12 +297,8 @@
         <v-icon color="primary" large>{{ mdiPlusCircle }}</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-log" value="phe-log" :aria-label="$t('phe-log.title')">
-        <v-icon>{{ mdiTextBox }}</v-icon>
-      </v-btn>
-
-      <v-btn to="/phe-diary" value="phe-diary" class="mobile-nav-hide" :aria-label="$t('phe-diary.title')">
-        <v-icon>{{ mdiBook }}</v-icon>
+      <v-btn to="/statistics" value="statistics" class="mobile-nav-hide" :aria-label="$t('statistics.title')">
+        <v-icon>{{ mdiChartBox }}</v-icon>
       </v-btn>
 
       <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
@@ -393,7 +393,8 @@ import {
   mdiBrightness4,
   mdiBrightness7,
   mdiPlusCircle,
-  mdiHelpCircle
+  mdiHelpCircle,
+  mdiChartBox
 } from "@mdi/js";
 
 export default {
@@ -422,6 +423,7 @@ export default {
     mdiBrightness7,
     mdiPlusCircle,
     mdiHelpCircle,
+    mdiChartBox,
     drawer: null,
     lang: [
       { name: "English", abbr: "en" },

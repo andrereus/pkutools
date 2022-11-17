@@ -13,11 +13,6 @@ const routes = [
     component: Home
   },
   {
-    path: "/phe-search",
-    name: "Phe Search",
-    component: () => import(/* webpackChunkName: "phe-search" */ "../views/PheSearch.vue")
-  },
-  {
     path: "/phe-calculator",
     name: "Phe Calculator",
     component: () => import(/* webpackChunkName: "phe-calculator" */ "../views/PheCalculator.vue")
@@ -33,14 +28,14 @@ const routes = [
     component: () => import(/* webpackChunkName: "own-food" */ "../views/OwnFood.vue")
   },
   {
-    path: "/phe-log",
-    name: "Phe Log",
-    component: () => import(/* webpackChunkName: "phe-log" */ "../views/PheLog.vue")
-  },
-  {
     path: "/phe-diary",
     name: "Phe Diary",
     component: () => import(/* webpackChunkName: "phe-diary" */ "../views/PheDiary.vue")
+  },
+  {
+    path: "/statistics",
+    name: "Statistics",
+    component: () => import(/* webpackChunkName: "statistics" */ "../views/Statistics.vue")
   },
   {
     path: "/amino-counter",
