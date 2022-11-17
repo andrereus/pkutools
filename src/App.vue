@@ -253,12 +253,7 @@
         <v-icon>{{ mdiHome }}</v-icon>
       </v-btn>
 
-      <v-btn
-        to="/phe-calculator"
-        value="phe-calculator"
-        class="mobile-nav-hide"
-        :aria-label="$t('phe-calculator.title')"
-      >
+      <v-btn to="/phe-calculator" value="phe-calculator" :aria-label="$t('phe-calculator.title')">
         <v-icon>{{ mdiCalculator }}</v-icon>
       </v-btn>
 
@@ -271,16 +266,16 @@
         <v-icon>{{ mdiCalculatorVariant }}</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
-        <v-icon>{{ mdiBook }}</v-icon>
-      </v-btn>
-
       <v-btn to="/own-food" value="own-food" :aria-label="$t('own-food.title')">
         <v-icon>{{ mdiFoodApple }}</v-icon>
       </v-btn>
 
       <v-btn @click="sheet = true" value="add" :aria-label="$t('common.add')" class="add-button mobile-nav-hide">
         <v-icon color="primary" large>{{ mdiPlusCircle }}</v-icon>
+      </v-btn>
+
+      <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
+        <v-icon>{{ mdiBook }}</v-icon>
       </v-btn>
 
       <v-btn to="/statistics" value="statistics" class="mobile-nav-hide" :aria-label="$t('statistics.title')">
@@ -291,7 +286,7 @@
         <v-icon>{{ mdiCupWater }}</v-icon>
       </v-btn>
 
-      <v-btn to="/settings" value="settings" :aria-label="$t('settings.title')">
+      <v-btn to="/settings" value="settings" class="mobile-nav-hide" :aria-label="$t('settings.title')">
         <v-icon>{{ mdiCog }}</v-icon>
       </v-btn>
 
