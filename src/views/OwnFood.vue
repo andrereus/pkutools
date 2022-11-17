@@ -341,7 +341,7 @@ export default {
           phe: this.calculatePhe()
         });
       this.dialog2 = false;
-      this.$router.push("home");
+      this.$router.push("/");
     }
   },
   watch: {
