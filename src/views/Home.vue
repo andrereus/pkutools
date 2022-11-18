@@ -98,7 +98,9 @@
           </p>
         </div>
 
-        <h3 v-if="userIsAuthenticated" class="text-caption mt-n2 mb-5 ml-1">{{ $t("phe-log.title") }}</h3>
+        <h3 v-if="userIsAuthenticated && advancedFood === null" class="text-caption mt-n2 mb-5 ml-1">
+          {{ $t("phe-log.title") }}
+        </h3>
         <PheLog v-if="advancedFood === null" />
 
         <div v-if="!userIsAuthenticated && advancedFood === null">
