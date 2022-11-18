@@ -2,27 +2,27 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline mt-1">{{ $t("settings.title") }}</h2>
+        <h2 class="text-h5 mt-1">{{ $t("settings.title") }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
-          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
-            <v-icon left>{{ mdiGoogle }}</v-icon>
+          <v-btn variant="flat" rounded @click="signInGoogle" class="mt-2">
+            <v-icon start>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
-          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
-            <v-icon left>{{ mdiFacebook }}</v-icon>
+          <v-btn variant="flat" rounded @click="signInFacebook" class="mt-2">
+            <v-icon start>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
         </div>
 
         <div v-if="userIsAuthenticated">
           <v-text-field
-            filled
+            variant="filled"
             rounded
             :label="$t('settings.max-phe')"
             v-model.number="settings.maxPhe"
@@ -30,7 +30,7 @@
           ></v-text-field>
 
           <v-text-field
-            filled
+            variant="filled"
             rounded
             :label="$t('settings.max-amino')"
             v-model.number="settings.maxAmino"
@@ -39,28 +39,28 @@
 
           <v-switch v-model="$vuetify.theme.dark" inset :label="$t('app.dark')" class="mt-n1 mb-2 ml-1"></v-switch>
 
-          <v-btn depressed rounded color="primary" class="mr-3 mb-3" @click="save">{{ $t("common.save") }}</v-btn>
+          <v-btn variant="flat" rounded color="primary" class="mr-3 mb-3" @click="save">{{ $t("common.save") }}</v-btn>
 
-          <h2 class="headline mt-6 mb-4">{{ $t("settings.reset-heading") }}</h2>
+          <h2 class="text-h5 mt-6 mb-4">{{ $t("settings.reset-heading") }}</h2>
 
-          <v-btn depressed rounded class="mr-6 mb-5" @click="resetLog">
+          <v-btn variant="flat" rounded class="mr-6 mb-5" @click="resetLog">
             {{ $t("settings.reset-log") }}
           </v-btn>
-          <v-btn depressed rounded class="mr-6 mb-5" @click="resetOwnFood">
+          <v-btn variant="flat" rounded class="mr-6 mb-5" @click="resetOwnFood">
             {{ $t("settings.reset-own-food") }}
           </v-btn>
           <br />
-          <v-btn depressed rounded class="mr-6 mb-5" @click="resetDiary">
+          <v-btn variant="flat" rounded class="mr-6 mb-5" @click="resetDiary">
             {{ $t("settings.reset-diary") }}
           </v-btn>
-          <v-btn depressed rounded class="mr-6 mb-5" @click="resetAM">
+          <v-btn variant="flat" rounded class="mr-6 mb-5" @click="resetAM">
             {{ $t("settings.reset-am") }}
           </v-btn>
 
-          <v-snackbar bottom color="teal" v-model="snackbar">
+          <v-snackbar location="bottom" color="teal" v-model="snackbar">
             {{ $t("settings.saved") }}
             <template v-slot:action="{ attrs }">
-              <v-btn text v-bind="attrs" @click="snackbar = false">
+              <v-btn variant="text" v-bind="attrs" @click="snackbar = false">
                 {{ $t("common.close") }}
               </v-btn>
             </template>
@@ -69,10 +69,10 @@
       </v-col>
     </v-row>
 
-    <v-snackbar bottom color="warning" v-model="offlineInfo">
+    <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn text v-bind="attrs" @click="offlineInfo = false">
+        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

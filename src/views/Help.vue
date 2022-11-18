@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline mt-1">{{ $t("help.title") }}</h2>
+        <h2 class="text-h5 mt-1">{{ $t("help.title") }}</h2>
       </v-col>
     </v-row>
 
@@ -10,34 +10,34 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <v-btn
           v-if="this.$i18n.locale === 'en'"
-          depressed
+          variant="flat"
           rounded
           href="https://youtu.be/lmiejnEFccY"
           target="_blank"
           class="mr-3 mb-3"
         >
-          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
+          <v-icon start>{{ mdiPlayCircleOutline }}</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
         <v-btn
           v-if="this.$i18n.locale === 'de'"
-          depressed
+          variant="flat"
           rounded
           href="https://youtu.be/5_-F4tM8_RQ"
           target="_blank"
           class="mr-3 mb-3"
         >
-          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
+          <v-icon start>{{ mdiPlayCircleOutline }}</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
-        <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
-          <v-icon left>{{ mdiPlay }}</v-icon>
+        <v-btn variant="flat" rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+          <v-icon start>{{ mdiPlay }}</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
 
-        <h2 class="headline my-6">{{ $t("help.faq") }}</h2>
+        <h2 class="text-h5 my-6">{{ $t("help.faq") }}</h2>
 
         <v-expansion-panels v-model="panel">
           <v-expansion-panel>
@@ -111,7 +111,7 @@
           </v-expansion-panel>
         </v-expansion-panels>
 
-        <h2 class="headline mt-9 mb-3">{{ $t("help.contact") }}</h2>
+        <h2 class="text-h5 mt-9 mb-3">{{ $t("help.contact") }}</h2>
 
         <!-- prettier-ignore -->
         <p>{{ $t("about.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>

@@ -2,20 +2,20 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline mt-1">{{ $t("amino-counter.title") }}</h2>
+        <h2 class="text-h5 mt-1">{{ $t("amino-counter.title") }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
-          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
-            <v-icon left>{{ mdiGoogle }}</v-icon>
+          <v-btn variant="flat" rounded @click="signInGoogle" class="mt-2">
+            <v-icon start>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
-          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
-            <v-icon left>{{ mdiFacebook }}</v-icon>
+          <v-btn variant="flat" rounded @click="signInFacebook" class="mt-2">
+            <v-icon start>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
 
@@ -39,9 +39,9 @@
           <p>{{ $t("amino-counter.description") }}</p>
 
           <v-progress-linear
-            :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
+            :model-value="(calculateAmino * 100) / (settings.maxAmino || 3)"
             height="40"
-            class="white--text my-6 amino-progress"
+            class="text-white my-6 amino-progress"
             rounded
             color="teal"
           >
@@ -49,15 +49,15 @@
           </v-progress-linear>
 
           <v-timeline dense>
-            <v-timeline-item v-for="(item, index) in aminoCounter" :key="index" small>
+            <v-timeline-item v-for="(item, index) in aminoCounter" :key="index" size="small">
               <p class="mb-0">{{ $t("amino-counter.serving") }} {{ getlocalDate(item.date) }}</p>
             </v-timeline-item>
 
-            <v-timeline-item fill-dot color="primary" large :icon="mdiCupWater">
-              <v-btn depressed rounded @click="takeAM" color="primary" class="mr-2 mt-2">
+            <v-timeline-item fill-dot dot-color="primary" size="large" :icon="mdiCupWater">
+              <v-btn variant="flat" rounded @click="takeAM" color="primary" class="mr-2 mt-2">
                 {{ $t("amino-counter.take") }}
               </v-btn>
-              <v-btn depressed rounded @click.stop="dialog = true" class="mr-2 mt-2">
+              <v-btn variant="flat" rounded @click.stop="dialog = true" class="mr-2 mt-2">
                 {{ $t("common.settings") }}
               </v-btn>
             </v-timeline-item>
@@ -71,12 +71,12 @@
           <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
             <v-card>
               <v-card-title>
-                <span class="headline">{{ $t("common.settings") }}</span>
+                <span class="text-h5">{{ $t("common.settings") }}</span>
               </v-card-title>
 
               <v-card-text>
                 <v-text-field
-                  filled
+                  variant="filled"
                   rounded
                   :label="$t('amino-counter.amount')"
                   v-model.number="settings.maxAmino"
@@ -87,7 +87,7 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
+                <v-btn variant="flat" @click="setMax">{{ $t("common.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -99,7 +99,7 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
+                <v-btn color="primary" variant="text" @click="alert = false">{{ $t("common.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -107,10 +107,10 @@
       </v-col>
     </v-row>
 
-    <v-snackbar bottom color="warning" v-model="offlineInfo">
+    <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn text v-bind="attrs" @click="offlineInfo = false">
+        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

@@ -13,7 +13,7 @@
       <tbody>
         <tr v-for="item in features" :key="item.name" class="tr-read-only">
           <td class="feature-name">
-            <v-icon left>{{ item.icon }}</v-icon>
+            <v-icon start>{{ item.icon }}</v-icon>
             <span v-if="$i18n.locale === 'en'">{{ item.en }}</span>
             <span v-if="$i18n.locale === 'de'">{{ item.de }}</span>
           </td>

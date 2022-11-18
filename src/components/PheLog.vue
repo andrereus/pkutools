@@ -32,60 +32,60 @@
       </v-data-table>
 
       <v-progress-linear
-        :value="(pheResult * 100) / (settings.maxPhe || 0)"
+        :model-value="(pheResult * 100) / (settings.maxPhe || 0)"
         height="15"
         class="mt-8"
         rounded
       ></v-progress-linear>
 
-      <p class="title font-weight-regular mt-6">{{ $t("phe-log.total") }}: {{ pheResult }} mg Phe</p>
+      <p class="text-h6 font-weight-regular mt-6">{{ $t("phe-log.total") }}: {{ pheResult }} mg Phe</p>
       <p class="mt-n2 mb-6">{{ $t("phe-log.remaining") }}: {{ (settings.maxPhe || 0) - pheResult }} mg Phe</p>
 
       <v-dialog v-model="dialog" max-width="500px">
         <template v-slot:activator="{ on, attrs }">
-          <v-btn depressed rounded color="primary" class="mr-3 mb-3" v-bind="attrs" v-on="on">
+          <v-btn variant="flat" rounded color="primary" class="mr-3 mb-3" v-bind="attrs" v-on="on">
             {{ $t("common.add") }}
           </v-btn>
         </template>
 
         <v-card>
           <v-card-title>
-            <span class="headline">{{ formTitle }}</span>
+            <span class="text-h5">{{ formTitle }}</span>
           </v-card-title>
 
           <v-card-text>
             <v-slide-group v-if="editedIndex === -1" class="mt-2" show-arrows="desktop">
               <v-slide-item>
-                <v-btn depressed rounded small to="/phe-calculator" class="mr-1">
-                  <v-icon left>{{ mdiCalculator }}</v-icon>
+                <v-btn variant="flat" rounded size="small" to="/phe-calculator" class="mr-1">
+                  <v-icon start>{{ mdiCalculator }}</v-icon>
                   {{ $t("phe-calculator.title") }}
                 </v-btn>
               </v-slide-item>
               <v-slide-item>
-                <v-btn depressed rounded small to="/protein-calculator" class="mr-1">
-                  <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
+                <v-btn variant="flat" rounded size="small" to="/protein-calculator" class="mr-1">
+                  <v-icon start>{{ mdiCalculatorVariant }}</v-icon>
                   {{ $t("protein-calculator.title") }}
                 </v-btn>
               </v-slide-item>
               <v-slide-item>
-                <v-btn depressed rounded small to="/barcode-scanner" class="mr-1">
-                  <v-icon left>{{ mdiBarcodeScan }}</v-icon>
+                <v-btn variant="flat" rounded size="small" to="/barcode-scanner" class="mr-1">
+                  <v-icon start>{{ mdiBarcodeScan }}</v-icon>
                   {{ $t("barcode-scanner.title") }}
                 </v-btn>
               </v-slide-item>
               <v-slide-item>
-                <v-btn depressed rounded small to="/own-food" class="mr-1">
-                  <v-icon left>{{ mdiFoodApple }}</v-icon>
+                <v-btn variant="flat" rounded size="small" to="/own-food" class="mr-1">
+                  <v-icon start>{{ mdiFoodApple }}</v-icon>
                   {{ $t("phe-log.own-food") }}
                 </v-btn>
               </v-slide-item>
             </v-slide-group>
 
-            <v-text-field filled rounded label="Name" v-model="editedItem.name" class="mt-6">
+            <v-text-field variant="filled" rounded label="Name" v-model="editedItem.name" class="mt-6">
               <template v-slot:append-outer>
                 <v-menu offset-y>
                   <template v-slot:activator="{ on, attrs }">
-                    <v-btn fab small depressed v-bind="attrs" v-on="on" class="mt-n2">
+                    <v-btn fab size="small" variant="flat" v-bind="attrs" v-on="on" class="mt-n2">
                       <img
                         :src="publicPath + 'img/food-icons/' + editedItem.icon + '.svg'"
                         v-if="editedItem.icon !== undefined && editedItem.icon !== null"
@@ -116,10 +116,10 @@
             </v-text-field>
 
             <v-text-field
-              filled
+              variant="filled"
               rounded
               :label="$t('phe-log.weight')"
-              :value="editedItem.weight"
+              :model-value="editedItem.weight"
               @keyup="editWeight"
               type="number"
               :append-icon="lockedValues ? mdiLock : mdiLockOpenVariant"
@@ -127,10 +127,10 @@
             ></v-text-field>
 
             <v-text-field
-              filled
+              variant="filled"
               rounded
               label="Phe (in mg)"
-              :value="editedItem.phe"
+              :model-value="editedItem.phe"
               @keyup="editPhe"
               type="number"
               :append-icon="lockedValues ? mdiLock : mdiLockOpenVariant"
@@ -140,34 +140,34 @@
 
           <v-card-actions class="mt-n6">
             <v-spacer></v-spacer>
-            <v-btn depressed color="primary" @click="save">{{ $t("common.save") }}</v-btn>
-            <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem()">
+            <v-btn variant="flat" color="primary" @click="save">{{ $t("common.save") }}</v-btn>
+            <v-btn variant="flat" color="warning" v-if="editedIndex !== -1" @click="deleteItem()">
               {{ $t("common.delete") }}
             </v-btn>
-            <v-btn depressed @click="close">{{ $t("common.cancel") }}</v-btn>
+            <v-btn variant="flat" @click="close">{{ $t("common.cancel") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
 
-      <v-btn depressed rounded color="success" class="mr-3 mb-3" @click="saveResult">
+      <v-btn variant="flat" rounded color="success" class="mr-3 mb-3" @click="saveResult">
         {{ $t("phe-log.save-day") }}
       </v-btn>
 
       <v-dialog v-model="dialog2" max-width="500px" @click:outside="setMax">
         <template v-slot:activator="{ on, attrs }">
-          <v-btn depressed rounded v-bind="attrs" v-on="on" class="mr-3 mb-3">
+          <v-btn variant="flat" rounded v-bind="attrs" v-on="on" class="mr-3 mb-3">
             {{ $t("common.settings") }}
           </v-btn>
         </template>
 
         <v-card>
           <v-card-title>
-            <span class="headline">{{ $t("common.settings") }}</span>
+            <span class="text-h5">{{ $t("common.settings") }}</span>
           </v-card-title>
 
           <v-card-text>
             <v-text-field
-              filled
+              variant="filled"
               rounded
               :label="$t('phe-log.max')"
               v-model.number="settings.maxPhe"
@@ -178,7 +178,7 @@
 
           <v-card-actions class="mt-n6">
             <v-spacer></v-spacer>
-            <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
+            <v-btn variant="flat" @click="setMax">{{ $t("common.ok") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -190,16 +190,16 @@
 
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
+            <v-btn color="primary" variant="text" @click="alert = false">{{ $t("common.ok") }}</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
     </div>
 
-    <v-snackbar bottom color="warning" v-model="offlineInfo">
+    <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn text v-bind="attrs" @click="offlineInfo = false">
+        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

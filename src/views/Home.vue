@@ -2,8 +2,8 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
-        <h2 class="headline mt-1" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
+        <h2 class="text-h5 mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
+        <h2 class="text-h5 mt-1" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
       </v-col>
     </v-row>
 
@@ -15,7 +15,7 @@
           <v-text-field
             v-model="search"
             :label="$t('phe-search.search')"
-            filled
+            variant="filled"
             rounded
             autocomplete="off"
             @keyup="searchFood"
@@ -23,7 +23,15 @@
             @click:clear="advancedFood = null"
           >
             <template v-slot:append-outer>
-              <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
+              <v-btn
+                variant="flat"
+                fab
+                size="small"
+                :loading="loading"
+                color="primary"
+                @click="searchFood"
+                class="mt-n2"
+              >
                 <v-icon>{{ mdiMagnify }}</v-icon>
               </v-btn>
             </template>
@@ -32,7 +40,7 @@
           <v-dialog v-model="dialog" max-width="500px">
             <v-card>
               <v-card-title>
-                <span class="headline">
+                <span class="text-h5">
                   <img :src="publicPath + 'img/food-icons/' + icon + '.svg'" width="35" class="food-icon" />
                   {{ name }}
                 </span>
@@ -40,7 +48,7 @@
 
               <v-card-text>
                 <v-text-field
-                  filled
+                  variant="filled"
                   rounded
                   :label="$t('phe-search.weight')"
                   v-model.number="weight"
@@ -48,15 +56,15 @@
                   class="mt-6"
                   clearable
                 ></v-text-field>
-                <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
+                <p class="text-h6 font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
               </v-card-text>
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn depressed color="primary" @click="save" v-if="userIsAuthenticated">
+                <v-btn variant="flat" color="primary" @click="save" v-if="userIsAuthenticated">
                   {{ $t("common.add") }}
                 </v-btn>
-                <v-btn depressed @click="dialog = false">{{ $t("common.close") }}</v-btn>
+                <v-btn variant="flat" @click="dialog = false">{{ $t("common.close") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -104,26 +112,26 @@
         <PheLog v-if="advancedFood === null" />
 
         <div v-if="!userIsAuthenticated && advancedFood === null">
-          <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
-            <v-icon left>{{ mdiCalculator }}</v-icon>
+          <v-btn variant="flat" rounded to="/phe-calculator" class="mr-3 mb-3">
+            <v-icon start>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
-          <v-btn depressed rounded to="/protein-calculator" class="mr-3 mb-3">
-            <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
+          <v-btn variant="flat" rounded to="/protein-calculator" class="mr-3 mb-3">
+            <v-icon start>{{ mdiCalculatorVariant }}</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
-          <v-btn depressed rounded to="/barcode-scanner" class="mr-3 mb-3">
-            <v-icon left>{{ mdiBarcodeScan }}</v-icon>
+          <v-btn variant="flat" rounded to="/barcode-scanner" class="mr-3 mb-3">
+            <v-icon start>{{ mdiBarcodeScan }}</v-icon>
             {{ $t("barcode-scanner.title") }}
           </v-btn>
-          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
-            <v-icon left>{{ mdiFoodApple }}</v-icon>
+          <v-btn v-if="userIsAuthenticated" variant="flat" rounded to="/own-food" class="mr-2 mb-3">
+            <v-icon start>{{ mdiFoodApple }}</v-icon>
             {{ $t("home.own-food-long") }}
           </v-btn>
 
           <v-menu v-if="!userIsAuthenticated" offset-y>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
+              <v-btn variant="flat" rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
                 {{ $t("home.more") }}
               </v-btn>
             </template>
@@ -145,54 +153,54 @@
 
           <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
 
-          <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
+          <h2 class="text-h5 mt-4 mb-6">{{ $t("home.features") }}</h2>
 
           <FeatureComparison home class="mb-6" />
 
-          <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
-            <v-icon left>{{ mdiHelpCircleOutline }}</v-icon>
+          <v-btn variant="flat" rounded to="/help" color="primary" class="mr-3 mb-3">
+            <v-icon start>{{ mdiHelpCircleOutline }}</v-icon>
             {{ $t("app.install") }}
           </v-btn>
 
           <v-btn
             v-if="this.$i18n.locale === 'en'"
-            depressed
+            variant="flat"
             rounded
             href="https://youtu.be/lmiejnEFccY"
             target="_blank"
             class="mr-3 mb-3"
           >
-            <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
+            <v-icon start>{{ mdiPlayCircleOutline }}</v-icon>
             {{ $t("home.video") }}
           </v-btn>
 
           <v-btn
             v-if="this.$i18n.locale === 'de'"
-            depressed
+            variant="flat"
             rounded
             href="https://youtu.be/5_-F4tM8_RQ"
             target="_blank"
             class="mr-3 mb-3"
           >
-            <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
+            <v-icon start>{{ mdiPlayCircleOutline }}</v-icon>
             {{ $t("home.video") }}
           </v-btn>
 
-          <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
-            <v-icon left>{{ mdiPlay }}</v-icon>
+          <v-btn variant="flat" rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+            <v-icon start>{{ mdiPlay }}</v-icon>
             {{ $t("home.mobile-video") }}
           </v-btn>
 
-          <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
+          <v-btn variant="flat" rounded to="/other-apps" class="mr-3 mb-3">
             {{ $t("home.compare") }}
           </v-btn>
         </div>
       </v-col>
     </v-row>
-    <v-snackbar bottom color="warning" v-model="offlineInfo">
+    <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn text v-bind="attrs" @click="offlineInfo = false">
+        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

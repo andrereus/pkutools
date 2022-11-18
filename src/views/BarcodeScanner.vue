@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="headline mt-1">{{ $t("barcode-scanner.title") }}</h2>
+        <h2 class="text-h5 mt-1">{{ $t("barcode-scanner.title") }}</h2>
       </v-col>
     </v-row>
 
@@ -10,14 +10,14 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn depressed rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mb-3">
+            <v-btn variant="flat" rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mb-3">
               {{ $t("barcode-scanner.scan-barcode") }}
             </v-btn>
           </template>
 
           <v-card>
             <v-card-title>
-              <span class="headline">{{ $t("barcode-scanner.scan-barcode") }}</span>
+              <span class="text-h5">{{ $t("barcode-scanner.scan-barcode") }}</span>
             </v-card-title>
 
             <v-card-text>
@@ -32,7 +32,7 @@
 
             <v-card-actions class="mt-n6">
               <v-spacer></v-spacer>
-              <v-btn depressed @click="cancel">{{ $t("common.cancel") }}</v-btn>
+              <v-btn variant="flat" @click="cancel">{{ $t("common.cancel") }}</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -49,13 +49,13 @@
 
           <h2 class="headlin my-3">{{ result.product.product_name }}</h2>
 
-          <p class="title font-weight-regular mb-6">
+          <p class="text-h6 font-weight-regular mb-6">
             {{ result.product.nutriments.proteins_100g + result.product.nutriments.proteins_unit }}
             {{ $t("barcode-scanner.protein") }}
           </p>
 
           <v-text-field
-            filled
+            variant="filled"
             rounded
             :label="$t('protein-calculator.weight')"
             v-model.number="weight"
@@ -63,9 +63,9 @@
             clearable
           ></v-text-field>
 
-          <p class="title font-weight-regular">~ {{ calculatePhe() }} mg Phe</p>
+          <p class="text-h6 font-weight-regular">~ {{ calculatePhe() }} mg Phe</p>
 
-          <v-btn depressed rounded color="primary" @click="save" class="mr-3 mt-3" v-if="userIsAuthenticated">
+          <v-btn variant="flat" rounded color="primary" @click="save" class="mr-3 mt-3" v-if="userIsAuthenticated">
             {{ $t("common.add") }}
           </v-btn>
         </div>
