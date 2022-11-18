@@ -98,7 +98,7 @@
           </p>
         </div>
 
-        <h3 class="text-caption mt-n2 mb-5 ml-1">{{ $t("phe-log.title") }}</h3>
+        <h3 v-if="userIsAuthenticated" class="text-caption mt-n2 mb-5 ml-1">{{ $t("phe-log.title") }}</h3>
         <PheLog v-if="advancedFood === null" />
 
         <div v-if="!userIsAuthenticated && advancedFood === null">
@@ -109,6 +109,10 @@
           <v-btn depressed rounded to="/protein-calculator" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
             {{ $t("protein-calculator.title") }}
+          </v-btn>
+          <v-btn depressed rounded to="/barcode-scanner" class="mr-3 mb-3">
+            <v-icon left>{{ mdiBarcodeScan }}</v-icon>
+            {{ $t("barcode-scanner.title") }}
           </v-btn>
           <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-2 mb-3">
             <v-icon left>{{ mdiFoodApple }}</v-icon>
@@ -213,7 +217,8 @@ import {
   mdiPlay,
   mdiInformationVariant,
   mdiPlus,
-  mdiHelpCircleOutline
+  mdiHelpCircleOutline,
+  mdiBarcodeScan
 } from "@mdi/js";
 
 export default {
@@ -241,6 +246,7 @@ export default {
     mdiInformationVariant,
     mdiPlus,
     mdiHelpCircleOutline,
+    mdiBarcodeScan,
     offlineInfo: false,
     publicPath: process.env.BASE_URL,
     dialog: false,

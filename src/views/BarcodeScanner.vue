@@ -69,6 +69,11 @@
             {{ $t("common.add") }}
           </v-btn>
         </div>
+
+        <p class="mt-6 text--secondary">
+          <v-icon>{{ mdiInformationVariant }}</v-icon>
+          {{ $t("barcode-scanner.source") }}
+        </p>
       </v-col>
     </v-row>
   </div>
@@ -79,6 +84,7 @@ import { mapState } from "vuex";
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
 import { StreamBarcodeReader } from "vue-barcode-reader";
+import { mdiInformationVariant } from "@mdi/js";
 
 export default {
   components: {
@@ -86,11 +92,12 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$t("about.title"),
-      meta: [{ name: "description", content: this.$t("about.description") }]
+      title: this.$t("barcode-scanner.title"),
+      meta: [{ name: "description", content: this.$t("app.description") }]
     };
   },
   data: () => ({
+    mdiInformationVariant,
     dialog: false,
     loaded: false,
     result: null,

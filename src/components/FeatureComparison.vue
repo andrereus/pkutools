@@ -60,7 +60,8 @@ import {
   mdiFoodAppleOutline,
   mdiCheckBold,
   mdiCircleHalfFull,
-  mdiCloseCircleOutline
+  mdiCloseCircleOutline,
+  mdiBarcodeScan
 } from "@mdi/js";
 
 export default {
@@ -96,6 +97,14 @@ export default {
         pkutools: 1,
         pkumanager: 1,
         pherechner: 1
+      },
+      {
+        icon: mdiBarcodeScan,
+        en: "Barcode Scanner",
+        de: "Barcode Scanner",
+        pkutools: 1,
+        pkumanager: 3,
+        pherechner: 3
       },
       {
         icon: mdiFoodApple,

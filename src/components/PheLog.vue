@@ -68,6 +68,12 @@
                 </v-btn>
               </v-slide-item>
               <v-slide-item>
+                <v-btn depressed rounded small to="/barcode-scanner" class="mr-1">
+                  <v-icon left>{{ mdiBarcodeScan }}</v-icon>
+                  {{ $t("barcode-scanner.title") }}
+                </v-btn>
+              </v-slide-item>
+              <v-slide-item>
                 <v-btn depressed rounded small to="/own-food" class="mr-1">
                   <v-icon left>{{ mdiFoodApple }}</v-icon>
                   {{ $t("phe-log.own-food") }}
@@ -217,7 +223,8 @@ import {
   mdiCalculatorVariant,
   mdiFoodApple,
   mdiLock,
-  mdiLockOpenVariant
+  mdiLockOpenVariant,
+  mdiBarcodeScan
 } from "@mdi/js";
 
 export default {
@@ -231,6 +238,7 @@ export default {
     mdiFoodApple,
     mdiLock,
     mdiLockOpenVariant,
+    mdiBarcodeScan,
     publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,

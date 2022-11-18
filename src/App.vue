@@ -35,6 +35,16 @@
             </v-list-item-content>
           </v-list-item>
 
+          <v-list-item to="/barcode-scanner">
+            <v-list-item-action>
+              <v-icon>{{ mdiBarcodeScan }}</v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("barcode-scanner.title") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item to="/own-food">
             <v-list-item-action>
               <v-icon>{{ mdiFoodApple }}</v-icon>
@@ -271,6 +281,10 @@
         <v-icon>{{ mdiCalculatorVariant }}</v-icon>
       </v-btn>
 
+      <v-btn to="/barcode-scanner" value="barcode-scanner" :aria-label="$t('barcode-scanner.title')">
+        <v-icon>{{ mdiBarcodeScan }}</v-icon>
+      </v-btn>
+
       <v-btn to="/own-food" value="own-food" :aria-label="$t('own-food.title')">
         <v-icon>{{ mdiFoodApple }}</v-icon>
       </v-btn>
@@ -316,6 +330,13 @@
             <v-icon>{{ mdiCalculatorVariant }}</v-icon>
           </v-list-item-icon>
           <v-list-item-title>{{ $t("protein-calculator.title") }}</v-list-item-title>
+        </v-list-item>
+
+        <v-list-item to="/barcode-scanner" @click="sheet = false">
+          <v-list-item-icon>
+            <v-icon>{{ mdiBarcodeScan }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-title>{{ $t("barcode-scanner.title") }}</v-list-item-title>
         </v-list-item>
 
         <v-list-item to="/own-food" @click="sheet = false">
@@ -374,7 +395,8 @@ import {
   mdiPlusCircle,
   mdiHelpCircle,
   mdiChartBox,
-  mdiHomeSearch
+  mdiHomeSearch,
+  mdiBarcodeScan
 } from "@mdi/js";
 
 export default {
@@ -404,6 +426,7 @@ export default {
     mdiHelpCircle,
     mdiChartBox,
     mdiHomeSearch,
+    mdiBarcodeScan,
     drawer: null,
     lang: [
       { name: "English", abbr: "en" },

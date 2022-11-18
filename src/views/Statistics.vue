@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense type="warning" class="mt-2">{{ $t("statistics.wip") }}</v-alert>
+        <v-alert dense outlined type="warning" class="mt-2">{{ $t("statistics.wip") }}</v-alert>
         <h2 class="headline mt-1">{{ $t("statistics.title") }}</h2>
       </v-col>
     </v-row>
@@ -117,8 +117,7 @@ import {
 export default {
   metaInfo() {
     return {
-      title: this.$t("app.title"),
-      titleTemplate: null,
+      title: this.$t("statistics.title"),
       meta: [{ name: "description", content: this.$t("app.description") }]
     };
   },

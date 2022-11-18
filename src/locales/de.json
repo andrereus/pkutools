@@ -71,7 +71,8 @@
     "title": "Barcode Scanner",
     "scan-barcode": "Barcode scannen",
     "please-wait": "Bitte warten ...",
-    "protein": "Eiweiß"
+    "protein": "Eiweiß",
+    "source": "Datenquelle: openfoodfacts.org"
   },
   "own-food": {
     "title": "Eigene Lebensmittel",
