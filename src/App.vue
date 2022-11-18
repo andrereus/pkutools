@@ -253,7 +253,12 @@
         <v-icon>{{ mdiHomeSearch }}</v-icon>
       </v-btn>
 
-      <v-btn to="/phe-calculator" value="phe-calculator" :aria-label="$t('phe-calculator.title')">
+      <v-btn
+        to="/phe-calculator"
+        value="phe-calculator"
+        class="mobile-nav-hide"
+        :aria-label="$t('phe-calculator.title')"
+      >
         <v-icon>{{ mdiCalculator }}</v-icon>
       </v-btn>
 
@@ -282,12 +287,12 @@
         <v-icon>{{ mdiChartBox }}</v-icon>
       </v-btn>
 
-      <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
-        <v-icon>{{ mdiCupWater }}</v-icon>
+      <v-btn to="/settings" value="settings" :aria-label="$t('settings.title')">
+        <v-icon>{{ mdiCog }}</v-icon>
       </v-btn>
 
-      <v-btn to="/settings" value="settings" class="mobile-nav-hide" :aria-label="$t('settings.title')">
-        <v-icon>{{ mdiCog }}</v-icon>
+      <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
+        <v-icon>{{ mdiCupWater }}</v-icon>
       </v-btn>
 
       <v-btn to="/help" value="help" class="mobile-nav-hide" :aria-label="$t('help.title')">
