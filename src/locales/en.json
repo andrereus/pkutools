@@ -114,7 +114,7 @@
     "take": "Add serving",
     "amount": "Servings per day",
     "serving": "1 serving",
-    "limit": "The Amino Counter has a limit of 100 entries. Please reset the history."
+    "limit": "The Amino Counter has a limit of 100 entries. Please reset the history in the Settings."
   },
   "settings": {
     "title": "Settings",

@@ -114,7 +114,7 @@
     "take": "Portion hinzufügen",
     "amount": "Portionen pro Tag",
     "serving": "1 Portion",
-    "limit": "Der Amino Zähler hat ein Limit von 100 Einträgen. Bitte resette den Verlauf."
+    "limit": "Der Amino Zähler hat ein Limit von 100 Einträgen. Bitte resette den Verlauf in den Einstellungen."
   },
   "settings": {
     "title": "Einstellungen",
