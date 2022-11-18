@@ -3,8 +3,17 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
-import vuetify from "./plugins/vuetify";
 import i18n from "./plugins/i18n";
+
+import "vuetify/styles";
+import { createVuetify } from "vuetify";
+import * as components from "vuetify/components";
+import * as directives from "vuetify/directives";
+
+const vuetify = createVuetify({
+  components,
+  directives
+});
 
 Vue.config.productionTip = false;
 
