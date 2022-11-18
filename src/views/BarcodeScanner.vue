@@ -72,7 +72,7 @@
 
         <p class="mt-6 text--secondary">
           <v-icon>{{ mdiInformationVariant }}</v-icon>
-          {{ $t("barcode-scanner.source") }}
+          {{ $t("barcode-scanner.info") }}
         </p>
       </v-col>
     </v-row>

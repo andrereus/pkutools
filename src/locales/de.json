@@ -72,7 +72,7 @@
     "scan-barcode": "Barcode scannen",
     "please-wait": "Bitte warten ...",
     "protein": "Eiweiß",
-    "source": "Datenquelle: openfoodfacts.org"
+    "info": "Phe wird aus Eiweiß berechnet | Datenquelle: openfoodfacts.org"
   },
   "own-food": {
     "title": "Eigene Lebensmittel",
