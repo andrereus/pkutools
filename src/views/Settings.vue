@@ -43,17 +43,17 @@
 
           <h2 class="headline mt-6 mb-4">{{ $t("settings.reset-heading") }}</h2>
 
-          <v-btn depressed rounded class="mr-6 mb-6" @click="resetLog">
+          <v-btn depressed rounded class="mr-6 mb-5" @click="resetLog">
             {{ $t("settings.reset-log") }}
           </v-btn>
-          <v-btn depressed rounded class="mr-6 mb-6" @click="resetOwnFood">
+          <v-btn depressed rounded class="mr-6 mb-5" @click="resetOwnFood">
             {{ $t("settings.reset-own-food") }}
           </v-btn>
           <br />
-          <v-btn depressed rounded class="mr-6 mb-6" @click="resetDiary">
+          <v-btn depressed rounded class="mr-6 mb-5" @click="resetDiary">
             {{ $t("settings.reset-diary") }}
           </v-btn>
-          <v-btn depressed rounded class="mr-6 mb-6" @click="resetAM">
+          <v-btn depressed rounded class="mr-6 mb-5" @click="resetAM">
             {{ $t("settings.reset-am") }}
           </v-btn>
 
