@@ -43,17 +43,17 @@
 
           <h2 class="headline mt-6 mb-4">{{ $t("settings.reset-heading") }}</h2>
 
-          <v-btn depressed rounded class="mr-3 mb-3" @click="resetLog">
+          <v-btn depressed rounded class="mr-6 mb-6" @click="resetLog">
             {{ $t("settings.reset-log") }}
           </v-btn>
-          <v-btn depressed rounded class="mr-3 mb-3" @click="resetDiary">
-            {{ $t("settings.reset-diary") }}
-          </v-btn>
-          <br />
-          <v-btn depressed rounded class="mr-3 mb-3" @click="resetOwnFood">
+          <v-btn depressed rounded class="mr-6 mb-6" @click="resetOwnFood">
             {{ $t("settings.reset-own-food") }}
           </v-btn>
-          <v-btn depressed rounded class="mr-3 mb-3" @click="resetAM">
+          <br />
+          <v-btn depressed rounded class="mr-6 mb-6" @click="resetDiary">
+            {{ $t("settings.reset-diary") }}
+          </v-btn>
+          <v-btn depressed rounded class="mr-6 mb-6" @click="resetAM">
             {{ $t("settings.reset-am") }}
           </v-btn>
 
@@ -138,16 +138,6 @@ export default {
         this.$router.push("/");
       }
     },
-    resetDiary() {
-      let r = confirm(this.$t("settings.reset-diary") + "?");
-      if (r === true) {
-        firebase
-          .database()
-          .ref(this.user.id + "/pheDiary")
-          .remove();
-        this.$router.push("phe-diary");
-      }
-    },
     resetOwnFood() {
       let r = confirm(this.$t("settings.reset-own-food") + "?");
       if (r === true) {
@@ -156,6 +146,16 @@ export default {
           .ref(this.user.id + "/ownFood")
           .remove();
         this.$router.push("own-food");
+      }
+    },
+    resetDiary() {
+      let r = confirm(this.$t("settings.reset-diary") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/pheDiary")
+          .remove();
+        this.$router.push("phe-diary");
       }
     },
     resetAM() {

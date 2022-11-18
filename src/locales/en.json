@@ -123,10 +123,10 @@
     "max-phe": "Phe tolerance per day",
     "saved": "Saved",
     "reset-heading": "Reset",
-    "reset-log": "Delete todays log",
-    "reset-diary": "Delete Phe Diary",
-    "reset-own-food": "Delete Own Food",
-    "reset-am": "Delete amino acid mixtures"
+    "reset-log": "Reset todays log",
+    "reset-diary": "Reset Phe Diary",
+    "reset-own-food": "Reset Own Food",
+    "reset-am": "Reset Amino Counter"
   },
   "help": {
     "title": "Help",

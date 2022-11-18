@@ -122,11 +122,11 @@
     "max-amino": "Amino-Portionen pro Tag",
     "max-phe": "Phe-Toleranz pro Tag",
     "saved": "Gespeichert",
-    "reset-heading": "Zurücksetzen",
-    "reset-log": "Heutiges Protokoll löschen",
-    "reset-diary": "Phe Tagebuch löschen",
-    "reset-own-food": "Eigene Lebensmittel löschen",
-    "reset-am": "Aminosäurenmischungen löschen"
+    "reset-heading": "Reset",
+    "reset-log": "Reset Heutiges Protokoll",
+    "reset-diary": "Reset Phe Tagebuch",
+    "reset-own-food": "Reset Eigene Lebensmittel",
+    "reset-am": "Reset Amino Zähler"
   },
   "help": {
     "title": "Hilfe",
