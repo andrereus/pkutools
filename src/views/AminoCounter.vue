@@ -63,6 +63,11 @@
             </v-timeline-item>
           </v-timeline>
 
+          <p class="text--secondary mt-5">
+            <v-icon>{{ mdiInformationVariant }}</v-icon>
+            {{ $t("amino-counter.note") }}
+          </p>
+
           <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
             <v-card>
               <v-card-title>
@@ -120,7 +125,7 @@ import "firebase/compat/auth";
 import "firebase/compat/database";
 import { formatRelative, isToday, parseISO } from "date-fns";
 import { enUS, de } from "date-fns/locale";
-import { mdiGoogle, mdiFacebook, mdiCupWater } from "@mdi/js";
+import { mdiGoogle, mdiFacebook, mdiCupWater, mdiInformationVariant } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -133,6 +138,7 @@ export default {
     mdiGoogle,
     mdiFacebook,
     mdiCupWater,
+    mdiInformationVariant,
     dialog: false,
     alert: false,
     offlineInfo: false

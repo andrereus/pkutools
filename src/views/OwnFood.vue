@@ -132,6 +132,11 @@
             </v-card>
           </v-dialog>
 
+          <p class="text--secondary mt-5">
+            <v-icon>{{ mdiInformationVariant }}</v-icon>
+            {{ $t("own-food.note") }}
+          </p>
+
           <v-dialog v-model="dialog2" max-width="500px">
             <v-card>
               <v-card-title>
@@ -208,7 +213,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
 import foodIcons from "../components/data/food-icons.json";
-import { mdiGoogle, mdiFacebook } from "@mdi/js";
+import { mdiGoogle, mdiFacebook, mdiInformationVariant } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -220,6 +225,7 @@ export default {
   data: () => ({
     mdiGoogle,
     mdiFacebook,
+    mdiInformationVariant,
     publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,

@@ -74,7 +74,8 @@
     "weight": "Gewicht (in g)",
     "date": "Datum",
     "chart": "Noch nicht genug Einträge für das Diagramm.",
-    "limit": "Eigene Lebensmittel sind auf 500 Einträge limitiert."
+    "limit": "Eigene Lebensmittel sind auf 500 Einträge limitiert.",
+    "note": "Limitiert auf 500 Einträge."
   },
   "phe-log": {
     "title": "Phe Protokoll",
@@ -95,13 +96,13 @@
     "date": "Datum",
     "phe": "Gesamt Phe (in mg)",
     "chart": "Eintrag hinzufügen",
-    "limit": "Das Phe Tagebuch hat ein Limit von 100 Einträgen. Exportiere deine Daten in Excel.",
+    "limit": "Das Phe Tagebuch ist limitert auf 100 Einträge. Exportiere deine Daten in Excel. Reset über Einstellungen.",
     "export": "Exportieren",
     "log": "Protokoll (Bearbeitung aktualisiert nich Gesamt Phe!)",
     "export-confirm": "Phe Tagebuch in Excel exportieren? Hinweis: Vermeide ein doppeltes Datum im Phe Tagebuch",
     "export-overview": "Übersicht",
     "export-filename": "PKU Tools - Phe Tagebuch",
-    "note": "Exportiere ab und zu, das Limit sind 100 Einträge (~3 Monate). Reset über Einstellungen."
+    "note": "Limitiert auf 100 Einträge (~3 Monate). Export und dann Reset über Einstellungen."
   },
   "statistics": {
     "title": "Statistiken",
@@ -114,7 +115,8 @@
     "take": "Portion hinzufügen",
     "amount": "Portionen pro Tag",
     "serving": "1 Portion",
-    "limit": "Der Amino Zähler hat ein Limit von 100 Einträgen. Bitte resette den Verlauf in den Einstellungen."
+    "limit": "Der Amino Zähler ist limitert auf 100 Einträge. Bitte resette den Verlauf in den Einstellungen.",
+    "note": "Limitiert auf 100 Einträge. Reset über Einstellungen."
   },
   "settings": {
     "title": "Einstellungen",
