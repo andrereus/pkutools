@@ -67,6 +67,12 @@
     "weight": "Consumed weight (in g)",
     "name": "Food name"
   },
+  "barcode-scanner": {
+    "title": "Barcode Scanner",
+    "scan-barcode": "Scan barcode",
+    "please-wait": "Please wait ...",
+    "protein": "Protein"
+  },
   "own-food": {
     "title": "Own Food",
     "description": "Save own food and phe values.",

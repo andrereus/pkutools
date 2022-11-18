@@ -67,6 +67,12 @@
     "weight": "Konsumiertes Gewicht (in g)",
     "name": "Lebensmittelname"
   },
+  "barcode-scanner": {
+    "title": "Barcode Scanner",
+    "scan-barcode": "Barcode scannen",
+    "please-wait": "Bitte warten ...",
+    "protein": "Eiweiß"
+  },
   "own-food": {
     "title": "Eigene Lebensmittel",
     "description": "Speichere eigene Lebensmittel und Phe-Werte.",
