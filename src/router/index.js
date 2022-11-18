@@ -13,6 +13,11 @@ const routes = [
     component: Home
   },
   {
+    path: "/barcode-scanner",
+    name: "Barcode Scanner",
+    component: () => import(/* webpackChunkName: "barcode-scanner" */ "../views/BarcodeScanner.vue")
+  },
+  {
     path: "/phe-calculator",
     name: "Phe Calculator",
     component: () => import(/* webpackChunkName: "phe-calculator" */ "../views/PheCalculator.vue")
