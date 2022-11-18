@@ -168,7 +168,7 @@
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on" class="lang-button">{{ locale }}</v-btn>
+          <v-btn v-bind="attrs" icon v-on="on" class="lang-button">{{ locale }}</v-btn>
         </template>
 
         <v-list>
@@ -180,7 +180,7 @@
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on" :aria-label="$t('app.account-menu')">
+          <v-btn v-bind="attrs" icon v-on="on" :aria-label="$t('app.account-menu')">
             <v-avatar size="32">
               <v-icon v-if="!userIsAuthenticated">{{ mdiAccountCircle }}</v-icon>
               <img v-if="userIsAuthenticated" :src="userPhotoUrl" :alt="$t('app.profile-picture')" />
@@ -351,7 +351,7 @@
     <v-snackbar location="bottom" color="primary" :model-value="updateExists" :timeout="-1">
       {{ $t("app.update-info") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="refreshApp">
+        <v-btn v-bind="attrs" variant="text" @click="refreshApp">
           {{ $t("app.update") }}
         </v-btn>
       </template>
@@ -360,7 +360,7 @@
     <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
+        <v-btn v-bind="attrs" variant="text" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

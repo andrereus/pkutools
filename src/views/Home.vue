@@ -131,7 +131,7 @@
 
           <v-menu v-if="!userIsAuthenticated" offset-y>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn variant="flat" rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
+              <v-btn v-bind="attrs" variant="flat" rounded class="mr-3 mb-3" v-on="on">
                 {{ $t("home.more") }}
               </v-btn>
             </template>
@@ -200,7 +200,7 @@
     <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
+        <v-btn v-bind="attrs" variant="text" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

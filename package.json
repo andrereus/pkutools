@@ -61,8 +61,7 @@
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended",
-      "@vue/prettier",
-      "plugin:vuetify/base"
+      "@vue/prettier"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"

@@ -68,7 +68,7 @@
 
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn variant="flat" rounded color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
+              <v-btn v-bind="attrs" variant="flat" rounded color="primary" class="mr-3 mt-3" v-on="on">
                 {{ $t("common.add") }}
               </v-btn>
             </template>
@@ -83,7 +83,7 @@
                   <template v-slot:append-outer>
                     <v-menu offset-y>
                       <template v-slot:activator="{ on, attrs }">
-                        <v-btn fab size="small" variant="flat" v-bind="attrs" v-on="on" class="mt-n2">
+                        <v-btn v-bind="attrs" fab size="small" variant="flat" v-on="on" class="mt-n2">
                           <img
                             :src="publicPath + 'img/food-icons/' + editedItem.icon + '.svg'"
                             v-if="editedItem.icon !== undefined && editedItem.icon !== null"
@@ -199,7 +199,7 @@
     <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
+        <v-btn v-bind="attrs" variant="text" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

@@ -31,7 +31,7 @@
 
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn variant="flat" rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
+            <v-btn v-bind="attrs" variant="flat" rounded color="primary" v-on="on" class="mr-3 mt-3">
               {{ $t("common.add") }}
             </v-btn>
           </template>
