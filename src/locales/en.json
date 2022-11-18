@@ -101,7 +101,7 @@
     "export-confirm": "Export Phe Diary in Excel? Note: Avoid duplicate dates in the Phe Diary",
     "export-overview": "Overview",
     "export-filename": "PKU Tools - Phe Diary",
-    "note": "Export from time to time, the limit are 100 entries (~3 months)."
+    "note": "Export from time to time, the limit are 100 entries (~3 months). Reset via Settings."
   },
   "statistics": {
     "title": "Statistics",
