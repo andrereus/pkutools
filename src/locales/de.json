@@ -69,7 +69,7 @@
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",
-    "note": "Experimentelle Funktion: Falls die Kamera nicht startet versuche einen Neustart des Geräts.",
+    "note": "Experimentelle Funktion: Falls die Kamera in der iOS App nicht startet, versuche es über den Browser.",
     "scan-barcode": "Barcode scannen",
     "please-wait": "Bitte warten ...",
     "protein": "Eiweiß",

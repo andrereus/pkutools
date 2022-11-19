@@ -69,7 +69,7 @@
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",
-    "note": "Experimental feature: If the camera is not starting try a restart of the device.",
+    "note": "Experimental feature: If the camera does not start in the iOS app, try using the browser.",
     "scan-barcode": "Scan barcode",
     "please-wait": "Please wait ...",
     "protein": "Protein",
