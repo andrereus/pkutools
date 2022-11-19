@@ -65,7 +65,7 @@
 
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn v-bind="attrs" variant="flat" rounded color="primary" class="mr-3 mt-3" v-on="on">
+              <v-btn variant="flat" rounded color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
                 {{ $t("common.add") }}
               </v-btn>
             </template>
@@ -79,12 +79,12 @@
                 <v-menu v-model="menu" :close-on-content-click="false" transition="scale-transition" min-width="290px">
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field
-                      v-bind="attrs"
                       variant="filled"
                       rounded
                       :model-value="computelocalDate"
                       :label="$t('phe-diary.date')"
                       readonly
+                      v-bind="attrs"
                       v-on="on"
                       class="mt-4"
                     ></v-text-field>
@@ -115,7 +115,7 @@
                     <tr class="tr-read-only">
                       <td class="text-start">
                         <v-edit-dialog
-                          v-model="item.name"
+                          :return-value.sync="item.name"
                           large
                           :cancel-text="$t('common.cancel')"
                           :save-text="$t('common.ok')"
@@ -140,7 +140,7 @@
                       </td>
                       <td class="text-start">
                         <v-edit-dialog
-                          v-model="item.phe"
+                          :return-value.sync="item.phe"
                           large
                           :cancel-text="$t('common.cancel')"
                           :save-text="$t('common.ok')"
@@ -203,7 +203,7 @@
     <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn v-bind="attrs" variant="text" @click="offlineInfo = false">
+        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

@@ -10,7 +10,7 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn v-bind="attrs" variant="flat" rounded color="primary" v-on="on" class="mr-3 mb-3">
+            <v-btn variant="flat" rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mb-3">
               {{ $t("barcode-scanner.scan-barcode") }}
             </v-btn>
           </template>

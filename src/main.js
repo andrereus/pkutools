@@ -15,8 +15,6 @@ const vuetify = createVuetify({
   directives
 });
 
-Vue.use(vuetify);
-
 Vue.config.productionTip = false;
 
 const root = new Vue({

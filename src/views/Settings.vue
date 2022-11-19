@@ -60,7 +60,7 @@
           <v-snackbar location="bottom" color="teal" v-model="snackbar">
             {{ $t("settings.saved") }}
             <template v-slot:action="{ attrs }">
-              <v-btn v-bind="attrs" variant="text" @click="snackbar = false">
+              <v-btn variant="text" v-bind="attrs" @click="snackbar = false">
                 {{ $t("common.close") }}
               </v-btn>
             </template>
@@ -72,7 +72,7 @@
     <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn v-bind="attrs" variant="text" @click="offlineInfo = false">
+        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>
