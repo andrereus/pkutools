@@ -119,18 +119,9 @@
             <v-icon left>{{ mdiFoodApple }}</v-icon>
             {{ $t("home.own-food") }}
           </v-btn>
-        </div>
-
-        <h3 v-if="userIsAuthenticated && advancedFood === null" class="text-caption mt-4 mb-6 ml-1">
-          {{ $t("phe-log.title") }}
-        </h3>
-
-        <PheLog v-if="advancedFood === null" />
-
-        <div v-if="!userIsAuthenticated && advancedFood === null">
           <v-menu v-if="!userIsAuthenticated" offset-y>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
+              <v-btn depressed rounded small class="mr-3 mb-3" v-bind="attrs" v-on="on">
                 {{ $t("home.more") }}
               </v-btn>
             </template>
@@ -149,7 +140,15 @@
               </v-list-item>
             </v-list>
           </v-menu>
+        </div>
 
+        <h3 v-if="userIsAuthenticated && advancedFood === null" class="text-caption mt-4 mb-6 ml-1">
+          {{ $t("phe-log.title") }}
+        </h3>
+
+        <PheLog v-if="userIsAuthenticated && advancedFood === null" />
+
+        <div v-if="!userIsAuthenticated && advancedFood === null">
           <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
 
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
