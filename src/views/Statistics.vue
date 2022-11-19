@@ -24,7 +24,7 @@
         <div v-if="userIsAuthenticated">
           <v-row no-gutters>
             <v-col cols="6" sm="3" md="3" lg="3">
-              <v-card outlined height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
+              <v-card outlined height="200" to="/" class="mr-1 mb-1 stat-card">
                 <v-card-text>
                   <p class="mb-6">{{ $t("phe-log.title") }}</p>
                   <div class="text-center">

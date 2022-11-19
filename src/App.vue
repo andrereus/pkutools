@@ -313,10 +313,6 @@
       <v-btn to="/settings" value="settings" :aria-label="$t('settings.title')">
         <v-icon>{{ mdiCog }}</v-icon>
       </v-btn>
-
-      <v-btn to="/help" value="help" class="mobile-nav-hide" :aria-label="$t('help.title')">
-        <v-icon>{{ mdiHelpCircle }}</v-icon>
-      </v-btn>
     </v-bottom-navigation>
 
     <v-bottom-sheet v-model="sheet">
