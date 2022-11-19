@@ -95,7 +95,8 @@
     "total": "Total",
     "remaining": "Remaining",
     "save-day": "Finish log",
-    "own-food": "Own food"
+    "own-food": "Own food",
+    "manual-add": "Add manually"
   },
   "phe-diary": {
     "title": "Phe Diary",
@@ -112,8 +113,7 @@
     "note": "Limited to 100 entries (~3 months). Export and then Reset via Settings."
   },
   "statistics": {
-    "title": "Statistics",
-    "wip": "Work in progress"
+    "title": "Statistics"
   },
   "amino-counter": {
     "title": "Amino Counter",

@@ -1,50 +1,10 @@
 <template>
   <div>
     <div v-if="userIsAuthenticated">
-      <v-data-table
-        :headers="$i18n.locale === 'en' ? headersEn : headersDe"
-        :items="pheLog"
-        disable-pagination
-        hide-default-footer
-        mobile-breakpoint="0"
-      >
-        <template v-slot:item="{ item }">
-          <tr @click="editItem(item)" class="tr-edit">
-            <td class="text-start">
-              <img
-                :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
-                v-if="item.icon !== undefined"
-                width="25"
-                class="food-icon"
-              />
-              <img
-                :src="publicPath + 'img/food-icons/organic-food.svg'"
-                v-if="item.icon === undefined"
-                width="25"
-                class="food-icon"
-              />
-              {{ item.name }}
-            </td>
-            <td class="text-start">{{ item.weight }}</td>
-            <td class="text-start">{{ item.phe }}</td>
-          </tr>
-        </template>
-      </v-data-table>
-
-      <v-progress-linear
-        :value="(pheResult * 100) / (settings.maxPhe || 0)"
-        height="15"
-        class="mt-8"
-        rounded
-      ></v-progress-linear>
-
-      <p class="title font-weight-regular mt-6">{{ $t("phe-log.total") }}: {{ pheResult }} mg Phe</p>
-      <p class="mt-n2 mb-6">{{ $t("phe-log.remaining") }}: {{ (settings.maxPhe || 0) - pheResult }} mg Phe</p>
-
       <v-dialog v-model="dialog" max-width="500px">
         <template v-slot:activator="{ on, attrs }">
-          <v-btn depressed rounded color="primary" class="mr-3 mb-3" v-bind="attrs" v-on="on">
-            {{ $t("common.add") }}
+          <v-btn depressed rounded small class="mr-3 mb-8" v-bind="attrs" v-on="on">
+            {{ $t("phe-log.manual-add") }}
           </v-btn>
         </template>
 
@@ -54,7 +14,7 @@
           </v-card-title>
 
           <v-card-text>
-            <v-slide-group v-if="editedIndex === -1" class="mt-2" show-arrows="desktop">
+            <!-- <v-slide-group v-if="editedIndex === -1" class="mt-2" show-arrows="desktop">
               <v-slide-item>
                 <v-btn depressed rounded small to="/phe-calculator" class="mr-1">
                   <v-icon left>{{ mdiCalculator }}</v-icon>
@@ -79,7 +39,7 @@
                   {{ $t("phe-log.own-food") }}
                 </v-btn>
               </v-slide-item>
-            </v-slide-group>
+            </v-slide-group> -->
 
             <v-text-field filled rounded label="Name" v-model="editedItem.name" class="mt-6">
               <template v-slot:append-outer>
@@ -148,6 +108,46 @@
           </v-card-actions>
         </v-card>
       </v-dialog>
+
+      <v-data-table
+        :headers="$i18n.locale === 'en' ? headersEn : headersDe"
+        :items="pheLog"
+        disable-pagination
+        hide-default-footer
+        mobile-breakpoint="0"
+      >
+        <template v-slot:item="{ item }">
+          <tr @click="editItem(item)" class="tr-edit">
+            <td class="text-start">
+              <img
+                :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
+                v-if="item.icon !== undefined"
+                width="25"
+                class="food-icon"
+              />
+              <img
+                :src="publicPath + 'img/food-icons/organic-food.svg'"
+                v-if="item.icon === undefined"
+                width="25"
+                class="food-icon"
+              />
+              {{ item.name }}
+            </td>
+            <td class="text-start">{{ item.weight }}</td>
+            <td class="text-start">{{ item.phe }}</td>
+          </tr>
+        </template>
+      </v-data-table>
+
+      <v-progress-linear
+        :value="(pheResult * 100) / (settings.maxPhe || 0)"
+        height="15"
+        class="mt-8"
+        rounded
+      ></v-progress-linear>
+
+      <p class="title font-weight-regular mt-6">{{ $t("phe-log.total") }}: {{ pheResult }} mg Phe</p>
+      <p class="mt-n2 mb-6">{{ $t("phe-log.remaining") }}: {{ (settings.maxPhe || 0) - pheResult }} mg Phe</p>
 
       <v-btn depressed rounded color="success" class="mr-3 mb-3" @click="saveResult">
         {{ $t("phe-log.save-day") }}

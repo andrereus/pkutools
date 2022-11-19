@@ -95,7 +95,8 @@
     "total": "Gesamt",
     "remaining": "Übrig",
     "save-day": "Protokoll abschließen",
-    "own-food": "Eigene LM."
+    "own-food": "Eigene LM.",
+    "manual-add": "Manuell hinzufügen"
   },
   "phe-diary": {
     "title": "Phe Tagebuch",
@@ -112,8 +113,7 @@
     "note": "Limitiert auf 100 Einträge (~3 Monate). Export und dann Reset über Einstellungen."
   },
   "statistics": {
-    "title": "Statistiken",
-    "wip": "In Bearbeitung"
+    "title": "Statistiken"
   },
   "amino-counter": {
     "title": "Amino Zähler",

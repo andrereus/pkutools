@@ -11,15 +11,11 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
 
-        <h3 v-if="userIsAuthenticated" class="text-caption mt-n2 mb-5 ml-1">
-          {{ $t("app.tools") }}
-        </h3>
-
         <div>
           <v-text-field
             v-model="search"
             :label="$t('phe-search.search')"
-            filled
+            outlined
             rounded
             autocomplete="off"
             @keyup="searchFood"
@@ -141,10 +137,6 @@
             </v-list>
           </v-menu>
         </div>
-
-        <h3 v-if="userIsAuthenticated && advancedFood === null" class="text-caption mt-4 mb-6 ml-1">
-          {{ $t("phe-log.title") }}
-        </h3>
 
         <PheLog v-if="userIsAuthenticated && advancedFood === null" />
 
