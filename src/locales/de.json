@@ -69,6 +69,7 @@
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",
+    "note": "Experimentelle Funktion: Falls die Kamera nicht startet versuche einen Neustart des Geräts.",
     "scan-barcode": "Barcode scannen",
     "please-wait": "Bitte warten ...",
     "protein": "Eiweiß",
