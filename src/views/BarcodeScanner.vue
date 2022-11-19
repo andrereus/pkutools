@@ -52,7 +52,7 @@
           <h2 class="headlin my-3">{{ result.product.product_name }}</h2>
 
           <p class="title font-weight-regular mb-6">
-            {{ result.product.nutriments.proteins_100g + result.product.nutriments.proteins_unit }}
+            {{ result.product.nutriments.proteins_100g }} {{ result.product.nutriments.proteins_unit }}
             {{ $t("barcode-scanner.protein") }}
           </p>
 

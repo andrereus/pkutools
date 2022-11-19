@@ -72,7 +72,7 @@
     "note": "Notice: On iOS the scanner only works reliably via the browser.",
     "scan-barcode": "Scan barcode",
     "please-wait": "Please wait ...",
-    "protein": "Protein",
+    "protein": "Protein (per 100g)",
     "info": "Phe gets calculated from protein | Datasource: openfoodfacts.org"
   },
   "own-food": {

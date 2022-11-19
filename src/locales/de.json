@@ -72,7 +72,7 @@
     "note": "Hinweis: Unter iOS funktioniert der Scanner nur über den Browser zuverlässig.",
     "scan-barcode": "Barcode scannen",
     "please-wait": "Bitte warten ...",
-    "protein": "Eiweiß",
+    "protein": "Eiweiß (pro 100g)",
     "info": "Phe wird aus Eiweiß berechnet | Datenquelle: openfoodfacts.org"
   },
   "own-food": {
