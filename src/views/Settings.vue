@@ -46,15 +46,15 @@
           <v-btn depressed rounded class="mr-6 mb-5" @click="resetLog">
             {{ $t("settings.reset-log") }}
           </v-btn>
-          <v-btn depressed rounded class="mr-6 mb-5" @click="resetOwnFood">
-            {{ $t("settings.reset-own-food") }}
-          </v-btn>
-          <br />
           <v-btn depressed rounded class="mr-6 mb-5" @click="resetDiary">
             {{ $t("settings.reset-diary") }}
           </v-btn>
+          <br />
           <v-btn depressed rounded class="mr-6 mb-5" @click="resetAM">
             {{ $t("settings.reset-am") }}
+          </v-btn>
+          <v-btn depressed rounded class="mr-6 mb-5" @click="resetOwnFood">
+            {{ $t("settings.reset-own-food") }}
           </v-btn>
 
           <v-snackbar bottom color="teal" v-model="snackbar">

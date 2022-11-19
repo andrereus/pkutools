@@ -281,11 +281,16 @@
         <v-icon>{{ mdiCalculatorVariant }}</v-icon>
       </v-btn>
 
-      <v-btn to="/barcode-scanner" value="barcode-scanner" :aria-label="$t('barcode-scanner.title')">
+      <v-btn
+        to="/barcode-scanner"
+        value="barcode-scanner"
+        class="mobile-nav-hide"
+        :aria-label="$t('barcode-scanner.title')"
+      >
         <v-icon>{{ mdiBarcodeScan }}</v-icon>
       </v-btn>
 
-      <v-btn to="/own-food" value="own-food" :aria-label="$t('own-food.title')">
+      <v-btn to="/own-food" value="own-food" class="mobile-nav-hide" :aria-label="$t('own-food.title')">
         <v-icon>{{ mdiFoodApple }}</v-icon>
       </v-btn>
 
@@ -297,16 +302,16 @@
         <v-icon>{{ mdiBook }}</v-icon>
       </v-btn>
 
-      <v-btn to="/statistics" value="statistics" class="mobile-nav-hide" :aria-label="$t('statistics.title')">
+      <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
+        <v-icon>{{ mdiCupWater }}</v-icon>
+      </v-btn>
+
+      <v-btn to="/statistics" value="statistics" :aria-label="$t('statistics.title')">
         <v-icon>{{ mdiChartBox }}</v-icon>
       </v-btn>
 
       <v-btn to="/settings" value="settings" :aria-label="$t('settings.title')">
         <v-icon>{{ mdiCog }}</v-icon>
-      </v-btn>
-
-      <v-btn to="/amino-counter" value="amino-counter" class="mobile-nav-hide" :aria-label="$t('amino-counter.title')">
-        <v-icon>{{ mdiCupWater }}</v-icon>
       </v-btn>
 
       <v-btn to="/help" value="help" class="mobile-nav-hide" :aria-label="$t('help.title')">

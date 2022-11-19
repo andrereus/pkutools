@@ -57,8 +57,8 @@
               <v-btn depressed rounded @click="takeAM" color="primary" class="mr-2 mt-2">
                 {{ $t("amino-counter.take") }}
               </v-btn>
-              <v-btn depressed rounded @click.stop="dialog = true" class="mr-2 mt-2">
-                {{ $t("common.settings") }}
+              <v-btn depressed rounded class="mr-2 mt-2" @click="resetAM">
+                {{ $t("common.reset") }}
               </v-btn>
             </v-timeline-item>
           </v-timeline>
@@ -67,30 +67,6 @@
             <v-icon>{{ mdiInformationVariant }}</v-icon>
             {{ $t("amino-counter.note") }}
           </p>
-
-          <v-dialog v-model="dialog" max-width="500px" @click:outside="setMax">
-            <v-card>
-              <v-card-title>
-                <span class="headline">{{ $t("common.settings") }}</span>
-              </v-card-title>
-
-              <v-card-text>
-                <v-text-field
-                  filled
-                  rounded
-                  :label="$t('amino-counter.amount')"
-                  v-model.number="settings.maxAmino"
-                  type="number"
-                  class="mt-6"
-                ></v-text-field>
-              </v-card-text>
-
-              <v-card-actions class="mt-n6">
-                <v-spacer></v-spacer>
-                <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-dialog>
 
           <v-dialog v-model="alert" max-width="300">
             <v-card>
@@ -139,7 +115,6 @@ export default {
     mdiFacebook,
     mdiCupWater,
     mdiInformationVariant,
-    dialog: false,
     alert: false,
     offlineInfo: false
   }),
@@ -170,16 +145,6 @@ export default {
           });
       }
     },
-    setMax() {
-      firebase
-        .database()
-        .ref(this.user.id + "/settings")
-        .update({
-          maxAmino: this.settings.maxAmino || 3
-        });
-
-      this.dialog = false;
-    },
     getlocalDate(date) {
       if (date) {
         const locales = { enUS, de };
@@ -188,6 +153,15 @@ export default {
         });
       } else {
         return "";
+      }
+    },
+    resetAM() {
+      let r = confirm(this.$t("common.reset") + "?");
+      if (r === true) {
+        firebase
+          .database()
+          .ref(this.user.id + "/aminoCounter")
+          .remove();
       }
     }
   },

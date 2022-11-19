@@ -153,36 +153,6 @@
         {{ $t("phe-log.save-day") }}
       </v-btn>
 
-      <v-dialog v-model="dialog2" max-width="500px" @click:outside="setMax">
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn depressed rounded v-bind="attrs" v-on="on" class="mr-3 mb-3">
-            {{ $t("common.settings") }}
-          </v-btn>
-        </template>
-
-        <v-card>
-          <v-card-title>
-            <span class="headline">{{ $t("common.settings") }}</span>
-          </v-card-title>
-
-          <v-card-text>
-            <v-text-field
-              filled
-              rounded
-              :label="$t('phe-log.max')"
-              v-model.number="settings.maxPhe"
-              type="number"
-              class="mt-6"
-            ></v-text-field>
-          </v-card-text>
-
-          <v-card-actions class="mt-n6">
-            <v-spacer></v-spacer>
-            <v-btn depressed @click="setMax">{{ $t("common.ok") }}</v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
-
       <v-dialog v-model="alert" max-width="300">
         <v-card>
           <v-card-title>{{ $t("common.note") }}</v-card-title>
@@ -241,7 +211,6 @@ export default {
     mdiBarcodeScan,
     publicPath: process.env.BASE_URL,
     dialog: false,
-    dialog2: false,
     alert: false,
     headersEn: [
       {
@@ -369,15 +338,6 @@ export default {
       } else {
         this.editedItem.phe = event.target.value;
       }
-    },
-    setMax() {
-      firebase
-        .database()
-        .ref(this.user.id + "/settings")
-        .update({
-          maxPhe: this.settings.maxPhe || 0
-        });
-      this.dialog2 = false;
     },
     saveResult() {
       if (this.pheDiary.length >= 100) {
