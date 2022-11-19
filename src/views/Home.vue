@@ -304,7 +304,7 @@ export default {
           phe: this.calculatePhe()
         });
       this.dialog = false;
-      this.$router.go();
+      this.advancedFood = null;
     },
     async searchFood() {
       this.loading = true;
