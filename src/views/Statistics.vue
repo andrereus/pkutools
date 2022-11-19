@@ -2,21 +2,21 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense variant="outlined" type="warning" class="mt-2">{{ $t("statistics.wip") }}</v-alert>
-        <h2 class="text-h5 mt-1">{{ $t("statistics.title") }}</h2>
+        <v-alert dense outlined type="warning" class="mt-2">{{ $t("statistics.wip") }}</v-alert>
+        <h2 class="headline mt-1">{{ $t("statistics.title") }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
-          <v-btn variant="flat" rounded @click="signInGoogle" class="mt-2">
-            <v-icon start>{{ mdiGoogle }}</v-icon>
+          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
+            <v-icon left>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
-          <v-btn variant="flat" rounded @click="signInFacebook" class="mt-2">
-            <v-icon start>{{ mdiFacebook }}</v-icon>
+          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
+            <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
         </div>
@@ -24,7 +24,7 @@
         <div v-if="userIsAuthenticated">
           <v-row no-gutters>
             <v-col cols="6" sm="3" md="3" lg="3">
-              <v-card variant="outlined" height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
+              <v-card outlined height="200" to="/phe-log" class="mr-1 mb-1 stat-card">
                 <v-card-text>
                   <p class="mb-6">{{ $t("phe-log.title") }}</p>
                   <div class="text-center">
@@ -32,7 +32,7 @@
                       :rotate="-90"
                       :size="110"
                       :width="15"
-                      :model-value="(pheResult * 100) / (settings.maxPhe || 0)"
+                      :value="(pheResult * 100) / (settings.maxPhe || 0)"
                       color="primary"
                     >
                       {{ pheResult }}
@@ -43,7 +43,7 @@
             </v-col>
 
             <v-col cols="6" sm="3" md="3" lg="3">
-              <v-card variant="outlined" height="200" class="mr-1 mb-1 stat-card">
+              <v-card outlined height="200" class="mr-1 mb-1 stat-card">
                 <router-link to="/amino-counter" class="amino-router">
                   <v-card-text>
                     <p class="mb-6">{{ $t("amino-counter.title") }}</p>
@@ -52,7 +52,7 @@
                         :rotate="-90"
                         :size="110"
                         :width="15"
-                        :model-value="(calculateAmino * 100) / (settings.maxAmino || 3)"
+                        :value="(calculateAmino * 100) / (settings.maxAmino || 3)"
                         color="teal"
                       >
                         {{ calculateAmino }}
@@ -61,7 +61,7 @@
                   </v-card-text>
                 </router-link>
                 <v-card-actions>
-                  <v-btn variant="flat" fab size="x-small" @click="takeAM" class="add-amino">
+                  <v-btn depressed fab x-small @click="takeAM" class="add-amino">
                     <v-icon>{{ mdiPlus }}</v-icon>
                   </v-btn>
                 </v-card-actions>
@@ -69,7 +69,7 @@
             </v-col>
 
             <v-col cols="12" sm="6" md="6" lg="6">
-              <v-card variant="outlined" height="200" to="/phe-diary" class="mr-1 mb-1 stat-card">
+              <v-card outlined height="200" to="/phe-diary" class="mr-1 mb-1 stat-card">
                 <v-card-text>
                   <p class="mb-6">{{ $t("phe-diary.title") }}</p>
                   <p v-if="pheDiary.length < 2" class="text-center mt-16">

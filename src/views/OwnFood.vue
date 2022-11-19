@@ -2,20 +2,20 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="text-h5 mt-1">{{ $t("own-food.title") }}</h2>
+        <h2 class="headline mt-1">{{ $t("own-food.title") }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
-          <v-btn variant="flat" rounded @click="signInGoogle" class="mt-2">
-            <v-icon start>{{ mdiGoogle }}</v-icon>
+          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
+            <v-icon left>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
-          <v-btn variant="flat" rounded @click="signInFacebook" class="mt-2">
-            <v-icon start>{{ mdiFacebook }}</v-icon>
+          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
+            <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
 
@@ -68,22 +68,22 @@
 
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn variant="flat" rounded color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
+              <v-btn depressed rounded color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
                 {{ $t("common.add") }}
               </v-btn>
             </template>
 
             <v-card>
               <v-card-title>
-                <span class="text-h5">{{ formTitle }}</span>
+                <span class="headline">{{ formTitle }}</span>
               </v-card-title>
 
               <v-card-text>
-                <v-text-field variant="filled" rounded label="Name" v-model="editedItem.name" class="mt-6">
+                <v-text-field filled rounded label="Name" v-model="editedItem.name" class="mt-6">
                   <template v-slot:append-outer>
                     <v-menu offset-y>
                       <template v-slot:activator="{ on, attrs }">
-                        <v-btn fab size="small" variant="flat" v-bind="attrs" v-on="on" class="mt-n2">
+                        <v-btn fab small depressed v-bind="attrs" v-on="on" class="mt-n2">
                           <img
                             :src="publicPath + 'img/food-icons/' + editedItem.icon + '.svg'"
                             v-if="editedItem.icon !== undefined && editedItem.icon !== null"
@@ -113,7 +113,7 @@
                   </template>
                 </v-text-field>
                 <v-text-field
-                  variant="filled"
+                  filled
                   rounded
                   :label="$t('own-food.phe')"
                   v-model.number="editedItem.phe"
@@ -123,11 +123,11 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn variant="flat" color="primary" @click="save">{{ $t("common.save") }}</v-btn>
-                <v-btn variant="flat" color="warning" v-if="editedIndex !== -1" @click="deleteItem()">
+                <v-btn depressed color="primary" @click="save">{{ $t("common.save") }}</v-btn>
+                <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem()">
                   {{ $t("common.delete") }}
                 </v-btn>
-                <v-btn variant="flat" @click="close">{{ $t("common.cancel") }}</v-btn>
+                <v-btn depressed @click="close">{{ $t("common.cancel") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -140,7 +140,7 @@
           <v-dialog v-model="dialog2" max-width="500px">
             <v-card>
               <v-card-title>
-                <span class="text-h5">
+                <span class="headline">
                   <img
                     :src="publicPath + 'img/food-icons/' + editedItem.icon + '.svg'"
                     v-if="editedItem.icon !== undefined"
@@ -159,7 +159,7 @@
 
               <v-card-text>
                 <v-text-field
-                  variant="filled"
+                  filled
                   rounded
                   :label="$t('own-food.weight')"
                   v-model.number="weight"
@@ -167,16 +167,16 @@
                   class="mt-6"
                   clearable
                 ></v-text-field>
-                <p class="text-h6 font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
+                <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
               </v-card-text>
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn variant="flat" color="primary" @click="add">
+                <v-btn depressed color="primary" @click="add">
                   {{ $t("common.add") }}
                 </v-btn>
-                <v-btn variant="flat" @click="editItem()">{{ $t("common.edit") }}</v-btn>
-                <v-btn variant="flat" @click="dialog2 = false">{{ $t("common.cancel") }}</v-btn>
+                <v-btn depressed @click="editItem()">{{ $t("common.edit") }}</v-btn>
+                <v-btn depressed @click="dialog2 = false">{{ $t("common.cancel") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -188,7 +188,7 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary" variant="text" @click="alert = false">{{ $t("common.ok") }}</v-btn>
+                <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -196,10 +196,10 @@
       </v-col>
     </v-row>
 
-    <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
+    <v-snackbar bottom color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
+        <v-btn text v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

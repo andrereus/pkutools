@@ -256,7 +256,7 @@
       app
       v-model="bottomNav"
       class="d-lg-none bottom-nav"
-      selected-class="v-btn--active bottom-nav--active"
+      active-class="v-btn--active bottom-nav--active"
       grow
     >
       <v-btn to="/" value="home" :aria-label="$t('home.title')">
@@ -290,7 +290,7 @@
       </v-btn>
 
       <v-btn @click="sheet = true" value="add" :aria-label="$t('common.add')" class="add-button mobile-nav-hide">
-        <v-icon color="primary" size="large">{{ mdiPlusCircle }}</v-icon>
+        <v-icon color="primary" large>{{ mdiPlusCircle }}</v-icon>
       </v-btn>
 
       <v-btn to="/phe-diary" value="phe-diary" :aria-label="$t('phe-diary.title')">
@@ -348,19 +348,19 @@
       </v-list>
     </v-bottom-sheet>
 
-    <v-snackbar location="bottom" color="primary" :model-value="updateExists" :timeout="-1">
+    <v-snackbar bottom color="primary" :value="updateExists" :timeout="-1">
       {{ $t("app.update-info") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="refreshApp">
+        <v-btn text v-bind="attrs" @click="refreshApp">
           {{ $t("app.update") }}
         </v-btn>
       </template>
     </v-snackbar>
 
-    <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
+    <v-snackbar bottom color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
+        <v-btn text v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>

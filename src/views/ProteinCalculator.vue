@@ -2,7 +2,7 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="text-h5 mt-1">{{ $t("protein-calculator.title") }}</h2>
+        <h2 class="headline mt-1">{{ $t("protein-calculator.title") }}</h2>
       </v-col>
     </v-row>
 
@@ -11,7 +11,7 @@
         <v-checkbox v-model="factor" :label="$t('protein-calculator.factor')" class="mt-n1"></v-checkbox>
 
         <v-text-field
-          variant="filled"
+          filled
           rounded
           :label="$t('protein-calculator.protein')"
           v-model.number="protein"
@@ -19,7 +19,7 @@
         ></v-text-field>
 
         <v-text-field
-          variant="filled"
+          filled
           rounded
           :label="$t('protein-calculator.weight')"
           v-model.number="weight"
@@ -27,23 +27,23 @@
           clearable
         ></v-text-field>
 
-        <p class="text-h6 font-weight-regular">~ {{ calculatePhe() }} mg Phe</p>
+        <p class="title font-weight-regular">~ {{ calculatePhe() }} mg Phe</p>
 
         <v-dialog v-model="dialog" max-width="500px" v-if="userIsAuthenticated">
           <template v-slot:activator="{ on, attrs }">
-            <v-btn variant="flat" rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
+            <v-btn depressed rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mt-3">
               {{ $t("common.add") }}
             </v-btn>
           </template>
 
           <v-card>
             <v-card-title>
-              <span class="text-h5">{{ $t("common.add") }}</span>
+              <span class="headline">{{ $t("common.add") }}</span>
             </v-card-title>
 
             <v-card-text>
               <v-text-field
-                variant="filled"
+                filled
                 rounded
                 :label="$t('protein-calculator.name')"
                 v-model="name"
@@ -53,8 +53,8 @@
 
             <v-card-actions class="mt-n6">
               <v-spacer></v-spacer>
-              <v-btn variant="flat" color="primary" @click="save">{{ $t("common.save") }}</v-btn>
-              <v-btn variant="flat" @click="dialog = false">{{ $t("common.cancel") }}</v-btn>
+              <v-btn depressed color="primary" @click="save">{{ $t("common.save") }}</v-btn>
+              <v-btn depressed @click="dialog = false">{{ $t("common.cancel") }}</v-btn>
             </v-card-actions>
           </v-card>
         </v-dialog>

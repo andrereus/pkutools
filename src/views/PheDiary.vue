@@ -2,20 +2,20 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <h2 class="text-h5 mt-1">{{ $t("phe-diary.title") }}</h2>
+        <h2 class="headline mt-1">{{ $t("phe-diary.title") }}</h2>
       </v-col>
     </v-row>
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <div v-if="!userIsAuthenticated">
-          <v-btn variant="flat" rounded @click="signInGoogle" class="mt-2">
-            <v-icon start>{{ mdiGoogle }}</v-icon>
+          <v-btn depressed rounded @click="signInGoogle" class="mt-2">
+            <v-icon left>{{ mdiGoogle }}</v-icon>
             {{ $t("app.signin-google") }}
           </v-btn>
           <br />
-          <v-btn variant="flat" rounded @click="signInFacebook" class="mt-2">
-            <v-icon start>{{ mdiFacebook }}</v-icon>
+          <v-btn depressed rounded @click="signInFacebook" class="mt-2">
+            <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
 
@@ -65,23 +65,23 @@
 
           <v-dialog v-model="dialog" max-width="500px">
             <template v-slot:activator="{ on, attrs }">
-              <v-btn variant="flat" rounded color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
+              <v-btn depressed rounded color="primary" class="mr-3 mt-3" v-bind="attrs" v-on="on">
                 {{ $t("common.add") }}
               </v-btn>
             </template>
 
             <v-card>
               <v-card-title>
-                <span class="text-h5">{{ formTitle }}</span>
+                <span class="headline">{{ formTitle }}</span>
               </v-card-title>
 
               <v-card-text>
                 <v-menu v-model="menu" :close-on-content-click="false" transition="scale-transition" min-width="290px">
                   <template v-slot:activator="{ on, attrs }">
                     <v-text-field
-                      variant="filled"
+                      filled
                       rounded
-                      :model-value="computelocalDate"
+                      :value="computelocalDate"
                       :label="$t('phe-diary.date')"
                       readonly
                       v-bind="attrs"
@@ -93,7 +93,7 @@
                 </v-menu>
 
                 <v-text-field
-                  variant="filled"
+                  filled
                   rounded
                   :label="$t('phe-diary.phe')"
                   v-model.number="editedItem.phe"
@@ -169,16 +169,16 @@
 
               <v-card-actions class="mt-n6">
                 <v-spacer></v-spacer>
-                <v-btn variant="flat" color="primary" @click="save">{{ $t("common.save") }}</v-btn>
-                <v-btn variant="flat" color="warning" v-if="editedIndex !== -1" @click="deleteItem()">
+                <v-btn depressed color="primary" @click="save">{{ $t("common.save") }}</v-btn>
+                <v-btn depressed color="warning" v-if="editedIndex !== -1" @click="deleteItem()">
                   {{ $t("common.delete") }}
                 </v-btn>
-                <v-btn variant="flat" @click="close">{{ $t("common.cancel") }}</v-btn>
+                <v-btn depressed @click="close">{{ $t("common.cancel") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
 
-          <v-btn variant="flat" rounded class="mr-3 mt-3" @click="exportDiary">{{ $t("phe-diary.export") }}</v-btn>
+          <v-btn depressed rounded class="mr-3 mt-3" @click="exportDiary">{{ $t("phe-diary.export") }}</v-btn>
 
           <p class="text--secondary mt-5">
             <v-icon>{{ mdiInformationVariant }}</v-icon>
@@ -192,7 +192,7 @@
 
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn color="primary" variant="text" @click="alert = false">{{ $t("common.ok") }}</v-btn>
+                <v-btn color="primary" text @click="alert = false">{{ $t("common.ok") }}</v-btn>
               </v-card-actions>
             </v-card>
           </v-dialog>
@@ -200,10 +200,10 @@
       </v-col>
     </v-row>
 
-    <v-snackbar location="bottom" color="warning" v-model="offlineInfo">
+    <v-snackbar bottom color="warning" v-model="offlineInfo">
       {{ $t("app.offline") }}
       <template v-slot:action="{ attrs }">
-        <v-btn variant="text" v-bind="attrs" @click="offlineInfo = false">
+        <v-btn text v-bind="attrs" @click="offlineInfo = false">
           {{ $t("common.close") }}
         </v-btn>
       </template>
