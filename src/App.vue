@@ -306,7 +306,7 @@
         <v-icon>{{ mdiCupWater }}</v-icon>
       </v-btn>
 
-      <v-btn to="/statistics" value="statistics" :aria-label="$t('statistics.title')">
+      <v-btn to="/statistics" value="statistics" class="mobile-nav-hide" :aria-label="$t('statistics.title')">
         <v-icon>{{ mdiChartBox }}</v-icon>
       </v-btn>
 
