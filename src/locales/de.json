@@ -69,7 +69,7 @@
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",
-    "note": "Unter iOS funktioniert der Scanner nur über den Browser zuverlässig.",
+    "note": "Hinweis: Unter iOS funktioniert der Scanner nur über den Browser zuverlässig.",
     "scan-barcode": "Barcode scannen",
     "please-wait": "Bitte warten ...",
     "protein": "Eiweiß",

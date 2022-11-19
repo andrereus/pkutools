@@ -69,7 +69,7 @@
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",
-    "note": "On iOS the scanner only works reliably via the browser.",
+    "note": "Notice: On iOS the scanner only works reliably via the browser.",
     "scan-barcode": "Scan barcode",
     "please-wait": "Please wait ...",
     "protein": "Protein",
