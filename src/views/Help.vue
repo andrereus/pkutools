@@ -8,38 +8,12 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-btn
-          v-if="this.$i18n.locale === 'en'"
-          depressed
-          rounded
-          href="https://youtu.be/lmiejnEFccY"
-          target="_blank"
-          class="mr-3 mb-3"
-        >
-          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
-          {{ $t("home.video") }}
-        </v-btn>
-
-        <v-btn
-          v-if="this.$i18n.locale === 'de'"
-          depressed
-          rounded
-          href="https://youtu.be/5_-F4tM8_RQ"
-          target="_blank"
-          class="mr-3 mb-3"
-        >
-          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
-          {{ $t("home.video") }}
-        </v-btn>
-
-        <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
-          <v-icon left>{{ mdiPlay }}</v-icon>
-          {{ $t("home.mobile-video") }}
-        </v-btn>
+        <!-- prettier-ignore -->
+        <p><v-icon>{{ mdiAt }}</v-icon> {{ $t("help.contact-me") }} {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
 
         <h2 class="headline my-6">{{ $t("help.faq") }}</h2>
 
-        <v-expansion-panels v-model="panel">
+        <v-expansion-panels v-model="panel" class="mb-8">
           <v-expansion-panel>
             <v-expansion-panel-header class="font-weight-bold">{{ $t("help.install") }}</v-expansion-panel-header>
 
@@ -111,17 +85,41 @@
           </v-expansion-panel>
         </v-expansion-panels>
 
-        <h2 class="headline mt-9 mb-3">{{ $t("help.contact") }}</h2>
+        <v-btn
+          v-if="this.$i18n.locale === 'en'"
+          depressed
+          rounded
+          href="https://youtu.be/lmiejnEFccY"
+          target="_blank"
+          class="mr-3 mb-3"
+        >
+          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
+          {{ $t("home.video") }}
+        </v-btn>
 
-        <!-- prettier-ignore -->
-        <p>{{ $t("about.email") }}: {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
+        <v-btn
+          v-if="this.$i18n.locale === 'de'"
+          depressed
+          rounded
+          href="https://youtu.be/5_-F4tM8_RQ"
+          target="_blank"
+          class="mr-3 mb-3"
+        >
+          <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
+          {{ $t("home.video") }}
+        </v-btn>
+
+        <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+          <v-icon left>{{ mdiPlay }}</v-icon>
+          {{ $t("home.mobile-video") }}
+        </v-btn>
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import { mdiPlayCircleOutline, mdiPlay } from "@mdi/js";
+import { mdiPlayCircleOutline, mdiPlay, mdiAt } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -133,6 +131,7 @@ export default {
   data: () => ({
     mdiPlayCircleOutline,
     mdiPlay,
+    mdiAt,
     panel: null,
     part1: "heypku",
     part2: "gmail",

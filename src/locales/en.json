@@ -141,6 +141,7 @@
   "help": {
     "title": "Help",
     "description": "Help and FAQ for PKU Tools.",
+    "contact-me": "Contact me via email:",
     "faq": "FAQ",
     "contact": "Contact",
     "install": "How to install the app?",
