@@ -40,7 +40,8 @@
     "mobile-video": "Video (Mobile)",
     "compare": "Funktionen vergleichen",
     "own-food": "Eigene LM.",
-    "own-food-long": "Eigene Lebensmittel"
+    "own-food-long": "Eigene Lebensmittel",
+    "support-me": "Diese App kann nur mit Unterstützung weiter kostenlos angeboten werden:"
   },
   "phe-search": {
     "title": "Phe Suche",
@@ -153,7 +154,7 @@
     "sign-in-p1": "Man kann sich (oben rechts über das Menü) mit Google oder Facebook anmelden.",
     "sign-in-p2": "Andere Anmeldemöglichkeiten sind im Moment nicht geplant.",
     "support": "Wie kann man unterstützen?",
-    "support-p1": "Ich stelle PKU Tools kostenlos zur Verfügung. Mit dem untenstehenden Link kannst du mich finanziell unterstützen :)",
+    "support-p1": "Ich stelle PKU Tools kostenlos zur Verfügung. Mit dem untenstehenden Link kannst du mich unterstützen :)",
     "support-p2": "Übrigens ist die App Open Source. Wenn du dazu beitragen willst, kontaktiere mich.",
     "roadmap": "Was ist neu?",
     "roadmap-p1": "Die App wird ständig optimiert. Im Moment werden nur größere Updates gelegentlich in einer Facebook Gruppe kommuniziert. Kontaktiere mich für mehr Infos.",

@@ -40,7 +40,8 @@
     "mobile-video": "Video (Mobile)",
     "compare": "Compare features",
     "own-food": "Own food",
-    "own-food-long": "Own food"
+    "own-food-long": "Own food",
+    "support-me": "This app can only continue to be offered free of charge with support:"
   },
   "phe-search": {
     "title": "Phe Search",
@@ -153,7 +154,7 @@
     "sign-in-p1": "You can sign in with Google or Facebook (from the menu in the top right corner).",
     "sign-in-p2": "Other sign in options are not planned at the moment.",
     "support": "How to support?",
-    "support-p1": "I provide PKU Tools free of charge. With the link below you can support me financially :)",
+    "support-p1": "I provide PKU Tools free of charge. With the link below you can support me :)",
     "support-p2": "By the way, the app is Open Source. If you want to contribute, contact me.",
     "roadmap": "What's new?",
     "roadmap-p1": "The app is constantly being optimized. At the moment only major updates are occasionally communicated in a Facebook group. Contact me for more info.",

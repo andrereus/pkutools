@@ -64,12 +64,8 @@
             <v-expansion-panel-content>
               <p>{{ $t("help.support-p1") }}</p>
 
-              <a href="https://www.buymeacoffee.com/andrereus" target="_blank">
-                <img
-                  src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png"
-                  alt="Buy Me A Coffee"
-                  style="height: 60px !important; width: 217px !important"
-                />
+              <a href="https://ko-fi.com/andrereus" target="_blank">
+                <v-img src="../assets/kofi.png" alt="Support me" max-width="200" class="mb-4"></v-img>
               </a>
 
               <p class="mt-2">{{ $t("help.support-p2") }}</p>
