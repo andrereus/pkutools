@@ -120,7 +120,9 @@ export default {
       this.dialog = false;
     },
     cancel() {
-      this.loaded = false;
+      if (this.loaded === true) {
+        this.loaded = false;
+      }
       this.dialog = false;
     },
     calculatePhe() {
