@@ -143,7 +143,20 @@
         <p class="mt-7 mb-9 text--secondary">
           {{ $t("home.support-me") }}
           <a href="https://ko-fi.com/andrereus" target="_blank">
-            <v-img src="../assets/kofi.png" alt="Support me" max-width="200" class="mt-2"></v-img>
+            <v-img
+              v-if="!$vuetify.theme.dark"
+              src="../assets/kofi.png"
+              alt="Support me"
+              max-width="200"
+              class="mt-2"
+            ></v-img>
+            <v-img
+              v-if="$vuetify.theme.dark"
+              src="../assets/kofi-dark.png"
+              alt="Support me"
+              max-width="200"
+              class="mt-2"
+            ></v-img>
           </a>
         </p>
 
