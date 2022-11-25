@@ -172,7 +172,7 @@
     "title": "About",
     "description": "About PKU Tools",
     "email": "Email",
-    "sources": "Sources: USDA, FoodData Central, 2019 (fdc.nal.usda.gov). & Frida Food Data, version 4, 2019 (frida.fooddata.dk)."
+    "sources": "Sources: USDA, FoodData Central, 2019 (fdc.nal.usda.gov). & Frida Food Data, version 4, 2019 (frida.fooddata.dk). & openfoodfacts.org"
   },
   "disclaimer": {
     "title": "Disclaimer",

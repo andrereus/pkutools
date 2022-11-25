@@ -57,6 +57,26 @@
             {{ $t("settings.reset-own-food") }}
           </v-btn>
 
+          <p class="mt-6 mb-8 text--secondary">
+            {{ $t("home.support-me") }}
+            <a href="https://ko-fi.com/andrereus" target="_blank">
+              <v-img
+                v-if="!$vuetify.theme.dark"
+                src="../assets/kofi.png"
+                alt="Support me"
+                max-width="200"
+                class="mt-2"
+              ></v-img>
+              <v-img
+                v-if="$vuetify.theme.dark"
+                src="../assets/kofi-dark.png"
+                alt="Support me"
+                max-width="200"
+                class="mt-2"
+              ></v-img>
+            </a>
+          </p>
+
           <v-snackbar bottom color="teal" v-model="snackbar">
             {{ $t("settings.saved") }}
             <template v-slot:action="{ attrs }">

@@ -140,32 +140,12 @@
 
         <PheLog v-if="userIsAuthenticated && advancedFood === null" />
 
-        <p class="mt-7 mb-9 text--secondary">
-          {{ $t("home.support-me") }}
-          <a href="https://ko-fi.com/andrereus" target="_blank">
-            <v-img
-              v-if="!$vuetify.theme.dark"
-              src="../assets/kofi.png"
-              alt="Support me"
-              max-width="200"
-              class="mt-2"
-            ></v-img>
-            <v-img
-              v-if="$vuetify.theme.dark"
-              src="../assets/kofi-dark.png"
-              alt="Support me"
-              max-width="200"
-              class="mt-2"
-            ></v-img>
-          </a>
-        </p>
-
         <div v-if="!userIsAuthenticated && advancedFood === null">
-          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-4 mb-8 illustration"></v-img>
+          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-8 mb-8 illustration"></v-img>
 
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
 
-          <FeatureComparison home class="mb-6" />
+          <FeatureComparison home class="mb-10" />
 
           <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
             <v-icon left>{{ mdiHelpCircleOutline }}</v-icon>
@@ -205,6 +185,26 @@
             {{ $t("home.compare") }}
           </v-btn>
         </div>
+
+        <p v-if="!userIsAuthenticated" class="mt-6 mb-8 text--secondary">
+          {{ $t("home.support-me") }}
+          <a href="https://ko-fi.com/andrereus" target="_blank">
+            <v-img
+              v-if="!$vuetify.theme.dark"
+              src="../assets/kofi.png"
+              alt="Support me"
+              max-width="200"
+              class="mt-2"
+            ></v-img>
+            <v-img
+              v-if="$vuetify.theme.dark"
+              src="../assets/kofi-dark.png"
+              alt="Support me"
+              max-width="200"
+              class="mt-2"
+            ></v-img>
+          </a>
+        </p>
       </v-col>
     </v-row>
 
