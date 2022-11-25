@@ -141,7 +141,7 @@
         <PheLog v-if="userIsAuthenticated && advancedFood === null" />
 
         <div v-if="!userIsAuthenticated && advancedFood === null">
-          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-8 mb-8 illustration"></v-img>
+          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-6 mb-8 illustration"></v-img>
 
           <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
 
