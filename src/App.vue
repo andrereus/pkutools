@@ -115,6 +115,20 @@
             </v-list-item-content>
           </v-list-item>
 
+          <v-list-item
+            dense
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfct-_DFHBZMe7morO3sKalidwx3Y_rPtn1xaQtPLIa_roBdg/viewform?usp=sf_link"
+            target="_blank"
+          >
+            <v-list-item-action>
+              <v-icon></v-icon>
+            </v-list-item-action>
+
+            <v-list-item-content>
+              <v-list-item-title>{{ $t("app.feedback") }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
           <v-list-item dense to="/about">
             <v-list-item-action>
               <v-icon></v-icon>
@@ -230,6 +244,16 @@
             <span>
               <v-icon>{{ mdiHelpCircleOutline }}</v-icon>
               {{ $t("app.install") }}
+            </span>
+          </v-list-item>
+
+          <v-list-item
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfct-_DFHBZMe7morO3sKalidwx3Y_rPtn1xaQtPLIa_roBdg/viewform?usp=sf_link"
+            target="_blank"
+          >
+            <span>
+              <v-icon>{{ mdiCommentQuoteOutline }}</v-icon>
+              {{ $t("app.feedback") }}
             </span>
           </v-list-item>
 
@@ -397,7 +421,8 @@ import {
   mdiHelpCircle,
   mdiChartBox,
   mdiHomeSearch,
-  mdiBarcodeScan
+  mdiBarcodeScan,
+  mdiCommentQuoteOutline
 } from "@mdi/js";
 
 export default {
@@ -428,6 +453,7 @@ export default {
     mdiChartBox,
     mdiHomeSearch,
     mdiBarcodeScan,
+    mdiCommentQuoteOutline,
     drawer: null,
     lang: [
       { name: "English", abbr: "en" },
