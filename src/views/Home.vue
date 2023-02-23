@@ -185,26 +185,6 @@
             {{ $t("home.compare") }}
           </v-btn>
         </div>
-
-        <p v-if="!userIsAuthenticated" class="mt-6 mb-8 text--secondary">
-          {{ $t("home.support-me") }}
-          <a href="https://ko-fi.com/andrereus" target="_blank">
-            <v-img
-              v-if="!$vuetify.theme.dark"
-              src="../assets/kofi.png"
-              alt="Support me"
-              max-width="200"
-              class="mt-2"
-            ></v-img>
-            <v-img
-              v-if="$vuetify.theme.dark"
-              src="../assets/kofi-dark.png"
-              alt="Support me"
-              max-width="200"
-              class="mt-2"
-            ></v-img>
-          </a>
-        </p>
       </v-col>
     </v-row>
 
