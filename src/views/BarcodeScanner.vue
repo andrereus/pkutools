@@ -8,8 +8,6 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p class="mb-6">{{ $t("barcode-scanner.note") }}</p>
-
         <v-dialog v-model="dialog" max-width="500px">
           <template v-slot:activator="{ on, attrs }">
             <v-btn depressed rounded color="primary" v-bind="attrs" v-on="on" class="mr-3 mb-3">
