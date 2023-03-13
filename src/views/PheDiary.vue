@@ -89,7 +89,7 @@
                       class="mt-4"
                     ></v-text-field>
                   </template>
-                  <v-date-picker v-model="editedItem.date" no-title scrollable @input="menu = false"></v-date-picker>
+                  <v-date-picker v-model="editedItem.date" no-title scrollable @input="menu = false" :first-day-of-week="1"></v-date-picker>
                 </v-menu>
 
                 <v-text-field
