@@ -50,7 +50,7 @@
     "search": "Phe Search",
     "weight": "Weight (in g)",
     "advanced": "Search all foods",
-    "source": "Source: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov."
+    "source": "Source: U.S. Department of Agriculture, Agricultural Research Service. FoodData Central, 2019. fdc.nal.usda.gov"
   },
   "phe-calculator": {
     "title": "Phe Calculator",
@@ -173,7 +173,7 @@
     "title": "About",
     "description": "About PKU Tools",
     "email": "Email",
-    "sources": "Sources: USDA, FoodData Central, 2019 (fdc.nal.usda.gov). & Frida Food Data, version 4, 2019 (frida.fooddata.dk). & openfoodfacts.org"
+    "sources": "Sources: USDA, FoodData Central, 2019 (fdc.nal.usda.gov). & Frida Food Data, version 4, 2019 (frida.fooddata.dk) & openfoodfacts.org"
   },
   "disclaimer": {
     "title": "Disclaimer",
