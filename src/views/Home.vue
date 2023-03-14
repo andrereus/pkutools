@@ -99,25 +99,25 @@
         </div>
 
         <div v-if="advancedFood === null" class="mt-n3">
-          <v-btn depressed rounded small to="/phe-calculator" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
           </v-btn>
-          <v-btn depressed rounded small to="/protein-calculator" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/protein-calculator" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
             {{ $t("protein-calculator.title") }}
           </v-btn>
-          <v-btn depressed rounded small to="/barcode-scanner" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/barcode-scanner" class="mr-3 mb-3">
             <v-icon left>{{ mdiBarcodeScan }}</v-icon>
             {{ $t("barcode-scanner.title") }}
           </v-btn>
-          <v-btn v-if="userIsAuthenticated" depressed rounded small to="/own-food" class="mr-3 mb-3">
+          <v-btn v-if="userIsAuthenticated" depressed rounded to="/own-food" class="mr-3 mb-3">
             <v-icon left>{{ mdiFoodApple }}</v-icon>
             {{ $t("home.own-food") }}
           </v-btn>
           <v-menu v-if="!userIsAuthenticated" offset-y>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed rounded small class="mr-3 mb-3" v-bind="attrs" v-on="on">
+              <v-btn depressed rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
                 {{ $t("home.more") }}
               </v-btn>
             </template>

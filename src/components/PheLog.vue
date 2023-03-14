@@ -3,7 +3,7 @@
     <div v-if="userIsAuthenticated">
       <v-dialog v-model="dialog" max-width="500px">
         <template v-slot:activator="{ on, attrs }">
-          <v-btn depressed rounded small class="mr-3 mb-8" v-bind="attrs" v-on="on">
+          <v-btn depressed rounded class="mr-3 mb-8" v-bind="attrs" v-on="on">
             {{ $t("phe-log.manual-add") }}
           </v-btn>
         </template>
