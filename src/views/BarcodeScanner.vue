@@ -65,6 +65,16 @@
 
           <p class="title font-weight-regular">~ {{ calculatePhe() }} mg Phe</p>
 
+          <div v-if="userIsAuthenticated">
+            <p class="mt-6 caption">{{ $t("phe-log.preview") }}</p>
+            <v-progress-linear
+              :value="((pheResult + calculatePhe()) * 100) / (settings?.maxPhe || 0)"
+              height="5"
+              class="mt-n2 mb-4"
+              rounded
+            ></v-progress-linear>
+          </div>
+
           <v-btn depressed rounded color="primary" @click="save" class="mr-3 mt-3" v-if="userIsAuthenticated">
             {{ $t("common.add") }}
           </v-btn>
@@ -139,10 +149,17 @@ export default {
     }
   },
   computed: {
+    pheResult() {
+      let phe = 0;
+      this.pheLog.forEach(item => {
+        phe += item.phe;
+      });
+      return Math.round(phe);
+    },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user"])
+    ...mapState(["user", "pheLog", "settings"])
   }
 };
 </script>

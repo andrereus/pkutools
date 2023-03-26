@@ -168,6 +168,13 @@
                   clearable
                 ></v-text-field>
                 <p class="title font-weight-regular">= {{ calculatePhe() }} mg Phe</p>
+                <p class="mt-4 caption">{{ $t("phe-log.preview") }}</p>
+                <v-progress-linear
+                  :value="((pheResult + calculatePhe()) * 100) / (settings?.maxPhe || 0)"
+                  height="5"
+                  class="mt-n2 mb-6"
+                  rounded
+                ></v-progress-linear>
               </v-card-text>
 
               <v-card-actions class="mt-n6">
@@ -345,6 +352,13 @@ export default {
     }
   },
   computed: {
+    pheResult() {
+      let phe = 0;
+      this.pheLog.forEach(item => {
+        phe += item.phe;
+      });
+      return Math.round(phe);
+    },
     formTitle() {
       if (this.editedIndex === -1) {
         return this.$t("common.add");
@@ -355,7 +369,7 @@ export default {
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },
-    ...mapState(["user", "ownFood", "settings"])
+    ...mapState(["user", "ownFood", "pheLog", "settings"])
   }
 };
 </script>
