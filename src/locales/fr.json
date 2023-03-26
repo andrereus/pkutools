@@ -1,0 +1,191 @@
+{
+  "app": {
+    "title": "Outils PKU",
+    "description": "Outils et applications pour PKU.",
+    "signin-google": "Se connecter avec Google",
+    "signin-facebook": "Se connecter avec Facebook",
+    "signout": "Se déconnecter",
+    "update-info": "Une nouvelle version est disponible.",
+    "update": "Mettre à jour",
+    "offline": "Vous êtes hors ligne.",
+    "more": "Plus",
+    "dark": "Design sombre",
+    "light": "Design clair",
+    "main-menu": "Menu principal",
+    "account-menu": "Menu du compte",
+    "profile-picture": "Photo de profil",
+    "new": "Nouveau",
+    "tools": "Outils",
+    "logs": "Journaux",
+    "help": "Aide",
+    "install": "Installer l'application",
+    "feedback": "Retour d'information"
+  },
+  "common": {
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "save": "Enregistrer",
+    "delete": "Supprimer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "reset": "Réinitialiser",
+    "settings": "Paramètres",
+    "ok": "Ok",
+    "note": "Note"
+  },
+  "home": {
+    "title": "Accueil",
+    "features": "Fonctionnalités",
+    "more": "Et plus connecté",
+    "video": "Regarder la vidéo",
+    "mobile-video": "Vidéo (mobile)",
+    "compare": "Comparer les fonctionnalités",
+    "own-food": "Aliments personnels",
+    "own-food-long": "Aliments personnels",
+    "support-me": "Soutenez le développement des outils PKU :"
+  },
+  "phe-search": {
+    "title": "Recherche de Phe",
+    "description": "Recherche de valeurs de Phe.",
+    "search": "Recherche de Phe",
+    "weight": "Poids (en g)",
+    "advanced": "Rechercher tous les aliments",
+    "source": "Source: Département américain de l'Agriculture, Service de recherche agricole. FoodData Central, 2019. fdc.nal.usda.gov"
+  },
+  "phe-calculator": {
+    "title": "Calculateur de Phe",
+    "description": "Calcul des valeurs de Phe.",
+    "phe": "Phe pour 100g (en mg)",
+    "weight": "Poids consommé (en g)",
+    "name": "Nom de l'aliment",
+    "protein-link": "Calculer avec les protéines à la place ->"
+  },
+  "protein-calculator": {
+    "title": "Calculateur de protéines",
+    "description": "Calculer les valeurs approximatives de Phe à partir des protéines.",
+    "factor": "Calcul des fruits ou légumes",
+    "protein": "Protéines pour 100g (en g)",
+    "phe": "Phe pour 100g",
+    "weight": "Poids consommé (en g)",
+    "name": "Nom de l'aliment"
+  },
+  "barcode-scanner": {
+    "title": "Scanner de code-barres",
+    "note": "Remarque : Sur iOS, le scanner ne fonctionne de manière fiable que via le navigateur.",
+    "scan-barcode": "Scanner le code-barres",
+    "please-wait": "Veuillez patienter...",
+    "protein": "Protéines (pour 100g)",
+    "info": "Le Phe est calculé à partir des protéines | Source de données: openfoodfacts.org"
+  },
+  "own-food": {
+    "title": "Aliments personnels",
+    "description": "Enregistrez vos aliments personnels et leurs valeurs de Phe.",
+    "phe": "Phe pour 100g (en mg)",
+    "weight": "Poids (en g)",
+    "date": "Date",
+    "chart": "Pas assez d'entrées pour le graphique.",
+    "limit": "Les aliments personnels sont limités à 500 entrées.",
+    "note": "Limité à 500 entrées."
+  },
+  "phe-log": {
+    "title": "Journal de Phe",
+    "description": "Enregistrez les valeurs de Phe tout au long de la journée.",
+    "lock-values": "Mode de calcul",
+    "lock-info": "Le poids et le Phe sont modifiés en parallèle",
+    "max": "Tolérance de Phe par jour",
+    "save-diary": "Enregistrer dans le Journal de Phe et réinitialiser le Journal de Phe",
+    "weight": "Poids (en g)",
+    "total": "Total",
+    "remaining": "Restant",
+    "save-day": "Terminer le journal",
+    "own-food": "Aliments personnels",
+    "manual-add": "Ajouter manuellement",
+    "preview": "Aperçu du Journal de Phe"
+  },
+  "phe-diary": {
+    "title": "Journal de Phe",
+    "description": "Enregistrez les valeurs de Phe sur plusieurs jours.",
+    "date": "Date",
+    "phe": "Phe total (en mg)",
+    "chart": "Ajouter une entrée",
+    "limit": "Le Journal de Phe est limité à 100 entrées. Exportez vos données en Excel. Réinitialisez via les paramètres.",
+    "export": "Exporter",
+    "log": "Journal (Modifier ne met pas à jour le Phe total !)",
+    "export-confirm": "Exporter le Journal de Phe en Excel ? Remarque : évitez les dates en double dans le Journal de Phe",
+    "export-overview": "Aperçu",
+    "export-filename": "PKU Tools - Journal de Phe",
+    "note": "Limité à 100 entrées (~3 mois). Exportez puis réinitialisez via les paramètres."
+  },
+  "statistics": {
+    "title": "Statistiques"
+  },
+  "amino-counter": {
+    "title": "Compteur d'acides aminés",
+    "description": "Comptez les portions du mélange d'acides aminés.",
+    "progress": "portion(s) aujourd'hui",
+    "take": "Ajouter une portion",
+    "amount": "Portions par jour",
+    "serving": "1 portion",
+    "limit": "Le compteur d'acides aminés est limité à 100 entrées. Veuillez réinitialiser l'historique dans les paramètres.",
+    "note": "Limité à 100 entrées. Réinitialisez via les paramètres."
+  },
+  "settings": {
+    "title": "Paramètres",
+    "description": "Paramètres de l'application / du compte",
+    "max-amino": "Portions d'acides aminés par jour",
+    "max-phe": "Tolérance de Phe par jour",
+    "saved": "Enregistré",
+    "reset-heading": "Réinitialiser",
+    "reset-log": "Réinitialiser le journal d'aujourd'hui",
+    "reset-diary": "Réinitialiser le Journal de Phe",
+    "reset-own-food": "Réinitialiser les aliments personnels",
+    "reset-am": "Réinitialiser le compteur d'acides aminés"
+  },
+  "help": {
+    "title": "Aide",
+    "description": "Aide et FAQ pour PKU Tools.",
+    "contact-me": "Contactez-moi par e-mail :",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "install": "Comment installer l'application ?",
+    "install-p1": "Il s'agit d'une Progressive Web App et peut être installée sur n'importe quel appareil.",
+    "install-p2": "Android :",
+    "install-p3": "Appuyez sur le bouton de partage, puis sur \"Ajouter à l'écran d'accueil\" dans Safari.",
+    "install-p4": "Cliquez sur la petite icône d'installation dans la barre d'adresse de Chrome, Brave ou Edge.",
+    "sign-in": "Comment se connecter ?",
+    "sign-in-p1": "Vous pouvez vous connecter avec Google ou Facebook (depuis le menu en haut à droite).",
+    "sign-in-p2": "D'autres options de connexion ne sont pas prévues pour le moment.",
+    "support": "Comment apporter son soutien ?",
+    "support-p1": "Je fournis PKU Tools gratuitement. Avec le lien ci-dessous, vous pouvez me soutenir :)",
+    "support-p2": "Au fait, l'application est Open Source. Si vous souhaitez contribuer, contactez-moi.",
+    "roadmap": "Quoi de neuf ?",
+    "roadmap-p1": "L'application est constamment optimisée. Pour le moment, seules les mises à jour majeures sont parfois communiquées dans un groupe Facebook. Contactez-moi pour plus d'informations.",
+    "translate": "Y a-t-il d'autres langues ?",
+    "translate-p1": "Pas pour le moment, mais vous pouvez aider à la traduction dans d'autres langues. Contactez-moi pour plus d'informations."
+  },
+  "other-apps": {
+    "title": "Autres applications",
+    "description": "Autres applications PKU",
+    "phe-rechner": "Application PKU allemande qui combine calculatrice, stylo, papier et tableau nutritionnel (~ 2017).",
+    "pku-manager": "Application PKU anglaise pour rechercher, calculer et suivre les aliments (~ 2018).",
+    "features": "Comparaison des fonctionnalités"
+  },
+  "about": {
+    "title": "À propos",
+    "description": "À propos de PKU Tools",
+    "email": "Email",
+    "sources": "Sources : USDA, FoodData Central, 2019 (fdc.nal.usda.gov). & Frida Food Data, version 4, 2019 (frida.fooddata.dk) & openfoodfacts.org"
+  },
+  "disclaimer": {
+    "title": "Avertissement",
+    "description": "Avertissement pour PKU Tools"
+  },
+  "privacy-policy": {
+    "title": "Politique de confidentialité",
+    "description": "Politique de confidentialité de PKU Tools"
+  },
+  "feature-comparison": {
+    "subject": "Fonctionnalité",
+    "included": "Inclus"
+  }
+}

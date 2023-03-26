@@ -217,11 +217,12 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
 import { format, parseISO, formatISO } from "date-fns";
-import { enUS, de } from "date-fns/locale";
+import { enUS, de, fr } from "date-fns/locale";
 import XLSX from "xlsx";
 import VueApexCharts from "vue-apexcharts";
 import enChart from "apexcharts/dist/locales/en.json";
 import deChart from "apexcharts/dist/locales/de.json";
+import frChart from "apexcharts/dist/locales/fr.json";
 import { mdiGoogle, mdiFacebook, mdiInformationVariant } from "@mdi/js";
 
 export default {
@@ -354,7 +355,7 @@ export default {
     },
     getlocalDate(date) {
       if (date) {
-        const locales = { enUS, de };
+        const locales = { enUS, de, fr };
         return format(parseISO(date), "eee P", { locale: locales[this.$i18n.locale] });
       } else {
         return "";
@@ -428,7 +429,7 @@ export default {
     },
     computelocalDate() {
       if (this.editedItem.date) {
-        const locales = { enUS, de };
+        const locales = { enUS, de, fr };
         return format(parseISO(this.editedItem.date), "eee P", { locale: locales[this.$i18n.locale] });
       } else {
         return "";
@@ -453,9 +454,10 @@ export default {
     chartOptions() {
       let en = enChart;
       let de = deChart;
+      let fr = frChart;
       return {
         chart: {
-          locales: [en, de],
+          locales: [en, de, fr],
           defaultLocale: this.$i18n.locale,
           zoom: {
             enabled: false

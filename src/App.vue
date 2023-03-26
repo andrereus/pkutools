@@ -457,7 +457,8 @@ export default {
     drawer: null,
     lang: [
       { name: "English", abbr: "en" },
-      { name: "Deutsch", abbr: "de" }
+      { name: "Deutsch", abbr: "de" },
+      { name: "Français", abbr: "fr" }
     ],
     bottomNav: null,
     sheet: false,
