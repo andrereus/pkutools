@@ -100,7 +100,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
 import { formatRelative, isToday, parseISO } from "date-fns";
-import { enUS, de, fr } from "date-fns/locale";
+import { enUS, de, fr, es } from "date-fns/locale";
 import { mdiGoogle, mdiFacebook, mdiCupWater, mdiInformationVariant } from "@mdi/js";
 
 export default {
@@ -147,7 +147,7 @@ export default {
     },
     getlocalDate(date) {
       if (date) {
-        const locales = { enUS, de, fr };
+        const locales = { enUS, de, fr, es };
         return formatRelative(parseISO(new Date(date).toISOString()), new Date(), {
           locale: locales[this.$i18n.locale]
         });

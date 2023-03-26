@@ -1,0 +1,191 @@
+{
+  "app": {
+    "title": "Herramientas PKU",
+    "description": "Herramientas y aplicaciones para PKU.",
+    "signin-google": "Iniciar sesión con Google",
+    "signin-facebook": "Iniciar sesión con Facebook",
+    "signout": "Cerrar sesión",
+    "update-info": "Hay una nueva versión disponible.",
+    "update": "Actualizar",
+    "offline": "Estás desconectado.",
+    "more": "Más",
+    "dark": "Diseño oscuro",
+    "light": "Diseño claro",
+    "main-menu": "Menú principal",
+    "account-menu": "Menú de cuenta",
+    "profile-picture": "Foto de perfil",
+    "new": "Nuevo",
+    "tools": "Herramientas",
+    "logs": "Registros",
+    "help": "Ayuda",
+    "install": "Instalar aplicación",
+    "feedback": "Comentarios"
+  },
+  "common": {
+    "add": "Agregar",
+    "edit": "Editar",
+    "save": "Guardar",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "reset": "Reiniciar",
+    "settings": "Configuración",
+    "ok": "Aceptar",
+    "note": "Nota"
+  },
+  "home": {
+    "title": "Inicio",
+    "features": "Características",
+    "more": "Y más al iniciar sesión",
+    "video": "Ver video",
+    "mobile-video": "Video (móvil)",
+    "compare": "Comparar características",
+    "own-food": "Alimentos propios",
+    "own-food-long": "Alimentos propios",
+    "support-me": "Apoya el desarrollo de Herramientas PKU:"
+  },
+  "phe-search": {
+    "title": "Búsqueda de Phe",
+    "description": "Buscar valores de Phe.",
+    "search": "Búsqueda de Phe",
+    "weight": "Peso (en g)",
+    "advanced": "Buscar en todos los alimentos",
+    "source": "Fuente: Departamento de Agricultura de EE. UU., Servicio de Investigación Agrícola. FoodData Central, 2019. fdc.nal.usda.gov"
+  },
+  "phe-calculator": {
+    "title": "Calculadora de Phe",
+    "description": "Calcular valores de Phe.",
+    "phe": "Phe por 100 g (en mg)",
+    "weight": "Peso consumido (en g)",
+    "name": "Nombre del alimento",
+    "protein-link": "Calcular con proteínas en lugar de ->"
+  },
+  "protein-calculator": {
+    "title": "Calculadora de proteínas",
+    "description": "Calcular valores aproximados de Phe a partir de proteínas.",
+    "factor": "Cálculo de frutas o verduras",
+    "protein": "Proteínas por 100g (eng)",
+    "phe": "Phe por 100g",
+    "weight": "Peso consumido (en g)",
+    "name": "Nombre del alimento"
+  },
+  "barcode-scanner": {
+    "title": "Escáner de código de barras",
+    "note": "Aviso: En iOS, el escáner funciona de manera confiable solo a través del navegador.",
+    "scan-barcode": "Escanear código de barras",
+    "please-wait": "Por favor, espera...",
+    "protein": "Proteína (por 100g)",
+    "info": "Phe se calcula a partir de proteínas | Fuente de datos: openfoodfacts.org"
+  },
+  "own-food": {
+    "title": "Alimento propio",
+    "description": "Guardar alimentos propios y valores de Phe.",
+    "phe": "Phe por 100g (en mg)",
+    "weight": "Peso (en g)",
+    "date": "Fecha",
+    "chart": "No hay suficientes entradas para el gráfico.",
+    "limit": "Alimento propio está limitado a 500 entradas.",
+    "note": "Limitado a 500 entradas."
+  },
+  "phe-log": {
+    "title": "Registro de Phe",
+    "description": "Registrar valores de Phe a lo largo del día.",
+    "lock-values": "Modo de cálculo",
+    "lock-info": "El peso y Phe se cambian en paralelo",
+    "max": "Tolerancia de Phe por día",
+    "save-diary": "Guardar en el diario de Phe y reiniciar el registro de Phe",
+    "weight": "Peso (en g)",
+    "total": "Total",
+    "remaining": "Restante",
+    "save-day": "Terminar registro",
+    "own-food": "Alimento propio",
+    "manual-add": "Agregar manualmente",
+    "preview": "Vista previa del registro de Phe"
+  },
+  "phe-diary": {
+    "title": "Diario de Phe",
+    "description": "Registrar valores de Phe durante varios días.",
+    "date": "Fecha",
+    "phe": "Total de Phe (en mg)",
+    "chart": "Agregar entrada",
+    "limit": "El diario de Phe está limitado a 100 entradas. Exporta tus datos en Excel. Restablece a través de la configuración.",
+    "export": "Exportar",
+    "log": "Registro (editar no actualiza el Phe total!)",
+    "export-confirm": "¿Exportar diario de Phe en Excel? Nota: Evita fechas duplicadas en el diario de Phe",
+    "export-overview": "Resumen",
+    "export-filename": "Herramientas PKU - Diario de Phe",
+    "note": "Limitado a 100 entradas (~3 meses). Exporta y luego restablece a través de la configuración."
+  },
+  "statistics": {
+    "title": "Estadísticas"
+  },
+  "amino-counter": {
+    "title": "Contador de aminoácidos",
+    "description": "Contar porciones de la mezcla de aminoácidos.",
+    "progress": "porción(es) hoy",
+    "take": "Agregar porción",
+    "amount": "Porciones por día",
+    "serving": "1 porción",
+    "limit": "El contador de aminoácidos está limitado a 100 entradas. Restablece el historial en la configuración.",
+    "note": "Limitado a 100 entradas. Restablecer a través de la configuración."
+  },
+  "settings": {
+    "title": "Configuración",
+    "description": "Configuración de la aplicación / cuenta",
+    "max-amino": "Porciones de aminoácidos por día",
+    "max-phe": "Tolerancia de Phe por día",
+    "saved": "Guardado",
+    "reset-heading": "Restablecer",
+    "reset-log": "Restablecer el registro de hoy",
+    "reset-diary": "Restablecer el diario de Phe",
+    "reset-own-food": "Restablecer alimentos propios",
+    "reset-am": "Restablecer contador de aminoácidos"
+  },
+  "help": {
+    "title": "Ayuda",
+    "description": "Ayuda y preguntas frecuentes para Herramientas PKU.",
+    "contact-me": "Contáctame por correo electrónico:",
+    "faq": "Preguntas frecuentes",
+    "contact": "Contacto",
+    "install": "¿Cómo instalar la aplicación?",
+    "install-p1": "Esta es una aplicación web progresiva y se puede instalar en cualquier dispositivo.",
+    "install-p2": "Android:",
+    "install-p3": "Pulsa el botón de compartir y luego \"Añadir a pantalla de inicio\" en Safari.",
+    "install-p4": "Haz clic en el pequeño icono de instalación en la barra de direcciones en Chrome, Brave o Edge.",
+    "sign-in": "¿Cómo iniciar sesión?",
+    "sign-in-p1": "Puedes iniciar sesión con Google o Facebook (desde el menú en la esquina superior derecha).",
+    "sign-in-p2": "Otras opciones de inicio de sesión no están planeadas en este momento.",
+    "support": "¿Cómo apoyar?",
+    "support-p1": "Ofrezco Herramientas PKU de forma gratuita. Con el siguiente enlace puedes apoyarme :)",
+    "support-p2": "Por cierto, la aplicación es de código abierto. Si quieres contribuir, contáctame.",
+    "roadmap": "¿Qué hay de nuevo?",
+    "roadmap-p1": "La aplicación se está optimizando constantemente. En este momento, solo se comunican ocasionalmente actualizaciones importantes en un grupo de Facebook. Contáctame para más información.",
+    "translate": "¿Hay otros idiomas?",
+    "translate-p1": "No en este momento, pero puedes ayudar con la traducción a otros idiomas. Contáctame para más información."
+  },
+  "other-apps": {
+    "title": "Otras aplicaciones",
+    "description": "Otras aplicaciones PKU",
+    "phe-rechner": "Aplicación PKU alemana que combina calculadora, bolígrafo, papel y tabla nutricional (~ 2017).",
+    "pku-manager": "Aplicación PKU en inglés para buscar, calcular y realizar seguimiento de alimentos (~ 2018).",
+    "features": "Comparación de características"
+  },
+  "about": {
+    "title": "Acerca de",
+    "description": "Acerca de Herramientas PKU",
+    "email": "Correo electrónico",
+    "sources": "Fuentes: USDA, FoodData Central, 2019 (fdc.nal.usda.gov). & Frida Food Data, versión 4, 2019 (frida.fooddata.dk) & openfoodfacts.org"
+  },
+  "disclaimer": {
+    "title": "Descargo de responsabilidad",
+    "description": "Descargo de responsabilidad de Herramientas PKU"
+  },
+  "privacy-policy": {
+    "title": "Política de privacidad",
+    "description": "Política de privacidad de Herramientas PKU"
+  },
+  "feature-comparison": {
+    "subject": "Característica",
+    "included": "Incluido"
+  }
+}

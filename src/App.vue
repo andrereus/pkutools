@@ -456,8 +456,9 @@ export default {
     mdiCommentQuoteOutline,
     drawer: null,
     lang: [
-      { name: "English", abbr: "en" },
       { name: "Deutsch", abbr: "de" },
+      { name: "English", abbr: "en" },
+      { name: "Español", abbr: "es" },
       { name: "Français", abbr: "fr" }
     ],
     bottomNav: null,

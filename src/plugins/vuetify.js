@@ -4,6 +4,7 @@ import i18n from "./i18n";
 import en from "vuetify/es5/locale/en";
 import de from "vuetify/es5/locale/de";
 import fr from "vuetify/es5/locale/fr";
+import es from "vuetify/es5/locale/es";
 
 Vue.use(Vuetify);
 
@@ -16,7 +17,7 @@ export default new Vuetify({
     }
   },
   lang: {
-    locales: { en, de, fr },
+    locales: { en, de, fr, es },
     current: i18n.locale
   },
   icons: {
