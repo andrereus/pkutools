@@ -71,6 +71,7 @@
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",
+    "description": "Experimentelle Funktion: Kamera öffnet noch nicht auf allen Geräten zuverlässig (dann bitte App neu starten).",
     "note": "Hinweis: Unter iOS funktioniert der Scanner nur über den Browser zuverlässig.",
     "scan-barcode": "Barcode scannen",
     "please-wait": "Bitte warten ...",

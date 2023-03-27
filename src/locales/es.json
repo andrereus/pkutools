@@ -71,6 +71,7 @@
   },
   "barcode-scanner": {
     "title": "Escáner de código de barras",
+    "description": "Función experimental: la cámara aún no se abre de forma fiable en todos los dispositivos (reinicia la aplicación).",
     "note": "Aviso: En iOS, el escáner funciona de manera confiable solo a través del navegador.",
     "scan-barcode": "Escanear código de barras",
     "please-wait": "Por favor, espera...",

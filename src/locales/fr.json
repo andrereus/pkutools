@@ -71,6 +71,7 @@
   },
   "barcode-scanner": {
     "title": "Scanner de code-barres",
+    "description": "Fonction expérimentale : la caméra ne s'ouvre pas encore de manière fiable sur tous les appareils (veuillez alors relancer l'application).",
     "note": "Remarque : Sur iOS, le scanner ne fonctionne de manière fiable que via le navigateur.",
     "scan-barcode": "Scanner le code-barres",
     "please-wait": "Veuillez patienter...",

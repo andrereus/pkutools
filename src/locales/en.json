@@ -71,6 +71,7 @@
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",
+    "description": "Experimental feature: Camera does not yet open reliably on all devices (then please restart the app).",
     "note": "Notice: On iOS the scanner only works reliably via the browser.",
     "scan-barcode": "Scan barcode",
     "please-wait": "Please wait ...",
