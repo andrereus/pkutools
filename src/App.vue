@@ -493,7 +493,7 @@ export default {
     document.getElementsByTagName("html")[0].lang = this.$i18n.locale;
 
     firebase.initializeApp({
-      apiKey: "AIzaSyCy-4rH75-ILcbgJPx3amMaoHUEl3fJJtw",
+      apiKey: process.env.VUE_APP_API_KEY,
       authDomain: "pku-tools.firebaseapp.com",
       databaseURL: "https://pku-tools.firebaseio.com",
       projectId: "pku-tools",
