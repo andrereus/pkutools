@@ -2,8 +2,12 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense dismissible text v-if="$i18n.locale === 'fr'" class="mb-6">La traduction en français n'est pas optimisée. La recherche Phe est en anglais.</v-alert>
-        <v-alert dense dismissible text v-if="$i18n.locale === 'es'" class="mb-6">La traducción al español no está optimizada. La búsqueda Phe está en inglés.</v-alert>
+        <v-alert dense dismissible text v-if="$i18n.locale === 'fr'" class="mb-6">
+          La traduction en français n'est pas optimisée. La recherche Phe est en anglais.
+        </v-alert>
+        <v-alert dense dismissible text v-if="$i18n.locale === 'es'" class="mb-6">
+          La traducción al español no está optimizada. La búsqueda Phe está en inglés.
+        </v-alert>
         <h2 class="headline mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
         <h2 class="headline mt-1" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
       </v-col>
@@ -366,9 +370,6 @@ export default {
   max-width: 550px;
 }
 
-.v-btn {
-  text-transform: none;
-}
 .tr-edit {
   cursor: pointer;
 }

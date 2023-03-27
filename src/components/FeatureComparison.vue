@@ -3,11 +3,11 @@
     <template v-slot:default>
       <thead>
         <tr>
-          <th class="text-left">{{ $t("feature-comparison.subject") }}</th>
-          <th class="text-left" v-if="home">{{ $t("feature-comparison.included") }}</th>
-          <th class="text-left" v-if="!home">PKU Tools</th>
-          <th class="text-left" v-if="!home">PKU Manager</th>
-          <th class="text-left" v-if="!home">Phe Rechner</th>
+          <th scope="col" class="text-left">{{ $t("feature-comparison.subject") }}</th>
+          <th scope="col" class="text-left" v-if="home">{{ $t("feature-comparison.included") }}</th>
+          <th scope="col" class="text-left" v-if="!home">PKU Tools</th>
+          <th scope="col" class="text-left" v-if="!home">PKU Manager</th>
+          <th scope="col" class="text-left" v-if="!home">Phe Rechner</th>
         </tr>
       </thead>
       <tbody>
