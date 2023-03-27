@@ -14,33 +14,6 @@
           </v-card-title>
 
           <v-card-text>
-            <!-- <v-slide-group v-if="editedIndex === -1" class="mt-2" show-arrows="desktop">
-              <v-slide-item>
-                <v-btn depressed rounded small to="/phe-calculator" class="mr-1">
-                  <v-icon left>{{ mdiCalculator }}</v-icon>
-                  {{ $t("phe-calculator.title") }}
-                </v-btn>
-              </v-slide-item>
-              <v-slide-item>
-                <v-btn depressed rounded small to="/protein-calculator" class="mr-1">
-                  <v-icon left>{{ mdiCalculatorVariant }}</v-icon>
-                  {{ $t("protein-calculator.title") }}
-                </v-btn>
-              </v-slide-item>
-              <v-slide-item>
-                <v-btn depressed rounded small to="/barcode-scanner" class="mr-1">
-                  <v-icon left>{{ mdiBarcodeScan }}</v-icon>
-                  {{ $t("barcode-scanner.title") }}
-                </v-btn>
-              </v-slide-item>
-              <v-slide-item>
-                <v-btn depressed rounded small to="/own-food" class="mr-1">
-                  <v-icon left>{{ mdiFoodApple }}</v-icon>
-                  {{ $t("phe-log.own-food") }}
-                </v-btn>
-              </v-slide-item>
-            </v-slide-group> -->
-
             <v-text-field filled rounded label="Name" v-model="editedItem.name" class="mt-6">
               <template v-slot:append-outer>
                 <v-menu offset-y>
