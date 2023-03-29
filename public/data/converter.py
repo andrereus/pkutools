@@ -18,12 +18,12 @@ def json_to_csv(input_file, output_file):
 def csv_to_json(input_file, output_file):
     csv_data = []
 
-    with open(input_file, 'r', newline='', encoding='utf-8') as csvfile:
+    with open(input_file, 'r', newline='', encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             csv_data.append(row)
 
-    json_data = json.dumps(csv_data, indent=4)
+    json_data = json.dumps(csv_data, ensure_ascii=False, indent=4)
 
     with open(output_file, 'w', encoding='utf-8') as jsonfile:
         jsonfile.write(json_data)
