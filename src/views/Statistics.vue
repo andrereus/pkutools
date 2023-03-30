@@ -196,7 +196,7 @@ export default {
       let res, food;
       if (this.$i18n.locale === "de") {
         const res1 = await fetch(this.publicPath + "data/frida-icon-original.json");
-        const res2 = await fetch(this.publicPath + "data/deda.json");
+        const res2 = await fetch(this.publicPath + "data/deda-icon-original.json");
         const food1 = await res1.json();
         const food2 = await res2.json();
         food = food1.concat(food2).concat(this.ownFood);
