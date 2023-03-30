@@ -125,3 +125,379 @@ Perlensago (Kartoffelstärke),8,organic-food
 "Knoblauch, roh",184,knoblauch
 "Mayonnaise, fettarm",0,organic-food
 "Käse, fest, Samsoe, 45% fidm.",1400,kaese
+"Käse, hart, Chesire, 50% fidm.",1240,kaese
+"Eier, Huhn, Eiweiß, roh",667,eier
+"Speck, braten, roh",478,speck
+"Pflaume, getrocknete Pflaume",51,plum
+"Gebäck, Croissant",392,croissant
+"Bier, dänischer Haushalt, niedriger Alkoholgehalt, Durchschnittswerte",6,organic-food
+"Eier, Huhn, Eiweiß, getrocknet",5140,eier
+Gebäck mit Mohn,387,gebäck
+"Käse, blauer und weißer Schimmel, 70% fidm.",680,kaese
+"Bier, dänischer Haushalt, wenig Alkohol",7,organic-food
+"Käse, fest, Svenbo, 45% fidm.",1430,kaese
+"Bier, Export, alc. 5,6 Vol .-%",8,organic-food
+"Geister, 70% Beweis",0,organic-food
+Wodka,0,organic-food
+"Einfacher Kuchen, Zitronenkuchen",258,kuchen
+"Käse, hart, Emmentaler, 45% fidm.",1450,kaese
+"Käse, halbhart, Esrom, 60% fidm.",1000,kaese
+"Joghurtcreme, 9% Fett, mit Früchten",150,joghurt
+"Tofu, Sojabohnenquark",386,firm-tofu
+"Grapefruitsaft, in Dosen, ungekocht.",5,organic-food
+"Einfacher Kuchen, Schokoladenkuchen",298,kuchen
+"Dänisches Gebäck, kanelsnegl",229,gebäck
+"Dänisches Gebäck, Durchschnittswerte",229,gebäck
+"Einfacher Kuchen, Durchschnittswerte",255,kuchen
+"Popcorn, Öl und Salz hinzugefügt, traditionell",493,popcorn
+"Bulgur, gekocht, roh",565,organic-food
+"Linsen, gekeimt, roh",445,lentil
+Whiskey,0,organic-food
+"Wurst, Rindfleischsalami",772,salami
+"Käse, halbhart, Havarti, 60% fidm.",1010,kaese
+"Bier, stark, alc. 7,6 Vol .-%",8,organic-food
+"Sahne, kultiviert, 9% Fett",321,organic-food
+"Haselnuss, getrocknet",667,haselnuss
+"Sahne, 9% Fett",166,organic-food
+"Pasta, roh",692,spaghetti
+"Käse, Quarg, 5% fidm.",473,kaese
+"Käse, hart, Grana, 32% fidm.",1740,kaese
+"Käse, hart, Parmesan, 32% fidm.",1740,kaese
+Gin,0,organic-food
+"Sahne, kultiviert, 9% Fett",156,organic-food
+"Hefe, Bäcker, gepresst",323,organic-food
+"Keks, süß, Vanillegeschmack",231,kekse
+"Käse, hart, Cheddar, dänisch",1360,kaese
+"Fischpudding, roh",381,nicht-vegetarisches-essen-symbol
+Rum,0,organic-food
+"Pistazien, getrocknet",1150,pistachio-sauce
+"Hirse, Flocken",637,organic-food
+"Käse, unreif, geräuchert, 1% Fett",587,kaese
+"Kabeljau, Leber, Dosen",162,no-fish
+"Erdbeeren, gefroren, ungesüßt",14,erdbeere
+"Käse, Molke, Myseost, 33% fidm.",776,kaese
+"Käse, hart, Gruyere, 45% fidm.",1550,kaese
+"Kohl, rot, in Dosen, ohne Zuckerzusatz",9,cabbage
+"Dänisches Gebäck, Brezel",219,brezel
+Abb. Getrocknet,79,organic-food
+"Cranberry, roh",36,organic-food
+"Gebäck, ""Leinen",312,organic-food
+"Popcorn, Öl und Salz hinzugefügt",493,popcorn
+"Dänisches Gebäck, Weihnachtskuchen",264,organic-food
+"Wurst, Salami",564,salami
+"Biskuit, Pfundkuchen",312,organic-food
+"Kürbis, roh",146,kuerbis
+"Salatdressing, Blauschimmelkäse",246,organic-food
+"Radieschen, orientalisch, Daikon, japanischer Rettich, roh",20,radish
+"Sesam, ganz",993,sesame
+"Knäckebrot, Knackbrot, Roggen, grob",457,organic-food
+"Makkaroni, Spaghetti, ganze Mahlzeit, roh",735,spaghetti
+"Roggenbrot, dunkel, Vollkornbrot, importiert",272,brot
+"Birne, in Dosen",12,birne
+"Rübe, roh",12,beet
+"Hirse, Vollkorn",580,organic-food
+"Muschel, roh",495,muschel
+"Gurke, roh",17,gurke
+"Wollmispel, roh",14,organic-food
+"Cashewnüsse, Öl geröstet",858,cashew
+"Dänisches Gebäck, Butterring",219,organic-food
+"Cornflakes, Durchschnittswerte",395,cereal
+"Frühstücksflocken, Müsli, Durchschnittswerte",534,cereal
+"Melone, Honigtau, roh",18,melone
+"Tomatensaft, in Dosen",21,tomate
+"Aprikose, Dosen, leichte Siruppackung",21,aprikose
+"Orangensaft, in Dosen",7,orange
+Traubensaft,12,trauben
+"Karotte, in Dosen",21,karotte
+"Kartoffeln, püriertes Instantpulver mit Trockenmilch",436,potato
+"Roggenbrot, leicht",271,brot
+"Salz, Tisch",0,salz
+"Roggenbrot, dunkel, Pumpernickel",256,brot
+"Aprikose, in Dosen, ohne Zuckerzusatz",29,aprikose
+"Kürbis, in Dosen",97,kuerbis
+"Ananas, in Dosen",10,ananas
+"Zwiebeln, gehackt, gefroren",18,onion
+Weizen Zwieback,473,brot
+Weizen Zwieback,473,brot
+"Chayote-Frucht, roh",47,organic-food
+"Knäckebrot, Knackbrot, Roggen, fein",526,brot
+"Senf, gelb, fertig gemacht",219,ohne-senf
+"Pfirsich, in Dosen",10,pfirsich
+"Cornflakes, gefrostet",277,cereal
+"Sonnenblumenkerne, dekortiziert, getrocknet",1050,sunflower-butter
+"Hafer, gerollt, angereichert",735,rolled-oats
+"Warzenmelone, roh",26,organic-food
+"Tomate, dänisch, reif, roh",19,tomate
+"Mandarine, in Dosen",15,mango
+"Aprikose, getrocknet",96,aprikose
+"Frühstücksflocken, Müsli mit Zuckerzusatz",679,cereal
+"Frühstücksflocken, Müsli, ohne Zuckerzusatz",679,cereal
+"Holzapfel, roh",11,apfel
+"Holunder, Saft, konzentriert, Zucker nicht hinzugefügt",30,organic-food
+"Creme, 13% Fett (UHT)",140,organic-food
+"Pfeffer, scharfer Chili, in Dosen",27,chili-pepper
+"Sesam, dekortiziert",1160,black-sesame-seeds
+"Erdbeersaft, konzentriert, Zucker nicht hinzugefügt",17,erdbeere
+"Kopfsalat, Eisberg (inkl. Crisphead-Sorten), roh",40,lettuce
+"Hafer, gerollt, nicht angereichert",751,rolled-oats
+"Johannisbeere, rot, Saft, konzentriert, Zucker nicht hinzugefügt",17,organic-food
+"Erdbeeren, gefroren, gesüßt, ganz",17,erdbeere
+"Sahne, 13% Fett",146,organic-food
+"Ananas, roh",13,ananas
+"Wurst, Salami",511,salami
+"Rettich, weiß, roh",19,radish
+"Melone, Melone, roh",23,melone
+"Zuckerrüben, rot, in Dosen, ohne Zuckerzusatz",8,beet
+"Meerrettich, roh",123,organic-food
+"Erdbeeren, in Dosen",13,erdbeere
+"Johannisbeere, schwarz, Saft, konzentriert, Zucker nicht hinzugefügt",17,organic-food
+"Karotte, gefroren",33,karotte
+"Pfeffer, süß, in Dosen",24,paprika
+"Eis, Milchprodukte, Nougat",218,eis-in-der-waffel
+"Eis, Milchprodukte, Vanille",218,eis-in-der-waffel
+"Papaya, Papaya, roh",10,papaya
+"Milch, trocken, ganz, Pulver",1200,milchflasche
+"Kirschsaft, konzentriert, Zucker nicht hinzugefügt",9,kirsche
+"Pekannüsse, getrocknet",484,pecan
+"Käse, Hütte, 20% fidm.",686,kaese
+"Garnelen, gekocht, Schale entfernt",672,prawn
+Quark mit Früchten,357,organic-food
+"Karottensaft, in Dosen",24,karotte
+"Aprikose, roh",48,aprikose
+"Kabeljau, Rogen, Dosen",504,organic-food
+"Molke, süß, flüssig",27,organic-food
+"Garnelen, in Dosen",713,prawn
+"Blaubeere, gefroren, ungesüßt",15,blueberry
+"Dattel, getrocknet",58,date-fruit
+"Eis, Milchprodukte, dreifarbig",218,eis-in-der-waffel
+"Rhabarber, gefroren",26,organic-food
+"Zitronensohle, roh",694,organic-food
+"Chicorée, roh",27,organic-food
+"Mango, roh",16,mango
+"Niere, Kalb, roh",682,organic-food
+"Gebäck, Durchschnittswerte",340,kuchen
+"Grapefruit, roh",16,organic-food
+"Haferkleie, dänisch",908,organic-food
+"Karotte, roh",21,karotte
+"Mandarine, roh",27,organic-food
+"Kabeljau, Filet, gekocht",689,organic-food
+"Wolffish (Wels), roh",644,organic-food
+"Herz, Kalbfleisch, roh",691,organic-food
+"Bohnen, weiß, getrocknet, roh",1160,white-beans
+"Niere, Ochse, roh",649,organic-food
+"Kabeljau, Filet, geräuchert, mit Haut",699,organic-food
+"Kohl, Chinesisch oder Sellerie, roh",36,kohl
+"Niere, Schwein, roh",742,organic-food
+"Gebäck, Frangipani-Gebäck",320,kuchen
+"Feigen, roh",18,organic-food
+"Carambola, roh",37,organic-food
+"Steinbutt, roh",630,organic-food
+"Schellfisch, roh",786,organic-food
+"Schweinefleisch, Leberpaste, dänisch, fettarm",464,speck
+"Flunder, roh",696,organic-food
+"Endivie (Escarole), roh",50,lettuce
+"Einfacher Kuchen, Frangipani-Kuchen",292,kuchen
+"Kaviar, dänisch (Rogen, Klumpensauger)",475,organic-food
+"Kopfsalat, Loseblatt, roh",57,lettuce
+"Erbsen, reif, trocken, roh",915,peas
+"Persimone, Kaki-Frucht, roh",30,organic-food
+"Sohle, roh",778,fish
+"Tomaten, geschält, in Dosen",33,tomate
+"Fischbällchen, gebraten",571,organic-food
+"Endivie (Frisee), roh",52,organic-food
+"Kopfsalat, Cos oder Romaine, roh",53,lettuce
+"Kartoffeln, püriertes Instantpulver ohne Trockenmilch",329,potato
+"Karotte, roh",26,karotte
+"Kabeljau, Leber, geraucht",180,organic-food
+"Kabeljau, Leber, roh",180,organic-food
+"Pfirsich, roh",17,pfirsich
+"Nektarine, roh",8,organic-food
+"Kürbis, alle Sorten, roh",60,kuerbis
+Weizenbrot mit ganzen Körnern,363,brot
+"Avocado, roh",67,avocado
+Weizenkleie,665,organic-food
+"Alkoholfreies Getränk, konzentriert (1 + 5), Zucker hinzugefügt",0,organic-food
+"Zuckerrüben, rot, in Dosen",9,beet
+"Tomate, importiert, reif, roh",30,tomate
+"Hummer, gekocht",748,lobster
+"Hummer, in Dosen",748,lobster
+"Kopfsalat (USA), Kohlsalat (Großbritannien), roh",41,lettuce
+"Margarine, 70% Fett, Tischgebrauch, weiches, pflanzliches Fett",38,organic-food
+"Kohl, rot, in Dosen",18,cabbage
+"Guave, gemein, roh",2,organic-food
+"Gefleckter Wels, Filet, roh",640,fish
+"Muscheln, in Wasser, in Dosen",707,muschel
+"Käse, unreif, geräuchert, 10% Fett",447,kaese
+"Herz, Rindfleisch, roh",822,beef
+"Kohl, Chinesisch, Pak-Choi, roh",43,bok-choy
+"Herz, Schweinefleisch, roh",680,pork
+"Roggenbrot, dunkel mit fettreichen Samen und ganzen Körnern, industriell hergestellt",272,brot
+"Walnüsse, getrocknet",664,walnuts
+"Spargel, in Dosen",44,spargel
+"Knoblauch, getrocknet, Pulver",484,garlic
+"Chickory, Raddichio, roh",34,organic-food
+"Eier, Huhn, getrocknet",2840,eier
+"Hummer, roh",784,lobster
+"Norwegischer Hummer, roh",784,lobster
+"Knäckebrot, Knackebrot, Weizen, grob",639,brot
+"Kartoffelchips, fettreduziert",200,potato-chips
+"Sahne, 18% Fett",135,cream
+"Bohnen, Wachs, Dosen",38,beans
+Weizenbrot mit Weizenkleie,516,bread
+"Schweinefleisch, Schinken, gepökelt, in Dosen",578,pork
+"Brot, Roggenbolzen und Weizen, sauer, mit Kümmel",354,bread
+"Eier, Huhn, lange Eier, gekocht, gefroren",670,eggs
+"Marmelade, Mango",7,mango
+"Sahne, kultiviert, 18% Fett",133,cream
+"Brot, Vollkorn",398,bread
+"Leber, Gans, roh",812,liver
+"Kalbfleisch, rundes Auge, gesalzen, gekocht",764,veal
+Schokoladenmilch,341,chocolate-milk
+"Brot, weiß",383,bread
+"Weizenbrot italienischer Art, industriell hergestellt",430,bread
+"Bohnen, grün, in Dosen",41,beans
+"Linsen, getrocknet",1380,lentil
+"Muskelmagen, Hühnchen, roh",757,chicken
+"Kohlrabi, roh",38,kohlrabi
+"Brunnenkresse, roh",84,watercress
+"Eier, Huhn, Eigelb, getrocknet",1490,eggs
+"Baguette, Weizen, fein, industriell hergestellt",431,baguette
+"Kartoffel, in Dosen",63,potato
+"Paranüsse, getrocknet, roh",666,brazil-nut
+"Schweinefleisch, Schinken, gekocht, in Scheiben geschnitten",659,pork
+"Eier, Huhn, pasteurisiert",641,eggs
+"Kalbfleisch, mageres Fleisch, roh",829,veal
+"Heilbutt, atlantisch, geraucht",791,halibut
+"Weizenbrot zum Toasten, industriell hergestellt",416,bread
+"Kokosnussfleisch, getrocknet",295,coconut
+"Schweißbrot, Lamm, roh",514,lamb
+"Nur Huhn, Henne, Fleisch",813,chicken
+"Heilbutt, atlantisch, roh",791,halibut
+"Leber, Broiler oder Fritteuse, roh",888,liver
+"Süßkartoffel, roh",81,sweet-potato
+"Mangold, Schweizer, roh",109,chard
+"Zwiebel, roh",28,onion
+Erdbeermarmelade,10,strawberry
+"Sapodilla, roh",13,sapodilla
+"Käse, hart, Parmesan, gerieben",1990,cheese
+"Brötchen, Weizen mit grobem Mehl, industriell hergestellt",433,rolls
+"Kiwi, roh",37,kiwi
+"Schweinefleisch, Schinken, Oberseite (M. Semimembranosus), mager, roh",787,pork
+"Kirsche, in Zucker eingelegt",18,cherry
+"Ente, nur Fleisch, roh",761,organic-food
+"Pute, Brust, gekocht / geräuchert, in Scheiben geschnitten",773,organic-food
+"Truthahn, nur Fleisch, roh",806,organic-food
+"Schweinefleisch, Schinken, Silberseite (M. Semitendinosus), mager, roh",734,speck
+"Roggenbrot mit Sieben (weich) und fettreichen Samen, industriell hergestellt",310,brot
+"Ente, Brust, nur Fleisch, roh",828,organic-food
+"Schweinefleisch, Lende, mager, roh",827,speck
+"Zwiebeln, Frühling, roh",62,onion
+"Erbsen, Küken / Kichererbsen, trocken, roh",1180,peas
+"Leber, Ochse, roh",974,organic-food
+"Schweinefleisch, Lendenfilet, geräuchert",714,speck
+"Gebäck, Napoleonhut",359,kuchen
+"Weizenbrot mit grobem Mehl zum Toasten, industriell hergestellt",441,brot
+"Schweinefleisch, Schinken, Silberseite (M. Biceps Femoris), mager, roh",754,speck
+"Leber, Ente, roh",929,organic-food
+"Schweinefleisch, Sattel, geräuchert, roh",620,speck
+"Schweinefleisch, Sattel, geräuchert, gekocht",677,speck
+Thunfisch in Tomatensauce in Dosen,716,organic-food
+"Kohl, Wirsing, roh",64,cabbage
+"Spargel aller Art, roh",52,spargel
+"Huhn, Brust, gekocht, in Scheiben geschnitten",758,organic-food
+"Pistazien, trocken mit Salz geröstet",1210,pistachio-sauce
+"Kirschsaft, konzentriert, Zucker hinzugefügt",9,kirsche
+"Johannisbeere, rot, Saft, konzentriert, Zucker hinzugefügt",17,organic-food
+"Erdbeersaft, konzentriert, Zucker hinzugefügt",17,erdbeere
+"Bohnen, grün, roh",52,organic-food
+Weißes Brot für Würstchen,457,brot
+"Knollensellerie, Sellerieblätter, roh",45,sellerie
+"Rindfleisch, Oberseite, Kappe ab, roh",892,beef
+"Schweinefleisch, Filet, geschnitten, roh",781,speck
+"Knäckebrot, Knackebrot, Weizen, fein",557,brot
+"Herz, Huhn, roh",697,organic-food
+"Schweinefleisch, Fleisch, mager, ca. 3% Fett, roh",810,speck
+"Kabeljau, Rogen, roh",855,organic-food
+"Leber, Schwein, roh",1040,organic-food
+"Blumenkohl, gefroren",71,cauliflower
+"Krabbenkrallen, Fleisch, roh",916,crab
+"Krabbenkrallen, Fleisch, Dosen",916,crab
+"Truthahn, Fleisch und Haut, roh",743,organic-food
+"Brot, weiß, grobkörnig",439,brot
+Marzipan,1210,organic-food
+Weißes Weizenbrot mit rissigen Kastanien,419,brot
+"Holunder, Saft, konzentriert, Zucker hinzugefügt",30,organic-food
+Fenchelsamen,657,finocchio
+"Huhn, nur Fleisch, roh",738,organic-food
+"Lamm, Bein, entfettet, roh",808,rack-of-lamb
+"Kalbfleisch, dünnes Fett, roh",806,organic-food
+"Blumenkohl, dänisch, roh",67,cauliflower
+"Krabbe, gekocht",804,crab
+"Marmelade, Aprikose",15,jam
+"Schokolade, Milch, mit Nüssen",422,chocolate-bar-white
+"Rindfleisch, Rumpsteak, Kappe ab, roh",872,steak
+"Pinienkerne, getrocknet",596,organic-food
+"Kaninchen, nur Fleisch, roh",924,organic-food
+"Pfeffer, scharfer Chili, roh",61,chili-pepper
+"Baguette mit Roggen, industriell hergestellt",427,baguette
+"Cashewnüsse, trocken geröstet",780,cashew
+"Brötchen vom italienischen Typ, industriell hergestellt",467,brot
+"Rindfleisch, Fleisch, mager (<5% Fett), roh",868,beef
+"Rindfleisch, dicke Flanke, Kappe ab, roh",848,cuts-of-beef
+"Bohnen, grün, gefroren",54,organic-food
+"Lauch, roh",50,lauch
+"Thunfisch, in Wasser, in Dosen",961,organic-food
+"Garnelen, Garnelen, gekocht",1040,prawn
+"Roastbeef, in Scheiben geschnitten",868,roast
+"Rindfleisch, Filet, entfettet, roh",799,steak
+"Hammel, rund, roh",804,organic-food
+"Fruchtpaste, Feigen",65,organic-food
+Weizenbrot mit ganzen Körnern,472,brot
+"Brötchen, weiß, industriell hergestellt",454,brot
+Chips,233,potato-chips
+"Marmelade, orange",11,jam
+"Spinat, gehackt, gefroren",97,spinach
+"Fasan, nur Fleisch, roh",905,organic-food
+"Yam, roh",74,sweet-potato
+"Kartoffel, neu (Mai bis September), roh",72,potato
+"Ei, Ente, ganz, roh",841,egg-basket
+"Zunge, Schwein, roh",870,organic-food
+"Marmelade, Kiwi",7,jam
+"Zunge, Schwein, geheilt",870,kein-soja
+"Fruchtpaste, Durchschnittswerte",70,organic-food
+"Squab (Taube), Fleisch, roh",804,keine-krustentiere
+"Brot, weiß",462,brot
+"Johannisbeere, schwarz, Saft, konzentriert, Zucker hinzugefügt",17,himbeere
+Weißes Weizenbrot mit Walnüssen,538,brot
+"Nuss, Erbse, geölt und gesalzen",1590,cashew
+"Rindfleisch, Schienbein + Bein (Schaft), roh",856,beef
+"Rindfleisch, Streifenfilet ""cap off"", roh",896,beef
+"Dock (USA), Sauerampfer (Großbritannien), roh",115,organic-food
+"Käse, Quarg, 45% fidm.",579,kaese
+"Ei, Gans, ganz, roh",910,eier
+"Zucker, braun",0,zucker
+"Kaffee, Instant, entkoffeiniert, Pulver",241,coffee-capsule
+"Spargel, weiß, roh",65,spargel
+"Rindfleisch, draußen, rund, roh",856,beef
+"Rosine, kernlos",62,raisins
+"Huhn, Bein, Fleisch und Haut, roh",710,keine-krustentiere
+"Huhn, Trommelstock, Fleisch und Haut, roh",696,keine-krustentiere
+"Baguette, Weizen mit Roggen, fettreiche Samen, industriell hergestellt",449,baguette
+"Grünkohl, gefroren",84,kohlrabi
+"Kerbel, gehackt, gefroren",102,organic-food
+"Rindfleisch, rundes Auge, roh",860,beef
+"Einfach, roh",44,organic-food
+"Knäckebrot, Weizen",447,brot
+"Weizenbrot, Sandwich / Toast, fettreiche Samen, industriell hergestellt",428,brot
+"Schweinefleisch, Wurst, Frankfurter, Dosen",390,wuerste
+"Süßigkeiten, gekocht",0,suessigkeit
+"Thunfisch, roh",1100,keine-krustentiere
+"Likör, Kaffee mit Sahne",139,organic-food
+"Huhn, Brust, Fleisch und Haut, roh",791,keine-krustentiere
+"Rindfleisch, Fleisch, 5-10% Fett, roh",844,beef
+"Zunge, Ochse, roh",674,kein-soja
+"Zunge, Kalb, geheilt",622,kein-soja
+"Brokkoli, gekocht",88,broccoli
+"Marmelade, Kirsche",9,jam
+"Lachs, Atlantik, wild, in Dosen",844,keine-krustentiere
+"Pferd, Fleisch, roh",730,keine-krustentiere

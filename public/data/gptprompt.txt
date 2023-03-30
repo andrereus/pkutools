@@ -2,120 +2,52 @@ The following keywords are in english and german: bayerische-brezel, plastic-foo
 
 The following csv contains food names in german. The csv needs an extra column with matching keywords from above for each row:
 name,phe
-"Kartoffelchips, grob",244
-"Käse, Roquefort, Dänisch, 50% fidm.",1040
-"Kaffee, Instant, entkoffeiniert, mit Wasser zubereitet",3
-"Käse, dänisches Blau, 50% fidm.",1060
-"Käse, Brie, 60% fidm.",934
-"Speck, Eintopf, roh",552
-"Kaffee, Getränk",3
-"Roggenkerne, ganz / rissig",434
-"Wurst, Leberwurst",579
-"Sahne, kultiviert, 50% Fett",89
-"Käse, fest, 45% fidm., Alle Sorten",1280
-"Leinsamen, roh",1320
-"Nuss, Erbse, getrocknet",1670
-"Eis, Milchprodukte (auf Vollmilchbasis)",218
-"Sahne, 50% Fett",95
-"Sojamehl, Vollfett",2020
-"Reis, braun, roh",484
-"Milch, trocken, entrahmt, Pulver",1610
-"Käse, halbhart, Havarti, 45% fidm.",1270
-"Auster, roh",312
-"Fischbällchen, in Dosen",359
-"Roggenbrotkrümel mit braunem Zucker, Durchschnittswerte",290
-"Tomate, getrocknet",361
-Ymer,305
-"Keks, süß, 'finnisch'",275
-"Gerstengrütze, roh",539
-"Bier, Lager, alc. 2,6 Vol .-%",4
-Reisstärke,43
-"Dänisches Gebäck, quadratisch",239
-"Salatdressing, Französisch",33
-"Käse, dänisches Blau, 60% fidm.",842
-"Käse, fest, Fynbo, 45% fidm.",1340
-"Eier, Huhn, Eiweiß, pasteurisiert",562
-"Weizen, Körner, ganz / geknackt",550
-Semmelbrösel,558
-"Apfelsaft, in Dosen oder in Flaschen",2
-"Bier, Lager, alc. 4,4 Vol .-%",5
-Perlensago (Kartoffelstärke),8
-"Käse, fest, Maribo, 45% fidm.",1380
-"Knoblauch, roh",184
-"Mayonnaise, fettarm",0
-"Käse, fest, Samsoe, 45% fidm.",1400
-"Käse, hart, Chesire, 50% fidm.",1240
-"Eier, Huhn, Eiweiß, roh",667
-"Speck, braten, roh",478
-"Pflaume, getrocknete Pflaume",51
-"Gebäck, Croissant",392
-"Bier, dänischer Haushalt, niedriger Alkoholgehalt, Durchschnittswerte",6
-"Eier, Huhn, Eiweiß, getrocknet",5140
-Gebäck mit Mohn,387
-"Käse, blauer und weißer Schimmel, 70% fidm.",680
-"Bier, dänischer Haushalt, wenig Alkohol",7
-"Käse, fest, Svenbo, 45% fidm.",1430
-"Bier, Export, alc. 5,6 Vol .-%",8
-"Geister, 70% Beweis",0
-Wodka,0
-"Einfacher Kuchen, Zitronenkuchen",258
-"Käse, hart, Emmentaler, 45% fidm.",1450
-"Käse, halbhart, Esrom, 60% fidm.",1000
-"Joghurtcreme, 9% Fett, mit Früchten",150
-"Tofu, Sojabohnenquark",386
-"Grapefruitsaft, in Dosen, ungekocht.",5
-"Einfacher Kuchen, Schokoladenkuchen",298
-"Dänisches Gebäck, kanelsnegl",229
-"Dänisches Gebäck, Durchschnittswerte",229
-"Einfacher Kuchen, Durchschnittswerte",255
-"Popcorn, Öl und Salz hinzugefügt, traditionell",493
-"Bulgur, gekocht, roh",565
-"Linsen, gekeimt, roh",445
-Whiskey,0
-"Wurst, Rindfleischsalami",772
-"Käse, halbhart, Havarti, 60% fidm.",1010
-"Bier, stark, alc. 7,6 Vol .-%",8
-"Sahne, kultiviert, 9% Fett",321
-"Haselnuss, getrocknet",667
-"Sahne, 9% Fett",166
-"Pasta, roh",692
-"Käse, Quarg, 5% fidm.",473
-"Käse, hart, Grana, 32% fidm.",1740
-"Käse, hart, Parmesan, 32% fidm.",1740
-Gin,0
-"Sahne, kultiviert, 9% Fett",156
-"Hefe, Bäcker, gepresst",323
-"Keks, süß, Vanillegeschmack",231
-"Käse, hart, Cheddar, dänisch",1360
-"Fischpudding, roh",381
-Rum,0
-"Pistazien, getrocknet",1150
-"Hirse, Flocken",637
-"Käse, unreif, geräuchert, 1% Fett",587
-"Kabeljau, Leber, Dosen",162
-"Erdbeeren, gefroren, ungesüßt",14
-"Käse, Molke, Myseost, 33% fidm.",776
-"Käse, hart, Gruyere, 45% fidm.",1550
-"Kohl, rot, in Dosen, ohne Zuckerzusatz",9
-"Dänisches Gebäck, Brezel",219
-Abb. Getrocknet,79
-"Cranberry, roh",36
-"Gebäck, ""Leinen",312
-"Popcorn, Öl und Salz hinzugefügt",493
-"Dänisches Gebäck, Weihnachtskuchen",264
-"Wurst, Salami",564
-"Biskuit, Pfundkuchen",312
-"Kürbis, roh",146
-"Salatdressing, Blauschimmelkäse",246
-"Radieschen, orientalisch, Daikon, japanischer Rettich, roh",20
-"Sesam, ganz",993
-"Knäckebrot, Knackbrot, Roggen, grob",457
-"Makkaroni, Spaghetti, ganze Mahlzeit, roh",735
-"Roggenbrot, dunkel, Vollkornbrot, importiert",272
-"Birne, in Dosen",12
-"Rübe, roh",12
-"Hirse, Vollkorn",580
-"Muschel, roh",495
-"Gurke, roh",17
+"Sardine in Tomatensauce, in Dosen",628
+Hühnerfleischwürstchen,471
+"Pilz, in Dosen",60
+Weißes Weizenbrot mit Sonnenblumenkernen,475
+"Schnittlauch, roh",100
+"Zunge, Kalb, roh",622
+"Schweinefleisch, Schinken, gewürzt, entbeint",442
+"Pastinake, roh",64
+"Kartoffel, automn (Oktober bis Januar), roh",88
+"Maniok, roh",26
+"Rindfleisch, Oberseite ""Kappe auf"", roh",844
+"Rindfleisch, Hals, roh",832
+"Schweinefleisch, Hackfleisch, 5-10% Fett, roh",712
+"Kartoffel, alt (Februar bis Juni), roh",88
+"Stockfisch, Kabeljau, gespalten, gesalzen und getrocknet, roh",902
+"Schweinefleisch, Kragen, entfettet, roh",664
+"Gans, nur Fleisch, roh",946
+"Brot, weiß, Brötchen",496
+"Grünkohl, in Dosen",109
+"Spinat, in Dosen",125
+"Huhn, Fleisch und Haut, roh",692
+"Makrele in Tomatensauce, in Dosen",468
+"Pilz, roh",70
+"Rindfleisch, Rumpsteak ""cap on"", roh",816
+"Keks, süß",368
+"Kresse, Garten, roh",112
+"Sojasprossen, Mungo, roh",117
+"Hering, eingelegt, in Dosen",512
+"Petersilienwurzel, roh",55
+"Molke, süß, getrocknet",405
+"Sojasprossen, Durchschnittswerte, roh",115
+"Margarine, 30% Fett, pflanzliches Fett",25
+"Rindfleisch, Schulter, ventraler Teil",764
+"Schweinefleisch, Wurst, dänisch, roh",450
+"Muscheln, gekocht",990
+"Kalbfleisch, mittelfett, roh",768
+"Schweinefleisch, Hand mit Schale, roh",692
+"Gemischter Aufstrich, 80% Fett",22
+"Schweinefleisch, Fleisch, ca. 10% Fett, roh",736
+"Schweinefleisch, Muskelmasse, Kopfkäse",458
+"Huhn, Flügel, Fleisch und Haut, roh",707
+"Weizenbrot, fettreiche Samen, industriell hergestellt",504
+"Sprotte (Sardine) in Tomatensauce, in Dosen",580
+"Lamm, Schulter, roh",740
+"Fasan, Fleisch und Haut, roh",944
+"Marmelade, Erdbeere",17
+"Lachs, Atlantik, wild, kalt geräuchert",856
 
 Most important: Please do this task without changing the data already exisiting in the csv and not changing the keywords or inventing new ones. Only use what I have provided. Please remember this. If there is no matching keyword, use the default "organic-food".
