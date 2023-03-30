@@ -1,0 +1,230 @@
+﻿name,phe,keyword
+Vollkornbrote,344,brot
+Vollkornbrot,344,brot
+Vollkornbrot-Vollkornschrotbrot,264,brot
+Vollkornbrot-Weizenvollkornbrot,360,organic-food
+Vollkornbrot-Roggenvollkornbrot,370,brot
+Vollkornbrot-Roggenvollkornschrotbrot,264,organic-food
+Vollkornbrot-Hafervollkornbrot,338,brot
+Vollkornbrot-Gerstenvollkornbrot,340,organic-food
+Vollkornbrot-Weizenvollkornmischbrot,347,brot
+Vollkornbrot-Weizenvollkornmischschrotbrot,355,brot
+Vollkornbrot-Weizen/Roggenvollkornbrot,347,brot
+Vollkornbrot-Weizen/Roggenvollkornschrotbrot,355,organic-food
+Vollkornbrot-Weizen/Roggenvollkornschrottoastbrot,395,organic-food
+Vollkornbrot-Roggenvollkornmischbrot,336,organic-food
+Vollkornbrot-Roggenvollkornmischschrotbrot,338,organic-food
+Vollkornbrot-Roggenvollkornschrottoastbrot,336,organic-food
+Vollkornbrot-Roggen/Weizenvollkornbrot,336,brot
+Vollkornbrot-Roggen/Weizenvollkornschrotbrot,338,organic-food
+Vollkornbrot-Mehrkornvollkornbrot,326,organic-food
+Graubrote,366,organic-food
+Graubrot,366,organic-food
+Graubrot-Toastbrot,320,organic-food
+Körnerbrot glutenfrei,233,organic-food
+Graubrot-Roggenbrot,350,organic-food
+Graubrot-Roggentoastbrot,346,organic-food
+Graubrot-Haferbrot,374,brot
+Graubrot-Gerstenbrot,347,organic-food
+Graubrot-Weizenmischbrot,350,organic-food
+Graubrot-Weizenmischtoastbrot,413,organic-food
+Graubrot-Roggenmischbrot,350,organic-food
+Graubrot-Roggenmischtoastbrot,320,brot
+Graubrot-Mehrkornbrot,388,organic-food
+Weißbrote,394,organic-food
+Weißbrot-Toastbrot,411,organic-food
+Weißbrot glutenfrei,65,organic-food
+Weißbrot-Weizenbrot,420,organic-food
+Weißbrot-Weizentoastbrot,410,organic-food
+Vollkornbrötchen,383,brot
+Vollkornbrötchen-Weizenvollkornbrötchen,383,organic-food
+Vollkornbrötchen-Roggenvollkornbrötchen,320,organic-food
+Vollkornbrötchen-Weizenvollkornmischbrötchen,396,organic-food
+Vollkornbrötchen-Weizen/Roggenvollkornbrötchen,396,organic-food
+Vollkornbrötchen-Roggenvollkornmischbrötchen,383,organic-food
+Vollkornbrötchen-Roggen/Weizenvollkornbrötchen,383,organic-food
+Vollkornbrötchen-Dinkelvollkornbrötchen,535,organic-food
+Brötchen,496,organic-food
+Brötchen Schokobrötchen,416,schokoriegel
+Brötchen-Weizenbrötchen,490,brot
+Brötchen-Roggenbrötchen,511,organic-food
+Brötchen-Haferbrötchen,395,organic-food
+Brötchen-Gerstenbrötchen,367,organic-food
+Brötchen-Weizenmischbrötchen,440,brot
+Brötchen Dinkelbrötchen,483,brot
+Brötchen-Roggenmischbrötchen,384,brot
+Brötchen-Mehrkornbrötchen,406,brot
+Knäckebrote,439,organic-food
+Knäckebrot,450,brot
+Knäckebrot-Weizenbrot,581,organic-food
+Knäckebrot-Roggenbrot,422,organic-food
+Knusperbrot glutenfrei,489,organic-food
+Knäckebrot-Weizenmischbrot,631,brot
+Knäckebrot-Roggenmischbrot,545,brot
+Knäckebrot-Mehrkornbrot,541,organic-food
+Grünkernbrot,398,organic-food
+Grünkernbrötchen,418,organic-food
+Kartoffelbrot,382,potato
+Dinkelbrot,500,organic-food
+Lebensmittel eiweißarm und glutenfrei,61,organic-food
+Lebensmittel eiweißarm glutenfrei und natriumarm,38,proteine
+Toastbrot eiweißarm glutenfrei natriumarm,38,organic-food
+Waffel-Maisbrot glutenfrei,212,organic-food
+Hirsebrot glutenfrei,219,organic-food
+Kastanienbrot glutenfrei,77,organic-food
+Rosinenbrot glutenfrei,57,organic-food
+Buchweizenvollkornbrot,335,organic-food
+Buchweizenbrot,346,organic-food
+Buchweizenbrötchen,364,organic-food
+Sojabrot,2049,soy-sauce
+Laugengebäck,482,organic-food
+Laugenbrezel (mit Salz),435,brezel
+Laugenbrezel (sichtbares Salz entfernt),438,brezel
+Hirsevollkornbrot,338,brot
+Hirsebrot,350,brot
+Hirsebrötchen,368,brot
+Maisvollkornbrot,343,brot
+Maisbrot,381,brot
+Maisbrötchen,401,organic-food
+Mais-Fladenbrot,243,bayerische-brezel
+Mais-Vollkornfladenbrot,303,bayerische-brezel
+Reisvollkornbrot,332,brot
+Reisbrot,382,organic-food
+Reisbrötchen,402,organic-food
+Brote/Brötchen aus besonderen Mahlerzeugnissen,344,brot
+Schlüterbrot,344,organic-food
+Steinmetzbrot,294,organic-food
+Simonsbrot,344,organic-food
+Loosbrot,344,organic-food
+Grahambrot,680,brot
+Grahambrötchen,373,organic-food
+Kommißbrot,366,organic-food
+Brote/Brötchen - besondere Backverfahren,366,organic-food
+Holzofenbrot,366,organic-food
+Steinofenbrot,366,organic-food
+Dampfkammerbrot,366,organic-food
+Gersterbrot,366,organic-food
+Pumpernickel,228,bayerische-brezel
+Knäckebrot leicht & cross,631,organic-food
+Baguette,496,brezel
+Baguette-Brötchen,496,organic-food
+Fladenbrote,394,organic-food
+Weizenfladenbrot,394,brot
+Roggenfladenbrot,263,organic-food
+Tortilla aus Weizenmehl,470,organic-food
+Paniermehl,470,flour
+Paniermehl glutenfrei,330,organic-food
+Semmelbrösel,470,organic-food
+Backmischung für Zwiebelbrot,527,ingredients-for-cooking
+Backmischung für Maisbrot,553,organic-food
+Getreide roh,532,organic-food
+Getreide Grieß,479,cereal
+Weizen roh,532,organic-food
+Weizen Vollkorn roh,640,organic-food
+Weizen Flocken,532,cereal
+Weizen Vollkornflocken,532,organic-food
+Weizen Keim,1180,organic-food
+Weizen Keimflocken,1072,organic-food
+Weizen Grieß,479,organic-food
+Weizen Grütze,479,organic-food
+Quinoa roh,530,ingredients-for-cooking
+Couscous roh,544,kirsche
+Roggen roh,440,organic-food
+Roggen Vollkorn roh,470,organic-food
+Roggen Flocken,422,flour
+Roggen Keim,1830,organic-food
+Roggen Keimflocken,1830,organic-food
+Roggen Grieß,422,organic-food
+Getreidemischungen,473,organic-food
+Hafer roh,538,organic-food
+Hafer ganzes Korn roh,605,organic-food
+Hafer Flocken,780,organic-food
+Hafer Vollkornflocken,712,organic-food
+Hafer Grieß,818,organic-food
+Hafer Grütze,868,organic-food
+Haferkleieflocken,712,organic-food
+Gerste roh,583,organic-food
+Gerste Vollkorn roh,602,organic-food
+Gerste Flocken,466,organic-food
+Gerste Vollkornflocken,466,cereal
+Gerste Grieß,466,organic-food
+Gerste Grütze,450,kirsche
+Gerste Graupen,490,organic-food
+Gerste Perlgraupen,508,organic-food
+Mehl,484,flour
+Vollkornmehl,530,flour
+Schrot Type 1700,562,bayerische-brezel
+Weizen Mehl,484,flour
+Weizen Vollkornmehl,530,flour
+Weizen Backschrot Type 1700,590,organic-food
+Weizen Mehl (Type 650-1800),628,flour
+Weizen Mehl Type 812,670,flour
+Weizen Mehl Type 1050,630,flour
+Weizen Mehl Type 1200,552,flour
+Weizen Mehl Type 1600,614,flour
+Weizen Mehl Type 1700,550,flour
+Weizen Mehl Type <650,484,flour
+Weizen Mehl Type 405,550,flour
+Weizen Mehl Type 550,540,flour
+Weizen Mehl Type 630,600,flour
+Weizen Grießmehl,498,flour
+Weizen Stärke,21,organic-food
+Weizen Kleie,650,organic-food
+Roggen Mehl,316,flour
+Roggen Vollkornmehl,446,flour
+Roggen Schrot Type 1800,510,organic-food
+Roggen Mehl (Type 650-1800),316,flour
+Roggen Mehl Type 815,340,flour
+Roggen Mehl Type 997,360,flour
+Roggen Mehl Type 1150,430,flour
+Roggen Mehl Type 1370,430,flour
+Roggen Mehl Type 1590,403,flour
+Roggen Mehl Type 1740,395,flour
+Roggen Mehl (Type <650),316,flour
+Hafer Schrot,575,organic-food
+Hafer Mehl,812,flour
+Dinkelmehl Typ 630,575,flour
+Dinkel Vollkornmehl,760,flour
+Dinkel ganzes Korn roh,939,organic-food
+Gerste Schrot,597,bayerische-brezel
+Gerste Mehl,522,flour
+Grünkern roh,538,kirsche
+Grünkern Vollkorn roh,538,kirsche
+Grünkern Grütze,538,kirsche
+Buchweizen roh,381,organic-food
+Buchweizen Vollkorn roh,484,organic-food
+Buchweizen Grieß,325,organic-food
+Buchweizen Grütze,290,organic-food
+Hirse roh,394,kirsche
+Hirse ganzes Korn roh,382,kirsche
+Hirse Flocken,394,organic-food
+Hirse Vollkornflocken,394,flour
+Amaranth roh,542,organic-food
+Mais ganzes Korn roh,421,mais
+Mais Vollkorn roh,460,organic-food
+Mais Grieß,437,organic-food
+Mais Grütze,437,organic-food
+Reis roh,362,organic-food
+Wildreis roh,752,organic-food
+Wildreismischung roh,479,organic-food
+Basmatireis roh,443,organic-food
+Reis Grieß,362,organic-food
+Reis halbpoliert roh,376,organic-food
+Reis parboiled roh,331,organic-food
+Getreidemischung Flocken,534,organic-food
+Milchreis ganzes Korn roh,362,organic-food
+Grünkern Schrot,538,organic-food
+Grünkern Mehl,483,flour
+Mehlmischung eiweißarm glutenfrei natriumarm,22,flour
+Mehlmischung für Brot glutenfrei,93,organic-food
+Kuchenmehlmischung glutenfrei,71,organic-food
+Mehrkornschrot,540,kirsche
+Buchweizen Vollkornmehl,520,flour
+Buchweizen Schrot,403,organic-food
+Buchweizen Mehl,211,flour
+Buchweizen Mehl hell,211,flour
+Hirse Schrot,422,organic-food
+Hirse Mehl,231,flour
+Mais Schrot,447,organic-food
+Mais Mehl,410,flour
+Mais Stärke,22,mais
