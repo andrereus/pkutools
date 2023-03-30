@@ -1,0 +1,127 @@
+name,phe,keyword
+"Erdbeere, roh",22,erdbeere
+"Apfel, roh, alle Sorten",7,apfel
+"Banane, roh",35,banane
+"Kartoffel, roh",81,potato
+"Vollmilch, konventionell (nicht biologisch), 3,5% Fett",172,milchflasche
+"Petersilie, roh",178,ingredients-for-cooking
+"Birne, roh",12,birne
+"Rhabarber, roh",26,ingredients-for-cooking
+"Joghurt einfach, Vollmilch",166,joghurt
+"Sellerie, roh",33,sellerie
+"Blumenkohl, alle Sorten, roh",82,cauliflower
+"Pflaume, roh",16,plum
+"Brokkoli, roh",131,broccoli
+"Bohnen, braun, getrocknet, roh",937,ingredients-for-cooking
+"Bohnen, Wachs, roh",57,ingredients-for-cooking
+"Zitrone, roh",18,ingredients-for-cooking
+"Grünkohl, roh",201,ingredients-for-cooking
+"Karotte, roh",18,karotte
+"Seestern, roh",774,ingredients-for-cooking
+"Kohl, weiß, roh",22,cabbage
+"Holunder, roh",40,ingredients-for-cooking
+"Kirsche, roh",24,kirsche
+"Lachs, Atlantik, wild, roh",736,ingredients-for-cooking
+"Zuckermais, on-the-Cob, roh",189,mais
+"Milch, Buttermilch",171,milk-carton
+"Milch, teilweise entrahmt, konventionell (nicht biologisch), 1,5% Fett",176,milk-carton
+"Makrele, roh",740,ingredients-for-cooking
+"Mandel, roh",1210,ingredients-for-cooking
+"Wassermelone, roh",3,wassermelone
+"Pfeffer, süß, grün, roh",27,ingredients-for-cooking
+"Pfeffer, süß, rot, roh",28,ingredients-for-cooking
+"Rettich, roh",20,radish
+"Rosenkohl, roh",131,ingredients-for-cooking
+"Zuckerrüben, rot, roh",16,beet
+"Kohl, rot, roh",27,ingredients-for-cooking
+"Scholle, roh",644,ingredients-for-cooking
+"Knollensellerie, Selleriewurzel, roh",45,sellerie
+"Hering, eingelegt, in Dosen",515,ingredients-for-cooking
+"Hering, roh",653,ingredients-for-cooking
+"Kohl, Frühling, roh",46,ingredients-for-cooking
+"Spinat, roh",122,spinach
+"Tomate, reif, roh, Herkunft unbekannt",21,tomate
+"Wasser, Wasserhahn, Trinken, Durchschnittswerte",0,ingredients-for-cooking
+"Traube, roh",13,trauben
+"Erbsen, grün, roh",209,peas
+"Squash, roh",48,squash
+"Bohnen, Mungo, getrocknet, roh",1450,organic-food
+"Hafer, gerollt, Durchschnittswerte",729,rolled-oats
+"Roggenmehl, dunkle, ganze Mahlzeit",419,flour
+"Weizen, Mehl, Vollkorn",522,flour
+"Ingwerwurzel, roh",49,ginger
+"Okra, roh",64,organic-food
+"Spargel, grün, roh",49,spargel
+"Buchweizen, ganz, roh",576,organic-food
+"Aubergine, roh",41,eggplant
+"Orange, roh",20,orange
+"Lamm, Bein, nicht näher bezeichnet, roh",804,rack-of-lamb
+"Kabeljau, Filet, roh",689,organic-food
+"Käse, Semihard, Feta, 40% Fidm",1000,kaese
+"Schweinefleisch, Kragen mit Schale, roh",603,cuts-of-pork
+"Reisgrütze, braun, roh",348,organic-food
+"Schmalz, Schweinefleisch, raffiniert, Raffinol",0,schmalz
+"Schmalz, Schweinefleisch",0,schmalz
+"Wasser, abgefüllt, mit Kohlensäure versetzt",0,organic-food
+"Erfrischungsgetränk, ohne Zuckerzusatz, Durchschnittswerte",0,refreshments
+"Gans, Fleisch und Haut, roh",660,organic-food
+"Nuss, Kokos, roh",232,kokosnuss
+"Alkoholfreies Getränk (leicht), konzentriert (1 + 10), ohne Zuckerzusatz",0,refreshments
+Soja Soße,364,soy-sauce
+"Käse, fest, 40% fidm., Alle Sorten",1330,kaese
+"Ymer, fettarm",315,organic-food
+"Käse, Semihard, Mozzarella, 45% Fidm.",1250,kaese
+"Käse, verarbeitet, 45% fidm.",1250,kaese
+"Ente, Fleisch und Haut, roh",460,organic-food
+"Roggenmehl, Weizenmehl, verriegelt",522,flour
+"Käse, halbhart, Havarti, 30% fidm.",1560,kaese
+"Käse, fest, Danbo, 45% fidm.",1230,kaese
+"Lamm, Flanke, gewürzt, gekocht",760,rack-of-lamb
+"Zwiebeln, gehackt und frittiert",134,onion
+"Kastanie, roh",83,organic-food
+"Instantkaffee, mit Wasser zubereitet",3,coffee-capsule
+"Käse, halbhart, Esrom, 45% fidm.",1250,kaese
+"Erfrischungsgetränk, Zucker hinzugefügt",0,refreshments
+"Käse, fest, Elbo, 40% fidm.",1380,kaese
+"Kartoffelchips, grob",244,potato-chips
+"Käse, Roquefort, Dänisch, 50% fidm.",1040,kaese
+"Kaffee, Instant, entkoffeiniert, mit Wasser zubereitet",3,kaffee
+"Käse, dänisches Blau, 50% fidm.",1060,kaese
+"Käse, Brie, 60% fidm.",934,kaese
+"Speck, Eintopf, roh",552,speck
+"Kaffee, Getränk",3,kaffee
+"Roggenkerne, ganz / rissig",434,organic-food
+"Wurst, Leberwurst",579,wurst
+"Sahne, kultiviert, 50% Fett",89,organic-food
+"Käse, fest, 45% fidm., Alle Sorten",1280,kaese
+"Leinsamen, roh",1320,flax-seeds
+"Nuss, Erbse, getrocknet",1670,organic-food
+"Eis, Milchprodukte (auf Vollmilchbasis)",218,eis-im-becher
+"Sahne, 50% Fett",95,organic-food
+"Sojamehl, Vollfett",2020,soja
+"Reis, braun, roh",484,reisschuessel
+"Milch, trocken, entrahmt, Pulver",1610,milchflasche
+"Käse, halbhart, Havarti, 45% fidm.",1270,kaese
+"Auster, roh",312,muschel
+"Fischbällchen, in Dosen",359,fischfutter
+"Roggenbrotkrümel mit braunem Zucker, Durchschnittswerte",290,brot
+"Tomate, getrocknet",361,tomate
+Ymer,305,organic-food
+"Keks, süß, 'finnisch'",275,kekse
+"Gerstengrütze, roh",539,organic-food
+"Bier, Lager, alc. 2,6 Vol .-%",4,organic-food
+Reisstärke,43,organic-food
+"Dänisches Gebäck, quadratisch",239,kuchen
+"Salatdressing, Französisch",33,organic-food
+"Käse, dänisches Blau, 60% fidm.",842,kaese
+"Käse, fest, Fynbo, 45% fidm.",1340,kaese
+"Eier, Huhn, Eiweiß, pasteurisiert",562,eier
+"Weizen, Körner, ganz / geknackt",550,organic-food
+Semmelbrösel,558,bread-crumbs
+"Apfelsaft, in Dosen oder in Flaschen",2,organic-food
+"Bier, Lager, alc. 4,4 Vol .-%",5,organic-food
+Perlensago (Kartoffelstärke),8,organic-food
+"Käse, fest, Maribo, 45% fidm.",1380,kaese
+"Knoblauch, roh",184,knoblauch
+"Mayonnaise, fettarm",0,organic-food
+"Käse, fest, Samsoe, 45% fidm.",1400,kaese

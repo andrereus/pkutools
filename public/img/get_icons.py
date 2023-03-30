@@ -11,5 +11,5 @@ def get_file_names_without_extension(folder_path):
 folder_path = "food-icons"  # Replace this with the path to your folder
 file_names_without_extension = get_file_names_without_extension(folder_path)
 
-for file_name in file_names_without_extension:
-    print(file_name)
+comma_separated_file_names = ", ".join(file_names_without_extension)
+print(comma_separated_file_names)

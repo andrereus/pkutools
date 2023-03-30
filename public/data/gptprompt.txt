@@ -1,0 +1,121 @@
+The following keywords are in english and german: bayerische-brezel, plastic-food-container, kawaii-french-fries, dim-sum, kirsche, beef, dinner, croissant, dozen-eggs, gum, gelee, ingredients-for-cooking, ohne-senf, gailan, bananen-split, essen-und-wein, granatapfel, firm-tofu, kuerbis, pastel-de-nata, chocolate-bar-white, sauce-bottle, wenig-salz, no-shellfish, hamburger, soup-plate, sunflower-butter, lebkuchenhaus, hot-dog, butter, rice-vinegar, vegetable-bouillion-paste, pistachio-sauce, proteine, vegetarisches-essen, onion, mango, fry, roast, stir, bao-bun, cuts-of-beef, fruehlingsrolle, steak, ginger, apfel, tapas, flour, eier, tempeh, oat-milk, cookie, blueberry, chili-pepper, pfannkuchen, dessert, green-tea, beet, octopus, healthy-food, kawaii-ice-cream, korean-rice-cake, zimtschnecke, sweets, cereal, black-sesame-seeds, keine-krustentiere, no-apple, chard, silken-tofu, kawaii-soda, salami, salt, heinz-bohnen, kawaii-sushi, coffee-capsule, tumeric, durian, wine-and-glass, potato, kawaii-pizza, caviar1, nicht-vegetarisches-essen-symbol, ohne-milch, fischfutter, sugar, souvla, flour-in-paper-packaging, melone, thanksgiving, no-fish, lime, food-donor, eis-in-der-waffel, gyoza, verfaulte-tomaten, squash, thyme, potato-chips, paella, brezel, vegetables-bag, soy-sauce, egg-basket, zucchini, kokosnuss, cauliflower, spaghetti, deliver-food, cake, organic-food, faser, naan, papaya, nuss, kekse, brigadeiro, pommes, fondue, natural-food, pfirsich, group-of-vegetables, sunny-side-up-eggs, ananas, milchflasche, jamon, sellerie, mushroom, you-choy, bitten-sandwich, bok-choy, spam-dose, popcorn, grains-of-rice, coconut-milk, macaron, mittagessen, milk-carton, list-view, karotte, no-sugar, broccoli, kein-soja, speck, loeffel-zucker, samosa, keine-erdnuss, brot, cookbook, kiwi, reisschuessel, einkaufsbeutel, banane, apples-plate, rack-of-lamb, citrus, keine-lupinen, radish, taco, black-pepper, muschel, rolled-oats, cuts-of-pork, jam, artischocke, hemp-milk, peanut-butter, spice, hamper, no-gmo, mais, cute-pumpkin, pecan, paprika, brotdose, kawaii-taco, kohlenhydrate, spargel, jackfruit, granulated-garlic, greek-salad, caviar, lauch, sosse, breakfast, lemonade, haferbrei, veganes-essen, lettuce, cabbage, kawaii-bread, zimtstangen, flax-seeds, bento, eggplant, butter-churn, vegetarian-mark, sandwich, cashew, haselnuss, spinach, wassermelone, pizza, eierkarton, ohne-fruktose, kawaii-cupcake, plum, finocchio, kuchen, empty-jam-jar, kawaii-egg, dolma, sesame, erdnuesse, lipide, no-celery, collard-greens, fruit-bag, broccolini, mcdonalds-pommes-frites, sushi, vegan-symbol, salt-shaker, himbeere, pizza-five-eighths, chia-seeds, nudeln, real-food-for-meals, blechdose, merry-pie, stachelannone, date-fruit, grocery-shelf, crab, nachos, schokoriegel, suessstoff, ohne-gluten, honey-spoon, almond-butter, lentil, mangosteen, group-of-fruits, trauben, calories, suessigkeit, food-receiver, spiess, quesadilla, muffin, vegetarian-food-symbol, curry, no-nuts, bagel, zutaten, sugar-cubes, bread-crumbs, no-meat, peas, melting-ice-cream, erdbeere, doughnut, gurke, avocado, prawn, garlic, no-eggs, tomate, baguette, geburtstagskuchen, kawaii-steak, kaese, joghurt, maple-syrup, healthy-food-calories-calculator, kohlrabi, birne, olivenoel, lychee, kawaii-coffee, natrium, smoked-paprika, salat, olive, tea-pair, white-beans, zuckerwatte, soja, einwickeln, bake, raisins, sweet-potato, nonya-kueh, sugar-free, honig, orange, drachenfrucht, eis-im-becher, aprikose, stueck-wuerfelzucker, ohne-sesam, lasagna, refreshments, wuerste, brazil-nut, chicken-and-waffle, chocolate-spread
+
+The following csv contains food names in german. The csv needs an extra column with matching keywords from above for each row:
+name,phe
+"Kartoffelchips, grob",244
+"Käse, Roquefort, Dänisch, 50% fidm.",1040
+"Kaffee, Instant, entkoffeiniert, mit Wasser zubereitet",3
+"Käse, dänisches Blau, 50% fidm.",1060
+"Käse, Brie, 60% fidm.",934
+"Speck, Eintopf, roh",552
+"Kaffee, Getränk",3
+"Roggenkerne, ganz / rissig",434
+"Wurst, Leberwurst",579
+"Sahne, kultiviert, 50% Fett",89
+"Käse, fest, 45% fidm., Alle Sorten",1280
+"Leinsamen, roh",1320
+"Nuss, Erbse, getrocknet",1670
+"Eis, Milchprodukte (auf Vollmilchbasis)",218
+"Sahne, 50% Fett",95
+"Sojamehl, Vollfett",2020
+"Reis, braun, roh",484
+"Milch, trocken, entrahmt, Pulver",1610
+"Käse, halbhart, Havarti, 45% fidm.",1270
+"Auster, roh",312
+"Fischbällchen, in Dosen",359
+"Roggenbrotkrümel mit braunem Zucker, Durchschnittswerte",290
+"Tomate, getrocknet",361
+Ymer,305
+"Keks, süß, 'finnisch'",275
+"Gerstengrütze, roh",539
+"Bier, Lager, alc. 2,6 Vol .-%",4
+Reisstärke,43
+"Dänisches Gebäck, quadratisch",239
+"Salatdressing, Französisch",33
+"Käse, dänisches Blau, 60% fidm.",842
+"Käse, fest, Fynbo, 45% fidm.",1340
+"Eier, Huhn, Eiweiß, pasteurisiert",562
+"Weizen, Körner, ganz / geknackt",550
+Semmelbrösel,558
+"Apfelsaft, in Dosen oder in Flaschen",2
+"Bier, Lager, alc. 4,4 Vol .-%",5
+Perlensago (Kartoffelstärke),8
+"Käse, fest, Maribo, 45% fidm.",1380
+"Knoblauch, roh",184
+"Mayonnaise, fettarm",0
+"Käse, fest, Samsoe, 45% fidm.",1400
+"Käse, hart, Chesire, 50% fidm.",1240
+"Eier, Huhn, Eiweiß, roh",667
+"Speck, braten, roh",478
+"Pflaume, getrocknete Pflaume",51
+"Gebäck, Croissant",392
+"Bier, dänischer Haushalt, niedriger Alkoholgehalt, Durchschnittswerte",6
+"Eier, Huhn, Eiweiß, getrocknet",5140
+Gebäck mit Mohn,387
+"Käse, blauer und weißer Schimmel, 70% fidm.",680
+"Bier, dänischer Haushalt, wenig Alkohol",7
+"Käse, fest, Svenbo, 45% fidm.",1430
+"Bier, Export, alc. 5,6 Vol .-%",8
+"Geister, 70% Beweis",0
+Wodka,0
+"Einfacher Kuchen, Zitronenkuchen",258
+"Käse, hart, Emmentaler, 45% fidm.",1450
+"Käse, halbhart, Esrom, 60% fidm.",1000
+"Joghurtcreme, 9% Fett, mit Früchten",150
+"Tofu, Sojabohnenquark",386
+"Grapefruitsaft, in Dosen, ungekocht.",5
+"Einfacher Kuchen, Schokoladenkuchen",298
+"Dänisches Gebäck, kanelsnegl",229
+"Dänisches Gebäck, Durchschnittswerte",229
+"Einfacher Kuchen, Durchschnittswerte",255
+"Popcorn, Öl und Salz hinzugefügt, traditionell",493
+"Bulgur, gekocht, roh",565
+"Linsen, gekeimt, roh",445
+Whiskey,0
+"Wurst, Rindfleischsalami",772
+"Käse, halbhart, Havarti, 60% fidm.",1010
+"Bier, stark, alc. 7,6 Vol .-%",8
+"Sahne, kultiviert, 9% Fett",321
+"Haselnuss, getrocknet",667
+"Sahne, 9% Fett",166
+"Pasta, roh",692
+"Käse, Quarg, 5% fidm.",473
+"Käse, hart, Grana, 32% fidm.",1740
+"Käse, hart, Parmesan, 32% fidm.",1740
+Gin,0
+"Sahne, kultiviert, 9% Fett",156
+"Hefe, Bäcker, gepresst",323
+"Keks, süß, Vanillegeschmack",231
+"Käse, hart, Cheddar, dänisch",1360
+"Fischpudding, roh",381
+Rum,0
+"Pistazien, getrocknet",1150
+"Hirse, Flocken",637
+"Käse, unreif, geräuchert, 1% Fett",587
+"Kabeljau, Leber, Dosen",162
+"Erdbeeren, gefroren, ungesüßt",14
+"Käse, Molke, Myseost, 33% fidm.",776
+"Käse, hart, Gruyere, 45% fidm.",1550
+"Kohl, rot, in Dosen, ohne Zuckerzusatz",9
+"Dänisches Gebäck, Brezel",219
+Abb. Getrocknet,79
+"Cranberry, roh",36
+"Gebäck, ""Leinen",312
+"Popcorn, Öl und Salz hinzugefügt",493
+"Dänisches Gebäck, Weihnachtskuchen",264
+"Wurst, Salami",564
+"Biskuit, Pfundkuchen",312
+"Kürbis, roh",146
+"Salatdressing, Blauschimmelkäse",246
+"Radieschen, orientalisch, Daikon, japanischer Rettich, roh",20
+"Sesam, ganz",993
+"Knäckebrot, Knackbrot, Roggen, grob",457
+"Makkaroni, Spaghetti, ganze Mahlzeit, roh",735
+"Roggenbrot, dunkel, Vollkornbrot, importiert",272
+"Birne, in Dosen",12
+"Rübe, roh",12
+"Hirse, Vollkorn",580
+"Muschel, roh",495
+"Gurke, roh",17
+
+Most important: Please do this task without changing the data already exisiting in the csv and not changing the keywords or inventing new ones. Only use what I have provided. Please remember this. If there is no matching keyword, use the default "organic-food".
