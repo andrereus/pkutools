@@ -49,13 +49,13 @@
                 <td class="text-start">
                   <img
                     :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
-                    v-if="item.icon !== undefined"
+                    v-if="item.icon !== undefined && item.icon !== ''"
                     width="25"
                     class="food-icon"
                   />
                   <img
                     :src="publicPath + 'img/food-icons/organic-food.svg'"
-                    v-if="item.icon === undefined"
+                    v-if="item.icon === undefined || item.icon === ''"
                     width="25"
                     class="food-icon"
                   />

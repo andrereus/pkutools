@@ -90,13 +90,13 @@
                 <td class="text-start">
                   <img
                     :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
-                    v-if="item.icon !== undefined"
+                    v-if="item.icon !== undefined && item.icon !== ''"
                     width="25"
                     class="food-icon"
                   />
                   <img
                     :src="publicPath + 'img/food-icons/organic-food.svg'"
-                    v-if="item.icon === undefined"
+                    v-if="item.icon === undefined || item.icon === ''"
                     width="25"
                     class="food-icon"
                   />
@@ -299,7 +299,7 @@ export default {
     },
     loadItem(item) {
       this.name = item.name;
-      this.icon = item.icon !== undefined ? item.icon : "organic-food";
+      this.icon = item.icon !== undefined && item.icon !== "" ? item.icon : "organic-food";
       this.phe = item.phe;
       this.weight = 100;
       this.dialog = true;
@@ -324,7 +324,7 @@ export default {
       this.loading = true;
       let res, food;
       if (this.$i18n.locale === "de") {
-        const res1 = await fetch(this.publicPath + "data/frida.json");
+        const res1 = await fetch(this.publicPath + "data/frida-icon-original.json");
         const res2 = await fetch(this.publicPath + "data/deda.json");
         const food1 = await res1.json();
         const food2 = await res2.json();
