@@ -632,3371 +632,3371 @@
     {
         "name": "Käse, hart, Chesire, 50% fidm.",
         "phe": "1240",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Eier, Huhn, Eiweiß, roh",
         "phe": "667",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Speck, braten, roh",
         "phe": "478",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Pflaume, getrocknete Pflaume",
         "phe": "51",
-        "icon": ""
+        "icon": "plum"
     },
     {
         "name": "Gebäck, Croissant",
         "phe": "392",
-        "icon": ""
+        "icon": "croissant"
     },
     {
         "name": "Bier, dänischer Haushalt, niedriger Alkoholgehalt, Durchschnittswerte",
         "phe": "6",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Eier, Huhn, Eiweiß, getrocknet",
         "phe": "5140",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Gebäck mit Mohn",
         "phe": "387",
-        "icon": ""
+        "icon": "gebäck"
     },
     {
         "name": "Käse, blauer und weißer Schimmel, 70% fidm.",
         "phe": "680",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Bier, dänischer Haushalt, wenig Alkohol",
         "phe": "7",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Käse, fest, Svenbo, 45% fidm.",
         "phe": "1430",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Bier, Export, alc. 5,6 Vol .-%",
         "phe": "8",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Geister, 70% Beweis",
         "phe": "0",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Wodka",
         "phe": "0",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Einfacher Kuchen, Zitronenkuchen",
         "phe": "258",
-        "icon": ""
+        "icon": "kuchen"
     },
     {
         "name": "Käse, hart, Emmentaler, 45% fidm.",
         "phe": "1450",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, halbhart, Esrom, 60% fidm.",
         "phe": "1000",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Joghurtcreme, 9% Fett, mit Früchten",
         "phe": "150",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Tofu, Sojabohnenquark",
         "phe": "386",
-        "icon": ""
+        "icon": "firm-tofu"
     },
     {
         "name": "Grapefruitsaft, in Dosen, ungekocht.",
         "phe": "5",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Einfacher Kuchen, Schokoladenkuchen",
         "phe": "298",
-        "icon": ""
+        "icon": "kuchen"
     },
     {
         "name": "Dänisches Gebäck, kanelsnegl",
         "phe": "229",
-        "icon": ""
+        "icon": "gebäck"
     },
     {
         "name": "Dänisches Gebäck, Durchschnittswerte",
         "phe": "229",
-        "icon": ""
+        "icon": "gebäck"
     },
     {
         "name": "Einfacher Kuchen, Durchschnittswerte",
         "phe": "255",
-        "icon": ""
+        "icon": "kuchen"
     },
     {
         "name": "Popcorn, Öl und Salz hinzugefügt, traditionell",
         "phe": "493",
-        "icon": ""
+        "icon": "popcorn"
     },
     {
         "name": "Bulgur, gekocht, roh",
         "phe": "565",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Linsen, gekeimt, roh",
         "phe": "445",
-        "icon": ""
+        "icon": "lentil"
     },
     {
         "name": "Whiskey",
         "phe": "0",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Wurst, Rindfleischsalami",
         "phe": "772",
-        "icon": ""
+        "icon": "salami"
     },
     {
         "name": "Käse, halbhart, Havarti, 60% fidm.",
         "phe": "1010",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Bier, stark, alc. 7,6 Vol .-%",
         "phe": "8",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Sahne, kultiviert, 9% Fett",
         "phe": "321",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Haselnuss, getrocknet",
         "phe": "667",
-        "icon": ""
+        "icon": "haselnuss"
     },
     {
         "name": "Sahne, 9% Fett",
         "phe": "166",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pasta, roh",
         "phe": "692",
-        "icon": ""
+        "icon": "spaghetti"
     },
     {
         "name": "Käse, Quarg, 5% fidm.",
         "phe": "473",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, hart, Grana, 32% fidm.",
         "phe": "1740",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, hart, Parmesan, 32% fidm.",
         "phe": "1740",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Gin",
         "phe": "0",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Sahne, kultiviert, 9% Fett",
         "phe": "156",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Hefe, Bäcker, gepresst",
         "phe": "323",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Keks, süß, Vanillegeschmack",
         "phe": "231",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Käse, hart, Cheddar, dänisch",
         "phe": "1360",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Fischpudding, roh",
         "phe": "381",
-        "icon": ""
+        "icon": "nicht-vegetarisches-essen-symbol"
     },
     {
         "name": "Rum",
         "phe": "0",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pistazien, getrocknet",
         "phe": "1150",
-        "icon": ""
+        "icon": "pistachio-sauce"
     },
     {
         "name": "Hirse, Flocken",
         "phe": "637",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Käse, unreif, geräuchert, 1% Fett",
         "phe": "587",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Kabeljau, Leber, Dosen",
         "phe": "162",
-        "icon": ""
+        "icon": "no-fish"
     },
     {
         "name": "Erdbeeren, gefroren, ungesüßt",
         "phe": "14",
-        "icon": ""
+        "icon": "erdbeere"
     },
     {
         "name": "Käse, Molke, Myseost, 33% fidm.",
         "phe": "776",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, hart, Gruyere, 45% fidm.",
         "phe": "1550",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Kohl, rot, in Dosen, ohne Zuckerzusatz",
         "phe": "9",
-        "icon": ""
+        "icon": "cabbage"
     },
     {
         "name": "Dänisches Gebäck, Brezel",
         "phe": "219",
-        "icon": ""
+        "icon": "brezel"
     },
     {
         "name": "Abb. Getrocknet",
         "phe": "79",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Cranberry, roh",
         "phe": "36",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Gebäck, \"Leinen",
         "phe": "312",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Popcorn, Öl und Salz hinzugefügt",
         "phe": "493",
-        "icon": ""
+        "icon": "popcorn"
     },
     {
         "name": "Dänisches Gebäck, Weihnachtskuchen",
         "phe": "264",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Wurst, Salami",
         "phe": "564",
-        "icon": ""
+        "icon": "salami"
     },
     {
         "name": "Biskuit, Pfundkuchen",
         "phe": "312",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kürbis, roh",
         "phe": "146",
-        "icon": ""
+        "icon": "kuerbis"
     },
     {
         "name": "Salatdressing, Blauschimmelkäse",
         "phe": "246",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Radieschen, orientalisch, Daikon, japanischer Rettich, roh",
         "phe": "20",
-        "icon": ""
+        "icon": "radish"
     },
     {
         "name": "Sesam, ganz",
         "phe": "993",
-        "icon": ""
+        "icon": "sesame"
     },
     {
         "name": "Knäckebrot, Knackbrot, Roggen, grob",
         "phe": "457",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Makkaroni, Spaghetti, ganze Mahlzeit, roh",
         "phe": "735",
-        "icon": ""
+        "icon": "spaghetti"
     },
     {
         "name": "Roggenbrot, dunkel, Vollkornbrot, importiert",
         "phe": "272",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Birne, in Dosen",
         "phe": "12",
-        "icon": ""
+        "icon": "birne"
     },
     {
         "name": "Rübe, roh",
         "phe": "12",
-        "icon": ""
+        "icon": "beet"
     },
     {
         "name": "Hirse, Vollkorn",
         "phe": "580",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Muschel, roh",
         "phe": "495",
-        "icon": ""
+        "icon": "muschel"
     },
     {
         "name": "Gurke, roh",
         "phe": "17",
-        "icon": ""
+        "icon": "gurke"
     },
     {
         "name": "Wollmispel, roh",
         "phe": "14",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Cashewnüsse, Öl geröstet",
         "phe": "858",
-        "icon": ""
+        "icon": "cashew"
     },
     {
         "name": "Dänisches Gebäck, Butterring",
         "phe": "219",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Cornflakes, Durchschnittswerte",
         "phe": "395",
-        "icon": ""
+        "icon": "cereal"
     },
     {
         "name": "Frühstücksflocken, Müsli, Durchschnittswerte",
         "phe": "534",
-        "icon": ""
+        "icon": "cereal"
     },
     {
         "name": "Melone, Honigtau, roh",
         "phe": "18",
-        "icon": ""
+        "icon": "melone"
     },
     {
         "name": "Tomatensaft, in Dosen",
         "phe": "21",
-        "icon": ""
+        "icon": "tomate"
     },
     {
         "name": "Aprikose, Dosen, leichte Siruppackung",
         "phe": "21",
-        "icon": ""
+        "icon": "aprikose"
     },
     {
         "name": "Orangensaft, in Dosen",
         "phe": "7",
-        "icon": ""
+        "icon": "orange"
     },
     {
         "name": "Traubensaft",
         "phe": "12",
-        "icon": ""
+        "icon": "trauben"
     },
     {
         "name": "Karotte, in Dosen",
         "phe": "21",
-        "icon": ""
+        "icon": "karotte"
     },
     {
         "name": "Kartoffeln, püriertes Instantpulver mit Trockenmilch",
         "phe": "436",
-        "icon": ""
+        "icon": "potato"
     },
     {
         "name": "Roggenbrot, leicht",
         "phe": "271",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Salz, Tisch",
         "phe": "0",
-        "icon": ""
+        "icon": "salz"
     },
     {
         "name": "Roggenbrot, dunkel, Pumpernickel",
         "phe": "256",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Aprikose, in Dosen, ohne Zuckerzusatz",
         "phe": "29",
-        "icon": ""
+        "icon": "aprikose"
     },
     {
         "name": "Kürbis, in Dosen",
         "phe": "97",
-        "icon": ""
+        "icon": "kuerbis"
     },
     {
         "name": "Ananas, in Dosen",
         "phe": "10",
-        "icon": ""
+        "icon": "ananas"
     },
     {
         "name": "Zwiebeln, gehackt, gefroren",
         "phe": "18",
-        "icon": ""
+        "icon": "onion"
     },
     {
         "name": "Weizen Zwieback",
         "phe": "473",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizen Zwieback",
         "phe": "473",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Chayote-Frucht, roh",
         "phe": "47",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Knäckebrot, Knackbrot, Roggen, fein",
         "phe": "526",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Senf, gelb, fertig gemacht",
         "phe": "219",
-        "icon": ""
+        "icon": "ohne-senf"
     },
     {
         "name": "Pfirsich, in Dosen",
         "phe": "10",
-        "icon": ""
+        "icon": "pfirsich"
     },
     {
         "name": "Cornflakes, gefrostet",
         "phe": "277",
-        "icon": ""
+        "icon": "cereal"
     },
     {
         "name": "Sonnenblumenkerne, dekortiziert, getrocknet",
         "phe": "1050",
-        "icon": ""
+        "icon": "sunflower-butter"
     },
     {
         "name": "Hafer, gerollt, angereichert",
         "phe": "735",
-        "icon": ""
+        "icon": "rolled-oats"
     },
     {
         "name": "Warzenmelone, roh",
         "phe": "26",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Tomate, dänisch, reif, roh",
         "phe": "19",
-        "icon": ""
+        "icon": "tomate"
     },
     {
         "name": "Mandarine, in Dosen",
         "phe": "15",
-        "icon": ""
+        "icon": "mango"
     },
     {
         "name": "Aprikose, getrocknet",
         "phe": "96",
-        "icon": ""
+        "icon": "aprikose"
     },
     {
         "name": "Frühstücksflocken, Müsli mit Zuckerzusatz",
         "phe": "679",
-        "icon": ""
+        "icon": "cereal"
     },
     {
         "name": "Frühstücksflocken, Müsli, ohne Zuckerzusatz",
         "phe": "679",
-        "icon": ""
+        "icon": "cereal"
     },
     {
         "name": "Holzapfel, roh",
         "phe": "11",
-        "icon": ""
+        "icon": "apfel"
     },
     {
         "name": "Holunder, Saft, konzentriert, Zucker nicht hinzugefügt",
         "phe": "30",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Creme, 13% Fett (UHT)",
         "phe": "140",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pfeffer, scharfer Chili, in Dosen",
         "phe": "27",
-        "icon": ""
+        "icon": "chili-pepper"
     },
     {
         "name": "Sesam, dekortiziert",
         "phe": "1160",
-        "icon": ""
+        "icon": "black-sesame-seeds"
     },
     {
         "name": "Erdbeersaft, konzentriert, Zucker nicht hinzugefügt",
         "phe": "17",
-        "icon": ""
+        "icon": "erdbeere"
     },
     {
         "name": "Kopfsalat, Eisberg (inkl. Crisphead-Sorten), roh",
         "phe": "40",
-        "icon": ""
+        "icon": "lettuce"
     },
     {
         "name": "Hafer, gerollt, nicht angereichert",
         "phe": "751",
-        "icon": ""
+        "icon": "rolled-oats"
     },
     {
         "name": "Johannisbeere, rot, Saft, konzentriert, Zucker nicht hinzugefügt",
         "phe": "17",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Erdbeeren, gefroren, gesüßt, ganz",
         "phe": "17",
-        "icon": ""
+        "icon": "erdbeere"
     },
     {
         "name": "Sahne, 13% Fett",
         "phe": "146",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Ananas, roh",
         "phe": "13",
-        "icon": ""
+        "icon": "ananas"
     },
     {
         "name": "Wurst, Salami",
         "phe": "511",
-        "icon": ""
+        "icon": "salami"
     },
     {
         "name": "Rettich, weiß, roh",
         "phe": "19",
-        "icon": ""
+        "icon": "radish"
     },
     {
         "name": "Melone, Melone, roh",
         "phe": "23",
-        "icon": ""
+        "icon": "melone"
     },
     {
         "name": "Zuckerrüben, rot, in Dosen, ohne Zuckerzusatz",
         "phe": "8",
-        "icon": ""
+        "icon": "beet"
     },
     {
         "name": "Meerrettich, roh",
         "phe": "123",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Erdbeeren, in Dosen",
         "phe": "13",
-        "icon": ""
+        "icon": "erdbeere"
     },
     {
         "name": "Johannisbeere, schwarz, Saft, konzentriert, Zucker nicht hinzugefügt",
         "phe": "17",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Karotte, gefroren",
         "phe": "33",
-        "icon": ""
+        "icon": "karotte"
     },
     {
         "name": "Pfeffer, süß, in Dosen",
         "phe": "24",
-        "icon": ""
+        "icon": "paprika"
     },
     {
         "name": "Eis, Milchprodukte, Nougat",
         "phe": "218",
-        "icon": ""
+        "icon": "eis-in-der-waffel"
     },
     {
         "name": "Eis, Milchprodukte, Vanille",
         "phe": "218",
-        "icon": ""
+        "icon": "eis-in-der-waffel"
     },
     {
         "name": "Papaya, Papaya, roh",
         "phe": "10",
-        "icon": ""
+        "icon": "papaya"
     },
     {
         "name": "Milch, trocken, ganz, Pulver",
         "phe": "1200",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Kirschsaft, konzentriert, Zucker nicht hinzugefügt",
         "phe": "9",
-        "icon": ""
+        "icon": "kirsche"
     },
     {
         "name": "Pekannüsse, getrocknet",
         "phe": "484",
-        "icon": ""
+        "icon": "pecan"
     },
     {
         "name": "Käse, Hütte, 20% fidm.",
         "phe": "686",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Garnelen, gekocht, Schale entfernt",
         "phe": "672",
-        "icon": ""
+        "icon": "prawn"
     },
     {
         "name": "Quark mit Früchten",
         "phe": "357",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Karottensaft, in Dosen",
         "phe": "24",
-        "icon": ""
+        "icon": "karotte"
     },
     {
         "name": "Aprikose, roh",
         "phe": "48",
-        "icon": ""
+        "icon": "aprikose"
     },
     {
         "name": "Kabeljau, Rogen, Dosen",
         "phe": "504",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Molke, süß, flüssig",
         "phe": "27",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Garnelen, in Dosen",
         "phe": "713",
-        "icon": ""
+        "icon": "prawn"
     },
     {
         "name": "Blaubeere, gefroren, ungesüßt",
         "phe": "15",
-        "icon": ""
+        "icon": "blueberry"
     },
     {
         "name": "Dattel, getrocknet",
         "phe": "58",
-        "icon": ""
+        "icon": "date-fruit"
     },
     {
         "name": "Eis, Milchprodukte, dreifarbig",
         "phe": "218",
-        "icon": ""
+        "icon": "eis-in-der-waffel"
     },
     {
         "name": "Rhabarber, gefroren",
         "phe": "26",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Zitronensohle, roh",
         "phe": "694",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Chicorée, roh",
         "phe": "27",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Mango, roh",
         "phe": "16",
-        "icon": ""
+        "icon": "mango"
     },
     {
         "name": "Niere, Kalb, roh",
         "phe": "682",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Gebäck, Durchschnittswerte",
         "phe": "340",
-        "icon": ""
+        "icon": "kuchen"
     },
     {
         "name": "Grapefruit, roh",
         "phe": "16",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Haferkleie, dänisch",
         "phe": "908",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Karotte, roh",
         "phe": "21",
-        "icon": ""
+        "icon": "karotte"
     },
     {
         "name": "Mandarine, roh",
         "phe": "27",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kabeljau, Filet, gekocht",
         "phe": "689",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Wolffish (Wels), roh",
         "phe": "644",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Herz, Kalbfleisch, roh",
         "phe": "691",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Bohnen, weiß, getrocknet, roh",
         "phe": "1160",
-        "icon": ""
+        "icon": "white-beans"
     },
     {
         "name": "Niere, Ochse, roh",
         "phe": "649",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kabeljau, Filet, geräuchert, mit Haut",
         "phe": "699",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kohl, Chinesisch oder Sellerie, roh",
         "phe": "36",
-        "icon": ""
+        "icon": "kohl"
     },
     {
         "name": "Niere, Schwein, roh",
         "phe": "742",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Gebäck, Frangipani-Gebäck",
         "phe": "320",
-        "icon": ""
+        "icon": "kuchen"
     },
     {
         "name": "Feigen, roh",
         "phe": "18",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Carambola, roh",
         "phe": "37",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Steinbutt, roh",
         "phe": "630",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schellfisch, roh",
         "phe": "786",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Leberpaste, dänisch, fettarm",
         "phe": "464",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Flunder, roh",
         "phe": "696",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Endivie (Escarole), roh",
         "phe": "50",
-        "icon": ""
+        "icon": "lettuce"
     },
     {
         "name": "Einfacher Kuchen, Frangipani-Kuchen",
         "phe": "292",
-        "icon": ""
+        "icon": "kuchen"
     },
     {
         "name": "Kaviar, dänisch (Rogen, Klumpensauger)",
         "phe": "475",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kopfsalat, Loseblatt, roh",
         "phe": "57",
-        "icon": ""
+        "icon": "lettuce"
     },
     {
         "name": "Erbsen, reif, trocken, roh",
         "phe": "915",
-        "icon": ""
+        "icon": "peas"
     },
     {
         "name": "Persimone, Kaki-Frucht, roh",
         "phe": "30",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Sohle, roh",
         "phe": "778",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Tomaten, geschält, in Dosen",
         "phe": "33",
-        "icon": ""
+        "icon": "tomate"
     },
     {
         "name": "Fischbällchen, gebraten",
         "phe": "571",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Endivie (Frisee), roh",
         "phe": "52",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kopfsalat, Cos oder Romaine, roh",
         "phe": "53",
-        "icon": ""
+        "icon": "lettuce"
     },
     {
         "name": "Kartoffeln, püriertes Instantpulver ohne Trockenmilch",
         "phe": "329",
-        "icon": ""
+        "icon": "potato"
     },
     {
         "name": "Karotte, roh",
         "phe": "26",
-        "icon": ""
+        "icon": "karotte"
     },
     {
         "name": "Kabeljau, Leber, geraucht",
         "phe": "180",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kabeljau, Leber, roh",
         "phe": "180",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pfirsich, roh",
         "phe": "17",
-        "icon": ""
+        "icon": "pfirsich"
     },
     {
         "name": "Nektarine, roh",
         "phe": "8",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kürbis, alle Sorten, roh",
         "phe": "60",
-        "icon": ""
+        "icon": "kuerbis"
     },
     {
         "name": "Weizenbrot mit ganzen Körnern",
         "phe": "363",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Avocado, roh",
         "phe": "67",
-        "icon": ""
+        "icon": "avocado"
     },
     {
         "name": "Weizenkleie",
         "phe": "665",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Alkoholfreies Getränk, konzentriert (1 + 5), Zucker hinzugefügt",
         "phe": "0",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Zuckerrüben, rot, in Dosen",
         "phe": "9",
-        "icon": ""
+        "icon": "beet"
     },
     {
         "name": "Tomate, importiert, reif, roh",
         "phe": "30",
-        "icon": ""
+        "icon": "tomate"
     },
     {
         "name": "Hummer, gekocht",
         "phe": "748",
-        "icon": ""
+        "icon": "lobster"
     },
     {
         "name": "Hummer, in Dosen",
         "phe": "748",
-        "icon": ""
+        "icon": "lobster"
     },
     {
         "name": "Kopfsalat (USA), Kohlsalat (Großbritannien), roh",
         "phe": "41",
-        "icon": ""
+        "icon": "lettuce"
     },
     {
         "name": "Margarine, 70% Fett, Tischgebrauch, weiches, pflanzliches Fett",
         "phe": "38",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kohl, rot, in Dosen",
         "phe": "18",
-        "icon": ""
+        "icon": "cabbage"
     },
     {
         "name": "Guave, gemein, roh",
         "phe": "2",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Gefleckter Wels, Filet, roh",
         "phe": "640",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Muscheln, in Wasser, in Dosen",
         "phe": "707",
-        "icon": ""
+        "icon": "muschel"
     },
     {
         "name": "Käse, unreif, geräuchert, 10% Fett",
         "phe": "447",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Herz, Rindfleisch, roh",
         "phe": "822",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Kohl, Chinesisch, Pak-Choi, roh",
         "phe": "43",
-        "icon": ""
+        "icon": "bok-choy"
     },
     {
         "name": "Herz, Schweinefleisch, roh",
         "phe": "680",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Roggenbrot, dunkel mit fettreichen Samen und ganzen Körnern, industriell hergestellt",
         "phe": "272",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Walnüsse, getrocknet",
         "phe": "664",
-        "icon": ""
+        "icon": "walnuts"
     },
     {
         "name": "Spargel, in Dosen",
         "phe": "44",
-        "icon": ""
+        "icon": "spargel"
     },
     {
         "name": "Knoblauch, getrocknet, Pulver",
         "phe": "484",
-        "icon": ""
+        "icon": "garlic"
     },
     {
         "name": "Chickory, Raddichio, roh",
         "phe": "34",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Eier, Huhn, getrocknet",
         "phe": "2840",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Hummer, roh",
         "phe": "784",
-        "icon": ""
+        "icon": "lobster"
     },
     {
         "name": "Norwegischer Hummer, roh",
         "phe": "784",
-        "icon": ""
+        "icon": "lobster"
     },
     {
         "name": "Knäckebrot, Knackebrot, Weizen, grob",
         "phe": "639",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Kartoffelchips, fettreduziert",
         "phe": "200",
-        "icon": ""
+        "icon": "potato-chips"
     },
     {
         "name": "Sahne, 18% Fett",
         "phe": "135",
-        "icon": ""
+        "icon": "cream"
     },
     {
         "name": "Bohnen, Wachs, Dosen",
         "phe": "38",
-        "icon": ""
+        "icon": "beans"
     },
     {
         "name": "Weizenbrot mit Weizenkleie",
         "phe": "516",
-        "icon": ""
+        "icon": "bread"
     },
     {
         "name": "Schweinefleisch, Schinken, gepökelt, in Dosen",
         "phe": "578",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Brot, Roggenbolzen und Weizen, sauer, mit Kümmel",
         "phe": "354",
-        "icon": ""
+        "icon": "bread"
     },
     {
         "name": "Eier, Huhn, lange Eier, gekocht, gefroren",
         "phe": "670",
-        "icon": ""
+        "icon": "eggs"
     },
     {
         "name": "Marmelade, Mango",
         "phe": "7",
-        "icon": ""
+        "icon": "mango"
     },
     {
         "name": "Sahne, kultiviert, 18% Fett",
         "phe": "133",
-        "icon": ""
+        "icon": "cream"
     },
     {
         "name": "Brot, Vollkorn",
         "phe": "398",
-        "icon": ""
+        "icon": "bread"
     },
     {
         "name": "Leber, Gans, roh",
         "phe": "812",
-        "icon": ""
+        "icon": "liver"
     },
     {
         "name": "Kalbfleisch, rundes Auge, gesalzen, gekocht",
         "phe": "764",
-        "icon": ""
+        "icon": "veal"
     },
     {
         "name": "Schokoladenmilch",
         "phe": "341",
-        "icon": ""
+        "icon": "chocolate-milk"
     },
     {
         "name": "Brot, weiß",
         "phe": "383",
-        "icon": ""
+        "icon": "bread"
     },
     {
         "name": "Weizenbrot italienischer Art, industriell hergestellt",
         "phe": "430",
-        "icon": ""
+        "icon": "bread"
     },
     {
         "name": "Bohnen, grün, in Dosen",
         "phe": "41",
-        "icon": ""
+        "icon": "beans"
     },
     {
         "name": "Linsen, getrocknet",
         "phe": "1380",
-        "icon": ""
+        "icon": "lentil"
     },
     {
         "name": "Muskelmagen, Hühnchen, roh",
         "phe": "757",
-        "icon": ""
+        "icon": "chicken"
     },
     {
         "name": "Kohlrabi, roh",
         "phe": "38",
-        "icon": ""
+        "icon": "kohlrabi"
     },
     {
         "name": "Brunnenkresse, roh",
         "phe": "84",
-        "icon": ""
+        "icon": "watercress"
     },
     {
         "name": "Eier, Huhn, Eigelb, getrocknet",
         "phe": "1490",
-        "icon": ""
+        "icon": "eggs"
     },
     {
         "name": "Baguette, Weizen, fein, industriell hergestellt",
         "phe": "431",
-        "icon": ""
+        "icon": "baguette"
     },
     {
         "name": "Kartoffel, in Dosen",
         "phe": "63",
-        "icon": ""
+        "icon": "potato"
     },
     {
         "name": "Paranüsse, getrocknet, roh",
         "phe": "666",
-        "icon": ""
+        "icon": "brazil-nut"
     },
     {
         "name": "Schweinefleisch, Schinken, gekocht, in Scheiben geschnitten",
         "phe": "659",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Eier, Huhn, pasteurisiert",
         "phe": "641",
-        "icon": ""
+        "icon": "eggs"
     },
     {
         "name": "Kalbfleisch, mageres Fleisch, roh",
         "phe": "829",
-        "icon": ""
+        "icon": "veal"
     },
     {
         "name": "Heilbutt, atlantisch, geraucht",
         "phe": "791",
-        "icon": ""
+        "icon": "halibut"
     },
     {
         "name": "Weizenbrot zum Toasten, industriell hergestellt",
         "phe": "416",
-        "icon": ""
+        "icon": "bread"
     },
     {
         "name": "Kokosnussfleisch, getrocknet",
         "phe": "295",
-        "icon": ""
+        "icon": "coconut"
     },
     {
         "name": "Schweißbrot, Lamm, roh",
         "phe": "514",
-        "icon": ""
+        "icon": "lamb"
     },
     {
         "name": "Nur Huhn, Henne, Fleisch",
         "phe": "813",
-        "icon": ""
+        "icon": "chicken"
     },
     {
         "name": "Heilbutt, atlantisch, roh",
         "phe": "791",
-        "icon": ""
+        "icon": "halibut"
     },
     {
         "name": "Leber, Broiler oder Fritteuse, roh",
         "phe": "888",
-        "icon": ""
+        "icon": "liver"
     },
     {
         "name": "Süßkartoffel, roh",
         "phe": "81",
-        "icon": ""
+        "icon": "sweet-potato"
     },
     {
         "name": "Mangold, Schweizer, roh",
         "phe": "109",
-        "icon": ""
+        "icon": "chard"
     },
     {
         "name": "Zwiebel, roh",
         "phe": "28",
-        "icon": ""
+        "icon": "onion"
     },
     {
         "name": "Erdbeermarmelade",
         "phe": "10",
-        "icon": ""
+        "icon": "strawberry"
     },
     {
         "name": "Sapodilla, roh",
         "phe": "13",
-        "icon": ""
+        "icon": "sapodilla"
     },
     {
         "name": "Käse, hart, Parmesan, gerieben",
         "phe": "1990",
-        "icon": ""
+        "icon": "cheese"
     },
     {
         "name": "Brötchen, Weizen mit grobem Mehl, industriell hergestellt",
         "phe": "433",
-        "icon": ""
+        "icon": "rolls"
     },
     {
         "name": "Kiwi, roh",
         "phe": "37",
-        "icon": ""
+        "icon": "kiwi"
     },
     {
         "name": "Schweinefleisch, Schinken, Oberseite (M. Semimembranosus), mager, roh",
         "phe": "787",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Kirsche, in Zucker eingelegt",
         "phe": "18",
-        "icon": ""
+        "icon": "cherry"
     },
     {
         "name": "Ente, nur Fleisch, roh",
         "phe": "761",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pute, Brust, gekocht / geräuchert, in Scheiben geschnitten",
         "phe": "773",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Truthahn, nur Fleisch, roh",
         "phe": "806",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Schinken, Silberseite (M. Semitendinosus), mager, roh",
         "phe": "734",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Roggenbrot mit Sieben (weich) und fettreichen Samen, industriell hergestellt",
         "phe": "310",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Ente, Brust, nur Fleisch, roh",
         "phe": "828",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Lende, mager, roh",
         "phe": "827",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Zwiebeln, Frühling, roh",
         "phe": "62",
-        "icon": ""
+        "icon": "onion"
     },
     {
         "name": "Erbsen, Küken / Kichererbsen, trocken, roh",
         "phe": "1180",
-        "icon": ""
+        "icon": "peas"
     },
     {
         "name": "Leber, Ochse, roh",
         "phe": "974",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Lendenfilet, geräuchert",
         "phe": "714",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Gebäck, Napoleonhut",
         "phe": "359",
-        "icon": ""
+        "icon": "kuchen"
     },
     {
         "name": "Weizenbrot mit grobem Mehl zum Toasten, industriell hergestellt",
         "phe": "441",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Schweinefleisch, Schinken, Silberseite (M. Biceps Femoris), mager, roh",
         "phe": "754",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Leber, Ente, roh",
         "phe": "929",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Sattel, geräuchert, roh",
         "phe": "620",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Schweinefleisch, Sattel, geräuchert, gekocht",
         "phe": "677",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Thunfisch in Tomatensauce in Dosen",
         "phe": "716",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kohl, Wirsing, roh",
         "phe": "64",
-        "icon": ""
+        "icon": "cabbage"
     },
     {
         "name": "Spargel aller Art, roh",
         "phe": "52",
-        "icon": ""
+        "icon": "spargel"
     },
     {
         "name": "Huhn, Brust, gekocht, in Scheiben geschnitten",
         "phe": "758",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pistazien, trocken mit Salz geröstet",
         "phe": "1210",
-        "icon": ""
+        "icon": "pistachio-sauce"
     },
     {
         "name": "Kirschsaft, konzentriert, Zucker hinzugefügt",
         "phe": "9",
-        "icon": ""
+        "icon": "kirsche"
     },
     {
         "name": "Johannisbeere, rot, Saft, konzentriert, Zucker hinzugefügt",
         "phe": "17",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Erdbeersaft, konzentriert, Zucker hinzugefügt",
         "phe": "17",
-        "icon": ""
+        "icon": "erdbeere"
     },
     {
         "name": "Bohnen, grün, roh",
         "phe": "52",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Weißes Brot für Würstchen",
         "phe": "457",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Knollensellerie, Sellerieblätter, roh",
         "phe": "45",
-        "icon": ""
+        "icon": "sellerie"
     },
     {
         "name": "Rindfleisch, Oberseite, Kappe ab, roh",
         "phe": "892",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Schweinefleisch, Filet, geschnitten, roh",
         "phe": "781",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Knäckebrot, Knackebrot, Weizen, fein",
         "phe": "557",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Herz, Huhn, roh",
         "phe": "697",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Fleisch, mager, ca. 3% Fett, roh",
         "phe": "810",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Kabeljau, Rogen, roh",
         "phe": "855",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Leber, Schwein, roh",
         "phe": "1040",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Blumenkohl, gefroren",
         "phe": "71",
-        "icon": ""
+        "icon": "cauliflower"
     },
     {
         "name": "Krabbenkrallen, Fleisch, roh",
         "phe": "916",
-        "icon": ""
+        "icon": "crab"
     },
     {
         "name": "Krabbenkrallen, Fleisch, Dosen",
         "phe": "916",
-        "icon": ""
+        "icon": "crab"
     },
     {
         "name": "Truthahn, Fleisch und Haut, roh",
         "phe": "743",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Brot, weiß, grobkörnig",
         "phe": "439",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Marzipan",
         "phe": "1210",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Weißes Weizenbrot mit rissigen Kastanien",
         "phe": "419",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Holunder, Saft, konzentriert, Zucker hinzugefügt",
         "phe": "30",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Fenchelsamen",
         "phe": "657",
-        "icon": ""
+        "icon": "finocchio"
     },
     {
         "name": "Huhn, nur Fleisch, roh",
         "phe": "738",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Lamm, Bein, entfettet, roh",
         "phe": "808",
-        "icon": ""
+        "icon": "rack-of-lamb"
     },
     {
         "name": "Kalbfleisch, dünnes Fett, roh",
         "phe": "806",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Blumenkohl, dänisch, roh",
         "phe": "67",
-        "icon": ""
+        "icon": "cauliflower"
     },
     {
         "name": "Krabbe, gekocht",
         "phe": "804",
-        "icon": ""
+        "icon": "crab"
     },
     {
         "name": "Marmelade, Aprikose",
         "phe": "15",
-        "icon": ""
+        "icon": "jam"
     },
     {
         "name": "Schokolade, Milch, mit Nüssen",
         "phe": "422",
-        "icon": ""
+        "icon": "chocolate-bar-white"
     },
     {
         "name": "Rindfleisch, Rumpsteak, Kappe ab, roh",
         "phe": "872",
-        "icon": ""
+        "icon": "steak"
     },
     {
         "name": "Pinienkerne, getrocknet",
         "phe": "596",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Kaninchen, nur Fleisch, roh",
         "phe": "924",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pfeffer, scharfer Chili, roh",
         "phe": "61",
-        "icon": ""
+        "icon": "chili-pepper"
     },
     {
         "name": "Baguette mit Roggen, industriell hergestellt",
         "phe": "427",
-        "icon": ""
+        "icon": "baguette"
     },
     {
         "name": "Cashewnüsse, trocken geröstet",
         "phe": "780",
-        "icon": ""
+        "icon": "cashew"
     },
     {
         "name": "Brötchen vom italienischen Typ, industriell hergestellt",
         "phe": "467",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Rindfleisch, Fleisch, mager (<5% Fett), roh",
         "phe": "868",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Rindfleisch, dicke Flanke, Kappe ab, roh",
         "phe": "848",
-        "icon": ""
+        "icon": "cuts-of-beef"
     },
     {
         "name": "Bohnen, grün, gefroren",
         "phe": "54",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Lauch, roh",
         "phe": "50",
-        "icon": ""
+        "icon": "lauch"
     },
     {
         "name": "Thunfisch, in Wasser, in Dosen",
         "phe": "961",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Garnelen, Garnelen, gekocht",
         "phe": "1040",
-        "icon": ""
+        "icon": "prawn"
     },
     {
         "name": "Roastbeef, in Scheiben geschnitten",
         "phe": "868",
-        "icon": ""
+        "icon": "roast"
     },
     {
         "name": "Rindfleisch, Filet, entfettet, roh",
         "phe": "799",
-        "icon": ""
+        "icon": "steak"
     },
     {
         "name": "Hammel, rund, roh",
         "phe": "804",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Fruchtpaste, Feigen",
         "phe": "65",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Weizenbrot mit ganzen Körnern",
         "phe": "472",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Brötchen, weiß, industriell hergestellt",
         "phe": "454",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Chips",
         "phe": "233",
-        "icon": ""
+        "icon": "potato-chips"
     },
     {
         "name": "Marmelade, orange",
         "phe": "11",
-        "icon": ""
+        "icon": "jam"
     },
     {
         "name": "Spinat, gehackt, gefroren",
         "phe": "97",
-        "icon": ""
+        "icon": "spinach"
     },
     {
         "name": "Fasan, nur Fleisch, roh",
         "phe": "905",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Yam, roh",
         "phe": "74",
-        "icon": ""
+        "icon": "sweet-potato"
     },
     {
         "name": "Kartoffel, neu (Mai bis September), roh",
         "phe": "72",
-        "icon": ""
+        "icon": "potato"
     },
     {
         "name": "Ei, Ente, ganz, roh",
         "phe": "841",
-        "icon": ""
+        "icon": "egg-basket"
     },
     {
         "name": "Zunge, Schwein, roh",
         "phe": "870",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Marmelade, Kiwi",
         "phe": "7",
-        "icon": ""
+        "icon": "jam"
     },
     {
         "name": "Zunge, Schwein, geheilt",
         "phe": "870",
-        "icon": ""
+        "icon": "kein-soja"
     },
     {
         "name": "Fruchtpaste, Durchschnittswerte",
         "phe": "70",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Squab (Taube), Fleisch, roh",
         "phe": "804",
-        "icon": ""
+        "icon": "keine-krustentiere"
     },
     {
         "name": "Brot, weiß",
         "phe": "462",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Johannisbeere, schwarz, Saft, konzentriert, Zucker hinzugefügt",
         "phe": "17",
-        "icon": ""
+        "icon": "himbeere"
     },
     {
         "name": "Weißes Weizenbrot mit Walnüssen",
         "phe": "538",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Nuss, Erbse, geölt und gesalzen",
         "phe": "1590",
-        "icon": ""
+        "icon": "cashew"
     },
     {
         "name": "Rindfleisch, Schienbein + Bein (Schaft), roh",
         "phe": "856",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Rindfleisch, Streifenfilet \"cap off\", roh",
         "phe": "896",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Dock (USA), Sauerampfer (Großbritannien), roh",
         "phe": "115",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Käse, Quarg, 45% fidm.",
         "phe": "579",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Ei, Gans, ganz, roh",
         "phe": "910",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Zucker, braun",
         "phe": "0",
-        "icon": ""
+        "icon": "zucker"
     },
     {
         "name": "Kaffee, Instant, entkoffeiniert, Pulver",
         "phe": "241",
-        "icon": ""
+        "icon": "coffee-capsule"
     },
     {
         "name": "Spargel, weiß, roh",
         "phe": "65",
-        "icon": ""
+        "icon": "spargel"
     },
     {
         "name": "Rindfleisch, draußen, rund, roh",
         "phe": "856",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Rosine, kernlos",
         "phe": "62",
-        "icon": ""
+        "icon": "raisins"
     },
     {
         "name": "Huhn, Bein, Fleisch und Haut, roh",
         "phe": "710",
-        "icon": ""
+        "icon": "keine-krustentiere"
     },
     {
         "name": "Huhn, Trommelstock, Fleisch und Haut, roh",
         "phe": "696",
-        "icon": ""
+        "icon": "keine-krustentiere"
     },
     {
         "name": "Baguette, Weizen mit Roggen, fettreiche Samen, industriell hergestellt",
         "phe": "449",
-        "icon": ""
+        "icon": "baguette"
     },
     {
         "name": "Grünkohl, gefroren",
         "phe": "84",
-        "icon": ""
+        "icon": "kohlrabi"
     },
     {
         "name": "Kerbel, gehackt, gefroren",
         "phe": "102",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rindfleisch, rundes Auge, roh",
         "phe": "860",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Einfach, roh",
         "phe": "44",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Knäckebrot, Weizen",
         "phe": "447",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizenbrot, Sandwich / Toast, fettreiche Samen, industriell hergestellt",
         "phe": "428",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Schweinefleisch, Wurst, Frankfurter, Dosen",
         "phe": "390",
-        "icon": ""
+        "icon": "wuerste"
     },
     {
         "name": "Süßigkeiten, gekocht",
         "phe": "0",
-        "icon": ""
+        "icon": "suessigkeit"
     },
     {
         "name": "Thunfisch, roh",
         "phe": "1100",
-        "icon": ""
+        "icon": "keine-krustentiere"
     },
     {
         "name": "Likör, Kaffee mit Sahne",
         "phe": "139",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Huhn, Brust, Fleisch und Haut, roh",
         "phe": "791",
-        "icon": ""
+        "icon": "keine-krustentiere"
     },
     {
         "name": "Rindfleisch, Fleisch, 5-10% Fett, roh",
         "phe": "844",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Zunge, Ochse, roh",
         "phe": "674",
-        "icon": ""
+        "icon": "kein-soja"
     },
     {
         "name": "Zunge, Kalb, geheilt",
         "phe": "622",
-        "icon": ""
+        "icon": "kein-soja"
     },
     {
         "name": "Brokkoli, gekocht",
         "phe": "88",
-        "icon": ""
+        "icon": "broccoli"
     },
     {
         "name": "Marmelade, Kirsche",
         "phe": "9",
-        "icon": ""
+        "icon": "jam"
     },
     {
         "name": "Lachs, Atlantik, wild, in Dosen",
         "phe": "844",
-        "icon": ""
+        "icon": "keine-krustentiere"
     },
     {
         "name": "Pferd, Fleisch, roh",
         "phe": "730",
-        "icon": ""
+        "icon": "keine-krustentiere"
     },
     {
         "name": "Sardine in Tomatensauce, in Dosen",
         "phe": "628",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Hühnerfleischwürstchen",
         "phe": "471",
-        "icon": ""
+        "icon": "essen-und-wein"
     },
     {
         "name": "Pilz, in Dosen",
         "phe": "60",
-        "icon": ""
+        "icon": "mushroom"
     },
     {
         "name": "Weißes Weizenbrot mit Sonnenblumenkernen",
         "phe": "475",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Schnittlauch, roh",
         "phe": "100",
-        "icon": ""
+        "icon": "vegetables-bag"
     },
     {
         "name": "Zunge, Kalb, roh",
         "phe": "622",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Schweinefleisch, Schinken, gewürzt, entbeint",
         "phe": "442",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Pastinake, roh",
         "phe": "64",
-        "icon": ""
+        "icon": "group-of-vegetables"
     },
     {
         "name": "Kartoffel, automn (Oktober bis Januar), roh",
         "phe": "88",
-        "icon": ""
+        "icon": "potato"
     },
     {
         "name": "Maniok, roh",
         "phe": "26",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rindfleisch, Oberseite \"Kappe auf\", roh",
         "phe": "844",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Rindfleisch, Hals, roh",
         "phe": "832",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Schweinefleisch, Hackfleisch, 5-10% Fett, roh",
         "phe": "712",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Kartoffel, alt (Februar bis Juni), roh",
         "phe": "88",
-        "icon": ""
+        "icon": "potato"
     },
     {
         "name": "Stockfisch, Kabeljau, gespalten, gesalzen und getrocknet, roh",
         "phe": "902",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Schweinefleisch, Kragen, entfettet, roh",
         "phe": "664",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Gans, nur Fleisch, roh",
         "phe": "946",
-        "icon": ""
+        "icon": "essen-und-wein"
     },
     {
         "name": "Brot, weiß, Brötchen",
         "phe": "496",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Grünkohl, in Dosen",
         "phe": "109",
-        "icon": ""
+        "icon": "vegetables-bag"
     },
     {
         "name": "Spinat, in Dosen",
         "phe": "125",
-        "icon": ""
+        "icon": "spinach"
     },
     {
         "name": "Huhn, Fleisch und Haut, roh",
         "phe": "692",
-        "icon": ""
+        "icon": "essen-und-wein"
     },
     {
         "name": "Makrele in Tomatensauce, in Dosen",
         "phe": "468",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Pilz, roh",
         "phe": "70",
-        "icon": ""
+        "icon": "mushroom"
     },
     {
         "name": "Rindfleisch, Rumpsteak \"cap on\", roh",
         "phe": "816",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Keks, süß",
         "phe": "368",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Kresse, Garten, roh",
         "phe": "112",
-        "icon": ""
+        "icon": "group-of-vegetables"
     },
     {
         "name": "Sojasprossen, Mungo, roh",
         "phe": "117",
-        "icon": ""
+        "icon": "group-of-vegetables"
     },
     {
         "name": "Hering, eingelegt, in Dosen",
         "phe": "512",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Petersilienwurzel, roh",
         "phe": "55",
-        "icon": ""
+        "icon": "group-of-vegetables"
     },
     {
         "name": "Molke, süß, getrocknet",
         "phe": "405",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Sojasprossen, Durchschnittswerte, roh",
         "phe": "115",
-        "icon": ""
+        "icon": "group-of-vegetables"
     },
     {
         "name": "Margarine, 30% Fett, pflanzliches Fett",
         "phe": "25",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rindfleisch, Schulter, ventraler Teil",
         "phe": "764",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Schweinefleisch, Wurst, dänisch, roh",
         "phe": "450",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Muscheln, gekocht",
         "phe": "990",
-        "icon": ""
+        "icon": "muschel"
     },
     {
         "name": "Kalbfleisch, mittelfett, roh",
         "phe": "768",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Schweinefleisch, Hand mit Schale, roh",
         "phe": "692",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Gemischter Aufstrich, 80% Fett",
         "phe": "22",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Fleisch, ca. 10% Fett, roh",
         "phe": "736",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Schweinefleisch, Muskelmasse, Kopfkäse",
         "phe": "458",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Huhn, Flügel, Fleisch und Haut, roh",
         "phe": "707",
-        "icon": ""
+        "icon": "chicken"
     },
     {
         "name": "Weizenbrot, fettreiche Samen, industriell hergestellt",
         "phe": "504",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Sprotte (Sardine) in Tomatensauce, in Dosen",
         "phe": "580",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Lamm, Schulter, roh",
         "phe": "740",
-        "icon": ""
+        "icon": "lamb"
     },
     {
         "name": "Fasan, Fleisch und Haut, roh",
         "phe": "944",
-        "icon": ""
+        "icon": "nicht-vegetarisches-essen-symbol"
     },
     {
         "name": "Marmelade, Erdbeere",
         "phe": "17",
-        "icon": ""
+        "icon": "jam"
     },
     {
         "name": "Lachs, Atlantik, wild, kalt geräuchert",
         "phe": "856",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Heilbutt, Grönland, geraucht",
         "phe": "548",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Schweinefleisch, Lende, entfettet (ca. 3 mm Fett), roh",
         "phe": "708",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Blumenkohl, importiert, roh",
         "phe": "104",
-        "icon": ""
+        "icon": "cauliflower"
     },
     {
         "name": "Salz, Block",
         "phe": "0",
-        "icon": ""
+        "icon": "salt"
     },
     {
         "name": "Mayonnaise",
         "phe": "55",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Leberpaste, dänisch",
         "phe": "523",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Apfelgelee",
         "phe": "13",
-        "icon": ""
+        "icon": "gelee"
     },
     {
         "name": "Brot, weiß, Brötchen, grobkörnig",
         "phe": "538",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Butter, Salz nicht hinzugefügt",
         "phe": "25",
-        "icon": ""
+        "icon": "butter"
     },
     {
         "name": "Gänseschmalz",
         "phe": "0",
-        "icon": ""
+        "icon": "nicht-vegetarisches-essen-symbol"
     },
     {
         "name": "Lamm, Bein mit Fett, roh",
         "phe": "740",
-        "icon": ""
+        "icon": "lamb"
     },
     {
         "name": "Pflanzenmargarine, 80%, braten / backen",
         "phe": "5",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rindfleisch, Futter, roh",
         "phe": "749",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Margarine, 80% Fett, Tischgebrauch, weiches, pflanzliches Fett",
         "phe": "38",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Schinken, geräuchert, gekocht",
         "phe": "732",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Schokolade, bitter",
         "phe": "201",
-        "icon": ""
+        "icon": "chocolate-bar-white"
     },
     {
         "name": "Suppe, Tomate, essfertig",
         "phe": "55",
-        "icon": ""
+        "icon": "soup-plate"
     },
     {
         "name": "Hering, eingelegt, gewürzt, in Dosen",
         "phe": "536",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Hering, geraucht",
         "phe": "837",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Schweinefleisch, Schinken, Silberseite (M. Biceps Femoris), 5 mm Rinde, roh",
         "phe": "707",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Lachs, Atlantik, wild, gravad",
         "phe": "848",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Margarine, 80% Fett, Tischgebrauch, pflanzliches Fett",
         "phe": "38",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Sardelle, eingelegt, in Dosen",
         "phe": "579",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Sprotte, eingelegt, in Dosen",
         "phe": "579",
-        "icon": ""
+        "icon": "fish"
     },
     {
         "name": "Huhn, Henne, Fleisch und Haut, roh",
         "phe": "658",
-        "icon": ""
+        "icon": "chicken"
     },
     {
         "name": "Rindfleisch, Bruststück, vorderer Teil, roh",
         "phe": "677",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Broiler, Fleisch und Haut, roh",
         "phe": "730",
-        "icon": ""
+        "icon": "chicken"
     },
     {
         "name": "Rindfleisch, Schulter, Rückenpartie, roh",
         "phe": "737",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Salatdressing, italienisch",
         "phe": "16",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Brötchen, Weizen mit grobem Mehl, fettreiche Samen, industriell hergestellt",
         "phe": "475",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Milch, Magermilch, Bio",
         "phe": "176",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Milch, überflogen",
         "phe": "176",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Butter, Salz hinzugefügt",
         "phe": "34",
-        "icon": ""
+        "icon": "butter"
     },
     {
         "name": "Rindfleisch, Fleisch, ca. 15% Fett, roh",
         "phe": "756",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Schweinefleisch, Flanke, roh",
         "phe": "670",
-        "icon": ""
+        "icon": "cuts-of-pork"
     },
     {
         "name": "Schweinefleisch, Schinken nach Bajonne-Art, entbeint",
         "phe": "765",
-        "icon": ""
+        "icon": "schinken"
     },
     {
         "name": "Brot, Brötchen, Dänisch",
         "phe": "525",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Rindfleisch, Rumpf, roh",
         "phe": "745",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Magermilch, 0,5% Fett",
         "phe": "180",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Milch, Buttermilch mit Zitrone",
         "phe": "165",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rindfleisch, T-Bone-Steak, roh",
         "phe": "780",
-        "icon": ""
+        "icon": "steak"
     },
     {
         "name": "Rosenkohl, gefroren",
         "phe": "95",
-        "icon": ""
+        "icon": "vegetables-bag"
     },
     {
         "name": "Schweinefleisch, Hackfleisch, 15-20% Fett, roh",
         "phe": "673",
-        "icon": ""
+        "icon": "cuts-of-pork"
     },
     {
         "name": "Schweinefleisch, dünner Bauch, mager, ca. 2 mm Rinde, roh",
         "phe": "648",
-        "icon": ""
+        "icon": "cuts-of-pork"
     },
     {
         "name": "Kakao, Instant, Med Milch, Pulver",
         "phe": "220",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Reiskleie",
         "phe": "718",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rindfleisch, Lendenstück, roh",
         "phe": "780",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Weizenkeim, roh",
         "phe": "1350",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schellfisch, paniert, gebraten",
         "phe": "1040",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Thunfisch, in Öl, in Dosen",
         "phe": "996",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Hammel, Schulter, roh",
         "phe": "748",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Huhn, Fleisch und Haut, gegrillt",
         "phe": "902",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schokolade, Plain, Couverture",
         "phe": "201",
-        "icon": ""
+        "icon": "chocolate-bar-white"
     },
     {
         "name": "Frankfurter Wurst, gekochtes Fast Food",
         "phe": "467",
-        "icon": ""
+        "icon": "wuerste"
     },
     {
         "name": "Pastete, Leber",
         "phe": "603",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinewurst vom Typ Saveloy",
         "phe": "430",
-        "icon": ""
+        "icon": "wuerste"
     },
     {
         "name": "Sapotes, roh",
         "phe": "54",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Speckchips",
         "phe": "1370",
-        "icon": ""
+        "icon": "speck"
     },
     {
         "name": "Makrele, Filet, in natürlichen Säften, in Dosen",
         "phe": "790",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Magermilch mit Schokolade",
         "phe": "177",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Magermilch mit Schokolade (UHT)",
         "phe": "180",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Rindfleisch, Streifenfilet \"cap on\", roh",
         "phe": "749",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Käse, Camembert, 30% fidm.",
         "phe": "1290",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Schweinefleisch, Fleisch, ca. 20% Fett, roh",
         "phe": "662",
-        "icon": ""
+        "icon": "cuts-of-pork"
     },
     {
         "name": "Keks, Vollkorn, Verdauungstyp",
         "phe": "331",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Schweinefleisch, Lende mit Schale, roh",
         "phe": "672",
-        "icon": ""
+        "icon": "cuts-of-pork"
     },
     {
         "name": "Sprotte (Sardine), in Öl, in Dosen",
         "phe": "984",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Sardine in Öl, in Dosen",
         "phe": "984",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Cream Cracker",
         "phe": "538",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Schweinefleisch, dünner Bauch mit Schale, roh",
         "phe": "613",
-        "icon": ""
+        "icon": "cuts-of-pork"
     },
     {
         "name": "Schweine- / Rindfleischwurst vom Typ Saveloy",
         "phe": "428",
-        "icon": ""
+        "icon": "wuerste"
     },
     {
         "name": "Hering, Herbst, roh",
         "phe": "741",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Schweinefleisch, Mettwurst, geräuchert",
         "phe": "425",
-        "icon": ""
+        "icon": "wuerste"
     },
     {
         "name": "Salatdressing, Mayonnaise",
         "phe": "50",
-        "icon": ""
+        "icon": "salat"
     },
     {
         "name": "Roggenmehl, verschraubt (Extraktionsrate 70%)",
         "phe": "300",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Rindfleisch, entrecote \"cap on\", roh",
         "phe": "699",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Kippers, in Öl, in Dosen",
         "phe": "787",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Hering, gesalzen, gereift",
         "phe": "503",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Milch, 1,5% Fett, kultiviert, Kefir",
         "phe": "171",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Schweinefleisch, Flanke, gewürzt, gekocht",
         "phe": "620",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Rosenkohl, Winter (Januar bis April), roh",
         "phe": "127",
-        "icon": ""
+        "icon": "vegetables-bag"
     },
     {
         "name": "Kerbel, roh",
         "phe": "102",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Erdnussbutter",
         "phe": "1300",
-        "icon": ""
+        "icon": "peanut-butter"
     },
     {
         "name": "Zuckermais, Körner, Dosen",
         "phe": "159",
-        "icon": ""
+        "icon": "mais"
     },
     {
         "name": "Apfel, getrocknet",
         "phe": "27",
-        "icon": ""
+        "icon": "apfel"
     },
     {
         "name": "Joghurt mit Früchten, 1,5% Fett",
         "phe": "158",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Kalbfleisch, fett, roh",
         "phe": "710",
-        "icon": ""
+        "icon": "veal"
     },
     {
         "name": "Schweinefleisch, Hals, geräuchert, gekocht",
         "phe": "718",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Keks, süß",
         "phe": "260",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Sahne, Schlagsahne, 38% Fett",
         "phe": "106",
-        "icon": ""
+        "icon": "cream"
     },
     {
         "name": "Getränke, Soja, kommerziell hergestellt, nicht angereichert",
         "phe": "169",
-        "icon": ""
+        "icon": "soja"
     },
     {
         "name": "Sahne, kultiviert, 38% Fett",
         "phe": "100",
-        "icon": ""
+        "icon": "cream"
     },
     {
         "name": "Blutwurst, gekocht",
         "phe": "548",
-        "icon": ""
+        "icon": "wuerste"
     },
     {
         "name": "Eier, Huhn, Eigelb, gesalzen, pasteurisiert",
         "phe": "650",
-        "icon": ""
+        "icon": "egg-basket"
     },
     {
         "name": "Milch, mit Schokolade, teilweise entrahmt, 1,5% Fett (UHT)",
         "phe": "180",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Gelatine",
         "phe": "1810",
-        "icon": ""
+        "icon": "gelee"
     },
     {
         "name": "Margarine (weniger als 50% Fett), durchschnittlich",
         "phe": "25",
-        "icon": ""
+        "icon": "butter"
     },
     {
         "name": "Frankfurter Wurst, gebraten, Fast Food",
         "phe": "517",
-        "icon": ""
+        "icon": "wuerste"
     },
     {
         "name": "Pekannüsse, Öl geröstet",
         "phe": "486",
-        "icon": ""
+        "icon": "pecan"
     },
     {
         "name": "Pekannüsse, trocken geröstet",
         "phe": "502",
-        "icon": ""
+        "icon": "pecan"
     },
     {
         "name": "Margarine, 40% Fett, pflanzliches Fett",
         "phe": "25",
-        "icon": ""
+        "icon": "butter"
     },
     {
         "name": "Rosenkohl, automn (Oktober bis Dezember), roh",
         "phe": "138",
-        "icon": ""
+        "icon": "vegetables-bag"
     },
     {
         "name": "Buchweizenmehl",
         "phe": "583",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Hefe, getrocknet",
         "phe": "1370",
-        "icon": ""
+        "icon": "yeast"
     },
     {
         "name": "Squab (Taube), roh",
         "phe": "739",
-        "icon": ""
+        "icon": "poultry"
     },
     {
         "name": "Schweinefleisch, dicker Bauch, entfettet, ca. 2 mm Rinde, roh",
         "phe": "575",
-        "icon": ""
+        "icon": "pork"
     },
     {
         "name": "Käse, verarbeitet, 20% fidm.",
         "phe": "1470",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, fest, Danbo, 20% fidm.",
         "phe": "1470",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Milch, mit Schokolade, teilweise entrahmt, 1,5% Fett",
         "phe": "184",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Kakao, sofort, ohne Milch, Pulver",
         "phe": "212",
-        "icon": ""
+        "icon": "kakaopulver"
     },
     {
         "name": "Hefeextrakt, Marmite",
         "phe": "1070",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Pommes Frites, Frittiertes, Fast Food",
         "phe": "148",
-        "icon": ""
+        "icon": "pommes"
     },
     {
         "name": "Ei, Henne, Eigelb, Zucker hinzugefügt, pasteurisiert, gefroren",
         "phe": "659",
-        "icon": ""
+        "icon": "eierkarton"
     },
     {
         "name": "Käse, fest, 20% fidm., Alle Sorten",
         "phe": "1540",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, Sahne, 60% fidm.",
         "phe": "528",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Tomatenmark, konzentriert",
         "phe": "117",
-        "icon": ""
+        "icon": "tomate"
     },
     {
         "name": "Bohnen, Soja, getrocknet, roh",
         "phe": "1770",
-        "icon": ""
+        "icon": "heinz-bohnen"
     },
     {
         "name": "Zuckermais, Körner, gefroren",
         "phe": "169",
-        "icon": ""
+        "icon": "mais"
     },
     {
         "name": "Makrele, geraucht",
         "phe": "748",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rinderbrust, in Salzlake getränkt",
         "phe": "806",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Salatdressing, tausend Insel",
         "phe": "47",
-        "icon": ""
+        "icon": "salat"
     },
     {
         "name": "Keks, süß",
         "phe": "286",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Reisgrütze, roh",
         "phe": "349",
-        "icon": ""
+        "icon": "reisschuessel"
     },
     {
         "name": "Schweinefleisch, Schinken, geräuchert",
         "phe": "1140",
-        "icon": ""
+        "icon": "spargel"
     },
     {
         "name": "Käse, verarbeitet, 30% fidm.",
         "phe": "1370",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, Brie, 45% fidm.",
         "phe": "1070",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Huhn, Fleisch und Haut, geschlagen, frittiert",
         "phe": "902",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Ei, Huhn, Eigelb, roh",
         "phe": "675",
-        "icon": ""
+        "icon": "eierkarton"
     },
     {
         "name": "Rindfleisch, Fleisch, ca. 25% Fett, roh",
         "phe": "630",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Rindfleisch, Bruststück, hinterer Teil, roh",
         "phe": "653",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Lamm, Fleisch, Durchschnittswerte, roh",
         "phe": "584",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Käse, Camembert, 45% fidm.",
         "phe": "1110",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Huhn, Fleisch und Haut, frittiert",
         "phe": "1090",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Rindfleisch, Bruststück, Mittelteil, roh",
         "phe": "611",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Buchweizengrütze, roh",
         "phe": "324",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Käse, Semihard, Feta, 50% Fidm",
         "phe": "921",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Käse, feste Magermilch, max. 5% fidm.",
         "phe": "2230",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Tomatenpüree",
         "phe": "44",
-        "icon": ""
+        "icon": "tomate"
     },
     {
         "name": "Aal, roh",
         "phe": "730",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, dicker Bauch mit Schale, roh",
         "phe": "562",
-        "icon": ""
+        "icon": "spargel"
     },
     {
         "name": "Rindfleisch, Flatribs, roh",
         "phe": "637",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Reis, poliert, roh",
         "phe": "452",
-        "icon": ""
+        "icon": "reisschuessel"
     },
     {
         "name": "Bouillon, Rindfleisch, konzentriert, Würfel",
         "phe": "193",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Reismehl",
         "phe": "393",
-        "icon": ""
+        "icon": "reisschuessel"
     },
     {
         "name": "Kakaopulver",
         "phe": "756",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Roggenmehl, verschraubt (Extraktionsrate 85%)",
         "phe": "383",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Käse, fest, Danbo, 30% fidm.",
         "phe": "1470",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Rindfleisch, Flanke, roh",
         "phe": "618",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Tomatenketchup, abgefüllt",
         "phe": "77",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Bohnen, gebacken in Tomatensauce, in Dosen",
         "phe": "269",
-        "icon": ""
+        "icon": "heinz-bohnen"
     },
     {
         "name": "Vollmilch, 3,5 (UHT),% Fett",
         "phe": "172",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Vollmilch, Bio, 3,5% Fett",
         "phe": "171",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Lamm, Lende, roh",
         "phe": "632",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Schweinefleisch, Fleisch, ca. 32% Fett, roh",
         "phe": "552",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Joghurt mit Erdbeeren",
         "phe": "145",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Reis, gekocht, roh",
         "phe": "420",
-        "icon": ""
+        "icon": "reisschuessel"
     },
     {
         "name": "Kartoffelmehl",
         "phe": "8",
-        "icon": ""
+        "icon": "potato"
     },
     {
         "name": "Joghurt mit gemischten Früchten",
         "phe": "145",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Käse, fest, 30% fidm., Alle Sorten",
         "phe": "1480",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Pfirsich, getrocknet",
         "phe": "109",
-        "icon": ""
+        "icon": "pfirsich"
     },
     {
         "name": "Käse, Camembert, 50% fidm.",
         "phe": "1010",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Milch, ganz, kultiviert",
         "phe": "170",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Junket",
         "phe": "170",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Vollmilch, kultiviert (HISTORISCH)",
         "phe": "170",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Milch, kultiviert, Kefir (HISTORISCH)",
         "phe": "170",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Joghurt mit Pfirsichmelba",
         "phe": "145",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Joghurt, Vollmilch, mit Früchten",
         "phe": "145",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Käse, fest, Maribo, 30% fidm.",
         "phe": "1510",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Joghurt mit Birne und Banane",
         "phe": "145",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Joghurt mit Kirschen",
         "phe": "149",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Milch, acidophilus kultiviert",
         "phe": "237",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Mohn",
         "phe": "895",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Gerstenmehl, roh",
         "phe": "537",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Gekochte Nudeln",
         "phe": "281",
-        "icon": ""
+        "icon": "nudeln"
     },
     {
         "name": "Maismehl",
         "phe": "348",
-        "icon": ""
+        "icon": "mais"
     },
     {
         "name": "Käse, Semihard, Mozzarella, 30% Fidm.",
         "phe": "1500",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Weizenmehl",
         "phe": "538",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Aal, geraucht",
         "phe": "807",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Käse, Sahne, 70% fidm.",
         "phe": "497",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Joghurt mit Müsli",
         "phe": "154",
-        "icon": ""
+        "icon": "joghurt"
     },
     {
         "name": "Milch, acidophilus kultiviert, mit Zitrone (HISTORISCH)",
         "phe": "237",
-        "icon": ""
+        "icon": "milchflasche"
     },
     {
         "name": "Weizenmehl, Brotherstellung (Extraktionsrate 75%)",
         "phe": "538",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Erbsen, grün, gefroren",
         "phe": "205",
-        "icon": ""
+        "icon": "peas"
     },
     {
         "name": "Grieß",
         "phe": "484",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Käse, Brie, 50% fidm.",
         "phe": "1020",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Erbsen, grün, in Dosen",
         "phe": "245",
-        "icon": ""
+        "icon": "vegetables-bag"
     },
     {
         "name": "Lamm, Flanke, roh",
         "phe": "580",
-        "icon": ""
+        "icon": "rack-of-lamb"
     },
     {
         "name": "Lamm, Brust, roh",
         "phe": "580",
-        "icon": ""
+        "icon": "rack-of-lamb"
     },
     {
         "name": "Sprossen, Soja, roh",
         "phe": "308",
-        "icon": ""
+        "icon": "soy-sauce"
     },
     {
         "name": "Käse, fest, Samsoe, 30% fidm.",
         "phe": "1560",
-        "icon": ""
+        "icon": "kaese"
     },
     {
         "name": "Ziegenmilch",
         "phe": "156",
-        "icon": ""
+        "icon": "milk-carton"
     },
     {
         "name": "Brötchen, süßer Teigtyp",
         "phe": "468",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizenkeimöl",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Öl, Baumwollsamen",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Öl Palme",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Öl, Kakaobutter",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Palmkernöl",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Erdnussöl",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Sonnenblumenöl",
         "phe": "0",
-        "icon": ""
+        "icon": "sunflower-butter"
     },
     {
         "name": "Walnussöl",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Öl, Sesam",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Maisöl",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Leinsamenöl",
         "phe": "0",
-        "icon": ""
+        "icon": "flax-seeds"
     },
     {
         "name": "Roggenbrot, weich, keine fettreichen Samen, industriell hergestellt",
         "phe": "240",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizenbrot, italienische Art, Einzelhandelsbäckerei",
         "phe": "420",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Öl, Traubenkern",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Öl, Kokosnuss",
         "phe": "0",
-        "icon": ""
+        "icon": "coconut-milk"
     },
     {
         "name": "Fett, Rindertalg",
         "phe": "184",
-        "icon": ""
+        "icon": "beef"
     },
     {
         "name": "Sojaöl, raffiniert",
         "phe": "0",
-        "icon": ""
+        "icon": "soy-sauce"
     },
     {
         "name": "Olivenöl",
         "phe": "0",
-        "icon": ""
+        "icon": "olivenoel"
     },
     {
         "name": "Öl, Raps (keine Erucasäure)",
         "phe": "0",
-        "icon": ""
+        "icon": "vegetable-bouillion-paste"
     },
     {
         "name": "Kürbiskern, getrocknet",
         "phe": "1810",
-        "icon": ""
+        "icon": "kuerbis"
     },
     {
         "name": "Hartweizenmehl",
         "phe": "640",
-        "icon": ""
+        "icon": "flour"
     },
     {
         "name": "Weißbrot, weiß, industriell hergestellt",
         "phe": "444",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Brot, weiß, groß, Einzelhandelsbäckerei",
         "phe": "538",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizenbrot mit grobem Mehl, industriell hergestellt",
         "phe": "470",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizenbrot, groß, mit grobem Essen, Einzelhandelsbäckerei",
         "phe": "538",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Lachs, Atlantik, Aquakultur, kalt geräuchert",
         "phe": "834",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Lachs, Atlantik, Aquakultur, heiß geräuchert",
         "phe": "903",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Butterkeks, Weizen, dänisch, industriell hergestellt",
         "phe": "538",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Butterkeks, braun (dänisch), industriell hergestellt",
         "phe": "538",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Keks, süß, Pfeffernüsse, dänische Tradition, industriell hergestellt",
         "phe": "538",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Keks, Roggen",
         "phe": "298",
-        "icon": ""
+        "icon": "kekse"
     },
     {
         "name": "Schweinefleisch, Hackfleisch, 10-15% Fett, roh",
         "phe": "724",
-        "icon": ""
+        "icon": "cuts-of-pork"
     },
     {
         "name": "Garnelen, gekocht, in Salzlake",
         "phe": "668",
-        "icon": ""
+        "icon": "prawn"
     },
     {
         "name": "Lachs, Atlantik, Aquakultur, Gravad",
         "phe": "814",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Lachs, Atlantik, Aquakultur, roh",
         "phe": "779",
-        "icon": ""
+        "icon": "fischfutter"
     },
     {
         "name": "Eier, Huhn, Batteriehühner, roh",
         "phe": "671",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Eier, Hühnchen, Freilandhühner (im Freien), roh",
         "phe": "688",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Eier, Hühnchen, Freilandhühner (drinnen), roh",
         "phe": "686",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Eier, Huhn, ökologischer Landbau, roh",
         "phe": "691",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Eier, Huhn, gekocht, gefroren",
         "phe": "768",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Eier, Huhn, Eigelb, pasteurisiert",
         "phe": "560",
-        "icon": ""
+        "icon": "eier"
     },
     {
         "name": "Roggenbrot, dunkel, industriell hergestellt",
         "phe": "254",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Roggenbrot, dunkel, Vollkornprodukte, industriell hergestellt",
         "phe": "245",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizenbrot mit grobem Mehl und fettreichen Samen, Einzelhandelsbäckerei",
         "phe": "457",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Roggenbrot, dunkle Bäckerei im Einzelhandel",
         "phe": "290",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Roggenbrot, dunkle Vollkornprodukte, Einzelhandelsbäckerei",
         "phe": "246",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Roggenbrot, dunkel, mit fettreichen Samen, Einzelhandelsbäckerei",
         "phe": "357",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Roggenbrot mit Sieben (weich) und fettreichen Samen, Einzelhandelsbäckerei",
         "phe": "387",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Kümmel, roh",
         "phe": "867",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Tahini",
         "phe": "901",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Brötchen, italienischer Typ, Einzelhandelsbäckerei",
         "phe": "475",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Weizenbrot, Pita, weiß",
         "phe": "398",
-        "icon": ""
+        "icon": "brot"
     },
     {
         "name": "Dinkelweizenmehl, verriegelt",
         "phe": "615",
-        "icon": ""
+        "icon": "mehl"
     },
     {
         "name": "Dinkelweizenmehl, ganz",
         "phe": "680",
-        "icon": ""
+        "icon": "mehl"
     },
     {
         "name": "Quinoa, weiß, roh",
         "phe": "524",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Quinoa, rot, roh",
         "phe": "552",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Quinoa, schwarz, roh",
         "phe": "532",
-        "icon": ""
+        "icon": "organic-food"
     },
     {
         "name": "Roggenmehl, nicht spezifiziert",
         "phe": "386",
-        "icon": ""
+        "icon": "mehl"
     },
     {
         "name": "Chia-Samen",
         "phe": "989",
-        "icon": ""
+        "icon": "chia-seeds"
     }
 ]
