@@ -17,7 +17,7 @@ def find_matching_keyword_gpt3(name):
     response = openai.Completion.create(
         engine="text-davinci-002",
         prompt=prompt,
-        max_tokens=50,
+        max_tokens=25,
         n=1,
         stop=None,
         temperature=0,
