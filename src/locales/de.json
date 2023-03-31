@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Tools und Apps für PKU.",
+    "description": "Nährwert-App für die Stoffwechselerkrankung PKU.",
     "signin-google": "Anmelden mit Google",
     "signin-facebook": "Anmelden mit Facebook",
     "signout": "Abmelden",

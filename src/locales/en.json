@@ -1,7 +1,7 @@
 {
   "app": {
     "title": "PKU Tools",
-    "description": "Tools and apps for PKU.",
+    "description": "Nutritional app for the metabolic disorder PKU.",
     "signin-google": "Sign in with Google",
     "signin-facebook": "Sign in with Facebook",
     "signout": "Sign out",

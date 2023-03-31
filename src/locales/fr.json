@@ -121,8 +121,8 @@
     "title": "Statistiques"
   },
   "amino-counter": {
-    "title": "Compteur d'acides aminés",
-    "description": "Comptez les portions du mélange d'acides aminés.",
+    "title": "PKU Tools",
+    "description": "Application nutritionnelle pour la maladie métabolique PKU.",
     "progress": "portion(s) aujourd'hui",
     "take": "Ajouter une portion",
     "amount": "Portions par jour",

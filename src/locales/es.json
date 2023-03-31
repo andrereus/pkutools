@@ -1,7 +1,7 @@
 {
   "app": {
-    "title": "Herramientas PKU",
-    "description": "Herramientas y aplicaciones para PKU.",
+    "title": "PKU Tools",
+    "description": "Aplicación nutricional para el trastorno metabólico PKU.",
     "signin-google": "Iniciar sesión con Google",
     "signin-facebook": "Iniciar sesión con Facebook",
     "signout": "Cerrar sesión",
