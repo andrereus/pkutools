@@ -8,6 +8,9 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <div v-if="userIsAuthenticated">
+          <p>{{ $t("email-auth.signedin") }}</p>
+        </div>
         <div v-if="!userIsAuthenticated">
           <p class="mb-6">{{ $t("email-auth.description") }}</p>
 
@@ -36,15 +39,20 @@
                     rounded
                     :label="$t('email-auth.email')"
                     type="email"
-                    class="mt-4"
+                    class="mt-6"
                     v-model="email"
+                    :rules="[rules.required, rules.email]"
                   ></v-text-field>
                   <v-text-field
                     filled
                     rounded
                     :label="$t('email-auth.password')"
-                    type="password"
+                    :type="show1 ? 'text' : 'password'"
                     v-model="password"
+                    :append-icon="show1 ? mdiEye : mdiEyeOff"
+                    :rules="[rules.required, rules.min]"
+                    :hint="$t('email-auth.min-length')"
+                    @click:append="show1 = !show1"
                   ></v-text-field>
 
                   <v-btn depressed rounded color="primary" class="mr-3 mb-3" @click="signInEmailPassword">
@@ -60,17 +68,29 @@
                   <v-text-field
                     filled
                     rounded
+                    :label="$t('email-auth.name')"
+                    type="text"
+                    class="mt-8"
+                    v-model="name"
+                  ></v-text-field>
+                  <v-text-field
+                    filled
+                    rounded
                     :label="$t('email-auth.email')"
                     type="email"
-                    class="mt-6"
                     v-model="email"
+                    :rules="[rules.required, rules.email]"
                   ></v-text-field>
                   <v-text-field
                     filled
                     rounded
                     :label="$t('email-auth.password')"
-                    type="password"
+                    :type="show1 ? 'text' : 'password'"
                     v-model="password"
+                    :append-icon="show1 ? mdiEye : mdiEyeOff"
+                    :rules="[rules.required, rules.min]"
+                    :hint="$t('email-auth.min-length')"
+                    @click:append="show1 = !show1"
                   ></v-text-field>
 
                   <v-btn depressed rounded color="primary" class="mr-3 mb-3" @click="registerEmailPassword">
@@ -88,8 +108,9 @@
                     rounded
                     :label="$t('email-auth.email')"
                     type="email"
-                    class="mt-6"
+                    class="mt-8"
                     v-model="email"
+                    :rules="[rules.required, rules.email]"
                   ></v-text-field>
 
                   <v-btn depressed rounded color="primary" class="mr-3 mb-3" @click="resetPassword">
@@ -119,6 +140,7 @@ import { mapState } from "vuex";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
+import { mdiEye, mdiEyeOff } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -128,18 +150,26 @@ export default {
     };
   },
   data: () => ({
+    mdiEye,
+    mdiEyeOff,
     offlineInfo: false,
     tab: null,
+    name: null,
     email: null,
-    password: null
+    password: null,
+    show1: false
   }),
   methods: {
     registerEmailPassword() {
+      firebase.auth().useDeviceLanguage();
       if (navigator.onLine) {
         firebase
           .auth()
           .createUserWithEmailAndPassword(this.email, this.password)
           .then(result => {
+            result.user.updateProfile({
+              displayName: this.name
+            });
             const newUser = {
               id: result.user.uid,
               name: result.user.displayName,
@@ -149,9 +179,11 @@ export default {
             this.$store.commit("setUser", newUser);
           })
           .then(() => {
-            this.dispatch("initRef");
+            this.$store.dispatch("initRef");
+            this.$router.push("/");
           })
           .catch(error => {
+            alert(this.$t("email-auth.error"));
             console.log(error);
           });
       } else {
@@ -159,6 +191,7 @@ export default {
       }
     },
     signInEmailPassword() {
+      firebase.auth().useDeviceLanguage();
       if (navigator.onLine) {
         firebase
           .auth()
@@ -173,9 +206,11 @@ export default {
             this.$store.commit("setUser", newUser);
           })
           .then(() => {
-            this.dispatch("initRef");
+            this.$store.dispatch("initRef");
+            this.$router.push("/");
           })
           .catch(error => {
+            alert(this.$t("email-auth.error"));
             console.log(error);
           });
       } else {
@@ -183,6 +218,7 @@ export default {
       }
     },
     resetPassword() {
+      firebase.auth().useDeviceLanguage();
       firebase
         .auth()
         .sendPasswordResetEmail(this.email)
@@ -190,11 +226,22 @@ export default {
           alert("Email for password reset has been sent. Please check your emails.");
         })
         .catch(error => {
+          alert(this.$t("email-auth.error"));
           console.log(error);
         });
     }
   },
   computed: {
+    rules() {
+      return {
+        required: value => !!value || "Required",
+        min: v => (v !== null && v.length >= 8) || "Min. 8 characters",
+        email: value => {
+          const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          return pattern.test(value) || "Invalid";
+        }
+      };
+    },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;
     },

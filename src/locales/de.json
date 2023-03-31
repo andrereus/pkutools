@@ -145,6 +145,7 @@
   "email-auth": {
     "title": "Anmelden mit E-Mail",
     "description": "Account ohne Anmeldung über Google oder Facebook.",
+    "signedin": "Du bist angemeldet.",
     "name": "Name",
     "email": "E-Mail",
     "password": "Passwort",
@@ -153,7 +154,11 @@
     "signin": "Anmelden",
     "reset-note": "Erhalte eine E-Mail zum Zurücksetzen des Passworts.",
     "forgot-password": "Passwort vergessen",
-    "reset-password": "Passwort zurücksetzen"
+    "reset-password": "Passwort zurücksetzen",
+    "error": "Das hat leider nicht geklappt.",
+    "required": "Pflichtfeld",
+    "min-length": "Minimum 8 Zeichen",
+    "invalid-email": "Ungültige E-Mail"
   },
   "help": {
     "title": "Hilfe",
