@@ -144,7 +144,7 @@
   },
   "email-auth": {
     "title": "Anmelden mit E-Mail",
-    "description": "Account ohne Anmeldung über Google oder Facebook.",
+    "description": "Alternative zur Anmeldung über Google oder Facebook.",
     "signedin": "Du bist angemeldet.",
     "name": "Name",
     "email": "E-Mail",

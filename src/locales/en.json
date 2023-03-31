@@ -143,7 +143,22 @@
     "reset-am": "Reset Amino Counter"
   },
   "email-auth": {
-    "title": "Email Auth"
+    "title": "Sign in with Email",
+    "description": "Alternative to signing in via Google or Facebook.",
+    "signedin": "You are signed in.",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "register-note": "This creates a new account.",
+    "register": "Register",
+    "signin": "Sign in",
+    "reset-note": "Receive an email to reset the password.",
+    "forgot-password": "Forgot Password",
+    "reset-password": "Reset Password",
+    "error": "That didn't work.",
+    "required": "Required",
+    "min-length": "Minimum 8 characters",
+    "invalid-email": "Email not valid"
   },
   "help": {
     "title": "Help",

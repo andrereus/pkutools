@@ -143,7 +143,22 @@
     "reset-am": "Réinitialiser le compteur d'acides aminés"
   },
   "email-auth": {
-    "title": "Email Auth"
+    "title": "Se connecter avec un e-mail",
+    "description": "Alternative à la connexion via Google ou Facebook.",
+    "signedin": "Vous êtes connecté.",
+    "name": "Nom",
+    "email": "E-mail",
+    "password": "Mot de passe",
+    "register-note": "Cela crée un nouveau compte.",
+    "register": "S'inscrire",
+    "signin": "Se connecter",
+    "reset-note": "Recevez un e-mail pour réinitialiser le mot de passe.",
+    "forgot-password": "Mot de passe oublié",
+    "reset-password": "Réinitialiser le mot de passe",
+    "error": "Cela n'a pas fonctionné.",
+    "required": "Obligatoire",
+    "min-length": "Minimum 8 caractères",
+    "invalid-email": "E-mail non valide"
   },
   "help": {
     "title": "Aide",

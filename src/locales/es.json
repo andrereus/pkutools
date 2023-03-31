@@ -143,7 +143,22 @@
     "reset-am": "Restablecer contador de aminoácidos"
   },
   "email-auth": {
-    "title": "Email Auth"
+    "title": "Iniciar sesión con correo electrónico",
+    "description": "Alternativa para iniciar sesión a través de Google o Facebook.",
+    "signedin": "Has iniciado sesión.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "register-note": "Esto crea una nueva cuenta.",
+    "register": "Registrarse",
+    "signin": "Iniciar sesión",
+    "reset-note": "Recibe un correo electrónico para restablecer la contraseña.",
+    "forgot-password": "Olvidé mi contraseña",
+    "reset-password": "Restablecer contraseña",
+    "error": "Eso no funcionó.",
+    "required": "Requerido",
+    "min-length": "Mínimo 8 caracteres",
+    "invalid-email": "Correo electrónico no válido"
   },
   "help": {
     "title": "Ayuda",
