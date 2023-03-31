@@ -11,24 +11,16 @@
         <div v-if="userIsAuthenticated">
           <p>{{ $t("email-auth.signedin") }}</p>
         </div>
+
         <div v-if="!userIsAuthenticated">
           <p class="mb-6">{{ $t("email-auth.description") }}</p>
 
           <v-card outlined>
             <v-tabs v-model="tab">
               <v-tabs-slider></v-tabs-slider>
-
-              <v-tab>
-                {{ $t("email-auth.signin") }}
-              </v-tab>
-
-              <v-tab>
-                {{ $t("email-auth.register") }}
-              </v-tab>
-
-              <v-tab>
-                {{ $t("email-auth.forgot-password") }}
-              </v-tab>
+              <v-tab>{{ $t("email-auth.signin") }}</v-tab>
+              <v-tab>{{ $t("email-auth.register") }}</v-tab>
+              <v-tab>{{ $t("email-auth.forgot-password") }}</v-tab>
             </v-tabs>
 
             <v-tabs-items v-model="tab">
@@ -43,6 +35,7 @@
                     v-model="email"
                     :rules="[rules.required, rules.email]"
                   ></v-text-field>
+
                   <v-text-field
                     filled
                     rounded
@@ -73,6 +66,7 @@
                     class="mt-8"
                     v-model="name"
                   ></v-text-field>
+
                   <v-text-field
                     filled
                     rounded
@@ -81,6 +75,7 @@
                     v-model="email"
                     :rules="[rules.required, rules.email]"
                   ></v-text-field>
+
                   <v-text-field
                     filled
                     rounded
