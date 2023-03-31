@@ -218,7 +218,7 @@ export default {
         .auth()
         .sendPasswordResetEmail(this.email)
         .then(() => {
-          alert("Email for password reset has been sent. Please check your emails.");
+          alert(this.$t("email-auth.password-sent"));
         })
         .catch(error => {
           alert(this.$t("email-auth.error"));

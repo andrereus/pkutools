@@ -155,6 +155,7 @@
     "reset-note": "Recibe un correo electrónico para restablecer la contraseña.",
     "forgot-password": "Olvidé mi contraseña",
     "reset-password": "Restablecer contraseña",
+    "password-sent": "Se ha enviado un correo electrónico para restablecer la contraseña. Por favor, compruebe su correo electrónico.",
     "error": "Eso no funcionó.",
     "required": "Requerido",
     "min-length": "Mínimo 8 caracteres",

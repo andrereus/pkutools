@@ -155,6 +155,7 @@
     "reset-note": "Receive an email to reset the password.",
     "forgot-password": "Forgot Password",
     "reset-password": "Reset Password",
+    "password-sent": "Email for password reset has been sent. Please check your emails.",
     "error": "That didn't work.",
     "required": "Required",
     "min-length": "Minimum 8 characters",

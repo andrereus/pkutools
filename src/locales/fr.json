@@ -155,6 +155,7 @@
     "reset-note": "Recevez un e-mail pour réinitialiser le mot de passe.",
     "forgot-password": "Mot de passe oublié",
     "reset-password": "Réinitialiser le mot de passe",
+    "password-sent": "L'e-mail de réinitialisation du mot de passe a été envoyé. Veuillez vérifier vos e-mails.",
     "error": "Cela n'a pas fonctionné.",
     "required": "Obligatoire",
     "min-length": "Minimum 8 caractères",

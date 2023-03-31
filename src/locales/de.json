@@ -155,6 +155,7 @@
     "reset-note": "Erhalte eine E-Mail zum Zurücksetzen des Passworts.",
     "forgot-password": "Passwort vergessen",
     "reset-password": "Passwort zurücksetzen",
+    "password-sent": "E-Mail zum Zurücksetzen des Passworts wurde gesendet. Bitte prüfen deine E-Mails.",
     "error": "Das hat leider nicht geklappt.",
     "required": "Pflichtfeld",
     "min-length": "Minimum 8 Zeichen",
