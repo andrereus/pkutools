@@ -18,6 +18,11 @@
             <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
+          <br />
+          <v-btn depressed rounded to="/email-auth" class="mt-2">
+            <v-icon left>{{ mdiEmail }}</v-icon>
+            {{ $t("email-auth.title") }}
+          </v-btn>
         </div>
 
         <div v-if="userIsAuthenticated">
@@ -110,7 +115,8 @@ import {
   mdiPlay,
   mdiInformationVariant,
   mdiPlus,
-  mdiHelpCircleOutline
+  mdiHelpCircleOutline,
+  mdiEmail
 } from "@mdi/js";
 
 export default {
@@ -133,6 +139,7 @@ export default {
     mdiInformationVariant,
     mdiPlus,
     mdiHelpCircleOutline,
+    mdiEmail,
     offlineInfo: false,
     publicPath: process.env.BASE_URL,
     dialog: false,

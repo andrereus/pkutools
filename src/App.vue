@@ -217,6 +217,13 @@
             </span>
           </v-list-item>
 
+          <v-list-item v-if="!userIsAuthenticated" to="/email-auth">
+            <span>
+              <v-icon>{{ mdiEmail }}</v-icon>
+              {{ $t("email-auth.title") }}
+            </span>
+          </v-list-item>
+
           <v-list-item v-if="userIsAuthenticated">
             <span>
               <v-icon>{{ mdiAccount }}</v-icon>
@@ -235,15 +242,15 @@
 
           <v-list-item to="/help">
             <span>
-              <v-icon>{{ mdiHelpCircleOutline }}</v-icon>
-              {{ $t("app.help") }}
+              <v-icon>{{ mdiDownload }}</v-icon>
+              {{ $t("app.install") }}
             </span>
           </v-list-item>
 
           <v-list-item to="/help">
             <span>
               <v-icon>{{ mdiHelpCircleOutline }}</v-icon>
-              {{ $t("app.install") }}
+              {{ $t("app.help") }}
             </span>
           </v-list-item>
 
@@ -422,7 +429,9 @@ import {
   mdiChartBox,
   mdiHomeSearch,
   mdiBarcodeScan,
-  mdiCommentQuoteOutline
+  mdiCommentQuoteOutline,
+  mdiEmail,
+  mdiDownload
 } from "@mdi/js";
 
 export default {
@@ -454,6 +463,8 @@ export default {
     mdiHomeSearch,
     mdiBarcodeScan,
     mdiCommentQuoteOutline,
+    mdiEmail,
+    mdiDownload,
     drawer: null,
     lang: [
       { name: "Deutsch", abbr: "de" },

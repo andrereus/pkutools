@@ -8,12 +8,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <!-- prettier-ignore -->
-        <p><v-icon>{{ mdiAt }}</v-icon> {{ $t("help.contact-me") }} {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
-
-        <h2 class="headline my-6">{{ $t("help.faq") }}</h2>
-
-        <v-expansion-panels v-model="panel" class="mb-8">
+        <v-expansion-panels v-model="panel" multiple class="mb-8">
           <v-expansion-panel>
             <v-expansion-panel-header class="font-weight-bold">{{ $t("help.install") }}</v-expansion-panel-header>
 
@@ -109,13 +104,16 @@
           <v-icon left>{{ mdiPlay }}</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
+
+        <!-- prettier-ignore -->
+        <p class="mt-6"><v-icon>{{ mdiAt }}</v-icon> {{ $t("help.contact-me") }} {{ part1 }}@<span class="hidden">null</span>{{ part2 }}.{{ part3 }}</p>
       </v-col>
     </v-row>
   </div>
 </template>
 
 <script>
-import { mdiPlayCircleOutline, mdiPlay, mdiAt } from "@mdi/js";
+import { mdiPlayCircleOutline, mdiPlay, mdiAt, mdiDownload } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -128,7 +126,8 @@ export default {
     mdiPlayCircleOutline,
     mdiPlay,
     mdiAt,
-    panel: null,
+    mdiDownload,
+    panel: [0],
     part1: "heypku",
     part2: "gmail",
     part3: "com"

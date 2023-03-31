@@ -18,6 +18,11 @@
             <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
+          <br />
+          <v-btn depressed rounded to="/email-auth" class="mt-2">
+            <v-icon left>{{ mdiEmail }}</v-icon>
+            {{ $t("email-auth.title") }}
+          </v-btn>
 
           <v-img
             src="../assets/en-own-food.png"
@@ -220,7 +225,7 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
 import foodIcons from "../components/data/food-icons.json";
-import { mdiGoogle, mdiFacebook, mdiInformationVariant } from "@mdi/js";
+import { mdiGoogle, mdiFacebook, mdiInformationVariant, mdiEmail } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -233,6 +238,7 @@ export default {
     mdiGoogle,
     mdiFacebook,
     mdiInformationVariant,
+    mdiEmail,
     publicPath: process.env.BASE_URL,
     dialog: false,
     dialog2: false,

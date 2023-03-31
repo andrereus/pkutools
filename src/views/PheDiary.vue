@@ -18,6 +18,11 @@
             <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
+          <br />
+          <v-btn depressed rounded to="/email-auth" class="mt-2">
+            <v-icon left>{{ mdiEmail }}</v-icon>
+            {{ $t("email-auth.title") }}
+          </v-btn>
 
           <v-img
             src="../assets/en-phe-diary.png"
@@ -230,7 +235,7 @@ import enChart from "apexcharts/dist/locales/en.json";
 import deChart from "apexcharts/dist/locales/de.json";
 import frChart from "apexcharts/dist/locales/fr.json";
 import esChart from "apexcharts/dist/locales/es.json";
-import { mdiGoogle, mdiFacebook, mdiInformationVariant } from "@mdi/js";
+import { mdiGoogle, mdiFacebook, mdiInformationVariant, mdiEmail } from "@mdi/js";
 
 export default {
   components: {
@@ -246,6 +251,7 @@ export default {
     mdiGoogle,
     mdiFacebook,
     mdiInformationVariant,
+    mdiEmail,
     publicPath: process.env.BASE_URL,
     dialog: false,
     alert: false,

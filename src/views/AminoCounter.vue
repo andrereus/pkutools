@@ -18,6 +18,11 @@
             <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
+          <br />
+          <v-btn depressed rounded to="/email-auth" class="mt-2">
+            <v-icon left>{{ mdiEmail }}</v-icon>
+            {{ $t("email-auth.title") }}
+          </v-btn>
 
           <v-img
             src="../assets/en-amino-counter.png"
@@ -101,7 +106,7 @@ import "firebase/compat/auth";
 import "firebase/compat/database";
 import { formatRelative, isToday, parseISO } from "date-fns";
 import { enUS, de, fr, es } from "date-fns/locale";
-import { mdiGoogle, mdiFacebook, mdiCupWater, mdiInformationVariant } from "@mdi/js";
+import { mdiGoogle, mdiFacebook, mdiCupWater, mdiInformationVariant, mdiEmail } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -115,6 +120,7 @@ export default {
     mdiFacebook,
     mdiCupWater,
     mdiInformationVariant,
+    mdiEmail,
     alert: false,
     offlineInfo: false
   }),

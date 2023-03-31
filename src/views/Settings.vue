@@ -18,6 +18,11 @@
             <v-icon left>{{ mdiFacebook }}</v-icon>
             {{ $t("app.signin-facebook") }}
           </v-btn>
+          <br />
+          <v-btn depressed rounded to="/email-auth" class="mt-2">
+            <v-icon left>{{ mdiEmail }}</v-icon>
+            {{ $t("email-auth.title") }}
+          </v-btn>
         </div>
 
         <div v-if="userIsAuthenticated">
@@ -105,7 +110,7 @@ import { mapState } from "vuex";
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/database";
-import { mdiGoogle, mdiFacebook } from "@mdi/js";
+import { mdiGoogle, mdiFacebook, mdiEmail } from "@mdi/js";
 
 export default {
   metaInfo() {
@@ -117,6 +122,7 @@ export default {
   data: () => ({
     mdiGoogle,
     mdiFacebook,
+    mdiEmail,
     snackbar: false,
     offlineInfo: false
   }),

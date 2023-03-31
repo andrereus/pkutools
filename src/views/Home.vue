@@ -149,6 +149,12 @@
                   {{ $t("app.signin-facebook") }}
                 </span>
               </v-list-item>
+              <v-list-item to="/email-auth">
+                <span>
+                  <v-icon>{{ mdiEmail }}</v-icon>
+                  {{ $t("email-auth.title") }}
+                </span>
+              </v-list-item>
             </v-list>
           </v-menu>
         </div>
@@ -158,12 +164,8 @@
         <div v-if="!userIsAuthenticated && advancedFood === null">
           <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-6 mb-8 illustration"></v-img>
 
-          <h2 class="headline mt-4 mb-6">{{ $t("home.features") }}</h2>
-
-          <FeatureComparison home class="mb-10" />
-
-          <v-btn depressed rounded to="/help" color="primary" class="mr-3 mb-3">
-            <v-icon left>{{ mdiHelpCircleOutline }}</v-icon>
+          <v-btn outlined rounded to="/help" color="primary" class="mr-3 mb-3">
+            <v-icon left>{{ mdiDownload }}</v-icon>
             {{ $t("app.install") }}
           </v-btn>
 
@@ -195,6 +197,9 @@
             <v-icon left>{{ mdiPlay }}</v-icon>
             {{ $t("home.mobile-video") }}
           </v-btn>
+
+          <h2 class="headline mt-8 mb-6">{{ $t("home.features") }}</h2>
+          <FeatureComparison home class="mb-8" />
 
           <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
             {{ $t("home.compare") }}
@@ -234,7 +239,9 @@ import {
   mdiInformationVariant,
   mdiPlus,
   mdiHelpCircleOutline,
-  mdiBarcodeScan
+  mdiBarcodeScan,
+  mdiEmail,
+  mdiDownload
 } from "@mdi/js";
 
 export default {
@@ -263,6 +270,8 @@ export default {
     mdiPlus,
     mdiHelpCircleOutline,
     mdiBarcodeScan,
+    mdiEmail,
+    mdiDownload,
     offlineInfo: false,
     publicPath: process.env.BASE_URL,
     dialog: false,
