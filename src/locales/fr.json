@@ -1,7 +1,7 @@
 {
   "app": {
-    "title": "Outils PKU",
-    "description": "Outils et applications pour PKU.",
+    "title": "PKU Tools",
+    "description": "Application nutritionnelle pour la maladie métabolique PKU.",
     "signin-google": "Se connecter avec Google",
     "signin-facebook": "Se connecter avec Facebook",
     "signout": "Se déconnecter",
@@ -121,8 +121,8 @@
     "title": "Statistiques"
   },
   "amino-counter": {
-    "title": "PKU Tools",
-    "description": "Application nutritionnelle pour la maladie métabolique PKU.",
+    "title": "Compteur d'acides aminés",
+    "description": "Comptez les portions du mélange d'acides aminés.",
     "progress": "portion(s) aujourd'hui",
     "take": "Ajouter une portion",
     "amount": "Portions par jour",
