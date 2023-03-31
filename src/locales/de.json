@@ -158,7 +158,7 @@
     "error": "Das hat leider nicht geklappt.",
     "required": "Pflichtfeld",
     "min-length": "Minimum 8 Zeichen",
-    "invalid-email": "Ungültige E-Mail"
+    "invalid-email": "E-Mail noch ungültig"
   },
   "help": {
     "title": "Hilfe",

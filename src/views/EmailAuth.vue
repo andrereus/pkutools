@@ -229,11 +229,11 @@ export default {
   computed: {
     rules() {
       return {
-        required: value => !!value || "Required",
-        min: v => (v !== null && v.length >= 8) || "Min. 8 characters",
+        required: value => !!value || this.$t("email-auth.required"),
+        min: v => (v !== null && v.length >= 8) || this.$t("email-auth.min-length"),
         email: value => {
           const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-          return pattern.test(value) || "Invalid";
+          return pattern.test(value) || this.$t("email-auth.invalid-email");
         }
       };
     },
