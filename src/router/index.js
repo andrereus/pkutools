@@ -13,11 +13,6 @@ const routes = [
     component: Home
   },
   {
-    path: "/barcode-scanner",
-    name: "Barcode Scanner",
-    component: () => import(/* webpackChunkName: "barcode-scanner" */ "../views/BarcodeScanner.vue")
-  },
-  {
     path: "/phe-calculator",
     name: "Phe Calculator",
     component: () => import(/* webpackChunkName: "phe-calculator" */ "../views/PheCalculator.vue")
@@ -26,6 +21,11 @@ const routes = [
     path: "/protein-calculator",
     name: "Protein Calculator",
     component: () => import(/* webpackChunkName: "protein-calculator" */ "../views/ProteinCalculator.vue")
+  },
+  {
+    path: "/barcode-scanner",
+    name: "Barcode Scanner",
+    component: () => import(/* webpackChunkName: "barcode-scanner" */ "../views/BarcodeScanner.vue")
   },
   {
     path: "/own-food",
@@ -51,6 +51,11 @@ const routes = [
     path: "/settings",
     name: "Settings",
     component: () => import(/* webpackChunkName: "settings" */ "../views/Settings.vue")
+  },
+  {
+    path: "/email-auth",
+    name: "Email Auth",
+    component: () => import(/* webpackChunkName: "email-auth" */ "../views/EmailAuth.vue")
   },
   {
     path: "/help",

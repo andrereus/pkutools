@@ -142,6 +142,9 @@
     "reset-own-food": "Restablecer alimentos propios",
     "reset-am": "Restablecer contador de aminoácidos"
   },
+  "email-auth": {
+    "title": "Email Auth"
+  },
   "help": {
     "title": "Ayuda",
     "description": "Ayuda y preguntas frecuentes para Herramientas PKU.",

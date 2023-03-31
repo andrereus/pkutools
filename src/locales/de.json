@@ -142,6 +142,19 @@
     "reset-own-food": "Reset Eigene Lebensmittel",
     "reset-am": "Reset Amino Zähler"
   },
+  "email-auth": {
+    "title": "Anmelden mit E-Mail",
+    "description": "Account ohne Anmeldung über Google oder Facebook.",
+    "name": "Name",
+    "email": "E-Mail",
+    "password": "Passwort",
+    "register-note": "Dies erstellt einen neuen Account.",
+    "register": "Registrieren",
+    "signin": "Anmelden",
+    "reset-note": "Erhalte eine E-Mail zum Zurücksetzen des Passworts.",
+    "forgot-password": "Passwort vergessen",
+    "reset-password": "Passwort zurücksetzen"
+  },
   "help": {
     "title": "Hilfe",
     "description": "Hilfe und FAQ für PKU Tools.",

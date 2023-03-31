@@ -142,6 +142,9 @@
     "reset-own-food": "Réinitialiser les aliments personnels",
     "reset-am": "Réinitialiser le compteur d'acides aminés"
   },
+  "email-auth": {
+    "title": "Email Auth"
+  },
   "help": {
     "title": "Aide",
     "description": "Aide et FAQ pour PKU Tools.",

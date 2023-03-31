@@ -142,6 +142,9 @@
     "reset-own-food": "Reset Own Food",
     "reset-am": "Reset Amino Counter"
   },
+  "email-auth": {
+    "title": "Email Auth"
+  },
   "help": {
     "title": "Help",
     "description": "Help and FAQ for PKU Tools.",
