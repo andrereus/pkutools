@@ -199,19 +199,17 @@
           </v-btn>
         </template>
 
-        <v-list nav dense disabled>
+        <v-list nav disabled>
           <v-subheader class="text-uppercase">What's new in short?</v-subheader>
-          <v-list-item>
-            <v-list-item-content>Sign in with email option</v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-content>Food icons in german search</v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-content>The languages spanish and french</v-list-item-content>
-          </v-list-item>
-          <v-list-item>
-            <v-list-item-content>Phe Log preview for calculations</v-list-item-content>
+          <v-list-item class="mt-n3 mr-2">
+            <v-list-item-content>
+              <ul>
+                <li class="mb-2">Sign in with email option</li>
+                <li class="mb-2">Food icons in german search</li>
+                <li class="mb-2">The languages spanish and french</li>
+                <li class="mb-2">Phe Log preview for calculations</li>
+              </ul>
+            </v-list-item-content>
           </v-list-item>
         </v-list>
       </v-menu>
