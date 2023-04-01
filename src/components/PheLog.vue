@@ -95,6 +95,7 @@
               <img
                 :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
                 v-if="item.icon !== undefined && item.icon !== ''"
+                onerror="this.src='img/food-icons/organic-food.svg'"
                 width="25"
                 class="food-icon"
               />
