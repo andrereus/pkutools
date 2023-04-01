@@ -16,7 +16,7 @@
           <p class="mb-6">{{ $t("email-auth.description") }}</p>
 
           <v-card outlined>
-            <v-tabs v-model="tab">
+            <v-tabs v-model="tab" show-arrows>
               <v-tabs-slider></v-tabs-slider>
               <v-tab>{{ $t("email-auth.signin") }}</v-tab>
               <v-tab>{{ $t("email-auth.register") }}</v-tab>
