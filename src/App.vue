@@ -1,6 +1,15 @@
 <template>
   <v-app>
     <v-navigation-drawer app clipped v-model="drawer" floating class="nav-layout">
+      <v-list-item v-if="$vuetify.breakpoint.mdAndDown">
+        <v-list-item-content class="flex-nowrap mt-2">
+          <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="ml-2 mr-4 mb-1"></v-img>
+          <v-list-item-title>PKU Tools</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider v-if="$vuetify.breakpoint.mdAndDown"></v-divider>
+
       <v-list rounded dense>
         <v-list-item to="/">
           <v-list-item-action>
@@ -176,7 +185,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" :aria-label="$t('app.main-menu')" />
       <router-link to="/" class="app-logo">
         <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
-        <v-toolbar-title>PKU Tools</v-toolbar-title>
+        <v-toolbar-title v-if="$vuetify.breakpoint.lgAndUp">PKU Tools</v-toolbar-title>
       </router-link>
       <v-spacer></v-spacer>
 
