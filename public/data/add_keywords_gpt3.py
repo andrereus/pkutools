@@ -26,7 +26,7 @@ def find_matching_keyword_gpt3(name):
     keyword = response.choices[0].text.strip()
     return keyword if keyword in keywords else "organic-food"
 
-with open("deda-3.csv", newline='', encoding='utf-8') as input_file, open("deda-icon-davinci-3.csv", "w", newline='', encoding='utf-8') as output_file:
+with open("test.csv", newline='', encoding='utf-8') as input_file, open("test-icon.csv", "w", newline='', encoding='utf-8') as output_file:
     reader = csv.reader(input_file, delimiter=',', quotechar='"')
     writer = csv.writer(output_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     
