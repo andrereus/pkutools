@@ -8,14 +8,12 @@
         <v-alert dense dismissible text v-if="$i18n.locale === 'es'" class="mb-6">
           La traducción al español no está optimizada. La búsqueda Phe está en inglés.
         </v-alert>
-        <h2 class="headline mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
+        <p v-if="!userIsAuthenticated" class="mt-5 mb-1">{{ $t("app.description") }}</p>
       </v-col>
     </v-row>
 
     <v-row justify="center" class="mb-3">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <p v-if="!userIsAuthenticated" class="mb-6">{{ $t("app.description") }}</p>
-
         <div>
           <v-text-field
             v-model="search"
