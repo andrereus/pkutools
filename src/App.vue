@@ -246,7 +246,7 @@
             </span>
           </v-list-item>
 
-          <v-list-item v-if="userIsAuthenticated">
+          <v-list-item v-if="userIsAuthenticated" to="/settings">
             <span>
               <v-icon>{{ mdiAccount }}</v-icon>
               {{ user.name }}
