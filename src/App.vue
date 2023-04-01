@@ -200,7 +200,7 @@
         </template>
 
         <v-list nav disabled>
-          <v-subheader class="text-uppercase">What's new in short?</v-subheader>
+          <v-subheader class="text-uppercase">What's new?</v-subheader>
           <v-list-item class="mt-n3 mr-2">
             <v-list-item-content>
               <ul>
