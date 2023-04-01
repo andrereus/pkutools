@@ -9,7 +9,6 @@
           La traducción al español no está optimizada. La búsqueda Phe está en inglés.
         </v-alert>
         <h2 class="headline mt-1" v-if="!userIsAuthenticated">{{ $t("home.title") }}</h2>
-        <h2 class="headline mt-1" v-if="userIsAuthenticated">Hi {{ user.name }}</h2>
       </v-col>
     </v-row>
 
@@ -114,7 +113,7 @@
           </p>
         </div>
 
-        <div v-if="advancedFood === null" class="mt-n3">
+        <div v-if="advancedFood === null">
           <v-btn depressed rounded to="/phe-calculator" class="mr-3 mb-3">
             <v-icon left>{{ mdiCalculator }}</v-icon>
             {{ $t("phe-calculator.title") }}
@@ -163,7 +162,7 @@
         <PheLog v-if="userIsAuthenticated && advancedFood === null" />
 
         <div v-if="!userIsAuthenticated && advancedFood === null">
-          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-6 mb-8 illustration"></v-img>
+          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-6 mb-10 illustration"></v-img>
 
           <v-btn outlined rounded to="/help" color="primary" class="mr-3 mb-3">
             <v-icon left>{{ mdiDownload }}</v-icon>
@@ -199,7 +198,7 @@
             {{ $t("home.mobile-video") }}
           </v-btn>
 
-          <h2 class="headline mt-8 mb-6">{{ $t("home.features") }}</h2>
+          <h2 class="headline mt-6 mb-6">{{ $t("home.features") }}</h2>
           <FeatureComparison home class="mb-8" />
 
           <v-btn depressed rounded to="/other-apps" class="mr-3 mb-3">
