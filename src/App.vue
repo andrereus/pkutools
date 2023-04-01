@@ -194,6 +194,30 @@
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
+          <v-btn icon v-bind="attrs" v-on="on">
+            <v-icon>{{ mdiBellOutline }}</v-icon>
+          </v-btn>
+        </template>
+
+        <v-list nav dense disabled>
+          <v-subheader class="text-uppercase">What's new in short?</v-subheader>
+          <v-list-item>
+            <v-list-item-content>Sign in with email option</v-list-item-content>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-content>Food icons in german search</v-list-item-content>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-content>The languages spanish and french</v-list-item-content>
+          </v-list-item>
+          <v-list-item>
+            <v-list-item-content>Phe Log preview for calculations</v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+
+      <v-menu offset-y>
+        <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" :aria-label="$t('app.account-menu')">
             <v-avatar size="32">
               <v-icon v-if="!userIsAuthenticated">{{ mdiAccountCircle }}</v-icon>
@@ -431,7 +455,8 @@ import {
   mdiBarcodeScan,
   mdiCommentQuoteOutline,
   mdiEmail,
-  mdiDownload
+  mdiDownload,
+  mdiBellOutline
 } from "@mdi/js";
 
 export default {
@@ -465,6 +490,7 @@ export default {
     mdiCommentQuoteOutline,
     mdiEmail,
     mdiDownload,
+    mdiBellOutline,
     drawer: null,
     lang: [
       { name: "Deutsch", abbr: "de" },
