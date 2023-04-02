@@ -16,6 +16,25 @@
       <v-col cols="12" md="10" lg="8" xl="6">
         <div>
           <v-text-field
+            v-if="!$vuetify.theme.dark"
+            v-model="search"
+            :label="$t('phe-search.search')"
+            solo
+            rounded
+            autocomplete="off"
+            @keyup="searchFood"
+            clearable
+            @click:clear="advancedFood = null"
+          >
+            <template v-slot:append-outer>
+              <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
+                <v-icon>{{ mdiMagnify }}</v-icon>
+              </v-btn>
+            </template>
+          </v-text-field>
+
+          <v-text-field
+            v-if="$vuetify.theme.dark"
             v-model="search"
             :label="$t('phe-search.search')"
             outlined
