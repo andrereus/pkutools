@@ -184,7 +184,7 @@
     <v-app-bar app clipped-left flat dark class="nav-layout custom-app-bar">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" :aria-label="$t('app.main-menu')" />
       <router-link to="/" class="app-logo">
-        <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="mr-3"></v-img>
+        <v-img src="./assets/pkutools-logo.png" alt="PKU Tools Logo" max-width="25" class="ml-1 mr-4"></v-img>
         <v-toolbar-title v-if="$vuetify.breakpoint.lgAndUp">PKU Tools</v-toolbar-title>
       </router-link>
       <v-spacer></v-spacer>
@@ -204,7 +204,7 @@
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on">
-            <v-icon>{{ mdiBellOutline }}</v-icon>
+            <v-icon size="22">{{ mdiClipboardTextOutline }}</v-icon>
           </v-btn>
         </template>
 
@@ -463,7 +463,7 @@ import {
   mdiCommentQuoteOutline,
   mdiEmail,
   mdiDownload,
-  mdiBellOutline
+  mdiClipboardTextOutline
 } from "@mdi/js";
 
 export default {
@@ -497,7 +497,7 @@ export default {
     mdiCommentQuoteOutline,
     mdiEmail,
     mdiDownload,
-    mdiBellOutline,
+    mdiClipboardTextOutline,
     drawer: null,
     lang: [
       { name: "Deutsch", abbr: "de" },
