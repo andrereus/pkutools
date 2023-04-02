@@ -213,7 +213,7 @@
           <v-list-item class="mt-n3 mr-2">
             <v-list-item-content>
               <ul>
-                <li class="mb-2">Sign in with email option</li>
+                <li class="mb-2">Sign in with email</li>
                 <li class="mb-2">Food icons in german search</li>
                 <li class="mb-2">The languages spanish and french</li>
                 <li class="mb-2">Phe Log preview for calculations</li>
