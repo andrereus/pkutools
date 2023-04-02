@@ -128,10 +128,18 @@
             <v-icon left>{{ mdiFoodApple }}</v-icon>
             {{ $t("home.own-food") }}
           </v-btn>
+        </div>
+
+        <PheLog v-if="userIsAuthenticated && advancedFood === null" />
+
+        <div v-if="!userIsAuthenticated && advancedFood === null">
+          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-6 mb-10 illustration"></v-img>
+
           <v-menu v-if="!userIsAuthenticated" offset-y>
             <template v-slot:activator="{ on, attrs }">
-              <v-btn depressed rounded class="mr-3 mb-3" v-bind="attrs" v-on="on">
-                {{ $t("home.more") }}
+              <v-btn depressed rounded color="primary" class="mr-3 mb-3" v-bind="attrs" v-on="on">
+                <v-icon left>{{ mdiLoginVariant }}</v-icon>
+                {{ $t("email-auth.signin") }}
               </v-btn>
             </template>
             <v-list>
@@ -155,20 +163,14 @@
               </v-list-item>
             </v-list>
           </v-menu>
-        </div>
 
-        <PheLog v-if="userIsAuthenticated && advancedFood === null" />
-
-        <div v-if="!userIsAuthenticated && advancedFood === null">
-          <v-img src="../assets/eating-together.svg" alt="Food Illustration" class="mt-6 mb-10 illustration"></v-img>
-
-          <v-btn outlined rounded to="/help" color="primary" class="mr-3 mb-3">
+          <v-btn depressed rounded to="/help" class="mr-3 mb-3">
             <v-icon left>{{ mdiDownload }}</v-icon>
             {{ $t("app.install") }}
           </v-btn>
 
           <v-btn
-            v-if="this.$i18n.locale === 'en'"
+            v-if="this.$i18n.locale !== 'de' && $vuetify.breakpoint.smAndUp"
             depressed
             rounded
             href="https://youtu.be/lmiejnEFccY"
@@ -180,7 +182,7 @@
           </v-btn>
 
           <v-btn
-            v-if="this.$i18n.locale === 'de'"
+            v-if="this.$i18n.locale === 'de' && $vuetify.breakpoint.smAndUp"
             depressed
             rounded
             href="https://youtu.be/5_-F4tM8_RQ"
@@ -191,7 +193,14 @@
             {{ $t("home.video") }}
           </v-btn>
 
-          <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+          <v-btn
+            v-if="$vuetify.breakpoint.xsOnly"
+            depressed
+            rounded
+            href="https://youtu.be/ITfvSliHwc0"
+            target="_blank"
+            class="mr-3 mb-3"
+          >
             <v-icon left>{{ mdiPlay }}</v-icon>
             {{ $t("home.mobile-video") }}
           </v-btn>
@@ -239,7 +248,8 @@ import {
   mdiHelpCircleOutline,
   mdiBarcodeScan,
   mdiEmail,
-  mdiDownload
+  mdiDownload,
+  mdiLoginVariant
 } from "@mdi/js";
 
 export default {
@@ -270,6 +280,7 @@ export default {
     mdiBarcodeScan,
     mdiEmail,
     mdiDownload,
+    mdiLoginVariant,
     offlineInfo: false,
     publicPath: process.env.BASE_URL,
     dialog: false,

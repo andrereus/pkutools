@@ -77,30 +77,40 @@
         </v-expansion-panels>
 
         <v-btn
-          v-if="this.$i18n.locale === 'en'"
-          depressed
+          v-if="this.$i18n.locale !== 'de' && $vuetify.breakpoint.smAndUp"
+          outlined
           rounded
+          color="primary"
           href="https://youtu.be/lmiejnEFccY"
           target="_blank"
-          class="mr-3 mb-3"
+          class="mt-3 mr-3 mb-3"
         >
           <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
         <v-btn
-          v-if="this.$i18n.locale === 'de'"
-          depressed
+          v-if="this.$i18n.locale === 'de' && $vuetify.breakpoint.smAndUp"
+          outlined
           rounded
+          color="primary"
           href="https://youtu.be/5_-F4tM8_RQ"
           target="_blank"
-          class="mr-3 mb-3"
+          class="mt-3 mr-3 mb-3"
         >
           <v-icon left>{{ mdiPlayCircleOutline }}</v-icon>
           {{ $t("home.video") }}
         </v-btn>
 
-        <v-btn depressed rounded href="https://youtu.be/ITfvSliHwc0" target="_blank" class="mr-3 mb-3">
+        <v-btn
+          v-if="$vuetify.breakpoint.xsOnly"
+          outlined
+          rounded
+          color="primary"
+          href="https://youtu.be/ITfvSliHwc0"
+          target="_blank"
+          class="mt-3 mr-3 mb-3"
+        >
           <v-icon left>{{ mdiPlay }}</v-icon>
           {{ $t("home.mobile-video") }}
         </v-btn>
