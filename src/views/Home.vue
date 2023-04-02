@@ -27,7 +27,7 @@
             @click:clear="advancedFood = null"
           >
             <template v-slot:append-outer>
-              <v-btn depressed fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
+              <v-btn fab small :loading="loading" color="primary" @click="searchFood" class="mt-n2">
                 <v-icon>{{ mdiMagnify }}</v-icon>
               </v-btn>
             </template>
