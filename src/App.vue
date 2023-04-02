@@ -168,7 +168,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item dense to="/other-apps" class="mb-6">
+          <v-list-item dense to="/other-apps" class="mb-10">
             <v-list-item-action>
               <v-icon></v-icon>
             </v-list-item-action>
