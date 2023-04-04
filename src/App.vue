@@ -203,28 +203,6 @@
 
       <v-menu offset-y>
         <template v-slot:activator="{ on, attrs }">
-          <v-btn icon v-bind="attrs" v-on="on">
-            <v-icon size="22">{{ mdiClipboardTextOutline }}</v-icon>
-          </v-btn>
-        </template>
-
-        <v-list nav disabled>
-          <v-subheader class="text-uppercase">What's new?</v-subheader>
-          <v-list-item class="mt-n3 mr-2">
-            <v-list-item-content>
-              <ul>
-                <li class="mb-2">Sign in with email</li>
-                <li class="mb-2">Food icons in german search</li>
-                <li class="mb-2">The languages spanish and french</li>
-                <li class="mb-2">Phe Log preview for calculations</li>
-              </ul>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-      </v-menu>
-
-      <v-menu offset-y>
-        <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" :aria-label="$t('app.account-menu')">
             <v-avatar size="32">
               <v-icon v-if="!userIsAuthenticated">{{ mdiAccountCircle }}</v-icon>
