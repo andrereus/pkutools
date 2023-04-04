@@ -8,6 +8,9 @@
         <v-alert dense dismissible text v-if="$i18n.locale === 'es'" class="mb-6">
           Traducción automática. | La búsqueda Phe está en inglés.
         </v-alert>
+        <v-alert v-if="!userIsAuthenticated" dense dismissible text class="mb-6">
+          {{ $t("email-auth.email-notice") }}
+        </v-alert>
         <p v-if="!userIsAuthenticated" class="mt-5 mb-1">{{ $t("app.description") }}</p>
       </v-col>
     </v-row>

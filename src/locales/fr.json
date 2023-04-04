@@ -159,7 +159,8 @@
     "error": "Cela n'a pas fonctionné.",
     "required": "Obligatoire",
     "min-length": "Minimum 8 caractères",
-    "invalid-email": "E-mail non valide"
+    "invalid-email": "E-mail non valide",
+    "email-notice": "Il est désormais possible de s'inscrire par e-mail."
   },
   "help": {
     "title": "Aide",
