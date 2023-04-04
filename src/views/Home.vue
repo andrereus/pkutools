@@ -2,13 +2,19 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense dismissible text v-if="$i18n.locale === 'fr'" class="mb-6">
-          Traduction automatique. | La recherche Phe est en anglais.
-        </v-alert>
         <v-alert dense dismissible text v-if="$i18n.locale === 'es'" class="mb-6">
           Traducción automática. | La búsqueda Phe está en inglés.
         </v-alert>
-        <v-alert v-if="!userIsAuthenticated" dense dismissible text class="mb-6">
+        <v-alert dense dismissible text v-if="$i18n.locale === 'fr'" class="mb-6">
+          Traduction automatique. | La recherche Phe est en anglais.
+        </v-alert>
+        <v-alert
+          v-if="!userIsAuthenticated && $i18n.locale !== 'es' && $i18n.locale !== 'fr'"
+          dense
+          dismissible
+          text
+          class="mb-6"
+        >
           {{ $t("email-auth.email-notice") }}
         </v-alert>
         <p v-if="!userIsAuthenticated" class="mt-5 mb-1">{{ $t("app.description") }}</p>
