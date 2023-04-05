@@ -133,17 +133,22 @@
                         >
                           <img
                             :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
-                            v-if="item.icon !== undefined && item.icon !== '' && item.icon !== 'Organic Food.svg'"
+                            v-if="item.icon !== undefined && item.icon !== ''"
                             onerror="this.src='img/food-icons/organic-food.svg'"
                             width="25"
                             class="food-icon"
                           />
                           <img
                             :src="publicPath + 'img/food-icons/organic-food.svg'"
-                            v-if="item.icon === undefined || item.icon === '' || item.icon === 'Organic Food.svg'"
+                            v-if="(item.icon === undefined || item.icon === '') && item.emoji === undefined"
                             width="25"
                             class="food-icon"
                           />
+                          {{
+                            (item.icon === undefined || item.icon === "") && item.emoji !== undefined
+                              ? item.emoji
+                              : null
+                          }}
                           {{ item.name }}
                           <template v-slot:input>
                             <v-text-field v-model="item.name" label="Name" class="mt-4 mb-n2"></v-text-field>

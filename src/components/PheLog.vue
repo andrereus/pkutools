@@ -101,10 +101,11 @@
               />
               <img
                 :src="publicPath + 'img/food-icons/organic-food.svg'"
-                v-if="item.icon === undefined || item.icon === ''"
+                v-if="(item.icon === undefined || item.icon === '') && item.emoji === undefined"
                 width="25"
                 class="food-icon"
               />
+              {{ (item.icon === undefined || item.icon === "") && item.emoji !== undefined ? item.emoji : null }}
               {{ item.name }}
             </td>
             <td class="text-start">{{ item.weight }}</td>

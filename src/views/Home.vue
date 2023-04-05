@@ -58,7 +58,7 @@
             <v-card>
               <v-card-title>
                 <span class="headline">
-                  <img :src="publicPath + 'img/food-icons/' + icon + '.svg'" width="35" class="food-icon" />
+                  {{ emoji }}
                   {{ name }}
                 </span>
               </v-card-title>
@@ -107,19 +107,7 @@
             <template v-slot:item="{ item }">
               <tr @click="loadItem(item)" class="tr-edit">
                 <td class="text-start">
-                  <img
-                    :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
-                    v-if="item.icon !== undefined && item.icon !== ''"
-                    onerror="this.src='img/food-icons/organic-food.svg'"
-                    width="25"
-                    class="food-icon"
-                  />
-                  <img
-                    :src="publicPath + 'img/food-icons/organic-food.svg'"
-                    v-if="item.icon === undefined || item.icon === ''"
-                    width="25"
-                    class="food-icon"
-                  />
+                  {{ item.emoji }}
                   {{ item.name }}
                 </td>
                 <td class="text-start">{{ item.phe }}</td>
@@ -310,7 +298,7 @@ export default {
     phe: null,
     weight: 100,
     name: "",
-    icon: "organic-food",
+    emoji: "🌱",
     headers: [
       {
         text: "Name",
@@ -339,7 +327,7 @@ export default {
     },
     loadItem(item) {
       this.name = item.name;
-      this.icon = item.icon !== undefined && item.icon !== "" ? item.icon : "organic-food";
+      this.emoji = item.emoji;
       this.phe = item.phe;
       this.weight = 100;
       this.dialog = true;
@@ -353,7 +341,7 @@ export default {
         .ref(this.user.id + "/pheLog")
         .push({
           name: this.name,
-          icon: this.icon,
+          emoji: this.emoji,
           weight: Number(this.weight),
           phe: this.calculatePhe()
         });
@@ -364,16 +352,16 @@ export default {
       this.loading = true;
       let res, food;
       if (this.$i18n.locale === "de") {
-        res = await fetch(this.publicPath + "data/usda-de.json");
+        res = await fetch(this.publicPath + "data/usda-icon-de.json");
         food = await res.json();
       } else if (this.$i18n.locale === "es") {
-        res = await fetch(this.publicPath + "data/usda-es.json");
+        res = await fetch(this.publicPath + "data/usda-icon-es.json");
         food = await res.json();
       } else if (this.$i18n.locale === "fr") {
-        res = await fetch(this.publicPath + "data/usda-fr.json");
+        res = await fetch(this.publicPath + "data/usda-icon-fr.json");
         food = await res.json();
       } else {
-        res = await fetch(this.publicPath + "data/usda.json");
+        res = await fetch(this.publicPath + "data/usda-icon-en.json");
         food = await res.json();
       }
 
