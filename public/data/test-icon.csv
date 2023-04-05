@@ -1,12 +1,15 @@
-name,phe,keyword
-Vollkornbrote,344,brot
-Vollkornbrot,344,bayerische-brezel
-Vollkornbrot-Vollkornschrotbrot,264,organic-food
-Vollkornbrot-Weizenvollkornbrot,360,brot
-Vollkornbrot-Roggenvollkornbrot,370,organic-food
-Vollkornbrot-Roggenvollkornschrotbrot,264,organic-food
-Vollkornbrot-Hafervollkornbrot,338,brot
-Vollkornbrot-Gerstenvollkornbrot,340,brot
-Vollkornbrot-Weizenvollkornmischbrot,347,brot
-"Apfel-Streuselkuchen aus Mürbeteig fettreich (mit Milch 3,5 % Fett zubereitet)",99,kuchen
-"Schokoladen-Sahne-Torte aus Biskuitmasse (mit Sahne und Milch 3,5% Fett zubereitet)",265,dessert
+name,phe,icon
+"Game meat, goat, cooked, roasted",941,🍖
+"Game meat, goat, raw",715,🐐
+"Game meat, boar, wild, raw",86,🍖
+"Game meat, beaver, cooked, roasted",1417,🍖
+"Game meat, buffalo, water, raw",817,🍖
+"Game meat, elk, raw",91,🍖
+"Game meat, boar, wild, cooked, roasted",1132,🍖
+"Game meat, buffalo, water, cooked, roasted",1075,🍖
+"Game meat, elk, cooked, roasted",1198,🍖
+"Game meat, beaver, raw",977,🍖
+"Game meat, antelope, raw",886,🦌
+"Veal, sirloin, separable lean and fat, cooked, roasted",1015,🌱
+"Veal, ground, raw",749,🍖
+"Veal, cubed for stew (leg and shoulder), separable lean only, cooked, braised",141,🌱
