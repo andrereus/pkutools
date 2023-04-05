@@ -2,12 +2,6 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense dismissible text v-if="$i18n.locale === 'es'" class="mb-6">
-          Traducción automática. | La búsqueda Phe está en inglés.
-        </v-alert>
-        <v-alert dense dismissible text v-if="$i18n.locale === 'fr'" class="mb-6">
-          Traduction automatique. | La recherche Phe est en anglais.
-        </v-alert>
         <v-alert
           v-if="!userIsAuthenticated && $i18n.locale !== 'es' && $i18n.locale !== 'fr'"
           dense
@@ -370,11 +364,14 @@ export default {
       this.loading = true;
       let res, food;
       if (this.$i18n.locale === "de") {
-        const res1 = await fetch(this.publicPath + "data/frida-icon-original.json");
-        const res2 = await fetch(this.publicPath + "data/deda-icon-original.json");
-        const food1 = await res1.json();
-        const food2 = await res2.json();
-        food = food1.concat(food2).concat(this.ownFood);
+        res = await fetch(this.publicPath + "data/usda-de.json");
+        food = await res.json();
+      } else if (this.$i18n.locale === "es") {
+        res = await fetch(this.publicPath + "data/usda-es.json");
+        food = await res.json();
+      } else if (this.$i18n.locale === "fr") {
+        res = await fetch(this.publicPath + "data/usda-fr.json");
+        food = await res.json();
       } else {
         res = await fetch(this.publicPath + "data/usda.json");
         food = await res.json();
