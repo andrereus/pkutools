@@ -98,11 +98,13 @@
 </template>
 
 <script>
+// TODO: Clean up
 import { mapState } from "vuex";
 import firebase from "firebase/compat/app";
 import "firebase/compat/database";
 import Fuse from "fuse.js";
 import { parseISO, isToday } from "date-fns";
+import VueApexCharts from "vue-apexcharts";
 import {
   mdiGoogle,
   mdiFacebook,
@@ -120,6 +122,9 @@ import {
 } from "@mdi/js";
 
 export default {
+  components: {
+    apexchart: VueApexCharts
+  },
   metaInfo() {
     return {
       title: this.$t("statistics.title"),
