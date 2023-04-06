@@ -63,11 +63,14 @@
   "protein-calculator": {
     "title": "Calculateur de protéines",
     "description": "Calculer les valeurs approximatives de Phe à partir des protéines.",
-    "factor": "Calcul des fruits ou légumes",
+    "factor": "Type d'aliment",
     "protein": "Protéines pour 100g (en g)",
     "phe": "Phe pour 100g",
     "weight": "Poids consommé (en g)",
-    "name": "Nom de l'aliment"
+    "name": "Nom de l'aliment",
+    "other": "Autres",
+    "vegetable": "Légumes",
+    "fruit": "Fruits"
   },
   "barcode-scanner": {
     "title": "Scanner de code-barres",

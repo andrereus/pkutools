@@ -63,11 +63,14 @@
   "protein-calculator": {
     "title": "Calculadora de proteínas",
     "description": "Calcular valores aproximados de Phe a partir de proteínas.",
-    "factor": "Cálculo de frutas o verduras",
+    "factor": "Tipo de alimento",
     "protein": "Proteínas por 100g (eng)",
     "phe": "Phe por 100g",
     "weight": "Peso consumido (en g)",
-    "name": "Nombre del alimento"
+    "name": "Nombre del alimento",
+    "other": "Otros",
+    "vegetable": "Verduras",
+    "fruit": "Fruta"
   },
   "barcode-scanner": {
     "title": "Escáner de código de barras",

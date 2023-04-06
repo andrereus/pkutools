@@ -63,11 +63,14 @@
   "protein-calculator": {
     "title": "Eiweiß Rechner",
     "description": "Berechne ungefähre Phe-Werte aus Eiweiß.",
-    "factor": "Berechnung von Obst oder Gemüse",
+    "factor": "Art des Lebensmittels",
     "protein": "Eiweiß pro 100g (in g)",
     "phe": "Phe pro 100g",
     "weight": "Konsumiertes Gewicht (in g)",
-    "name": "Lebensmittelname"
+    "name": "Lebensmittelname",
+    "other": "Sonstiges",
+    "vegetable": "Gemüse",
+    "fruit": "Obst"
   },
   "barcode-scanner": {
     "title": "Barcode Scanner",

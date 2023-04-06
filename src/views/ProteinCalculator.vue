@@ -8,7 +8,7 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-checkbox v-model="factor" :label="$t('protein-calculator.factor')" class="mt-n1"></v-checkbox>
+        <v-select filled rounded v-model="select" :items="type" :label="$t('protein-calculator.factor')"></v-select>
 
         <v-text-field
           filled
@@ -89,15 +89,15 @@ export default {
     dialog: false,
     protein: null,
     weight: 100,
-    factor: false,
-    name: ""
+    name: "",
+    select: "other"
   }),
   methods: {
     calculateProtein() {
-      return Math.round(this.protein * (this.factor ? 30 : 50));
+      return Math.round(this.protein * this.factor);
     },
     calculatePhe() {
-      return Math.round((this.weight * (this.protein * (this.factor ? 30 : 50))) / 100);
+      return Math.round((this.weight * (this.protein * this.factor)) / 100);
     },
     save() {
       firebase
@@ -113,6 +113,22 @@ export default {
     }
   },
   computed: {
+    type() {
+      return [
+        { text: this.$t("protein-calculator.other"), value: "other" },
+        { text: this.$t("protein-calculator.vegetable"), value: "vegetable" },
+        { text: this.$t("protein-calculator.fruit"), value: "fruit" }
+      ];
+    },
+    factor() {
+      if (this.select === "fruit") {
+        return 30;
+      } else if (this.select === "vegetable") {
+        return 40;
+      } else {
+        return 50;
+      }
+    },
     pheResult() {
       let phe = 0;
       this.pheLog.forEach(item => {
