@@ -47,7 +47,7 @@
   "phe-search": {
     "title": "Búsqueda de Phe",
     "description": "Buscar valores de Phe.",
-    "search": "Búsqueda de Phe",
+    "search": "Búsqueda de Phe (Nuevo)",
     "weight": "Peso (en g)",
     "advanced": "Buscar en todos los alimentos",
     "source": "Fuente: Traducido por USDA, FoodData Central, 2019 (fdc.nal.usda.gov). Por ejemplo, también se utiliza para la información nutricional en la barra lateral de Google."
