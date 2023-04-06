@@ -79,7 +79,7 @@
     "scan-barcode": "Escanear código de barras",
     "please-wait": "Por favor, espera...",
     "protein": "Proteína (por 100g)",
-    "info": "Phe se calcula a partir de proteínas | Fuente de datos: openfoodfacts.org"
+    "info": "Phe se calcula a partir de proteínas (* 50) | Fuente de datos: openfoodfacts.org"
   },
   "own-food": {
     "title": "Alimento propio",

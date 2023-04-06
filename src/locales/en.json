@@ -79,7 +79,7 @@
     "scan-barcode": "Scan barcode",
     "please-wait": "Please wait ...",
     "protein": "Protein (per 100g)",
-    "info": "Phe gets calculated from protein | Datasource: openfoodfacts.org"
+    "info": "Phe gets calculated from protein (* 50) | Datasource: openfoodfacts.org"
   },
   "own-food": {
     "title": "Own Food",
