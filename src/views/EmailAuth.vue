@@ -46,6 +46,7 @@
                     :rules="[rules.required, rules.min]"
                     :hint="$t('email-auth.min-length')"
                     @click:append="show1 = !show1"
+                    spellcheck="false"
                   ></v-text-field>
 
                   <v-btn depressed rounded color="primary" class="mr-3 mb-3" @click="signInEmailPassword">
@@ -86,6 +87,7 @@
                     :rules="[rules.required, rules.min]"
                     :hint="$t('email-auth.min-length')"
                     @click:append="show1 = !show1"
+                    spellcheck="false"
                   ></v-text-field>
 
                   <v-btn depressed rounded color="primary" class="mr-3 mb-3" @click="registerEmailPassword">
