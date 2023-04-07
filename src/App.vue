@@ -205,8 +205,8 @@
         <template v-slot:activator="{ on, attrs }">
           <v-btn icon v-bind="attrs" v-on="on" :aria-label="$t('app.account-menu')">
             <v-avatar size="32">
-              <v-icon v-if="!userIsAuthenticated">{{ mdiAccountCircle }}</v-icon>
-              <img v-if="userIsAuthenticated" :src="userPhotoUrl" :alt="$t('app.profile-picture')" />
+              <v-icon v-if="!userIsAuthenticated || !userPhotoUrl">{{ mdiAccountCircle }}</v-icon>
+              <img v-if="userIsAuthenticated && userPhotoUrl" :src="userPhotoUrl" :alt="$t('app.profile-picture')" />
             </v-avatar>
           </v-btn>
         </template>
