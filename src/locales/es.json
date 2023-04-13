@@ -103,7 +103,8 @@
     "remaining": "Restante",
     "save-day": "Terminar registro",
     "own-food": "Alimento propio",
-    "manual-add": "Agregar manualmente",
+    "quick-note": "Nota",
+    "optional-fields": "Todos los campos son opcionales.",
     "preview": "Vista previa del registro de Phe"
   },
   "phe-diary": {

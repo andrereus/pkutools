@@ -103,7 +103,8 @@
     "remaining": "Restant",
     "save-day": "Terminer le journal",
     "own-food": "Aliments personnels",
-    "manual-add": "Ajouter manuellement",
+    "quick-note": "Note",
+    "optional-fields": "Tous les champs sont facultatifs.",
     "preview": "Aperçu du Journal de Phe"
   },
   "phe-diary": {

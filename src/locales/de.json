@@ -103,7 +103,8 @@
     "remaining": "Übrig",
     "save-day": "Protokoll abschließen",
     "own-food": "Eigene LM.",
-    "manual-add": "Manuell hinzufügen",
+    "quick-note": "Notiz",
+    "optional-fields": "Alle Felder sind optional.",
     "preview": "Vorschau Phe Protokoll"
   },
   "phe-diary": {

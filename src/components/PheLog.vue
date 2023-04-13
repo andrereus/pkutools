@@ -4,7 +4,8 @@
       <v-dialog v-model="dialog" max-width="500px">
         <template v-slot:activator="{ on, attrs }">
           <v-btn depressed rounded class="mr-3 mb-8" v-bind="attrs" v-on="on">
-            {{ $t("phe-log.manual-add") }}
+            <v-icon left>{{ mdiPen }}</v-icon>
+            {{ $t("phe-log.quick-note") }}
           </v-btn>
         </template>
 
@@ -14,6 +15,7 @@
           </v-card-title>
 
           <v-card-text>
+            <p v-if="editedIndex === -1">{{ $t("phe-log.optional-fields") }}</p>
             <v-text-field filled rounded label="Name" v-model="editedItem.name" class="mt-6">
               <template v-slot:append-outer>
                 <v-menu offset-y>
@@ -169,7 +171,8 @@ import {
   mdiFoodApple,
   mdiLock,
   mdiLockOpenVariant,
-  mdiBarcodeScan
+  mdiBarcodeScan,
+  mdiPen
 } from "@mdi/js";
 
 export default {
@@ -184,6 +187,7 @@ export default {
     mdiLock,
     mdiLockOpenVariant,
     mdiBarcodeScan,
+    mdiPen,
     publicPath: process.env.BASE_URL,
     dialog: false,
     alert: false,
@@ -350,7 +354,7 @@ export default {
   computed: {
     formTitle() {
       if (this.editedIndex === -1) {
-        return this.$t("common.add");
+        return this.$t("phe-log.quick-note");
       } else {
         return this.$t("common.edit");
       }
