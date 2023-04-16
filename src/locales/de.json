@@ -105,7 +105,8 @@
     "own-food": "Eigene LM.",
     "quick-note": "Notiz",
     "optional-fields": "Alle Felder sind optional.",
-    "preview": "Vorschau Phe Protokoll"
+    "preview": "Vorschau Phe Protokoll",
+    "last-added": "Zuletzt hinzugefügt"
   },
   "phe-diary": {
     "title": "Phe Tagebuch",

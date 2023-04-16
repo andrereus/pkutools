@@ -1,6 +1,66 @@
 <template>
   <div>
     <div v-if="userIsAuthenticated">
+      <v-dialog v-model="dialog2" max-width="500px">
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn depressed rounded class="mr-3 mb-8" v-bind="attrs" v-on="on">
+            <v-icon left>{{ mdiBookClock }}</v-icon>
+            {{ $t("phe-log.last-added") }}
+          </v-btn>
+        </template>
+
+        <v-card>
+          <v-card-title>
+            <span class="headline">{{ $t("phe-log.last-added") }}</span>
+          </v-card-title>
+
+          <v-card-text>
+            <v-data-table
+              :headers="headers2"
+              :items="lastAdded"
+              disable-pagination
+              hide-default-footer
+              mobile-breakpoint="0"
+              class="mt-3 mb-4"
+              v-if="lastAdded"
+            >
+              <template v-slot:item="{ item }">
+                <tr @click="addLastAdded(item)" class="tr-edit">
+                  <td class="text-start">
+                    <img
+                      :src="publicPath + 'img/food-icons/' + item.icon + '.svg'"
+                      v-if="item.icon !== undefined && item.icon !== ''"
+                      onerror="this.src='img/food-icons/organic-food.svg'"
+                      width="25"
+                      class="food-icon"
+                    />
+                    <img
+                      :src="publicPath + 'img/food-icons/organic-food.svg'"
+                      v-if="(item.icon === undefined || item.icon === '') && item.emoji === undefined"
+                      width="25"
+                      class="food-icon"
+                    />
+                    {{ (item.icon === undefined || item.icon === "") && item.emoji !== undefined ? item.emoji : null }}
+                    {{ item.name }}
+                  </td>
+                  <td class="text-start">
+                    {{ item.weight }}
+                  </td>
+                  <td class="text-start">
+                    {{ item.phe }}
+                  </td>
+                </tr>
+              </template>
+            </v-data-table>
+          </v-card-text>
+
+          <v-card-actions class="mt-n6">
+            <v-spacer></v-spacer>
+            <v-btn depressed @click="dialog2 = false">{{ $t("common.cancel") }}</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+
       <v-dialog v-model="dialog" max-width="500px">
         <template v-slot:activator="{ on, attrs }">
           <v-btn depressed rounded class="mr-3 mb-8" v-bind="attrs" v-on="on">
@@ -172,7 +232,8 @@ import {
   mdiLock,
   mdiLockOpenVariant,
   mdiBarcodeScan,
-  mdiPen
+  mdiPen,
+  mdiBookClock
 } from "@mdi/js";
 
 export default {
@@ -188,8 +249,10 @@ export default {
     mdiLockOpenVariant,
     mdiBarcodeScan,
     mdiPen,
+    mdiBookClock,
     publicPath: process.env.BASE_URL,
     dialog: false,
+    dialog2: false,
     alert: false,
     headersEn: [
       {
@@ -209,16 +272,27 @@ export default {
       { text: "Gewicht", value: "weight" },
       { text: "Phe", value: "phe" }
     ],
+    headers2: [
+      {
+        text: "Name",
+        align: "start",
+        value: "name"
+      },
+      { text: "Weight", value: "weight" },
+      { text: "Phe", value: "phe" }
+    ],
     editedIndex: -1,
     editedKey: null,
     editedItem: {
       name: "",
+      emoji: null,
       icon: null,
       weight: null,
       phe: null
     },
     defaultItem: {
       name: "",
+      emoji: null,
       icon: null,
       weight: null,
       phe: null
@@ -248,6 +322,11 @@ export default {
       this.editedItem = Object.assign({}, item);
       this.lockValues();
       this.dialog = true;
+    },
+    addLastAdded(item) {
+      this.editedItem = Object.assign({}, item);
+      this.save();
+      this.dialog2 = false;
     },
     deleteItem() {
       firebase
@@ -282,6 +361,7 @@ export default {
           .ref(this.user.id + "/pheLog")
           .push({
             name: this.editedItem.name,
+            emoji: this.editedItem.emoji,
             icon: this.editedItem.icon || null,
             weight: Number(this.editedItem.weight),
             phe: Number(this.editedItem.phe)
@@ -365,6 +445,10 @@ export default {
         phe += item.phe;
       });
       return Math.round(phe);
+    },
+    lastAdded() {
+      // Get last 3 objects, extract and concatenate "log" arrays, and reverse order.
+      return [].concat(...this.pheDiary.slice(-3).map(obj => obj.log)).reverse();
     },
     userIsAuthenticated() {
       return this.user !== null && this.user !== undefined;

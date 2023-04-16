@@ -105,7 +105,8 @@
     "own-food": "Alimento propio",
     "quick-note": "Nota",
     "optional-fields": "Todos los campos son opcionales.",
-    "preview": "Vista previa del registro de Phe"
+    "preview": "Vista previa del registro de Phe",
+    "last-added": "Último añadido"
   },
   "phe-diary": {
     "title": "Diario de Phe",

@@ -105,7 +105,8 @@
     "own-food": "Aliments personnels",
     "quick-note": "Note",
     "optional-fields": "Tous les champs sont facultatifs.",
-    "preview": "Aperçu du Journal de Phe"
+    "preview": "Aperçu du Journal de Phe",
+    "last-added": "Derniers ajouts"
   },
   "phe-diary": {
     "title": "Journal de Phe",
