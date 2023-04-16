@@ -284,8 +284,17 @@ export default {
         stroke: {
           curve: "smooth"
         },
+        markers: {
+          size: 1
+        },
+        grid: {
+          show: false
+        },
         xaxis: {
           type: "datetime"
+        },
+        yaxis: {
+          min: 0
         },
         theme: {
           mode: this.$vuetify.theme.dark === true ? "dark" : "light"

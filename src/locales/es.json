@@ -119,7 +119,8 @@
     "export-confirm": "¿Exportar diario de Phe en Excel? Nota: Evita fechas duplicadas en el diario de Phe",
     "export-overview": "Resumen",
     "export-filename": "Herramientas PKU - Diario de Phe",
-    "note": "Limitado a 100 entradas (~3 meses). Exporta y luego restablece a través de la configuración."
+    "note": "Limitado a 100 entradas (~3 meses). Exporta y luego restablece a través de la configuración.",
+    "chart-info": "El diagrama se muestra después de la segunda entrada."
   },
   "statistics": {
     "title": "Estadísticas"

@@ -41,6 +41,8 @@
         </div>
 
         <div v-if="userIsAuthenticated">
+          <p v-if="pheDiary.length < 2">{{ $t("phe-diary.chart-info") }}</p>
+
           <apexchart
             v-if="pheDiary.length >= 2"
             type="area"
@@ -487,25 +489,31 @@ export default {
         stroke: {
           curve: "smooth"
         },
+        markers: {
+          size: 1
+        },
+        grid: {
+          show: false
+        },
         dataLabels: {
           enabled: false
         },
         xaxis: {
           type: "datetime"
         },
-        responsive: [
-          {
-            breakpoint: 600,
-            options: {
-              yaxis: {
-                show: false
-              },
-              grid: {
-                show: false
-              }
+        yaxis: {
+          min: 0
+        },
+        annotations: {
+          yaxis: [
+            {
+              y: this.settings.maxPhe || 0,
+              borderWidth: 2,
+              borderColor: "#3498db",
+              strokeDashArray: 6
             }
-          }
-        ],
+          ]
+        },
         theme: {
           mode: this.$vuetify.theme.dark === true ? "dark" : "light"
         },
