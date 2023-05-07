@@ -8,6 +8,9 @@
 
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
+        <router-link to="/protein-calculator" class="head-link mt-n1 mb-6">
+          {{ $t("phe-calculator.protein-link") }}
+        </router-link>
         <p class="mb-6">{{ $t("barcode-scanner.description") }}</p>
 
         <v-dialog v-model="dialog" max-width="500px">
@@ -172,5 +175,10 @@ export default {
 }
 .hidden {
   display: none;
+}
+
+.head-link {
+  display: block;
+  text-decoration: none;
 }
 </style>
