@@ -165,8 +165,7 @@
     "error": "Das hat leider nicht geklappt.",
     "required": "Pflichtfeld",
     "min-length": "Minimum 8 Zeichen",
-    "invalid-email": "E-Mail noch ungültig",
-    "email-notice": "Es ist jetzt auch Anmeldung per E-Mail möglich."
+    "invalid-email": "E-Mail noch ungültig"
   },
   "help": {
     "title": "Hilfe",

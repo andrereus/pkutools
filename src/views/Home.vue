@@ -2,15 +2,6 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert
-          v-if="!userIsAuthenticated && $i18n.locale !== 'es' && $i18n.locale !== 'fr'"
-          dense
-          dismissible
-          text
-          class="mb-6"
-        >
-          {{ $t("email-auth.email-notice") }}
-        </v-alert>
         <p v-if="!userIsAuthenticated" class="mt-5 mb-1">{{ $t("app.description") }}</p>
       </v-col>
     </v-row>

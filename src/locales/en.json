@@ -165,8 +165,7 @@
     "error": "That didn't work.",
     "required": "Required",
     "min-length": "Minimum 8 characters",
-    "invalid-email": "Email not valid",
-    "email-notice": "It is now also possible to register by email."
+    "invalid-email": "Email not valid"
   },
   "help": {
     "title": "Help",
