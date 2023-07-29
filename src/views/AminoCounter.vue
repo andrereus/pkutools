@@ -54,10 +54,6 @@
           </v-progress-linear>
 
           <v-timeline dense>
-            <v-timeline-item v-for="(item, index) in aminoCounter" :key="index" small>
-              <p class="mb-0">{{ $t("amino-counter.serving") }} {{ getlocalDate(item.date) }}</p>
-            </v-timeline-item>
-
             <v-timeline-item fill-dot color="primary" large :icon="mdiCupWater">
               <v-btn depressed rounded @click="takeAM" color="primary" class="mr-2 mt-2">
                 {{ $t("amino-counter.take") }}
@@ -65,6 +61,10 @@
               <v-btn depressed rounded class="mr-2 mt-2" @click="resetAM">
                 {{ $t("common.reset") }}
               </v-btn>
+            </v-timeline-item>
+
+            <v-timeline-item v-for="(item, index) in reverseAminoCounter" :key="index" small>
+              <p class="mb-0">{{ $t("amino-counter.serving") }} {{ getlocalDate(item.date) }}</p>
             </v-timeline-item>
           </v-timeline>
 
@@ -172,6 +172,9 @@ export default {
     }
   },
   computed: {
+    reverseAminoCounter() {
+      return [...this.aminoCounter].reverse();
+    },
     calculateAmino() {
       return this.aminoCounter.filter(item => {
         return isToday(parseISO(item.date));
