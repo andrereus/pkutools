@@ -176,6 +176,7 @@
     "install": "How to install the app?",
     "install-p1": "This is a Progressive Web App and can be installed on any device.",
     "install-p2": "Android:",
+    "install-p2-2": "or in Chrome",
     "install-p3": "Tap the share button and then \"Add to Home Screen\" in Safari.",
     "install-p4": "Click the little installation icon in the address bar in Chrome, Brave or Edge.",
     "sign-in": "How to sign in?",

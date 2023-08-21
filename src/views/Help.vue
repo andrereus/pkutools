@@ -13,9 +13,7 @@
             <v-expansion-panel-header class="font-weight-bold">{{ $t("help.install") }}</v-expansion-panel-header>
 
             <v-expansion-panel-content>
-              <p>
-                {{ $t("help.install-p1") }}
-              </p>
+              <p>{{ $t("help.install-p1") }}</p>
               <p>
                 <span class="font-weight-bold">{{ $t("help.install-p2") }}</span>
                 <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">
@@ -25,8 +23,9 @@
                     class="gplay-btn"
                   />
                 </a>
-                <v-img src="../assets/pwa-android.png" alt="PWA on Android" class="pwa-img"></v-img>
+                {{ $t("help.install-p2-2") }}
               </p>
+              <v-img src="../assets/pwa-android.png" alt="PWA on Android" class="pwa-img"></v-img>
 
               <p>
                 <span class="font-weight-bold">iOS:</span>
@@ -171,8 +170,6 @@ export default {
 
 .pwa-img {
   max-width: 550px;
-  border: 1px solid black;
   margin: 10px 0 30px;
-  border-radius: 5px;
 }
 </style>

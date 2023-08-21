@@ -176,6 +176,7 @@
     "install": "¿Cómo instalar la aplicación?",
     "install-p1": "Esta es una aplicación web progresiva y se puede instalar en cualquier dispositivo.",
     "install-p2": "Android:",
+    "install-p2-2": "o en Chrome",
     "install-p3": "Pulsa el botón de compartir y luego \"Añadir a pantalla de inicio\" en Safari.",
     "install-p4": "Haz clic en el pequeño icono de instalación en la barra de direcciones en Chrome, Brave o Edge.",
     "sign-in": "¿Cómo iniciar sesión?",
