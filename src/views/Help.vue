@@ -15,7 +15,9 @@
             <v-expansion-panel-content>
               <p>
                 {{ $t("help.install-p1") }}
-                <a href="https://support.google.com/chrome/answer/9658361" target="_blank">Google Support</a>
+              </p>
+              <p>
+                <a href="https://support.google.com/chrome/answer/9658361" target="_blank">Google Chrome Support</a>
               </p>
               <p>
                 <span class="font-weight-bold">{{ $t("help.install-p2") }}</span>
