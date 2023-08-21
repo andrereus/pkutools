@@ -25,18 +25,18 @@
                     class="gplay-btn"
                   />
                 </a>
+                <v-img src="../assets/pwa-android.png" alt="PWA on Android" class="pwa-img"></v-img>
               </p>
 
               <p>
                 <span class="font-weight-bold">iOS:</span>
                 {{ $t("help.install-p3") }}
+                <v-img src="../assets/pwa-ios.png" alt="PWA on iOS" class="pwa-img"></v-img>
               </p>
               <p>
                 <span class="font-weight-bold">Desktop:</span>
                 {{ $t("help.install-p4") }}
-              </p>
-              <p>
-                <a href="https://support.google.com/chrome/answer/9658361" target="_blank">Google Chrome Support</a>
+                <v-img src="../assets/pwa-desktop.png" alt="PWA on desktop" class="pwa-img"></v-img>
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
@@ -156,7 +156,7 @@ export default {
 }
 
 .gplay-btn {
-  max-width: 100px;
+  max-width: 120px;
   vertical-align: middle;
 }
 
@@ -167,5 +167,12 @@ export default {
 
 .hidden {
   display: none;
+}
+
+.pwa-img {
+  max-width: 550px;
+  border: 1px solid black;
+  margin: 10px 0 30px;
+  border-radius: 5px;
 }
 </style>
