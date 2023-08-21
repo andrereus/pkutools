@@ -170,6 +170,6 @@ export default {
 
 .pwa-img {
   max-width: 700px;
-  margin: 10px 0 30px;
+  margin: 15px 0 30px;
 }
 </style>
