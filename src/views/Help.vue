@@ -13,7 +13,10 @@
             <v-expansion-panel-header class="font-weight-bold">{{ $t("help.install") }}</v-expansion-panel-header>
 
             <v-expansion-panel-content>
-              <p>{{ $t("help.install-p1") }}</p>
+              <p>
+                {{ $t("help.install-p1") }}
+                <a href="https://support.google.com/chrome/answer/9658361" target="_blank">Google Support</a>
+              </p>
               <p>
                 <span class="font-weight-bold">{{ $t("help.install-p2") }}</span>
                 <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">
