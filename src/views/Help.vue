@@ -17,9 +17,6 @@
                 {{ $t("help.install-p1") }}
               </p>
               <p>
-                <a href="https://support.google.com/chrome/answer/9658361" target="_blank">Google Chrome Support</a>
-              </p>
-              <p>
                 <span class="font-weight-bold">{{ $t("help.install-p2") }}</span>
                 <a href="https://play.google.com/store/apps/details?id=com.pkutools.twa" target="_blank">
                   <img
@@ -37,6 +34,9 @@
               <p>
                 <span class="font-weight-bold">Desktop:</span>
                 {{ $t("help.install-p4") }}
+              </p>
+              <p>
+                <a href="https://support.google.com/chrome/answer/9658361" target="_blank">Google Chrome Support</a>
               </p>
             </v-expansion-panel-content>
           </v-expansion-panel>
