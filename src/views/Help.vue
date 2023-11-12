@@ -142,8 +142,8 @@ export default {
     mdiAt,
     mdiDownload,
     panel: [0],
-    part1: "heypku",
-    part2: "gmail",
+    part1: "mail",
+    part2: "pkutools",
     part3: "com"
   })
 };
