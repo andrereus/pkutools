@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.pkutools.twa",
       "sha256_cert_fingerprints": [
-        "4F:6F:56:A0:A0:FE:15:70:AD:B9:0E:07:26:16:35:C9:A6:4C:2D:62:BD:ED:36:98:A6:4C:46:54:F4:B8:23:B9"
+        "4F:6F:56:A0:A0:FE:15:70:AD:B9:0E:07:26:16:35:C9:A6:4C:2D:62:BD:ED:36:98:A6:4C:46:54:F4:B8:23:B9",
+        "4B:A1:D6:03:70:12:2D:DB:C0:BC:04:D7:B2:C3:DD:4C:B2:F9:DB:61:E5:2C:93:ED:ED:79:9C:F0:0D:9B:9B:E0"
       ]
     }
   }
