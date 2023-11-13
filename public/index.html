@@ -43,10 +43,10 @@
     <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/1980005.js"></script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-    <script type="text/plain">
+    <script type="text/javascript">
       window.smartlook ||
-        (function(d) {
-          var o = (smartlook = function() {
+        (function (d) {
+          var o = (smartlook = function () {
               o.api.push(arguments);
             }),
             h = d.getElementsByTagName("head")[0];
@@ -55,10 +55,10 @@
           c.async = true;
           c.type = "text/javascript";
           c.charset = "utf-8";
-          c.src = "https://rec.smartlook.com/recorder.js";
+          c.src = "https://web-sdk.smartlook.com/recorder.js";
           h.appendChild(c);
         })(document);
-      smartlook("init", "0f9d423bd0d5f9f76eec5399c5adb897068bb318");
+      smartlook("init", "0f9d423bd0d5f9f76eec5399c5adb897068bb318", { region: "eu" });
     </script>
     <style>
       .apexcharts-menu-item.exportCSV {
