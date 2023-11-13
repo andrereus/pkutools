@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
         <h1>Disclaimer</h1>
-        <p>Last updated: August 23, 2020</p>
+        <p>Last updated: November 13, 2023</p>
         <h1>Interpretation and Definitions</h1>
         <h2>Interpretation</h2>
         <p>
@@ -20,7 +20,7 @@
           </li>
           <li>
             <strong>Service</strong>
-            refers to the Website.
+            refers to the Website or the Application or both.
           </li>
           <li>
             <strong>You</strong>
@@ -31,6 +31,11 @@
             <strong>Website</strong>
             refers to PKU Tools, accessible from
             <a href="https://pkutools.com" rel="external nofollow noopener" target="_blank">https://pkutools.com</a>
+          </li>
+          <li>
+            <strong>Application</strong>
+            means the software program provided by the Company downloaded by You on any electronic device named PKU
+            Tools.
           </li>
         </ul>
         <h1>Disclaimer</h1>
@@ -94,7 +99,7 @@
         <h1>Errors and Omissions Disclaimer</h1>
         <p>
           The information given by the Service is for general guidance on matters of interest only. Even if the Company
-          takes every precaution to insure that the content of the Service is both current and accurate, errors can
+          takes every precaution to ensure that the content of the Service is both current and accurate, errors can
           occur. Plus, given the changing nature of laws, rules and regulations, there may be delays, omissions or
           inaccuracies in the information contained on the Service.
         </p>
@@ -125,7 +130,7 @@
         <p>
           Comments published by users are their sole responsibility and the users will take full responsibility,
           liability and blame for any libel or litigation that results from something written in or as a direct result
-          of something written in a comment. The Company is not liable for any comment published by users and reserve
+          of something written in a comment. The Company is not liable for any comment published by users and reserves
           the right to delete any comment for any reason whatsoever.
         </p>
         <h1>No Responsibility Disclaimer</h1>
