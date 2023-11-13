@@ -146,7 +146,8 @@
     "reset-log": "Reset todays log",
     "reset-diary": "Reset Phe Diary",
     "reset-own-food": "Reset Own Food",
-    "reset-am": "Reset Amino Counter"
+    "reset-am": "Reset Amino Counter",
+    "delete-account": "Delete account"
   },
   "email-auth": {
     "title": "Sign in with Email",

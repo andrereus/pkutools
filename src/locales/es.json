@@ -146,7 +146,8 @@
     "reset-log": "Restablecer el registro de hoy",
     "reset-diary": "Restablecer el diario de Phe",
     "reset-own-food": "Restablecer alimentos propios",
-    "reset-am": "Restablecer contador de aminoácidos"
+    "reset-am": "Restablecer contador de aminoácidos",
+    "delete-account": "Eliminar cuenta"
   },
   "email-auth": {
     "title": "Iniciar sesión con correo electrónico",

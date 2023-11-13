@@ -146,7 +146,8 @@
     "reset-log": "Reset Heutiges Protokoll",
     "reset-diary": "Reset Phe Tagebuch",
     "reset-own-food": "Reset Eigene Lebensmittel",
-    "reset-am": "Reset Amino Zähler"
+    "reset-am": "Reset Amino Zähler",
+    "delete-account": "Account löschen"
   },
   "email-auth": {
     "title": "Anmelden mit E-Mail",

@@ -62,6 +62,12 @@
             {{ $t("settings.reset-own-food") }}
           </v-btn>
 
+          <h2 class="headline mt-6 mb-4">{{ $t("settings.delete-account") }}</h2>
+
+          <v-btn outlined rounded color="error" class="mr-6 mb-5" @click="deleteAccount">
+            {{ $t("settings.delete-account") }}
+          </v-btn>
+
           <p class="mt-6 mb-8 text--secondary">
             {{ $t("home.support-me") }}
             <a href="https://ko-fi.com/andrereus" target="_blank">
@@ -192,6 +198,22 @@ export default {
           .ref(this.user.id + "/aminoCounter")
           .remove();
         this.$router.push("amino-counter");
+      }
+    },
+    deleteAccount() {
+      let r = confirm(this.$t("settings.delete-account") + "?");
+      if (r === true) {
+        firebase.database().ref(this.user.id).remove();
+        firebase
+          .auth()
+          .currentUser.delete()
+          .then(() => {
+            this.$store.dispatch("signOut");
+            this.$router.push("/");
+          })
+          .catch(error => {
+            alert(error);
+          });
       }
     }
   },

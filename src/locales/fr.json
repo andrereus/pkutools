@@ -146,7 +146,8 @@
     "reset-log": "Réinitialiser le journal d'aujourd'hui",
     "reset-diary": "Réinitialiser le Journal de Phe",
     "reset-own-food": "Réinitialiser les aliments personnels",
-    "reset-am": "Réinitialiser le compteur d'acides aminés"
+    "reset-am": "Réinitialiser le compteur d'acides aminés",
+    "delete-account": "Supprimer le compte"
   },
   "email-auth": {
     "title": "Se connecter avec un e-mail",
