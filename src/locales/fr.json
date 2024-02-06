@@ -20,7 +20,7 @@
     "help": "Aide",
     "install": "Installer l'application",
     "feedback": "Retour d'information",
-    "change-info": "Les fonctions PWA (comme l'installation d'apps) sont supprimées ici. Veuillez utiliser à cet effet la nouvelle app sous"
+    "change-info": "Les fonctions PWA (comme l'installation de l'app) sont supprimées ici. Veuillez installer la nouvelle app sous"
   },
   "common": {
     "add": "Ajouter",

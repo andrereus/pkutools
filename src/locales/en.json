@@ -20,7 +20,7 @@
     "help": "Help",
     "install": "Install app",
     "feedback": "Feedback",
-    "change-info": "PWA features (like app installation) are removed here. Please use the new app at"
+    "change-info": "PWA features (like app installation) are removed here. Please install the new app at"
   },
   "common": {
     "add": "Add",
