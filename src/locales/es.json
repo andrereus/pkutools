@@ -19,7 +19,8 @@
     "logs": "Registros",
     "help": "Ayuda",
     "install": "Instalar aplicación",
-    "feedback": "Comentarios"
+    "feedback": "Comentarios",
+    "change-info": "Las funciones PWA (como la instalación de apps) se eliminan aquí. Utiliza la nueva aplicación en"
   },
   "common": {
     "add": "Agregar",

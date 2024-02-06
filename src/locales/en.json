@@ -19,7 +19,8 @@
     "logs": "Logs",
     "help": "Help",
     "install": "Install app",
-    "feedback": "Feedback"
+    "feedback": "Feedback",
+    "change-info": "PWA features (like app installation) are removed here. Please use the new app at"
   },
   "common": {
     "add": "Add",

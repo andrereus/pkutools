@@ -2,7 +2,10 @@
   <div>
     <v-row justify="center">
       <v-col cols="12" md="10" lg="8" xl="6">
-        <v-alert dense text type="info">{{ $t("app.new") }}: Coming soon, work in progress ...</v-alert>
+        <v-alert dense text type="info">
+          {{ $t("app.change-info") }}
+          <a href="https://app.pkutools.com">app.pkutools.com</a>
+        </v-alert>
         <p v-if="!userIsAuthenticated" class="mt-5 mb-1">{{ $t("app.description") }}</p>
       </v-col>
     </v-row>

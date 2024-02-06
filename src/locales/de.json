@@ -19,7 +19,8 @@
     "logs": "Protokolle",
     "help": "Hilfe",
     "install": "App installieren",
-    "feedback": "Feedback"
+    "feedback": "Feedback",
+    "change-info": "PWA-Funktionen (wie App-Installation) werden hier entfernt. Bitte verwenden Sie dafür die neue App unter"
   },
   "common": {
     "add": "Hinzufügen",
