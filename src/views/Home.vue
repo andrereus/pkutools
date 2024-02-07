@@ -5,6 +5,8 @@
         <v-alert dense text type="info">
           {{ $t("app.change-info") }}
           <a href="https://app.pkutools.com">app.pkutools.com</a>
+          .
+          {{ $t("app.change-info-2") }}
         </v-alert>
         <p v-if="!userIsAuthenticated" class="mt-5 mb-1">{{ $t("app.description") }}</p>
       </v-col>

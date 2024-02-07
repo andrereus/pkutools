@@ -20,7 +20,8 @@
     "help": "Help",
     "install": "Install app",
     "feedback": "Feedback",
-    "change-info": "Note: This page will soon be converted to a landing page. Please install the new app at"
+    "change-info": "Note: This page will soon be converted to a landing page. Please install the new app at",
+    "change-info-2": "Sorry for the inconvenience."
   },
   "common": {
     "add": "Add",
