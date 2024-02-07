@@ -19,9 +19,7 @@
     "logs": "Protokolle",
     "help": "Hilfe",
     "install": "App installieren",
-    "feedback": "Feedback",
-    "change-info": "Hinweis: Diese Seite wird bald zu einer Landingpage umgebaut. Bitte installiere die neue App unter",
-    "change-info-2": "Entschuldige die Unannehmlichkeiten."
+    "feedback": "Feedback"
   },
   "common": {
     "add": "Hinzufügen",

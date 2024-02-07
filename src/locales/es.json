@@ -19,9 +19,7 @@
     "logs": "Registros",
     "help": "Ayuda",
     "install": "Instalar aplicación",
-    "feedback": "Comentarios",
-    "change-info": "Nota: Esta página se convertirá pronto en una página de aterrizaje. Instale la nueva aplicación en",
-    "change-info-2": "Disculpe las molestias."
+    "feedback": "Comentarios"
   },
   "common": {
     "add": "Agregar",
